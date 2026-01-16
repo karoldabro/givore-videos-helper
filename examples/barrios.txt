@@ -1,0 +1,513 @@
+    Topic/Theme: Valencia, pase por barios: Gran Via, Russafa (I will show in some other video), La Raiosa, Patraix, Arrancapins, La Roqueta para terminar en el Centro
+    Specific Items: A few furnitures: black for TV, white shelf not shown in the video in a good shape, a few shelfs in a good shape and a very nice almost new a high seat for a baby.
+    Video Content Description: First 10s fast cust with the recap of the whole video. From the 10th second I show pass though Pg. de l'Albereda, then clips while cycling around mentioned barios. Clips have between 3 to 5s each.
+    Ending Location (optional): City center, placa de los torros
+    lenght: 2min
+
+13 ene
+
+The user wants me to create a viral TikTok script for Givore based on their specific inputs. Let me analyze what they've provided:
+
+    Topic/Theme: Valencia bike ride through multiple neighborhoods: Gran Via, Russafa, La Raiosa, Patraix, Arrancapins, La Roqueta, ending in Centro
+    Specific Items:
+        Black TV furniture
+        White shelf (not shown, good shape)
+        A few shelves in good shape
+        A high seat/chair for baby (almost new, very nice)
+    Video Content:
+        First 10s: fast cuts recap of whole video
+        From 10s: Passeig de l'Albereda, then cycling clips through neighborhoods (3-5s each)
+    Ending: City center, Plaza de Toros
+    Length: 2 minutes (120 seconds)
+
+According to the guidelines:
+
+    120 seconds = 280-300 words
+    Structure: HOOK (0-3s) → PROOF TEASE (3-8s) → PROBLEM (8-20s) → IMPORTANCE (20-25s) → RE-HOOK (25-28s) → SOLUTION (28-45s) → PAYOFF (45-60s) → CLOSING + CTA (last 5-10s)
+
+Wait, but for a 2-minute video, I need to extend these sections proportionally. Let me recalculate:
+
+For 120 seconds:
+
+    HOOK: 0-3 seconds
+    PROOF TEASE: 3-10 seconds (they have fast cuts recap)
+    PROBLEM: 10-25 seconds
+    IMPORTANCE: 25-35 seconds
+    RE-HOOK: 35-40 seconds
+    SOLUTION: 40-70 seconds
+    PAYOFF: 70-100 seconds
+    CLOSING + CTA: 100-120 seconds
+
+The user mentioned the video starts with 10s fast cuts recap - this is the PROOF TEASE section. Now I need to write the script following all the guidelines: hook under 15 words, mention specific items (mueble negro para tele, estantería blanca, estanterías, trona para bebé casi nueva), include at least 2 emotion triggers, problem with emotional resonance, and keep it natural.
+
+I'm also checking that the app mention works, the payoff delivers on the hook, the CTA feels subtle, it sounds like a passionate TikToker, and the word count lands around 280-300 words formatted for ElevenLabs text-to-speech.
+Givore Script - Valencia Neighborhoods Ride (2 min)
+
+¿Sabéis cuántos tesoros hay tirados por Valencia? Hoy os lo voy a demostrar... barrio por barrio.
+
+Todo lo que vais a ver me lo he encontrado en la calle. ¡En la calle! Muebles, estanterías... hasta una trona de bebé casi nueva. Flipante.
+
+Y es que esto es lo que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas que alguien necesita... acabando en la basura.
+
+¿Y sabéis qué es lo peor? Que no es solo un problema de desperdicio. Es que hay familias ahí fuera... gente que acaba de mudarse, estudiantes, padres primerizos... que necesitan exactamente esto. Y no saben ni que existe.
+
+Pues eso se tiene que acabar.
+
+Hoy me he recorrido media Valencia. Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... y fijaos todo lo que he ido encontrando.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor... mirad esto. Una trona para bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pero aquí viene lo bueno.
+
+Todo lo que no me quedo, lo subo a Givore. Fijaos qué fácil. Abro la app, le pongo un título... "trona bebé La Raiosa"... hago las fotos, una descripción rápida... y listo. La ubicación se pone sola. Literal, en menos de veinte segundos.
+
+Y ahora cualquier familia cerca puede verlo, contactarme y recogerlo. Eso es reciclaje social. No es comprar ni vender. Es dar y encontrar. Conectar a gente que ni se conoce.
+
+Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro. Después de haberme recorrido seis barrios, encontrado un montón de cosas... y sabiendo que ahora alguien les va a dar una segunda vida.
+
+El día redondo.
+
+Así que ya sabéis... antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Word count: ~298 words ✓
+
+the hook is too weak, there is no rehook, there is no call to action: download the app, even ifg you don't use it frequently it is worth to have it installed because never know when you see something or someone wants to give away something
+13 ene
+
+The user is giving me feedback on the script:
+
+    Hook is too weak - needs to be stronger, more attention-grabbing
+    Missing the RE-HOOK section (at 25-28 seconds according to the structure)
+    Missing a proper CTA about downloading the app - specifically mentioning that even if you don't use it frequently, it's worth having installed because you never know when you'll see something or someone wants to give something away
+
+Let me rewrite the script with these improvements:
+
+    Stronger hook - more pattern-breaking, curiosity-inducing
+    Add the RE-HOOK section after the IMPORTANCE section
+    Add a stronger CTA at the end about downloading the app
+
+Let me restructure following the MANDATORY SEQUENCE:
+
+    [HOOK: 0-3 seconds]
+    [PROOF TEASE: 3-8 seconds]
+    [PROBLEM: 8-20 seconds]
+    [IMPORTANCE: 20-25 seconds]
+    [RE HOOK: 25-28 seconds]
+    [SOLUTION: 28-45 seconds]
+    [PAYOFF: 45-60 seconds] - but this is 2 min so adjust
+    [CLOSING + CTA: Last 5-10 seconds]
+
+For a 2-minute video, I need to scale these sections appropriately.
+
+Let me rewrite with a much stronger hook and include all required elements.
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED
+
+Esto estaba en la basura. ¡En la basura! Una trona de bebé... casi nueva.
+
+Y no es lo único. Mirad todo lo que me he encontrado hoy. Muebles, estanterías, de todo... y solo he dado una vuelta en bici.
+
+Es que me parece flipante. Cada día, en cada barrio de Valencia, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas que alguien necesita... acabando en la basura.
+
+¿Y sabéis qué es lo peor? Que hay familias ahí fuera... gente que acaba de mudarse, estudiantes, padres primerizos... buscando exactamente esto. Y mientras tanto, todo esto acaba en el vertedero. Es absurdo.
+
+Pues fijaos lo fácil que es cambiar esto.
+
+Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge. Así de simple.
+
+Hoy me he recorrido media Valencia. Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... y fijaos todo lo que he ido pillando.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y la trona que os enseñé al principio... ¿os acordáis? Pues miradla. Lista para que una familia la aproveche.
+
+Fijaos qué fácil es subirlo. Abro Givore, pongo "trona bebé La Raiosa", hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+Y ahora cualquier familia cerca puede verlo y recogerlo. Eso es conectar a gente que ni se conoce.
+
+Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro. Seis barrios, un montón de hallazgos... y sabiendo que todo esto va a tener una segunda vida.
+
+El día redondo.
+
+Así que ya sabéis... descargaos Givore. Aunque no la uséis todos los días, tenedla instalada. Porque nunca sabes cuándo vas a encontrar algo en la calle... o cuándo vas a querer dar algo que ya no necesitas.
+
+Word count: ~298 words ✓
+
+Cambios realizados:
+
+    Hook más fuerte: Empiezo directamente con el objeto más impactante (trona de bebé) + indignación
+    Re-hook añadido: "Pues fijaos lo fácil que es cambiar esto" - recaptura atención antes de introducir la solución
+    CTA explícito: Descarga + razón práctica (tenerla instalada por si acaso)
+
+We don't want to reveal what was found at the begging of the video
+13 ene
+
+The user wants me to revise the script so that we don't reveal the specific items found at the beginning. This creates a better curiosity gap - we tease that amazing things were found but don't show what until later in the video. This is actually better for viral potential because it keeps people watching to see the reveal.
+
+Let me rewrite with:
+
+    A strong hook that creates curiosity without revealing specific items
+    Build anticipation
+    Reveal the items later as the payoff
+    Keep the re-hook
+    Keep the strong CTA about downloading the app
+
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v2
+
+Seis barrios de Valencia. Una bici. Y no os voy a decir todavía lo que me he encontrado... pero flipante.
+
+Todo tirado en la calle. ¡En la calle! Y lo mejor viene al final, prometido.
+
+Es que me parece absurdo. Cada día, en cada barrio de Valencia, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas que alguien necesita... acabando en la basura.
+
+¿Y sabéis qué es lo peor? Que hay familias ahí fuera... gente que acaba de mudarse, estudiantes, padres primerizos... buscando exactamente esto. Y mientras tanto, todo acaba en el vertedero.
+
+Pues fijaos lo fácil que es cambiar esto.
+
+Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge. Así de simple.
+
+Hoy me he recorrido media Valencia. Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... y ahora sí, mirad todo lo que he ido pillando.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pues ahora, con Givore, esa pena se convierte en acción. Abro la app, pongo "trona bebé La Raiosa", hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos. Y ahora cualquier familia cerca puede verlo y recogerlo.
+
+Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro. Seis barrios, un montón de hallazgos... y todo esto va a tener una segunda vida.
+
+El día redondo.
+
+Así que ya sabéis... descargaos Givore. Aunque no la uséis todos los días, tenedla instalada. Porque nunca sabes cuándo vas a encontrar algo en la calle... o cuándo vas a querer dar algo que ya no necesitas.
+
+Word count: ~298 words ✓
+
+Cambios realizados:
+
+    Hook misterioso: "No os voy a decir todavía..." - crea curiosidad sin revelar
+    Promesa de payoff: "Lo mejor viene al final, prometido" - engancha para que sigan viendo
+    Reveal dramático: "¿Preparados?" antes de mostrar la trona
+    Re-hook mantenido: "Pues fijaos lo fácil que es cambiar esto"
+    CTA fuerte mantenido: Descarga + razón práctica
+
+try another hook, suggest yourself examples from instructions, keep the structure from instructions + CTA
+13 ene
+
+The user wants me to:
+
+    Try a different hook - suggest examples from the instructions
+    Keep the structure from instructions (HOOK, PROOF TEASE, PROBLEM, IMPORTANCE, RE-HOOK, SOLUTION, PAYOFF, CLOSING + CTA)
+    Keep the CTA about downloading the app
+
+Let me look at the hook templates from the instructions:
+
+Curiosity Hooks:
+
+    "¿Sabéis qué? [Bold claim]... y la mayoría de la gente pasa de largo."
+    "Nadie me va a creer lo que acabo de encontrar..."
+    "¿Por qué la gente tira cosas así de buenas?"
+
+Proof-First Hooks:
+
+    "Todo esto me lo encontré en la calle. ¡En la calle!"
+    "Esto estaba tirado en [location]. Mirad, mirad esto."
+    "[Item] perfectamente bien... tirado junto a la basura."
+
+Bold Statement Hooks:
+
+    "[City/Neighborhood] está LLENA de tesoros."
+    "Lo que para ti es basura, para otro es exactamente lo que necesita."
+    "Esto no es basura, ¡es un tesoro esperando a que lo encuentres!"
+
+Direct Address Hooks:
+
+    "Si vivís en Valencia, tenéis que ver esto."
+    "Esto es para todos los que odian el desperdicio."
+
+Since we don't want to reveal what was found, I should avoid proof-first hooks that show items directly. Good options:
+
+    "Nadie me va a creer lo que acabo de encontrar..."
+    "¿Por qué la gente tira cosas así de buenas?"
+    "Valencia está LLENA de tesoros."
+    "Si vivís en Valencia, tenéis que ver esto."
+
+Let me suggest a few options and then write a full script with the proper structure:
+
+[HOOK: 0-3 seconds]
+[PROOF TEASE: 3-8 seconds]
+[PROBLEM: 8-20 seconds]
+[IMPORTANCE: 20-25 seconds]
+[RE HOOK: 25-28 seconds]
+[SOLUTION: 28-45 seconds]
+[PAYOFF: 45-60 seconds] - but this is 2 min so adjust
+[CLOSING + CTA: Last 5-10 seconds]
+
+Now I'll structure the full script following these timing segments.
+Hook Options
+
+Based on instructions, here are the best options that don't reveal finds:
+
+    Curiosity: "Nadie me va a creer lo que acabo de encontrar..."
+    Bold Statement: "Valencia está LLENA de tesoros... y la gente pasa de largo sin verlos."
+    Direct Address: "Si vivís en Valencia, tenéis que ver esto."
+    Question: "¿Por qué la gente tira cosas así de buenas?"
+
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v3
+
+[HOOK: 0-3s] Si vivís en Valencia... tenéis que ver esto.
+
+[PROOF TEASE: 3-8s] Seis barrios. Una bici. Y no os voy a enseñar todavía lo que he encontrado... pero os prometo que al final vais a flipar.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas útiles... acabando en la basura. Y nadie hace nada.
+
+[IMPORTANCE: 20-25s] ¿Y sabéis qué es lo peor? Que hay familias ahí fuera... estudiantes, gente que acaba de mudarse, padres primerizos... buscando exactamente esto. Y no saben ni que existe.
+
+[RE-HOOK: 25-28s] Pues eso se tiene que acabar. Y os voy a enseñar cómo.
+
+[SOLUTION: 28-45s] Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge. Así de simple.
+
+Fijaos qué fácil. Abro la app, pongo el título, hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos. Y ahora cualquier persona cerca puede verlo y recogerlo.
+
+[PAYOFF: 45s-1:50] Hoy me he recorrido media Valencia. Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... y ahora sí. Mirad todo lo que he ido pillando.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva,
+
+tío! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura... cuando hay una familia que la necesita.
+
+Pues ahora todo esto va a tener una segunda vida.
+
+[CLOSING + CTA: 1:50-2:00] Y bueno... mirad dónde he acabado. La Plaza de Toros. El día redondo.
+
+Descargaos Givore. Aunque no la uséis todos los días... tenedla instalada. Porque nunca sabes cuándo vas a encontrar algo en la calle, o cuándo vas a querer dar algo que ya no necesitas.
+
+Word count: ~295 words ✓
+
+¿Quieres que pruebe con otro hook de la lista?
+
+use some variation of the bold hook, cta should be integrated somthwere in the 30th s
+13 ene
+
+The user wants:
+
+    A variation of the bold statement hook (like "Valencia está LLENA de tesoros")
+    CTA integrated around the 30 second mark, not at the end
+
+Let me restructure according to the instructions:
+
+[HOOK: 0-3 seconds]
+[PROOF TEASE: 3-8 seconds]
+[PROBLEM: 8-20 seconds]
+[IMPORTANCE: 20-25]
+[RE HOOK: 25-28]
+[SOLUTION: 28-45 seconds] - CTA should be here now
+[PAYOFF: 45-60 seconds]
+[CLOSING + CTA: Last 5-10 seconds] - But the main CTA should be earlier
+
+So the structure for 2 min would be extended, but CTA around 30s means it should come in the solution section or right after re-hook.
+
+Let me write this properly with the bold hook variation and early CTA integration.
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v4
+
+[HOOK: 0-3s] Valencia está LLENA de tesoros... y la mayoría de la gente pasa de largo sin verlos.
+
+[PROOF TEASE: 3-8s] Hoy me he recorrido seis barrios en bici. Y no os voy a enseñar todavía lo que he encontrado... pero al final vais a flipar.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas útiles... acabando en la basura. Y nadie hace nada.
+
+[IMPORTANCE: 20-25s] ¿Y sabéis qué es lo peor? Que hay familias ahí fuera... estudiantes, padres primerizos... buscando exactamente esto. Y no saben ni dónde encontrarlo.
+
+[RE-HOOK: 25-28s] Pues eso se tiene que acabar. Y os voy a enseñar cómo.
+
+[SOLUTION + CTA: 28-45s] Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge.
+
+Descargáosla. En serio. Aunque no la uséis todos los días... tenedla instalada. Porque nunca sabes cuándo vas a encontrar algo en la calle, o cuándo vas a querer dar algo que ya no necesitas.
+
+Fijaos qué fácil. Abro la app, pongo el título, hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+[PAYOFF: 45s-1:50] Y ahora sí. Mirad todo lo que he pillado hoy.
+
+Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... barrio por barrio.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pues ahora todo esto va a tener una segunda vida. Alguien cerca lo va a ver, lo va a recoger... y listo.
+
+[CLOSING: 1:50-2:00] Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro.
+
+Seis barrios, un montón de tesoros... y el día redondo.
+
+Word count: ~290 words ✓
+
+Cambios:
+
+    Bold hook: "Valencia está LLENA de tesoros..."
+    CTA integrado en segundo 30: Justo después del re-hook, antes del demo de la app
+    Closing más limpio: Sin repetir CTA, termina con satisfacción
+
+I don't like this sentence: "Y no os voy a enseñar todavía lo que he encontrado" build anticipation in some other way "Descargáosla" is too direct and strong,
+13 ene
+
+The user wants me to:
+
+    Remove "Y no os voy a enseñar todavía lo que he encontrado" - find another way to build anticipation
+    Make "Descargáosla" softer/less direct
+
+Let me think of alternatives:
+
+For anticipation building without explicitly saying "I won't show you yet":
+
+    "Seis barrios en bici... y lo que he encontrado no os lo vais a creer."
+    "Hoy me he recorrido seis barrios en bici... y ha merecido la pena."
+    "Seis barrios. Una bici. Y cada vez mejor."
+    "Quedaos hasta el final... que lo mejor está por venir."
+    "Hoy me he recorrido seis barrios en bici. Quedaos hasta el final."
+
+For softer CTA instead of "Descargáosla":
+
+    "Si no la conocéis, buscad Givore."
+    "Yo tengo Givore siempre instalada."
+    "Merece la pena tener Givore en el móvil."
+    "Tener Givore instalada... aunque no la uses todos los días, nunca sabes cuándo la vas a necesitar."
+    "Por eso siempre llevo Givore en el móvil."
+
+Let me rewrite the script with these changes.
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v5
+
+[HOOK: 0-3s] Valencia está LLENA de tesoros... y la mayoría de la gente pasa de largo sin verlos.
+
+[PROOF TEASE: 3-8s] Hoy me he recorrido seis barrios en bici. Quedaos hasta el final... que lo mejor está por venir.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas útiles... acabando en la basura. Y nadie hace nada.
+
+[IMPORTANCE: 20-25s] ¿Y sabéis qué es lo peor? Que hay familias ahí fuera... estudiantes, padres primerizos... buscando exactamente esto. Y no saben ni dónde encontrarlo.
+
+[RE-HOOK: 25-28s] Pues eso se tiene que acabar. Y os voy a enseñar cómo.
+
+[SOLUTION + CTA: 28-45s] Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge.
+
+Yo siempre la llevo instalada. Aunque no la use todos los días... nunca sabes cuándo vas a encontrar algo en la calle, o cuándo vas a querer dar algo que ya no necesitas.
+
+Fijaos qué fácil. Abro la app, pongo el título, hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+[PAYOFF: 45s-1:50] Y ahora sí. Mirad todo lo que he pillado hoy.
+
+Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... barrio por barrio.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pues ahora todo esto va a tener una segunda vida. Alguien cerca lo va a ver, lo va a recoger... y listo.
+
+[CLOSING: 1:50-2:00] Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro.
+
+Seis barrios, un montón de tesoros... y el día redondo.
+
+Word count: ~288 words ✓
+
+Cambios:
+
+    Anticipación diferente: "Quedaos hasta el final... que lo mejor está por venir" - invita sin decir explícitamente que ocultas algo
+    CTA más suave: "Yo siempre la llevo instalada" - es personal, no una orden
+
+¿Mejor así?
+
+"Y nadie hace nada." is too strong, importance part is good but try to say it in a more postive way
+13 ene
+
+The user wants me to:
+
+    Soften "Y nadie hace nada" - it's too accusatory/negative
+    Keep the importance part but frame it more positively
+
+Let me think about alternatives for "Y nadie hace nada":
+
+    "Y muchas veces no sabemos qué hacer con ello"
+    "Y a veces no sabemos cómo darle otra oportunidad"
+    "Y no siempre sabemos cómo salvarlo"
+    "Y se queda ahí... esperando"
+    "Y ahí se queda"
+    Remove it entirely and transition differently
+
+For the importance part, I need to keep the message but make it more positive/hopeful rather than focusing on the negative ("lo peor"):
+
+    Instead of "¿Y sabéis qué es lo peor?" maybe "¿Y sabéis qué pasa?"
+    Or "Y mientras tanto..."
+    Or "La cosa es que..."
+    Or focus on the opportunity rather than the problem
+
+Let me revise:
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v6
+
+[HOOK: 0-3s] Valencia está LLENA de tesoros... y la mayoría de la gente pasa de largo sin verlos.
+
+[PROOF TEASE: 3-8s] Hoy me he recorrido seis barrios en bici. Quedaos hasta el final... que lo mejor está por venir.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas útiles... acabando en la basura. Y ahí se quedan... esperando.
+
+[IMPORTANCE: 20-25s] Y mientras tanto, hay familias ahí fuera... estudiantes, padres primerizos... que estarían encantados de darles una segunda vida. Solo falta conectarlos.
+
+[RE-HOOK: 25-28s] Pues eso es justo lo que podemos cambiar. Y os voy a enseñar cómo.
+
+[SOLUTION + CTA: 28-45s] Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge.
+
+Yo siempre la llevo instalada. Aunque no la use todos los días... nunca sabes cuándo vas a encontrar algo en la calle, o cuándo vas a querer dar algo que ya no necesitas.
+
+Fijaos qué fácil. Abro la app, pongo el título, hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+[PAYOFF: 45s-1:50] Y ahora sí. Mirad todo lo que he pillado hoy.
+
+Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... barrio por barrio.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pues ahora todo esto va a tener una segunda vida. Alguien cerca lo va a ver, lo va a recoger... y listo.
+
+[CLOSING: 1:50-2:00] Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro.
+
+Seis barrios, un montón de tesoros... y el día redondo.
+
+Word count: ~290 words ✓
+
+Cambios:
+
+    Problema más suave: "Y ahí se quedan... esperando" - no culpa a nadie, solo describe la situación
+    Importance positivo: "estarían encantados de darles una segunda vida. Solo falta conectarlos" - enfoca en la oportunidad, no en el problema
+    Re-hook positivo: "es justo lo que podemos cambiar" - empodera en vez de criticar
+
+¿Qué te parece?
+
+o cuándo vas a querer dar algo que ya no necesitas.  insted say that users might receive notification with something they need that somnethoe found or want to giveaway
+13 ene
+
+The user wants to change the CTA part about "when you want to give something away" to instead mention that users might receive notifications when someone finds or wants to give away something they need. This is a better angle because it shows the benefit of having the app installed from the receiver's perspective, not just the giver's.
+Givore Script - Valencia Neighborhoods Ride (2 min) - REVISED v7
+
+[HOOK: 0-3s] Valencia está LLENA de tesoros... y la mayoría de la gente pasa de largo sin verlos.
+
+[PROOF TEASE: 3-8s] Hoy me he recorrido seis barrios en bici. Quedaos hasta el final... que lo mejor está por venir.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día, en cada barrio, la gente tira cosas que están perfectamente bien. Muebles que funcionan. Cosas útiles... acabando en la basura. Y ahí se quedan... esperando.
+
+[IMPORTANCE: 20-25s] Y mientras tanto, hay familias ahí fuera... estudiantes, padres primerizos... que estarían encantados de darles una segunda vida. Solo falta conectarlos.
+
+[RE-HOOK: 25-28s] Pues eso es justo lo que podemos cambiar. Y os voy a enseñar cómo.
+
+[SOLUTION + CTA: 28-45s] Por eso yo uso Givore. Reciclaje social. Tú encuentras algo, lo subes. Alguien lo necesita, lo recoge.
+
+Yo siempre la llevo instalada. Aunque no la use todos los días... nunca sabes cuándo vas a encontrar algo en la calle, o cuándo te va a saltar una notificación con justo lo que necesitas porque alguien cerca lo quiere dar.
+
+Fijaos qué fácil. Abro la app, pongo el título, hago las fotos... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+[PAYOFF: 45s-1:50] Y ahora sí. Mirad todo lo que he pillado hoy.
+
+Gran Vía, La Raiosa, Patraix, Arrancapins, La Roqueta... barrio por barrio.
+
+Este mueble negro para la tele... tirado. Estanterías en perfecto estado... tiradas. Y lo mejor de todo... ¿preparados? Una trona de bebé. Casi nueva. ¡Casi nueva! Te da pena, ¿sabes? Pensar que esto iba a acabar en la basura.
+
+Pues ahora todo esto va a tener una segunda vida. Alguien cerca lo va a ver, lo va a recoger... y listo.
+
+[CLOSING: 1:50-2:00] Y bueno... mirad dónde he acabado. La Plaza de Toros. En pleno centro.
+
+Seis barrios, un montón de tesoros... y el día redondo.
+
+Word count: ~292 words ✓
+
+Cambio:
+
+    CTA con beneficio receptor: "cuándo te va a saltar una notificación con justo lo que necesitas porque alguien cerca lo quiere dar" - muestra el valor de tenerla instalada desde el lado de recibir, no solo dar
+
+¿Mejor?

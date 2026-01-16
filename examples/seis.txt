@@ -1,0 +1,229 @@
+    Topic/Theme: while cycling thought Torrefil Valencia, on the street I found a green round table with a set of 6 chairs, all in a very good shape. How to use givore app to post furniture, to give them the second life
+    Specific Items: green round table with a set of 6 chairs, all in a very good shape
+    Video Content Description: first 10 seconds cuts from the video, then about 20s cycling, then items found, short on the mobile app on how I post them using Givore app, then cycling
+    Ending Location (optional): cycling in the sun thoguht the bicycle lines in valencia
+
+9 ene
+
+The user wants me to create a viral TikTok script for Givore based on their specific find in Torrefiel, Valencia. Let me analyze what they've provided:
+
+    Topic/Theme: Cycling through Torrefiel Valencia, found furniture on the street, showing how to use Givore app
+    Specific Items: Green round table with 6 chairs - all in very good shape
+    Video Content:
+        First 10 seconds: cuts from the video
+        About 20s: cycling
+        Then: items found
+        Short mobile app demo showing how to post on Givore
+        Then: cycling
+    Ending Location: Cycling in the sun through bicycle lanes in Valencia
+
+This is a great find! A complete dining set (table + 6 chairs) is impressive. Let me calculate the timing:
+
+Based on the video description, this seems like a 45-60 second video that includes:
+
+    Hook with quick cuts
+    Cycling footage
+    The find reveal
+    App demo
+    Closing with cycling
+
+Let me structure this according to the mandatory sequence:
+
+    HOOK: 0-3 seconds
+    PROOF TEASE: 3-8 seconds
+    PROBLEM: 8-20 seconds
+    IMPORTANCE: 20-25 seconds
+    RE HOOK: 25-28 seconds
+    SOLUTION: 28-45 seconds
+    PAYOFF: 45-60 seconds
+    CLOSING + CTA: Last 5-10 seconds
+
+I'll write a script optimized for ElevenLabs TTS, around 140-160 words for 60 seconds.
+
+Key emotional triggers to use:
+
+    Discovery excitement: "¡Flipante!", "¡Brutal!"
+    Outrage at waste: "Es absurdo"
+    Satisfaction: "El día redondo"
+
+Hook options - I'll use a proof-first hook since they have an impressive find:
+
+    "Una mesa redonda verde con SEIS sillas... tiradas en la calle."
+    Or curiosity: "¿Sabéis qué? Torrefiel está llena de tesoros..."
+
+Now I'll craft the full script, ensuring it starts strong without greeting, keeps the hook under 15 words, highlights the specific furniture pieces, weaves in emotional language naturally, introduces the app seamlessly, and ends with a soft call-to-action that feels organic to the narrative.
+Givore Script - Mesa y Sillas en Torrefiel (60 segundos)
+
+Una mesa redonda verde con seis sillas... ¡tiradas en la calle!
+
+Y mirad, mirad esto. Están perfectamente bien. ¡Las seis!
+
+Es que me parece absurdo. La gente tira muebles que podrían durar años... cuando hay familias ahí fuera que los necesitan.
+
+Y eso no solo es desperdicio. Es desconexión. Gente que tiene cosas y gente que las busca... sin manera de encontrarse.
+
+Pero aquí viene lo bueno.
+
+Por eso uso Givore.
+
+Fijaos qué fácil. Abro la app, pongo "mesa redonda verde con seis sillas"... hago un par de fotos, una descripción rápida... y listo. La ubicación se pone sola. En menos de veinte segundos, cualquiera cerca puede verlas y recogerlas.
+
+Eso es reciclaje social. Dar y encontrar.
+
+Y aquí estoy... pedaleando por los carriles bici de Valencia, con el sol en la cara, después de hacer algo bueno por el planeta.
+
+El día redondo.
+
+Antes de tirar... pensad si alguien más lo puede aprovechar.
+
+Word count: ~158 palabras | Duration: ~60 segundos
+
+I'm not sure if reveling the item is a good hook
+9 ene
+
+The user is questioning whether revealing the item (the green round table with 6 chairs) in the hook is effective. They have a point - according to the project instructions, a good hook should contain a "curiosity gap" (incomplete information) to keep viewers watching.
+
+Let me think about this:
+
+    The current hook: "Una mesa redonda verde con seis sillas... ¡tiradas en la calle!" - This reveals exactly what was found immediately.
+    The issue: If you reveal everything in the first 3 seconds, there's less reason to keep watching. The curiosity gap is gone.
+    Better approach: Tease the find without fully revealing it, create mystery, then reveal later (in the PROOF TEASE or PAYOFF section).
+
+Some alternative hook approaches from the instructions:
+
+    "Nadie me va a creer lo que acabo de encontrar..."
+    "¿Por qué la gente tira cosas así de buenas?"
+    "[City/Neighborhood] está LLENA de tesoros."
+
+I should suggest revised hooks that create more curiosity while still being compelling. The reveal could come at the 3-8 second mark (PROOF TEASE) or even later.
+
+Let me offer the user some alternative hook options.
+
+Tienes toda la razón. Revelar el hallazgo completo en el hook elimina el curiosity gap - si ya saben qué encontraste, ¿para qué seguir viendo?
+
+Aquí tienes algunas alternativas que mantienen el misterio:
+
+Opción 1 - Curiosidad pura:
+
+    "Nadie me va a creer lo que acabo de encontrar en Torrefiel..."
+
+Opción 2 - Cantidad como gancho:
+
+    "Seis. He encontrado seis... tiradas en la calle. Y mirad en qué estado."
+
+Opción 3 - Reacción emocional:
+
+    "¿Por qué la gente tira cosas así de buenas? En serio, ¿por qué?"
+
+Opción 4 - Declaración bold:
+
+    "Torrefiel está lleno de tesoros... y la gente pasa de largo sin verlos."
+
+Opción 5 - Prueba sin revelar:
+
+    "Todo esto me lo he encontrado en la calle. ¡En la calle! Y está perfecto."
+
+La revelación completa (mesa verde + 6 sillas) vendría en el PROOF TEASE (segundos 3-8), cuando ya tienes su atención.
+
+¿Cuál te encaja más con el tono que buscas? Puedo reescribir el script con el hook que elijas.
+
+option 2
+9 ene
+
+The user wants me to rewrite the script using Option 2 as the hook: "Seis. He encontrado seis... tiradas en la calle. Y mirad en qué estado."
+
+This creates curiosity because:
+
+    "Seis" alone doesn't reveal what
+    "tiradas en la calle" adds intrigue
+    "Y mirad en qué estado" creates anticipation about the condition
+
+The reveal of what "seis" means (sillas) comes in the proof tease section.
+
+Let me rewrite the full script with this new hook structure.
+Givore Script - Mesa y Sillas en Torrefiel (60 segundos)
+
+Seis. He encontrado seis... tiradas en la calle. Y mirad en qué estado.
+
+Seis sillas. Con su mesa redonda verde. ¡Perfectas!
+
+Es que me parece absurdo. La gente tira muebles que podrían durar años... cuando hay familias ahí fuera que los necesitan.
+
+Y eso no solo es desperdicio. Es desconexión. Gente que tiene cosas y gente que las busca... sin manera de encontrarse.
+
+Pero aquí viene lo bueno.
+
+Por eso uso Givore.
+
+Fijaos qué fácil. Abro la app, pongo "mesa redonda verde con seis sillas"... hago un par de fotos, una descripción rápida... y listo. La ubicación se pone sola. En menos de veinte segundos, cualquiera cerca puede verlas y recogerlas.
+
+Eso es reciclaje social. Dar y encontrar.
+
+Y aquí estoy... pedaleando por los carriles bici de Valencia, con el sol en la cara, después de hacer algo bueno por el planeta.
+
+El día redondo.
+
+Antes de tirar... pensad si alguien más lo puede aprovechar.
+
+Word count: ~155 palabras | Duration: ~60 segundos
+
+¿Qué te parece? El "Seis" solo al principio crea ese momento de "¿seis qué?" que engancha.
+
+how does it follow the mandatory structure? The revel is in the second sentece!
+9 ene
+
+The user is right. Let me review the mandatory structure:
+
+[HOOK: 0-3 seconds] - Capture attention, create curiosity gap
+[PROOF TEASE: 3-8 seconds] - Show what's coming, build anticipation
+[PROBLEM: 8-20 seconds] - Emotional connection to waste issue
+[IMPORTANCE: 20-25] - Mention the importance of the case for the viewer: society as a whole, single person, family, organiztion, country, world, etc.
+[RE HOOK: 25-28] - Capture attention based on the problem and importance without repeating the same hook as at the begging
+[SOLUTION: 28-45 seconds] - Introduce Givore naturally as response to problem
+[PAYOFF: 45-60 seconds] - Deliver on hook promise, show results
+[CLOSING + CTA: Last 5-10 seconds] - Beautiful ending, memorable line
+
+In my script:
+
+    HOOK: "Seis. He encontrado seis... tiradas en la calle. Y mirad en qué estado." - This is good, creates curiosity
+    But then I immediately reveal: "Seis sillas. Con su mesa redonda verde. ¡Perfectas!" - This is the FULL reveal, which should come in the PAYOFF section!
+
+The PROOF TEASE should tease/build anticipation but NOT fully reveal. The full reveal should be saved for the PAYOFF section (45-60 seconds).
+
+Let me restructure properly:
+
+[HOOK: 0-3 seconds] - "Seis. He encontrado seis... tiradas en la calle. Y mirad en qué estado."
+
+[PROOF TEASE: 3-8 seconds] - Should show what's coming WITHOUT full reveal. Maybe show cycling, hint at finding something big, but don't say "sillas y mesa"
+
+[PROBLEM: 8-20 seconds] - Emotional connection to waste issue
+
+[IMPORTANCE: 20-25 seconds] - Establish why this resonates with the audience, whether personally or on a broader scale
+[RE HOOK: 25-28 seconds] - Shift focus back to the viewer's attention using the problem and importance as leverage
+[SOLUTION: 28-45 seconds] - Bring in Givore as the answer to what was established
+[PAYOFF: 45-60 seconds] - Finally reveal the complete discovery (the green table and six chairs together)
+[CLOSING + CTA: Last 5-10 seconds] - End with something that sticks, a call to action that feels natural
+
+Tienes toda la razón, me lo he saltado completamente. La revelación completa (mesa + sillas) debería estar en el PAYOFF (segundos 45-60), no al principio.
+
+Déjame reescribirlo siguiendo la estructura correcta:
+
+[HOOK: 0-3s] Seis. He encontrado seis... tiradas en la calle.
+
+[PROOF TEASE: 3-8s] Y cuando veáis en qué estado están... vais a flipar.
+
+[PROBLEM: 8-20s] Es que me parece absurdo. Cada día la gente tira muebles que podrían durar años... cuando hay familias ahí fuera que los necesitan. Te da pena, ¿sabes?
+
+[IMPORTANCE: 20-25s] Y esto no es solo desperdicio. Es desconexión. Vecinos que tienen cosas y vecinos que las buscan... sin manera de encontrarse.
+
+[RE-HOOK: 25-28s] Pero... ¿y si hubiera una forma de conectarlos?
+
+[SOLUTION: 28-45s] Por eso uso Givore. Fijaos qué fácil. Abro la app, pongo un título, hago un par de fotos, una descripción rápida... y listo. La ubicación se pone sola. En menos de veinte segundos.
+
+[PAYOFF: 45-55s] Y aquí está el hallazgo de hoy. Una mesa redonda verde... con seis sillas a juego. ¡Perfectas! Y ahora cualquiera cerca puede recogerlas.
+
+[CLOSING + CTA: 55-60s] Pedaleando por Valencia, sol en la cara, después de hacer algo bueno. El día redondo. Antes de tirar... pensad si alguien más lo puede aprovechar.
+
+Word count: ~165 palabras | Duration: ~60 segundos
+
+¿Mejor así?

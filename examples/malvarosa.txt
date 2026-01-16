@@ -1,0 +1,332 @@
+    Topic/Theme: found on the street: el tender una silla, un vijo refrijerador en cabanal valencia
+    Specific Items: tender very good shape, silla de madera, viejo refrijerador (just a la playa)
+    Video Content Description: fast custs contais a recap of the whole video 3s, then custs from cycling 2-5s on average 3s each, then from 9s to 14s submiting la silla - screen recording from the mobile app while submiting the post, then coming back to cycling, then 47s screen recording el tender
+    Ending Location (optional): Malvarosa playa Valencia total lenght: 60s
+
+12 ene
+
+The user wants me to create a TikTok script for Givore based on their specific inputs:
+
+    Topic/Theme: Street finds in Cabanyal, Valencia
+    Items found:
+        Tendedero (drying rack) - very good shape
+        Silla de madera (wooden chair)
+        Viejo refrigerador (old refrigerator) - near the beach
+    Video structure:
+        0-3s: Fast cuts recap of whole video
+        3-9s: Cycling cuts (2-5s each, avg 3s)
+        9-14s: Screen recording submitting "la silla" on Givore app
+        14-47s: More cycling
+        47-?s: Screen recording submitting "el tender"
+        Ending: Malvarrosa beach, Valencia
+    Total length: 60 seconds
+
+Let me create a script following all the guidelines:
+
+    60 seconds = 140-160 words
+    Hook under 15 words, starts immediately
+    Specific items mentioned
+    2-3 emotion triggers
+    Natural app mention
+    Subtle CTA
+    Spanish (Spain) language
+
+I need to structure it according to:
+
+    HOOK: 0-3 seconds
+    PROOF TEASE: 3-8 seconds
+    PROBLEM: 8-20 seconds
+    IMPORTANCE: 20-25 seconds
+    RE HOOK: 25-28 seconds
+    SOLUTION: 28-45 seconds
+    PAYOFF: 45-60 seconds
+    CLOSING + CTA: Last 5-10 seconds
+
+Let me also sync with the video structure they described:
+
+    0-3s: Fast cuts recap → HOOK
+    3-9s: Cycling → PROOF TEASE + PROBLEM start
+    9-14s: Screen recording silla submission → Part of SOLUTION
+    14-47s: Cycling → Continue with IMPORTANCE, RE HOOK, more SOLUTION
+    47-?s: Screen recording tender → PAYOFF
+    End at Malvarrosa → CLOSING + CTA
+
+The early app submission at 9-14s actually works well—it shows the solution quickly while maintaining engagement, then I can build on the emotional payoff with the second item submission later. This pacing keeps viewers interested by showing results early while building toward a stronger finish with the tendedero reveal. show satisfaction and wrap up the narrative. The closing at Malvarrosa beach provides a natural ending point with a final call-to-action.
+
+I'm aiming for roughly 150 words across the full 60 seconds. I should also correct the terminology—"tendedero" is the proper term for a drying rack, and in Spain "frigorífico" or "nevera" would be more natural than "refrigerador." Now I'll structure the script to flow naturally through both app demonstrations while maintaining momentum through the cycling sequences.
+
+Aquí tienes el guion optimizado para 60 segundos:
+
+Tres cosas en una mañana... ¡y todo tirado en el Cabanyal!
+
+Mirad, mirad esto.
+
+Un tendedero nuevo, una silla de madera... y hasta un frigo viejo junto a la playa.
+
+Es que me parece flipante. Cosas que funcionan perfectamente... acabando en la basura. Cuando seguro que hay alguien ahí fuera que lo necesita.
+
+Y eso es lo absurdo. Hay gente tirando... y hay gente buscando. Pero no se encuentran.
+
+¿Y si pudiéramos conectarlos?
+
+Por eso uso Givore.
+
+Fijaos qué fácil. Abro, pongo "silla de madera Cabanyal", foto... y listo. La ubicación se pone sola.
+
+Y sigo con mi paseo.
+
+Cada cosa que encuentro... es una oportunidad para alguien.
+
+El tendedero... mira, perfectamente bien. Lo subo en veinte segundos y ya está disponible para quien lo necesite.
+
+Eso es reciclaje social. Dar y encontrar.
+
+Y bueno... mirad dónde he acabado. La Malvarrosa. Después de salvar tres cosas de la basura... el día redondo.
+
+Antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Palabras: ~155 | Duración estimada: 60s
+
+do not revel the item that fast, remember about the structure of the video, build anticipation and strong hook
+12 ene
+
+The user wants me to revise the script to follow the structure better - specifically:
+
+    Not revealing the items so fast
+    Building anticipation
+    Creating a stronger hook with a curiosity gap
+
+Looking at the required structure:
+
+[HOOK: 0-3 seconds] - Capture attention, create curiosity gap
+[PROOF TEASE: 3-8 seconds] - Show what's coming, build anticipation
+[PROBLEM: 8-20 seconds] - Emotional connection to waste issue
+[IMPORTANCE: 20-25] - Mention the importance of the case
+[RE HOOK: 25-28] - Capture attention based on problem/importance
+[SOLUTION: 28-45 seconds] - Introduce Givore naturally
+[PAYOFF: 45-60 seconds] - Deliver on hook promise, show results
+[CLOSING + CTA: Last 5-10 seconds]
+
+The video structure the user provided:
+
+    0-3s: fast cuts recap of whole video (tease)
+    3-9s: cycling cuts (building anticipation)
+    9-14s: submitting la silla - screen recording
+    Then cycling again
+    47s: screen recording el tender
+    Ending: Malvarrosa playa
+
+So I need to:
+
+    Hook that creates curiosity gap - don't reveal the items yet
+    Tease that something amazing was found
+    Build the problem section
+    Show importance
+    Re-hook
+    Solution (Givore introduction with the chair submission around 9-14s)
+    Payoff - reveal the tendedero around 47s as the big reveal
+    Closing at the beach
+
+Let me rewrite with better structure and anticipation:
+
+Tienes razón, aquí está la versión con mejor estructura y anticipación:
+
+Nadie me va a creer lo que me acabo de encontrar en el Cabanyal...
+
+Y no es solo una cosa. Son tres.
+
+Pero antes... dejadme que os cuente.
+
+Cada día, aquí en Valencia, la gente tira cosas que funcionan perfectamente. Muebles, electrodomésticos... cosas que alguien necesita. Y acaban en la basura.
+
+Te da pena, ¿sabes? Porque hay gente tirando... y hay gente buscando. Pero no se encuentran.
+
+¿Y si pudiéramos conectarlos?
+
+Por eso uso Givore.
+
+Mira la primera... una silla de madera. Perfecta. La subo en veinte segundos. Foto, título, ubicación automática... y listo. Ya está disponible para quien la necesite.
+
+Sigo pedaleando... y encuentro la segunda. Un frigo viejo, ahí tirado junto a la playa.
+
+Pero lo mejor viene ahora.
+
+Fijaos en esto... ¡un tendedero nuevo! Nuevo, ¿eh? Tirado en la calle.
+
+Lo subo a Givore... y ahora alguien cerca puede darle una segunda vida.
+
+Tres rescates en una mañana.
+
+Y bueno... mirad dónde he acabado. La Malvarrosa. El día redondo.
+
+Antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Palabras: ~160 | Duración estimada: 60s
+
+use different hook
+12 ene
+
+The user wants me to use a different hook. Let me look at the approved hook templates from the instructions:
+
+Curiosity Hooks:
+
+    "¿Sabéis qué? [Bold claim]... y la mayoría de la gente pasa de largo."
+    "Nadie me va a creer lo que acabo de encontrar..." (already used)
+    "¿Por qué la gente tira cosas así de buenas?"
+
+Proof-First Hooks:
+
+    "Todo esto me lo encontré en la calle. ¡En la calle!"
+    "Esto estaba tirado en [location]. Mirad, mirad esto."
+    "[Item] perfectamente bien... tirado junto a la basura."
+
+Bold Statement Hooks:
+
+    "[City/Neighborhood] está LLENA de tesoros."
+    "Lo que para ti es basura, para otro es exactamente lo que necesita."
+    "Esto no es basura, ¡es un tesoro esperando a que lo encuentres!"
+
+Direct Address Hooks:
+
+    "Si vivís en Valencia, tenéis que ver esto."
+    "Esto es para todos los que odian el desperdicio."
+
+Let me pick a different one and maintain the structure that builds anticipation without revealing items too fast. I'll try a bold statement or direct address hook.
+
+Si vivís en Valencia, tenéis que ver esto.
+
+Esta mañana he salido con la bici por el Cabanyal... y he vuelto con tres tesoros.
+
+Pero esperad, esperad.
+
+Porque el problema es serio. Cada día, aquí en Valencia, la gente tira cosas que funcionan perfectamente. Y acaban en la basura. Mientras hay alguien ahí fuera que las necesita.
+
+Es absurdo, ¿no? Gente tirando por un lado... gente buscando por otro. Y no se encuentran.
+
+¿Y si pudiéramos conectarlos?
+
+Por eso uso Givore.
+
+Primer hallazgo... una silla de madera. Perfecta. Mira qué fácil. Foto, título, ubicación automática... veinte segundos y listo.
+
+Sigo pedaleando... y ahí está el segundo. Un frigo viejo, tirado junto a la playa. Alguien lo puede aprovechar.
+
+Pero lo mejor viene ahora.
+
+Fijaos... ¡un tendedero prácticamente nuevo! ¿Quién tira esto?
+
+Lo subo a Givore... y ya está disponible para quien lo necesite.
+
+Tres rescates. Una mañana.
+
+Y bueno... mirad dónde he acabado. La Malvarrosa. Después de salvar tres cosas de la basura... el día redondo.
+
+Antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Palabras: ~165 | Duración estimada: 60s
+
+do not mention frigo, focus more on re hook and importance
+12 ene
+
+The user wants me to:
+
+    Remove the fridge (frigo) from the script
+    Focus more on the RE-HOOK section (25-28 seconds)
+    Focus more on the IMPORTANCE section (20-25 seconds)
+
+Let me look at the structure again:
+
+    [HOOK: 0-3 seconds] - Capture attention, create curiosity gap
+    [PROOF TEASE: 3-8 seconds] - Show what's coming, build anticipation
+    [PROBLEM: 8-20 seconds] - Emotional connection to waste issue
+    [IMPORTANCE: 20-25] - Mention the importance of the case for the viewer: society as a whole, single person, family, organization, country, world, etc.
+    [RE HOOK: 25-28] - Capture attention based on the problem and importance without repeating the same hook as at the beginning
+    [SOLUTION: 28-45 seconds] - Introduce Givore naturally as response to problem
+    [PAYOFF: 45-60 seconds] - Deliver on hook promise, show results
+    [CLOSING + CTA: Last 5-10 seconds] - Beautiful ending, memorable line
+
+So I need to:
+
+    Focus on just the tender and silla (no frigo)
+    Make the IMPORTANCE section stronger - about why this matters to the viewer, society, community
+    Make the RE-HOOK stronger - a new hook that connects to the problem/importance
+
+Let me rewrite:
+
+Si vivís en Valencia, tenéis que ver esto.
+
+Esta mañana he salido con la bici por el Cabanyal... y he vuelto con dos tesoros.
+
+Pero esperad.
+
+Porque el problema es gordo. Cada día, aquí en Valencia, la gente tira cosas que funcionan perfectamente. Y acaban en la basura.
+
+Y esto nos afecta a todos. Más residuos en las calles. Más cosas en el vertedero. Mientras familias cerca de ti necesitan justo lo que otros tiran.
+
+Es absurdo, ¿no?
+
+Pues eso puede cambiar. Hoy. Contigo.
+
+Por eso uso Givore.
+
+Primer hallazgo... una silla de madera. Perfecta. Mira qué fácil. Foto, título, ubicación automática... veinte segundos y listo. Ya disponible para quien la necesite.
+
+Sigo pedaleando...
+
+Y fijaos en esto. ¡Un tendedero prácticamente nuevo! Tirado en la calle. ¿Quién tira esto?
+
+Lo subo a Givore... y en menos de un minuto, alguien del barrio puede darle una segunda vida.
+
+Eso es reciclaje social. Vecinos conectando sin conocerse.
+
+Y bueno... mirad dónde he acabado. La Malvarrosa. Dos rescates, una mañana, un día redondo.
+
+Antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Palabras: ~160 | Duración estimada: 60s
+
+replace this part about families that need something, expect from that all is good
+12 ene
+
+The user wants me to replace the part about "familias cerca de ti necesitan justo lo que otros tiran" with something else. They like the rest of the script. Let me find an alternative for the importance section that doesn't mention families needing things.
+
+I could focus on:
+
+    Environmental impact (planeta, recursos)
+    Community connection
+    The absurdity of waste in general
+    Personal empowerment (tú puedes hacer algo)
+
+Let me rewrite just that part while keeping everything else the same.
+
+Si vivís en Valencia, tenéis que ver esto.
+
+Esta mañana he salido con la bici por el Cabanyal... y he vuelto con dos tesoros.
+
+Pero esperad.
+
+Porque el problema es gordo. Cada día, aquí en Valencia, la gente tira cosas que funcionan perfectamente. Y acaban en la basura.
+
+Y esto nos afecta a todos. Más residuos en las calles. Más cosas en el vertedero. Recursos desperdiciados que costó energía fabricar.
+
+Es absurdo, ¿no?
+
+Pues eso puede cambiar. Hoy. Contigo.
+
+Por eso uso Givore.
+
+Primer hallazgo... una silla de madera. Perfecta. Mira qué fácil. Foto, título, ubicación automática... veinte segundos y listo. Ya disponible para quien la necesite.
+
+Sigo pedaleando...
+
+Y fijaos en esto. ¡Un tendedero prácticamente nuevo! Tirado en la calle. ¿Quién tira esto?
+
+Lo subo a Givore... y en menos de un minuto, alguien del barrio puede darle una segunda vida.
+
+Eso es reciclaje social. Vecinos conectando sin conocerse.
+
+Y bueno... mirad dónde he acabado. La Malvarrosa. Dos rescates, una mañana, un día redondo.
+
+Antes de tirar, pensad si alguien más lo puede aprovechar.
+
+Palabras: ~158 | Duración estimada: 60s

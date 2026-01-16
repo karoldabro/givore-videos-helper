@@ -1,0 +1,27 @@
+Recomienda tu cuenta a contactos: enabled
+Recomienda tu cuenta a contactos de Facebook: enabled
+Recomienda tu cuenta a personas que abren tus enlaces o te los envían: enabled
+Cuenta privada: Disabled
+Anuncios personalizados: <no value>
+Quién puede publicar comentarios: Everyone
+Quién puede reutilizar el contenido: Everyone
+Quién puede enviarme mensajes: Friends
+Quién puede ver los vídeos que me gustan: Myself
+Permitir descargar: Everyone
+Filtrar comentarios: Enabled
+
+Notificación push
+Nuevos fans: Default
+Nuevos me gusta a mi vídeo: Default
+Nuevos comentarios en mi vídeo: Default
+Notificación de escritorio: Default
+
+Idioma
+Idioma de la aplicación: Español
+Idioma del sitio web: N/A
+
+Preferencias de contenido
+Preferencias de idioma de los vídeos: []
+Intereses: 
+Filtros de palabras clave para los vídeos del feed Para ti: []
+Filtros de palabras clave para los vídeos del feed Siguiendo: []

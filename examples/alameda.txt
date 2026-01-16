@@ -1,0 +1,102 @@
+topic of the talk: coming back from the tresure hunt and unexpectedly I found something 
+
+additional info that should be contained in the talk: how easy is to use givore, going from jardin real valencia through paeso alameda
+
+Information about the video content: first cycyling in the jarding real, then going thoguht a cross walk and using bike lines, cycling though the paseo alameda, where at the begging found "secadora", then continue cycling, at the end i thought I was something but it wasn't anything worthy to post on givore
+
+languge: spainish from spain
+
+length: 3 min
+7 ene
+
+The user wants me to create a script for a TikTok/social media short about Givore. Let me analyze the requirements:
+
+Topic: Coming back from a treasure hunt, unexpectedly found something Route: Jardín Real Valencia → Paseo Alameda Find: A "secadora" (dryer) at the beginning of Paseo Alameda Ending: Thought they found something but it wasn't worthy to post Language: Spanish from Spain Length: 3 minutes (180 seconds)
+
+Wait, the instructions say the range is 21-120 seconds. 3 minutes = 180 seconds, which is outside the recommended range. However, the user specifically requested 3 minutes, so I should accommodate this.
+
+For 3 minutes (180 seconds), I need approximately:
+
+    Word count guide says ~150 words/minute
+    So for 3 minutes: approximately 420-450 words
+
+Let me check the required inputs:
+
+    Topic/Theme: ✓ Coming back from treasure hunt, unexpected find
+    Specific Items: ✓ Secadora (dryer)
+    Video Content Description: ✓ Cycling through Jardín Real, crosswalk, bike lines, Paseo Alameda, finding secadora, continuing cycling, false alarm at the end
+    Ending Location: ✓ The end of Paseo Alameda (where they thought they found something but didn't)
+
+The narrative arc is interesting:
+
+    Start: returning from a hunt
+    Middle: unexpectedly find a dryer
+    End: thought found something else but it wasn't worth posting
+
+This creates a nice "plot twist" story format. Let me structure this for 3 minutes:
+
+Structure for 3-min video:
+
+    HOOK: 0-5 seconds
+    PROOF TEASE: 5-15 seconds
+    JOURNEY START: 15-45 seconds (Jardín Real, setting up the return)
+    PROBLEM: 45-70 seconds will explore waste issues and create an emotional connection to the narrative journey
+    UNEXPECTED FIND: The dryer discovery becomes a pivotal moment, highlighting the spontaneous nature of the adventure
+    SOLUTION/APP DEMO: Givore's platform will be showcased as a potential resolution to unexpected waste encounters
+    CONTINUED JOURNEY: Cycling through Paseo Alameda adds movement and context to the story
+    FALSE ALARM ENDING: Creates a humorous twist that keeps the audience engaged
+    CLOSING + CTA: Final moments to drive home the Givore message and prompt viewer action I'll capture the journey's essence with vivid, emotional language. The cyclist's experience unfolds like a mini-adventure, starting from Jardín Real and weaving through urban pathways. A surprising moment emerges when the unexpected "secadora" appears at the Paseo Alameda's beginning, creating narrative tension. The ride continues, building anticipation, only to culminate in a humorous anticlimax - a false alarm that deflates the initial excitement. This storytelling arc transforms a simple bike ride into a relatable, almost comedic slice of urban exploration.
+
+Looking at your request, I have all the required inputs:
+
+    Topic: Returning from treasure hunt, unexpected find
+    Items found: Secadora (dryer)
+    Video content: Cycling Jardín Real → crosswalk → bike lanes → Paseo Alameda (find secadora) → continue → false alarm ending
+    Language: Spanish (Spain)
+    Length: 3 minutes (~420-450 words)
+
+Here's your script:
+
+Oye, ¿sabéis qué? Que hoy volvía para casa pensando que no iba a encontrar nada... y mirad lo que ha pasado.
+
+Estoy aquí en el Jardín Real, con la bici, dando la vuelta después de un paseo largo. Y bueno, hoy no ha sido el día. A veces pasa, ¿no? Sales, das vueltas por el barrio... y nada.
+
+Pero eso es lo bonito de esto. Que nunca sabes cuándo te vas a llevar una sorpresa.
+
+Vamos, que me vuelvo para casa.
+
+Aquí voy, cruzando... por el paso de peatones, tranquilitos. Y ahora tiro por el carril bici, que me encanta esta zona. Paseo de la Alameda, ¿lo conocéis? Es brutal para ir en bici.
+
+Y fijaos... fijaos lo que estoy viendo ahí.
+
+Esperad, esperad. ¿Eso es...? Sí. ¡Una secadora! ¡En la calle!
+
+No me lo puedo creer. Literal, volvía para casa pensando "hoy nada" y... boom. Una secadora ahí tirada.
+
+Y eso es lo que me flipa. En Valencia hay cosas en la calle todos los días. Muebles, electrodomésticos, ropa... cosas que funcionan perfectamente bien. Y la mayoría de la gente pasa de largo sin verlas.
+
+Y te da pena, ¿sabes? Porque esto va a acabar en la basura cuando seguro, seguro, que hay alguien ahí fuera que la necesita.
+
+Y por eso uso Givore.
+
+Que fijaos qué fácil es. Mira, paro aquí un momento, saco el móvil... abro Givore. Le pongo un título, algo tipo "secadora Paseo Alameda". Añado una descripción rápida, que funciona, que está aquí en la calle. Hago las fotos... una, dos, tres, las que quiera. Le doy a publicar... y ya está. La ubicación se pone sola. Literal, en menos de veinte segundos.
+
+Y ahora cualquiera que esté cerca puede verla y recogerla. Eso es reciclaje social. No es comprar ni vender. Es dar y encontrar. Conectar a gente que ni se conoce.
+
+Bueno, sigo para casa que aún me queda un rato.
+
+Me encanta esta zona, ¿eh? El Paseo de la Alameda con los árboles, la gente paseando... Es que Valencia es otra cosa.
+
+Y mira... espera, espera. ¿Eso qué es? Ahí, ahí al lado del banco. ¿Es un... ? Voy a acercarme.
+
+A ver, a ver...
+
+No, nada. No era nada. Bueno, parecía algo pero no. Esto pasa mucho, ¿eh? Que ves algo de lejos y piensas "¡otro tesoro!" y luego te acercas y... pues no. Es lo que hay.
+
+Pero bueno, oye, hoy me llevo la secadora. Y eso ya es más de lo que esperaba.
+
+Y eso es lo bonito de esto. Que sales sin esperar nada y a veces te llevas sorpresas. Y otras veces no. Pero siempre, siempre merece la pena mirar.
+
+Así que recordad... antes de tirar, pensad si alguien más lo puede aprovechar. Y si encontráis algo en la calle... ya sabéis. Givore.
+
+Nos vemos en el próximo paseo.
