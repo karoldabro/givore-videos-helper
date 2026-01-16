@@ -166,11 +166,16 @@ Output ONLY the speech text optimized for ElevenLabs:
 
 ## File Saving
 
-After generating the script, save it to: `scripts/[date]_[topic-slug].txt`
+After generating the script:
 
-Example: `scripts/2026-01-16_sillas-ruzafa.txt`
+1. **Create project folder**: `projects/[date]_[topic-slug]/`
+2. **Save script to**: `projects/[date]_[topic-slug]/[topic-slug].txt`
 
-Create the `scripts/` directory if it doesn't exist.
+Example:
+- Folder: `projects/2026-01-16_sillas-ruzafa/`
+- Script: `projects/2026-01-16_sillas-ruzafa/sillas-ruzafa.txt`
+
+Create the project folder if it doesn't exist. This folder will later contain captions, metadata, and audio files.
 
 ---
 
@@ -186,7 +191,7 @@ Create the `scripts/` directory if it doesn't exist.
 3. **Delete row 11** if it exists (keep only 10)
 4. **Add new script to row 1** with:
    - Date: today's date
-   - File: the filename you just saved
+   - File: the project folder path (e.g., `2026-01-17_sillas-benimaclet/sillas-benimaclet.txt`)
    - Hook Type: MYSTERY | PROOF-FIRST | NUMERIC | QUESTION | BOLD | DIRECT | JOURNEY | EMOTIONAL
    - CTA Type: ENGAGEMENT | FOLLOW | DOWNLOAD | SAVE-SHARE | COMMUNITY | AWARENESS
    - Proof Tease: yes | no
@@ -195,8 +200,8 @@ Create the `scripts/` directory if it doesn't exist.
 
 **Example update**:
 ```markdown
-| 1 | 2026-01-17 | sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD |
-| 2 | 2026-01-16 | marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
+| 1 | 2026-01-17 | 2026-01-17_sillas-benimaclet/sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD |
+| 2 | 2026-01-16 | 2026-01-16_marmol-silla-ruzafa/marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
 | 3 | ... | ... | ... | ... | ... | ... | ... |
 ```
 

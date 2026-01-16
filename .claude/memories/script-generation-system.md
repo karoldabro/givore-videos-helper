@@ -69,5 +69,7 @@
 
 ## Output
 - Text optimized for ElevenLabs text-to-speech
-- Saved to: `scripts/[date]_[topic-slug].txt`
+- Creates project folder: `projects/[date]_[topic-slug]/`
+- Saves script to: `projects/[date]_[topic-slug]/[topic-slug].txt`
+- Updates `scripts/SCRIPT_HISTORY.md` with rotation data
 - Use ellipsis for pauses, numbers as words

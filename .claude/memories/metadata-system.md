@@ -5,17 +5,21 @@
 **File**: `.claude/commands/givore-metadata.md`
 
 ## Input
-Video script (speech/transcription from the video)
+- Auto-detects most recent project folder in `projects/`
+- Reads script from: `projects/[folder]/[topic-slug].txt`
+- User confirms or specifies different project
 
 ## Output Files
 
+Both files saved in the **same project folder** as the script:
+
 ### FILE 1: Descriptions
-**Path**: `metadata/[date]_[topic-slug]-descriptions.txt`
+**Path**: `projects/[folder]/descriptions.txt`
 
 Platform order: **Facebook → Instagram → LinkedIn → TikTok → YouTube**
 
 ### FILE 2: Captions
-**Path**: `metadata/[date]_[topic-slug]-captions.txt`
+**Path**: `projects/[folder]/captions.txt`
 
 Caption rules:
 - **2-3 words per line MAXIMUM**
@@ -59,7 +63,7 @@ Caption rules:
 
 After saving both files, run:
 ```bash
-subs [audio-file.mp3] metadata/[date]_[topic-slug]-captions.txt
+subs [audio-file.mp3] projects/[folder]/captions.txt
 ```
 
 Generates: `[audio-file].srt`

@@ -14,7 +14,7 @@ Marketing content generation system for **Givore** - a social recycling (upcycli
 ## Project Structure
 
 ```
-viral_videos_market_reasearch/
+givore/
 ├── CLAUDE_PROJECT_INSTRUCTIONS.md    # Main script generation instructions
 ├── CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md  # Multi-platform metadata
 ├── HOOKS_LIBRARY.md                  # 8 hook categories with decision tree
@@ -26,8 +26,16 @@ viral_videos_market_reasearch/
 │   │   ├── givore-script.md          # /givore-script command
 │   │   └── givore-metadata.md        # /givore-metadata command
 │   └── memories/                     # Project knowledge base
-├── scripts/                          # Output: generated scripts
-├── metadata/                         # Output: descriptions + captions
+├── scripts/
+│   └── SCRIPT_HISTORY.md             # Rotation tracking (hook types, CTAs)
+├── projects/                         # Self-contained project folders
+│   ├── .gitignore                    # Ignores *.mp3 files
+│   ├── template.kdenlive             # KDEnlive template
+│   └── [date]_[topic-slug]/          # Per-video project folder
+│       ├── [topic-slug].txt          # Script
+│       ├── descriptions.txt          # Platform metadata
+│       ├── captions.txt              # For SRT generation
+│       └── *.mp3                     # Audio (gitignored)
 └── examples/                         # Example conversations
 ```
 

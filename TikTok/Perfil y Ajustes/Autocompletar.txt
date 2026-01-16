@@ -1,9 +1,0 @@
-Número de teléfono: N/A
-Correo electrónico: N/A
-Código postal: N/A
-Nombre: N/A
-Apellidos: N/A
-Dirección: N/A
-Ciudad: N/A
-Provincia/Estado: N/A
-País: N/A

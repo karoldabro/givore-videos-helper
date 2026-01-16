@@ -9,18 +9,36 @@ You are a metadata generator for Givore social media videos. Generate optimized 
 **CRITICAL**: Before generating ANY metadata, you MUST read:
 - `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md` for platform rules, tone guidelines, and output format
 
+## STEP 0: Detect Project Folder (AUTOMATIC)
+
+Before asking for input, detect the most recent project folder:
+
+1. **List project folders**: Scan `projects/` directory
+2. **Filter**: Skip `template.kdenlive` and non-directory files
+3. **Sort**: By modification time (newest first)
+4. **Suggest**: Show the most recent project folder to the user
+
+```
+📁 Proyecto detectado: projects/2026-01-16_marmol-silla-russafa/
+   Script: marmol-silla-russafa.txt
+
+¿Es este el proyecto correcto? (Y/n o especifica otro)
+```
+
+If user confirms, read the script from that folder. If user specifies different folder, use that instead.
+
 ## Input
 
-The user will provide a video script (the speech/transcription from the video).
+Read the script from the detected project folder: `projects/[folder]/[topic-slug].txt`
 
-If `$ARGUMENTS` is empty, ask the user to paste the script.
+If `$ARGUMENTS` specifies a project folder or script, use that instead of auto-detection.
 
 ## Output Files
 
-Generate TWO separate files:
+Generate TWO separate files in the **same project folder** as the script:
 
 ### FILE 1: Descriptions
-Save to: `metadata/[date]_[topic-slug]-descriptions.txt`
+Save to: `projects/[folder]/descriptions.txt`
 
 Contains all platform metadata in this order:
 1. **FACEBOOK** - Community tone, 5 hashtags
@@ -30,7 +48,7 @@ Contains all platform metadata in this order:
 5. **YOUTUBE SHORTS** - SEO title, #Shorts, 5-7 hashtags
 
 ### FILE 2: Captions
-Save to: `metadata/[date]_[topic-slug]-captions.txt`
+Save to: `projects/[folder]/captions.txt`
 
 Formatted captions following these STRICT rules:
 - **2-3 words per line MAXIMUM** (break sentences aggressively)
@@ -44,10 +62,10 @@ Formatted captions following these STRICT rules:
 After saving both files, run the subtitle generation command:
 
 ```bash
-subs [audio-file.mp3] metadata/[date]_[topic-slug]-captions.txt
+subs [audio-file.mp3] projects/[folder]/captions.txt
 ```
 
-Ask the user for the audio file path if not provided.
+Ask the user for the audio file path if not provided. The audio file is typically saved in the same project folder.
 
 This will generate: `[audio-file].srt`
 
@@ -75,18 +93,23 @@ Or without arguments to be prompted:
 
 ## Workflow
 
-1. Parse script from `$ARGUMENTS` or ask for it
-2. Read CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md
-3. Generate descriptions for all 5 platforms
-4. Format captions (2-3 words per line)
-5. Save FILE 1: descriptions
-6. Save FILE 2: captions
-7. Ask for audio file path
-8. Run: `subs [audio.mp3] [captions.txt]`
-9. Confirm SRT file generated
+1. **Detect project folder**: List `projects/` folders, suggest most recent
+2. **Confirm with user**: Ask if detected folder is correct
+3. **Read script**: From `projects/[folder]/[topic-slug].txt`
+4. Read CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md
+5. Generate descriptions for all 5 platforms
+6. Format captions (2-3 words per line)
+7. Save FILE 1: `projects/[folder]/descriptions.txt`
+8. Save FILE 2: `projects/[folder]/captions.txt`
+9. Ask for audio file path (likely in same project folder)
+10. Run: `subs [audio.mp3] projects/[folder]/captions.txt`
+11. Confirm SRT file generated
 
 ---
 
-**START NOW**: If $ARGUMENTS contains script text, proceed with generation. Otherwise, ask for the script.
+**START NOW**:
+1. List project folders and suggest the most recent one
+2. If $ARGUMENTS specifies a folder, use that instead
+3. Read the script from the project folder and proceed with generation
 
 $ARGUMENTS
