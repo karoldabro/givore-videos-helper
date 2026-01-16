@@ -7,8 +7,8 @@ After each script generation, update this file with the new script metadata.
 
 | # | Date | File | Hook Type | CTA Type | Proof Tease | Problem Angle | Rehook Style |
 |---|------|------|-----------|----------|-------------|---------------|--------------|
-| 1 | 2026-01-16 | marmol-silla-russafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
-| 2 | - | - | - | - | - | - | - |
+| 1 | 2026-01-16 | mestalla-tres-hallazgos.txt | PROOF-FIRST | ENGAGEMENT | no | URBAN-TREASURE | CURIOSITY-BUILD |
+| 2 | 2026-01-16 | marmol-silla-russafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
 | 3 | - | - | - | - | - | - | - |
 | 4 | - | - | - | - | - | - | - |
 | 5 | - | - | - | - | - | - | - |
