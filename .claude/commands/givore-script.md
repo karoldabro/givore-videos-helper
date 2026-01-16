@@ -18,6 +18,42 @@ You are a viral script generator for Givore - a social recycling (upcycling) pla
 
 This replaces manual "Recent Hooks/CTAs" input from user.
 
+### STEP 0.5: Validate & Correct Location (MANDATORY)
+
+Before generating ANY script, validate and auto-correct all location names:
+
+1. **Extract locations** from user input (neighborhoods, streets, ending spots)
+2. **Web search validation** for each location:
+   - Search: "[location] barrio Valencia España"
+   - Verify the location exists as a real Valencia place
+3. **Auto-correct issues**:
+   - Fix spelling errors (e.g., "Ruzaffa" → "Ruzafa")
+   - Convert Valenciano to Castellano (e.g., "Russafa" → "Ruzafa", "El Carme" → "El Carmen")
+   - Use official Castellano names in the script
+4. **Inform user of corrections**: "📍 Ubicación corregida: [original] → [corrected]"
+5. **If location cannot be identified**: Ask user for clarification
+
+**IMPORTANT**: Always use Castellano (Spanish) names, NOT Valenciano.
+
+**Valenciano → Castellano conversions** (common examples):
+| Valenciano | Castellano |
+|------------|------------|
+| Russafa | Ruzafa |
+| El Carme | El Carmen |
+| Ciutat Vella | Ciudad Vieja |
+| L'Eixample | Ensanche |
+| El Cabanyal | El Cabañal |
+| La Saïdia | La Zaidía |
+| Poblats Marítims | Poblados Marítimos |
+| Quatre Carreres | Cuatro Caminos |
+| Algirós | Algirós (same) |
+| Benimaclet | Benimaclet (same) |
+
+**Common Valencia neighborhoods (Castellano)**:
+Ruzafa, Benimaclet, El Cabañal, El Carmen, Extramuros, Patraix, Jesús,
+La Petxina, Campanar, Benicalap, Malilla, La Zaidía, Torrefiel, Orriols,
+Mestalla, Albors, Montolivet, El Pla del Real, Algirós
+
 ### STEP 1: Read Instruction Files
 1. Read `CLAUDE_PROJECT_INSTRUCTIONS.md` for structure and quality checks
 2. Read `HOOKS_LIBRARY.md` for hook selection and rotation
@@ -36,7 +72,7 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
 1. **Topic/Theme**: What happened, what was found
 2. **Specific Items**: Exact items + condition (NEVER generate "didn't find anything" scripts)
 3. **Video Structure**: When items appear, key timestamps, visual sequence
-4. **Location**: Neighborhood found, ending spot if different
+4. **Location**: Neighborhood found, ending spot if different (auto-corrected to Castellano)
 
 ### Style Inputs (ask if not provided):
 5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional
@@ -105,6 +141,7 @@ Output ONLY the speech text optimized for ElevenLabs:
 - Language: Spanish (Spain) - peninsular expressions
 
 ### Quality Checks (VERIFY before output):
+- [ ] Location name(s) verified and corrected to Castellano
 - [ ] Hook under 15 words, starts immediately (no "Hola")
 - [ ] Hook matches specified style or decision tree
 - [ ] Hook type DIFFERENT from last 3 in SCRIPT_HISTORY.md
@@ -131,7 +168,7 @@ Output ONLY the speech text optimized for ElevenLabs:
 
 After generating the script, save it to: `scripts/[date]_[topic-slug].txt`
 
-Example: `scripts/2026-01-16_sillas-russafa.txt`
+Example: `scripts/2026-01-16_sillas-ruzafa.txt`
 
 Create the `scripts/` directory if it doesn't exist.
 
@@ -159,7 +196,7 @@ Create the `scripts/` directory if it doesn't exist.
 **Example update**:
 ```markdown
 | 1 | 2026-01-17 | sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD |
-| 2 | 2026-01-16 | marmol-silla-russafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
+| 2 | 2026-01-16 | marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
 | 3 | ... | ... | ... | ... | ... | ... | ... |
 ```
 
@@ -168,7 +205,7 @@ Create the `scripts/` directory if it doesn't exist.
 ## Example Usage
 
 ```
-/givore-script Found 3 wooden chairs in Russafa, good condition, video shows cycling then items at 10s, mystery hook, exciting tone, comment CTA
+/givore-script Found 3 wooden chairs in Ruzafa, good condition, video shows cycling then items at 10s, mystery hook, exciting tone, comment CTA
 ```
 
 ---
