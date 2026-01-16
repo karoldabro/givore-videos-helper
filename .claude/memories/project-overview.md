@@ -23,9 +23,11 @@ givore/
 ├── PHRASE_VARIATIONS.md              # Avoid repetitive language
 ├── .claude/
 │   ├── commands/
+│   │   ├── givore-create.md          # /givore-create - Unified pipeline
 │   │   ├── givore-script.md          # /givore-script command
 │   │   └── givore-metadata.md        # /givore-metadata command
 │   └── memories/                     # Project knowledge base
+│       └── elevenlabs-config.md      # ElevenLabs voice settings
 ├── scripts/
 │   └── SCRIPT_HISTORY.md             # Rotation tracking (hook types, CTAs)
 ├── projects/                         # Self-contained project folders
@@ -33,10 +35,32 @@ givore/
 │   ├── template.kdenlive             # KDEnlive template
 │   └── [date]_[topic-slug]/          # Per-video project folder
 │       ├── [topic-slug].txt          # Script
+│       ├── [topic-slug].mp3          # Audio (via ElevenLabs MCP)
+│       ├── [topic-slug].srt          # Subtitles (via subs)
 │       ├── descriptions.txt          # Platform metadata
-│       ├── captions.txt              # For SRT generation
-│       └── *.mp3                     # Audio (gitignored)
+│       └── captions.txt              # For SRT generation
 └── examples/                         # Example conversations
+```
+
+## Available Commands
+
+| Command | Purpose | Use When |
+|---------|---------|----------|
+| `/givore-create` | Full pipeline: Script → Audio → Captions → SRT → Metadata | Complete content creation |
+| `/givore-script` | Script generation only | Planning content, no audio yet |
+| `/givore-metadata` | Metadata + captions only | After manual script edit |
+
+## Unified Workflow (`/givore-create`)
+
+```
+/givore-create [inputs]
+│
+├─ Script generation (via /givore-script logic)
+├─ ⏸️ APPROVAL GATE
+├─ Audio generation (ElevenLabs MCP)
+├─ Metadata + captions (via /givore-metadata logic)
+├─ SRT subtitles (subs command)
+└─ Final summary
 ```
 
 ## Key Success Factors (Research-Based)

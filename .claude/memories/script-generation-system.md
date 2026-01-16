@@ -1,8 +1,17 @@
 # Script Generation System
 
-## Slash Command
-**Command**: `/givore-script`
-**File**: `.claude/commands/givore-script.md`
+## Slash Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/givore-script` | Script generation only (standalone) |
+| `/givore-create` | Unified pipeline: Script → Audio → Captions → Metadata |
+
+**Files**:
+- `.claude/commands/givore-script.md`
+- `.claude/commands/givore-create.md` (orchestrator)
+
+**Note**: `/givore-create` calls `/givore-script` logic internally, preserving all features.
 
 ## Required Inputs (10-field template)
 

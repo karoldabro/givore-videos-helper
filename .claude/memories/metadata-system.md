@@ -1,8 +1,17 @@
 # Metadata Generation System
 
-## Slash Command
-**Command**: `/givore-metadata`
-**File**: `.claude/commands/givore-metadata.md`
+## Slash Commands
+
+| Command | Purpose |
+|---------|---------|
+| `/givore-metadata` | Metadata + captions only (standalone) |
+| `/givore-create` | Unified pipeline: Script → Audio → Captions → Metadata |
+
+**Files**:
+- `.claude/commands/givore-metadata.md`
+- `.claude/commands/givore-create.md` (orchestrator)
+
+**Note**: `/givore-create` calls `/givore-metadata` logic internally, preserving all features.
 
 ## Input
 - Auto-detects most recent project folder in `projects/`
