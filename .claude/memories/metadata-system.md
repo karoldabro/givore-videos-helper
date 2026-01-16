@@ -1,0 +1,82 @@
+# Metadata Generation System
+
+## Slash Command
+**Command**: `/givore-metadata`
+**File**: `.claude/commands/givore-metadata.md`
+
+## Input
+Video script (speech/transcription from the video)
+
+## Output Files
+
+### FILE 1: Descriptions
+**Path**: `metadata/[date]_[topic-slug]-descriptions.txt`
+
+Platform order: **Facebook → Instagram → LinkedIn → TikTok → YouTube**
+
+### FILE 2: Captions
+**Path**: `metadata/[date]_[topic-slug]-captions.txt`
+
+Caption rules:
+- **2-3 words per line MAXIMUM**
+- Break sentences aggressively
+- Blank line between each caption
+- DO NOT change script text - only format
+
+## Platform-Specific Rules
+
+### FACEBOOK
+- **Tone**: Community-focused, local, conversational
+- **Title**: `[Community hook] + [Location]`
+- **Description**: Longer (Facebook users read more), ask for stories
+- **Hashtags**: 5
+
+### INSTAGRAM
+- **Tone**: Aesthetic, lifestyle, inspirational
+- **Title**: `[Aesthetic statement] + [Emoji]`
+- **Description**: Include "Guarda este post", tag @givore.app
+- **Hashtags**: 7-10
+
+### LINKEDIN
+- **Tone**: Professional, business value, data-driven
+- **Title**: `[Statistic or insight] + [Professional angle]`
+- **Description**: Frame as innovation/sustainability story
+- **Hashtags**: 5 (professional)
+
+### TIKTOK
+- **Tone**: Casual, fun, emoji-heavy, direct
+- **Title**: `[Emoji] + [Curiosity hook]` (max 100 chars)
+- **Description**: End with question for comments
+- **Hashtags**: 5
+
+### YOUTUBE SHORTS
+- **Tone**: Searchable, educational, clear
+- **Title**: `[SEO keyword phrase] + [Emoji] + #Shorts`
+- **Description**: Explain Givore (YouTube audience may not know)
+- **Hashtags**: 5-7 (SEO focused, lowercase)
+
+## SRT Generation
+
+After saving both files, run:
+```bash
+subs [audio-file.mp3] metadata/[date]_[topic-slug]-captions.txt
+```
+
+Generates: `[audio-file].srt`
+
+## Caption Formatting Example
+
+**Input**: "¿Sabéis qué? Valencia está llena de tesoros y la gente pasa de largo."
+
+**Output**:
+```
+¿Sabéis qué?
+
+Valencia está llena
+
+de tesoros...
+
+y la gente
+
+pasa de largo.
+```

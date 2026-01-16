@@ -24,11 +24,13 @@ Generate optimized titles, descriptions, and hashtags for 5 platforms from a sin
 
 ## Output Format
 
-Generate this EXACT structure for easy copy-paste to Metricool:
+Generate TWO separate files:
+
+### FILE 1: Descriptions (metadata/[date]_[topic]-descriptions.txt)
 
 ```
 ═══════════════════════════════════════════════════════════
-                        TIKTOK
+                       FACEBOOK
 ═══════════════════════════════════════════════════════════
 
 TÍTULO:
@@ -52,30 +54,6 @@ DESCRIPCIÓN:
 {hashtags}
 
 ═══════════════════════════════════════════════════════════
-                    YOUTUBE SHORTS
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-{title}
-
-DESCRIPCIÓN:
-{description}
-
-{hashtags}
-
-═══════════════════════════════════════════════════════════
-                       FACEBOOK
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-{title}
-
-DESCRIPCIÓN:
-{description}
-
-{hashtags}
-
-═══════════════════════════════════════════════════════════
                        LINKEDIN
 ═══════════════════════════════════════════════════════════
 
@@ -88,38 +66,61 @@ DESCRIPCIÓN:
 {hashtags}
 
 ═══════════════════════════════════════════════════════════
-                       SUBTÍTULOS
+                        TIKTOK
 ═══════════════════════════════════════════════════════════
 
-{formatted captions - same for all platforms}
+TÍTULO:
+{title}
+
+DESCRIPCIÓN:
+{description}
+
+{hashtags}
+
+═══════════════════════════════════════════════════════════
+                    YOUTUBE SHORTS
+═══════════════════════════════════════════════════════════
+
+TÍTULO:
+{title}
+
+DESCRIPCIÓN:
+{description}
+
+{hashtags}
+```
+
+### FILE 2: Captions (metadata/[date]_[topic]-captions.txt)
+
+```
+{formatted captions - 2-3 words per line, blank line between each}
 ```
 
 ---
 
 ## Platform-Specific Rules
 
-### TIKTOK
-**Tone**: Casual, fun, emoji-heavy, direct
+### FACEBOOK
+**Tone**: Community-focused, local, conversational
 
-**Title formula**: `[Emoji] + [Curiosity hook] + [Optional location]`
-- Max 100 characters
-- 1-2 emojis
-- Create curiosity gap
+**Title formula**: `[Community hook] + [Location]`
+- Speak to local community
+- Warmer, more personal
 
 **Title examples**:
-- "Todo esto me lo encontré en la calle 🛋️ ¡Flipante!"
-- "🪑 Mirad lo que tira la gente en Valencia..."
-- "¿Por qué la gente tira cosas así de buenas? 🤯"
+- "Mirad lo que me encontré hoy por Valencia..."
+- "¿Alguien más hace esto por el barrio?"
+- "Esto es lo que encontré paseando por Russafa"
 
 **Description**:
-- 2-3 short paragraphs
-- Casual language (tú/vosotros)
-- End with question for comments
-- Givore mention natural, not salesy
+- Can be longer (Facebook users read more)
+- Community angle strong
+- Ask for experiences/stories
+- Explain Givore for older audience
 
-**Hashtags**: Exactly 5
+**Hashtags**: 5
 ```
-#Givore #SegundaVida #ReciclajeSocial #Valencia #[contextual]
+#Valencia #Reciclaje #SegundaVida #Sostenibilidad #[neighborhood]
 ```
 
 ---
@@ -149,55 +150,6 @@ DESCRIPCIÓN:
 
 ---
 
-### YOUTUBE SHORTS
-**Tone**: Searchable, educational, clear
-
-**Title formula**: `[SEO keyword phrase] + [Emoji] + #Shorts`
-- Think: what would someone SEARCH for?
-- Include location for local SEO
-
-**Title examples**:
-- "Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts"
-- "Encontré esto TIRADO en la calle | Valencia #Shorts"
-- "Reciclaje social: qué es y cómo funciona 🌱 #Shorts"
-
-**Description**:
-- Start with searchable summary sentence
-- Explain what Givore is (YouTube audience may not know)
-- Include call to comment
-
-**Hashtags**: 5-7 (SEO focused, lowercase)
-```
-#shorts #valencia #reciclaje #muebles #gratis #sostenibilidad #givore
-```
-
----
-
-### FACEBOOK
-**Tone**: Community-focused, local, conversational
-
-**Title formula**: `[Community hook] + [Location]`
-- Speak to local community
-- Warmer, more personal
-
-**Title examples**:
-- "Mirad lo que me encontré hoy por Valencia..."
-- "¿Alguien más hace esto por el barrio?"
-- "Esto es lo que encontré paseando por Russafa"
-
-**Description**:
-- Can be longer (Facebook users read more)
-- Community angle strong
-- Ask for experiences/stories
-- Explain Givore for older audience
-
-**Hashtags**: 5
-```
-#Valencia #Reciclaje #SegundaVida #Sostenibilidad #[neighborhood]
-```
-
----
-
 ### LINKEDIN
 **Tone**: Professional, business value, data-driven
 
@@ -223,26 +175,77 @@ DESCRIPCIÓN:
 
 ---
 
+### TIKTOK
+**Tone**: Casual, fun, emoji-heavy, direct
+
+**Title formula**: `[Emoji] + [Curiosity hook] + [Optional location]`
+- Max 100 characters
+- 1-2 emojis
+- Create curiosity gap
+
+**Title examples**:
+- "Todo esto me lo encontré en la calle 🛋️ ¡Flipante!"
+- "🪑 Mirad lo que tira la gente en Valencia..."
+- "¿Por qué la gente tira cosas así de buenas? 🤯"
+
+**Description**:
+- 2-3 short paragraphs
+- Casual language (tú/vosotros)
+- End with question for comments
+- Givore mention natural, not salesy
+
+**Hashtags**: Exactly 5
+```
+#Givore #SegundaVida #ReciclajeSocial #Valencia #[contextual]
+```
+
+---
+
+### YOUTUBE SHORTS
+**Tone**: Searchable, educational, clear
+
+**Title formula**: `[SEO keyword phrase] + [Emoji] + #Shorts`
+- Think: what would someone SEARCH for?
+- Include location for local SEO
+
+**Title examples**:
+- "Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts"
+- "Encontré esto TIRADO en la calle | Valencia #Shorts"
+- "Reciclaje social: qué es y cómo funciona 🌱 #Shorts"
+
+**Description**:
+- Start with searchable summary sentence
+- Explain what Givore is (YouTube audience may not know)
+- Include call to comment
+
+**Hashtags**: 5-7 (SEO focused, lowercase)
+```
+#shorts #valencia #reciclaje #muebles #gratis #sostenibilidad #givore
+```
+
+---
+
 ## Caption Formatting Rules (Same for All Platforms)
 
 ### Requirements
 1. DO NOT change the script text - only format it
-2. Each line = one caption (5-8 words ideal)
+2. Each line = one caption (2-3 words maximum)
 3. Blank line between each caption
-4. Keep complete thoughts together
-5. Split at natural pauses, punctuation, breath points
+4. Break sentences aggressively for readability
+5. Split at ANY natural pause point
 
 ### Split at:
 - Periods, question marks, exclamations
-- Commas (when natural pause)
+- Commas (always)
 - Ellipsis (...)
-- "Y", "Pero", "Porque" (transition words)
+- "Y", "Pero", "Porque", "Es que" (transition words)
+- After 2-3 words regardless of punctuation
 
-### Never split:
-- Mid-sentence without punctuation
-- Subject from verb
-- Verb from object
-- Short phrases under 4 words
+### Breaking rules:
+- Prioritize short lines over complete thoughts
+- 2-3 words per line is MANDATORY
+- Break mid-sentence if needed for word count
+- Single word lines are acceptable for emphasis
 
 ### Example:
 **Input**: "¿Sabéis qué? Valencia está llena de tesoros y la gente pasa de largo."
@@ -251,9 +254,13 @@ DESCRIPCIÓN:
 ```
 ¿Sabéis qué?
 
-Valencia está llena de tesoros...
+Valencia está llena
 
-y la gente pasa de largo.
+de tesoros...
+
+y la gente
+
+pasa de largo.
 ```
 
 ---
@@ -266,24 +273,24 @@ Project: Givore
 Script: ¿Sabéis qué? Valencia está llena de tesoros y la mayoría de la gente pasa de largo. Mira, todo esto me lo encontré en la calle. Sillas, mesas, hasta este mueble tan guapo. El problema es que la gente tira cosas perfectamente bien. Por eso uso Givore. Abro la app, subo las fotos, y en menos de veinte segundos cualquiera puede verlo. Eso es reciclaje social. Dar y encontrar.
 ```
 
-### Output
+### Output FILE 1: Descriptions (metadata/2026-01-16_tesoros-valencia-descriptions.txt)
 
 ```
 ═══════════════════════════════════════════════════════════
-                        TIKTOK
+                       FACEBOOK
 ═══════════════════════════════════════════════════════════
 
 TÍTULO:
-Todo esto me lo encontré en la calle 🛋️ ¡Valencia está llena de tesoros!
+Mirad lo que me encontré hoy paseando por Valencia...
 
 DESCRIPCIÓN:
-Hoy salí a dar una vuelta por Valencia y mirad lo que me encontré tirado: sillas, mesas, ¡hasta un mueble precioso! Todo perfectamente bien.
+Hoy salí a dar una vuelta en bici por Valencia y no me lo podía creer: sillas, mesas, un mueble precioso... ¡todo tirado en la calle! Y estaba perfectamente bien.
 
-El problema es que la gente tira cosas que todavía sirven. Por eso uso Givore - subo lo que encuentro y cualquiera cerca puede darle una segunda vida. Reciclaje social en acción 🌱
+Es una pena que la gente tire cosas así cuando hay quien las necesita. Por eso uso Givore - una app donde puedes compartir lo que encuentras para que otra persona le dé una segunda vida. Sin comprar ni vender, solo dar y encontrar. Así funciona el reciclaje social.
 
-¿Cuál es el mejor hallazgo que habéis encontrado en la calle? 👇
+¿Vosotros habéis encontrado algo bueno alguna vez en la calle? ¡Contadme vuestra experiencia, me encanta leer vuestras historias!
 
-#Givore #SegundaVida #ReciclajeSocial #Valencia #CazaDeTesoros
+#Valencia #Reciclaje #SegundaVida #Sostenibilidad #ComunidadValencia
 
 ═══════════════════════════════════════════════════════════
                        INSTAGRAM
@@ -300,38 +307,6 @@ Lo bonito es poder compartirlo. Con @givore.app subo lo que encuentro para que o
 Guarda este post si te mola la idea 📌
 
 #SegundaVida #Valencia #Sostenibilidad #StreetFinds #ReciclajeSocial #VidaSostenible #ConsumoConsciente #Givore #TreasureHunting #EcoFriendly
-
-═══════════════════════════════════════════════════════════
-                    YOUTUBE SHORTS
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts
-
-DESCRIPCIÓN:
-En Valencia la gente tira muebles, sillas y cosas que están perfectamente bien. En este video te enseño cómo encontrarlos y qué hacer con ellos.
-
-Uso Givore, una app de reciclaje social donde subes lo que encuentras para que otros lo aprovechen. En menos de 20 segundos cualquiera cerca puede verlo y recogerlo.
-
-¿Conocíais este truco? ¡Contadme en los comentarios!
-
-#shorts #valencia #muebles #gratis #reciclaje #sostenibilidad #givore
-
-═══════════════════════════════════════════════════════════
-                       FACEBOOK
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Mirad lo que me encontré hoy paseando por Valencia...
-
-DESCRIPCIÓN:
-Hoy salí a dar una vuelta en bici por Valencia y no me lo podía creer: sillas, mesas, un mueble precioso... ¡todo tirado en la calle! Y estaba perfectamente bien.
-
-Es una pena que la gente tire cosas así cuando hay quien las necesita. Por eso uso Givore - una app donde puedes compartir lo que encuentras para que otra persona le dé una segunda vida. Sin comprar ni vender, solo dar y encontrar. Así funciona el reciclaje social.
-
-¿Vosotros habéis encontrado algo bueno alguna vez en la calle? ¡Contadme vuestra experiencia, me encanta leer vuestras historias!
-
-#Valencia #Reciclaje #SegundaVida #Sostenibilidad #ComunidadValencia
 
 ═══════════════════════════════════════════════════════════
                        LINKEDIN
@@ -352,34 +327,92 @@ No es compraventa. Es economía circular en su forma más pura: dar y encontrar.
 #EconomíaCircular #Sostenibilidad #Innovación #Valencia #Startups
 
 ═══════════════════════════════════════════════════════════
-                       SUBTÍTULOS
+                        TIKTOK
 ═══════════════════════════════════════════════════════════
 
+TÍTULO:
+Todo esto me lo encontré en la calle 🛋️ ¡Valencia está llena de tesoros!
+
+DESCRIPCIÓN:
+Hoy salí a dar una vuelta por Valencia y mirad lo que me encontré tirado: sillas, mesas, ¡hasta un mueble precioso! Todo perfectamente bien.
+
+El problema es que la gente tira cosas que todavía sirven. Por eso uso Givore - subo lo que encuentro y cualquiera cerca puede darle una segunda vida. Reciclaje social en acción 🌱
+
+¿Cuál es el mejor hallazgo que habéis encontrado en la calle? 👇
+
+#Givore #SegundaVida #ReciclajeSocial #Valencia #CazaDeTesoros
+
+═══════════════════════════════════════════════════════════
+                    YOUTUBE SHORTS
+═══════════════════════════════════════════════════════════
+
+TÍTULO:
+Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts
+
+DESCRIPCIÓN:
+En Valencia la gente tira muebles, sillas y cosas que están perfectamente bien. En este video te enseño cómo encontrarlos y qué hacer con ellos.
+
+Uso Givore, una app de reciclaje social donde subes lo que encuentras para que otros lo aprovechen. En menos de 20 segundos cualquiera cerca puede verlo y recogerlo.
+
+¿Conocíais este truco? ¡Contadme en los comentarios!
+
+#shorts #valencia #muebles #gratis #reciclaje #sostenibilidad #givore
+```
+
+### Output FILE 2: Captions (metadata/2026-01-16_tesoros-valencia-captions.txt)
+
+```
 ¿Sabéis qué?
 
-Valencia está llena de tesoros...
+Valencia está llena
 
-y la mayoría de la gente pasa de largo.
+de tesoros...
 
-Mira, todo esto me lo encontré en la calle.
+y la mayoría
+
+de la gente
+
+pasa de largo.
+
+Mira,
+
+todo esto
+
+me lo encontré
+
+en la calle.
 
 Sillas, mesas...
 
-hasta este mueble tan guapo.
+hasta este mueble
 
-El problema es que la gente
+tan guapo.
 
-tira cosas perfectamente bien.
+El problema es
 
-Por eso uso Givore.
+que la gente
 
-Abro la app, subo las fotos...
+tira cosas
 
-y en menos de veinte segundos
+perfectamente bien.
+
+Por eso
+
+uso Givore.
+
+Abro la app,
+
+subo las fotos...
+
+y en menos
+
+de veinte segundos
 
 cualquiera puede verlo.
 
-Eso es reciclaje social.
+Eso es
+
+reciclaje social.
 
 Dar y encontrar.
 ```
@@ -390,14 +423,15 @@ Dar y encontrar.
 
 Before outputting, verify:
 - [ ] All 5 platforms have unique titles matching their tone
-- [ ] TikTok: Casual + emoji + 5 hashtags
-- [ ] Instagram: Aesthetic + @givore.app + 7-10 hashtags
-- [ ] YouTube: SEO title + #Shorts + 5-7 hashtags
 - [ ] Facebook: Community tone + 5 hashtags
+- [ ] Instagram: Aesthetic + @givore.app + 7-10 hashtags
 - [ ] LinkedIn: Professional/data + 5 hashtags
-- [ ] Captions formatted correctly (no text changes)
+- [ ] TikTok: Casual + emoji + 5 hashtags
+- [ ] YouTube: SEO title + #Shorts + 5-7 hashtags
+- [ ] Captions formatted correctly (2-3 words per line, no text changes)
 - [ ] Spanish is informal except LinkedIn (which can be either)
 - [ ] Each description mentions Givore naturally
+- [ ] Two separate files generated (descriptions + captions)
 
 ---
 
