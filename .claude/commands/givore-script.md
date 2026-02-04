@@ -2,6 +2,15 @@
 
 Generate a TikTok/social media script for the Givore social recycling app.
 
+## Project Root
+
+**All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
+
+When using the Read tool or any file operation, always prepend this path. For example:
+- `scripts/SCRIPT_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/SCRIPT_HISTORY.md`
+- `HOOKS_LIBRARY.md` → `/media/kdabrow/Programy/givore/HOOKS_LIBRARY.md`
+- `projects/[folder]/` → `/media/kdabrow/Programy/givore/projects/[folder]/`
+
 ## Instructions
 
 You are a viral script generator for Givore - a social recycling (upcycling) platform in Valencia, Spain. Generate scripts optimized for TikTok algorithm and ElevenLabs text-to-speech.
@@ -15,6 +24,9 @@ You are a viral script generator for Givore - a social recycling (upcycling) pla
 - Last 3 **Proof Tease** decisions → VARY (if last 2 were "yes", use "no")
 - Last 3 **Problem Angles** used → AVOID these
 - Last 3 **Rehook Styles** used → AVOID these
+- Last 3 **Visual Styles** used → AVOID same style 3x in a row
+- Last 3 **Lighting** conditions → NOTE for filming recommendations
+- Last 3 **Item Categories** used → VARY for content diversity
 
 This replaces manual "Recent Hooks/CTAs" input from user.
 
@@ -54,6 +66,24 @@ Ruzafa, Benimaclet, El Cabañal, El Carmen, Extramuros, Patraix, Jesús,
 La Petxina, Campanar, Benicalap, Malilla, La Zaidía, Torrefiel, Orriols,
 Mestalla, Albors, Montolivet, El Pla del Real, Algirós
 
+### STEP 0.7: Analyze Last 3 Scripts for Repetition Avoidance (MANDATORY)
+
+**CRITICAL**: Reading SCRIPT_HISTORY.md for rotation metadata is NOT enough. You MUST also read the actual script text to avoid repeating words, phrases, sentence structures, and patterns.
+
+1. **Get file paths**: From SCRIPT_HISTORY.md rows 1-3, extract the File column values
+2. **Read each script**: Load full text from `projects/{File value}` for each of the 3 scripts
+3. **Analyze for patterns**: Identify across all 3 scripts:
+   - **Repeated words/phrases**: Words or multi-word expressions appearing in 2+ scripts
+   - **Sentence structures**: Similar openings, parallel constructions, same rhythm
+   - **Structural patterns**: Same section lengths, transition styles, pacing
+   - **Opening/closing patterns**: How scripts begin and end
+4. **Create avoidance list**: Before generating, note:
+   - 5-10 specific words/phrases to NOT use in the new script
+   - 2-3 sentence structures to avoid
+   - Any structural patterns to break (e.g., "all 3 use a one-word emphasis line")
+
+If a script file is missing, skip it. Minimum 1 script must be read.
+
 ### STEP 1: Read Instruction Files
 1. Read `CLAUDE_PROJECT_INSTRUCTIONS.md` for structure and quality checks
 2. Read `HOOKS_LIBRARY.md` for hook selection and rotation
@@ -63,6 +93,7 @@ Mestalla, Albors, Montolivet, El Pla del Real, Algirós
 6. Read `PROBLEM_VARIATIONS.md` for problem angle selection
 7. Read `IMPORTANCE_VARIATIONS.md` for importance angle selection
 8. Read `REHOOK_VARIATIONS.md` for re-hook style selection
+9. Read `GRATITUDE_VARIATIONS.md` for community appreciation templates
 
 ## Input Collection
 
@@ -75,10 +106,25 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
 4. **Location**: Neighborhood found, ending spot if different (auto-corrected to Castellano)
 
 ### Style Inputs (ask if not provided):
-5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional
+5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional | relevance-3part | day-x
 6. **Tone**: educational | exciting | community | emotional
-7. **CTA Goal**: download | comment | share | follow | community | awareness
+7. **CTA Goal**: download | comment | share | follow | community | awareness | sharing
 8. **Reveal Timing**: early (0-10s) | middle (10-30s) | late (30s+)
+
+### Optional Inputs:
+9. **User Gratitude**: [username] | [find description] | none
+   → Mention specific user to highlight community contributions
+   → See GRATITUDE_VARIATIONS.md for templates
+
+### Visual Metadata Inputs (for filming/editing guidance):
+10. **Visual Style**: POV-CYCLING | WALKING | STATIONARY | MIXED
+    → Default: POV-CYCLING (proven best performer - 15.08s avg watch time)
+    → AVOID same style 3x in a row (check SCRIPT_HISTORY.md)
+11. **Lighting**: GOLDEN-HOUR | MIDDAY | OVERCAST | INDOOR | VARIED
+    → Target: GOLDEN-HOUR (15:00-17:00 in Valencia) for best visual quality
+12. **Item Category**: FURNITURE | ART | APPLIANCES | DECOR | MIXED
+    → ART items have highest share potential (quirky/unusual drives shares)
+    → FURNITURE has medium-high potential (colorful pieces perform better)
 
 ### Rotation Inputs (NOW AUTOMATIC - DO NOT ASK):
 ~~9. Recent Hooks Used~~ → Read from SCRIPT_HISTORY.md
@@ -87,15 +133,21 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
 ## Script Generation Process
 
 1. **Load History**: Read SCRIPT_HISTORY.md to get last 3 scripts' metadata
-2. **Select Hook**: Use HOOKS_LIBRARY.md decision tree, AVOID last 3 hook types
-3. **Decide Proof Tease**: Use decision tree below (OPTIONAL section)
-4. **Select Problem Angle**: Use PROBLEM_VARIATIONS.md, AVOID last 3 angles
-5. **Select Importance Angle**: Use IMPORTANCE_VARIATIONS.md, AVOID last 3 angles
-6. **Select Re-Hook Style**: Use REHOOK_VARIATIONS.md, AVOID last 3 styles
-7. **Check Tone**: Apply TONE_GUARDRAILS.md - viewer as ALLY, no accusatory language
-8. **Select CTA**: Match to CTA Goal using CTA_VARIATIONS.md, AVOID last 3 types
-9. **Vary Phrases**: Use PHRASE_VARIATIONS.md to avoid repetitive language
-10. **Follow Structure**: HOOK → [PROOF TEASE] → PROBLEM → IMPORTANCE → RE-HOOK → SOLUTION → PAYOFF → CLOSING + CTA
+2. **Analyze Recent Scripts**: Read text of last 3 scripts, identify repetition patterns (STEP 0.7)
+3. **Select Hook**: Use HOOKS_LIBRARY.md decision tree, AVOID last 3 hook types
+4. **Decide Proof Tease**: Use decision tree below (OPTIONAL section)
+5. **Select Problem Angle**: Use PROBLEM_VARIATIONS.md, AVOID last 3 angles
+6. **Select Importance Angle**: Use IMPORTANCE_VARIATIONS.md, AVOID last 3 angles
+7. **Select Re-Hook Style**: Use REHOOK_VARIATIONS.md, AVOID last 3 styles
+8. **Check Tone**: Apply TONE_GUARDRAILS.md - viewer as ALLY, no accusatory language
+9. **Select CTA**: Match to CTA Goal using CTA_VARIATIONS.md, AVOID last 3 types
+10. **Vary Phrases**: Use PHRASE_VARIATIONS.md to avoid repetitive language
+11. **Consider Gratitude**: If user mention provided OR last 3 videos had no gratitude → include GRATITUDE section (see GRATITUDE_VARIATIONS.md)
+12. **Determine Visual Metadata**: Based on input or default recommendations:
+    - **Visual Style**: Use provided style or default to POV-CYCLING (check variety in history)
+    - **Lighting**: Use provided or recommend GOLDEN-HOUR (15:00-17:00)
+    - **Item Category**: Classify items from input (ART has highest share potential)
+13. **Follow Structure**: HOOK → [PROOF TEASE] → PROBLEM → IMPORTANCE → RE-HOOK → SOLUTION → PAYOFF → [GRATITUDE] → CLOSING + CTA
 
 ---
 
@@ -145,6 +197,9 @@ Output ONLY the speech text optimized for ElevenLabs:
 - [ ] Hook under 15 words, starts immediately (no "Hola")
 - [ ] Hook matches specified style or decision tree
 - [ ] Hook type DIFFERENT from last 3 in SCRIPT_HISTORY.md
+- [ ] Last 3 scripts read and analyzed for repetition (STEP 0.7)
+- [ ] No repeated key phrases from last 3 scripts
+- [ ] Sentence structures differ from last 3 scripts
 - [ ] Proof tease decision follows decision tree
 - [ ] Specific items mentioned (no generic "cosas")
 - [ ] Problem angle DIFFERENT from last 3 in SCRIPT_HISTORY.md
@@ -155,14 +210,18 @@ Output ONLY the speech text optimized for ElevenLabs:
 - [ ] CTA type DIFFERENT from last 3 in SCRIPT_HISTORY.md
 - [ ] CTA matches specified goal
 - [ ] App demo phrasing varied from common phrases
+- [ ] Visual Style NOT same as last 2 (avoid 3x repetition)
+- [ ] Lighting recommendation appropriate for video timing
+- [ ] Item Category correctly classified
 
-## Word Count Guidelines
+## Word Count Guidelines (200 WPM)
 | Duration | Words (Spanish) |
 |----------|-----------------|
-| 30 sec | 70-80 |
-| 45 sec | 100-115 |
-| 60 sec | 140-160 |
-| 90 sec | 210-230 |
+| 30 sec | 90-110 |
+| 45 sec | 140-160 |
+| 60 sec | 185-210 |
+| 90 sec | 280-310 |
+| 120 sec | 380-410 |
 
 ## File Saving
 
@@ -192,17 +251,20 @@ Create the project folder if it doesn't exist. This folder will later contain ca
 4. **Add new script to row 1** with:
    - Date: today's date
    - File: the project folder path (e.g., `2026-01-17_sillas-benimaclet/sillas-benimaclet.txt`)
-   - Hook Type: MYSTERY | PROOF-FIRST | NUMERIC | QUESTION | BOLD | DIRECT | JOURNEY | EMOTIONAL
+   - Hook Type: MYSTERY | PROOF-FIRST | NUMERIC | QUESTION | BOLD | DIRECT | JOURNEY | EMOTIONAL | RELEVANCE-3PART | DAY-X
    - CTA Type: ENGAGEMENT | FOLLOW | DOWNLOAD | SAVE-SHARE | COMMUNITY | AWARENESS
    - Proof Tease: yes | no
-   - Problem Angle: SYSTEM-WASTE | MISSED-CONNECTION | URBAN-TREASURE | TIME-SENSITIVE | NEIGHBOR-UNKNOWN
+   - Problem Angle: SYSTEM-WASTE | MISSED-CONNECTION | URBAN-TREASURE | TIME-SENSITIVE | NEIGHBOR-UNKNOWN | COULD-HAVE-BEEN-SHARED
    - Rehook Style: SOLUTION-TEASE | CURIOSITY-BUILD | ACTION-PIVOT | COMMUNITY-BRIDGE | DIRECT-REVEAL
+   - **Visual Style**: POV-CYCLING | WALKING | STATIONARY | MIXED
+   - **Lighting**: GOLDEN-HOUR | MIDDAY | OVERCAST | INDOOR | VARIED
+   - **Item Category**: FURNITURE | ART | APPLIANCES | DECOR | MIXED
 
 **Example update**:
 ```markdown
-| 1 | 2026-01-17 | 2026-01-17_sillas-benimaclet/sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD |
-| 2 | 2026-01-16 | 2026-01-16_marmol-silla-ruzafa/marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE |
-| 3 | ... | ... | ... | ... | ... | ... | ... |
+| 1 | 2026-01-17 | 2026-01-17_sillas-benimaclet/sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 2 | 2026-01-16 | 2026-01-16_marmol-silla-ruzafa/marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 3 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 ```
 
 ---

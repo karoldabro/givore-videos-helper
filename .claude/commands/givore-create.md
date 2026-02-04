@@ -2,6 +2,16 @@
 
 Complete content creation workflow: Script → Approval → Audio → Captions → SRT → Metadata
 
+## Project Root
+
+**All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
+
+When using the Read tool or any file operation, always prepend this path. For example:
+- `scripts/SCRIPT_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/SCRIPT_HISTORY.md`
+- `HOOKS_LIBRARY.md` → `/media/kdabrow/Programy/givore/HOOKS_LIBRARY.md`
+- `projects/[folder]/` → `/media/kdabrow/Programy/givore/projects/[folder]/`
+- `.claude/commands/givore-script.md` → `/media/kdabrow/Programy/givore/.claude/commands/givore-script.md`
+
 ## Overview
 
 This command orchestrates the full Givore content creation process by calling existing commands and adding ElevenLabs audio generation. All sophisticated logic from `/givore-script` and `/givore-metadata` is preserved.
@@ -16,6 +26,7 @@ This command orchestrates the full Givore content creation process by calling ex
 2. Follow ALL steps from that command exactly:
    - STEP 0: Load SCRIPT_HISTORY.md for rotation
    - STEP 0.5: Validate & correct locations (Valenciano → Castellano)
+   - STEP 0.7: Read and analyze last 3 script texts for repetition avoidance
    - STEP 1: Read all 8 reference files
    - Input collection (if $ARGUMENTS is incomplete)
    - Script generation with quality checks
@@ -57,7 +68,44 @@ If user says "Editar":
 - Ask for approval again
 
 If user says "Sí":
-- Continue to Phase 3
+- Continue to Phase 2.5 (Visual Cues) or Phase 3 (Audio)
+
+---
+
+## PHASE 2.5: VISUAL CUES (Optional)
+
+Generate visual cues for the video editor based on the approved script.
+
+### When to Generate
+
+Ask user: "¿Generar guía visual para el editor?"
+- **Sí** → Generate visual-cues.txt
+- **No** → Skip to Phase 3
+
+**Auto-suggest "Sí"** if script has complex timing or multiple item reveals.
+
+### Generation Steps
+
+1. **Copy template** from `scripts/VISUAL_CUES_TEMPLATE.txt`
+2. **Fill in based on script and inputs**:
+   - Visual Style: From input or default POV-CYCLING
+   - Lighting: From input or recommend GOLDEN-HOUR
+   - Item Category: Classify from items mentioned
+   - Pattern Interrupt: Recommend based on hook type
+   - Timestamp cues: Based on script sections
+3. **Save to**: `projects/[folder]/visual-cues.txt`
+
+### Critical Elements to Include
+
+| Element | Purpose |
+|---------|---------|
+| Pattern interrupt at 1.5-2s | Addresses 0:02 dropoff |
+| POV cycling notes | If applicable (proven best performer) |
+| App integration timing | When/how Givore UI appears |
+| Ending visual | Scenic location for CTA |
+
+### Reference
+See `VIRAL_VIDEO_ANALYSIS.md` and `KDENLIVE_EDITING_GUIDE.md` for visual guidelines.
 
 ---
 
@@ -153,12 +201,14 @@ Display all generated files:
 
 Archivos generados:
 ├── 📝 Script: [topic-slug].txt
+├── 🎥 Visual Cues: visual-cues.txt (si generado)
 ├── 🎙️ Audio: [topic-slug].mp3
 ├── 📋 Metadatos: descriptions.txt
 ├── 💬 Captions: captions.txt
 └── 🎬 Subtítulos: [topic-slug].srt
 
 Próximo paso: Abrir template.kdenlive y editar el video
+(Consultar visual-cues.txt para guía de edición)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -176,7 +226,7 @@ Same as `/givore-script`. If `$ARGUMENTS` is empty or incomplete, collect:
 4. **Location**: Neighborhood (auto-corrected to Castellano)
 
 ### Style Inputs
-5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional
+5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional | relevance-3part | day-x
 6. **Tone**: educational | exciting | community | emotional
 7. **CTA Goal**: download | comment | share | follow | community | awareness
 8. **Reveal Timing**: early (0-10s) | middle (10-30s) | late (30s+)
@@ -219,6 +269,9 @@ Minimal (will prompt for details):
 │
 ├─ PHASE 2: ⏸️ APPROVAL GATE
 │   └─ User approves or stops
+│
+├─ PHASE 2.5: Visual Cues (optional)
+│   └─ → projects/[date]_[topic]/visual-cues.txt
 │
 ├─ PHASE 3: ElevenLabs audio generation
 │   └─ → projects/[date]_[topic]/[topic].mp3

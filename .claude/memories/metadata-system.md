@@ -41,13 +41,13 @@ Caption rules:
 ### FACEBOOK
 - **Tone**: Community-focused, local, conversational
 - **Title**: `[Community hook] + [Location]`
-- **Description**: Longer (Facebook users read more), ask for stories
+- **Description**: 3-4 detailed paragraphs (video details → Givore explanation → community angle → question for stories)
 - **Hashtags**: 5
 
 ### INSTAGRAM
 - **Tone**: Aesthetic, lifestyle, inspirational
 - **Title**: `[Aesthetic statement] + [Emoji]`
-- **Description**: Include "Guarda este post", tag @givore.app
+- **Description**: 3-5 storytelling paragraphs (scene → emotion → Givore → community → CTA "Guarda este post"), tag @givore.app
 - **Hashtags**: 7-10
 
 ### LINKEDIN
@@ -59,7 +59,7 @@ Caption rules:
 ### TIKTOK
 - **Tone**: Casual, fun, emoji-heavy, direct
 - **Title**: `[Emoji] + [Curiosity hook]` (max 100 chars)
-- **Description**: End with question for comments
+- **Description**: 3-4 paragraphs with energy (video details → problem context → Givore naturally → engaging question)
 - **Hashtags**: 5
 
 ### YOUTUBE SHORTS

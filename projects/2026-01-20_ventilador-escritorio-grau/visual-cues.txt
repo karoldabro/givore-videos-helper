@@ -1,0 +1,115 @@
+# Visual Cues - Ventilador y Escritorio Grau
+# Date: 2026-01-20
+# Duration: ~45-50s
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Proven best performer (15.08s avg watch time), fits "cycling around Grau" narrative
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00 (Valencia winter)
+Backup Plan: Overcast works well for appliances (reduces glare on surfaces)
+
+---
+
+## Item Category
+Primary: MIXED (Appliances + Furniture)
+Share Potential: MEDIUM-HIGH
+Key Visual Features: Tower fan (modern, clean), Office desk (professional, good condition)
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom | 1.15x scale for 0.3s on "tirados en el Grau" |
+| 2s | Sound effect | Subtle pop/whoosh when "Mirad el estado" lands |
+
+**Recommended:** Quick zoom + text flash "EL GRAU" briefly at 1.5s
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- Items immediately visible (PROOF-FIRST hook)
+- POV cycling, slowing down near items
+- Both items in frame together if possible, or quick pan
+- Text: "EL GRAU" location tag
+
+### DISCOVERY (3-10s)
+- Close approach to items
+- Show detail of ventilador de torre (clean, modern design)
+- Show detail of escritorio (good condition, sturdy)
+- Handlebars visible throughout
+
+### PROBLEM (10-16s)
+- Pull back slightly to show items "abandoned" context
+- Show acera/street context
+- Maintain slight motion (don't fully stop)
+
+### RE-HOOK (16-18s)
+- "¿Y sabéis qué hago yo...?" - face cam or continue POV
+- Build anticipation
+
+### SOLUTION (18-28s)
+- Show phone/Givore app naturally
+- Real app UI - foto, título, publicar sequence
+- Quick demo (5-8s max)
+- "In-the-moment" feel, not staged
+
+### PAYOFF (28-35s)
+- Show both items one more time
+- "El ventilador, perfecto..." - focus on fan
+- "El escritorio, ideal..." - focus on desk
+
+### CTA (35-50s)
+- Continue cycling to scenic spot if available (marina/port area of Grau)
+- Text overlay optional: "Comparte antes de tirar"
+- End with motion (keep cycling feel)
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: YES (critical for engagement)
+- Motion maintained: YES, even during item inspection (slow but moving)
+- Discovery moment: 0-3s (items appear immediately, PROOF-FIRST style)
+- Grau context: Show port/maritime area if passing by
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+
+---
+
+## App Integration
+- Show real Givore UI at: ~20-25s
+- Camera buttons visible: YES
+- "In-the-moment" feel: Recording while finding
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- Items appear EARLY (0-3s) - this is PROOF-FIRST hook style
+- Grau has maritime character - show if possible
+- Two distinct items = opportunity for comparison shots
+- Sharing CTA = consider text overlay "Comparte antes de tirar"
+- Keep video under 50s for optimal retention
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

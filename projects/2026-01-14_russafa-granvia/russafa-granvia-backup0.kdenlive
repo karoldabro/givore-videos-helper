@@ -1,0 +1,2271 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="C" producer="main_bin" root="/home/kdabrow/Vídeos/givore" version="7.33.0">
+ <profile colorspace="709" description="Vertical HD 30 fps" display_aspect_den="16" display_aspect_num="9" frame_rate_den="1" frame_rate_num="30" height="1920" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1080"/>
+ <chain id="chain16" out="00:00:01.667">
+  <property name="length">51</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Air blowing.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">4</property>
+  <property name="kdenlive:control_uuid">{978544a8-c64c-42ac-b2f6-745e9aed3f77}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">31325</property>
+  <property name="kdenlive:file_hash">d767346f4eb09bda0a0fb384d854e31f</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">1</property>
+  <property name="kdenlive:clipname">Air blowing [Transition].MP3</property>
+ </chain>
+ <chain id="chain17" out="00:00:01.100">
+  <property name="length">34</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Alert - Idea.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">5</property>
+  <property name="kdenlive:control_uuid">{c9719990-cec5-4291-b0d4-ce65d15e28b0}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">22548</property>
+  <property name="kdenlive:file_hash">adf8d182020b3fc6fb177ccb938ab93b</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain18" out="00:00:01.133">
+  <property name="length">35</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Bell - Boxing - Double.mp3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">320000</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">6</property>
+  <property name="kdenlive:control_uuid">{5d77b5c0-ae9b-47ab-bd80-8cf97305d211}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">50209</property>
+  <property name="kdenlive:file_hash">c32a2e5ecb3b86b0faf25e30d92f2719</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">320 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:clipname">Bell - Boxing - Double [Subscribe].mp3</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain19" out="00:00:00.267">
+  <property name="length">9</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Click - Single.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">7</property>
+  <property name="kdenlive:control_uuid">{6b41c992-fb7d-4294-818f-b424325b4983}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">8755</property>
+  <property name="kdenlive:file_hash">6687c565b6a7d594ba4bced6598ccc35</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain20" out="00:00:01.200">
+  <property name="length">37</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Deflating.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">8</property>
+  <property name="kdenlive:control_uuid">{ad1101cb-6880-435b-b6f6-0e5ae7038b80}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">23802</property>
+  <property name="kdenlive:file_hash">b19963999c717f94276a4e1711eab3f8</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:clipname">Deflating [Dissapointed[.MP3</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain21" out="00:00:01.833">
+  <property name="length">56</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Ding - Stutter.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">9</property>
+  <property name="kdenlive:control_uuid">{eb30ca08-7cfd-485c-88ab-928fdf509a6d}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">33833</property>
+  <property name="kdenlive:file_hash">1b1e8deed790ca9add6dea1edf4846f2</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:clipname">Ding - Stutter[Idea].MP3</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain22" out="00:00:02.700">
+  <property name="length">82</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Disappointed 3.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">10</property>
+  <property name="kdenlive:control_uuid">{cd3835bc-a9f8-4cac-ab13-9be393337527}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">47625</property>
+  <property name="kdenlive:file_hash">e467b6c3df0f23e75153c1cabb29bc97</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain23" out="00:00:01.833">
+  <property name="length">56</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Dramatic Buildup 1.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">11</property>
+  <property name="kdenlive:control_uuid">{8360734a-ae55-49aa-933d-ec27b4ef4746}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">34251</property>
+  <property name="kdenlive:file_hash">78fe77e3657b591eeb6b5b1d91c4f815</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain24" out="00:00:01.833">
+  <property name="length">56</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Dramatic Buildup Whip - 1.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">12</property>
+  <property name="kdenlive:control_uuid">{76c7bd32-f340-4723-b504-d8e78b4a7085}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">33833</property>
+  <property name="kdenlive:file_hash">d5d014cbbe7a13c87297829310c7333e</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain25" out="00:00:02.500">
+  <property name="length">76</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Fly By - Wobbly.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">13</property>
+  <property name="kdenlive:control_uuid">{6f1e16c4-f858-4d23-94c0-80ea5f767b60}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">44700</property>
+  <property name="kdenlive:file_hash">0598ff2bb940cedc5a4c9a4bfc37344e</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain26" out="00:00:00.867">
+  <property name="length">27</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Heartbeat - Single lub dub.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">14</property>
+  <property name="kdenlive:control_uuid">{bcb327ff-2500-4161-a407-1fd8a59a764d}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">18786</property>
+  <property name="kdenlive:file_hash">45e8cba6414545f11146189429c90425</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">1</property>
+ </chain>
+ <chain id="chain0" out="00:00:00.833">
+  <property name="length">26</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Mystery.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">15</property>
+  <property name="kdenlive:control_uuid">{13495799-4110-4985-bd7f-5645ed0c17b8}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">17950</property>
+  <property name="kdenlive:file_hash">f0d2bfc7432b1e85c1c64dad9bf19e83</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">1</property>
+ </chain>
+ <chain id="chain1" out="00:00:00.433">
+  <property name="length">14</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Notification - Two Tone.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">16</property>
+  <property name="kdenlive:control_uuid">{ed1f4cd8-b03e-47f8-877a-3b71a9f5efc8}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">11681</property>
+  <property name="kdenlive:file_hash">5b7388b9914d8a63af4a12a634bf4cfa</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain2" out="00:00:00.133">
+  <property name="length">5</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Pop 1.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">17</property>
+  <property name="kdenlive:control_uuid">{69033631-2fa2-4ea1-9175-6eb7fbd4e61d}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">6665</property>
+  <property name="kdenlive:file_hash">67b52d96fca1bc6fd1a9d379834ac4d6</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain3" out="00:00:00.200">
+  <property name="length">7</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Pop 5.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">18</property>
+  <property name="kdenlive:control_uuid">{a7b8c411-5ad4-4510-ba43-a51721549a1f}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">7919</property>
+  <property name="kdenlive:file_hash">2a08c3c68a18256db689868b77124722</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain4" out="00:00:03.533">
+  <property name="length">107</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Rewind 1.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">19</property>
+  <property name="kdenlive:control_uuid">{ecd672ff-de7a-4bf1-a258-721b5e80b5a4}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">61418</property>
+  <property name="kdenlive:file_hash">7eb8716376683730fd150b298164b209</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain5" out="00:00:00.833">
+  <property name="length">26</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Shutdown 3.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">20</property>
+  <property name="kdenlive:control_uuid">{0d9c8bf1-2f67-411e-951b-d56a58d430dd}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">17950</property>
+  <property name="kdenlive:file_hash">5df2435ab5f4328f0580e3f14284b6f5</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain6" out="00:00:02.167">
+  <property name="length">66</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Siren 1.mp3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">320000</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">21</property>
+  <property name="kdenlive:control_uuid">{98aaea80-717e-464b-bfba-59fce49d0f28}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">91489</property>
+  <property name="kdenlive:file_hash">58dda05ed3084cab88a63854867a5bcc</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">320 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain7" out="00:00:00.433">
+  <property name="length">14</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Slap.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">22</property>
+  <property name="kdenlive:control_uuid">{5aa595ec-2d24-4752-842f-e77862f69c65}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">11681</property>
+  <property name="kdenlive:file_hash">e8ac162ebe1de72ffd33f55d6fd02d29</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain8" out="00:00:01.033">
+  <property name="length">32</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Sparkle.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">23</property>
+  <property name="kdenlive:control_uuid">{a52aa468-d029-4dee-803e-1d31effb8a94}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">21294</property>
+  <property name="kdenlive:file_hash">247d0cfc1211da60f16778a6f1184042</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain9" out="00:00:00.567">
+  <property name="length">18</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Swish 2.mp3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">320000</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">24</property>
+  <property name="kdenlive:control_uuid">{63225852-7f3a-45d8-98d9-e2ca0686cf69}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">28129</property>
+  <property name="kdenlive:file_hash">9af8f7ba8ad98961d9905887a38887ab</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">320 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain10" out="00:00:01.300">
+  <property name="length">40</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Swoosh.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">25</property>
+  <property name="kdenlive:control_uuid">{d6d5da55-4339-4a66-b6a3-63abac7c8640}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">25471</property>
+  <property name="kdenlive:file_hash">9db15d15e74a685710cb632fc8dc60f5</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain11" out="00:00:01.233">
+  <property name="length">38</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Swoosh - Sharp - Hit.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">26</property>
+  <property name="kdenlive:control_uuid">{011ed71c-eefc-45a2-a165-4e33186f30c5}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">24636</property>
+  <property name="kdenlive:file_hash">c9dcfdbae540dca0b0001d4f15fffbd8</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain12" out="00:00:02.067">
+  <property name="length">63</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Thunderstorm 3.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">27</property>
+  <property name="kdenlive:control_uuid">{703b6318-18ec-440a-ba73-09b21a28de3b}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">38012</property>
+  <property name="kdenlive:file_hash">c97806154e6eca67fd0a363d660a1329</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain13" out="00:00:03.100">
+  <property name="length">94</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Typing 3.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">28</property>
+  <property name="kdenlive:control_uuid">{d1212b85-b9df-448d-a5af-175085c5069e}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">54313</property>
+  <property name="kdenlive:file_hash">ad6be7ed680befea00c85215183fa43e</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <chain id="chain14" out="00:00:00.833">
+  <property name="length">26</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Whoosh 5.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">29</property>
+  <property name="kdenlive:control_uuid">{e73d42c8-1049-4722-85e7-6aaf7cf6375d}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">17948</property>
+  <property name="kdenlive:file_hash">4d2b41b322ae5bb8d6fda44228e88a38</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">1</property>
+ </chain>
+ <chain id="chain15" out="00:00:00.400">
+  <property name="length">13</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Whoosh - Fast - Sharp - Short.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">30</property>
+  <property name="kdenlive:control_uuid">{14e2ed35-a6fe-4f98-a1d5-5b2c76fe4467}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">11261</property>
+  <property name="kdenlive:file_hash">62ae427b1280e9786c2f39eadf0efeda</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+  <property name="kdenlive:monitorPosition">0</property>
+ </chain>
+ <producer id="producer2" in="00:00:00.000" out="00:00:04.967">
+  <property name="length">00:00:05.000</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Imágenes/givore/logo-givore.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">1024</property>
+  <property name="meta.media.height">1024</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:duration">00:00:05:00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">40</property>
+  <property name="kdenlive:id">31</property>
+  <property name="kdenlive:control_uuid">{936599c3-553e-4c77-b207-7af7e9515e7f}</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">109362</property>
+  <property name="kdenlive:file_hash">0f7160739f7fe832e7b0035d3d2b1060</property>
+  <property name="kdenlive:kextractor">1</property>
+ </producer>
+ <producer id="producer1" in="00:00:00.000" out="00:00:04.967">
+  <property name="length">00:00:05.000</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Imágenes/givore/logo-givore-transparente-black.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">920</property>
+  <property name="meta.media.height">276</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:duration">00:00:05:00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">40</property>
+  <property name="kdenlive:id">32</property>
+  <property name="kdenlive:control_uuid">{fb10f77e-896a-485d-a032-b653d2863ce4}</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">24531</property>
+  <property name="kdenlive:file_hash">d9301f07b3c257a5831f9f2d7219b9a1</property>
+ </producer>
+ <producer id="producer3" in="00:00:00.000" out="00:00:04.967">
+  <property name="length">00:00:05.000</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Imágenes/givore/logo-givore-transparente-white.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="meta.media.progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="format">2</property>
+  <property name="meta.media.width">920</property>
+  <property name="meta.media.height">276</property>
+  <property name="mlt_service">qimage</property>
+  <property name="kdenlive:duration">00:00:05:00</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">40</property>
+  <property name="kdenlive:id">33</property>
+  <property name="kdenlive:control_uuid">{4731f952-bb20-4297-b131-493b05cb68b8}</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:file_size">33909</property>
+  <property name="kdenlive:file_hash">7ca7fc3b8d512aeb3a71fd0b2bc3a113</property>
+ </producer>
+ <producer id="producer4" in="00:00:00.000" out="00:00:04.967">
+  <property name="length">150</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="meta.media.progressive">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="seekable">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="kdenlive:duration">00:00:05:00</property>
+  <property name="kdenlive:clipname">Titulo</property>
+  <property name="xmldata">&lt;kdenlivetitle LC_NUMERIC="C" duration="150" height="1920" out="149" width="1080">
+ &lt;item type="QGraphicsTextItem" z-index="0">
+  &lt;position x="350" y="566">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content alignment="4" box-height="123" box-width="384" font="Noto Mono" font-color="255,255,255,255" font-italic="0" font-outline="13" font-outline-color="47,134,13,255" font-pixel-size="100" font-underline="0" font-weight="900" letter-spacing="4" line-spacing="5" shadow="0;#64000000;3;3;3" tab-width="80" typewriter="0;2;1;0;0">Titulo&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1080,1920"/>
+ &lt;endviewport rect="0,0,1080,1920"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="xml">was here</property>
+  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:id">34</property>
+  <property name="kdenlive:control_uuid">{0df3ae94-c472-4800-a3ef-4ce62d2c40cc}</property>
+  <property name="kdenlive:clip_type">2</property>
+  <property name="kdenlive:uniqueId">{bd05f8cf-4930-4d6d-b7c6-3fbabb8a4c55}</property>
+  <property name="kdenlive:file_hash">3ffe67a7632629ee945ba869b28577d1</property>
+  <property name="force_reload">0</property>
+  <property name="meta.media.width">1080</property>
+  <property name="meta.media.height">1920</property>
+ </producer>
+ <producer id="producer0" in="00:00:00.000" out="00:05:00.000">
+  <property name="length">2147483647</property>
+  <property name="eof">continue</property>
+  <property name="resource">black</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">color</property>
+  <property name="kdenlive:playlistid">black_track</property>
+  <property name="mlt_image_format">rgba</property>
+  <property name="set.test_audio">0</property>
+ </producer>
+ <playlist id="playlist0">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist1">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor0" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">72</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:track_name">Effects</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist0"/>
+  <track hide="video" producer="playlist1"/>
+  <filter id="filter0">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="channel_mask">-1</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter1">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter2">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist2">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist3">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor1" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">75</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:track_name">Music</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist2"/>
+  <track hide="video" producer="playlist3"/>
+  <filter id="filter3">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="channel_mask">-1</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter4">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter5">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist4">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <playlist id="playlist5">
+  <property name="kdenlive:audio_track">1</property>
+ </playlist>
+ <tractor id="tractor2" in="00:00:00.000">
+  <property name="kdenlive:audio_track">1</property>
+  <property name="kdenlive:trackheight">75</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:track_name">Voice</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="video" producer="playlist4"/>
+  <track hide="video" producer="playlist5"/>
+  <filter id="filter6">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="channel_mask">-1</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter7">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter8">
+   <property name="iec_scale">0</property>
+   <property name="mlt_service">audiolevel</property>
+   <property name="dbpeak">1</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <playlist id="playlist6"/>
+ <playlist id="playlist7"/>
+ <tractor id="tractor3" in="00:00:00.000">
+  <property name="kdenlive:trackheight">75</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:track_name">Main video</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist6"/>
+  <track hide="audio" producer="playlist7"/>
+ </tractor>
+ <playlist id="playlist8"/>
+ <playlist id="playlist9"/>
+ <tractor id="tractor4" in="00:00:00.000">
+  <property name="kdenlive:trackheight">75</property>
+  <property name="kdenlive:timeline_active">1</property>
+  <property name="kdenlive:collapsed">0</property>
+  <property name="kdenlive:track_name">Support effects</property>
+  <property name="kdenlive:thumbs_format"/>
+  <property name="kdenlive:audio_rec"/>
+  <track hide="audio" producer="playlist8"/>
+  <track hide="audio" producer="playlist9"/>
+ </tractor>
+ <tractor id="tractor5" in="00:00:00.000">
+  <property name="kdenlive:duration">00:00:00.000</property>
+  <property name="kdenlive:maxduration">0</property>
+  <property name="kdenlive:clipname">Sequence 1</property>
+  <property name="kdenlive:description"/>
+  <property name="kdenlive:uuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:producer_type">17</property>
+  <property name="kdenlive:zone_in">0</property>
+  <property name="kdenlive:zone_out">1313</property>
+  <property name="kdenlive:control_uuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:id">3</property>
+  <property name="kdenlive:clip_type">0</property>
+  <property name="kdenlive:file_hash">9bb597957624f01887c492d4f8ec1399</property>
+  <property name="kdenlive:folderid">2</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">2</property>
+  <property name="kdenlive:sequenceproperties.audioTarget">1</property>
+  <property name="kdenlive:sequenceproperties.disablepreview">0</property>
+  <property name="kdenlive:sequenceproperties.documentuuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:sequenceproperties.globalSubtitleStyles">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.hasAudio">1</property>
+  <property name="kdenlive:sequenceproperties.hasVideo">1</property>
+  <property name="kdenlive:sequenceproperties.hidesubtitle">0</property>
+  <property name="kdenlive:sequenceproperties.position">4</property>
+  <property name="kdenlive:sequenceproperties.scrollPos">0</property>
+  <property name="kdenlive:sequenceproperties.subtitlesList">[
+    {
+        "file": "/home/kdabrow/Vídeos/givore/20251203/el cuadro.kdenlive.ass",
+        "id": 0,
+        "name": "Subtitles"
+    }
+]
+</property>
+  <property name="kdenlive:sequenceproperties.tracks">4</property>
+  <property name="kdenlive:sequenceproperties.tracksCount">5</property>
+  <property name="kdenlive:sequenceproperties.verticalzoom">1</property>
+  <property name="kdenlive:sequenceproperties.videoTarget">2</property>
+  <property name="kdenlive:sequenceproperties.zonein">0</property>
+  <property name="kdenlive:sequenceproperties.zoneout">75</property>
+  <property name="kdenlive:sequenceproperties.zoom">11</property>
+  <property name="kdenlive:sequenceproperties.groups">[
+]
+</property>
+  <property name="kdenlive:sequenceproperties.guides">[
+]
+</property>
+  <track producer="producer0"/>
+  <track producer="tractor0"/>
+  <track producer="tractor1"/>
+  <track producer="tractor2"/>
+  <track producer="tractor3"/>
+  <track producer="tractor4"/>
+  <transition id="transition0">
+   <property name="a_track">0</property>
+   <property name="b_track">1</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">0</property>
+   <property name="b_track">2</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">0</property>
+   <property name="b_track">3</property>
+   <property name="mlt_service">mix</property>
+   <property name="kdenlive_id">mix</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+   <property name="accepts_blanks">1</property>
+   <property name="sum">1</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">0</property>
+   <property name="b_track">4</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="kdenlive_id">qtblend</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+  </transition>
+  <transition id="transition4">
+   <property name="a_track">0</property>
+   <property name="b_track">5</property>
+   <property name="compositing">0</property>
+   <property name="distort">0</property>
+   <property name="rotate_center">0</property>
+   <property name="mlt_service">qtblend</property>
+   <property name="kdenlive_id">qtblend</property>
+   <property name="internal_added">237</property>
+   <property name="always_active">1</property>
+  </transition>
+  <filter id="filter15">
+   <property name="window">75</property>
+   <property name="max_gain">20dB</property>
+   <property name="channel_mask">-1</property>
+   <property name="mlt_service">volume</property>
+   <property name="internal_added">237</property>
+   <property name="disable">1</property>
+  </filter>
+  <filter id="filter16">
+   <property name="channel">-1</property>
+   <property name="mlt_service">panner</property>
+   <property name="internal_added">237</property>
+   <property name="start">0.5</property>
+   <property name="disable">1</property>
+  </filter>
+ </tractor>
+ <chain id="chain27" out="00:00:00.367">
+  <property name="length">12</property>
+  <property name="eof">pause</property>
+  <property name="resource">/home/kdabrow/Música/SFX/Camera 1.MP3</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">fltp</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.layout">stereo</property>
+  <property name="meta.media.0.codec.name">mp3float</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.encoder.markup">LAME3.101 (beta 2)</property>
+  <property name="meta.attr.genre.markup">Sound Effect</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="astream">0</property>
+  <property name="kdenlive:folderid">39</property>
+  <property name="kdenlive:id">35</property>
+  <property name="kdenlive:control_uuid">{93ed715b-b79d-483e-934c-f0e57d2bc738}</property>
+  <property name="kdenlive:clip_type">1</property>
+  <property name="kdenlive:file_size">10427</property>
+  <property name="kdenlive:file_hash">bef2b36403db2f1a8ddae918ee37f6aa</property>
+  <property name="kdenlive:kextractor">1</property>
+  <property name="kdenlive:meta.extractor.Bitrate:">128 kb/s</property>
+  <property name="kdenlive:meta.extractor.Genre:">Sound Effect</property>
+ </chain>
+ <playlist id="main_bin">
+  <property name="kdenlive:folder.-1.2">Sequences</property>
+  <property name="kdenlive:folder.-1.39">Effects</property>
+  <property name="kdenlive:folder.-1.40">Logos</property>
+  <property name="kdenlive:sequenceFolder">2</property>
+  <property name="kdenlive:docproperties.activetimeline">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:docproperties.audioChannels">2</property>
+  <property name="kdenlive:docproperties.binsort">0</property>
+  <property name="kdenlive:docproperties.browserurl">/home/kdabrow/Vídeos/</property>
+  <property name="kdenlive:docproperties.documentid">1766183474541</property>
+  <property name="kdenlive:docproperties.enableTimelineZone">0</property>
+  <property name="kdenlive:docproperties.enableexternalproxy">0</property>
+  <property name="kdenlive:docproperties.enableproxy">0</property>
+  <property name="kdenlive:docproperties.externalproxyparams"/>
+  <property name="kdenlive:docproperties.generateimageproxy">0</property>
+  <property name="kdenlive:docproperties.generateproxy">0</property>
+  <property name="kdenlive:docproperties.guidesCategories">[
+    {
+        "color": "#9b59b6",
+        "comment": "Categoría 1",
+        "index": 0
+    },
+    {
+        "color": "#3daee9",
+        "comment": "Categoría 2",
+        "index": 1
+    },
+    {
+        "color": "#1abc9c",
+        "comment": "Categoría 3",
+        "index": 2
+    },
+    {
+        "color": "#1cdc9a",
+        "comment": "Categoría 4",
+        "index": 3
+    },
+    {
+        "color": "#c9ce3b",
+        "comment": "Categoría 5",
+        "index": 4
+    },
+    {
+        "color": "#fdbc4b",
+        "comment": "Categoría 6",
+        "index": 5
+    },
+    {
+        "color": "#f39c1f",
+        "comment": "Categoría 7",
+        "index": 6
+    },
+    {
+        "color": "#f47750",
+        "comment": "Categoría 8",
+        "index": 7
+    },
+    {
+        "color": "#da4453",
+        "comment": "Categoría 9",
+        "index": 8
+    }
+]
+</property>
+  <property name="kdenlive:docproperties.kdenliveversion">25.12.0</property>
+  <property name="kdenlive:docproperties.opensequences">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:docproperties.previewextension"/>
+  <property name="kdenlive:docproperties.previewparameters"/>
+  <property name="kdenlive:docproperties.profile">vertical_hd_30</property>
+  <property name="kdenlive:docproperties.proxyextension"/>
+  <property name="kdenlive:docproperties.proxyimageminsize">2000</property>
+  <property name="kdenlive:docproperties.proxyimagesize">800</property>
+  <property name="kdenlive:docproperties.proxyminsize">1000</property>
+  <property name="kdenlive:docproperties.proxyparams"/>
+  <property name="kdenlive:docproperties.proxyresize">640</property>
+  <property name="kdenlive:docproperties.rendercategory">Generic (HD for web, mobile devices...)</property>
+  <property name="kdenlive:docproperties.rendercustomquality">-1</property>
+  <property name="kdenlive:docproperties.renderendguide">-1</property>
+  <property name="kdenlive:docproperties.renderexportaudio">0</property>
+  <property name="kdenlive:docproperties.renderfullcolorrange">0</property>
+  <property name="kdenlive:docproperties.rendermode">0</property>
+  <property name="kdenlive:docproperties.renderplay">0</property>
+  <property name="kdenlive:docproperties.renderpreview">0</property>
+  <property name="kdenlive:docproperties.renderprofile">MP4-H264/AAC</property>
+  <property name="kdenlive:docproperties.renderrescale">0</property>
+  <property name="kdenlive:docproperties.renderrescaleheight">960</property>
+  <property name="kdenlive:docproperties.renderrescalewidth">540</property>
+  <property name="kdenlive:docproperties.renderspeed">6</property>
+  <property name="kdenlive:docproperties.renderstartguide">-1</property>
+  <property name="kdenlive:docproperties.renderstemaudio">0</property>
+  <property name="kdenlive:docproperties.rendertcoverlay">0</property>
+  <property name="kdenlive:docproperties.rendertctype">-1</property>
+  <property name="kdenlive:docproperties.rendertwopass">0</property>
+  <property name="kdenlive:docproperties.seekOffset">9000</property>
+  <property name="kdenlive:docproperties.sessionid">{a67dad88-6d22-49f4-a575-3121afef2f14}</property>
+  <property name="kdenlive:docproperties.uuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
+  <property name="kdenlive:docproperties.version">1.1</property>
+  <property name="kdenlive:expandedFolders">39</property>
+  <property name="kdenlive:binZoom">4</property>
+  <property name="kdenlive:extraBins">project_bin:-1:0</property>
+  <property name="kdenlive:documentnotes"/>
+  <property name="kdenlive:documentnotesversion">2</property>
+  <property name="kdenlive:docproperties.layout">{
+    "allDockWidgets": [
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 3,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": -1,
+                "wasFloating": false
+            },
+            "uniqueName": "timeline"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 0,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 0,
+                "wasFloating": false
+            },
+            "uniqueName": "project_bin"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "library"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "subtitles"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "textedit"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "timeremap"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "markers"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 0,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 1,
+                "wasFloating": false
+            },
+            "uniqueName": "screengrab"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 0,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 1,
+                "wasFloating": false
+            },
+            "uniqueName": "audiospectrum"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 4,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 1,
+                "wasFloating": false
+            },
+            "uniqueName": "clipmonitor"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 4,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 1,
+                "wasFloating": false
+            },
+            "uniqueName": "projectmonitor"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 0,
+                "wasFloating": false
+            },
+            "uniqueName": "clip_properties"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "notes_widget"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "media_browser"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "onlineresources"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": -1,
+                "wasFloating": false
+            },
+            "uniqueName": "effect_stack"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": -1,
+                "wasFloating": false
+            },
+            "uniqueName": "effect_list"
+        },
+        {
+            "lastCloseReason": 0,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": -1,
+                "wasFloating": false
+            },
+            "uniqueName": "transition_list"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "undo_history"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 2,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "mixer"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 0,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 1,
+                "wasFloating": false
+            },
+            "uniqueName": "vectorscope"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "waveform"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 3,
+                "wasFloating": false
+            },
+            "uniqueName": "rgb_parade"
+        },
+        {
+            "lastCloseReason": 2,
+            "lastPosition": {
+                "lastFloatingGeometry": {
+                    "height": 0,
+                    "width": 0,
+                    "x": 0,
+                    "y": 0
+                },
+                "lastOverlayedGeometries": [],
+                "placeholders": [
+                    {
+                        "isFloatingWindow": false,
+                        "itemIndex": 1,
+                        "mainWindowUniqueName": "KdenliveKDDock"
+                    }
+                ],
+                "tabIndex": 2,
+                "wasFloating": false
+            },
+            "uniqueName": "histogram"
+        }
+    ],
+    "closedDockWidgets": [
+        "library",
+        "subtitles",
+        "textedit",
+        "timeremap",
+        "markers",
+        "screengrab",
+        "audiospectrum",
+        "projectmonitor",
+        "clip_properties",
+        "notes_widget",
+        "media_browser",
+        "onlineresources",
+        "transition_list",
+        "undo_history",
+        "mixer",
+        "vectorscope",
+        "waveform",
+        "rgb_parade",
+        "histogram"
+    ],
+    "floatingWindows": [],
+    "mainWindows": [
+        {
+            "affinities": null,
+            "geometry": {
+                "height": 2091,
+                "width": 3840,
+                "x": 0,
+                "y": 69
+            },
+            "isVisible": true,
+            "multiSplitterLayout": {
+                "frames": {
+                    "5699": {
+                        "currentTabIndex": 1,
+                        "dockWidgets": [
+                            "transition_list",
+                            "effect_list"
+                        ],
+                        "geometry": {
+                            "height": 1235,
+                            "width": 712,
+                            "x": 682,
+                            "y": 0
+                        },
+                        "id": "5699",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "effect_list",
+                        "options": 0
+                    },
+                    "5763": {
+                        "currentTabIndex": 0,
+                        "dockWidgets": [
+                            "timeline"
+                        ],
+                        "geometry": {
+                            "height": 742,
+                            "width": 2736,
+                            "x": 0,
+                            "y": 1235
+                        },
+                        "id": "5763",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "timeline",
+                        "options": 0
+                    },
+                    "5796": {
+                        "currentTabIndex": 0,
+                        "dockWidgets": [
+                            "effect_stack",
+                            "clip_properties"
+                        ],
+                        "geometry": {
+                            "height": 1235,
+                            "width": 1342,
+                            "x": 1394,
+                            "y": 0
+                        },
+                        "id": "5796",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "effect_stack",
+                        "options": 0
+                    },
+                    "5860": {
+                        "currentTabIndex": 0,
+                        "dockWidgets": [
+                            "project_bin"
+                        ],
+                        "geometry": {
+                            "height": 1235,
+                            "width": 682,
+                            "x": 0,
+                            "y": 0
+                        },
+                        "id": "5860",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "project_bin",
+                        "options": 0
+                    },
+                    "5893": {
+                        "currentTabIndex": 0,
+                        "dockWidgets": [
+                            "clipmonitor",
+                            "projectmonitor"
+                        ],
+                        "geometry": {
+                            "height": 1977,
+                            "width": 1102,
+                            "x": 2736,
+                            "y": 0
+                        },
+                        "id": "5893",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "clipmonitor",
+                        "options": 0
+                    }
+                },
+                "layout": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "guestId": "5860",
+                                            "isContainer": false,
+                                            "isVisible": true,
+                                            "sizingInfo": {
+                                                "geometry": {
+                                                    "height": 1235,
+                                                    "width": 682,
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "maxSizeHint": {
+                                                    "height": 524323,
+                                                    "width": 524293
+                                                },
+                                                "minSize": {
+                                                    "height": 163,
+                                                    "width": 94
+                                                },
+                                                "percentageWithinParent": 0.24926900584795322
+                                            }
+                                        },
+                                        {
+                                            "guestId": "5699",
+                                            "isContainer": false,
+                                            "isVisible": true,
+                                            "sizingInfo": {
+                                                "geometry": {
+                                                    "height": 1235,
+                                                    "width": 712,
+                                                    "x": 682,
+                                                    "y": 0
+                                                },
+                                                "maxSizeHint": {
+                                                    "height": 524323,
+                                                    "width": 524293
+                                                },
+                                                "minSize": {
+                                                    "height": 275,
+                                                    "width": 158
+                                                },
+                                                "percentageWithinParent": 0.260233918128655
+                                            }
+                                        },
+                                        {
+                                            "guestId": "5796",
+                                            "isContainer": false,
+                                            "isVisible": true,
+                                            "sizingInfo": {
+                                                "geometry": {
+                                                    "height": 1235,
+                                                    "width": 1342,
+                                                    "x": 1394,
+                                                    "y": 0
+                                                },
+                                                "maxSizeHint": {
+                                                    "height": 524323,
+                                                    "width": 524293
+                                                },
+                                                "minSize": {
+                                                    "height": 159,
+                                                    "width": 274
+                                                },
+                                                "percentageWithinParent": 0.4904970760233918
+                                            }
+                                        }
+                                    ],
+                                    "isContainer": true,
+                                    "isVisible": false,
+                                    "orientation": 1,
+                                    "sizingInfo": {
+                                        "geometry": {
+                                            "height": 1235,
+                                            "width": 2736,
+                                            "x": 0,
+                                            "y": 0
+                                        },
+                                        "maxSizeHint": {
+                                            "height": 524287,
+                                            "width": 1572879
+                                        },
+                                        "minSize": {
+                                            "height": 275,
+                                            "width": 526
+                                        },
+                                        "percentageWithinParent": 0.6246838644410724
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "guestId": "5763",
+                                            "isContainer": false,
+                                            "isVisible": true,
+                                            "sizingInfo": {
+                                                "geometry": {
+                                                    "height": 742,
+                                                    "width": 2736,
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "maxSizeHint": {
+                                                    "height": 524314,
+                                                    "width": 524287
+                                                },
+                                                "minSize": {
+                                                    "height": 117,
+                                                    "width": 80
+                                                },
+                                                "percentageWithinParent": 1.0
+                                            }
+                                        }
+                                    ],
+                                    "isContainer": true,
+                                    "isVisible": false,
+                                    "orientation": 1,
+                                    "sizingInfo": {
+                                        "geometry": {
+                                            "height": 742,
+                                            "width": 2736,
+                                            "x": 0,
+                                            "y": 1235
+                                        },
+                                        "maxSizeHint": {
+                                            "height": 524314,
+                                            "width": 524287
+                                        },
+                                        "minSize": {
+                                            "height": 117,
+                                            "width": 80
+                                        },
+                                        "percentageWithinParent": 0.3753161355589277
+                                    }
+                                }
+                            ],
+                            "isContainer": true,
+                            "isVisible": false,
+                            "orientation": 2,
+                            "sizingInfo": {
+                                "geometry": {
+                                    "height": 1977,
+                                    "width": 2736,
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "maxSizeHint": {
+                                    "height": 1048601,
+                                    "width": 524287
+                                },
+                                "minSize": {
+                                    "height": 392,
+                                    "width": 526
+                                },
+                                "percentageWithinParent": 0.7128712871287128
+                            }
+                        },
+                        {
+                            "guestId": "5893",
+                            "isContainer": false,
+                            "isVisible": true,
+                            "sizingInfo": {
+                                "geometry": {
+                                    "height": 1977,
+                                    "width": 1102,
+                                    "x": 2736,
+                                    "y": 0
+                                },
+                                "maxSizeHint": {
+                                    "height": 524323,
+                                    "width": 524293
+                                },
+                                "minSize": {
+                                    "height": 236,
+                                    "width": 326
+                                },
+                                "percentageWithinParent": 0.2871287128712871
+                            }
+                        }
+                    ],
+                    "isContainer": true,
+                    "isVisible": false,
+                    "orientation": 1,
+                    "sizingInfo": {
+                        "geometry": {
+                            "height": 1977,
+                            "width": 3838,
+                            "x": 0,
+                            "y": 0
+                        },
+                        "maxSizeHint": {
+                            "height": 16777215,
+                            "width": 16777215
+                        },
+                        "minSize": {
+                            "height": 90,
+                            "width": 80
+                        },
+                        "percentageWithinParent": 0.0
+                    }
+                }
+            },
+            "normalGeometry": {
+                "height": 0,
+                "width": 0,
+                "x": 0,
+                "y": 0
+            },
+            "options": 0,
+            "screenIndex": 0,
+            "screenSize": {
+                "height": 2160,
+                "width": 3840
+            },
+            "uniqueName": "KdenliveKDDock",
+            "windowState": 2
+        }
+    ],
+    "screenInfo": [
+        {
+            "devicePixelRatio": 1.0,
+            "geometry": {
+                "height": 2160,
+                "width": 3840,
+                "x": 0,
+                "y": 0
+            },
+            "index": 0,
+            "name": "HDMI-0"
+        }
+    ],
+    "serializationVersion": 3
+}</property>
+  <property name="xml_retain">1</property>
+  <entry in="00:00:00.000" out="00:00:01.667" producer="chain16"/>
+  <entry in="00:00:00.000" out="00:00:01.100" producer="chain17"/>
+  <entry in="00:00:00.000" out="00:00:01.133" producer="chain18"/>
+  <entry in="00:00:00.000" out="00:00:00.267" producer="chain19"/>
+  <entry in="00:00:00.000" out="00:00:01.200" producer="chain20"/>
+  <entry in="00:00:00.000" out="00:00:01.833" producer="chain21"/>
+  <entry in="00:00:00.000" out="00:00:02.700" producer="chain22"/>
+  <entry in="00:00:00.000" out="00:00:01.833" producer="chain23"/>
+  <entry in="00:00:00.000" out="00:00:01.833" producer="chain24"/>
+  <entry in="00:00:00.000" out="00:00:02.500" producer="chain25"/>
+  <entry in="00:00:00.000" out="00:00:00.867" producer="chain26"/>
+  <entry in="00:00:00.000" out="00:00:00.833" producer="chain0"/>
+  <entry in="00:00:00.000" out="00:00:00.433" producer="chain1"/>
+  <entry in="00:00:00.000" out="00:00:00.133" producer="chain2"/>
+  <entry in="00:00:00.000" out="00:00:00.200" producer="chain3"/>
+  <entry in="00:00:00.000" out="00:00:03.533" producer="chain4"/>
+  <entry in="00:00:00.000" out="00:00:00.833" producer="chain5"/>
+  <entry in="00:00:00.000" out="00:00:02.167" producer="chain6"/>
+  <entry in="00:00:00.000" out="00:00:00.433" producer="chain7"/>
+  <entry in="00:00:00.000" out="00:00:01.033" producer="chain8"/>
+  <entry in="00:00:00.000" out="00:00:00.567" producer="chain9"/>
+  <entry in="00:00:00.000" out="00:00:01.300" producer="chain10"/>
+  <entry in="00:00:00.000" out="00:00:01.233" producer="chain11"/>
+  <entry in="00:00:00.000" out="00:00:02.067" producer="chain12"/>
+  <entry in="00:00:00.000" out="00:00:03.100" producer="chain13"/>
+  <entry in="00:00:00.000" out="00:00:00.833" producer="chain14"/>
+  <entry in="00:00:00.000" out="00:00:00.400" producer="chain15"/>
+  <entry in="00:00:00.000" out="00:00:04.967" producer="producer2"/>
+  <entry in="00:00:00.000" out="00:00:04.967" producer="producer1"/>
+  <entry in="00:00:00.000" out="00:00:04.967" producer="producer3"/>
+  <entry in="00:00:00.000" out="00:00:04.967" producer="producer4"/>
+  <entry in="00:00:00.000" out="00:00:00.000" producer="tractor5"/>
+  <entry in="00:00:00.000" out="00:00:00.367" producer="chain27"/>
+ </playlist>
+ <tractor id="tractor6" in="00:00:00.000" out="00:00:00.000">
+  <property name="kdenlive:projectTractor">1</property>
+  <track in="00:00:00.000" out="00:00:00.000" producer="tractor5"/>
+ </tractor>
+</mlt>

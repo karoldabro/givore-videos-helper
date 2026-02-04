@@ -1,0 +1,99 @@
+# Visual Cues - [PROJECT NAME]
+# Date: [DATE]
+# Duration: [TARGET DURATION]
+
+---
+
+## Visual Style
+Style: [POV-CYCLING | WALKING | STATIONARY | MIXED]
+Reason: [Why this style fits the content]
+
+---
+
+## Lighting
+Target: [GOLDEN-HOUR | MIDDAY | OVERCAST | INDOOR | VARIED]
+Filming Time: [Recommended time window, e.g., 15:00-17:00]
+Backup Plan: [If weather/timing changes]
+
+---
+
+## Item Category
+Primary: [FURNITURE | ART | APPLIANCES | DECOR | MIXED]
+Share Potential: [HIGH | MEDIUM-HIGH | MEDIUM | LOW]
+Key Visual Features: [What makes these items visually interesting]
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | [zoom/sound/text] | [Specific instruction] |
+
+**Options:**
+- Quick zoom: 1.1-1.2x scale for 0.3s on hook word landing
+- Sound effect: Pop/whoosh at 1.5-2s
+- Text flash: Key word appears briefly
+- Item preview: 0.5s flash of find before question
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- [Visual instruction]
+- [Camera movement/angle]
+- [What's visible in frame]
+
+### PROOF TEASE (3-8s) - if applicable
+- [Visual instruction]
+
+### DISCOVERY (8-16s)
+- [Visual instruction for revealing items]
+- [POV approach to find]
+
+### PROBLEM (16-21s)
+- [Visual context showing waste/situation]
+
+### SOLUTION (21-30s)
+- [App UI visible? How?]
+- [Natural integration notes]
+
+### CTA (30s+)
+- [Ending visual - scenic location?]
+- [Any text overlay for CTA?]
+
+---
+
+## POV Cycling Notes (if applicable)
+- Bike handlebars visible: [yes/no]
+- Motion maintained throughout: [notes]
+- Discovery moment timing: [when viewer "discovers" with creator]
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+
+---
+
+## App Integration
+- Show real Givore UI at: [timestamp]
+- Camera buttons visible: [yes/no]
+- "In-the-moment" feel: [notes]
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+[Any additional instructions for video editor]
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

@@ -3,15 +3,17 @@
 ## Hook Selection Decision Tree
 
 ```
+IF building a recurring series / episodic content → DAY-X SERIALIZED HOOKS
 IF items appear in first 5 seconds → PROOF-FIRST HOOKS
 IF video starts with recap montage → MYSTERY HOOKS
 IF items revealed after 30 seconds → MYSTERY HOOKS
 IF single impressive item → NUMERIC or PROOF-FIRST
 IF multiple items found → NUMERIC or JOURNEY HOOKS
 IF asking for engagement → QUESTION HOOKS
+IF community/connection focus + middle reveal → THREE-PART RELEVANCE HOOKS
 ```
 
-## 8 Hook Categories
+## 10 Hook Categories
 
 ### 1. MYSTERY HOOKS
 **Use when**: Items appear late (after 30s)
@@ -53,6 +55,19 @@ IF asking for engagement → QUESTION HOOKS
 **Use when**: Genuine reaction is the hook
 - "No me lo puedo creer. No me lo puedo creer."
 - "¡Madre mía! ¿Esto estaba en la calle?"
+
+### 9. THREE-PART RELEVANCE HOOKS
+**Use when**: Community/connection focus + middle reveal
+- Three parts: Viewer-First Relevance → Social Proof → Stakes/Solution Tease
+- ~15-20s total (longer hook, shorter PROBLEM section)
+- Skip Proof Tease when using this hook
+
+### 10. DAY-X SERIALIZED HOOKS
+**Use when**: Building a recurring series, episodic content
+- "Día [X]... [ACTIVIDAD] por [ZONA]. A ver qué encontramos."
+- "Día [X] de [MISIÓN]. Hoy me lanzo por [ZONA]."
+- Repetitive format + variable reward = dopamine through anticipation
+- ~10-12s max, skip Proof Tease
 
 ## Rotation Rules
 - NEVER use same hook template in consecutive videos

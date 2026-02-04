@@ -2,6 +2,14 @@
 
 Generate multi-platform titles, descriptions, hashtags, and captions for Givore social media videos.
 
+## Project Root
+
+**All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
+
+When using the Read tool or any file operation, always prepend this path. For example:
+- `projects/[folder]/` → `/media/kdabrow/Programy/givore/projects/[folder]/`
+- `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md` → `/media/kdabrow/Programy/givore/CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`
+
 ## Instructions
 
 You are a metadata generator for Givore social media videos. Generate optimized content for 5 platforms in the correct order: Facebook → Instagram → LinkedIn → TikTok → YouTube.
@@ -56,6 +64,8 @@ Formatted captions following these STRICT rules:
 - DO NOT change the script text - only format it
 - Single word lines are acceptable for emphasis
 - Split at commas, periods, "Y", "Pero", "Porque", "Es que"
+- Do NOT add any formatting markers (no asterisks, no bold, no special characters)
+- Captions must be plain text only - the subs tool needs clean text for SRT generation
 
 ## After File Generation
 
@@ -76,6 +86,7 @@ Before outputting, verify:
 - [ ] Each platform has unique title matching its tone
 - [ ] Hashtag counts are correct per platform
 - [ ] Captions are 2-3 words per line (MANDATORY)
+- [ ] Captions are plain text (no asterisks or formatting markers)
 - [ ] Two separate files saved
 - [ ] Spanish (Spain) language with "vosotros" form
 - [ ] Each description mentions Givore naturally

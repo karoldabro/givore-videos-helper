@@ -172,6 +172,17 @@ Solo falta conectarlos."
 | "Nadie se para" | "Es fácil pasar de largo" |
 | "Tenéis que cambiar" | "Podemos cambiar esto juntos" |
 
+### For Encouraging Sharing
+
+| Don't Say | Say Instead |
+|-----------|-------------|
+| "Deberías compartir" | "Compartir es muy fácil" |
+| "No tiréis cosas" | "Antes de tirar, pensad si alguien lo quiere" |
+| "Es vuestra responsabilidad" | "Imaginad si todos compartiéramos" |
+| "La gente no comparte" | "Cada vez más gente está compartiendo" |
+| "Tienes que subirlo" | "Puedes subirlo en segundos" |
+| "No seas egoísta" | "Lo que para ti sobra, para otro es oro" |
+
 ---
 
 ## Emotional Balance Formula

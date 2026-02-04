@@ -49,17 +49,17 @@ Usa estos ángulos para variar cómo presentas por qué esto importa.
 
 ---
 
-### 4. PERSONAL-WIN
-**Enfoque**: Beneficio mutuo - todos ganan
+### 4. PERSONAL-WIN (CONNECTION-FOCUSED)
+**Enfoque**: Beneficio mutuo - conexión sin conocerse
 
 **Templates**:
-- "Tú te lo llevas gratis. Alguien se quita un peso de encima. Win-win total."
-- "El que lo deja, contento porque no lo tira. El que lo encuentra, contento porque no lo paga."
-- "Es el mejor trato posible: uno se libera de algo, otro consigue algo que necesitaba."
+- "Uno comparte, otro descubre. Vecinos conectando sin conocerse. Win-win total."
+- "El que lo publica, contento por compartir. El que lo ve, contento por descubrir algo nuevo."
+- "Lo bonito es la conexión: alguien comparte, alguien encuentra. Así de simple."
 
-**Tono**: 70% practicidad + 30% satisfacción
+**Tono**: 70% conexión + 30% satisfacción
 
-**Mejor para**: Items con valor económico claro, videos con tono más práctico
+**Mejor para**: Videos con tono comunitario, énfasis en conexión vecinal
 
 ---
 
@@ -77,6 +77,20 @@ Usa estos ángulos para variar cómo presentas por qué esto importa.
 
 ---
 
+### 6. SHARING-OPPORTUNITY
+**Enfoque**: Si la gente compartiera, esto no estaría aquí
+
+**Templates**:
+- "Si quien tenía esto lo hubiera compartido en Givore... no estaría aquí tirado. Estaría en casa de alguien que lo necesita."
+- "Lo triste es que esto podría haberse compartido. Pero acabó aquí. Eso lo podemos cambiar."
+- "Imaginad que cada vecino, antes de tirar algo así, lo subiera a Givore. Nada acabaría en la basura."
+
+**Tono**: 70% oportunidad + 20% reflexión + 10% esperanza
+
+**Mejor para**: Items en muy buen estado, momentos reflexivos, cuando el "desperdicio" es obvio
+
+---
+
 ## Decision Tree
 
 ```
@@ -85,6 +99,7 @@ Usa estos ángulos para variar cómo presentas por qué esto importa.
 ├─ Emocional/comunitario → COMMUNITY-MAGIC
 ├─ Reflexivo/pausado → CIRCULAR-LIFE
 ├─ Urgente/activista → WASTE-PREVENTION
+├─ Desperdicio obvio/buen estado → SHARING-OPPORTUNITY
 └─ Default/neutro → PROXIMITY-OPPORTUNITY
 
 ¿Cuál usaste en los últimos 3 videos?
@@ -98,7 +113,7 @@ Usa estos ángulos para variar cómo presentas por qué esto importa.
 
 1. **NUNCA** usar el mismo ángulo en videos consecutivos
 2. **Verificar** SCRIPT_HISTORY.md antes de elegir
-3. **Sugerir rotación**: PROXIMITY-OPPORTUNITY → WASTE-PREVENTION → COMMUNITY-MAGIC → PERSONAL-WIN → CIRCULAR-LIFE → (repetir)
+3. **Sugerir rotación**: PROXIMITY-OPPORTUNITY → WASTE-PREVENTION → COMMUNITY-MAGIC → PERSONAL-WIN → CIRCULAR-LIFE → SHARING-OPPORTUNITY → (repetir)
 
 ---
 

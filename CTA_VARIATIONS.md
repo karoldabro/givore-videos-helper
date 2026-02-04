@@ -32,7 +32,7 @@ What's the PRIMARY goal of this video?
 | "¿Qué tenéis en casa que ya no usáis?" | Giveaway-focused videos |
 | "¿Habéis visto algo así en vuestro barrio?" | Location-specific finds |
 | "¿Cuál es el mejor hallazgo que habéis tenido?" | Community sharing |
-| "¿Qué os parece? ¿Lo cogeríais?" | Single item showcase |
+| "¿Qué os parece? ¿Lo habéis visto por vuestro barrio?" | Single item showcase |
 
 ### Action-Based Engagement
 | CTA | Best For |
@@ -248,11 +248,34 @@ Video 6: SAVE/SHARE CTA
 
 ---
 
+## 7. SHARING CTAs
+
+**Use when:** Emphasizing the giving side of Givore, encouraging proactive sharing
+
+**Goal:** Get viewers to share their unwanted items before throwing them away
+
+### Proactive Sharing CTAs
+| CTA | Best For |
+|-----|----------|
+| "¿Tenéis algo en casa que ya no usáis? Subidlo antes de tirarlo." | Direct call to share |
+| "Antes de llevar algo al contenedor, pensad si alguien lo puede querer." | Waste prevention |
+| "Si todos compartiéramos lo que ya no usamos, nada acabaría así." | Community vision |
+| "Lo que para ti sobra, para otro es justo lo que busca. Compartidlo." | Value framing |
+
+### Conditional Sharing CTAs
+| CTA | Best For |
+|-----|----------|
+| "La próxima vez que vayáis a tirar algo... subidlo a Givore primero." | Behavior change |
+| "Imaginad si cada vecino compartiera en vez de tirar." | Vision |
+| "Dar es tan fácil como encontrar. Probadlo." | Symmetry |
+
+---
+
 ## Input Field for Script Generation
 
 When requesting a script, specify:
 ```
-CTA Goal: download | comment | share | follow | community | awareness
+CTA Goal: download | comment | share | follow | community | awareness | sharing
 ```
 
 If not specified, AI will select based on video type and recent CTA usage.

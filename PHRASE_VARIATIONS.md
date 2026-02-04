@@ -38,7 +38,7 @@ These replace the formulaic "Abro Givore, pongo título, hago fotos... en menos 
 | "Y ahora cualquiera cerca puede verlo." | Reach emphasis |
 | "Ya está visible para quien lo necesite." | Benefit focus |
 | "Ahora alguien que lo busca lo puede encontrar." | Connection focus |
-| "En unos minutos, alguien del barrio lo puede recoger." | Local impact |
+| "En unos minutos, alguien del barrio lo puede ver." | Local impact |
 
 ### Process Demos (When Showing App)
 | Variation | Best For |
@@ -52,7 +52,7 @@ These replace the formulaic "Abro Givore, pongo título, hago fotos... en menos 
 | Variation | Best For |
 |-----------|----------|
 | "Lo subo a Givore y me olvido." | Effortless vibe |
-| "Una foto rápida, lo publico, y alguien lo recoge." | Flow |
+| "Una foto rápida, lo publico, y alguien lo descubre." | Flow |
 | "Lo dejo en Givore y ya vendrá quien lo necesite." | Trust in system |
 
 ---
@@ -256,3 +256,26 @@ When you catch yourself writing these overused phrases, substitute:
 | "Flipante" | excitement_variations[random] |
 | "Te da pena" | empathy_variations[random] |
 | "En la calle" | location_variations[random] |
+
+---
+
+## 8. Gratitude Transitions
+
+Frases para agradecer a la comunidad de usuarios.
+
+### Transition into Gratitude
+| Transition | Mood |
+|------------|------|
+| "Y oye..." | Casual |
+| "Por cierto..." | Natural |
+| "Y bueno..." | Soft |
+| "Una cosa más..." | Direct |
+| "Ah, y..." | Spontaneous |
+
+### Gratitude Closers
+| Phrase | Emphasis |
+|--------|----------|
+| "Seguid así." | Encouragement |
+| "Ese es el espíritu." | Community pride |
+| "Esto funciona porque participáis." | Value acknowledgment |
+| "Gracias por ser parte de esto." | Belonging |

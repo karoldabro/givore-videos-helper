@@ -1,0 +1,130 @@
+# Visual Cues - Dona Ropa Valencia
+# Date: 2026-01-27
+# Duration: 60 seconds
+
+---
+
+## Visual Style
+Style: MIXED
+Reason: Compilación de varios días/localizaciones mostrando ropa abandonada en diferentes barrios. Combina clips de caminar/bici con planos estáticos de ropa tirada.
+
+---
+
+## Lighting
+Target: VARIED
+Filming Time: Multiple clips from different times/days
+Backup Plan: N/A - compilación existente
+
+---
+
+## Item Category
+Primary: DECOR (ropa, zapatos = artículos personales)
+Share Potential: MEDIUM-HIGH (tema emotivo, relatable)
+Key Visual Features: Camisetas coloridas, zapatillas visibles, chaquetas en buen estado junto a contenedores
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + sound | Zoom 1.15x en "zapatillas" + pop sound |
+| 2.5s | Item flash | 0.3s flash de ropa tirada antes de completar pregunta |
+
+**Recomendación**: Como el hook es pregunta retórica, el pattern interrupt debe mostrar VISUALMENTE la respuesta antes de que termine la pregunta. Flash de 2-3 prendas diferentes en rápida sucesión.
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+"¿Cuántas camisetas, zapatillas, chaquetas... habéis visto tiradas por Valencia?"
+- Montaje rápido: camiseta (0-1s) → zapatillas (1-2s) → chaqueta (2-3s)
+- Cada item en diferente localización
+- Zoom ligero en cada corte
+
+### DISCOVERY (3-10s)
+"Yo... un montón. Cada semana encuentro ropa en la calle."
+- Compilación de diferentes hallazgos
+- Junto a contenedores (4-5s)
+- En esquinas (6-7s)
+- Planos cerrados mostrando estado de las prendas (8-10s)
+
+### PROBLEM (10-20s)
+"Y es que me da pena. Porque alguien dejó esto... y alguien más allá lo necesita."
+- Plano más abierto mostrando contexto urbano
+- Chaqueta abandonada con zoom lento (emotional emphasis)
+- "Esa chaqueta podría estar calentando a alguien" → plano de la chaqueta
+
+### IMPORTANCE (20-27s)
+"Imaginad que antes de tirar ropa, la compartierais en Givore."
+- Transición visual: de ropa tirada → app de Givore
+- Mostrar briefemente interfaz de Givore
+
+### SOLUTION (27-45s)
+"Una foto de la prenda. Un título. Publicar."
+- Screen recording o demostración real de subir prenda
+- "En veinte segundos" → mostrar tiempo real si es posible
+- "Y alguien que lo busca..." → transición a vista de búsqueda
+
+### CTA (45-60s)
+"Antes de tirar algo al contenedor... pensad si alguien más lo puede aprovechar."
+- Ending visual: plano de contenedor de ropa
+- O: plano de alguien recogiendo algo compartido
+- Texto overlay: "Reciclaje social" o logo Givore discreto
+
+---
+
+## POV Cycling Notes
+- N/A - Este video es compilación MIXED
+- Algunos clips pueden ser POV caminando
+- Mantener ritmo con cortes cada 2-3 segundos máximo
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 o similar verde
+- Outline: 2-3px negro
+- Position: Centro, encima del 20% inferior
+- Sync: Sincronizar exactamente con voz
+
+**Palabras clave para enfatizar** (considerar texto más grande o color diferente):
+- "zapatillas"
+- "chaquetas"
+- "me da pena"
+- "veinte segundos"
+
+---
+
+## App Integration
+- Show real Givore UI at: 27-35s aproximadamente
+- Camera buttons visible: Sí, mostrar proceso real
+- "In-the-moment" feel: Si es posible, grabar subiendo una prenda real
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- Este video es una COMPILACIÓN - necesita muchos cortes para mantener energía
+- Ritmo: corte cada 2-3 segundos en la primera mitad
+- La pregunta del hook necesita respuesta VISUAL inmediata
+- Tema emotivo: usar música suave de fondo si es posible
+- El CTA debe sentirse como reflexión, no como presión
+
+---
+
+## Clips Necesarios (Checklist)
+- [ ] 3+ clips de camisetas tiradas
+- [ ] 2+ clips de zapatillas/zapatos
+- [ ] 2+ clips de chaquetas/abrigos
+- [ ] Clips junto a contenedores
+- [ ] Clips en esquinas de calle
+- [ ] Demo de app Givore (real, no staged)
+- [ ] Plano final (contenedor de ropa o escena esperanzadora)
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

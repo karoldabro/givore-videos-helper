@@ -1,0 +1,143 @@
+# Visual Cues - Recap Valencia Ayer
+# Date: 2026-01-21
+# Duration: 45-60 segundos
+
+---
+
+## Visual Style
+Style: MIXED (Screen recording + cycling)
+Reason: Recap video mostrando publicaciones de la app requiere screen recording, pero mantener interés con transiciones a footage real
+
+---
+
+## Lighting
+Target: VARIED (screen + golden hour footage if mixing)
+Filming Time: N/A - principalmente screen recording
+Backup Plan: Si incluyes footage exterior, usar clips existentes o grabar 15:00-17:00
+
+---
+
+## Item Category
+Primary: MIXED (sillas, espejo, lavabo, maletas)
+Share Potential: MEDIUM-HIGH (variedad de items genera curiosidad)
+Key Visual Features: Diversidad de objetos muestra actividad real de la comunidad
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Zoom + Sound | Zoom 1.15x en "flipante" + sonido pop sutil |
+| 3s | Text flash | "AYER" aparece brevemente sobre screen recording |
+
+**Options usadas:**
+- Quick zoom: 1.15x scale en palabra "flipante" para énfasis
+- Sound effect: Pop suave al entrar screen recording
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- OPCIÓN A: Empezar con cycling POV rápido (1s) → transición a screen
+- OPCIÓN B: Empezar directo con screen recording de la app
+- Texto "flipante" destacado visualmente
+- Movimiento de scroll en app para dinamismo
+
+### PROOF TEASE (3-5s)
+- Transición rápida entre publicaciones
+- "Esperad a ver esto" con preview rápido de items
+
+### DISCOVERY - SCREEN RECORDING (5-15s)
+- Mostrar publicaciones de ayer en la app
+- Scroll suave por sillas, espejo, lavabo, maletas
+- IMPORTANTE: Pausar brevemente en cada item (1-2s por item)
+- Resaltar "Ayer" o timestamps de las publicaciones
+- Zoom suave a detalles interesantes de cada item
+
+### PROBLEM/IMPORTANCE (15-25s)
+- Puede continuar en screen o transición a footage exterior
+- Si screen: mostrar más publicaciones
+- Si exterior: mostrar Valencia / contenedores / contexto
+
+### SOLUTION (25-35s)
+- Screen recording mostrando cómo funciona Givore
+- Interfaz limpia y clara
+- "Reciclaje social" puede aparecer como text overlay
+
+### CTA (35s-fin)
+- Opción A: Terminar con mapa de Valencia con pins de publicaciones
+- Opción B: Footage de cycling por Valencia (golden hour)
+- Opción C: Screen mostrando comunidad/estadísticas
+- Texto final: "Un vecino a la vez" como cierre
+
+---
+
+## Screen Recording Específico
+
+### App Navigation Flow
+1. Feed principal mostrando publicaciones de ayer
+2. Scroll por: sillas → espejo → lavabo → maletas
+3. Click en algún item para mostrar detalle (opcional)
+4. Mostrar ubicaciones variadas de Valencia
+
+### Timing del Screen Recording
+- Scroll speed: Natural, no demasiado rápido
+- Pausas: 1.5-2s en cada item destacado
+- Transiciones: Fade o cut directo entre secciones
+
+### Elementos a Resaltar
+- Timestamps "Hace X horas" o "Ayer"
+- Diferentes barrios de Valencia en ubicaciones
+- Fotos de calidad de los items
+- Número de vistas/interacciones si disponible
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 o similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- NOTA: En screen recording, evitar que captions tapen contenido importante
+
+---
+
+## App Integration
+- Todo el video ES la app en acción
+- Mostrar UI real, no mockups
+- Scroll natural, como si estuvieras usando la app
+- Opcional: Mostrar notificación entrando en tiempo real
+
+---
+
+## Editor Notes
+
+1. **Ritmo**: Mantener dinamismo aunque sea screen recording
+   - Cambio de escena/vista cada 3-5 segundos
+   - Usar zooms suaves para mantener interés
+
+2. **Transiciones**:
+   - Entre items: Cut directo o fade corto (0.2s)
+   - Screen → footage exterior: Cross dissolve
+
+3. **Audio**:
+   - Voiceover principal
+   - Sonidos sutiles de notificación de app en momentos clave
+   - Música de fondo suave opcional (baja, -15dB)
+
+4. **Énfasis visual**:
+   - Círculo/highlight sutil alrededor de items cuando se mencionan
+   - Animación de "pulso" cuando se menciona Givore
+
+5. **Cierre**:
+   - Si terminas con footage, buscar plano bonito de Valencia
+   - El mensaje "Un vecino a la vez" puede ser text overlay final
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

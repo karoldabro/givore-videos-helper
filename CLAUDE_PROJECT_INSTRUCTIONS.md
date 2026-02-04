@@ -24,6 +24,9 @@ This project uses modular instruction files. ALWAYS consult these before generat
 | **TONE_GUARDRAILS.md** | Accusation avoidance, positive framing | Writing problem/importance sections |
 | **CTA_VARIATIONS.md** | CTAs organized by goal | Selecting call-to-action |
 | **PHRASE_VARIATIONS.md** | App demo, intro, value prop variations | Avoiding repetitive phrasing |
+| **GRATITUDE_VARIATIONS.md** | Community appreciation templates | Thanking users, mentioning finds |
+| **VIRAL_VIDEO_ANALYSIS.md** | Proven timing, visual elements, metrics | Optimizing for viral potential |
+| **KDENLIVE_EDITING_GUIDE.md** | Editing patterns, SFX, pacing | Video production reference |
 
 ---
 
@@ -41,23 +44,30 @@ Before generating, MUST have ALL of the following:
 
 ### Style Inputs (Ask if not provided)
 ```
-5. Hook Style: mystery | proof-first | question | bold | numeric | journey | emotional
+5. Hook Style: mystery | proof-first | question | bold | numeric | journey | emotional | relevance-3part | day-x
    → See HOOKS_LIBRARY.md for decision tree
 
 6. Tone: educational | exciting | community | emotional
    → See TONE_GUARDRAILS.md for guidelines
 
-7. CTA Goal: download | comment | share | follow | community | awareness
+7. CTA Goal: download | comment | share | follow | community | awareness | sharing
    → See CTA_VARIATIONS.md for options
 
 8. Reveal Timing: early (0-10s) | middle (10-30s) | late (30s+)
    → When do items appear in the video?
 ```
 
+### Optional Inputs
+```
+9. User Gratitude: [username] | [find description] | none
+   → Mention specific user if you have a real example to highlight
+   → See GRATITUDE_VARIATIONS.md for templates
+```
+
 ### Rotation Inputs (To Avoid Repetition)
 ```
-9. Recent Hooks Used: [List last 2-3 hooks to avoid]
-10. Recent CTAs Used: [List last 2-3 CTAs to avoid]
+10. Recent Hooks Used: [List last 2-3 hooks to avoid]
+11. Recent CTAs Used: [List last 2-3 CTAs to avoid]
 ```
 
 **If user provides incomplete inputs:** Ask specifically for missing style inputs before generating. Don't assume.
@@ -76,14 +86,50 @@ Before generating, MUST have ALL of the following:
 - Neighborhood exploration: 60-90 seconds
 - Story/transformation: 90-120 seconds
 
-**Word Count Guidelines:**
+**Word Count Guidelines (200 WPM):**
 | Duration | Word Count (Spanish) |
 |----------|---------------------|
-| 30 seconds | 70-80 words |
-| 45 seconds | 100-115 words |
-| 60 seconds | 140-160 words |
-| 90 seconds | 210-230 words |
-| 120 seconds | 280-300 words |
+| 30 seconds | 90-110 words |
+| 45 seconds | 140-160 words |
+| 60 seconds | 185-210 words |
+| 90 seconds | 280-310 words |
+| 120 seconds | 380-410 words |
+
+---
+
+## Proven Timing Guidance (From Viral Success)
+
+**Source**: VIRAL_VIDEO_ANALYSIS.md - 200k TikTok views, 15.08s avg watch time
+
+These timing percentages are **guidance based on proven success**, not mandatory structure. Adjust based on content type and video length.
+
+### 5-Act Timing Breakdown (46.5s Reference Video)
+
+| Act | % of Video | Timing (60s video) | Purpose |
+|-----|------------|-------------------|---------|
+| **HOOK** | 17% | 0-10s | Question/intrigue + emotional reaction + context |
+| **DISCOVERY** | 17% | 10-20s | Attention command + item reveals + value statement |
+| **PROBLEM** | 11% | 20-27s | Scale + waste + missed connection |
+| **SOLUTION** | 20% | 27-39s | Transition + brand intro + simplicity + benefit |
+| **CTA** | 35% | 39-60s | Audience shift + specific ask + community vision |
+
+### Critical Timing Insights
+
+| Insight | Data | Recommendation |
+|---------|------|----------------|
+| Hook completion | Must land by 2.5s | First complete thought before scroll point |
+| Early dropoff | 0:02 mark | Add visual pattern interrupt (zoom/sound) at 1.5-2s |
+| Brand mention | 51% through | After problem established, not too early |
+| CTA length | 35% works if... | Multiple engagement options + community language + ends with question |
+
+### When to Deviate
+
+- **Single item showcase**: Shorter discovery, longer payoff
+- **App tutorial**: Longer solution section with demo
+- **Story/journey**: Problem and discovery can be combined
+- **Proof-first hook**: Skip proof tease, go straight to discovery
+
+**Reference**: See VIRAL_VIDEO_ANALYSIS.md for complete frame-by-frame breakdown.
 
 ---
 
@@ -123,6 +169,14 @@ Before generating, MUST have ALL of the following:
 - Deliver on hook promise
 - Reveal items if using mystery hook
 - Show results/impact
+
+[GRATITUDE: Optional - 5-10 seconds]
+- Thank community members who submitted posts
+- Can mention specific user logins or recent finds
+- Use when: highlighting community contributions, thanking active users
+- Placement: After payoff, before closing CTA
+- See GRATITUDE_VARIATIONS.md for templates
+- Example: "Y oye, gracias a los que estáis subiendo cosas. @usuario_ejemplo encontró unas sillas brutales ayer. Esto funciona porque participáis."
 
 [CLOSING + CTA: Last 5-10 seconds]
 - See CTA_VARIATIONS.md for options matching CTA Goal
@@ -261,3 +315,4 @@ All scripts should be in **Spanish (Spain)**, unless user specifies otherwise. U
 **Need tone help?** → TONE_GUARDRAILS.md
 **Need CTAs?** → CTA_VARIATIONS.md
 **Need phrase variety?** → PHRASE_VARIATIONS.md
+**Need gratitude templates?** → GRATITUDE_VARIATIONS.md

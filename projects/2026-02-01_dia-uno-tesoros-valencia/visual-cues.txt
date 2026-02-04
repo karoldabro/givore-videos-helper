@@ -1,0 +1,117 @@
+# Visual Cues - Dia Uno Tesoros Valencia
+# Date: 2026-02-01
+# Duration: ~60 seconds
+
+---
+
+## Visual Style
+Style: MIXED (cycling POV + app screen recording)
+Reason: Combines proven POV cycling engagement with app social proof via screen recording of real user posts
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR preferred, but VARIED acceptable (multiple zones)
+Filming Time: 15:00-17:00 for best results
+Backup Plan: Overcast works; if midday, add +5-10 warmth in post
+
+---
+
+## Item Category
+Primary: MIXED (estanteria found on street + various items from app screen recording)
+Share Potential: MEDIUM-HIGH (variety + social proof of real users)
+Key Visual Features: Contrast between "abandoned on street" vs "shared through app"
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Text flash + sound | "DIA 1" text pop with whoosh SFX as "bici" lands |
+
+**Implementation:** At 1.5s mark, flash "DIA 1" in large bold text (Givore green) with pop/whoosh SFX. Duration: 0.4s. This reinforces the serialized format and creates visual punch.
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0:00-0:12) - "Day X" serialized format
+- 0:00-0:03: POV cycling shot, movement, urban scenery
+- Text overlay: "DIA 1" (large, bold, Givore green) - stays on screen
+- 0:03-0:06: Continue cycling, camera looking forward
+- 0:06-0:08: "A ver que encontramos" - slight camera pan/look around
+- 0:08-0:12: Approach to estanteria, slow down cycling
+- Pattern interrupt at 1.5-2s: zoom 1.1x + whoosh SFX
+
+### DISCOVERY (0:12-0:20)
+- 0:12-0:14: Close-up of estanteria on sidewalk. Slow motion 0.5x for reveal
+- Pop/ding SFX on "estanteria"
+- 0:14-0:16: Detail shots (shelves, condition, surroundings)
+- 0:16-0:20: Quick cut showing the estanteria is "abandoned" - context shot
+
+### PROBLEM (0:20-0:27) - "Could have been shared" angle
+- 0:20-0:22: Transition shot - cycling away from estanteria
+- 0:22-0:27: Reflective shot (movement, streets, passing by things)
+- Keep motion constant - don't stop
+- Tone: contemplative, not judgmental
+
+### SOLUTION + SOCIAL PROOF (0:27-0:40) - APP SCREEN RECORDING
+- 0:27-0:30: Transition to phone screen recording
+- 0:30-0:36: Show REAL posts from Givore app - scroll through items people shared
+- Highlight: muebles, ropa, objetos visible in app feed
+- 0:36-0:40: Show YOUR upload process - quick demo (foto, nombre, listo)
+- Keep screen recording clean, not too fast
+
+### APP DEMO (0:40-0:45)
+- Quick cut back to cycling or phone
+- Show the upload moment: photo → title → publish
+- Result visible: "Alguien cerca lo ve y se lo lleva"
+
+### CTA + CLOSING (0:45-0:60)
+- 0:45-0:50: Back to cycling POV, scenic street shot
+- 0:50-0:55: Text overlay: "DIA 1" (callback to serialized format)
+- 0:55-0:60: Scenic ending shot while CTA plays
+- Optional: Text overlay with "?" to prompt comments
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: yes (at least in opening and closing)
+- Motion maintained: throughout cycling sections, pause only for item reveal
+- Discovery moment: 0:12 - viewer sees estanteria as creator slows down
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- Special: "DIA 1" text larger/bolder than regular captions
+
+---
+
+## App Integration
+- Show real Givore UI at: 0:27-0:40 (screen recording of feed + upload)
+- Camera buttons visible: yes during upload demo
+- "In-the-moment" feel: screen recording should feel like scrolling casually
+- DO NOT stage fake demos - use real app data
+
+---
+
+## Editor Notes
+- This is a SERIES PILOT - "Dia 1" branding should be consistent for future episodes
+- Consider a small "DIA 1" watermark in corner throughout (optional)
+- The screen recording section (0:27-0:40) is the unique element - make it feel organic, not like an ad
+- Speed up cycling footage to 1.2x for energy
+- Slow motion 0.5x for estanteria reveal only
+- SFX: whoosh at 1.5s, pop at estanteria reveal, subtle rise before CTA
+- Music: upbeat but not overwhelming, duck under voice, fade for CTA
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

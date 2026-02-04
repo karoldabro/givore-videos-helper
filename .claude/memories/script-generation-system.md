@@ -22,7 +22,7 @@
 4. **Location**: Neighborhood found, ending spot if different
 
 ### Style Inputs
-5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional
+5. **Hook Style**: mystery | proof-first | question | bold | numeric | journey | emotional | relevance-3part | day-x
 6. **Tone**: educational | exciting | community | emotional
 7. **CTA Goal**: download | comment | share | follow | community | awareness
 8. **Reveal Timing**: early (0-10s) | middle (10-30s) | late (30s+)
@@ -67,14 +67,14 @@
 - Max 2 sentences
 ```
 
-## Word Count Guidelines
+## Word Count Guidelines (200 WPM)
 | Duration | Words (Spanish) |
 |----------|-----------------|
-| 30 sec | 70-80 |
-| 45 sec | 100-115 |
-| 60 sec | 140-160 |
-| 90 sec | 210-230 |
-| 120 sec | 280-300 |
+| 30 sec | 90-110 |
+| 45 sec | 140-160 |
+| 60 sec | 185-210 |
+| 90 sec | 280-310 |
+| 120 sec | 380-410 |
 
 ## Output
 - Text optimized for ElevenLabs text-to-speech

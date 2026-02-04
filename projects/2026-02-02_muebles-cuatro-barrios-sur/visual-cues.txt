@@ -1,0 +1,132 @@
+# Visual Cues - Muebles Cuatro Barrios Sur
+# Date: 2026-02-02
+# Duration: ~60s
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Proven best performer (15.08s avg watch time). 4 barrios = movement-heavy, bike connects locations naturally.
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00
+Backup Plan: OVERCAST also works for these barrios (wide streets, good natural light)
+
+---
+
+## Item Category
+Primary: MIXED (furniture + appliances)
+Share Potential: MEDIUM-HIGH (functional items + variety keeps attention)
+Key Visual Features: Variety of objects across neighborhoods - estanterias, microondas, sillas. Show each in its street context.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + sound | 1.15x zoom on "lleva semanas pasando" + subtle whoosh SFX |
+| 5s | Text flash | "4 BARRIOS" appears briefly as proof tease hits |
+
+**Options chosen:**
+- Quick zoom: 1.15x scale for 0.3s when "semanas pasando" lands
+- Sound effect: Whoosh at 1.5s to lock attention
+- Text flash: "4 BARRIOS" at proof tease to reinforce scale
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- POV cycling shot, constant motion through street
+- Handlebars visible, movement feeling
+- No items visible yet - pure mystery
+
+### PROOF TEASE (3-5s)
+- "Quedaos hasta el final..." - continue cycling
+- Brief 0.5s flash-forward montage of items (optional: estanteria, microondas)
+- Builds anticipation without full reveal
+
+### DISCOVERY / NEIGHBORHOODS (5-16s)
+- Cut between 4 barrio establishing shots while cycling
+- Text overlay with each barrio name as mentioned:
+  - "LA RAIOSA" (5-6s)
+  - "FAVARA" (6-7s)
+  - "EL HUERTO DE SENABRE" (7-8s)
+  - "LA CRUZ CUBIERTA" (8-9s)
+- Show items in each location: furniture on sidewalk, appliances visible
+- Keep POV cycling perspective throughout
+
+### PROBLEM (16-22s)
+- Slow down cycling speed slightly for emotional weight
+- Show items sitting alone on sidewalk - no one interacting
+- "vive alguien que le vendria perfecto" - briefly pan to apartment buildings nearby
+- Contrast: items on street vs. homes where they could be
+
+### SOLUTION / APP (22-38s)
+- "En Givore, la gente comparte..." - transition to app UI screen recording
+- Show REAL Givore interface: feed with items published by users
+- Quick demo: someone's post visible, location, photo
+- "Lo suben, y cualquier vecino cerca lo ve" - show map/proximity feature
+- Return to cycling shot: "Lo que yo encuentro en la calle son solo ejemplos..."
+- Back to street items briefly
+
+### PAYOFF (38-50s)
+- "En la app, vecinos ya estan publicando..." - show app feed again
+- Real posts from users: estanterias, microondas, sillas
+- "disponibles para quien las necesite. Sin que lleguen a la acera" - contrast with street footage
+
+### CTA (50-62s)
+- Return to cycling shot for closing
+- Scenic ending: keep pedaling through one of the barrios
+- "Cada vez somos mas haciendolo" - show community growth visual (optional)
+- End on pleasant cycling shot, no text overlay needed
+- "Contadmelo abajo" - natural close
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: yes, throughout
+- Motion maintained throughout: constant pedaling between barrios
+- Discovery moment timing: 10-16s when items become visible
+- IMPORTANT: Avoid stopping completely - slow down for item reveals but keep slight motion
+- Route: La Raiosa -> Favara -> Huerto de Senabre -> Cruz Cubierta (all adjacent)
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- Barrio names: Larger font, brief appearance (1s each)
+
+---
+
+## App Integration
+- Show real Givore UI at: 22-28s (solution section) and 38-45s (payoff)
+- Camera buttons visible: no (show existing posts, not posting flow)
+- "In-the-moment" feel: transition from cycling to phone screen naturally
+- DO NOT stage fake demos
+- Focus on showing REAL user posts in the app feed
+- Emphasize that items are shared BY users, not found on streets
+
+---
+
+## Editor Notes
+- This video has 4 location transitions - use quick cuts, not dissolves
+- Keep barrio name overlays consistent in style (same font, position, duration)
+- Audio should feel continuous even across location cuts
+- The message shift at ~28s ("Lo que yo encuentro en la calle son solo ejemplos") is KEY - slight pause in editing rhythm here
+- App screen recordings should show genuine user posts, not staged content
+- Total: ~62s at 200 WPM narration speed
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

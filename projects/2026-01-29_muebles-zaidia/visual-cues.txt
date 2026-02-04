@@ -1,0 +1,114 @@
+# Visual Cues - Muebles Zaidia
+# Date: 2026-01-29
+# Duration: 60 seconds
+
+---
+
+## Visual Style
+Style: WALKING
+Reason: Rainy day, not cycling POV. Walking approach to the scene creates intimacy and builds mystery. Rain adds atmosphere and urgency.
+
+---
+
+## Lighting
+Target: OVERCAST
+Filming Time: Daytime (rainy/cloudy conditions)
+Backup Plan: N/A - rain is part of the story, embrace the mood
+
+---
+
+## Item Category
+Primary: FURNITURE
+Share Potential: MEDIUM-HIGH
+Key Visual Features: Wooden chairs with character, comodas with visible wood grain, tables showing solid construction. Contrast between quality furniture and rainy street = emotional impact.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + rain SFX | 1.2x zoom on "no os lo vais a creer" + rain ambience boost |
+
+**Recommended:** Quick zoom as the mystery hook lands. The rain sound creates natural atmosphere - boost it briefly as pattern interrupt.
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- Start with rain on camera/lens or wet street POV
+- Walking in rain, mysterious mood
+- DO NOT show furniture yet - build curiosity
+- Text overlay possible: "Lo que me encontre..."
+
+### PROOF TEASE (3-6s)
+- "Quedaos hasta el final" - brief flash of furniture silhouette in rain? Or keep fully hidden
+- Continue walking, approaching the scene from distance
+
+### DISCOVERY (6-16s)
+- Show person moving furniture to street
+- Slow approach revealing items one by one
+- Close-ups: wood grain on chairs, comoda drawers, table surface
+- Rain drops on furniture = powerful visual contrast
+- Each item gets 2-3 seconds of screen time
+
+### PROBLEM (16-25s)
+- "Esto se va a la basura hoy" - show items sitting in rain
+- Wide shot: furniture on wet sidewalk, maybe near containers
+- Rain creates urgency visually (items getting wet = time pressure)
+
+### SOLUTION (25-40s)
+- Show Givore app UI being opened
+- Real phone in hand, rain visible
+- "Foto, titulo, publico" - show actual posting process
+- Screen recording of Givore upload if possible
+- "Vecinos conectando" - brief map/location view
+
+### IMPORTANCE/SHARING (40-50s)
+- "Imaginad..." - could use split screen: furniture on street vs. in someone's home
+- Or: text overlay with the sharing message
+
+### CTA (50-60s)
+- End with scenic rainy Valencia shot
+- Text overlay: "Compartid" or Givore logo
+- Calm ending, rain as backdrop
+
+---
+
+## POV Cycling Notes
+- N/A - This is a WALKING video
+- On foot approach creates more intimate feeling
+- Consider: hand-held camera for authenticity
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black (extra important with rain/overcast lighting)
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+
+---
+
+## App Integration
+- Show real Givore UI at: ~28-35s (solution section)
+- Camera buttons visible: yes
+- "In-the-moment" feel: filming in rain, phone slightly wet
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- Rain ambience audio: Layer subtle rain sounds throughout for atmosphere
+- Speed: Normal pace, no rush - the rain mood works with contemplative energy
+- Color grading: Slightly desaturated with warm wood tones popping - makes the furniture stand out against grey rain
+- SFX: Gentle whoosh at item reveals, subtle pop when Givore app opens
+- The contrast between rainy street and warm wooden furniture is the visual story
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

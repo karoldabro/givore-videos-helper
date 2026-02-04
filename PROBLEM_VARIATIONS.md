@@ -77,6 +77,20 @@ Usa estos ángulos para variar cómo presentas el problema en cada vídeo.
 
 ---
 
+### 6. COULD-HAVE-BEEN-SHARED
+**Enfoque**: Esto podría haberse compartido fácilmente
+
+**Templates**:
+- "Esto funcionaba perfectamente. Solo faltaba que alguien lo compartiera en vez de dejarlo aquí."
+- "Si quien lo dejó hubiera sabido que alguien lo quería... esto no estaría aquí."
+- "Mira, esto es lo que pasa cuando no hay una manera fácil de compartir. Ahora la hay."
+
+**Tono**: 70% reflexión + 20% oportunidad + 10% esperanza
+
+**Mejor para**: Items en buen estado, cuando el "desperdicio" es obvio
+
+---
+
 ## Decision Tree
 
 ```
@@ -85,6 +99,7 @@ Usa estos ángulos para variar cómo presentas el problema en cada vídeo.
 ├─ Hallazgo único de valor → MISSED-CONNECTION
 ├─ Cerca de contenedor/día recogida → TIME-SENSITIVE
 ├─ Barrio con identidad fuerte → NEIGHBOR-UNKNOWN
+├─ Item muy buen estado/desperdicio obvio → COULD-HAVE-BEEN-SHARED
 └─ Default/genérico → SYSTEM-WASTE
 
 ¿Cuál usaste en los últimos 3 videos?
@@ -98,7 +113,7 @@ Usa estos ángulos para variar cómo presentas el problema en cada vídeo.
 
 1. **NUNCA** usar el mismo ángulo en videos consecutivos
 2. **Verificar** SCRIPT_HISTORY.md antes de elegir
-3. **Sugerir rotación**: SYSTEM-WASTE → MISSED-CONNECTION → URBAN-TREASURE → TIME-SENSITIVE → NEIGHBOR-UNKNOWN → (repetir)
+3. **Sugerir rotación**: SYSTEM-WASTE → MISSED-CONNECTION → URBAN-TREASURE → TIME-SENSITIVE → NEIGHBOR-UNKNOWN → COULD-HAVE-BEEN-SHARED → (repetir)
 
 ---
 

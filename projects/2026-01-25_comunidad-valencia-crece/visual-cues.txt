@@ -1,0 +1,125 @@
+# Visual Cues - Comunidad Valencia Crece
+# Date: 2026-01-25
+# Duration: 45-55 segundos
+
+---
+
+## Visual Style
+Style: MIXED (STATIONARY screen recording + optional B-roll)
+Reason: Video centrado en mostrar publicaciones de la app. La prueba visual son los posts reales de la comunidad.
+
+---
+
+## Lighting
+Target: INDOOR
+Filming Time: Cualquier momento (screen recording)
+Backup Plan: N/A - contenido digital
+
+---
+
+## Item Category
+Primary: MIXED (publicaciones variadas de la app)
+Share Potential: MEDIUM-HIGH
+Key Visual Features: Variedad de posts de diferentes barrios, interfaz Givore limpia
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | zoom + sound | Quick zoom 1.15x en "Valencia" + pop sound al aterrizar el hook |
+| 4s | text flash | "Quedaos hasta el final" como texto overlay breve |
+
+**Opciones adicionales:**
+- Montaje rápido: Flash de 3-4 posts de la app (0.3s cada uno) durante el hook
+- Sonido: Notificación suave de Givore al mencionar "algo está pasando"
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- Visual inicial: Pantalla de móvil mostrando feed de Givore con varios posts
+- O alternativa: Tu cara mirando el móvil con expresión de sorpresa/curiosidad
+- Movimiento: Zoom suave hacia el móvil o mantener estático
+- Texto overlay opcional: "Algo está pasando..."
+
+### PROOF TEASE (3-8s)
+- Mantener feed de Givore visible
+- Scroll suave mostrando que hay MUCHOS posts
+- Puede mostrar mapa de Valencia con puntos de publicaciones
+
+### DISCOVERY (8-20s) - "Barrios de Valencia"
+- Screen recording navegando por el feed
+- Al mencionar cada barrio (Ruzafa, Benimaclet, etc.), mostrar post de ese barrio
+- Timing sincronizado: cuando dices "Ruzafa" -> mostrar post de Ruzafa
+- Transición rápida entre posts (0.5-1s por barrio)
+- "Incluso en Torrent" -> mostrar post específico de Torrent con pequeño zoom
+
+### NEIGHBOR CONNECTION (20-25s) - "No se conocen entre ellos"
+- Mostrar dos perfiles de usuarios diferentes
+- O: Mapa animado con líneas conectando puntos
+- Visualizar "vecinos conectando sin saberlo"
+
+### SOLUTION/APP DEMO (25-35s) - "Abro Givore"
+- Screen recording REAL de la app
+- Mostrar feed con publicaciones actuales
+- Destacar variedad de categorías y ubicaciones
+- "Publicaciones reales. De vecinos reales." -> zoom suave a los posts
+
+### CTA/CIERRE (35-50s) - "Cada vez somos más"
+- Mostrar contador de usuarios o posts si disponible
+- O: Montaje rápido de múltiples posts
+- Ending visual: Feed scrolleando mostrando la actividad
+- "Eso es lo que mola" -> transición a tu cara sonriendo o thumbs up
+
+---
+
+## Screen Recording Tips
+
+- Grabar en VERTICAL (9:16) para TikTok nativo
+- Resolución mínima: 1080x1920
+- Ocultar barra de estado del móvil si es posible
+- Scroll suave y natural, no robotizado
+- Asegurarse de que los posts visibles son recientes y variados
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 o verde similar
+- Outline: 2-3px negro
+- Position: Centro, encima del 20% inferior
+- Sync: Coincidir exactamente con el timing del audio
+
+---
+
+## App Integration
+- Mostrar UI real de Givore: 8-40s (mayoría del video)
+- Posts reales visibles: SÍ, esto es la "prueba"
+- Sensación "en vivo": Navegar como si estuvieras mostrando a un amigo
+- NO usar screenshots estáticos - usar screen recording dinámico
+
+---
+
+## Editor Notes
+- Este video es principalmente screen recording, por lo que el editing debe ser DINÁMICO
+- Usar cortes rápidos entre secciones del feed para mantener ritmo
+- Sincronizar zooms con palabras clave: "Valencia", "Torrent", "cada vez somos más"
+- Añadir subtle whoosh sounds en transiciones entre barrios
+- El video debe sentirse como "tour" por la comunidad, no como demo técnica
+- Considerar añadir música de fondo muy suave (10-15% volumen) estilo uplifting
+
+---
+
+## B-Roll Opcional (si disponible)
+- Clip de 2-3s de Valencia (Turia, centro) para intro/outro
+- Tu cara grabando el screen para humanizar
+- Pero el core del video es la pantalla de Givore
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

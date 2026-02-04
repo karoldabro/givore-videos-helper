@@ -22,6 +22,89 @@ Audio: AAC, 48kHz, 192kbps
 
 ---
 
+## Proven Viral Elements (200k+ Views Video)
+
+**Source:** See VIRAL_VIDEO_ANALYSIS.md for complete breakdown
+
+### POV Cycling Format (Critical for Engagement)
+
+| Element | Execution | Why It Works |
+|---------|-----------|--------------|
+| Handlebars visible | Keep bike handles in bottom of frame | Creates "ride along" feeling |
+| Constant motion | Never stop completely during filming | Maintains visual engagement |
+| Discovery POV | Viewer sees items as creator discovers | Builds anticipation |
+
+**Result:** 15.08s average watch time (above platform average)
+
+### Caption Styling (Brand + Readability)
+
+```
+Font: Sans-serif italic
+Color: Givore green (#00AA00 or similar)
+Outline: 2-3px black
+Position: Center, above bottom 20%
+Sync: Match speech timing exactly
+```
+
+**Why:** High contrast against street backgrounds, professional but not corporate, readable at scroll speed.
+
+### Pattern Interrupts (CRITICAL - Addresses 0:02 Dropoff)
+
+**Problem:** Most viewers scroll at 0:02, but hook completes at 2.44s.
+
+**Solution - Add visual interrupt at 2s:**
+
+| Interrupt Type | How to Execute | When to Use |
+|----------------|----------------|-------------|
+| Quick zoom | 1.1-1.2x scale for 0.3s | On hook word landing |
+| Sound effect | Pop/whoosh at 1.5-2s | All videos |
+| Text flash | Key word appears briefly | Question hooks |
+| Item preview | 0.5s flash of find | Before question |
+
+**Implementation in Kdenlive:**
+1. At 1.5-2s mark, add scale keyframe (100% → 110% → 100%)
+2. Add "pop" SFX from track 2
+3. Duration: 0.3-0.5s total
+4. Don't overdo - one interrupt per video
+
+### Golden Hour Lighting
+
+| Aspect | Guideline |
+|--------|-----------|
+| Target time | 15:00-17:00 (Valencia) |
+| Quality | Warm, natural, flattering |
+| Effect | Makes city look inviting |
+| Backup | Overcast works, midday harsh |
+
+**In Post:** If not golden hour, add +5-10 warmth in color correction.
+
+### Natural App Integration
+
+**DO:**
+- Show real Givore camera UI (buttons visible)
+- Capture "in-the-moment" - not staged
+- Let interface appear briefly, naturally
+
+**DON'T:**
+- Stage fake demos
+- Hold on app screen too long
+- Add arrows/highlights
+
+**Why:** 90% of brand searches were for "Givore" - authenticity drives curiosity.
+
+### Item Selection Impact
+
+| Item Type | Share Potential | Examples |
+|-----------|-----------------|----------|
+| Unusual/quirky | HIGH | Clown painting, vintage art |
+| Colorful furniture | HIGH | Checkered chair, painted table |
+| Functional obvious | MEDIUM | Plain chair, table |
+| Generic decor | LOW | Basic vase, picture frame |
+
+**Viral video items:** Clown painting + colorful checkered armchair → 485 shares
+
+---
+
 ## Timeline Structure
 
 ```

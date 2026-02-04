@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt LC_NUMERIC="C" producer="main_bin" root="/media/kdabrow/Dane/Videos/givore/projects" version="7.33.0">
+<mlt LC_NUMERIC="C" producer="main_bin" root="/media/kdabrow/Programy/givore/projects" version="7.33.0">
  <profile colorspace="709" description="Vertical HD 30 fps" display_aspect_den="16" display_aspect_num="9" frame_rate_den="1" frame_rate_num="30" height="1920" progressive="1" sample_aspect_den="1" sample_aspect_num="1" width="1080"/>
  <chain id="chain16" out="00:00:01.667">
   <property name="length">51</property>
@@ -915,10 +915,10 @@
   <property name="kdenlive:clipname">Titulo</property>
   <property name="xmldata">&lt;kdenlivetitle LC_NUMERIC="C" duration="150" height="1920" out="149" width="1080">
  &lt;item type="QGraphicsTextItem" z-index="0">
-  &lt;position x="350" y="566">
+  &lt;position x="370" y="566">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
-  &lt;content alignment="4" box-height="123" box-width="384" font="Noto Mono" font-color="255,255,255,255" font-italic="0" font-outline="13" font-outline-color="47,134,13,255" font-pixel-size="100" font-underline="0" font-weight="900" letter-spacing="4" line-spacing="5" shadow="0;#64000000;3;3;3" tab-width="80" typewriter="0;2;1;0;0">Titulo&lt;/content>
+  &lt;content alignment="4" box-height="168" box-width="344.172" font="Courgette" font-color="255,191,0,255" font-italic="0" font-outline="13" font-outline-color="38,28,21,255" font-pixel-size="130" font-underline="0" font-weight="900" letter-spacing="4" line-spacing="5" shadow="0;#64000000;3;3;3" tab-width="80" typewriter="0;2;1;0;0">Titulo&lt;/content>
  &lt;/item>
  &lt;startviewport rect="0,0,1080,1920"/>
  &lt;endviewport rect="0,0,1080,1920"/>
@@ -926,7 +926,7 @@
 &lt;/kdenlivetitle>
 </property>
   <property name="xml">was here</property>
-  <property name="kdenlive:folderid">-1</property>
+  <property name="kdenlive:folderid">37</property>
   <property name="kdenlive:id">34</property>
   <property name="kdenlive:control_uuid">{0df3ae94-c472-4800-a3ef-4ce62d2c40cc}</property>
   <property name="kdenlive:clip_type">2</property>
@@ -935,6 +935,7 @@
   <property name="force_reload">0</property>
   <property name="meta.media.width">1080</property>
   <property name="meta.media.height">1920</property>
+  <property name="kdenlive:monitorPosition">0</property>
  </producer>
  <chain id="chain27" out="00:00:00.367">
   <property name="length">12</property>
@@ -1114,9 +1115,9 @@
   <track hide="audio" producer="playlist8"/>
   <track hide="audio" producer="playlist9"/>
  </tractor>
- <tractor id="tractor5" in="00:00:00.000" out="00:05:00.000">
-  <property name="kdenlive:duration">00:00:00:00</property>
-  <property name="kdenlive:maxduration">0</property>
+ <tractor id="tractor5" in="00:00:00.000" out="00:01:22.567">
+  <property name="kdenlive:duration">00:01:22.600</property>
+  <property name="kdenlive:maxduration">2478</property>
   <property name="kdenlive:clipname">Sequence 1</property>
   <property name="kdenlive:description"/>
   <property name="kdenlive:uuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
@@ -1128,7 +1129,7 @@
   <property name="kdenlive:clip_type">0</property>
   <property name="kdenlive:file_hash">9bb597957624f01887c492d4f8ec1399</property>
   <property name="kdenlive:folderid">2</property>
-  <property name="kdenlive:sequenceproperties.activeTrack">2</property>
+  <property name="kdenlive:sequenceproperties.activeTrack">-2</property>
   <property name="kdenlive:sequenceproperties.audioTarget">1</property>
   <property name="kdenlive:sequenceproperties.disablepreview">0</property>
   <property name="kdenlive:sequenceproperties.documentuuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
@@ -1138,7 +1139,7 @@
   <property name="kdenlive:sequenceproperties.hasAudio">1</property>
   <property name="kdenlive:sequenceproperties.hasVideo">1</property>
   <property name="kdenlive:sequenceproperties.hidesubtitle">0</property>
-  <property name="kdenlive:sequenceproperties.position">4</property>
+  <property name="kdenlive:sequenceproperties.position">2329</property>
   <property name="kdenlive:sequenceproperties.scrollPos">0</property>
   <property name="kdenlive:sequenceproperties.subtitlesList">[
     {
@@ -1234,11 +1235,19 @@
    <property name="start">0.5</property>
    <property name="disable">1</property>
   </filter>
+  <filter id="filter9">
+   <property name="mlt_service">avfilter.subtitles</property>
+   <property name="av.alpha">1</property>
+   <property name="internal_added">237</property>
+   <property name="av.filename">template.kdenlive.ass</property>
+  </filter>
  </tractor>
  <playlist id="main_bin">
   <property name="kdenlive:folder.-1.2">Sequences</property>
   <property name="kdenlive:folder.-1.39">Effects</property>
   <property name="kdenlive:folder.-1.40">Logos</property>
+  <property name="kdenlive:folder.-1.36">Videos</property>
+  <property name="kdenlive:folder.-1.37">Other</property>
   <property name="kdenlive:sequenceFolder">2</property>
   <property name="kdenlive:docproperties.activetimeline">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
   <property name="kdenlive:docproperties.audioChannels">2</property>
@@ -1329,10 +1338,10 @@
   <property name="kdenlive:docproperties.rendertctype">-1</property>
   <property name="kdenlive:docproperties.rendertwopass">0</property>
   <property name="kdenlive:docproperties.seekOffset">9000</property>
-  <property name="kdenlive:docproperties.sessionid">{6cb40e38-5d31-452f-9d02-8b3e23ffe430}</property>
+  <property name="kdenlive:docproperties.sessionid">{c8a34363-35f0-451b-bf90-5b9e2484dab8}</property>
   <property name="kdenlive:docproperties.uuid">{9669dcb1-9c43-4234-91fa-683176b9fff7}</property>
   <property name="kdenlive:docproperties.version">1.1</property>
-  <property name="kdenlive:expandedFolders">39</property>
+  <property name="kdenlive:expandedFolders">37</property>
   <property name="kdenlive:binZoom">4</property>
   <property name="kdenlive:extraBins">project_bin:-1:0</property>
   <property name="kdenlive:documentnotes"/>
@@ -1870,17 +1879,17 @@
     ],
     "closedDockWidgets": [
         "library",
-        "subtitles",
         "textedit",
         "timeremap",
         "markers",
         "screengrab",
         "audiospectrum",
-        "clipmonitor",
+        "projectmonitor",
         "clip_properties",
         "notes_widget",
         "media_browser",
         "onlineresources",
+        "effect_stack",
         "transition_list",
         "undo_history",
         "mixer",
@@ -1902,7 +1911,7 @@
             "isVisible": true,
             "multiSplitterLayout": {
                 "frames": {
-                    "6017": {
+                    "5951": {
                         "currentTabIndex": 0,
                         "dockWidgets": [
                             "project_bin"
@@ -1913,35 +1922,18 @@
                             "x": 0,
                             "y": 0
                         },
-                        "id": "6017",
+                        "id": "5951",
                         "isNull": false,
                         "mainWindowUniqueName": "KdenliveKDDock",
                         "objectName": "project_bin",
                         "options": 0
                     },
-                    "6050": {
-                        "currentTabIndex": 1,
-                        "dockWidgets": [
-                            "clipmonitor",
-                            "projectmonitor"
-                        ],
-                        "geometry": {
-                            "height": 1977,
-                            "width": 1102,
-                            "x": 2736,
-                            "y": 0
-                        },
-                        "id": "6050",
-                        "isNull": false,
-                        "mainWindowUniqueName": "KdenliveKDDock",
-                        "objectName": "projectmonitor",
-                        "options": 0
-                    },
-                    "6114": {
-                        "currentTabIndex": 0,
+                    "5984": {
+                        "currentTabIndex": 2,
                         "dockWidgets": [
                             "effect_stack",
-                            "clip_properties"
+                            "clip_properties",
+                            "subtitles"
                         ],
                         "geometry": {
                             "height": 1235,
@@ -1949,13 +1941,13 @@
                             "x": 1394,
                             "y": 0
                         },
-                        "id": "6114",
+                        "id": "5984",
                         "isNull": false,
                         "mainWindowUniqueName": "KdenliveKDDock",
-                        "objectName": "effect_stack",
+                        "objectName": "subtitles",
                         "options": 0
                     },
-                    "6178": {
+                    "6083": {
                         "currentTabIndex": 0,
                         "dockWidgets": [
                             "timeline"
@@ -1966,13 +1958,31 @@
                             "x": 0,
                             "y": 1235
                         },
-                        "id": "6178",
+                        "id": "6083",
                         "isNull": false,
                         "mainWindowUniqueName": "KdenliveKDDock",
                         "objectName": "timeline",
                         "options": 0
                     },
-                    "6211": {
+                    "6116": {
+                        "currentTabIndex": 0,
+                        "dockWidgets": [
+                            "clipmonitor",
+                            "projectmonitor"
+                        ],
+                        "geometry": {
+                            "height": 1977,
+                            "width": 1102,
+                            "x": 2736,
+                            "y": 0
+                        },
+                        "id": "6116",
+                        "isNull": false,
+                        "mainWindowUniqueName": "KdenliveKDDock",
+                        "objectName": "clipmonitor",
+                        "options": 0
+                    },
+                    "6180": {
                         "currentTabIndex": 1,
                         "dockWidgets": [
                             "transition_list",
@@ -1984,7 +1994,7 @@
                             "x": 682,
                             "y": 0
                         },
-                        "id": "6211",
+                        "id": "6180",
                         "isNull": false,
                         "mainWindowUniqueName": "KdenliveKDDock",
                         "objectName": "effect_list",
@@ -1998,7 +2008,7 @@
                                 {
                                     "children": [
                                         {
-                                            "guestId": "6017",
+                                            "guestId": "5951",
                                             "isContainer": false,
                                             "isVisible": true,
                                             "sizingInfo": {
@@ -2020,7 +2030,7 @@
                                             }
                                         },
                                         {
-                                            "guestId": "6211",
+                                            "guestId": "6180",
                                             "isContainer": false,
                                             "isVisible": true,
                                             "sizingInfo": {
@@ -2042,7 +2052,7 @@
                                             }
                                         },
                                         {
-                                            "guestId": "6114",
+                                            "guestId": "5984",
                                             "isContainer": false,
                                             "isVisible": true,
                                             "sizingInfo": {
@@ -2057,7 +2067,7 @@
                                                     "width": 524293
                                                 },
                                                 "minSize": {
-                                                    "height": 141,
+                                                    "height": 149,
                                                     "width": 274
                                                 },
                                                 "percentageWithinParent": 0.4904970760233918
@@ -2088,7 +2098,7 @@
                                 {
                                     "children": [
                                         {
-                                            "guestId": "6178",
+                                            "guestId": "6083",
                                             "isContainer": false,
                                             "isVisible": true,
                                             "sizingInfo": {
@@ -2154,7 +2164,7 @@
                             }
                         },
                         {
-                            "guestId": "6050",
+                            "guestId": "6116",
                             "isContainer": false,
                             "isVisible": true,
                             "sizingInfo": {
@@ -2211,7 +2221,7 @@
                 "width": 3840
             },
             "uniqueName": "KdenliveKDDock",
-            "windowState": 0
+            "windowState": 2
         }
     ],
     "screenInfo": [
@@ -2262,10 +2272,10 @@
   <entry in="00:00:00.000" out="00:00:04.967" producer="producer3"/>
   <entry in="00:00:00.000" out="00:00:04.967" producer="producer4"/>
   <entry in="00:00:00.000" out="00:00:00.367" producer="chain27"/>
-  <entry in="00:00:00.000" out="00:00:00.000" producer="tractor5"/>
+  <entry in="00:00:00.000" out="00:01:22.567" producer="tractor5"/>
  </playlist>
- <tractor id="tractor6" in="00:00:00.000" out="00:00:00.000">
+ <tractor id="tractor6" in="00:00:00.000" out="00:01:22.567">
   <property name="kdenlive:projectTractor">1</property>
-  <track in="00:00:00.000" out="00:00:00.000" producer="tractor5"/>
+  <track in="00:00:00.000" out="00:01:22.567" producer="tractor5"/>
  </tractor>
 </mlt>

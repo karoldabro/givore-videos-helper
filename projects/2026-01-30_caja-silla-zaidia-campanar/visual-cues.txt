@@ -1,0 +1,129 @@
+# Visual Cues - Caja y Silla Zaidia/Campanar
+# Date: 2026-01-30
+# Duration: ~50 seconds
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Proven best performer (15.08s avg watch). Two neighborhoods = journey feel. Constant motion keeps attention.
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00 (Valencia)
+Backup Plan: Overcast works. If midday, add +5-10 warmth in post.
+
+---
+
+## Item Category
+Primary: MIXED (caja de madera + silla de oficina azul)
+Share Potential: MEDIUM-HIGH (the blue office chair is colorful, the wooden box has curiosity factor)
+Key Visual Features: Blue chair stands out against street. Wooden box has texture/character.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + pop SFX | 1.1x scale for 0.3s when "Dos hallazgos" lands. Pop SFX at 1.5s. |
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s) - "Dos barrios. Dos hallazgos. Y uno de ellos..."
+- POV cycling shot, motion, street visible
+- Text overlay: "2 BARRIOS. 2 HALLAZGOS." large and bold
+- Do NOT show items yet - keep mystery
+- Pattern interrupt zoom at 1.5s on "hallazgos"
+
+### DISCOVERY (3-10s) - "Hoy me he recorrido La Zaidia y Campanar..."
+- Continue cycling footage
+- Quick cuts showing both neighborhoods (1.5s per cut)
+- Add whoosh SFX on each cut
+- At ~8s: slow down approaching first item (caja de madera)
+- At ~9s: reveal silla azul - brief slow motion (0.5x for 1s)
+
+### PROBLEM (10-16s) - "Cosas brutales ahi tiradas... Que oportunidad perdida..."
+- Wide shot showing items on sidewalk, people walking past
+- Hold slightly longer (3-5s cuts)
+- Subtle emotional tone - let the visual speak
+- No fancy effects, just the reality of the scene
+
+### RE-HOOK + SOLUTION (16-28s) - "Yo ya tengo un sistema... Lo dejo en Givore..."
+- Cut to phone in hand, opening Givore app
+- Show REAL app UI (camera interface, "Aceptar" buttons)
+- Quick process: photo > title > publish
+- Keep it natural, in-the-moment feel
+- Speed up app interaction slightly (1.2x)
+- Givore mention lands at ~20s (40% through) - good placement
+
+### PAYOFF (28-38s) - "La silla azul... se la llevaron!"
+- THIS IS THE KEY MOMENT
+- Show notification/message from the person who took the chair
+- Or show the empty spot where chair was
+- Pop/ding SFX when "se la llevaron" hits
+- Quick zoom (1.15x) on the reveal moment
+- If possible: side-by-side of chair on street vs gone
+
+### CTA/CLOSING (38-50s) - "Tenerla instalada merece la pena..."
+- Return to cycling footage, scenic route
+- Warm golden hour lighting
+- Let the shot breathe (hold 5s+)
+- No text overlay needed - voice carries the CTA
+- End on beautiful Valencia street scene
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: YES (throughout)
+- Motion maintained throughout: continuous except brief stops at items
+- Discovery moment timing: viewer "discovers" items at ~8-9s with creator
+- Speed up long cycling stretches to 1.3x
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+
+---
+
+## App Integration
+- Show real Givore UI at: ~20-25s (during solution section)
+- Camera buttons visible: yes (natural capture)
+- "In-the-moment" feel: film actual posting process
+- DO NOT stage fake demos
+
+---
+
+## SFX Placement
+
+| Timestamp | SFX | Purpose |
+|-----------|-----|---------|
+| 1.5s | Pop | Pattern interrupt on hook |
+| 3-10s | Whoosh (x3-4) | Discovery section cuts |
+| ~9s | Ding | Item reveal (silla azul) |
+| ~30s | Pop/Ding | "Se la llevaron!" payoff moment |
+| ~38s | Subtle rise | Transition to CTA |
+
+---
+
+## Editor Notes
+- The payoff (chair was taken) is the emotional climax - build to it
+- The hook teases "ya tiene nuevo dueno" - the payoff delivers on this promise
+- Keep La Zaidia and Campanar visually distinct (different street scenes)
+- If available, show the Givore chat/notification proving someone claimed the chair
+- Total pace: fast cuts in discovery (1-1.5s), longer holds in problem/payoff (3-5s)
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

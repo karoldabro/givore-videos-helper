@@ -33,10 +33,8 @@ Generate TWO separate files:
                        FACEBOOK
 ═══════════════════════════════════════════════════════════
 
-TÍTULO:
 {title}
 
-DESCRIPCIÓN:
 {description}
 
 {hashtags}
@@ -45,10 +43,8 @@ DESCRIPCIÓN:
                        INSTAGRAM
 ═══════════════════════════════════════════════════════════
 
-TÍTULO:
 {title}
 
-DESCRIPCIÓN:
 {description}
 
 {hashtags}
@@ -57,10 +53,8 @@ DESCRIPCIÓN:
                        LINKEDIN
 ═══════════════════════════════════════════════════════════
 
-TÍTULO:
 {title}
 
-DESCRIPCIÓN:
 {description}
 
 {hashtags}
@@ -69,10 +63,8 @@ DESCRIPCIÓN:
                         TIKTOK
 ═══════════════════════════════════════════════════════════
 
-TÍTULO:
 {title}
 
-DESCRIPCIÓN:
 {description}
 
 {hashtags}
@@ -81,10 +73,8 @@ DESCRIPCIÓN:
                     YOUTUBE SHORTS
 ═══════════════════════════════════════════════════════════
 
-TÍTULO:
 {title}
 
-DESCRIPCIÓN:
 {description}
 
 {hashtags}
@@ -113,10 +103,13 @@ DESCRIPCIÓN:
 - "Esto es lo que encontré paseando por Russafa"
 
 **Description**:
-- Can be longer (Facebook users read more)
-- Community angle strong
-- Ask for experiences/stories
-- Explain Givore for older audience
+- Write 3-4 detailed paragraphs (Facebook users read more than any other platform)
+- Paragraph 1: Describe what happened in the video — items found, neighborhoods, conditions
+- Paragraph 2: Connect to the bigger picture — what Givore is, how social recycling works
+- Paragraph 3: Community angle — growing movement, real examples of neighbors sharing
+- Paragraph 4: End with question asking for personal experiences or stories
+- Explain Givore clearly for audience who may not know the app
+- Include specific details from the video (not generic copy)
 
 **Hashtags**: 5
 ```
@@ -138,10 +131,15 @@ DESCRIPCIÓN:
 - "Lo bonito de dar una segunda vida 🛋️"
 
 **Description**:
-- 2-3 paragraphs
-- Lifestyle/aesthetic tone
-- Include "Guarda este post" or save CTA
+- Write 3-5 paragraphs with storytelling approach
+- Paragraph 1: Set the scene — what happened, where, what was found
+- Paragraph 2: Emotional significance — why this matters, the discovery feeling
+- Paragraph 3: How Givore works — social recycling concept, how easy it is to share
+- Paragraph 4: Community impact — how sharing connects people, real impact
+- Paragraph 5: CTA — "Guarda este post" + engagement question
+- Lifestyle/aesthetic tone throughout
 - Tag @givore.app
+- Include specific details from the video
 
 **Hashtags**: 7-10 (mix popular + niche)
 ```
@@ -189,10 +187,13 @@ DESCRIPCIÓN:
 - "¿Por qué la gente tira cosas así de buenas? 🤯"
 
 **Description**:
-- 2-3 short paragraphs
-- Casual language (tú/vosotros)
-- End with question for comments
-- Givore mention natural, not salesy
+- Write 3-4 paragraphs with energy and conversational tone
+- Paragraph 1: What happened — items found, neighborhoods, reactions (specific details)
+- Paragraph 2: The problem context — why things end up abandoned, what could be different
+- Paragraph 3: How Givore fits — social recycling explained naturally, how the app works
+- Paragraph 4: Engaging question for comments that invites personal stories
+- Casual language (tú/vosotros), not salesy
+- Include specific video details
 
 **Hashtags**: Exactly 5
 ```
@@ -233,6 +234,7 @@ DESCRIPCIÓN:
 3. Blank line between each caption
 4. Break sentences aggressively for readability
 5. Split at ANY natural pause point
+6. Do NOT add any formatting markers - captions must be plain text only (no asterisks, no bold, no special characters). The subs tool needs clean text for SRT generation.
 
 ### Split at:
 - Periods, question marks, exclamations
@@ -247,7 +249,10 @@ DESCRIPCIÓN:
 - Break mid-sentence if needed for word count
 - Single word lines are acceptable for emphasis
 
-### Example:
+---
+
+## Caption Example
+
 **Input**: "¿Sabéis qué? Valencia está llena de tesoros y la gente pasa de largo."
 
 **Output**:
@@ -263,103 +268,7 @@ y la gente
 pasa de largo.
 ```
 
----
-
-## Complete Example
-
-### Input
-```
-Project: Givore
-Script: ¿Sabéis qué? Valencia está llena de tesoros y la mayoría de la gente pasa de largo. Mira, todo esto me lo encontré en la calle. Sillas, mesas, hasta este mueble tan guapo. El problema es que la gente tira cosas perfectamente bien. Por eso uso Givore. Abro la app, subo las fotos, y en menos de veinte segundos cualquiera puede verlo. Eso es reciclaje social. Dar y encontrar.
-```
-
-### Output FILE 1: Descriptions (metadata/2026-01-16_tesoros-valencia-descriptions.txt)
-
-```
-═══════════════════════════════════════════════════════════
-                       FACEBOOK
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Mirad lo que me encontré hoy paseando por Valencia...
-
-DESCRIPCIÓN:
-Hoy salí a dar una vuelta en bici por Valencia y no me lo podía creer: sillas, mesas, un mueble precioso... ¡todo tirado en la calle! Y estaba perfectamente bien.
-
-Es una pena que la gente tire cosas así cuando hay quien las necesita. Por eso uso Givore - una app donde puedes compartir lo que encuentras para que otra persona le dé una segunda vida. Sin comprar ni vender, solo dar y encontrar. Así funciona el reciclaje social.
-
-¿Vosotros habéis encontrado algo bueno alguna vez en la calle? ¡Contadme vuestra experiencia, me encanta leer vuestras historias!
-
-#Valencia #Reciclaje #SegundaVida #Sostenibilidad #ComunidadValencia
-
-═══════════════════════════════════════════════════════════
-                       INSTAGRAM
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Valencia esconde tesoros en cada esquina ✨
-
-DESCRIPCIÓN:
-Sillas, mesas, muebles preciosos... todo esto estaba tirado en la calle. La gente pasa de largo sin verlo, pero para mí son auténticos tesoros esperando una segunda vida ♻️
-
-Lo bonito es poder compartirlo. Con @givore.app subo lo que encuentro para que otra persona lo aproveche. No es comprar ni vender - es dar y encontrar. Eso es reciclaje social 🌱
-
-Guarda este post si te mola la idea 📌
-
-#SegundaVida #Valencia #Sostenibilidad #StreetFinds #ReciclajeSocial #VidaSostenible #ConsumoConsciente #Givore #TreasureHunting #EcoFriendly
-
-═══════════════════════════════════════════════════════════
-                       LINKEDIN
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-El 40% de los muebles desechados en España están en perfecto estado
-
-DESCRIPCIÓN:
-Cada día se tiran toneladas de muebles, electrodomésticos y objetos que funcionan perfectamente. Es un problema medioambiental, pero también una oportunidad.
-
-En Givore estamos abordando este reto con tecnología. Nuestra plataforma de reciclaje social conecta a quienes encuentran objetos útiles en la calle con quienes los necesitan. El proceso es simple: subes una foto, la ubicación se añade automáticamente, y en menos de 20 segundos el objeto está disponible para quien lo busque.
-
-No es compraventa. Es economía circular en su forma más pura: dar y encontrar.
-
-¿Qué papel creéis que puede jugar la tecnología en la transición hacia una economía más circular?
-
-#EconomíaCircular #Sostenibilidad #Innovación #Valencia #Startups
-
-═══════════════════════════════════════════════════════════
-                        TIKTOK
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Todo esto me lo encontré en la calle 🛋️ ¡Valencia está llena de tesoros!
-
-DESCRIPCIÓN:
-Hoy salí a dar una vuelta por Valencia y mirad lo que me encontré tirado: sillas, mesas, ¡hasta un mueble precioso! Todo perfectamente bien.
-
-El problema es que la gente tira cosas que todavía sirven. Por eso uso Givore - subo lo que encuentro y cualquiera cerca puede darle una segunda vida. Reciclaje social en acción 🌱
-
-¿Cuál es el mejor hallazgo que habéis encontrado en la calle? 👇
-
-#Givore #SegundaVida #ReciclajeSocial #Valencia #CazaDeTesoros
-
-═══════════════════════════════════════════════════════════
-                    YOUTUBE SHORTS
-═══════════════════════════════════════════════════════════
-
-TÍTULO:
-Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts
-
-DESCRIPCIÓN:
-En Valencia la gente tira muebles, sillas y cosas que están perfectamente bien. En este video te enseño cómo encontrarlos y qué hacer con ellos.
-
-Uso Givore, una app de reciclaje social donde subes lo que encuentras para que otros lo aprovechen. En menos de 20 segundos cualquiera cerca puede verlo y recogerlo.
-
-¿Conocíais este truco? ¡Contadme en los comentarios!
-
-#shorts #valencia #muebles #gratis #reciclaje #sostenibilidad #givore
-```
-
-### Output FILE 2: Captions (metadata/2026-01-16_tesoros-valencia-captions.txt)
+### Full Caption Example:
 
 ```
 ¿Sabéis qué?
@@ -419,6 +328,150 @@ Dar y encontrar.
 
 ---
 
+## Complete Example
+
+### Input
+```
+Project: Givore
+Script: ¿Sabéis qué? Valencia está llena de tesoros y la mayoría de la gente pasa de largo. Mira, todo esto me lo encontré en la calle. Sillas, mesas, hasta este mueble tan guapo. El problema es que la gente tira cosas perfectamente bien. Por eso uso Givore. Abro la app, subo las fotos, y en menos de veinte segundos cualquiera puede verlo. Eso es reciclaje social. Dar y encontrar.
+```
+
+### Output FILE 1: Descriptions (metadata/2026-01-16_tesoros-valencia-descriptions.txt)
+
+```
+═══════════════════════════════════════════════════════════
+                       FACEBOOK
+═══════════════════════════════════════════════════════════
+
+Mirad lo que me encontré hoy paseando por Valencia...
+
+Hoy salí a dar una vuelta en bici por Valencia y no me lo podía creer: sillas, mesas, un mueble precioso... ¡todo tirado en la calle! Y estaba perfectamente bien.
+
+Es una pena que la gente tire cosas así cuando hay quien las necesita. Por eso uso Givore - una app donde puedes compartir lo que encuentras para que otra persona le dé una segunda vida. Sin comprar ni vender, solo dar y encontrar. Así funciona el reciclaje social.
+
+¿Vosotros habéis encontrado algo bueno alguna vez en la calle? ¡Contadme vuestra experiencia, me encanta leer vuestras historias!
+
+#Valencia #Reciclaje #SegundaVida #Sostenibilidad #ComunidadValencia
+
+═══════════════════════════════════════════════════════════
+                       INSTAGRAM
+═══════════════════════════════════════════════════════════
+
+Valencia esconde tesoros en cada esquina ✨
+
+Sillas, mesas, muebles preciosos... todo esto estaba tirado en la calle. La gente pasa de largo sin verlo, pero para mí son auténticos tesoros esperando una segunda vida ♻️
+
+Lo bonito es poder compartirlo. Con @givore.app subo lo que encuentro para que otra persona lo aproveche. No es comprar ni vender - es dar y encontrar. Eso es reciclaje social 🌱
+
+Guarda este post si te mola la idea 📌
+
+#SegundaVida #Valencia #Sostenibilidad #StreetFinds #ReciclajeSocial #VidaSostenible #ConsumoConsciente #Givore #TreasureHunting #EcoFriendly
+
+═══════════════════════════════════════════════════════════
+                       LINKEDIN
+═══════════════════════════════════════════════════════════
+
+El 40% de los muebles desechados en España están en perfecto estado
+
+Cada día se tiran toneladas de muebles, electrodomésticos y objetos que funcionan perfectamente. Es un problema medioambiental, pero también una oportunidad.
+
+En Givore estamos abordando este reto con tecnología. Nuestra plataforma de reciclaje social conecta a quienes encuentran objetos útiles en la calle con quienes los necesitan. El proceso es simple: subes una foto, la ubicación se añade automáticamente, y en menos de 20 segundos el objeto está disponible para quien lo busque.
+
+No es compraventa. Es economía circular en su forma más pura: dar y encontrar.
+
+¿Qué papel creéis que puede jugar la tecnología en la transición hacia una economía más circular?
+
+#EconomíaCircular #Sostenibilidad #Innovación #Valencia #Startups
+
+═══════════════════════════════════════════════════════════
+                        TIKTOK
+═══════════════════════════════════════════════════════════
+
+Todo esto me lo encontré en la calle 🛋️ ¡Valencia está llena de tesoros!
+
+Hoy salí a dar una vuelta por Valencia y mirad lo que me encontré tirado: sillas, mesas, ¡hasta un mueble precioso! Todo perfectamente bien.
+
+El problema es que la gente tira cosas que todavía sirven. Por eso uso Givore - subo lo que encuentro y cualquiera cerca puede darle una segunda vida. Reciclaje social en acción 🌱
+
+¿Cuál es el mejor hallazgo que habéis encontrado en la calle? 👇
+
+#Givore #SegundaVida #ReciclajeSocial #Valencia #CazaDeTesoros
+
+═══════════════════════════════════════════════════════════
+                    YOUTUBE SHORTS
+═══════════════════════════════════════════════════════════
+
+Cómo encontrar muebles GRATIS en Valencia 🛋️ #Shorts
+
+En Valencia la gente tira muebles, sillas y cosas que están perfectamente bien. En este video te enseño cómo encontrarlos y qué hacer con ellos.
+
+Uso Givore, una app de reciclaje social donde subes lo que encuentras para que otros lo aprovechen. En menos de 20 segundos cualquiera cerca puede verlo y recogerlo.
+
+¿Conocíais este truco? ¡Contadme en los comentarios!
+
+#shorts #valencia #muebles #gratis #reciclaje #sostenibilidad #givore
+```
+
+### Output FILE 2: Captions (metadata/2026-01-16_tesoros-valencia-captions.txt)
+
+```
+¿Sabéis qué?
+
+**Valencia** está llena
+
+de **tesoros**...
+
+y la mayoría
+
+de la gente
+
+pasa de largo.
+
+Mira,
+
+todo esto
+
+me lo encontré
+
+en la calle.
+
+**Sillas**, **mesas**...
+
+hasta este **mueble**
+
+tan guapo.
+
+El problema es
+
+que la gente
+
+tira cosas
+
+perfectamente bien.
+
+Por eso
+
+uso **Givore**.
+
+Abro la app,
+
+subo las fotos...
+
+y en menos
+
+de **veinte** segundos
+
+cualquiera puede verlo.
+
+Eso es
+
+**reciclaje social**.
+
+Dar y encontrar.
+```
+
+---
+
 ## Quality Checklist
 
 Before outputting, verify:
@@ -429,6 +482,7 @@ Before outputting, verify:
 - [ ] TikTok: Casual + emoji + 5 hashtags
 - [ ] YouTube: SEO title + #Shorts + 5-7 hashtags
 - [ ] Captions formatted correctly (2-3 words per line, no text changes)
+- [ ] Captions are plain text only (no asterisks or formatting markers)
 - [ ] Spanish is informal except LinkedIn (which can be either)
 - [ ] Each description mentions Givore naturally
 - [ ] Two separate files generated (descriptions + captions)
