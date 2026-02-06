@@ -1,0 +1,108 @@
+# Visual Cues - Archivador de Oficina
+# Date: 2026-02-04
+# Duration: ~40s
+
+---
+
+## Visual Style
+Style: WALKING
+Reason: Single item find, close-up detail matters. Walking allows slow approach and detail shots of the filing cabinet's condition.
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00
+Backup Plan: OVERCAST works well too - soft light shows metal surfaces without harsh reflections
+
+---
+
+## Item Category
+Primary: FURNITURE
+Share Potential: MEDIUM-HIGH
+Key Visual Features: Metal surface, drawer mechanism, overall condition. Show it open to reveal functional drawers.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + text | Zoom 1.2x on "casi nadie recoge" + text flash "?" |
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0:00-3s)
+- Walking shot, generic street/sidewalk visible
+- NO item visible yet - build mystery with "casi nadie recoge"
+- Pattern interrupt: quick zoom at 1.5s on a container/waste area (not the item yet)
+
+### DISCOVERY (3-10s)
+- Slow approach to the archivador
+- Camera gets close: show the metal, the drawers, the condition
+- Cut to drawer opening (functional proof)
+- "Entero. Funcional." = close-up shots confirming each word
+
+### PROBLEM (10-17s)
+- Pull back to show the archivador next to the container
+- Context shot: the street, the waste around it
+- "esperando a que pase el camion" = wide shot emphasizing abandonment
+- "Pasa constantemente" = optional B-roll of other waste nearby
+
+### SOLUTION (17-28s)
+- Phone screen visible: Givore app open
+- Show the upload process: photo, title, publish
+- "Una foto, un titulo..." = real app UI on screen
+- Keep it authentic - not staged, in-the-moment capture
+- Givore mention around 20-22s (~50% through)
+
+### PAYOFF (28-35s)
+- "podria haber acabado en una asociacion, en una oficina de barrio"
+- Visual: the archivador in the shot, maybe a last close-up
+- "En vez de eso... basura" = cut back to container context
+
+### CTA (35-40s)
+- Walking away shot or scenic ending
+- "Guardad este video" = text overlay: "GUARDA" with save icon
+- "Givore. Compartir antes de tirar." = logo subtle overlay
+- End with clean shot of the street
+
+---
+
+## POV Cycling Notes
+N/A - WALKING style for this video
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- MAX 2-3 words per caption line
+
+---
+
+## App Integration
+- Show real Givore UI at: ~20-25s (during solution section)
+- Camera buttons visible: yes - authentic capture
+- "In-the-moment" feel: film the actual upload of the archivador
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- Single item = keep pacing tight, no dead time
+- The archivador is visually interesting (metal, industrial) - use close-ups
+- Educational tone: the visuals should "teach" - show the waste problem clearly
+- For "entre sesenta y cien euros" consider a quick text overlay with price range
+- End on "Compartir antes de tirar" - strong tagline, let it sit for 1-2s
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md
