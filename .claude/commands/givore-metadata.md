@@ -49,11 +49,11 @@ Generate TWO separate files in the **same project folder** as the script:
 Save to: `projects/[folder]/descriptions.txt`
 
 Contains all platform metadata in this order:
-1. **FACEBOOK** - Community tone, 5 hashtags
-2. **INSTAGRAM** - Aesthetic tone, @givore.app, 7-10 hashtags
-3. **LINKEDIN** - Professional tone, 5 hashtags
-4. **TIKTOK** - Casual tone, emoji, 5 hashtags
-5. **YOUTUBE SHORTS** - SEO title, #Shorts, 5-7 hashtags
+1. **FACEBOOK** - Community tone, 3-5 hashtags
+2. **INSTAGRAM** - Caption-first (125 char keyword hook), @givore.app, 3-5 hashtags
+3. **LINKEDIN** - Personal narrative, NO external links, 3 hashtags max
+4. **TIKTOK** - Casual tone, emoji, no commercial terms ("gratis"), 3-5 hashtags
+5. **YOUTUBE SHORTS** - Search-intent title (NO #Shorts in title, NO "GRATIS"), 3-5 hashtags
 
 ### FILE 2: Captions
 Save to: `projects/[folder]/captions.txt`
@@ -79,12 +79,28 @@ Ask the user for the audio file path if not provided. The audio file is typicall
 
 This will generate: `[audio-file].srt`
 
+## STEP: Keyword Verification (Before Generating)
+
+After reading the script, before generating metadata:
+1. Identify which Unified Keywords (from CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md) fit naturally
+2. Ensure at least 1 Tier 1 keyword per platform in the first sentence
+3. Select target city for hyperlocal hashtags (from video content, or rotate)
+4. Verify NO "gratis" appears in any output
+
 ## Quality Checks
 
 Before outputting, verify:
 - [ ] Platform order is correct (Facebook → Instagram → LinkedIn → TikTok → YouTube)
 - [ ] Each platform has unique title matching its tone
-- [ ] Hashtag counts are correct per platform
+- [ ] Hashtag counts: FB 3-5, IG 3-5, LinkedIn 3, TikTok 3-5, YouTube 3-5
+- [ ] Each platform has at least 1 Tier 1 keyword in first sentence
+- [ ] No "gratis" in any platform output
+- [ ] No zero-volume hashtags (#ReciclajeSocial, #StreetFinds, #TreasureHunting, #EcoFriendly)
+- [ ] At least 1 hyperlocal city hashtag per platform
+- [ ] Instagram: first 125 chars are keyword-rich hook, ends with DM-shareable statement
+- [ ] LinkedIn: NO external links, personal narrative tone, 3 hashtags max
+- [ ] YouTube: NO #Shorts in title, NO "GRATIS"
+- [ ] Titles are nationally framed (not Valencia-locked) unless video shows specific city
 - [ ] Captions are 2-3 words per line (MANDATORY)
 - [ ] Captions are plain text (no asterisks or formatting markers)
 - [ ] Two separate files saved

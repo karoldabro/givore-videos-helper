@@ -16,6 +16,45 @@ Every script should make the viewer feel:
 
 ---
 
+## Giveaway-First Messaging (CORE PRINCIPLE)
+
+The central message is: **share/give away items BEFORE leaving them on the street**. Every script should reinforce that sharing through Givore (or any channel) is better than discarding.
+
+### Key Rules
+
+1. **Reinforce sharing before discarding**: The narrative should always push the idea that if items had been shared in time, they would have reached someone who needs them - in better condition, without getting damaged.
+2. **NEVER blame anyone for leaving items**: Do not reference items being "left next to a dumpster" or imply someone was irresponsible. No passive-aggressive framing like "alguien los dejó junto a un contenedor".
+3. **Include real community stories when available**: If there's a real Givore story (e.g., users who renovate and donate toys, someone who picked up an item minutes after posting), weave it into the script. Real stories are more powerful than hypotheticals.
+4. **Describe item condition accurately**: Use honest descriptions ("buen estado", "necesita un arreglo") - never exaggerate ("como nuevos", "perfectos") unless they truly are.
+
+### Giveaway-First Phrasing
+
+| Instead of... | Use... |
+|---------------|--------|
+| "Los han dejado junto a un contenedor" | "Si se hubieran compartido a tiempo..." |
+| "Alguien los tiró" | "Se hubieran podido compartir antes" |
+| "Acabaron en la calle" | "Habrían llegado directos a quien los necesita" |
+| "Nadie los quiso" | "Solo faltaba conectar a quien los tiene con quien los quiere" |
+| "Los abandonaron" | "Podrían haberse compartido en vez de acabar aquí" |
+
+### Real Community Story Patterns
+
+When you have a real Givore story, use these patterns:
+- **Quick pickup**: "A los pocos minutos, alguien de la app ya vino a recogerlo. Minutos. No horas."
+- **Renovation + donation**: "En Givore hay usuarios que recogen [items], los renuevan con sus manos y los donan a [recipients]."
+- **Neighbor connection**: "Un vecino de dos calles más allá lo vio en Givore y vino a buscarlo."
+
+### Item Condition Honesty
+
+| Condition | Describe as... | NEVER as... |
+|-----------|---------------|-------------|
+| Working, some wear | "en buen estado" | "como nuevos" |
+| Needs minor repair | "necesita un arreglo" | "perfecto" |
+| Excellent condition | "impecable", "sin un rasguño" | - |
+| Mixed condition | describe each item separately | "todo perfecto" |
+
+---
+
 ## Accusation Avoidance Rules
 
 ### NEVER Use These Phrases
@@ -238,6 +277,16 @@ If your script contains these words, rewrite that section:
 | "deberíais" | Preachy |
 | "tenéis que" | Commanding |
 | "es increíble que" | Judgmental surprise |
+| "gratis" | Commercially deprioritized by all social platforms (TikTok, IG, YouTube). Use on WEB/SEO only. |
+
+### "Gratis" Alternatives for Social Content
+
+| Instead of "gratis" | Use... |
+|---------------------|--------|
+| "muebles gratis" | "muebles que esperan segunda vida" |
+| "cosas gratis" | "cosas disponibles", "cosas que alguien quiere dar" |
+| "todo gratis" | "todo compartido", "todo regalado" |
+| "consigue gratis" | "dale una segunda vida", "se regala" |
 
 ---
 

@@ -132,28 +132,32 @@ Generate trial-specific metadata and captions.
 Create `descriptions.txt` with 5-platform metadata in this order:
 
 **1. FACEBOOK**
-- Community tone
+- Community tone, 2 paragraphs + question
 - Reference the pain point/audience, not Givore (for INDIRECT) or briefly mention Givore (for SOFT/DIRECT)
-- 5 audience-relevant hashtags
+- 3-5 audience-relevant hashtags
+- First sentence must contain a Tier 1 keyword (see CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md)
 
 **2. INSTAGRAM**
-- Aesthetic tone, @givore.app mention (only for SOFT/DIRECT)
+- Caption-first: first 125 chars = keyword-rich hook (primary discoverability)
+- @givore.app mention (only for SOFT/DIRECT)
 - For INDIRECT: no brand mention, focus on relatable content
-- 7-10 audience-relevant hashtags (see TRIAL_MARKETING_MATRIX.md for hashtag strategy)
+- 3-5 audience-relevant hashtags (NO #StreetFinds, #TreasureHunting, #EcoFriendly, #VidaSostenible)
+- End with DM-shareable statement
 
 **3. LINKEDIN**
-- Professional tone about circular economy / sustainability
-- 5 hashtags
+- Personal narrative tone about circular economy / sustainability
+- NO external links (60% reach penalty)
+- 3 hashtags max
 
 **4. TIKTOK**
 - Casual tone with relevant emoji
 - For INDIRECT: hook the audience without mentioning Givore
-- 5 audience-relevant hashtags
+- NO commercial terms ("gratis", "oferta") in description
+- 3-5 audience-relevant hashtags
 
 **5. YOUTUBE SHORTS**
-- SEO-friendly title
-- #Shorts
-- 5-7 hashtags
+- SEO-friendly title (NO #Shorts in title, NO "GRATIS")
+- 3-5 hashtags
 
 ### Hashtag Strategy by Marketing Approach
 
@@ -167,7 +171,7 @@ Create `descriptions.txt` with 5-platform metadata in this order:
 
 **SOFT**: Audience-relevant hashtags + #givore (at the end)
 
-**DIRECT**: Audience-relevant hashtags + #givore #reciclaje #reciclajesocial #darencontrar
+**DIRECT**: Audience-relevant hashtags + #givore #SegundaVida #ConsumoConsciente
 
 ### Captions Generation
 
