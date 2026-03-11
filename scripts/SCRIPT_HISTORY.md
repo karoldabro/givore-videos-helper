@@ -7,16 +7,16 @@ After each script generation, update this file with the new script metadata.
 
 | # | Date | File | Hook Type | CTA Type | Proof Tease | Problem Angle | Rehook Style | Visual Style | Lighting | Item Category |
 |---|------|------|-----------|----------|-------------|---------------|--------------|--------------|----------|---------------|
-| 1 | 2026-02-04 | 2026-02-04_archivador-metal/archivador-metal.txt | BOLD | SAVE-SHARE | no | SYSTEM-WASTE | SOLUTION-TEASE | WALKING | GOLDEN-HOUR | FURNITURE |
-| 2 | 2026-02-03 | 2026-02-03_escritorio-silla-valencia/escritorio-silla-valencia.txt | PROOF-FIRST | DOWNLOAD | no | MISSED-CONNECTION | ACTION-PIVOT | POV-CYCLING | OVERCAST | FURNITURE |
-| 3 | 2026-02-02 | 2026-02-02_muebles-cuatro-barrios-sur/muebles-cuatro-barrios-sur.txt | MYSTERY | COMMUNITY | yes | NEIGHBOR-UNKNOWN | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
-| 4 | 2026-02-01 | 2026-02-01_dia-uno-tesoros-valencia/dia-uno-tesoros-valencia.txt | DAY-X | ENGAGEMENT | no | COULD-HAVE-BEEN-SHARED | COMMUNITY-BRIDGE | MIXED | VARIED | MIXED |
-| 5 | 2026-01-31 | 2026-01-31_sillas-tres-barrios/sillas-tres-barrios.txt | RELEVANCE-3PART | SAVE-SHARE | no | SYSTEM-WASTE | SOLUTION-TEASE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
-| 6 | 2026-01-30 | 2026-01-30_caja-silla-zaidia-campanar/caja-silla-zaidia-campanar.txt | NUMERIC | DOWNLOAD | no | URBAN-TREASURE | ACTION-PIVOT | POV-CYCLING | GOLDEN-HOUR | MIXED |
-| 7 | 2026-01-29 | 2026-01-29_muebles-zaidia/muebles-zaidia.txt | MYSTERY | SHARING | yes | TIME-SENSITIVE | CURIOSITY-BUILD | WALKING | OVERCAST | FURNITURE |
-| 8 | 2026-01-28 | 2026-01-28_gracias-comunidad-givore/gracias-comunidad-givore.txt | EMOTIONAL | ENGAGEMENT | no | COULD-HAVE-BEEN-SHARED | DIRECT-REVEAL | POV-CYCLING | GOLDEN-HOUR | MIXED |
-| 9 | 2026-01-27 | 2026-01-27_dona-ropa-valencia/dona-ropa-valencia.txt | QUESTION | AWARENESS | no | MISSED-CONNECTION | SOLUTION-TEASE | MIXED | VARIED | DECOR |
-| 10 | 2026-01-26 | 2026-01-26_tesoros-valencia/tesoros-valencia.txt | JOURNEY | DOWNLOAD | no | SYSTEM-WASTE | ACTION-PIVOT | POV-CYCLING | GOLDEN-HOUR | MIXED |
+| 1 | 2026-02-27 | 2026-02-27_publicaciones-espana/publicaciones-espana.txt | MYSTERY | SHARING | no | NEIGHBOR-UNKNOWN | COMMUNITY-BRIDGE | STATIONARY | INDOOR | MIXED |
+| 2 | 2026-02-27 | 2026-02-27_lavadora-planta-mestalla/lavadora-planta-mestalla.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
+| 3 | 2026-02-24 | 2026-02-24_actualizacion-centro/actualizacion-centro.txt | BOLD | ENGAGEMENT | no | URBAN-TREASURE | DIRECT-REVEAL | MIXED | VARIED | MIXED |
+| 4 | 2026-02-18 | 2026-02-18_sillones-petxina/sillones-petxina.txt | QUESTION | SAVE-SHARE | no | SYSTEM-WASTE | SOLUTION-TEASE | WALKING | OVERCAST | FURNITURE |
+| 5 | 2026-02-17 | 2026-02-17_somier-silla-petxina/somier-silla-petxina.txt | JOURNEY | DOWNLOAD | yes | COULD-HAVE-BEEN-SHARED | COMMUNITY-BRIDGE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 6 | 2026-02-17 | 2026-02-17_silla-carrito-centro/silla-carrito-centro.txt | MYSTERY | FOLLOW | yes | NEIGHBOR-UNKNOWN | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 7 | 2026-02-13 | 2026-02-13_tutorial-notificaciones/tutorial-notificaciones.txt | DIRECT | ENGAGEMENT | no | TIME-SENSITIVE | ACTION-PIVOT | STATIONARY | INDOOR | MIXED |
+| 8 | 2026-02-13 | 2026-02-13_tutorial-crear-regalo/tutorial-crear-regalo.txt | BOLD | SAVE-SHARE | no | URBAN-TREASURE | SOLUTION-TEASE | STATIONARY | INDOOR | MIXED |
+| 9 | 2026-02-12 | 2026-02-12_juguetes-ninos-ruzafa/juguetes-ninos-ruzafa.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | COMMUNITY-BRIDGE | MIXED | GOLDEN-HOUR | DECOR |
+| 10 | 2026-02-12 | 2026-02-12_lampara-colchoneta-alboraya/lampara-colchoneta-alboraya.txt | QUESTION | FOLLOW | no | SYSTEM-WASTE | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
 
 ---
 

@@ -238,6 +238,10 @@ If user asks for "full script" or "script completo", include:
 - [ ] Viewer positioned as ALLY, not problem
 - [ ] Importance section uses OPPORTUNITY framing, not GUILT
 - [ ] Script sounds like passionate TikToker, not marketer
+- [ ] Giveaway-first messaging: reinforces sharing before discarding (see TONE_GUARDRAILS.md)
+- [ ] No passive-aggressive blame for leaving items (no "dejado junto a un contenedor")
+- [ ] Item condition described accurately, not exaggerated
+- [ ] Real community stories from Givore included when available
 
 ---
 
