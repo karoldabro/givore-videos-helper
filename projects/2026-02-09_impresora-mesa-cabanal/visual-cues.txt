@@ -1,0 +1,124 @@
+# Visual Cues - Impresora y Mesa Cabanal
+# Date: 2026-02-09
+# Duration: ~57s
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Proven best performer (15.08s avg watch time). Continuous motion through Cabanal streets builds the journey narrative of the script.
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00
+Backup Plan: OVERCAST works well for Cabanal's narrow streets
+
+---
+
+## Item Category
+Primary: MIXED (Appliance + Furniture)
+Share Potential: MEDIUM
+Key Visual Features: Printer is tech/unusual street find; old table has rustic renovation potential. Contrast between the two creates visual interest.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + sound | 1.15x zoom on "encontrando algo" + subtle whoosh. Items already visible in frame but not focused. |
+
+**Recommended**: Since items are visible from the start but not mentioned, use a brief 0.3s flash-zoom toward items at 1.5s to create subconscious curiosity before the narrator redirects attention to "what happens next."
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s) "Cada vez que cojo la bici... acabo encontrando algo."
+- POV cycling through Cabanal street
+- Bike handlebars visible
+- Items (printer + table) visible ahead on sidewalk but not center frame
+- Camera moves past or toward them casually
+- Pattern interrupt zoom at 1.5s
+
+### PROOF TEASE (3-8s) "Y lo que mas os va a sorprender... no es lo que encuentro. Es lo que le pasa despues."
+- Continue cycling, slow approach toward items
+- Do NOT cut to items yet - maintain the "journey" feel
+- Tension builds because viewer sees items but narrator talks about something else
+- Optional: subtle text overlay "lo que le pasa despues..." for emphasis
+
+### DISCOVERY (8-16s) "Hoy, en el Cabanal... una impresora. Y al lado, una mesa antigua..."
+- Stop bike / slow down near items
+- Cut to close-up of printer (2-3s)
+- Cut to close-up of table showing wood grain/potential (2-3s)
+- Show condition details: printer buttons, table surface for renovation potential
+- Brief handheld walking shots around items
+
+### PROBLEM / EDUCATIONAL (16-30s) "Ahora, el dato... Se degrada. En horas."
+- This is the KEY educational section
+- Show examples of street degradation if available (sun-bleached items, rain damage)
+- If no B-roll: stay on items, show any wear/exposure signs
+- Consider split-screen or overlay: "En horas" text appears
+- Return to cycling POV briefly to show OTHER abandoned items on street (reinforces the point)
+- "alguien pasa y le saca lo que puede revender" - show scattered/stripped items if visible
+
+### CONTRAST / IMPORTANCE (30-37s) "Pero si eso mismo se comparte antes... llega bien. Llega entero."
+- Visual shift: brighter/warmer grade to match hopeful tone
+- Can show clean items in Givore app interface (screenshot overlay)
+- Quick before/after feel: street item vs. item in-app looking clean
+
+### SOLUTION (37-45s) "En Givore, subo las fotos, pongo la ubicacion..."
+- Show real Givore UI - actual upload process
+- Screen recording or phone-in-hand shot
+- Keep it real - actual photos of the printer and table being uploaded
+- "ya estan visibles para cualquiera cerca" - show the published listing
+
+### CTA (45-57s) "Esa impresora y esa mesa llevan publicadas diez minutos..."
+- Return to cycling POV through Cabanal
+- Scenic street shot - golden hour light on Cabanal architecture
+- "Cuando la probeis, vais a ver la calle de otra forma" - slow cycling, peaceful ending
+- Final shot: wide POV cycling away, Givore logo/name overlay
+- End on motion, not static
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: yes (throughout cycling segments)
+- Motion maintained: cycling at start, brief stop for items (8-16s), cycling again at end
+- Discovery moment: 8s mark when narrator finally names items viewer has already seen
+- The gap between SEEING items (0s) and HEARING about them (8s) creates curiosity
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- EMPHASIS: Bold/larger for "En horas", "Llega bien. Llega entero."
+
+---
+
+## App Integration
+- Show real Givore UI at: 37-45s (solution section)
+- Camera buttons visible: yes, during upload
+- "In-the-moment" feel: Film actual upload of printer and table photos
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- The educational section (16-30s) is the heart of this video. Spend time making degradation visual and compelling.
+- The contrast at 30s should feel like a "shift" - consider color grade change or brief transition effect.
+- Items visible from second 0 but not narrated until second 8 = intentional. Don't hide them.
+- This script is more educational than usual. Pacing should be slightly slower/more deliberate than action-packed videos.
+- Consider adding a subtle "ticking clock" sound effect during "Se degrada. En horas." for urgency.
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

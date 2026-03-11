@@ -1,0 +1,270 @@
+1
+00:00:00,000 --> 00:00:00,920
+Si usáis Givore
+
+2
+00:00:00,920 --> 00:00:03,080
+y no habéis tocado
+las notificaciones...
+
+3
+00:00:03,080 --> 00:00:04,400
+os estáis perdiendo
+cosas.
+
+4
+00:00:04,400 --> 00:00:05,280
+La app os avisa
+
+5
+00:00:05,280 --> 00:00:06,520
+cuando aparece
+algo nuevo
+
+6
+00:00:06,520 --> 00:00:07,200
+en vuestra zona.
+
+7
+00:00:07,200 --> 00:00:08,560
+Cuando algo
+que buscáis
+
+8
+00:00:08,560 --> 00:00:09,600
+se publica cerca.
+
+9
+00:00:09,600 --> 00:00:10,360
+Cuando alguien
+comenta
+
+10
+00:00:10,360 --> 00:00:11,800
+en vuestra
+publicación.
+
+11
+00:00:11,800 --> 00:00:12,760
+Pero si las
+notificaciones
+
+12
+00:00:12,760 --> 00:00:14,320
+no están bien
+configuradas...
+
+13
+00:00:14,320 --> 00:00:16,200
+nada de eso
+os llega.
+
+14
+00:00:16,200 --> 00:00:18,400
+Yo las tengo
+siempre a punto.
+
+15
+00:00:18,400 --> 00:00:19,160
+Y hoy os enseño
+
+16
+00:00:19,160 --> 00:00:20,480
+cómo se configuran.
+
+17
+00:00:20,480 --> 00:00:21,920
+Abrís el menú
+lateral.
+
+18
+00:00:21,920 --> 00:00:23,240
+Arriba a la derecha
+
+19
+00:00:23,240 --> 00:00:24,000
+tenéis el icono
+
+20
+00:00:24,000 --> 00:00:25,240
+de las tres líneas.
+
+21
+00:00:25,240 --> 00:00:26,480
+Pulsáis y entráis
+
+22
+00:00:26,480 --> 00:00:27,280
+en ajustes.
+
+23
+00:00:27,280 --> 00:00:27,960
+Ahí dentro,
+
+24
+00:00:27,960 --> 00:00:28,640
+notificaciones.
+
+25
+00:00:28,640 --> 00:00:29,960
+Lo primero
+que vais a ver...
+
+26
+00:00:29,960 --> 00:00:31,480
+si la app
+no tiene permisos,
+
+27
+00:00:31,480 --> 00:00:32,920
+os aparece
+una alerta roja.
+
+28
+00:00:32,920 --> 00:00:35,200
+Tocáis y
+los activáis.
+
+29
+00:00:35,200 --> 00:00:35,880
+Si no os sale,
+
+30
+00:00:35,880 --> 00:00:36,360
+tranquilos,
+
+31
+00:00:36,360 --> 00:00:37,360
+es una función
+que llegó
+
+32
+00:00:37,360 --> 00:00:39,760
+con la versión
+uno punto dos.
+
+33
+00:00:39,760 --> 00:00:40,440
+Debajo tenéis
+
+34
+00:00:40,440 --> 00:00:41,680
+todas las categorías
+
+35
+00:00:41,680 --> 00:00:42,440
+de notificaciones
+
+36
+00:00:42,440 --> 00:00:43,440
+que envía la app.
+
+37
+00:00:43,440 --> 00:00:44,600
+Cada una se puede
+
+38
+00:00:44,600 --> 00:00:45,480
+activar o desactivar
+
+39
+00:00:45,480 --> 00:00:46,840
+según lo que
+os interese.
+
+40
+00:00:46,840 --> 00:00:47,840
+¿Queréis saber
+
+41
+00:00:47,840 --> 00:00:48,840
+qué hace cada una?
+
+42
+00:00:48,840 --> 00:00:49,680
+En el menú
+de la app
+
+43
+00:00:49,680 --> 00:00:51,040
+tenéis las
+instrucciones,
+
+44
+00:00:51,040 --> 00:00:52,720
+ahí viene
+todo explicado.
+
+45
+00:00:52,720 --> 00:00:53,640
+Por ejemplo,
+
+46
+00:00:53,640 --> 00:00:55,280
+si no queréis
+que os avise
+
+47
+00:00:55,280 --> 00:00:56,160
+cuando una
+publicación
+
+48
+00:00:56,160 --> 00:00:57,640
+se archiva
+automáticamente...
+
+49
+00:00:57,640 --> 00:00:59,080
+desactiváis
+esa categoría
+
+50
+00:00:59,080 --> 00:01:00,040
+y listo.
+
+51
+00:01:00,040 --> 00:01:01,840
+No os vuelve
+a llegar.
+
+52
+00:01:01,840 --> 00:01:03,440
+Y si no veis
+estas opciones,
+
+53
+00:01:03,440 --> 00:01:04,920
+actualizad la app
+
+54
+00:01:04,920 --> 00:01:05,800
+en Play Store.
+
+55
+00:01:05,800 --> 00:01:06,720
+Vamos mejorando
+cosas
+
+56
+00:01:06,720 --> 00:01:07,800
+constantemente.
+
+57
+00:01:07,800 --> 00:01:08,320
+¿Vosotros tenéis
+
+58
+00:01:08,320 --> 00:01:09,760
+las notificaciones
+activadas?
+
+59
+00:01:09,760 --> 00:01:11,000
+Contadme cuáles
+usáis.
+
+60
+00:01:11,000 --> 00:01:11,640
+Givore.
+

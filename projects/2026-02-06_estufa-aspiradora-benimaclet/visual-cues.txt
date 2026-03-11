@@ -1,0 +1,137 @@
+# Visual Cues - Estufa y Aspiradora Benimaclet
+# Date: 2026-02-06
+# Duration: ~50-55 seconds
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Proven best performer (15.08s avg watch time). Cycling through Benimaclet creates "ride along" discovery feel. Items appear as mid-ride discovery.
+
+---
+
+## Lighting
+Target: GOLDEN-HOUR
+Filming Time: 15:00-17:00 (Valencia winter light)
+Backup Plan: OVERCAST works well for Benimaclet streets (soft, even)
+
+---
+
+## Item Category
+Primary: APPLIANCES
+Share Potential: MEDIUM (functional value drives saves)
+Key Visual Features: Contrast between damaged estufa (worn, cable issue) and clean aspiradora. The before/after contrast is the visual story.
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Quick zoom + sound | 1.1x scale for 0.3s when "en la calle" lands + pop SFX |
+
+**Chosen:** Quick zoom on the word "calle" with subtle pop sound. Reinforces the hook question visually.
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0:00-3s) - "¿Sabéis cuánto aguanta un electrodoméstico en la calle?"
+- POV cycling shot through Benimaclet streets
+- Bike handlebars visible, constant motion
+- NO items visible yet - just the ride
+- Text overlay: Hook question in large bold font
+- Pattern interrupt at ~2s: quick zoom + pop SFX
+
+### PROOF TEASE (3-5s) - "Esperad a ver lo que me he encontrado hoy en Benimaclet."
+- Continue cycling, maybe slight speed ramp 1.2x
+- Brief text: "BENIMACLET" location tag
+- Build anticipation - viewer doesn't know what's coming
+
+### DISCOVERY (5-16s) - "Salgo con la bici... electrodomésticos... llueve, se golpean..."
+- 5-8s: Continue cycling, general Benimaclet streets
+- 8-10s: Start approaching find location, slow down slightly
+- 10-12s: First glimpse of items on sidewalk - viewer discovers WITH you
+- 12-14s: Close-up of damaged estufa - show the wear, the cut cable area
+- 14-16s: Show other damaged items nearby if available
+- Speed ramp: 1.3x cycling → 1.0x at discovery → 0.7x on damaged item close-up
+- SFX: Subtle "ding" on first item reveal
+
+### PROBLEM (16-22s) - "Y ahí está la pena... compartido antes..."
+- Wide shot showing items on sidewalk - context of abandonment
+- Maybe pan from nice Benimaclet street to items on ground (contrast)
+- Keep it visual - the damage speaks for itself
+- NO fast cuts here - let the scene breathe (3-5s cuts)
+
+### RE-HOOK + SOLUTION (22-35s) - "Os enseño... subí a Givore..."
+- 22-24s: Transition to action - pick up phone
+- 24-26s: Show REAL Givore UI - camera interface, "Reintentar"/"Aceptar" buttons
+- 26-28s: Quick capture of aspiradora in app
+- 28-30s: Show publish flow (title, publish)
+- 30-32s: Show aspiradora posted in feed
+- 32-35s: Show notification or message - vecino coming to pick up
+- App integration: REAL screenshots, authentic feel, not staged
+- SFX: Subtle "click" on publish, "ding" on notification
+
+### PAYOFF (35-42s) - "Esa es la diferencia..."
+- Split visual or side-by-side concept:
+  - LEFT/BEFORE: Damaged estufa on street
+  - RIGHT/AFTER: Aspiradora being picked up by vecino, functioning
+- Or sequential: Quick flash of damaged item → cut to happy pickup moment
+- This is the emotional peak - let it land
+- Speed: Normal 1.0x, let the moment breathe
+
+### CTA (42-50s) - "¿Habéis visto algo así...? Contádmelo abajo."
+- Return to cycling POV - scenic Benimaclet streets
+- Golden hour light on trees/buildings
+- Hold the shot - peaceful, satisfying ending
+- Text overlay: "Givore" in green at bottom
+- Possible text: "¿Qué habéis encontrado?" as overlay question
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: YES (throughout cycling sections)
+- Motion maintained throughout: Slow down for discovery, speed up for transitions
+- Discovery moment timing: ~10-12s mark - viewer "discovers" items with creator
+- Speed ramps:
+  - 0-10s: 1.2-1.3x (energetic ride)
+  - 10-16s: 0.8-1.0x (slow for discovery)
+  - 22-35s: 1.0x (steady for app demo)
+  - 42-50s: 1.0x (hold scenic ending)
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+- Key emphasis words: Bold/larger for "calle", "a tiempo", "funcionando"
+
+---
+
+## App Integration
+- Show real Givore UI at: ~24-32s (solution section)
+- Camera buttons visible: YES
+- "In-the-moment" feel: Show actual capture of aspiradora
+- DO NOT stage fake demos
+- Duration of app screen: 6-8s max, interspersed with action shots
+
+---
+
+## Editor Notes
+- Key contrast: damaged vs. saved. Make this visual story clear.
+- The script has a natural A/B structure (one lost, one saved) - mirror this visually
+- Benimaclet has nice tree-lined streets - use for scenic cycling and ending
+- Add whoosh SFX on preview section cuts (5-10s)
+- Subtle rise SFX before CTA section
+- Music: Warm, slightly upbeat but not too energetic. Match the reflective-to-hopeful arc.
+- Color grade: Warm golden tones, +5-10 warmth, +10 saturation
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md

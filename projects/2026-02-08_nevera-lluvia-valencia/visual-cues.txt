@@ -1,0 +1,113 @@
+# Visual Cues - Nevera Lluvia Valencia
+# Date: 2026-02-08
+# Duration: ~46 seconds
+
+---
+
+## Visual Style
+Style: POV-CYCLING
+Reason: Rainy day ride through Valencia - rain on camera adds atmosphere and authenticity
+
+---
+
+## Lighting
+Target: OVERCAST
+Filming Time: Any (cloudy/rainy day, no golden hour concern)
+Backup Plan: Rain itself adds visual texture - embrace it
+
+---
+
+## Item Category
+Primary: APPLIANCES
+Share Potential: MEDIUM
+Key Visual Features: Large fridge on street, visible motor cavity (stripped), rain on surfaces
+
+---
+
+## Pattern Interrupt (CRITICAL - addresses 0:02 dropoff)
+
+| Timestamp | Interrupt Type | Implementation |
+|-----------|----------------|----------------|
+| 1.5-2s | Sound + zoom | Rain sound intensifies + slight zoom on "algo que no deberia estar ahi fuera" |
+
+**Recommended:** Quick 1.1x zoom as "algo" lands, combined with rain ambience swell
+
+---
+
+## Timestamp Visual Cues
+
+### HOOK (0-3s)
+- POV cycling in rain, water drops on camera/handlebars
+- Wet streets of Valencia visible
+- Atmosphere: grey, moody, contrast with usual golden-hour videos
+
+### BUILD TO REVEAL (3-10s)
+- Continue cycling in rain
+- "Me pilla el agua pedaleando" - show wet road, rain
+- "Pero sigo" - brief determination, keep pedaling
+- At ~9s, slow down as nevera comes into view ahead
+
+### DISCOVERY (10-16s)
+- Approach nevera on foot/slow cycling
+- Show full fridge first - looks intact from outside
+- KEY MOMENT: Close-up revealing empty motor cavity
+- "le habian arrancado el motor" - zoom into stripped back of fridge
+
+### PROBLEM (16-25s)
+- Wide shot: nevera alone on wet sidewalk, rain falling on it
+- Cut to detail: where motor was ripped out
+- Show the rain hitting the fridge (visual metaphor for abandonment)
+- Keep mood contemplative, not dramatic
+
+### RE-HOOK + SOLUTION (25-35s)
+- "Sabeis como se evita esto?" - brief pause, face to camera or POV shift
+- Transition to app screen: show Givore UI briefly
+- "Lo subes en un momento" - quick app interaction (real, not staged)
+- Keep it under 5 seconds of app screen time
+
+### PAYOFF + CTA (35-46s)
+- Return to wide shot of nevera in rain
+- "chatarra bajo la lluvia" - final lingering shot of abandoned fridge
+- End with cycling away in rain, moody closing
+- No scenic sunshine ending - rain IS the aesthetic this time
+- "Givore" - final word, possibly with subtle logo overlay
+
+---
+
+## POV Cycling Notes
+- Bike handlebars visible: yes (rain drops on handles add atmosphere)
+- Motion maintained throughout: yes, except brief stop at nevera (10-16s)
+- Discovery moment timing: ~10s when fridge appears ahead through rain
+- Rain on lens: don't wipe constantly, some water drops add authenticity
+
+---
+
+## Caption Styling
+- Font: Sans-serif italic (Givore green)
+- Color: #00AA00 or similar green
+- Outline: 2-3px black (extra important against grey/rainy backgrounds)
+- Position: Center, above bottom 20%
+- Sync: Match speech timing exactly
+
+---
+
+## App Integration
+- Show real Givore UI at: ~30s (during solution section)
+- Camera buttons visible: no (this video is about the fridge, not app demo)
+- "In-the-moment" feel: quick glance at app, not tutorial
+- DO NOT stage fake demos
+
+---
+
+## Editor Notes
+- Rain ambience: use real rain audio as subtle background throughout
+- Color grading: slightly desaturated/cool tones to emphasize rainy mood
+- This video intentionally breaks the golden-hour pattern - embrace the grey
+- The stripped motor cavity is the key visual - make sure it's clear
+- Contrast: warm interior of Givore app UI vs cold rainy exterior
+
+---
+
+## Reference
+- Full editing guide: KDENLIVE_EDITING_GUIDE.md
+- Viral video analysis: VIRAL_VIDEO_ANALYSIS.md
