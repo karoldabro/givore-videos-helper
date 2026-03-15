@@ -150,12 +150,7 @@ v2   YES      YES      YES      YES      YES      --
 
 ### Setup
 
-| Command | Description |
-|---------|-------------|
-| `givore_db.py init` | Scan all .mp4 files, infer metadata from filenames, populate DB (**DESTROYS entire DB!**) |
-| `givore_db.py reinit-clips` | Clear clips tables and re-import with inferred metadata (preserves history) |
-
-**Use case**: `reinit-clips` for re-importing clips after adding/replacing files. `init` only for first-time setup (destroys history). Metadata (sections, style, mood, description, visual hook flag) is inferred from filenames.
+DB is already initialized. To add new clips, use the AI-driven workflow: `new` → AI categorizes → `bulk-add` (see Clip Management below).
 
 **Clip filename prefixes**:
 - `[hook]` — gesture/action clips (visual hooks); usable in hook, rehook, bridge sections
@@ -217,18 +212,29 @@ givore_db.py plan projects/2026-03-11_mesita/v1/mesita.mp3 4,5,6,13,22,33,43,50,
 
 | Command | Description |
 |---------|-------------|
-| `givore_db.py add <file> [--section X,Y] [--style X] [--mood X] [--desc "..."]` | Add new clip, auto-detect duration |
+| `givore_db.py new` | List files not yet in DB (one filename per line) |
+| `givore_db.py bulk-add <json>` | Import clips from JSON with AI-categorized metadata |
+| `givore_db.py add <file> [--section X,Y] [--style X] [--mood X] [--desc "..."]` | Add single clip, auto-detect duration |
 | `givore_db.py update <id> [--section X,Y] [--style X] [--mood X] [--desc "..."]` | Update metadata |
 | `givore_db.py delete <id>` | Remove clip from DB |
 
 **Use cases**:
-- New clips filmed: add to DB with metadata
+- New clips filmed: `new` → AI categorizes → `bulk-add` (preferred workflow)
+- Single clip: `add` with manual metadata
 - Reclassify a clip: update section/style/mood
 - Remove broken clip: delete from DB
 
 **Examples**:
 ```bash
-# Add new clip with full metadata
+# List new clips not yet in DB
+givore_db.py new
+
+# AI-driven bulk import: AI categorizes → writes JSON → import
+givore_db.py bulk-add /tmp/new_clips.json
+# JSON format: [{"filename": "clip.mp4", "sections": ["body"], "style": "cycling_pov",
+#                "mood": "calm", "desc": "description", "visual_hook": false}]
+
+# Add single clip with full metadata
 givore_db.py add "/media/kdabrow/Programy/givore/videos/clips/new clip.mp4" \
   --section hook,body --style cycling_pov --mood energetic --desc "New POV cycling clip"
 

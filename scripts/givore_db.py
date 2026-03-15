@@ -5,9 +5,7 @@ Manages video clip metadata (formerly clip_db.py) plus rotation history
 for scripts, trials, and video assemblies.
 
 Usage:
-    ## Clip commands (unchanged from clip_db.py)
-    givore_db.py init                              Import clips from filesystem (DESTROYS DB!)
-    givore_db.py reinit-clips                      Re-import clips with inferred metadata (safe)
+    ## Clip commands
     givore_db.py list [--section X] [--style X] [--mood X] [--visual-hooks]
     givore_db.py search <section>                  Shortcut for list --section
     givore_db.py info <id>                         Full details for one clip
@@ -16,6 +14,8 @@ Usage:
     givore_db.py delete <id>                       Remove clip from DB
     givore_db.py refresh                           Re-scan all files, update durations
     givore_db.py sync                              Find orphan files / missing DB entries
+    givore_db.py new                               List files not yet in DB (one per line)
+    givore_db.py bulk-add <json_file>              Import clips from JSON with AI-categorized metadata
     givore_db.py plan <audio_file> <id1,id2,...>   Compare clips vs audio duration
 
     ## Script history
@@ -46,7 +46,6 @@ Usage:
 import argparse
 import glob
 import os
-import re
 import sqlite3
 import subprocess
 import sys
@@ -182,103 +181,6 @@ def discover_files():
     return files
 
 
-def infer_metadata(filename):
-    """Infer sections, style, mood, and description from clip filename.
-
-    Filename prefixes:
-      [hook]   — gesture/action clips (hook, rehook, bridge)
-      [bridge] — directional transitions (from left/right to sw)
-      [item]   — street-found items (approach, photograph, submit)
-      [end]    — ending clips (camera lift to sky, etc.)
-      [hook | end] / [hook|ending] — dual-purpose
-    """
-    name = filename.replace(".mp4", "")
-    lower = name.lower()
-
-    # Default values
-    sections = ["body"]
-    style = "cycling_pov"
-    mood = "calm"
-
-    # Extract description: remove prefix tags and location suffix
-    desc = re.sub(r"^\[[\w\s|{}]+\]\s*", "", name).strip()
-    desc = re.sub(r"\s*-\s*(ayora|albors|mestalla|grau maritim|mestalla\s+aragon)\.?$", "", desc, flags=re.IGNORECASE).strip()
-    desc = re.sub(r"\s*-\s*$", "", desc).strip()
-
-    # --- Prefix-based classification ---
-    if re.match(r"^\[hook\s*\|\s*end", lower) or re.match(r"^\[hook\|ending", lower):
-        sections = ["hook", "cta"]
-        style = "reveal"
-        mood = "dramatic"
-    elif lower.startswith("[hook]"):
-        sections = ["hook"]
-        style = "reveal"
-        # Gesture hooks → playful, camera movement → dramatic
-        gesture_words = ["clap", "point", "sign", "thumb", "ok ", "okey", "shoot", "diving",
-                         "finger", "no sign", "someone there"]
-        if any(w in lower for w in gesture_words):
-            mood = "playful"
-        else:
-            mood = "dramatic"
-    elif lower.startswith("[bridge]"):
-        sections = ["bridge"]
-        style = "transition"
-        mood = "calm"
-    elif lower.startswith("[item]"):
-        if any(w in lower for w in ["focus", "showing", "phone", "submit", "sucessful"]):
-            sections = ["proof"]
-            style = "reveal"
-        else:
-            sections = ["proof", "body"]
-            style = "cycling_pov"
-        mood = "calm"
-    elif lower.startswith("[end]"):
-        sections = ["cta"]
-        style = "reveal"
-        mood = "calm"
-    else:
-        # --- Content-based classification for unprefixed clips ---
-        if "start cycling" in lower:
-            sections = ["setup"]
-            style = "setup"
-        elif any(w in lower for w in ["turning", "enterning", "turnig", "turing", "urning"]):
-            sections = ["body", "bridge"]
-            style = "transition"
-        elif any(w in lower for w in ["bike lane", "cycle lane", "cycle path", "cycle line"]):
-            sections = ["body"]
-            style = "cycling_path"
-        elif any(w in lower for w in ["stadium", "mestalla", "statuim"]):
-            sections = ["body"]
-            style = "landmark"
-        elif any(w in lower for w in ["showing", "ninot", "nonot"]):
-            sections = ["body", "proof"]
-            style = "reveal"
-        elif any(w in lower for w in ["passing between cars", "red light", "crosses",
-                                       "crosswalk", "letting people"]):
-            sections = ["body", "problem"]
-            style = "cycling_pov"
-            mood = "dramatic"
-        elif any(w in lower for w in ["almost hit", "unbalanced", "close to",
-                                       "very close", "close to the edge"]):
-            sections = ["body", "problem"]
-            style = "cycling_pov"
-            mood = "dramatic"
-
-    # --- Mood modifiers (override default if matched) ---
-    if "sunny day" in lower and mood == "calm":
-        mood = "energetic"
-    if "dynamic" in lower and mood == "calm":
-        mood = "energetic"
-    if any(w in lower for w in ["leaning", "overtaking"]) and mood == "calm":
-        mood = "energetic"
-    if any(w in lower for w in ["firecrackers", "falla", "closed street"]):
-        mood = "energetic"
-
-    # Visual hooks: [hook] prefixed clips are visual hooks (gesture/action attention-grabbers)
-    is_visual_hook = lower.startswith("[hook]") or re.match(r"^\[hook\s*\|", lower) or re.match(r"^\[hook\|", lower)
-
-    return sections, style, mood, desc, bool(is_visual_hook)
-
 
 def insert_clip(conn, path, filename, duration, style, mood, description, is_vh, sections):
     """Insert a clip and its sections into the DB."""
@@ -300,63 +202,6 @@ def insert_clip(conn, path, filename, duration, style, mood, description, is_vh,
 # Clip commands
 # ============================================================
 
-def cmd_init(args):
-    """Scan clips dir, infer metadata from filenames, populate DB with real durations.
-
-    WARNING: This destroys the entire DB file (including history). Use reinit-clips
-    to repopulate clips without losing history tables.
-    """
-    if os.path.exists(DB_PATH):
-        os.remove(DB_PATH)
-        print(f"Removed existing DB: {DB_PATH}")
-
-    conn = create_db()
-    files = discover_files()
-    count = 0
-
-    for basename, path in sorted(files.items()):
-        duration = get_duration(path)
-        sections, style, mood, desc, is_vh = infer_metadata(basename)
-        insert_clip(conn, path, basename, duration, style, mood, desc, is_vh, sections)
-        count += 1
-        vh_tag = " [VH]" if is_vh else ""
-        print(f"  {basename} ({duration:.2f}s) [{','.join(sections)}] {style}/{mood}{vh_tag}")
-
-    conn.commit()
-    conn.close()
-    print(f"\nInit complete: {count} clips imported")
-    print(f"DB: {DB_PATH}")
-
-
-def cmd_reinit_clips(args):
-    """Clear clips tables and re-import from filesystem with inferred metadata.
-
-    Preserves history tables (script_history, trial_history, video_history, video_clips_used).
-    """
-    conn = get_db()
-
-    # Clear clips tables only
-    conn.execute("DELETE FROM clip_sections")
-    conn.execute("DELETE FROM clips")
-    conn.execute("DELETE FROM sqlite_sequence WHERE name IN ('clips', 'clip_sections')")
-    conn.commit()
-    print("Cleared clips + clip_sections tables (history preserved)")
-
-    files = discover_files()
-    count = 0
-
-    for basename, path in sorted(files.items()):
-        duration = get_duration(path)
-        sections, style, mood, desc, is_vh = infer_metadata(basename)
-        insert_clip(conn, path, basename, duration, style, mood, desc, is_vh, sections)
-        count += 1
-        vh_tag = " [VH]" if is_vh else ""
-        print(f"  {basename} ({duration:.2f}s) [{','.join(sections)}] {style}/{mood}{vh_tag}")
-
-    conn.commit()
-    conn.close()
-    print(f"\nReinit complete: {count} clips imported")
-    print(f"DB: {DB_PATH}")
 
 
 def cmd_list(args):
@@ -575,6 +420,86 @@ def cmd_sync(args):
 
     if not orphan_files and not missing_files:
         print("\nDB and filesystem are in sync.")
+
+
+def cmd_new(args):
+    """List files on disk not yet in DB (one filename per line)."""
+    conn = get_db()
+    db_paths = set()
+    for row in conn.execute("SELECT path FROM clips").fetchall():
+        db_paths.add(row["path"])
+    conn.close()
+
+    files = discover_files()
+    new_files = sorted(f for f, p in files.items() if p not in db_paths)
+
+    if not new_files:
+        print("No new clips found.")
+        return
+
+    for f in new_files:
+        print(f)
+
+
+def cmd_bulk_add(args):
+    """Import clips from a JSON file with pre-categorized metadata.
+
+    JSON format: list of objects with keys:
+      filename (required), sections (list), style, mood, desc, visual_hook (bool)
+    Duration is auto-detected via ffprobe. Duplicates are skipped.
+    """
+    import json
+
+    json_path = os.path.abspath(args.file)
+    if not os.path.isfile(json_path):
+        print(f"ERROR: JSON file not found: {json_path}")
+        sys.exit(1)
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        entries = json.load(f)
+
+    if not isinstance(entries, list):
+        print("ERROR: JSON must be a list of clip objects")
+        sys.exit(1)
+
+    conn = get_db()
+    added = 0
+    skipped = 0
+
+    for entry in entries:
+        filename = entry.get("filename")
+        if not filename:
+            print(f"  SKIP: entry missing 'filename': {entry}")
+            skipped += 1
+            continue
+
+        filepath = os.path.join(CLIPS_DIR, filename)
+        if not os.path.isfile(filepath):
+            print(f"  SKIP: file not found: {filename}")
+            skipped += 1
+            continue
+
+        existing = conn.execute("SELECT id FROM clips WHERE path = ?", (filepath,)).fetchone()
+        if existing:
+            print(f"  SKIP: already in DB (ID {existing['id']}): {filename}")
+            skipped += 1
+            continue
+
+        duration = get_duration(filepath)
+        sections = entry.get("sections", ["body"])
+        style = entry.get("style", "cycling_pov")
+        mood = entry.get("mood", "calm")
+        desc = entry.get("desc", "")
+        is_vh = entry.get("visual_hook", False)
+
+        clip_id = insert_clip(conn, filepath, filename, duration, style, mood, desc, is_vh, sections)
+        added += 1
+        vh_tag = " [VH]" if is_vh else ""
+        print(f"  #{clip_id} {filename} ({duration:.2f}s) [{','.join(sections)}] {style}/{mood}{vh_tag}")
+
+    conn.commit()
+    conn.close()
+    print(f"\nBulk add complete: {added} added, {skipped} skipped")
 
 
 def cmd_plan(args):
@@ -1233,8 +1158,6 @@ def main():
     sub = parser.add_subparsers(dest="command")
 
     # --- Clip commands ---
-    sub.add_parser("init", help="Import clips from filesystem + catalog")
-
     p_list = sub.add_parser("list", help="List clips with filters")
     p_list.add_argument("--section", help="Filter by section (hook, body, etc.)")
     p_list.add_argument("--style", help="Filter by style (cycling_pov, etc.)")
@@ -1267,6 +1190,10 @@ def main():
 
     sub.add_parser("refresh", help="Re-scan all files, update durations")
     sub.add_parser("sync", help="Check filesystem vs DB consistency")
+    sub.add_parser("new", help="List files not yet in DB (one per line)")
+
+    p_bulk = sub.add_parser("bulk-add", help="Import clips from JSON with pre-categorized metadata")
+    p_bulk.add_argument("file", help="Path to JSON file")
 
     p_plan = sub.add_parser("plan", help="Compare clips vs audio duration")
     p_plan.add_argument("audio_file", help="Path to audio file")
@@ -1281,8 +1208,6 @@ def main():
     p_gc.add_argument("--template", default=None, help="Template JSON path")
     p_gc.add_argument("--ass-template", default=None, help="ASS subtitle template path")
     p_gc.add_argument("--srt", default=None, help="SRT file path (auto-detected if omitted)")
-
-    sub.add_parser("reinit-clips", help="Clear clips tables and re-import with inferred metadata")
 
     # --- Script history ---
     p_sa = sub.add_parser("script-add", help="Add script history entry")
@@ -1361,7 +1286,6 @@ def main():
 
     commands = {
         # Clips
-        "init": cmd_init,
         "list": cmd_list,
         "search": cmd_search,
         "info": cmd_info,
@@ -1370,9 +1294,10 @@ def main():
         "delete": cmd_delete,
         "refresh": cmd_refresh,
         "sync": cmd_sync,
+        "new": cmd_new,
+        "bulk-add": cmd_bulk_add,
         "plan": cmd_plan,
         "generate-config": cmd_generate_config,
-        "reinit-clips": cmd_reinit_clips,
         # Script history
         "script-add": cmd_script_add,
         "script-list": cmd_script_list,
