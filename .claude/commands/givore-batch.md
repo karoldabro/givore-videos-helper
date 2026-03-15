@@ -2,6 +2,16 @@
 
 Generate 7 variants of one topic in a single session. Variant 1 = full pipeline with approvals. Variants 2-7 = delta generation from v1 base. Each variant gets unique script, audio, metadata, and video assembly.
 
+## APPROVAL GATES (only 4 — everything else runs automatically)
+
+Only pause for user input at these 4 gates. Between gates, execute ALL steps automatically:
+1. **Gate 1**: v1 script approval (Step B.3)
+2. **Gate 2**: v1 clip/video plan approval (Step B.7)
+3. **Gate 3**: Variant matrix approval (Step C.2)
+4. **Gate 4**: Finals selection (Step E.2)
+
+All other steps (audio generation, captions, subtitles, metadata, clip selection, assembly, rendering) run without pausing. Use batch commands (`batch-captions`, `batch-subs`, `rename-audio`, `render-all`) to process all variants in single commands.
+
 ## Project Root
 
 **All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
@@ -40,7 +50,11 @@ All bash commands MUST use `$GIVORE_TOOLS` or `$GIVORE_DB`. Do NOT use raw ffpro
 | Assemble project | `$GIVORE_TOOLS assemble <config.json>` |
 | Draft render | `$GIVORE_TOOLS render-draft <config.json>` |
 | Final render | `$GIVORE_TOOLS render-final <config.json>` |
-| Subtitles | `$GIVORE_TOOLS subs <audio.mp3> <captions.txt>` |
+| Subtitles (single) | `$GIVORE_TOOLS subs <audio.mp3> <captions.txt>` |
+| Captions from script | `$GIVORE_TOOLS captions <script.txt> [output.txt]` |
+| Batch captions (all 7) | `$GIVORE_TOOLS batch-captions <project-dir>` |
+| Batch subtitles (all 7) | `$GIVORE_TOOLS batch-subs <project-dir>` |
+| Rename ElevenLabs audio | `$GIVORE_TOOLS rename-audio <project-dir> <slug>` |
 | Create project folder | `$GIVORE_TOOLS init-project <slug>` |
 | Create batch folders | `$GIVORE_TOOLS init-batch <slug>` |
 | Batch status | `$GIVORE_TOOLS batch-status <project-dir>` |
@@ -308,7 +322,7 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
 - [ ] All clip paths are absolute (start with `/media/kdabrow/Programy/givore/`)
 
 **SFX integrity:**
-- [ ] SFX volume between 0.10-0.25 (subtle, not overpowering narration)
+- [ ] SFX volume between 0.04-0.08 (very subtle, not overpowering narration)
 - [ ] Minimum 1.5s spacing between SFX
 - [ ] All SFX paths are absolute
 - [ ] 3 mandatory SFX present (transition, reveal, positive)
@@ -370,14 +384,14 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
       "name": "transition_whoosh",
       "position": 2.8,
       "duration": 0.5,
-      "volume": 0.7
+      "volume": 0.07
     },
     {
       "file": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Musical.MP3",
       "name": "reveal_sound",
       "position": 4.5,
       "duration": 1.0,
-      "volume": 0.6
+      "volume": 0.06
     }
   ],
   "audio": "/abs/path/narration.mp3",
@@ -387,7 +401,7 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
 ```
 
 - All file paths MUST be absolute
-- `volume`: 0.6-0.8 recommended (0.4 is too quiet, default is 0.7)
+- `volume`: 0.04-0.08 recommended (SFX source files are loud; keep very low to stay subtle under narration)
 - `position`: seconds from timeline start
 - `duration`: how long to play (can be shorter than source file)
 

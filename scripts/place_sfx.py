@@ -50,13 +50,13 @@ KEYWORD_MAP = {
 
 # Volume ranges per category (min, max)
 VOLUME = {
-    "transition": (0.20, 0.25),
-    "reveal":     (0.15, 0.20),
-    "tension":    (0.12, 0.18),
-    "positive":   (0.15, 0.20),
-    "impact":     (0.18, 0.22),
-    "cta":        (0.15, 0.20),
-    "ambient":    (0.08, 0.10),
+    "transition": (0.06, 0.08),
+    "reveal":     (0.05, 0.07),
+    "tension":    (0.04, 0.06),
+    "positive":   (0.05, 0.07),
+    "impact":     (0.06, 0.08),
+    "cta":        (0.05, 0.07),
+    "ambient":    (0.03, 0.04),
 }
 
 # Max duration caps per category (seconds)

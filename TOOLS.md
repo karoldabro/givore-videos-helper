@@ -112,13 +112,27 @@ givore-tools.sh place-sfx --clips /tmp/clip_plan.json --srt project/v1/video.srt
   --output /tmp/sfx_plan.json
 ```
 
-### Subtitles
+### Subtitles & Captions
 
 | Command | Description |
 |---------|-------------|
-| `givore-tools.sh subs <audio.mp3> <captions.txt>` | Generate SRT subtitles from audio + captions |
+| `givore-tools.sh captions <script.txt> [output.txt]` | Generate 2-3 word/line captions from script text |
+| `givore-tools.sh batch-captions <project-dir>` | Generate captions for all v1-v7 variants |
+| `givore-tools.sh subs <audio.mp3> <captions.txt> [output.srt]` | Generate SRT subtitles from audio + captions |
+| `givore-tools.sh batch-subs <project-dir>` | Generate subtitles for all v1-v7 variants |
 
-**Use case**: Phase B.5 / D.4 — generate time-synced subtitles after audio and captions are ready.
+**Use cases**:
+- After scripts written: `batch-captions` generates all caption files automatically
+- After audio generated: `batch-subs` generates all subtitle files automatically
+- Single variant: `captions` + `subs` for one file at a time
+
+### Audio
+
+| Command | Description |
+|---------|-------------|
+| `givore-tools.sh rename-audio <project-dir> <slug>` | Rename `tts_*.mp3` to `<slug>.mp3` in all v1-v7 |
+
+**Use case**: After ElevenLabs audio generation, rename auto-generated filenames to pipeline-expected `[slug].mp3`.
 
 ### Batch Operations
 
@@ -290,7 +304,7 @@ givore_db.py update 12 --section body,bridge,problem
 
 | Command | Description |
 |---------|-------------|
-| `givore-tools.sh video-add --date X --slug X [--hook-clips "a,b"] ...` | Add video history with clips used |
+| `givore-tools.sh video-add --date X --slug X [--clips "1,2,3"] ...` | Add video history with clips used (flat or by role) |
 | `givore-tools.sh video-list [--last N]` | List recent video history with clips by role |
 | `givore-tools.sh video-recent-clips [--last N]` | Unique clips used in last N videos (for exclusion) |
 | `givore-tools.sh video-delete <id>` | Delete video history entry |
@@ -315,7 +329,9 @@ How these tools map to `/givore-video` and `/givore-batch` pipeline phases:
 | Project setup (single) | `givore-tools.sh init-project <slug>` | Create project folder |
 | Project setup (batch) | `givore-tools.sh init-batch <slug>` | Create v1-v7 + finals folders |
 | B.4 / D.2: Audio generated | `givore-tools.sh duration <audio.mp3>` | Get audio length for clip planning |
-| B.5 / D.4: Subtitles | `givore-tools.sh subs <audio> <captions>` | Generate SRT |
+| B.4 / D.2: Audio rename | `givore-tools.sh rename-audio <dir> <slug>` | Rename ElevenLabs tts_*.mp3 files |
+| B.5 / D.3: Captions | `givore-tools.sh batch-captions <dir>` | Generate captions for all variants |
+| B.5 / D.4: Subtitles | `givore-tools.sh batch-subs <dir>` | Generate SRT for all variants |
 | B.6 / D.5: Clip selection | `givore_db.py search <section>` | Find candidate clips per section |
 | B.6 / D.5: Duration validation | `givore_db.py plan <audio> <ids>` | Verify clips >= audio |
 | B.8 / D.6: Pre-flight check | `givore-tools.sh validate <config>` | MANDATORY before assembly |

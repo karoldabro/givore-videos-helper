@@ -29,8 +29,14 @@ Quality checks:
   validate <config.json> [--strict]         Pre-flight validation (files, durations, paths)
   check-render <config.json> <video.mp4>    Post-render validation (duration, aspect ratio)
 
-Subtitles:
-  subs <audio.mp3> <captions.txt>  Generate SRT from audio + captions
+Subtitles & captions:
+  subs <audio.mp3> <captions.txt> [output.srt]  Generate SRT from audio + captions
+  captions <script.txt> [output.txt]  Generate 2-3 word/line captions from script
+  batch-captions <project-dir>     Generate captions for all v1-v7 variants
+  batch-subs <project-dir>         Generate subtitles for all v1-v7 variants
+
+Audio:
+  rename-audio <project-dir> <slug>  Rename tts_*.mp3 to <slug>.mp3 in all v1-v7
 
 Project setup:
   init-project <slug>         Create project folder (projects/<slug>/)
@@ -195,6 +201,7 @@ cmd_render_all() {
 cmd_subs() {
     local audio="$1"
     local captions="$2"
+    local output="${3:-${audio%.*}.srt}"
     if [[ ! -f "$audio" ]]; then
         echo "ERROR: Audio not found: $audio" >&2
         return 1
@@ -203,7 +210,101 @@ cmd_subs() {
         echo "ERROR: Captions not found: $captions" >&2
         return 1
     fi
-    subs "$audio" "$captions"
+    ~/.venv/aeneas/bin/python -m aeneas.tools.execute_task \
+        "$audio" "$captions" \
+        "task_language=spa|is_text_type=subtitles|os_task_file_format=srt" \
+        "$output"
+    echo "Created: $output"
+}
+
+cmd_batch_subs() {
+    local dir="$1"
+    if [[ ! -d "$dir" ]]; then
+        echo "ERROR: Directory not found: $dir" >&2
+        return 1
+    fi
+    local count=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local vdir="$dir/$v"
+        [[ -d "$vdir" ]] || continue
+        local mp3=""
+        for f in "$vdir"/*.mp3; do
+            [[ -f "$f" ]] && mp3="$f" && break
+        done
+        local caps="$vdir/captions.txt"
+        if [[ -n "$mp3" && -f "$caps" ]]; then
+            echo "=== $v: generating subtitles ==="
+            cmd_subs "$mp3" "$caps"
+            count=$((count + 1))
+        fi
+    done
+    echo "Done: $count subtitle(s) generated"
+}
+
+cmd_rename_audio() {
+    local dir="$1"
+    local slug="$2"
+    if [[ ! -d "$dir" ]]; then
+        echo "ERROR: Directory not found: $dir" >&2
+        return 1
+    fi
+    local count=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local vdir="$dir/$v"
+        [[ -d "$vdir" ]] || continue
+        local tts_files=()
+        while IFS= read -r -d '' f; do
+            tts_files+=("$f")
+        done < <(find "$vdir" -maxdepth 1 -name "tts_*.mp3" -print0 2>/dev/null)
+        if [[ ${#tts_files[@]} -eq 1 ]]; then
+            mv "${tts_files[0]}" "$vdir/$slug.mp3"
+            echo "$v: renamed $(basename "${tts_files[0]}") -> $slug.mp3"
+            count=$((count + 1))
+        elif [[ ${#tts_files[@]} -gt 1 ]]; then
+            echo "$v: SKIPPED (multiple tts_*.mp3 found)" >&2
+        fi
+    done
+    echo "Done: $count file(s) renamed"
+}
+
+cmd_captions() {
+    local script_file="$1"
+    local output="${2:-$(dirname "$script_file")/captions.txt}"
+    if [[ ! -f "$script_file" ]]; then
+        echo "ERROR: Script not found: $script_file" >&2
+        return 1
+    fi
+    python3 "/media/kdabrow/Programy/givore/scripts/generate_captions.py" "$script_file" "$output"
+}
+
+cmd_batch_captions() {
+    local dir="$1"
+    if [[ ! -d "$dir" ]]; then
+        echo "ERROR: Directory not found: $dir" >&2
+        return 1
+    fi
+    local count=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local vdir="$dir/$v"
+        [[ -d "$vdir" ]] || continue
+        # Find script .txt (not captions/descriptions/clip_map)
+        local script_file=""
+        for f in "$vdir"/*.txt; do
+            [[ -f "$f" ]] || continue
+            local base
+            base=$(basename "$f")
+            if [[ "$base" != "captions.txt" && "$base" != "descriptions.txt" && "$base" != "clip_map.txt" ]]; then
+                script_file="$f"
+                break
+            fi
+        done
+        if [[ -n "$script_file" ]]; then
+            echo "=== $v: generating captions ==="
+            cmd_captions "$script_file" "$vdir/captions.txt"
+            count=$((count + 1))
+        fi
+    done
+    echo "Done: $count caption file(s) generated"
 }
 
 GIVORE_PROJECTS="/media/kdabrow/Programy/givore/projects"
@@ -302,11 +403,12 @@ cmd_batch_status() {
             local diff
             diff=$(echo "$draft_dur - $audio_dur" | bc 2>/dev/null || echo "?")
             if [[ "$diff" != "?" ]]; then
-                local abs_diff=${diff#-}
-                if (( $(echo "$abs_diff > 1.0" | bc -l 2>/dev/null) )); then
-                    status="MISMATCH(${diff}s)"
+                if (( $(echo "$diff < 0" | bc -l 2>/dev/null) )); then
+                    status="SHORT(${diff}s)"
+                elif (( $(echo "$diff > 5.0" | bc -l 2>/dev/null) )); then
+                    status="LONG(+${diff}s)"
                 else
-                    status="OK"
+                    status="OK(+${diff}s)"
                 fi
             fi
         fi
@@ -385,8 +487,24 @@ case "${1:-help}" in
         cmd_copy_finals "$2"
         ;;
     subs)
-        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh subs <audio.mp3> <captions.txt>" >&2; exit 1; }
-        cmd_subs "$2" "$3"
+        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh subs <audio.mp3> <captions.txt> [output.srt]" >&2; exit 1; }
+        cmd_subs "$2" "$3" "${4:-}"
+        ;;
+    batch-subs)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh batch-subs <project-dir>" >&2; exit 1; }
+        cmd_batch_subs "$2"
+        ;;
+    rename-audio)
+        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh rename-audio <project-dir> <slug>" >&2; exit 1; }
+        cmd_rename_audio "$2" "$3"
+        ;;
+    captions)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh captions <script.txt> [output.txt]" >&2; exit 1; }
+        cmd_captions "$2" "${3:-}"
+        ;;
+    batch-captions)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh batch-captions <project-dir>" >&2; exit 1; }
+        cmd_batch_captions "$2"
         ;;
     init-project)
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-project <date_slug>" >&2; exit 1; }

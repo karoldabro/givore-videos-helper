@@ -870,14 +870,22 @@ def cmd_video_add(args):
     video_id = cur.lastrowid
 
     # Insert clips by role
-    for role, clips_str in [("hook", args.hook_clips), ("body", args.body_clips),
-                             ("bridge", args.bridge_clips), ("cta", args.cta_clips)]:
-        if clips_str:
-            for clip_name in [c.strip() for c in clips_str.split(",") if c.strip()]:
-                conn.execute(
-                    "INSERT INTO video_clips_used (video_id, clip_name, role) VALUES (?, ?, ?)",
-                    (video_id, clip_name, role)
-                )
+    if args.clips:
+        # Flat list: all clips as role "body"
+        for clip_name in [c.strip() for c in args.clips.split(",") if c.strip()]:
+            conn.execute(
+                "INSERT INTO video_clips_used (video_id, clip_name, role) VALUES (?, ?, ?)",
+                (video_id, clip_name, "body")
+            )
+    else:
+        for role, clips_str in [("hook", args.hook_clips), ("body", args.body_clips),
+                                 ("bridge", args.bridge_clips), ("cta", args.cta_clips)]:
+            if clips_str:
+                for clip_name in [c.strip() for c in clips_str.split(",") if c.strip()]:
+                    conn.execute(
+                        "INSERT INTO video_clips_used (video_id, clip_name, role) VALUES (?, ?, ?)",
+                        (video_id, clip_name, role)
+                    )
 
     conn.commit()
     conn.close()
@@ -1258,6 +1266,7 @@ def main():
     p_va = sub.add_parser("video-add", help="Add video history entry")
     p_va.add_argument("--date", required=True)
     p_va.add_argument("--slug", required=True)
+    p_va.add_argument("--clips", default=None, help="All clips as flat list (role=body)")
     p_va.add_argument("--hook-clips", default=None)
     p_va.add_argument("--body-clips", default=None)
     p_va.add_argument("--bridge-clips", default=None)

@@ -215,7 +215,7 @@ You decide where SFX go based on the narrative:
 - Align SFX to narration beats (word emphasis) or clip cuts, not arbitrary timestamps
 - Read the subtitle timing to find exact word positions for SFX triggers
 - Minimum 1.5s spacing between SFX — they should punctuate, not clutter
-- Volume: 0.10-0.25 (subtle enhancement, not distraction)
+- Volume: 0.04-0.08 (very subtle enhancement, not distraction)
 
 ### Step 2.5: Generate Clip + SFX Plan
 
@@ -251,7 +251,7 @@ Timestamp  | SFX File                         | Category   | Why here
 - [ ] All clip paths are absolute (start with `/media/kdabrow/Programy/givore/`)
 
 **SFX integrity:**
-- [ ] SFX volume between 0.10-0.25 (subtle, not overpowering narration)
+- [ ] SFX volume between 0.04-0.08 (very subtle, not overpowering narration)
 - [ ] Minimum 1.5s spacing between SFX
 - [ ] All SFX paths are absolute
 - [ ] 3 mandatory SFX present (transition, reveal, positive)
@@ -298,7 +298,7 @@ Write a JSON config file to `/tmp/givore_assembly_config.json`:
       "name": "whoosh",
       "position": 2.8,
       "duration": 0.3,
-      "volume": 0.4
+      "volume": 0.06
     }
   ],
   "audio": "/media/kdabrow/Programy/givore/projects/[folder]/[audio_file].mp3",
