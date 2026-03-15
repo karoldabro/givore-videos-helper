@@ -7,7 +7,7 @@ Complete trial content creation workflow: Script → Approval → Audio → Capt
 **All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
 
 When using the Read tool or any file operation, always prepend this path. For example:
-- `scripts/TRIAL_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/TRIAL_HISTORY.md`
+- Trial rotation → `givore-tools.sh trial-rotation` (DB query)
 - `trial/TRIAL_AUDIENCES.md` → `/media/kdabrow/Programy/givore/trial/TRIAL_AUDIENCES.md`
 - `projects/trial-[folder]/` → `/media/kdabrow/Programy/givore/projects/trial-[folder]/`
 
@@ -23,14 +23,14 @@ This command orchestrates the full trial content creation process by calling tri
 
 1. Read `.claude/commands/givore-trial.md` to get all instructions
 2. Follow ALL steps from that command exactly:
-   - STEP 0: Load TRIAL_HISTORY.md for rotation
+   - STEP 0: Load rotation constraints via `givore-tools.sh trial-rotation`
    - STEP 0.5: Read and analyze last 2 trial script texts
    - STEP 1: Read all 7 trial reference files
    - Input collection (if $ARGUMENTS is incomplete)
    - Compatibility check (tone + format + marketing)
    - Script generation with quality checks
    - Save to: `projects/trial-[date]_[topic-slug]/[topic-slug].txt`
-   - Update TRIAL_HISTORY.md
+   - Update history via `givore-tools.sh trial-add`
 
 **Store the project folder path and the chosen TONE** - you'll need both for subsequent phases.
 
@@ -121,6 +121,16 @@ Base voice: Pablo (HIYif4jehvc9P9A8DYbX) with eleven_multilingual_v2 model.
    - Provide fallback: "Puedes generar el audio manualmente en elevenlabs.io"
    - Continue to Phase 4 anyway
 
+### Step 3.5: Log Audio Duration
+
+After audio is generated, check and record duration:
+
+```bash
+/media/kdabrow/Programy/givore/scripts/givore-tools.sh duration projects/trial-[folder]/[topic-slug].mp3
+```
+
+Store this value as `AUDIO_DURATION` — it will be needed for clip selection validation in `/givore-video`.
+
 ---
 
 ## PHASE 4: METADATA & CAPTIONS (Trial-Specific)
@@ -194,7 +204,7 @@ Generate SRT subtitles using the `subs` bash alias.
 
 2. **Run the subs command**:
    ```bash
-   subs projects/trial-[folder]/[topic-slug].mp3 projects/trial-[folder]/captions.txt
+   /media/kdabrow/Programy/givore/scripts/givore-tools.sh subs projects/trial-[folder]/[topic-slug].mp3 projects/trial-[folder]/captions.txt
    ```
 
 3. **Output**: `[topic-slug].srt` in the same folder

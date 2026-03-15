@@ -72,7 +72,7 @@ Formatted captions following these STRICT rules:
 After saving both files, run the subtitle generation command:
 
 ```bash
-subs [audio-file.mp3] projects/[folder]/captions.txt
+/media/kdabrow/Programy/givore/scripts/givore-tools.sh subs [audio-file.mp3] projects/[folder]/captions.txt
 ```
 
 Ask the user for the audio file path if not provided. The audio file is typically saved in the same project folder.
@@ -129,7 +129,7 @@ Or without arguments to be prompted:
 7. Save FILE 1: `projects/[folder]/descriptions.txt`
 8. Save FILE 2: `projects/[folder]/captions.txt`
 9. Ask for audio file path (likely in same project folder)
-10. Run: `subs [audio.mp3] projects/[folder]/captions.txt`
+10. Run: `/media/kdabrow/Programy/givore/scripts/givore-tools.sh subs [audio.mp3] projects/[folder]/captions.txt`
 11. Confirm SRT file generated
 
 ---

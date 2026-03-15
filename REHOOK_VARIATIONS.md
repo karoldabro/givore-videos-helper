@@ -102,7 +102,7 @@ Debe empoderar al espectador, NUNCA repetir el hook inicial.
 ## Rotation Rules
 
 1. **NUNCA** usar el mismo estilo en videos consecutivos
-2. **Verificar** SCRIPT_HISTORY.md antes de elegir
+2. **Verificar** via `givore-tools.sh script-rotation` antes de elegir
 3. **NUNCA** repetir palabras del HOOK inicial
 4. **Sugerir rotación**: SOLUTION-TEASE → CURIOSITY-BUILD → ACTION-PIVOT → COMMUNITY-BRIDGE → DIRECT-REVEAL → (repetir)
 

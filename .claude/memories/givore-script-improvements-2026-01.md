@@ -6,10 +6,10 @@ Implemented automatic rotation tracking and reduced repetitive content in script
 ## Changes Made
 
 ### New Files Created
-1. **scripts/SCRIPT_HISTORY.md** - Tracks last 10 scripts with metadata:
+1. **scripts/clips.db** (SQLite) - Tracks last 10 scripts with metadata:
    - Hook Type, CTA Type, Proof Tease decision
    - Problem Angle, Rehook Style
-   - Auto-updated after each script generation
+   - Auto-updated via `givore-tools.sh script-rotation` after each script generation
 
 2. **PROBLEM_VARIATIONS.md** - 5 problem angle categories:
    - SYSTEM-WASTE (default)
@@ -34,10 +34,10 @@ Implemented automatic rotation tracking and reduced repetitive content in script
 
 ### Updated Files
 - **.claude/commands/givore-script.md** - Major updates:
-  - STEP 0: Auto-read SCRIPT_HISTORY.md before generation
+  - STEP 0: Auto-query `givore-tools.sh script-rotation` before generation
   - Proof tease now OPTIONAL with decision tree
   - References to new variation files
-  - Mandatory history update after saving script
+  - Mandatory history update via `givore-tools.sh script-rotation` after saving script
   - Removed manual "recent hooks/CTAs" input requirement
 
 ## Key Improvements

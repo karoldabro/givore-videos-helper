@@ -1,0 +1,50 @@
+CLIP MAP — comunidad-ciudades-espana (FINAL)
+=============================================
+Timestamp      Section      Clip                                                          Duration
+00:00-00:01    [HOOK_P1]    [hook] palms reveal cycling.mp4                                0.9s
+00:01-00:03    [HOOK_P1]    cyclig pov on the street 2.mp4                                 2.0s
+00:03-00:05    [HOOK_P1]    cycling claudy day on the street.mp4                           2.0s
+00:05-00:07    [HOOK_P1]    cyclig pov on the street.mp4                                   2.0s
+00:07-00:09    [HOOK_P1]    cycling right after the car next to parked cars.mp4            2.0s
+00:09-00:10    [HOOK_P1]    [hook] cycling hop movement higher level.mp4                   1.3s
+00:10-00:12    [HOOK_P2]    entering on the street and start to cycle.mp4                  1.8s
+00:12-00:14    [HOOK_P2]    people crossing...cycling next to them.mp4                     2.0s
+00:14-00:16    [HOOK_P2]    cycling on asphalt cycle lane cloudy day.mp4                   2.0s
+00:16-00:18    [HOOK_P2]    leaning to the right while taking a turn.mp4                   1.5s
+00:18-00:20    [HOOK_P3]    [bridge][hook] black then hand off lens reveal.mp4             2.1s
+00:20-00:22    [PROBLEM]    waiting on red light looking at passing cars.mp4               2.0s
+00:22-00:24    [PROBLEM]    the car in front of me is turning left.mp4                     2.0s
+00:24-00:25    [PROBLEM]    cycling approaching red light on crossing.mp4                  1.6s
+00:25-00:28    [PROBLEM]    *NEW* cycling between cars red light mestalla.mp4              2.5s
+00:28-00:30    [PROBLEM]    people passing on red light...cycling them.mp4                 2.0s
+00:30-00:32    [PROBLEM]    cyclig pov on the cycle path.mp4                               1.9s
+00:32-00:33    [PROBLEM]    *NEW* truck turning right aragon sunny day.mp4                 1.6s
+00:33-00:35    [PROBLEM]    cycling next to bus stop people crossing.mp4                   1.5s
+00:35-00:36    [REHOOK]     sharp turn right to the cycle line.mp4                         1.0s
+00:36-00:38    [SOLUTION]   suddenly turning right on the street.mp4                       2.0s
+00:38-00:39    [SOLUTION]   entering cycle lane two cyclists approaching.mp4               1.5s
+00:39-00:41    [SOLUTION]   turning left from cycle line to street.mp4                     1.5s
+00:41-00:42    [SOLUTION]   cycling on the cycle line.mp4                                  1.5s
+00:42-00:45    [SOLUTION]   *NEW* cycling path shadow mestalla.mp4                         2.3s
+00:45-00:46    [SOLUTION]   cyclig pov on the street turning right.mp4                     1.5s
+00:46-00:48    [PAYOFF]     cycling on the street near mestalla.mp4                        2.0s
+00:48-00:50    [PAYOFF]     cycling back wheel sunny day - getting off.mp4                 1.6s
+00:50-00:52    [PAYOFF]     turning sharply to the left while cycling.mp4                  2.0s
+00:52-00:54    [PAYOFF]     cycling back wheel sunny day - no leg motion.mp4               2.0s
+00:54-00:56    [PAYOFF]     cycling front wheel sunny - turning right.mp4                  2.0s
+00:56-00:58    [PAYOFF]     cyclig pov on the street 4.mp4                                 2.0s
+00:58-01:00    [PAYOFF]     cyclig pov sunny day turning right.mp4                         2.0s
+01:00-01:02    [PAYOFF]     stadium from left to right short sunny day.mp4                 2.3s
+01:02-01:04    [CTA]        cycling front wheel sunny - turning right path.mp4             2.0s
+01:04-01:05    [CTA]        unscrewing the tripod on steering wheel.mp4                    1.5s
+01:05-01:08    [CTA]        setting up the camara on the bicycle.mp4                       2.7s
+
+Audio: comunidad-ciudades-espana.mp3 (61.8s)
+Subtitles: 78 entries from comunidad-ciudades-espana.srt
+
+SFX (A2 track):
+  00:10.0  Whoosh - Fast Short.MP3           [HOOK_P1->HOOK_P2 transition]   vol: 40%
+  00:17.3  Shimmer - Bright.MP3              [HOOK_P3 bridge reveal]         vol: 35%
+  00:34.5  Drop 2.MP3                        [REHOOK impact]                 vol: 40%
+  00:35.5  Chime - Single.MP3               [SOLUTION start]                vol: 35%
+  01:01.7  Notification - Two Tone.MP3       [CTA notification]              vol: 35%

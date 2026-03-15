@@ -80,5 +80,5 @@
 - Text optimized for ElevenLabs text-to-speech
 - Creates project folder: `projects/[date]_[topic-slug]/`
 - Saves script to: `projects/[date]_[topic-slug]/[topic-slug].txt`
-- Updates `scripts/SCRIPT_HISTORY.md` with rotation data
+- Updates rotation tracking via `givore-tools.sh script-rotation` (SQLite DB: `scripts/clips.db`)
 - Use ellipsis for pauses, numbers as words

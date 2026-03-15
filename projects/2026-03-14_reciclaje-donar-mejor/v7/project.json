@@ -1,0 +1,720 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook]cycling on the street, showing okey sign with my right hand - ayora.mp4",
+      "duration": 1.792,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[bridge] from left to the sw while cycling - ayora.mp4",
+      "duration": 1.92,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on a bike lane - grau maritim.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling the car parks on the left and passing close to it.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling a persons crosses the street in fornt of me - ayora.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the closed street because of fallas- ayora.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/aproaching closed street for the falla, mother and child watch small firecrackers - albors.mp4",
+      "duration": 2.154,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/letting people pass a crosswalk - albors.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on a bike lane 2 - grau maritim.mp4",
+      "duration": 2.112,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 4 right next to the park - ayora.mp4",
+      "duration": 1.877,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 3 - ayora.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "clip_11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling while turing left to the bike lane- ayora.mp4",
+      "duration": 2.304,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "clip_12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane  - ayora.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "clip_13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street - albors.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "clip_14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 4 - ayora.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "clip_15",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 2 - ayora.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip16",
+      "name": "clip_16",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street Exposicion.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip17",
+      "name": "clip_17",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street mestalla stadium visible.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip18",
+      "name": "clip_18",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, choosing a direction - mestalla aragon.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip19",
+      "name": "clip_19",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling near to statuim mestalla camara goes up from the sw to show the top of the stadium.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip20",
+      "name": "clip_20",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling near statuim mestalla, very close to the edge.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip21",
+      "name": "clip_21",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/turning left on a bike lane - grau maritim.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip22",
+      "name": "clip_22",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling turning right on the bike lane- ayora.mp4",
+      "duration": 2.261,
+      "type": "video"
+    },
+    {
+      "id": "clip23",
+      "name": "clip_23",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/start cycling going on the bike lane - ayora.mp4",
+      "duration": 2.666,
+      "type": "video"
+    },
+    {
+      "id": "clip24",
+      "name": "clip_24",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4",
+      "duration": 1.962,
+      "type": "video"
+    },
+    {
+      "id": "clip25",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-14_reciclaje-donar-mejor/v7/reciclaje-donar-mejor.mp3",
+      "duration": 52.009796,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.792,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 1.92,
+          "position": 1.792,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 3.712,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 5.76,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 7.786,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 9.812,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.154,
+          "position": 11.838,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 13.992,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.112,
+          "position": 16.018,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 1.877,
+          "position": 18.13,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 20.007,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.304,
+          "position": 22.055,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 24.359,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 26.407,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 28.433,
+          "filters": []
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 30.459,
+          "filters": []
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 32.485,
+          "filters": []
+        },
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 34.511,
+          "filters": []
+        },
+        {
+          "clip_id": "clip18",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 36.537,
+          "filters": []
+        },
+        {
+          "clip_id": "clip19",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 38.563,
+          "filters": []
+        },
+        {
+          "clip_id": "clip20",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 40.589,
+          "filters": []
+        },
+        {
+          "clip_id": "clip21",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 42.637,
+          "filters": []
+        },
+        {
+          "clip_id": "clip22",
+          "in": 0.0,
+          "out": 2.261,
+          "position": 44.685,
+          "filters": []
+        },
+        {
+          "clip_id": "clip23",
+          "in": 0.0,
+          "out": 2.666,
+          "position": 46.946,
+          "filters": []
+        },
+        {
+          "clip_id": "clip24",
+          "in": 0.0,
+          "out": 2.398,
+          "position": 49.612,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip25",
+          "in": 0.0,
+          "out": 52.009796,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Esto es lo que pasa\ncada d\u00eda",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.28,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "en las calles\nde Espa\u00f1a.",
+          "position": 1.28,
+          "in": 0.0,
+          "out": 1.24,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Cosas \u00fatiles.",
+          "position": 2.52,
+          "in": 0.0,
+          "out": 0.7999999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Abandonadas.",
+          "position": 3.32,
+          "in": 0.0,
+          "out": 1.0400000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "A plena vista.",
+          "position": 4.36,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Y lo curioso es",
+          "position": 5.44,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "que esto podr\u00eda haberse\ncompartido f\u00e1cilmente.",
+          "position": 6.36,
+          "in": 0.0,
+          "out": 2.759999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Si quien lo dej\u00f3",
+          "position": 9.12,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "hubiera sabido que\nalguien lo quer\u00eda...",
+          "position": 9.68,
+          "in": 0.0,
+          "out": 2.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "no estar\u00eda aqu\u00ed.",
+          "position": 11.8,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Una cosa menos\nen la basura",
+          "position": 13.0,
+          "in": 0.0,
+          "out": 1.4399999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "es una cosa\nm\u00e1s aprovechada.",
+          "position": 14.44,
+          "in": 0.0,
+          "out": 1.6399999999999988,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Cada objeto que\nse comparte",
+          "position": 16.08,
+          "in": 0.0,
+          "out": 1.7200000000000024,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "es uno menos que acaba\ndonde no deber\u00eda.",
+          "position": 17.8,
+          "in": 0.0,
+          "out": 2.16,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "Os ense\u00f1o.",
+          "position": 19.96,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "Givore.",
+          "position": 20.76,
+          "in": 0.0,
+          "out": 0.3999999999999986,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Publicas lo que\nte sobra en casa.",
+          "position": 21.16,
+          "in": 0.0,
+          "out": 2.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "Alguien de tu barrio\nlo descubre.",
+          "position": 23.68,
+          "in": 0.0,
+          "out": 1.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Foto, t\u00edtulo,",
+          "position": 25.36,
+          "in": 0.0,
+          "out": 1.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "y en segundos ya lo ve\ngente cerca de ti.",
+          "position": 26.88,
+          "in": 0.0,
+          "out": 2.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "Sin dinero.",
+          "position": 29.0,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "Sin intermediarios.",
+          "position": 29.88,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "Pero vamos a\nser realistas.",
+          "position": 31.0,
+          "in": 0.0,
+          "out": 2.039999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "Givore acaba\nde arrancar.",
+          "position": 33.04,
+          "in": 0.0,
+          "out": 1.5200000000000031,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "La comunidad se est\u00e1\nformando poco a poco.",
+          "position": 34.56,
+          "in": 0.0,
+          "out": 2.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "Pero cada vecino\nque se une",
+          "position": 36.56,
+          "in": 0.0,
+          "out": 1.4399999999999977,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "hace la diferencia.",
+          "position": 38.0,
+          "in": 0.0,
+          "out": 1.759999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "M\u00e1s gente compartiendo,",
+          "position": 39.76,
+          "in": 0.0,
+          "out": 1.1600000000000037,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "menos cosas perdidas.",
+          "position": 40.92,
+          "in": 0.0,
+          "out": 1.3999999999999986,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "Porque lo bonito",
+          "position": 42.32,
+          "in": 0.0,
+          "out": 0.5200000000000031,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "no es encontrar cosas\nen la calle.",
+          "position": 42.84,
+          "in": 0.0,
+          "out": 1.8399999999999963,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "Lo bonito es que\nse compartan antes.",
+          "position": 44.68,
+          "in": 0.0,
+          "out": 2.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "Guardad esto",
+          "position": 46.76,
+          "in": 0.0,
+          "out": 0.8400000000000034,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "y pas\u00e1dselo a alguien",
+          "position": 47.6,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "que necesite saberlo.",
+          "position": 48.88,
+          "in": 0.0,
+          "out": 1.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub35",
+          "text": "As\u00ed es como crecemos.",
+          "position": 50.56,
+          "in": 0.0,
+          "out": 1.3999999999999986,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-15T00:28:07.201109",
+    "software": "kdenlive-cli 1.0"
+  }
+}

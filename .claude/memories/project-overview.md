@@ -29,7 +29,8 @@ givore/
 │   └── memories/                     # Project knowledge base
 │       └── elevenlabs-config.md      # ElevenLabs voice settings
 ├── scripts/
-│   └── SCRIPT_HISTORY.md             # Rotation tracking (hook types, CTAs)
+│   ├── clips.db                      # SQLite DB — rotation tracking (hook types, CTAs, clips)
+│   └── givore-tools.sh               # CLI helpers (script-rotation, trial-rotation, video-recent-clips)
 ├── projects/                         # Self-contained project folders
 │   ├── .gitignore                    # Ignores *.mp3 files
 │   ├── template.kdenlive             # KDEnlive template

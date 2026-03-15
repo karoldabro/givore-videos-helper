@@ -1,0 +1,48 @@
+V2 CLIP MAP — QUESTION hook, ENGAGEMENT CTA
+Audio: 52.7s | Visual Hook: red bus metalla (2.3s) | 27 clips total
+
+HOOK (0.0s–14.1s) — 7 clips
+  0.0–2.3s   hook_red_bus           camara on the red bus that is turning left metalla sunny.mp4
+  2.3–4.3s   hook_pov3              cyclig pov on the street 3 suny day.mp4
+  4.3–6.3s   hook_cloudy            cycling claudy day on the street.mp4
+  6.3–8.3s   hook_pov4_torre        cyclig pov on the street 4 - torre miramar.mp4
+  8.3–10.1s  hook_entering          entering on the street and start to cycle.mp4
+  10.1–12.1s hook_steering_cross    cycling camara on the stearing wheel - crossing a street red color cycle path.mp4
+  12.1–14.1s hook_asphalt_cloudy    cycling on  a asphalt cycle lane cloudy day.mp4
+
+PROBLEM (14.1s–25.2s) — 6 clips
+  14.1–16.1s problem_people_crossing  people are crossing the street and im cling right next to them.mp4
+  16.1–17.7s problem_red_light        cycling while aproaching red light on the crossing.mp4
+  17.7–19.7s problem_car_left         the car in front of me is turning left.mp4
+  19.7–21.7s problem_waiting          waiting on the red light and looking on the passing cars.mp4
+  21.7–23.2s problem_bus_stop         cycling on the cycle laneright next to the bus stop people are crossing the lane.mp4
+  23.2–25.2s problem_people_red       people passing on the red light passing and cycling them.mp4
+
+REHOOK (25.2s–26.7s) — 1 clip
+  25.2–26.7s rehook_leaning           leaning to the right while taking a turn.mp4
+
+SOLUTION (26.7s–35.7s) — 5 clips
+  26.7–28.7s solution_turn_left_aragon  cycling turning left between blocks aragon sunny day.mp4
+  28.7–30.7s solution_sudden_turn       sudennnly turning right on the street.mp4
+  30.7–32.7s solution_path_aragon       cycling on the cycling path aragon sunny day.mp4
+  32.7–34.2s solution_cycle_line        cycling on the cycle line.mp4
+  34.2–35.7s solution_turn_left         turning left from the cycle line to the street.mp4
+
+PAYOFF (35.7s–44.6s) — 5 clips
+  35.7–37.7s payoff_shadows            cycling in the shadows on the cycle path.mp4
+  37.7–39.7s payoff_mestalla           cycling right to the mestalla statium sunny day.mp4
+  39.7–41.3s payoff_back_wheel_nice    cycling camara on the back wheel suny day - nice angle.mp4
+  41.3–42.9s payoff_front_wheel        cycling camara on the front wheel suny day - streight on the cycle path.mp4
+  42.9–44.6s payoff_stadium            stadium from left to right sunny day.mp4
+
+CTA (44.6s–52.7s) — 3 clips
+  44.6–46.6s cta_sitting               stittin on the bicycle.mp4
+  46.6–48.2s cta_getting_off           cycling camara on the back wheel suny day - getting off the bike.mp4
+  48.2–52.7s cta_pov4_extend           cyclig pov on the street 4 - torre miramar.mp4 (extended)
+
+SFX:
+  15.8s  Whoosh - Short - Fast.MP3       (transition, vol=0.65)
+  16.9s  Reveal - Musical.MP3            (reveal, vol=0.6)
+  27.4s  Impact Hit.MP3                  (impact, vol=0.65)
+  29.0s  Alert - Positive - Correct.MP3  (positive, vol=0.6)
+  48.5s  Pop 1.MP3                       (CTA, vol=0.65)

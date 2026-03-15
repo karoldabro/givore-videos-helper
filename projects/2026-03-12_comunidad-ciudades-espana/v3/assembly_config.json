@@ -1,0 +1,246 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v3",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v3/comunidad-ciudades-espana.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v3/comunidad-ciudades-espana.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clips": [
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/visual hooks/[hook] cycling the camara angle changes from the up to the bottom until the steering wheel is visible.mp4",
+      "name": "hook_angle_shift",
+      "position": 0.0,
+      "duration": 0.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street 5.mp4",
+      "name": "hook_pov5",
+      "position": 0.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street.mp4",
+      "name": "hook_pov1",
+      "position": 2.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling right after the car next to the parked cars.mp4",
+      "name": "hook_after_car",
+      "position": 4.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street sunny day turning right.mp4",
+      "name": "hook_pov_sunny_right",
+      "position": 6.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street stop on aragon sunny day.mp4",
+      "name": "hook_stop_aragon",
+      "position": 8.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on  a asphalt cycle lane cloudy day.mp4",
+      "name": "hook_asphalt_cloudy",
+      "position": 10.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling beteen cars which wait on the red light sunny day mestalla stadium.mp4",
+      "name": "problem_between_cars",
+      "position": 12.6,
+      "duration": 2.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/waiting to cross the street on the bicycle while read car is passing in front of the camara.mp4",
+      "name": "problem_waiting_red_car",
+      "position": 15.1,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycling path with the truck turing right aragon sunny day.mp4",
+      "name": "problem_truck",
+      "position": 17.1,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling right after the car next to the parked cars.mp4",
+      "name": "problem_after_car2",
+      "position": 18.7,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov pn the cycle path.mp4",
+      "name": "problem_cycle_path",
+      "position": 20.7,
+      "duration": 1.9,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling very close on the right side mestalla stadium.mp4",
+      "name": "extra_mestalla_close",
+      "position": 22.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/crstal building aragon in fron of the crossing.mp4",
+      "name": "extra_crystal_building",
+      "position": 24.6,
+      "duration": 1.3,
+      "in_point": 0.0
+    },
+    {
+      "section": "REHOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/sharp turn right to the cycle line.mp4",
+      "name": "rehook_sharp_turn",
+      "position": 25.9,
+      "duration": 1.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering a cycle lane two cyclings in front of me aproaching.mp4",
+      "name": "solution_entering_lane",
+      "position": 26.9,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling turning right to the cycling path aragon.mp4",
+      "name": "solution_turn_right_aragon",
+      "position": 28.4,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling path shadow mestalla.mp4",
+      "name": "solution_shadow",
+      "position": 30.4,
+      "duration": 2.3,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street near mestalla.mp4",
+      "name": "solution_near_mestalla",
+      "position": 32.7,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning sharply to the left while cycling.mp4",
+      "name": "payoff_sharp_left",
+      "position": 34.7,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling very close on the right side mestalla stadium.mp4",
+      "name": "payoff_close_mestalla",
+      "position": 36.2,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the back wheel suny day.mp4",
+      "name": "payoff_back_wheel",
+      "position": 38.2,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the front wheel suny day - turining right on the cycle path.mp4",
+      "name": "payoff_front_wheel",
+      "position": 39.8,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/unscrewing the tripod on the steering wheel.mp4",
+      "name": "cta_unscrewing",
+      "position": 41.4,
+      "duration": 1.4,
+      "in_point": 0.0
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/setting up the camara on the bicycle.mp4",
+      "name": "cta_setup",
+      "position": 42.8,
+      "duration": 8.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh.MP3",
+      "name": "swoosh_transition",
+      "position": 14.3,
+      "duration": 0.3,
+      "volume": 0.65
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Sparkle.MP3",
+      "name": "sparkle_reveal",
+      "position": 15.2,
+      "duration": 1.5,
+      "volume": 0.6
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Stinger 1.MP3",
+      "name": "stinger_impact",
+      "position": 28.0,
+      "duration": 0.8,
+      "volume": 0.65
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Celebratory Jingle 1.MP3",
+      "name": "celebratory_positive",
+      "position": 29.4,
+      "duration": 2.0,
+      "volume": 0.6
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Click - Single.MP3",
+      "name": "click_cta",
+      "position": 47.0,
+      "duration": 0.3,
+      "volume": 0.65
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "name": "custom",
     "width": 1080,
     "height": 1920,
-    "fps_num": 30,
+    "fps_num": 50,
     "fps_den": 1,
     "progressive": true,
     "dar_num": 9,

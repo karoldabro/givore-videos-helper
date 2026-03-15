@@ -7,7 +7,7 @@ Complete content creation workflow: Script → Approval → Audio → Captions �
 **All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
 
 When using the Read tool or any file operation, always prepend this path. For example:
-- `scripts/SCRIPT_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/SCRIPT_HISTORY.md`
+- Script rotation → `givore-tools.sh script-rotation` (DB query)
 - `HOOKS_LIBRARY.md` → `/media/kdabrow/Programy/givore/HOOKS_LIBRARY.md`
 - `projects/[folder]/` → `/media/kdabrow/Programy/givore/projects/[folder]/`
 - `.claude/commands/givore-script.md` → `/media/kdabrow/Programy/givore/.claude/commands/givore-script.md`
@@ -24,14 +24,14 @@ This command orchestrates the full Givore content creation process by calling ex
 
 1. Read `.claude/commands/givore-script.md` to get all instructions
 2. Follow ALL steps from that command exactly:
-   - STEP 0: Load SCRIPT_HISTORY.md for rotation
+   - STEP 0: Load rotation constraints via `givore-tools.sh script-rotation`
    - STEP 0.5: Validate & correct locations (Valenciano → Castellano)
    - STEP 0.7: Read and analyze last 3 script texts for repetition avoidance
    - STEP 1: Read all 8 reference files
    - Input collection (if $ARGUMENTS is incomplete)
    - Script generation with quality checks
    - Save to: `projects/[date]_[topic-slug]/[topic-slug].txt`
-   - Update SCRIPT_HISTORY.md
+   - Update history via `givore-tools.sh script-add`
 
 **Store the project folder path** - you'll need it for subsequent phases.
 
@@ -152,6 +152,16 @@ output_format: "mp3_44100_128"
    - Provide fallback: "Puedes generar el audio manualmente en elevenlabs.io"
    - Continue to Phase 4 anyway (metadata can still be generated)
 
+### Step 3.5: Log Audio Duration
+
+After audio is generated, check and record duration:
+
+```bash
+/media/kdabrow/Programy/givore/scripts/givore-tools.sh duration projects/[folder]/[topic-slug].mp3
+```
+
+Store this value as `AUDIO_DURATION` — it will be needed for clip selection validation in `/givore-video`.
+
 ---
 
 ## PHASE 4: METADATA & CAPTIONS
@@ -179,7 +189,7 @@ Generate SRT subtitles using the `subs` bash alias.
 
 2. **Run the subs command**:
    ```bash
-   subs projects/[folder]/[topic-slug].mp3 projects/[folder]/captions.txt
+   /media/kdabrow/Programy/givore/scripts/givore-tools.sh subs projects/[folder]/[topic-slug].mp3 projects/[folder]/captions.txt
    ```
 
 3. **Output**: `[topic-slug].srt` (or similar, in the same folder)

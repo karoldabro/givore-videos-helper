@@ -1,0 +1,46 @@
+V4 CLIP MAP — JOURNEY hook, SAVE-SHARE CTA
+Audio: 50.7s | Visual Hook: clapping hands (1.0s) | 25 clips total
+
+HOOK (0.0s–12.8s) — 7 clips
+  0.0–1.0s   hook_clapping          [hook] cycling while clapping with my hands very close to the camara.mp4
+  1.0–3.0s   hook_pov2              cyclig pov on the street 2.mp4
+  3.0–5.0s   hook_cloudy            cycling claudy day on the street.mp4
+  5.0–7.0s   hook_pov4              cyclig pov on the street 4.mp4
+  7.0–8.8s   hook_entering          entering on the street and start to cycle.mp4
+  8.8–10.8s  hook_steering_cross    cycling camara on the stearing wheel - crossing a street red color cycle path.mp4
+  10.8–12.8s hook_people_crossing   people are crossing the street and im cling right next to them.mp4
+
+PROBLEM (12.8s–21.9s) — 5 clips
+  12.8–14.8s problem_car_left        the car in front of me is turning left.mp4
+  14.8–16.4s problem_red_light       cycling while aproaching red light on the crossing.mp4
+  16.4–18.4s problem_people_red      people passing on the red light passing and cycling them.mp4
+  18.4–19.9s problem_bus_stop        cycling on the cycle laneright next to the bus stop people are crossing the lane.mp4
+  19.9–21.9s problem_sun_reflection  cycling path sun into the camara reflection metalla.mp4
+
+REHOOK (21.9s–23.4s) — 1 clip
+  21.9–23.4s rehook_leaning          leaning to the right while taking a turn.mp4
+
+SOLUTION (23.4s–32.4s) — 5 clips
+  23.4–25.4s solution_sudden_turn    sudennnly turning right on the street.mp4
+  25.4–26.9s solution_cycle_line     cycling on the cycle line.mp4
+  26.9–28.4s solution_turn_left      turning left from the cycle line to the street.mp4
+  28.4–30.4s solution_path_aragon    cycling on the cycling path aragon sunny day.mp4
+  30.4–32.4s solution_shadows        cycling in the shadows on the cycle path.mp4
+
+PAYOFF (32.4s–39.7s) — 4 clips
+  32.4–34.4s payoff_near_mestalla       cycling on the street near mestalla.mp4
+  34.4–36.4s payoff_mestalla_entrance   cycling right to the entrance to the mestalla statium sunny day.mp4
+  36.4–38.0s payoff_back_wheel_still    cycling camara on the back wheel suny day - no leg montion.mp4
+  38.0–39.7s payoff_stadium_short       stadium from left to right short sunny day.mp4
+
+CTA (39.7s–50.7s) — 3 clips
+  39.7–41.3s cta_getting_off            cycling camara on the back wheel suny day - getting off the bike.mp4
+  41.3–43.3s cta_sitting                stittin on the bicycle.mp4
+  43.3–50.7s cta_pov4_extend            cyclig pov on the street 4.mp4 (extended)
+
+SFX:
+  15.2s  Swish 2.mp3                    (transition, vol=0.65)
+  16.2s  Ding - Single - Bright.MP3     (reveal, vol=0.6)
+  26.4s  Braam 1.mp3                    (impact, vol=0.65)
+  27.9s  Jingle - Upbeat.MP3            (positive, vol=0.6)
+  46.6s  Pop 1.MP3                      (CTA, vol=0.65)

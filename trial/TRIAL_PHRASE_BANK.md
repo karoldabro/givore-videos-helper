@@ -235,7 +235,7 @@ These phrases introduce Givore from the perspective of someone who HAS items, no
 ## Variation Tracking
 
 ### Mandatory Rotation
-Before writing a trial script, check TRIAL_HISTORY.md and verify:
+Before writing a trial script, check via `givore-tools.sh trial-rotation` and verify:
 - Questions used in last 2 scripts are NOT reused
 - Scenario starters are NOT repeated from last 2
 - Givore integration phrase is different from last 2

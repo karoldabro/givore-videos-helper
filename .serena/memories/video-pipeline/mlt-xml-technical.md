@@ -7,7 +7,7 @@
 - Resolution: 1080x1920
 - DAR: 9:16 (NOT 16:9 — that causes miniaturized video)
 - SAR: 1:1 (computed as dar_num*height / dar_den*width)
-- FPS: 30/1
+- FPS: 50/1 (NOT 30 — clips are 50fps, template is 50fps)
 - Template: `projects/template.kdenlive-cli.json`
 
 ## Video Track — hide="audio"
@@ -89,4 +89,5 @@ ASS outline values need 2x scaling for kdenlivetitle pixel rendering.
 - Draft: 540x960, bitrate 1000k, audio 128k
 - Final: 1080x1920, bitrate 8000k, audio 192k
 - Audio: `ar=48000 channels=2` (forced for clean audio)
+- **CRITICAL**: Must include `r=50`, `frame_rate_num=50`, `frame_rate_den=1` in render extra_args — without these, melt defaults to 25fps causing 2x duration
 - Flatpak melt needs `--filesystem=` flags for media access

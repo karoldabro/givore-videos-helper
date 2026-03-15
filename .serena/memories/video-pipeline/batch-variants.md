@@ -14,9 +14,9 @@ Generate 7 variants of one topic in a single session. Optimizes context usage by
 - Total: ~72K tokens vs ~203K naive (65% savings)
 
 ## Modes
-- **Street-finds**: Auto-detected (default). Uses 9 ref files + SCRIPT_HISTORY.md
-- **Trial**: Detected by audience keywords (RENOVATING, NEW-HOUSE, etc.). Uses 7 trial ref files + TRIAL_HISTORY.md
-- Both modes share: CLIPS_CATALOG, SFX_CATALOG, VIDEO_HISTORY, METADATA_INSTRUCTIONS
+- **Street-finds**: Auto-detected (default). Uses 9 ref files + `givore-tools.sh script-rotation`
+- **Trial**: Detected by audience keywords (RENOVATING, NEW-HOUSE, etc.). Uses 7 trial ref files + `givore-tools.sh trial-rotation`
+- Both modes share: CLIPS_CATALOG, SFX_CATALOG, `givore-tools.sh video-recent-clips`, METADATA_INSTRUCTIONS
 
 ## Folder Structure
 ```
@@ -34,10 +34,14 @@ projects/[prefix][date]_[slug]/
 5. **E: Review & Finalize** — present all 7 drafts, user selects which to final-render, update global histories (v1 only)
 
 ## Key Design Decisions
-- Only v1 updates global SCRIPT_HISTORY / VIDEO_HISTORY / TRIAL_HISTORY (prevents rotation pollution)
+- Only v1 updates global rotation DB (script-rotation / video-recent-clips / trial-rotation via `givore-tools.sh`) — prevents rotation pollution
 - BATCH_MANIFEST.md handles intra-batch rotation (no duplicate elements across variants)
-- Assembly configs written to `/tmp/givore_batch_vN_config.json` (absolute paths required)
+- Assembly configs written to `project-folder/vN/assembly_config.json` (absolute paths required)
+- Use `givore-tools.sh generate-config` to auto-create configs from audio + clip IDs
+- Use `givore-tools.sh render-all <dir> draft` / `final` to batch-render all variants
+- Use `givore-tools.sh copy-finals <dir>` to collect finals
 - Draft-first: all 7 drafts before any final render
+- SFX temporarily disabled (set `"sfx": []` in configs) — to be fixed in separate session
 - Each variant gets unique: script, ElevenLabs audio, 5-platform metadata, video assembly
 
 ## Delta Rules (v2-v7)

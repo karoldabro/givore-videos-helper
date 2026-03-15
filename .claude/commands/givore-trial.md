@@ -7,7 +7,7 @@ Generate experimental TikTok/Instagram Reels scripts targeting specific audience
 **All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
 
 When using the Read tool or any file operation, always prepend this path. For example:
-- `scripts/TRIAL_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/TRIAL_HISTORY.md`
+- Rotation history → `givore-tools.sh trial-rotation` (DB query)
 - `trial/TRIAL_AUDIENCES.md` → `/media/kdabrow/Programy/givore/trial/TRIAL_AUDIENCES.md`
 - `projects/trial-[folder]/` → `/media/kdabrow/Programy/givore/projects/trial-[folder]/`
 
@@ -18,7 +18,7 @@ You are a trial content generator for Givore -- a social recycling (upcycling) p
 **CRITICAL**: Before generating ANY trial script, you MUST follow ALL steps below:
 
 ### STEP 0: Load Trial History (AUTOMATIC)
-**Read `scripts/TRIAL_HISTORY.md` FIRST** to get rotation context:
+**Run `givore-tools.sh trial-rotation`** to get rotation context:
 - Recent **Audience** segments → VARY (don't repeat same Audience + Format + Tone combo in last 3)
 - Recent **Marketing** approaches → If last 2 were same, SWITCH
 - Recent **Durations** → Don't produce 3 of the same length in a row
@@ -26,7 +26,7 @@ You are a trial content generator for Givore -- a social recycling (upcycling) p
 
 ### STEP 0.5: Analyze Last 2 Trial Scripts for Repetition (MANDATORY)
 
-1. **Get file paths**: From TRIAL_HISTORY.md rows 1-2, extract the File column values
+1. **Get file paths**: From `givore-tools.sh trial-list --last 2`, extract the File column values
 2. **Read each script**: Load full text from `projects/{File value}` for each script
 3. **Analyze for patterns**: Identify:
    - Repeated questions (don't reuse the same questions)
@@ -79,7 +79,7 @@ Before generating, verify the combination works:
 
 ## Script Generation Process
 
-1. **Load History**: Read TRIAL_HISTORY.md
+1. **Load History**: Run `givore-tools.sh trial-rotation`
 2. **Analyze Recent Scripts**: Read text of last 2 trial scripts for repetition (STEP 0.5)
 3. **Select Audience Questions**: Pull questions from TRIAL_PHRASE_BANK.md for the chosen audience
 4. **Apply Format Template**: Follow the structure from TRIAL_FORMATS.md for chosen format
@@ -114,7 +114,7 @@ Output ONLY the speech text optimized for ElevenLabs:
 - [ ] If HUMORISTIC/SARCASTIC: humor comes from the situation, not the person
 - [ ] If EMPATHETIC: validates before suggesting
 - [ ] If PROVOCATIVE: challenges beliefs, not people
-- [ ] Audience + Format + Tone combo is NOT same as any of last 3 scripts
+- [ ] Audience + Format + Tone combo is NOT same as any of last 3 in rotation history
 
 ## Word Count Guidelines (200 WPM)
 
@@ -142,24 +142,23 @@ The `trial-` prefix distinguishes trial projects from regular street-finds conte
 
 ## FINAL STEP: Update Trial History (MANDATORY)
 
-**After saving the script**, update `scripts/TRIAL_HISTORY.md`:
+**After saving the script**, run `givore-tools.sh trial-add` to record the new entry in the DB:
 
-1. **Read current history** - get the table
-2. **Shift rows down**:
-   - Row 1 → Row 2
-   - Row 2 → Row 3
-   - ... (shift all down)
-3. **Delete row 11** if it exists (keep only 10)
-4. **Add new script to row 1** with:
-   - Date: today's date
-   - File: the project folder path (e.g., `trial-2026-02-06_reforma-cocina/reforma-cocina.txt`)
-   - Audience: RENOVATING | NEW-HOUSE | OLD-ITEMS | MOVING | CLUTTER | SEASONAL
-   - Format: QUESTION-BARRAGE | SCENARIO-STORY | PROBLEM-ESCALATION | DIRECT-ADDRESS | HUMOR-SKIT
-   - Tone: HUMORISTIC | EMPATHETIC | PROVOCATIVE | DRAMATIC | RELATABLE | SARCASTIC
-   - Marketing: INDIRECT | SOFT | DIRECT
-   - Duration: 15 | 30 | 45 | 60
-   - Item Focus: FURNITURE | ART | APPLIANCES | CLOTHING | GENERAL | NONE
-   - Pain Point: SPACE | GUILT | LAZINESS | COST | ATTACHMENT | GENERAL
+```bash
+givore-tools.sh trial-add \
+  --date 2026-02-05 \
+  --slug trial-2026-02-05_casa-llena \
+  --file "trial-2026-02-05_casa-llena/casa-llena.txt" \
+  --audience CLUTTER \
+  --format QUESTION-BARRAGE \
+  --tone HUMORISTIC \
+  --marketing SOFT \
+  --duration 30 \
+  --item-focus GENERAL \
+  --pain-point SPACE
+```
+
+Fill in the actual values for each flag from the generated script.
 
 ---
 
@@ -181,9 +180,9 @@ The `trial-` prefix distinguishes trial projects from regular street-finds conte
 ---
 
 **START NOW**:
-1. Read TRIAL_HISTORY.md first
+1. Run `givore-tools.sh trial-rotation` first
 2. If $ARGUMENTS contains input, parse it and generate
 3. Otherwise, ask for the mandatory inputs listed above
-4. After generating, ALWAYS update TRIAL_HISTORY.md
+4. After generating, ALWAYS run `givore-tools.sh trial-add`
 
 $ARGUMENTS

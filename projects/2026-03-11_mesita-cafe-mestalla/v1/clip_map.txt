@@ -1,0 +1,32 @@
+Clip Map - v1/mesita-cafe-mestalla
+Duration: 34.9s | Clips: 21 | SFX: 3
+
+TIMELINE:
+ 0.0-1.2s  [HOOK]     hook_hop - cycling hop moment entering higher level
+ 1.2-3.2s  [HOOK]     pov_street_2 - POV cycling through street
+ 3.2-3.5s  [POINT]    pointing - two fingers pointing left (pre-reveal)
+ 3.5-5.5s  [PROOF]    item_found_cycling - cycling toward found coffee table
+ 5.5-7.3s  [PROOF]    item_closeup - close-up shot of coffee table
+ 7.3-9.3s  [PROBLEM]  cloudy_street - cycling cloudy day
+ 9.3-11.3s [PROBLEM]  shadows_path - cycling in shadows
+11.3-13.3s [PROBLEM]  waiting_red - waiting at red light
+13.3-15.3s [REHOOK]   pov_sunny_turn - POV sunny turning right
+15.3-16.8s [SOLUTION] app_submit - phone submitting post (coffee table)
+16.8-18.8s [SOLUTION] near_mestalla - cycling near Mestalla
+18.8-20.8s [SOLUTION] path_aragon - cycling path Aragon sunny
+20.8-22.3s [CTA]      lean_turn - leaning right turn
+22.3-23.8s [CTA]      entering_lane - entering cycle lane
+23.8-25.8s [CTA]      back_wheel - back wheel motion
+25.8-27.0s [CTA]      front_wheel_sun - front wheel in sun
+27.0-28.5s [CTA]      cycle_line - cycling on cycle line
+28.5-29.5s [CTA]      sharp_turn - sharp right turn
+29.5-31.8s [CTA]      sun_reflection - sun reflection Mestalla
+31.8-33.4s [CTA]      getting_off - getting off bike
+33.4-34.9s [CTA]      sitting_bike - sitting on bicycle
+
+SFX:
+ 3.1s  transition_whoosh (Whoosh Fast Short) vol:40%
+ 3.4s  reveal_musical (Reveal Musical) vol:35%
+15.2s  positive_jingle (Celebratory Jingle 1) vol:30%
+
+TRANSITIONS: All cuts

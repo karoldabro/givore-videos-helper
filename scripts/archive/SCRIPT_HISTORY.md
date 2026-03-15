@@ -7,16 +7,16 @@ After each script generation, update this file with the new script metadata.
 
 | # | Date | File | Hook Type | CTA Type | Proof Tease | Problem Angle | Rehook Style | Visual Style | Lighting | Item Category |
 |---|------|------|-----------|----------|-------------|---------------|--------------|--------------|----------|---------------|
-| 1 | 2026-02-27 | 2026-02-27_publicaciones-espana/publicaciones-espana.txt | MYSTERY | SHARING | no | NEIGHBOR-UNKNOWN | COMMUNITY-BRIDGE | STATIONARY | INDOOR | MIXED |
-| 2 | 2026-02-27 | 2026-02-27_lavadora-planta-mestalla/lavadora-planta-mestalla.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
-| 3 | 2026-02-24 | 2026-02-24_actualizacion-centro/actualizacion-centro.txt | BOLD | ENGAGEMENT | no | URBAN-TREASURE | DIRECT-REVEAL | MIXED | VARIED | MIXED |
-| 4 | 2026-02-18 | 2026-02-18_sillones-petxina/sillones-petxina.txt | QUESTION | SAVE-SHARE | no | SYSTEM-WASTE | SOLUTION-TEASE | WALKING | OVERCAST | FURNITURE |
-| 5 | 2026-02-17 | 2026-02-17_somier-silla-petxina/somier-silla-petxina.txt | JOURNEY | DOWNLOAD | yes | COULD-HAVE-BEEN-SHARED | COMMUNITY-BRIDGE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
-| 6 | 2026-02-17 | 2026-02-17_silla-carrito-centro/silla-carrito-centro.txt | MYSTERY | FOLLOW | yes | NEIGHBOR-UNKNOWN | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
-| 7 | 2026-02-13 | 2026-02-13_tutorial-notificaciones/tutorial-notificaciones.txt | DIRECT | ENGAGEMENT | no | TIME-SENSITIVE | ACTION-PIVOT | STATIONARY | INDOOR | MIXED |
-| 8 | 2026-02-13 | 2026-02-13_tutorial-crear-regalo/tutorial-crear-regalo.txt | BOLD | SAVE-SHARE | no | URBAN-TREASURE | SOLUTION-TEASE | STATIONARY | INDOOR | MIXED |
-| 9 | 2026-02-12 | 2026-02-12_juguetes-ninos-ruzafa/juguetes-ninos-ruzafa.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | COMMUNITY-BRIDGE | MIXED | GOLDEN-HOUR | DECOR |
-| 10 | 2026-02-12 | 2026-02-12_lampara-colchoneta-alboraya/lampara-colchoneta-alboraya.txt | QUESTION | FOLLOW | no | SYSTEM-WASTE | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
+| 1 | 2026-03-12 | 2026-03-12_comunidad-ciudades-espana/comunidad-ciudades-espana.txt | RELEVANCE-3PART | FOLLOW | no | SYSTEM-WASTE | SOLUTION-TEASE | MIXED | VARIED | MIXED |
+| 2 | 2026-02-27 | 2026-02-27_publicaciones-espana/publicaciones-espana.txt | MYSTERY | SHARING | no | NEIGHBOR-UNKNOWN | COMMUNITY-BRIDGE | STATIONARY | INDOOR | MIXED |
+| 3 | 2026-02-27 | 2026-02-27_lavadora-planta-mestalla/lavadora-planta-mestalla.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | MIXED |
+| 4 | 2026-02-24 | 2026-02-24_actualizacion-centro/actualizacion-centro.txt | BOLD | ENGAGEMENT | no | URBAN-TREASURE | DIRECT-REVEAL | MIXED | VARIED | MIXED |
+| 5 | 2026-02-18 | 2026-02-18_sillones-petxina/sillones-petxina.txt | QUESTION | SAVE-SHARE | no | SYSTEM-WASTE | SOLUTION-TEASE | WALKING | OVERCAST | FURNITURE |
+| 6 | 2026-02-17 | 2026-02-17_somier-silla-petxina/somier-silla-petxina.txt | JOURNEY | DOWNLOAD | yes | COULD-HAVE-BEEN-SHARED | COMMUNITY-BRIDGE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 7 | 2026-02-17 | 2026-02-17_silla-carrito-centro/silla-carrito-centro.txt | MYSTERY | FOLLOW | yes | NEIGHBOR-UNKNOWN | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
+| 8 | 2026-02-13 | 2026-02-13_tutorial-notificaciones/tutorial-notificaciones.txt | DIRECT | ENGAGEMENT | no | TIME-SENSITIVE | ACTION-PIVOT | STATIONARY | INDOOR | MIXED |
+| 9 | 2026-02-13 | 2026-02-13_tutorial-crear-regalo/tutorial-crear-regalo.txt | BOLD | SAVE-SHARE | no | URBAN-TREASURE | SOLUTION-TEASE | STATIONARY | INDOOR | MIXED |
+| 10 | 2026-02-12 | 2026-02-12_juguetes-ninos-ruzafa/juguetes-ninos-ruzafa.txt | EMOTIONAL | COMMUNITY | no | MISSED-CONNECTION | COMMUNITY-BRIDGE | MIXED | GOLDEN-HOUR | DECOR |
 
 ---
 

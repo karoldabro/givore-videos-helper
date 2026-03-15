@@ -1,0 +1,44 @@
+V3 CLIP MAP — BOLD hook, DOWNLOAD CTA
+Audio: 47.5s | Visual Hook: camera angle shift (0.6s) | 23 clips total
+
+HOOK (0.0s–12.6s) — 7 clips
+  0.0–0.6s   hook_angle_shift       [hook] cycling the camara angle changes from the up to the bottom until the steering wheel is visible.mp4
+  0.6–2.6s   hook_pov5              cyclig pov on the street 5.mp4
+  2.6–4.6s   hook_pov1              cyclig pov on the street.mp4
+  4.6–6.6s   hook_after_car         cycling right after the car next to the parked cars.mp4
+  6.6–8.6s   hook_pov_sunny_right   cyclig pov on the street sunny day turning right.mp4
+  8.6–10.6s  hook_stop_aragon       cycling on the street stop on aragon sunny day.mp4
+  10.6–12.6s hook_asphalt_cloudy    cycling on  a asphalt cycle lane cloudy day.mp4
+
+PROBLEM (12.6s–22.6s) — 5 clips
+  12.6–15.1s problem_between_cars    cycling beteen cars which wait on the red light sunny day mestalla stadium.mp4
+  15.1–17.1s problem_waiting_red_car waiting to cross the street on the bicycle while read car is passing in front of the camara.mp4
+  17.1–18.7s problem_truck           cycling on the cycling path with the truck turing right aragon sunny day.mp4
+  18.7–20.7s problem_after_car2      cycling right after the car next to the parked cars.mp4
+  20.7–22.6s problem_cycle_path      cyclig pov pn the cycle path.mp4
+
+REHOOK (22.6s–23.6s) — 1 clip
+  22.6–23.6s rehook_sharp_turn       sharp turn right to the cycle line.mp4
+
+SOLUTION (23.6s–31.4s) — 4 clips
+  23.6–25.1s solution_entering_lane     entering a cycle lane two cyclings in front of me aproaching.mp4
+  25.1–27.1s solution_turn_right_aragon cycling turning right to the cycling path aragon.mp4
+  27.1–29.4s solution_shadow            cycling path shadow mestalla.mp4
+  29.4–31.4s solution_near_mestalla     cycling on the street near mestalla.mp4
+
+PAYOFF (31.4s–38.1s) — 4 clips
+  31.4–32.9s payoff_sharp_left         turning sharply to the left while cycling.mp4
+  32.9–34.9s payoff_close_mestalla     cycling very close on the right side mestalla stadium.mp4
+  34.9–36.5s payoff_back_wheel         cycling camara on the back wheel suny day.mp4
+  36.5–38.1s payoff_front_wheel        cycling camara on the front wheel suny day - turining right on the cycle path.mp4
+
+CTA (38.1s–47.5s) — 2 clips
+  38.1–39.5s cta_unscrewing            unscrewing the tripod on the steering wheel.mp4
+  39.5–47.5s cta_setup                 setting up the camara on the bicycle.mp4 (extended)
+
+SFX:
+  14.3s  Swoosh.MP3                     (transition, vol=0.65)
+  15.2s  Sparkle.MP3                    (reveal, vol=0.6)
+  24.7s  Stinger 1.MP3                  (impact, vol=0.65)
+  26.1s  Celebratory Jingle 1.MP3       (positive, vol=0.6)
+  43.7s  Click - Single.MP3             (CTA, vol=0.65)

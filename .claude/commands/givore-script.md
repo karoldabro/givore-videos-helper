@@ -7,7 +7,7 @@ Generate a TikTok/social media script for the Givore social recycling app.
 **All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
 
 When using the Read tool or any file operation, always prepend this path. For example:
-- `scripts/SCRIPT_HISTORY.md` → `/media/kdabrow/Programy/givore/scripts/SCRIPT_HISTORY.md`
+- Rotation history → `givore-tools.sh script-rotation` (DB query)
 - `HOOKS_LIBRARY.md` → `/media/kdabrow/Programy/givore/HOOKS_LIBRARY.md`
 - `projects/[folder]/` → `/media/kdabrow/Programy/givore/projects/[folder]/`
 
@@ -18,15 +18,7 @@ You are a viral script generator for Givore - a social recycling (upcycling) pla
 **CRITICAL**: Before generating ANY script, you MUST:
 
 ### STEP 0: Load Script History (AUTOMATIC)
-**Read `scripts/SCRIPT_HISTORY.md` FIRST** to get rotation context:
-- Last 3 **Hook Types** used → AVOID these
-- Last 3 **CTA Types** used → AVOID these
-- Last 3 **Proof Tease** decisions → VARY (if last 2 were "yes", use "no")
-- Last 3 **Problem Angles** used → AVOID these
-- Last 3 **Rehook Styles** used → AVOID these
-- Last 3 **Visual Styles** used → AVOID same style 3x in a row
-- Last 3 **Lighting** conditions → NOTE for filming recommendations
-- Last 3 **Item Categories** used → VARY for content diversity
+**Run `givore-tools.sh script-rotation`** to get rotation constraints. Output shows last 3 values for each dimension with avoidance advice. Apply all constraints shown.
 
 This replaces manual "Recent Hooks/CTAs" input from user.
 
@@ -113,10 +105,10 @@ These drive downstream metadata quality and search discoverability.
 
 ### STEP 0.7: Analyze Last 3 Scripts for Repetition Avoidance (MANDATORY)
 
-**CRITICAL**: Reading SCRIPT_HISTORY.md for rotation metadata is NOT enough. You MUST also read the actual script text to avoid repeating words, phrases, sentence structures, and patterns.
+**CRITICAL**: Reading rotation constraints is NOT enough. You MUST also read the actual script text to avoid repeating words, phrases, sentence structures, and patterns.
 
-1. **Get file paths**: From SCRIPT_HISTORY.md rows 1-3, extract the File column values
-2. **Read each script**: Load full text from `projects/{File value}` for each of the 3 scripts
+1. **Get file paths**: Run `givore-tools.sh script-list --last 3` and extract the file_path values
+2. **Read each script**: Load full text from `projects/{file_path value}` for each of the 3 scripts
 3. **Analyze for patterns**: Identify across all 3 scripts:
    - **Repeated words/phrases**: Words or multi-word expressions appearing in 2+ scripts
    - **Sentence structures**: Similar openings, parallel constructions, same rhythm
@@ -164,7 +156,7 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
 ### Visual Metadata Inputs (for filming/editing guidance):
 10. **Visual Style**: POV-CYCLING | WALKING | STATIONARY | MIXED
     → Default: POV-CYCLING (proven best performer - 15.08s avg watch time)
-    → AVOID same style 3x in a row (check SCRIPT_HISTORY.md)
+    → AVOID same style 3x in a row (check script-rotation output)
 11. **Lighting**: GOLDEN-HOUR | MIDDAY | OVERCAST | INDOOR | VARIED
     → Target: GOLDEN-HOUR (15:00-17:00 in Valencia) for best visual quality
 12. **Item Category**: FURNITURE | ART | APPLIANCES | DECOR | MIXED
@@ -172,12 +164,12 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
     → FURNITURE has medium-high potential (colorful pieces perform better)
 
 ### Rotation Inputs (NOW AUTOMATIC - DO NOT ASK):
-~~9. Recent Hooks Used~~ → Read from SCRIPT_HISTORY.md
-~~10. Recent CTAs Used~~ → Read from SCRIPT_HISTORY.md
+~~9. Recent Hooks Used~~ → Read from DB via script-rotation
+~~10. Recent CTAs Used~~ → Read from DB via script-rotation
 
 ## Script Generation Process
 
-1. **Load History**: Read SCRIPT_HISTORY.md to get last 3 scripts' metadata
+1. **Load History**: Run `givore-tools.sh script-rotation` to get rotation constraints
 2. **Analyze Recent Scripts**: Read text of last 3 scripts, identify repetition patterns (STEP 0.7)
 3. **Select Hook**: Use HOOKS_LIBRARY.md decision tree, AVOID last 3 hook types
 4. **Decide Proof Tease**: Use decision tree below (OPTIONAL section)
@@ -212,7 +204,7 @@ The "Quedaos hasta el final..." section is NOW OPTIONAL. Use this decision tree:
 ├─ JOURNEY hook? → OPTIONAL (depende del ritmo)
 └─ Otros → Check next question
 
-¿Cuántos "yes" hay en los últimos 2 videos de SCRIPT_HISTORY?
+¿Cuántos "yes" hay en los últimos 2 videos (from script-rotation output)?
 ├─ 2 "yes" consecutivos? → SKIP esta vez (variar)
 ├─ 2 "no" consecutivos? → USE esta vez (variar)
 └─ Mixto → Libre elección basada en el video
@@ -241,22 +233,22 @@ Output ONLY the speech text optimized for ElevenLabs:
 - [ ] Location name(s) verified and corrected to Castellano
 - [ ] Hook under 15 words, starts immediately (no "Hola")
 - [ ] Hook matches specified style or decision tree
-- [ ] Hook type DIFFERENT from last 3 in SCRIPT_HISTORY.md
+- [ ] Hook type DIFFERENT from last 3 in rotation history
 - [ ] Last 3 scripts read and analyzed for repetition (STEP 0.7)
 - [ ] No repeated key phrases from last 3 scripts
 - [ ] Sentence structures differ from last 3 scripts
 - [ ] Proof tease decision follows decision tree
 - [ ] Specific items mentioned (no generic "cosas")
-- [ ] Problem angle DIFFERENT from last 3 in SCRIPT_HISTORY.md
+- [ ] Problem angle DIFFERENT from last 3 in rotation history
 - [ ] Problem section avoids accusatory language
 - [ ] Giveaway-first messaging: reinforces sharing before discarding
 - [ ] No passive-aggressive blame for leaving items (no "junto a un contenedor")
 - [ ] Item condition described accurately (not exaggerated)
 - [ ] Real community stories included if available from user input
-- [ ] Importance angle DIFFERENT from last 3 in SCRIPT_HISTORY.md
-- [ ] Re-hook style DIFFERENT from last 3 in SCRIPT_HISTORY.md
+- [ ] Importance angle DIFFERENT from last 3 in rotation history
+- [ ] Re-hook style DIFFERENT from last 3 in rotation history
 - [ ] Re-hook uses empowerment language
-- [ ] CTA type DIFFERENT from last 3 in SCRIPT_HISTORY.md
+- [ ] CTA type DIFFERENT from last 3 in rotation history
 - [ ] CTA matches specified goal
 - [ ] App demo phrasing varied from common phrases
 - [ ] Visual Style NOT same as last 2 (avoid 3x repetition)
@@ -289,32 +281,24 @@ Create the project folder if it doesn't exist. This folder will later contain ca
 
 ## FINAL STEP: Update Script History (MANDATORY)
 
-**After saving the script**, update `scripts/SCRIPT_HISTORY.md`:
+**After saving the script**, run `givore-tools.sh script-add` with all metadata:
 
-1. **Read current history** - get the table
-2. **Shift rows down**:
-   - Row 1 → Row 2
-   - Row 2 → Row 3
-   - ... (shift all down)
-3. **Delete row 11** if it exists (keep only 10)
-4. **Add new script to row 1** with:
-   - Date: today's date
-   - File: the project folder path (e.g., `2026-01-17_sillas-benimaclet/sillas-benimaclet.txt`)
-   - Hook Type: MYSTERY | PROOF-FIRST | NUMERIC | QUESTION | BOLD | DIRECT | JOURNEY | EMOTIONAL | RELEVANCE-3PART | DAY-X
-   - CTA Type: ENGAGEMENT | FOLLOW | DOWNLOAD | SAVE-SHARE | COMMUNITY | AWARENESS
-   - Proof Tease: yes | no
-   - Problem Angle: SYSTEM-WASTE | MISSED-CONNECTION | URBAN-TREASURE | TIME-SENSITIVE | NEIGHBOR-UNKNOWN | COULD-HAVE-BEEN-SHARED
-   - Rehook Style: SOLUTION-TEASE | CURIOSITY-BUILD | ACTION-PIVOT | COMMUNITY-BRIDGE | DIRECT-REVEAL
-   - **Visual Style**: POV-CYCLING | WALKING | STATIONARY | MIXED
-   - **Lighting**: GOLDEN-HOUR | MIDDAY | OVERCAST | INDOOR | VARIED
-   - **Item Category**: FURNITURE | ART | APPLIANCES | DECOR | MIXED
-
-**Example update**:
-```markdown
-| 1 | 2026-01-17 | 2026-01-17_sillas-benimaclet/sillas-benimaclet.txt | MYSTERY | ENGAGEMENT | no | MISSED-CONNECTION | CURIOSITY-BUILD | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
-| 2 | 2026-01-16 | 2026-01-16_marmol-silla-ruzafa/marmol-silla-ruzafa.txt | JOURNEY | SHARE | yes | SYSTEM-WASTE | SOLUTION-TEASE | POV-CYCLING | GOLDEN-HOUR | FURNITURE |
-| 3 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+```bash
+givore-tools.sh script-add \
+  --date 2026-01-17 \
+  --slug 2026-01-17_sillas-benimaclet \
+  --file "2026-01-17_sillas-benimaclet/sillas-benimaclet.txt" \
+  --hook-type MYSTERY \
+  --cta-type ENGAGEMENT \
+  --proof-tease no \
+  --problem-angle MISSED-CONNECTION \
+  --rehook-style CURIOSITY-BUILD \
+  --visual-style POV-CYCLING \
+  --lighting GOLDEN-HOUR \
+  --item-category FURNITURE
 ```
+
+Fill in actual values from the generated script. All fields are required.
 
 ---
 
@@ -327,9 +311,9 @@ Create the project folder if it doesn't exist. This folder will later contain ca
 ---
 
 **START NOW**:
-1. Read SCRIPT_HISTORY.md first
+1. Run `givore-tools.sh script-rotation` first
 2. If $ARGUMENTS contains input, parse it and generate
 3. Otherwise, ask for the mandatory inputs listed above
-4. After generating, ALWAYS update SCRIPT_HISTORY.md
+4. After generating, ALWAYS run `givore-tools.sh script-add` with all metadata
 
 $ARGUMENTS

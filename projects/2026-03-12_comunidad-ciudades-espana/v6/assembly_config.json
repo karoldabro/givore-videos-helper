@@ -1,0 +1,278 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v6",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v6/comunidad-ciudades-espana.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-12_comunidad-ciudades-espana/v6/comunidad-ciudades-espana.srt",
+  "clips": [
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/visual hooks/[hook] shot on the cycling wheel, lifting bicycle to enter a sidewalk.mp4",
+      "name": "hook_wheel_lifting",
+      "position": 0.0,
+      "duration": 0.8,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street 5.mp4",
+      "name": "hook_pov5",
+      "position": 0.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street.mp4",
+      "name": "hook_pov",
+      "position": 2.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling right after the car next to the parked cars.mp4",
+      "name": "hook_after_car",
+      "position": 4.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street sunny day turning right.mp4",
+      "name": "hook_sunny_turn",
+      "position": 6.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/people are crossing the street and im cling right next to them.mp4",
+      "name": "hook_people_crossing",
+      "position": 8.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/the car in front of me is turning left.mp4",
+      "name": "hook_car_left",
+      "position": 10.8,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "HOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/people passing on the red light passing and cycling them.mp4",
+      "name": "hook_people_red",
+      "position": 12.8,
+      "duration": 0.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/waiting to cross the street on the bicycle while read car is passing in front of the camara.mp4",
+      "name": "problem_waiting_car",
+      "position": 13.3,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov pn the cycle path.mp4",
+      "name": "problem_cycle_path",
+      "position": 15.3,
+      "duration": 1.9,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/leaning to the right while taking a turn.mp4",
+      "name": "problem_leaning",
+      "position": 17.2,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/sudennnly turning right on the street.mp4",
+      "name": "problem_sudden_turn",
+      "position": 18.7,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering a cycle lane two cyclings in front of me aproaching.mp4",
+      "name": "problem_entering_lane",
+      "position": 20.7,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "PROBLEM",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling path sun into the camara reflection metalla.mp4",
+      "name": "extra_sun_reflection",
+      "position": 22.2,
+      "duration": 2.3,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycling path with the truck turing right aragon sunny day.mp4",
+      "name": "extra_truck_aragon",
+      "position": 24.5,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "REHOOK",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning left from the cycle line to the street.mp4",
+      "name": "rehook_turn_left",
+      "position": 26.1,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in the shadows on the cycle path.mp4",
+      "name": "solution_shadows",
+      "position": 27.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle line.mp4",
+      "name": "solution_cycle_line",
+      "position": 29.6,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling turning left between blocks aragon sunny day.mp4",
+      "name": "solution_left_aragon",
+      "position": 31.1,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning sharply to the left while cycling.mp4",
+      "name": "solution_sharp_left",
+      "position": 33.1,
+      "duration": 1.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "SOLUTION",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling very close on the right side mestalla stadium.mp4",
+      "name": "solution_mestalla_close",
+      "position": 34.6,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the back wheel suny day.mp4",
+      "name": "payoff_back_wheel",
+      "position": 36.6,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the front wheel suny day - turining right on the cycle path.mp4",
+      "name": "payoff_front_wheel",
+      "position": 38.2,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street 5.mp4",
+      "name": "payoff_pov5",
+      "position": 39.8,
+      "duration": 2.0,
+      "in_point": 0.5
+    },
+    {
+      "section": "PAYOFF",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling right after the car next to the parked cars.mp4",
+      "name": "payoff_after_car2",
+      "position": 41.8,
+      "duration": 1.6,
+      "in_point": 0.5
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/setting up the camara on the bicycle.mp4",
+      "name": "cta_setup",
+      "position": 43.4,
+      "duration": 0.9,
+      "in_point": 0.0
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the back wheel suny day - getting off the bike.mp4",
+      "name": "cta_getting_off",
+      "position": 44.3,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street.mp4",
+      "name": "cta_pov_end",
+      "position": 45.9,
+      "duration": 2.0,
+      "in_point": 0.5
+    },
+    {
+      "section": "CTA",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/people are crossing the street and im cling right next to them.mp4",
+      "name": "cta_people_end",
+      "position": 47.9,
+      "duration": 1.5,
+      "in_point": 0.5
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh_transition",
+      "position": 13.3,
+      "duration": 0.4,
+      "volume": 0.65
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Musical.MP3",
+      "name": "reveal_musical",
+      "position": 14.2,
+      "duration": 1.8,
+      "volume": 0.6
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Mystery.MP3",
+      "name": "mystery_impact",
+      "position": 26.9,
+      "duration": 1.5,
+      "volume": 0.65
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Celebratory Jingle 1.MP3",
+      "name": "celebratory_positive",
+      "position": 28.3,
+      "duration": 1.5,
+      "volume": 0.6
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Notification - Two Tone.MP3",
+      "name": "notification_cta",
+      "position": 44.7,
+      "duration": 0.5,
+      "volume": 0.65
+    }
+  ]
+}

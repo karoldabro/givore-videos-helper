@@ -112,7 +112,7 @@ Usa estos ángulos para variar cómo presentas el problema en cada vídeo.
 ## Rotation Rules
 
 1. **NUNCA** usar el mismo ángulo en videos consecutivos
-2. **Verificar** SCRIPT_HISTORY.md antes de elegir
+2. **Verificar** via `givore-tools.sh script-rotation` antes de elegir
 3. **Sugerir rotación**: SYSTEM-WASTE → MISSED-CONNECTION → URBAN-TREASURE → TIME-SENSITIVE → NEIGHBOR-UNKNOWN → COULD-HAVE-BEEN-SHARED → (repetir)
 
 ---

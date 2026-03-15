@@ -1,0 +1,575 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 30,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_question",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/visual hooks/[hook] cycling while clapping with my hands very close to the camara.mp4",
+      "duration": 1.033333,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "cycling_pov_4",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street 4.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "people_crossing",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/people are crossing the street and im cling right next to them.mp4",
+      "duration": 2.033333,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "item_found",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item found] found a small wooden coffe table right next to the trash can in a faily good shape - cycling towards it slowly.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "item_closeup",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] shot on a small wooden coffe table.mp4",
+      "duration": 1.833333,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "approaching_red_light",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling while aproaching red light on the crossing.mp4",
+      "duration": 1.566667,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "path_shadow_mestalla",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling path shadow mestalla.mp4",
+      "duration": 2.282,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "sharp_turn_right",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/sharp turn right to the cycle line.mp4",
+      "duration": 1.0,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "app_submit",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[app] shot on the callphone while submiting a post: small wooden coffe table.mp4",
+      "duration": 1.533333,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "back_wheel_nice_angle",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the back wheel suny day - nice angle.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "shadows_cycle_path",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling in the shadows on the cycle path.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "cycling_path_aragon",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycling path aragon sunny day.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "turning_right_mestalla",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling turning right to mestalla stadium sunny day.mp4",
+      "duration": 2.282,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-11_mesita-cafe-mestalla/v3/mesita-cafe-mestalla.mp3",
+      "duration": 23.588571,
+      "type": "audio"
+    },
+    {
+      "id": "clip14",
+      "name": "swish_2",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swish 2.mp3",
+      "duration": 0.6,
+      "type": "audio"
+    },
+    {
+      "id": "clip15",
+      "name": "ding_single_bright",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "duration": 2.142,
+      "type": "audio"
+    },
+    {
+      "id": "clip16",
+      "name": "chime_single",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Chime - Single.MP3",
+      "duration": 2.638313,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.0,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 3.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 5.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 1.8,
+          "position": 7.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 1.6,
+          "position": 8.8,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.3,
+          "position": 10.4,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 1.0,
+          "position": 12.7,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 13.7,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 15.2,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 17.2,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 19.2,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.4,
+          "position": 21.2,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 23.588571,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 0.6,
+          "position": 0.9,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 2.1,
+          "position": 5.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 2.6,
+          "position": 13.7,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Quien tira",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.32,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "una mesita de cafe",
+          "position": 0.32,
+          "in": 0.0,
+          "out": 0.96,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "asi?",
+          "position": 1.28,
+          "in": 0.0,
+          "out": 0.56,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Mirad.",
+          "position": 1.84,
+          "in": 0.0,
+          "out": 0.5599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "Aqui en Mestalla.",
+          "position": 2.4,
+          "in": 0.0,
+          "out": 1.2000000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Un arreglo minimo,",
+          "position": 3.6,
+          "in": 0.0,
+          "out": 0.9599999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "un lijado",
+          "position": 4.56,
+          "in": 0.0,
+          "out": 0.6800000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "y un barniz...",
+          "position": 5.24,
+          "in": 0.0,
+          "out": 0.7599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "y queda perfecta.",
+          "position": 6.0,
+          "in": 0.0,
+          "out": 0.7999999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Pero estaba aqui,",
+          "position": 6.8,
+          "in": 0.0,
+          "out": 1.2000000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "tirada en la acera.",
+          "position": 8.0,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Esto no va",
+          "position": 9.08,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "a durar aqui.",
+          "position": 9.6,
+          "in": 0.0,
+          "out": 0.7599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "Manana puede",
+          "position": 10.36,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "que ya no este.",
+          "position": 11.08,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "O en un contenedor.",
+          "position": 11.76,
+          "in": 0.0,
+          "out": 1.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Y aqui es donde",
+          "position": 13.0,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "entramos todos.",
+          "position": 13.6,
+          "in": 0.0,
+          "out": 1.4000000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Abro Givore,",
+          "position": 15.0,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "subo la foto",
+          "position": 15.68,
+          "in": 0.0,
+          "out": 0.7600000000000016,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "con el titulo,",
+          "position": 16.44,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "y en segundos",
+          "position": 16.96,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "cualquiera cerca",
+          "position": 17.48,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "la puede encontrar.",
+          "position": 18.32,
+          "in": 0.0,
+          "out": 1.0399999999999991,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "Asi de simple.",
+          "position": 19.36,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "Guardad esto",
+          "position": 19.84,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "para cuando veais",
+          "position": 20.72,
+          "in": 0.0,
+          "out": 0.7600000000000016,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "algo en la calle.",
+          "position": 21.48,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "Os va a servir.",
+          "position": 22.6,
+          "in": 0.0,
+          "out": 0.9199999999999982,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-11T23:41:56.435676",
+    "software": "kdenlive-cli 1.0"
+  }
+}

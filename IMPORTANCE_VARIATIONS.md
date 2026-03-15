@@ -112,7 +112,7 @@ Usa estos ángulos para variar cómo presentas por qué esto importa.
 ## Rotation Rules
 
 1. **NUNCA** usar el mismo ángulo en videos consecutivos
-2. **Verificar** SCRIPT_HISTORY.md antes de elegir
+2. **Verificar** via `givore-tools.sh script-rotation` antes de elegir
 3. **Sugerir rotación**: PROXIMITY-OPPORTUNITY → WASTE-PREVENTION → COMMUNITY-MAGIC → PERSONAL-WIN → CIRCULAR-LIFE → SHARING-OPPORTUNITY → (repetir)
 
 ---

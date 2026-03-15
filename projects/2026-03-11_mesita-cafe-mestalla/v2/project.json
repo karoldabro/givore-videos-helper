@@ -1,0 +1,651 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 30,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_numeric",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/visual hooks/[hook] cycling the camara angle changes from the up to the bottom until the steering wheel is visible.mp4",
+      "duration": 0.633333,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "cycling_pov_3_sunny",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street 3 suny day.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "cycling_asphalt_cloudy",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on  a asphalt cycle lane cloudy day.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "cycling_right_after_car",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling right after the car next to the parked cars.mp4",
+      "duration": 2.033333,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "item_found",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item found] found a small wooden coffe table right next to the trash can in a faily good shape - cycling towards it slowly.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "item_closeup",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] shot on a small wooden coffe table.mp4",
+      "duration": 1.833333,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "cycling_cycle_line",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle line.mp4",
+      "duration": 1.533333,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "turning_left_cycle_line",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/turning left from the cycle line to the street.mp4",
+      "duration": 1.533333,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "back_wheel_no_leg",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the back wheel suny day - no leg montion.mp4",
+      "duration": 1.6,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "app_submit",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[app] shot on the callphone while submiting a post: small wooden coffe table.mp4",
+      "duration": 1.533333,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "front_wheel_turning",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling camara on the front wheel suny day - turining right on the cycle path.mp4",
+      "duration": 1.6,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "pov_turning_right",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cyclig pov on the street turning right.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "street_near_mestalla",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street near mestalla.mp4",
+      "duration": 2.033333,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "cloudy_day_street",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling claudy day on the street.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "path_sun_reflection",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling path sun into the camara reflection metalla.mp4",
+      "duration": 2.282,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-11_mesita-cafe-mestalla/v2/mesita-cafe-mestalla.mp3",
+      "duration": 26.409796,
+      "type": "audio"
+    },
+    {
+      "id": "clip16",
+      "name": "whoosh_short_fast",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Short - Fast.MP3",
+      "duration": 0.235063,
+      "type": "audio"
+    },
+    {
+      "id": "clip17",
+      "name": "sparkle",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Sparkle.MP3",
+      "duration": 1.071,
+      "type": "audio"
+    },
+    {
+      "id": "clip18",
+      "name": "alert_positive",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Alert - Positive - Correct.MP3",
+      "duration": 0.783625,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 0.6,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 0.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 2.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 4.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 6.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 1.8,
+          "position": 8.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 10.4,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 11.9,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 1.6,
+          "position": 13.4,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 15.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 1.6,
+          "position": 16.5,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 18.1,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 20.1,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 22.1,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.3,
+          "position": 24.1,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 26.409796,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 0.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 1.1,
+          "position": 6.6,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip18",
+          "in": 0.0,
+          "out": 0.8,
+          "position": 15.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "gain": 0.4
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Una.",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.44,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "He encontrado una...",
+          "position": 0.44,
+          "in": 0.0,
+          "out": 1.32,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "y cuando veais",
+          "position": 1.76,
+          "in": 0.0,
+          "out": 0.8,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "en que estado,",
+          "position": 2.56,
+          "in": 0.0,
+          "out": 0.8799999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "vais a flipar.",
+          "position": 3.44,
+          "in": 0.0,
+          "out": 1.1199999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Una mesita",
+          "position": 4.56,
+          "in": 0.0,
+          "out": 0.6000000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "de cafe",
+          "position": 5.16,
+          "in": 0.0,
+          "out": 0.28000000000000025,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "de madera.",
+          "position": 5.44,
+          "in": 0.0,
+          "out": 0.35999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Necesita un lijado,",
+          "position": 5.8,
+          "in": 0.0,
+          "out": 1.12,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "un barniz...",
+          "position": 6.92,
+          "in": 0.0,
+          "out": 1.04,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "y queda",
+          "position": 7.96,
+          "in": 0.0,
+          "out": 0.07999999999999918,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "como nueva.",
+          "position": 8.04,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Pero aqui estaba,",
+          "position": 9.16,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "en plena acera.",
+          "position": 10.08,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "Cosas perfectas",
+          "position": 10.64,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "que se pierden",
+          "position": 11.72,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "cada dia",
+          "position": 12.32,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "en esta ciudad.",
+          "position": 12.8,
+          "in": 0.0,
+          "out": 0.9599999999999991,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "No porque",
+          "position": 13.76,
+          "in": 0.0,
+          "out": 0.40000000000000036,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "esten rotas.",
+          "position": 14.16,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "Porque nadie sabe",
+          "position": 15.0,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "que estan ahi.",
+          "position": 15.68,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "Por eso siempre llevo",
+          "position": 16.24,
+          "in": 0.0,
+          "out": 1.2000000000000028,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "el movil preparado.",
+          "position": 17.44,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "La subo a Givore.",
+          "position": 18.12,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "Titulo,",
+          "position": 18.92,
+          "in": 0.0,
+          "out": 0.4399999999999977,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "foto,",
+          "position": 19.36,
+          "in": 0.0,
+          "out": 0.240000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "publico.",
+          "position": 19.6,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "Y ya esta visible",
+          "position": 20.44,
+          "in": 0.0,
+          "out": 0.7999999999999972,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "para quien",
+          "position": 21.24,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "la necesite.",
+          "position": 21.68,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "Por eso siempre llevo",
+          "position": 22.32,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "Givore en el movil.",
+          "position": 23.64,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "Si no la conoceis...",
+          "position": 24.64,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "Givore.",
+          "position": 25.76,
+          "in": 0.0,
+          "out": 0.5999999999999979,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-11T23:41:29.043544",
+    "software": "kdenlive-cli 1.0"
+  }
+}
