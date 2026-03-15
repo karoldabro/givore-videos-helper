@@ -1,0 +1,47 @@
+CLIP MAP — v1/comunidad-givore-valencia
+Audio: 67.06s | Clips: 69.76s | Draft: 69.6s
+
+# | Time    | ID  | Section     | Clip
+--|---------|-----|-------------|------
+01 | 0:00.0  | 105 | HOOK        | [hook] gesture revealing opera - turia park
+02 | 0:02.6  | 114 | HOOK        | cycling caixa forum - turia park
+03 | 0:04.8  | 132 | PROOF TEASE | dynamic bike lane - turia park
+04 | 0:06.7  | 113 | PROBLEM     | crossing street - quatre carreres
+05 | 0:08.7  | 127 | PROBLEM     | bike lane 1 - quatre carreres
+06 | 0:10.8  | 151 | PROBLEM     | waiting for people - penya roja
+07 | 0:12.8  | 134 | PROBLEM     | cycling street - camins al grau
+08 | 0:14.8  | 126 | NAMES       | bike lane 1 - camins al grau
+09 | 0:16.9  | 128 | NAMES       | bike lane low cam - ayora
+10 | 0:18.9  | 129 | NAMES       | bike lane 6 - penya roja
+11 | 0:20.9  | 131 | NAMES       | bike lane corte ingles - penya roja
+12 | 0:23.0  | 135 | NAMES       | street 1 - penya roja
+13 | 0:25.0  | 136 | NAMES       | street 2 - camins al grau
+14 | 0:27.0  | 137 | NAMES       | street 2 - penya roja
+15 | 0:29.1  | 138 | NAMES       | street 3 - camins al grau
+16 | 0:31.1  | 139 | NAMES       | street 3 - penya roja
+17 | 0:33.1  | 140 | NAMES       | street 4 - camins al grau
+18 | 0:35.2  | 141 | INITIATIVE  | street 4 - penya roja
+19 | 0:37.2  | 125 | INITIATIVE  | off bike lane dynamic - turia park
+20 | 0:39.3  | 116 | REHOOK      | near cayc - turia park
+21 | 0:41.3  | 117 | REHOOK      | near cayc 2 - turia park
+22 | 0:43.4  | 118 | SOLUTION    | near cayc 3 - turia park
+23 | 0:45.4  | 119 | SOLUTION    | near cayc 4 - turia park
+24 | 0:47.4  | 147 | SOLUTION    | small park - camins al grau
+25 | 0:49.4  | 149 | SOLUTION    | dynamic bike lane - camins al grau
+26 | 0:52.0  | 146 | SOLUTION    | corte ingles entrance - penya roja
+27 | 0:54.0  | 120 | PAYOFF      | near cayc 5 - turia park
+28 | 0:56.0  | 121 | PAYOFF      | cayc looking at buildings - turia park
+29 | 0:58.0  | 130 | PAYOFF      | bike lane cayc horizon - penya roja
+30 | 1:00.1  | 150 | PAYOFF      | entering turia park - penya roja
+31 | 1:02.1  | 122 | CTA         | near cayc revealing opera - turia park
+32 | 1:04.1  | 123 | CTA         | cayc valencia sign - turia park
+33 | 1:06.1  | 124 | CTA         | near CAYC - turia park
+34 | 1:08.3  | 103 | END         | [end] camera sw to sky - camins al grau
+
+SFX:
+- 4.7s: Swoosh Fast 1 (transition, 0.22)
+- 8.5s: Mystery (tension, 0.15)
+- 15.0s: Reveal Musical (reveal, 0.18)
+- 37.0s: Hit Single (impact, 0.20)
+- 42.0s: Celebratory Jingle 1 (positive, 0.18)
+- 60.0s: Notification Two Tone (CTA, 0.18)
