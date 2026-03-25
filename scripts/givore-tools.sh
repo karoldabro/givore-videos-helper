@@ -15,7 +15,7 @@ Media queries:
   duration <file>             Audio/video duration in seconds
   duration-all <project-dir>  Duration of all .mp3 in v1-v7 subdirs
   video-info <file>           Video dimensions (WxH) + duration
-  video-info-all <project-dir> Video info for all drafts/finals in v1-v7
+  video-info-all <project-dir> Video info for all drafts in v1-v7
 
 Video pipeline:
   generate-config [args]      Generate assembly_config.json from audio + clip IDs
@@ -23,11 +23,14 @@ Video pipeline:
   render-draft <config.json>  Assemble + render draft (540x960)
   render-final <config.json>  Assemble + render final (1080x1920)
   render-all <project-dir> [draft|final]  Render all v1-v7 variants
-  place-sfx [args]            Smart SFX placement (see place_sfx.py --help)
+  assemble-all <project-dir>  Assemble all v1-v7 variants
+  place-sfx [args]            DEPRECATED: SFX placement is now AI-driven (see SFX_GUIDELINES.md)
 
 Quality checks:
   validate <config.json> [--strict]         Pre-flight validation (files, durations, paths)
+  validate-all <project-dir> [--strict]    Validate all v1-v7 assembly configs
   check-render <config.json> <video.mp4>    Post-render validation (duration, aspect ratio)
+  check-render-all <project-dir>           Post-render validation for all v1-v7
 
 Subtitles & captions:
   subs <audio.mp3> <captions.txt> [output.srt]  Generate SRT from audio + captions
@@ -40,11 +43,20 @@ Audio:
 
 Project setup:
   init-project <slug>         Create project folder (projects/<slug>/)
-  init-batch <slug>           Create batch folders (v1-v7 + finals/)
+  init-batch <slug>           Create batch folders (v1-v7)
+  init-renueva <slug>         Create renueva project folder (projects/renueva-<slug>/)
+  init-renueva-batch <slug> <N>  Create N variant folders for renueva batch
+
+Thumbnails:
+  thumbnail <image> <title> [output.png]    Generate thumbnail from image + title
+  thumbnail-from-video <video> <title> [output.png] [timestamp]  Extract frame + generate thumbnail
+  batch-thumbnails <project-dir>            Generate thumbnails for all v1-v7
 
 Batch:
   batch-status <project-dir>  Show file status for all 7 variants
-  copy-finals <project-dir>   Copy all vN/*_final.mp4 to finals/ folder
+
+Clip extraction:
+  extract-clips <video> --location <name> [opts]  Extract interesting clips from cycling POV video (CLIP+YOLO+motion)
 
 Clip database:
   clips <subcommand> [args]   Clip DB operations (init, list, search, plan, sync, etc.)
@@ -62,6 +74,14 @@ History database:
   video-list [--last N]       List recent video history
   video-recent-clips [--last N] Clips used in last N videos
   video-delete <id>           Delete video history entry
+  renueva-add [args]          Add renueva history entry
+  renueva-list [--last N]     List recent renueva history
+  renueva-rotation [--last N] Show renueva rotation constraints
+  renueva-delete <id>         Delete renueva history entry
+  thumbnail-add [args]        Add thumbnail history entry
+  thumbnail-list [--last N]   List recent thumbnail history
+  thumbnail-recent-bgs [--last N] Backgrounds used in last N thumbnails
+  thumbnail-delete <id>       Delete thumbnail history entry
   migrate-all                 Import all history MDs into DB
 EOF
 }
@@ -124,17 +144,6 @@ cmd_video_info_all() {
             printf "%-4s %-40s %-12s %s\n" "$v" "$(basename "$mp4")" "$dims" "${dur}s"
         done
     done
-    # Also check finals/ directory
-    local finals="$dir/finals"
-    if [[ -d "$finals" ]]; then
-        for mp4 in "$finals"/*.mp4; do
-            [[ -f "$mp4" ]] || continue
-            local dims dur
-            dims=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$mp4" 2>/dev/null || echo "?")
-            dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$mp4" 2>/dev/null || echo "?")
-            printf "%-4s %-40s %-12s %s\n" "fin" "$(basename "$mp4")" "$dims" "${dur}s"
-        done
-    fi
 }
 
 cmd_assemble() {
@@ -164,24 +173,6 @@ cmd_render_final() {
     "$CLI_PYTHON" "$ASSEMBLY_SCRIPT" "$config" --render-final
 }
 
-cmd_copy_finals() {
-    local project_dir="$1"
-    local finals_dir="$project_dir/finals"
-    mkdir -p "$finals_dir"
-    local count=0
-    for v in v1 v2 v3 v4 v5 v6 v7; do
-        local final
-        final=$(find "$project_dir/$v" -maxdepth 1 -name "*_final.mp4" -print -quit 2>/dev/null)
-        [[ -z "$final" ]] && continue
-        local slug
-        slug=$(basename "$project_dir")
-        cp "$final" "$finals_dir/${v}_${slug}_final.mp4"
-        echo "Copied: ${v}_${slug}_final.mp4"
-        count=$((count + 1))
-    done
-    echo "Done: $count final(s) copied to $finals_dir/"
-}
-
 cmd_render_all() {
     local project_dir="$1"
     local mode="${2:-draft}"
@@ -196,6 +187,61 @@ cmd_render_all() {
         fi
         echo ""
     done
+}
+
+cmd_validate_all() {
+    local project_dir="$1"
+    shift
+    local extra_args=("$@")
+    local pass=0 fail=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local config="$project_dir/$v/assembly_config.json"
+        [[ -f "$config" ]] || continue
+        echo "=== $v ==="
+        if cmd_validate "$config" "${extra_args[@]+"${extra_args[@]}"}"; then
+            pass=$((pass + 1))
+        else
+            fail=$((fail + 1))
+        fi
+    done
+    echo ""
+    echo "Validate-all: $pass passed, $fail failed"
+    [[ $fail -eq 0 ]]
+}
+
+cmd_assemble_all() {
+    local project_dir="$1"
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local config="$project_dir/$v/assembly_config.json"
+        [[ -f "$config" ]] || continue
+        echo "=== $v: ASSEMBLE ==="
+        cmd_assemble "$config"
+        echo ""
+    done
+}
+
+cmd_check_render_all() {
+    local project_dir="$1"
+    local pass=0 fail=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local config="$project_dir/$v/assembly_config.json"
+        [[ -f "$config" ]] || continue
+        # Auto-detect video: prefer _final.mp4, fall back to draft.mp4
+        local video=""
+        for candidate in "$project_dir/$v/"*_final.mp4 "$project_dir/$v/draft.mp4"; do
+            [[ -f "$candidate" ]] && { video="$candidate"; break; }
+        done
+        [[ -z "$video" ]] && { echo "=== $v: SKIP (no video found) ==="; continue; }
+        echo "=== $v: CHECK $(basename "$video") ==="
+        if cmd_check_render "$config" "$video"; then
+            pass=$((pass + 1))
+        else
+            fail=$((fail + 1))
+        fi
+    done
+    echo ""
+    echo "Check-render-all: $pass passed, $fail failed"
+    [[ $fail -eq 0 ]]
 }
 
 cmd_subs() {
@@ -330,8 +376,129 @@ cmd_init_batch() {
     for v in v1 v2 v3 v4 v5 v6 v7; do
         mkdir -p "$dir/$v"
     done
-    mkdir -p "$dir/finals"
-    echo "Created: v1-v7 + finals/ in $dir"
+    echo "Created: v1-v7 in $dir"
+}
+
+cmd_init_renueva() {
+    local slug="$1"
+    local dir="$GIVORE_PROJECTS/renueva-$slug"
+    if [[ -d "$dir" ]]; then
+        echo "Project already exists: $dir"
+        return 0
+    fi
+    mkdir -p "$dir"
+    echo "Created: $dir"
+}
+
+cmd_init_renueva_batch() {
+    local slug="$1"
+    local count="${2:-3}"
+    local dir="$GIVORE_PROJECTS/renueva-$slug"
+    if [[ ! -d "$dir" ]]; then
+        mkdir -p "$dir"
+        echo "Created: $dir"
+    fi
+    for i in $(seq 1 "$count"); do
+        mkdir -p "$dir/v$i"
+    done
+    echo "Created: v1-v${count} in $dir"
+}
+
+cmd_thumbnail() {
+    local image="$1"
+    local title="$2"
+    local output="${3:-$(dirname "$image")/thumbnail.png}"
+    if [[ ! -f "$image" ]]; then
+        echo "ERROR: Image not found: $image" >&2
+        return 1
+    fi
+    python3 "/media/kdabrow/Programy/givore/scripts/generate_thumbnail.py" \
+        "$image" "$title" --output "$output"
+}
+
+cmd_thumbnail_from_video() {
+    local video="$1"
+    local title="$2"
+    local output="${3:-$(dirname "$video")/thumbnail.png}"
+    local timestamp="${4:-1.0}"
+    if [[ ! -f "$video" ]]; then
+        echo "ERROR: Video not found: $video" >&2
+        return 1
+    fi
+    python3 "/media/kdabrow/Programy/givore/scripts/generate_thumbnail.py" \
+        --video "$video" --timestamp "$timestamp" "$title" --output "$output"
+}
+
+cmd_batch_thumbnails() {
+    local dir="$1"
+    if [[ ! -d "$dir" ]]; then
+        echo "ERROR: Directory not found: $dir" >&2
+        return 1
+    fi
+
+    # Collect background images from thumbnail/ library
+    local thumb_dir="/media/kdabrow/Programy/givore/thumbnail"
+    local -a all_images=()
+    for img in "$thumb_dir"/*.png "$thumb_dir"/*.jpg "$thumb_dir"/*.jpeg; do
+        [[ -f "$img" ]] && all_images+=("$img")
+    done
+    if [[ ${#all_images[@]} -eq 0 ]]; then
+        echo "ERROR: No background images found in $thumb_dir/" >&2
+        return 1
+    fi
+
+    # Get recently used backgrounds to avoid
+    local -a avoid_bgs=()
+    local avoid_output
+    avoid_output=$(python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" thumbnail-recent-bgs --last 5 2>/dev/null || true)
+    if [[ -n "$avoid_output" ]]; then
+        while IFS=, read -ra items; do
+            for item in "${items[@]}"; do
+                item=$(echo "$item" | xargs)
+                [[ -n "$item" ]] && avoid_bgs+=("$item")
+            done
+        done <<< "$(echo "$avoid_output" | grep '^ ' | head -1)"
+    fi
+
+    # Filter: prefer unused images, fall back to all if all recently used
+    local -a images=()
+    for img in "${all_images[@]}"; do
+        local base
+        base=$(basename "$img")
+        local is_recent=false
+        for ab in "${avoid_bgs[@]}"; do
+            [[ "$base" == "$ab" ]] && { is_recent=true; break; }
+        done
+        $is_recent || images+=("$img")
+    done
+    if [[ ${#images[@]} -eq 0 ]]; then
+        images=("${all_images[@]}")  # all recently used, cycle back
+    fi
+    echo "Background images: ${#images[@]} available (${#avoid_bgs[@]} recently used)"
+
+    local count=0
+    local img_idx=0
+    for v in v1 v2 v3 v4 v5 v6 v7; do
+        local vdir="$dir/$v"
+        [[ -d "$vdir" ]] || continue
+        # Extract thumbnail title from descriptions.txt (first non-empty line after THUMBNAIL header)
+        local desc="$vdir/descriptions.txt"
+        local title=""
+        if [[ -f "$desc" ]]; then
+            title=$(awk '/THUMBNAIL/{found=1; next} found && /^═/{exit} found && NF{gsub(/^[[:space:]]+|[[:space:]]+$/, ""); print; exit}' "$desc")
+        fi
+        if [[ -z "$title" ]]; then
+            echo "$v: SKIPPED (no thumbnail title in descriptions.txt)" >&2
+            continue
+        fi
+        # Rotate through available background images
+        local bg="${images[$((img_idx % ${#images[@]}))]}"
+        img_idx=$((img_idx + 1))
+        echo "=== $v: generating thumbnail (bg: $(basename "$bg")) ==="
+        cmd_thumbnail "$bg" "$title" "$vdir/thumbnail.png"
+        count=$((count + 1))
+    done
+    echo "Done: $count thumbnail(s) generated"
 }
 
 cmd_batch_status() {
@@ -341,12 +508,12 @@ cmd_batch_status() {
         return 1
     fi
 
-    printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s\n" "VAR" "SCRIPT" "AUDIO" "CAPTS" "SUBS" "DRAFT" "FINAL"
-    printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s\n" "---" "------" "-----" "-----" "----" "-----" "-----"
+    printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s %-8s\n" "VAR" "SCRIPT" "AUDIO" "CAPTS" "SUBS" "DRAFT" "THUMB" "FINAL"
+    printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s %-8s\n" "---" "------" "-----" "-----" "----" "-----" "-----" "-----"
 
     for v in v1 v2 v3 v4 v5 v6 v7; do
         local vdir="$dir/$v"
-        local script="" audio="" capts="" subs="" draft="" final=""
+        local script="" audio="" capts="" subs="" draft="" thumb="" final=""
 
         if [[ -d "$vdir" ]]; then
             # Script: any .txt that isn't captions/descriptions/clip_map
@@ -364,20 +531,13 @@ cmd_batch_status() {
             [[ -f "$vdir/captions.txt" ]] && capts="YES"
             [[ -n $(find "$vdir" -maxdepth 1 -name "*.srt" -print -quit 2>/dev/null) ]] && subs="YES"
             [[ -f "$vdir/draft.mp4" ]] && draft="YES"
+            [[ -f "$vdir/thumbnail.png" ]] && thumb="YES"
             [[ -n $(find "$vdir" -maxdepth 1 -name "*_final.mp4" -print -quit 2>/dev/null) ]] && final="YES"
         fi
 
-        printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s\n" \
-            "$v" "${script:---}" "${audio:---}" "${capts:---}" "${subs:---}" "${draft:---}" "${final:---}"
+        printf "%-4s %-8s %-8s %-8s %-8s %-8s %-8s %-8s\n" \
+            "$v" "${script:---}" "${audio:---}" "${capts:---}" "${subs:---}" "${draft:---}" "${thumb:---}" "${final:---}"
     done
-
-    # Check finals directory
-    local finals_count=0
-    if [[ -d "$dir/finals" ]]; then
-        finals_count=$(find "$dir/finals" -name "*.mp4" 2>/dev/null | wc -l)
-    fi
-    echo ""
-    echo "Finals directory: ${finals_count} video(s)"
 
     # Duration check table
     echo ""
@@ -441,6 +601,9 @@ cmd_check_render() {
 }
 
 cmd_place_sfx() {
+    echo "WARNING: place-sfx is deprecated. SFX placement is now AI-driven." >&2
+    echo "The AI reads subtitles + SFX_CATALOG.md Basic Tier and places SFX in assembly config." >&2
+    echo "See Audio effects/SFX_GUIDELINES.md for the new approach." >&2
     python3 "/media/kdabrow/Programy/givore/scripts/place_sfx.py" "$@"
 }
 
@@ -482,9 +645,30 @@ case "${1:-help}" in
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh render-all <project-dir> [draft|final]" >&2; exit 1; }
         cmd_render_all "$2" "${3:-draft}"
         ;;
-    copy-finals)
-        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh copy-finals <project-dir>" >&2; exit 1; }
-        cmd_copy_finals "$2"
+    assemble-all)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh assemble-all <project-dir>" >&2; exit 1; }
+        cmd_assemble_all "$2"
+        ;;
+    validate-all)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh validate-all <project-dir> [--strict]" >&2; exit 1; }
+        _va_dir="$2"; shift 2
+        cmd_validate_all "$_va_dir" "$@"
+        ;;
+    check-render-all)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh check-render-all <project-dir>" >&2; exit 1; }
+        cmd_check_render_all "$2"
+        ;;
+    thumbnail)
+        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh thumbnail <image> <title> [output.png]" >&2; exit 1; }
+        cmd_thumbnail "$2" "$3" "${4:-}"
+        ;;
+    thumbnail-from-video)
+        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh thumbnail-from-video <video> <title> [output.png] [timestamp]" >&2; exit 1; }
+        cmd_thumbnail_from_video "$2" "$3" "${4:-}" "${5:-}"
+        ;;
+    batch-thumbnails)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh batch-thumbnails <project-dir>" >&2; exit 1; }
+        cmd_batch_thumbnails "$2"
         ;;
     subs)
         [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh subs <audio.mp3> <captions.txt> [output.srt]" >&2; exit 1; }
@@ -514,6 +698,14 @@ case "${1:-help}" in
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-batch <date_slug>" >&2; exit 1; }
         cmd_init_batch "$2"
         ;;
+    init-renueva)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-renueva <date_slug>" >&2; exit 1; }
+        cmd_init_renueva "$2"
+        ;;
+    init-renueva-batch)
+        [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh init-renueva-batch <date_slug> <N>" >&2; exit 1; }
+        cmd_init_renueva_batch "$2" "$3"
+        ;;
     batch-status)
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh batch-status <project-dir>" >&2; exit 1; }
         cmd_batch_status "$2"
@@ -531,6 +723,10 @@ case "${1:-help}" in
         shift
         cmd_place_sfx "$@"
         ;;
+    extract-clips)
+        shift
+        "$HOME/.venv/clip_extractor/bin/python3" "/media/kdabrow/Programy/givore/scripts/clip_extractor.py" "$@"
+        ;;
     clips)
         shift
         python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" "$@"
@@ -538,6 +734,8 @@ case "${1:-help}" in
     script-add|script-list|script-rotation|script-delete|\
     trial-add|trial-list|trial-rotation|trial-delete|\
     video-add|video-list|video-recent-clips|video-delete|\
+    renueva-add|renueva-list|renueva-rotation|renueva-delete|\
+    thumbnail-add|thumbnail-list|thumbnail-recent-bgs|thumbnail-delete|\
     migrate-scripts|migrate-trials|migrate-videos|migrate-all)
         python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" "$@"
         ;;

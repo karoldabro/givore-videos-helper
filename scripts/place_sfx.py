@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Smart SFX placement for Givore video pipeline.
+"""DEPRECATED: SFX placement is now AI-driven.
 
+The AI reads the script, subtitles, and SFX_CATALOG.md Basic Tier (5 sounds),
+then places SFX directly in the assembly config JSON. See SFX_GUIDELINES.md.
+
+This script is kept for reference only. Use the Basic Tier approach instead:
+  1. Read subtitles for timing
+  2. Pick from 5 basic sounds (WHOOSH, DING, CHIME, POP, SWOOSH)
+  3. Place 2-4 SFX at narrative moments, volume = 0.03
+
+Old description:
+Smart SFX placement for Givore video pipeline.
 Reads clip plan (with section labels), subtitles, and SFX library directory,
 then deterministically places sound effects based on section boundaries,
 subtitle timing, and narrative keywords.
-
-Usage:
-    python3 place_sfx.py --clips clip_plan.json --srt subtitles.srt \\
-        --audio-duration 34.5 --sfx-dir "Audio effects/" \\
-        [--tone energetic] [--exclude file1.MP3,file2.MP3] \\
-        [--seed 42] [--output sfx_plan.json]
-
-Output: JSON array of SFX placements compatible with assemble_video.py config.
 """
 
 import argparse
@@ -50,13 +52,13 @@ KEYWORD_MAP = {
 
 # Volume ranges per category (min, max)
 VOLUME = {
-    "transition": (0.06, 0.08),
-    "reveal":     (0.05, 0.07),
-    "tension":    (0.04, 0.06),
-    "positive":   (0.05, 0.07),
-    "impact":     (0.06, 0.08),
-    "cta":        (0.05, 0.07),
-    "ambient":    (0.03, 0.04),
+    "transition": (0.03, 0.04),
+    "reveal":     (0.025, 0.035),
+    "tension":    (0.02, 0.03),
+    "positive":   (0.025, 0.035),
+    "impact":     (0.03, 0.04),
+    "cta":        (0.025, 0.035),
+    "ambient":    (0.015, 0.02),
 }
 
 # Max duration caps per category (seconds)
@@ -538,10 +540,10 @@ def validate_plan(placements, audio_dur):
 
     # Volume out of range
     for p in placements:
-        if p["volume"] < 0.08:
+        if p["volume"] < 0.01:
             warnings.append(("WARNING", "VOLUME_TOO_LOW",
                              f"{p['name']} volume {p['volume']} may be inaudible"))
-        if p["volume"] > 0.30:
+        if p["volume"] > 0.08:
             warnings.append(("WARNING", "VOLUME_TOO_HIGH",
                              f"{p['name']} volume {p['volume']} may fight narration"))
 

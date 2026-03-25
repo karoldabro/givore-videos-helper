@@ -110,16 +110,19 @@ def validate_config(config: dict, strict: bool = False) -> list:
             issues.append(("ERROR", "CLIP_FILE_MISSING", f"Clip {i} not found: {cf}"))
         clips_total += clip.get("duration", 0.0)
 
-    # Check for duplicate clip files
-    clip_files = [c.get("file", "") for c in config.get("clips", [])]
+    # Check for duplicate clip files (keyed by file+in_point to allow
+    # same source at different in_points, e.g. screen recordings in renueva)
     seen = {}
-    for i, cf in enumerate(clip_files):
-        if cf and cf in seen:
+    for i, clip in enumerate(config.get("clips", [])):
+        cf = clip.get("file", "")
+        in_pt = clip.get("in_point", 0.0)
+        dedup_key = (cf, in_pt)
+        if cf and dedup_key in seen:
             issues.append(("ERROR", "DUPLICATE_CLIP",
-                            f"Clip {i} duplicates clip {seen[cf]}: "
-                            f"{os.path.basename(cf)}"))
+                            f"Clip {i} duplicates clip {seen[dedup_key]}: "
+                            f"{os.path.basename(cf)} (in_point={in_pt})"))
         elif cf:
-            seen[cf] = i
+            seen[dedup_key] = i
 
     # Check ending clips placement and count
     clips_list = config.get("clips", [])
@@ -152,6 +155,14 @@ def validate_config(config: dict, strict: bool = False) -> list:
             issues.append(("WARNING", "RELATIVE_PATH", f"SFX {i} path not absolute: {sf}"))
         elif sf and not os.path.isfile(sf):
             issues.append(("WARNING", "SFX_FILE_MISSING", f"SFX {i} not found: {sf}"))
+        vol = sfx.get("volume")
+        if vol is not None:
+            if vol > 0.10:
+                issues.append(("WARNING", "SFX_VOLUME_HIGH",
+                                f"SFX {i} volume {vol} exceeds safe range (0.02-0.04)"))
+            if vol < 0.005:
+                issues.append(("WARNING", "SFX_VOLUME_LOW",
+                                f"SFX {i} volume {vol} may be inaudible"))
 
     # Check subtitles
     sub = config.get("subtitles", "")
@@ -237,13 +248,14 @@ def assemble(config_path: str) -> dict:
     # Step 2: Open project
     proj = proj_mod.open_project(project_json)
 
-    # Step 3: Import video clips to bin
+    # Step 3: Import video/image clips to bin
     for clip_info in config.get("clips", []):
+        clip_type = clip_info.get("type", "video")
         bin_mod.import_clip(
             proj,
             source=clip_info["file"],
             name=clip_info.get("name", None),
-            clip_type="video",
+            clip_type=clip_type,
         )
 
     # Step 4: Import narration audio to bin
@@ -264,9 +276,9 @@ def assemble(config_path: str) -> dict:
     v_track = tl_mod.add_track(proj, name="V1", track_type="video")
     a_track = tl_mod.add_track(proj, name="A1-Narration", track_type="audio")
 
-    # Step 7: Place video clips on V1
+    # Step 7: Place video/image clips on V1
     bin_clips = bin_mod.list_clips(proj)
-    video_clips = [c for c in bin_clips if c["type"] == "video"]
+    video_clips = [c for c in bin_clips if c["type"] in ("video", "image")]
 
     for i, clip_info in enumerate(config.get("clips", [])):
         if i >= len(video_clips):
@@ -323,8 +335,14 @@ def assemble(config_path: str) -> dict:
                 in_point=0.0,
                 out_point=sfx_dur,
             )
-            # Set volume
-            volume = sfx_info.get("volume", 0.8)
+            # Set volume (safe default 0.03; clamp to prevent blasting)
+            volume = sfx_info.get("volume", 0.03)
+            if volume > 0.10:
+                print(f"  WARNING: SFX volume {volume} too high, clamping to 0.04")
+                volume = 0.04
+            elif volume < 0.005:
+                print(f"  WARNING: SFX volume {volume} too low, clamping to 0.02")
+                volume = 0.02
             clip_idx = len([c for c in proj["tracks"]
                            if c["id"] == sfx_track["id"]][0]["clips"]) - 1
             filt_mod.add_filter(proj, sfx_track["id"], clip_idx, "volume",
@@ -332,7 +350,7 @@ def assemble(config_path: str) -> dict:
 
         print(f"SFX: placed {len(sfx_configs)} effects on A2 track")
         for i, s in enumerate(sfx_configs):
-            print(f"  [{i+1}] {s.get('name', 'unnamed')} at {s.get('position', 0)}s, vol={s.get('volume', 0.7)}")
+            print(f"  [{i+1}] {s.get('name', 'unnamed')} at {s.get('position', 0)}s, vol={s.get('volume', 0.03)}")
 
     # Step 10: Import subtitles
     subtitle_path = config.get("subtitles", "")

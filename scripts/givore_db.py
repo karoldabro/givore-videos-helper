@@ -36,6 +36,18 @@ Usage:
     givore_db.py video-recent-clips [--last N]     Clips used in last N videos
     givore_db.py video-delete <id>
 
+    ## Renueva history
+    givore_db.py renueva-add --date X --slug X [--item-category X] ...
+    givore_db.py renueva-list [--last N]
+    givore_db.py renueva-rotation [--last N]       Compact rotation constraints
+    givore_db.py renueva-delete <id>
+
+    ## Thumbnail history
+    givore_db.py thumbnail-add --date X --slug X --bg "1.png"
+    givore_db.py thumbnail-list [--last N]
+    givore_db.py thumbnail-recent-bgs [--last N]   Backgrounds used in last N thumbnails
+    givore_db.py thumbnail-delete <id>
+
     ## Migration
     givore_db.py migrate-scripts                   Import SCRIPT_HISTORY.md
     givore_db.py migrate-trials                    Import TRIAL_HISTORY.md
@@ -127,10 +139,35 @@ CREATE TABLE IF NOT EXISTS video_clips_used (
     FOREIGN KEY (video_id) REFERENCES video_history(id) ON DELETE CASCADE
 );
 
+CREATE TABLE IF NOT EXISTS renueva_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    project_slug TEXT NOT NULL,
+    file_path TEXT,
+    item_category TEXT,
+    item_description TEXT,
+    transformation_ideas TEXT,
+    hook_type TEXT,
+    cta_type TEXT,
+    num_ideas INTEGER DEFAULT 1,
+    source_type TEXT,
+    created_at TEXT DEFAULT (datetime('now'))
+);
+
 CREATE INDEX IF NOT EXISTS idx_script_history_date ON script_history(date);
 CREATE INDEX IF NOT EXISTS idx_trial_history_date ON trial_history(date);
 CREATE INDEX IF NOT EXISTS idx_video_history_date ON video_history(date);
 CREATE INDEX IF NOT EXISTS idx_video_clips_used_video ON video_clips_used(video_id);
+CREATE INDEX IF NOT EXISTS idx_renueva_history_date ON renueva_history(date);
+
+CREATE TABLE IF NOT EXISTS thumbnail_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT NOT NULL,
+    project_slug TEXT NOT NULL,
+    bg_filename TEXT NOT NULL,
+    created_at TEXT DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_thumbnail_history_date ON thumbnail_history(date);
 """
 
 
@@ -649,11 +686,43 @@ def cmd_generate_config(args):
         total_clip_dur = audio_dur
         print(f"Extended last clip by {gap:.2f}s to cover audio")
 
+    # Parse --sfx shorthand into SFX array
+    sfx_list = []
+    if args.sfx:
+        BASIC_SFX = {
+            "WHOOSH": {"file": "Whoosh - Fast Short.MP3", "duration": 0.3, "volume": 0.035},
+            "DING":   {"file": "Ding - Single - Bright.MP3", "duration": 2.1, "volume": 0.03},
+            "CHIME":  {"file": "Correct - Synthetic Chime.MP3", "duration": 0.9, "volume": 0.03},
+            "POP":    {"file": "Pop 1.MP3", "duration": 0.2, "volume": 0.03},
+            "SWOOSH": {"file": "Swoosh - Fast 1.MP3", "duration": 0.7, "volume": 0.03},
+        }
+        sfx_dir = os.path.join(GIVORE_ROOT, "Audio effects")
+        for entry in args.sfx.split(","):
+            entry = entry.strip()
+            if "@" not in entry:
+                print(f"ERROR: SFX entry missing @position: {entry}", file=sys.stderr)
+                sys.exit(1)
+            name, pos_str = entry.split("@", 1)
+            name = name.strip().upper()
+            if name not in BASIC_SFX:
+                print(f"ERROR: Unknown SFX '{name}'. Use: {', '.join(BASIC_SFX.keys())}",
+                      file=sys.stderr)
+                sys.exit(1)
+            sfx_info = BASIC_SFX[name]
+            sfx_list.append({
+                "file": os.path.join(sfx_dir, sfx_info["file"]),
+                "name": name.lower(),
+                "position": float(pos_str),
+                "duration": sfx_info["duration"],
+                "volume": sfx_info["volume"],
+            })
+        print(f"SFX: {len(sfx_list)} Basic Tier effects added")
+
     config = {
         "project_folder": project_folder + "/",
         "template": os.path.abspath(template),
         "clips": clips,
-        "sfx": [],
+        "sfx": sfx_list,
         "audio": audio_file,
         "subtitles": os.path.abspath(srt_path) if srt_path else "",
         "subtitle_template_ass": os.path.abspath(ass_template),
@@ -971,6 +1040,171 @@ def cmd_video_delete(args):
 
 
 # ============================================================
+# Renueva history commands
+# ============================================================
+
+RENUEVA_FIELDS = ["item_category", "hook_type", "cta_type", "num_ideas",
+                  "source_type", "transformation_ideas"]
+
+
+def cmd_renueva_add(args):
+    """Add a renueva history entry."""
+    ensure_schema()
+    conn = get_db()
+    conn.execute(
+        """INSERT INTO renueva_history
+           (date, project_slug, file_path, item_category, item_description,
+            transformation_ideas, hook_type, cta_type, num_ideas, source_type)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+        (args.date, args.slug, args.file, args.item_category,
+         args.item_description, args.transformation_ideas,
+         args.hook_type, args.cta_type, args.num_ideas, args.source_type)
+    )
+    conn.commit()
+    conn.close()
+    print(f"Added renueva history: {args.date} {args.slug}")
+
+
+def cmd_renueva_list(args):
+    """List recent renueva history entries."""
+    ensure_schema()
+    conn = get_db()
+    limit = args.last or 10
+    rows = conn.execute(
+        "SELECT * FROM renueva_history ORDER BY date DESC, id DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+    conn.close()
+
+    if not rows:
+        print("No renueva history entries.")
+        return
+
+    print(f"{'ID':>4} | {'Date':<12} | {'Slug':<30} | {'Category':<12} | {'Hook':<16} | {'CTA':<12} | {'Ideas':<6} | {'Source':<14} | {'Transformation':<30}")
+    print("-" * 160)
+    for r in rows:
+        ideas_str = (r['transformation_ideas'] or '-')[:30]
+        print(f"{r['id']:>4} | {r['date']:<12} | {r['project_slug']:<30} | {r['item_category'] or '-':<12} | {r['hook_type'] or '-':<16} | {r['cta_type'] or '-':<12} | {r['num_ideas'] or 1:<6} | {r['source_type'] or '-':<14} | {ideas_str:<30}")
+
+    print(f"\n{len(rows)} entry(ies)")
+
+
+def cmd_renueva_rotation(args):
+    """Show compact rotation constraints for renueva generation."""
+    ensure_schema()
+    conn = get_db()
+    limit = args.last or 3
+    rows = conn.execute(
+        "SELECT * FROM renueva_history ORDER BY date DESC, id DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+    conn.close()
+
+    if not rows:
+        print("No renueva history — no rotation constraints.")
+        return
+
+    print(f"RENUEVA ROTATION CONSTRAINTS (last {len(rows)}):")
+    for field in RENUEVA_FIELDS:
+        values = [str(r[field]) if r[field] else "-" for r in rows]
+        values_str = ", ".join(values)
+        advice = "avoid these"
+        print(f"  {field:<24} {values_str:<50} -> {advice}")
+
+
+def cmd_renueva_delete(args):
+    """Delete a renueva history entry."""
+    ensure_schema()
+    conn = get_db()
+    row = conn.execute("SELECT project_slug FROM renueva_history WHERE id = ?", (args.id,)).fetchone()
+    if not row:
+        print(f"Renueva history ID {args.id} not found.")
+        conn.close()
+        return
+    conn.execute("DELETE FROM renueva_history WHERE id = ?", (args.id,))
+    conn.commit()
+    conn.close()
+    print(f"Deleted renueva history ID {args.id}: {row['project_slug']}")
+
+
+# ============================================================
+# Thumbnail history commands
+# ============================================================
+
+def cmd_thumbnail_add(args):
+    """Add a thumbnail history entry recording which background was used."""
+    ensure_schema()
+    conn = get_db()
+    conn.execute(
+        "INSERT INTO thumbnail_history (date, project_slug, bg_filename) VALUES (?, ?, ?)",
+        (args.date, args.slug, args.bg)
+    )
+    conn.commit()
+    conn.close()
+    print(f"Added thumbnail history: {args.date} {args.slug} bg={args.bg}")
+
+
+def cmd_thumbnail_list(args):
+    """List recent thumbnail history entries."""
+    ensure_schema()
+    conn = get_db()
+    limit = args.last or 10
+    rows = conn.execute(
+        "SELECT * FROM thumbnail_history ORDER BY date DESC, id DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+    conn.close()
+
+    if not rows:
+        print("No thumbnail history entries.")
+        return
+
+    print(f"{'ID':>4} | {'Date':<12} | {'Slug':<30} | {'Background':<30}")
+    print("-" * 80)
+    for r in rows:
+        print(f"{r['id']:>4} | {r['date']:<12} | {r['project_slug']:<30} | {r['bg_filename']:<30}")
+    print(f"\n{len(rows)} entry(ies)")
+
+
+def cmd_thumbnail_recent_bgs(args):
+    """Show backgrounds used in last N thumbnails (for exclusion during selection)."""
+    ensure_schema()
+    conn = get_db()
+    limit = args.last or 5
+    rows = conn.execute(
+        """SELECT DISTINCT bg_filename FROM thumbnail_history
+           WHERE id IN (SELECT id FROM thumbnail_history ORDER BY date DESC, id DESC LIMIT ?)
+           ORDER BY bg_filename""",
+        (limit,)
+    ).fetchall()
+    conn.close()
+
+    if not rows:
+        print("No recent thumbnail backgrounds.")
+        return
+
+    bgs = [r["bg_filename"] for r in rows]
+    print(f"BACKGROUNDS USED IN LAST {limit} THUMBNAILS (exclude from selection):")
+    print(f"  {', '.join(bgs)}")
+    print(f"\n{len(bgs)} background(s) to avoid")
+
+
+def cmd_thumbnail_delete(args):
+    """Delete a thumbnail history entry."""
+    ensure_schema()
+    conn = get_db()
+    row = conn.execute("SELECT project_slug FROM thumbnail_history WHERE id = ?", (args.id,)).fetchone()
+    if not row:
+        print(f"Thumbnail history ID {args.id} not found.")
+        conn.close()
+        return
+    conn.execute("DELETE FROM thumbnail_history WHERE id = ?", (args.id,))
+    conn.commit()
+    conn.close()
+    print(f"Deleted thumbnail history ID {args.id}: {row['project_slug']}")
+
+
+# ============================================================
 # Migration commands
 # ============================================================
 
@@ -1216,6 +1450,8 @@ def main():
     p_gc.add_argument("--template", default=None, help="Template JSON path")
     p_gc.add_argument("--ass-template", default=None, help="ASS subtitle template path")
     p_gc.add_argument("--srt", default=None, help="SRT file path (auto-detected if omitted)")
+    p_gc.add_argument("--sfx", default=None,
+                      help='SFX shorthand: "WHOOSH@2.8,DING@15.2,CHIME@22.0,POP@45.1"')
 
     # --- Script history ---
     p_sa = sub.add_parser("script-add", help="Add script history entry")
@@ -1281,6 +1517,43 @@ def main():
     p_vd = sub.add_parser("video-delete", help="Delete video history entry")
     p_vd.add_argument("id", type=int)
 
+    # --- Renueva history ---
+    p_ra = sub.add_parser("renueva-add", help="Add renueva history entry")
+    p_ra.add_argument("--date", required=True)
+    p_ra.add_argument("--slug", required=True)
+    p_ra.add_argument("--file", default=None)
+    p_ra.add_argument("--item-category", default=None)
+    p_ra.add_argument("--item-description", default=None)
+    p_ra.add_argument("--transformation-ideas", default=None)
+    p_ra.add_argument("--hook-type", default=None)
+    p_ra.add_argument("--cta-type", default=None)
+    p_ra.add_argument("--num-ideas", type=int, default=1)
+    p_ra.add_argument("--source-type", default=None)
+
+    p_rl = sub.add_parser("renueva-list", help="List recent renueva history")
+    p_rl.add_argument("--last", type=int, default=10)
+
+    p_rr = sub.add_parser("renueva-rotation", help="Show renueva rotation constraints")
+    p_rr.add_argument("--last", type=int, default=3)
+
+    p_rd = sub.add_parser("renueva-delete", help="Delete renueva history entry")
+    p_rd.add_argument("id", type=int)
+
+    # --- Thumbnail history ---
+    p_ta = sub.add_parser("thumbnail-add", help="Add thumbnail history entry")
+    p_ta.add_argument("--date", required=True)
+    p_ta.add_argument("--slug", required=True)
+    p_ta.add_argument("--bg", required=True, help="Background image filename")
+
+    p_tl = sub.add_parser("thumbnail-list", help="List recent thumbnail history")
+    p_tl.add_argument("--last", type=int, default=10)
+
+    p_tb = sub.add_parser("thumbnail-recent-bgs", help="Backgrounds used in last N thumbnails")
+    p_tb.add_argument("--last", type=int, default=5)
+
+    p_tde = sub.add_parser("thumbnail-delete", help="Delete thumbnail history entry")
+    p_tde.add_argument("id", type=int)
+
     # --- Migration ---
     sub.add_parser("migrate-scripts", help="Import SCRIPT_HISTORY.md")
     sub.add_parser("migrate-trials", help="Import TRIAL_HISTORY.md")
@@ -1322,6 +1595,16 @@ def main():
         "video-list": cmd_video_list,
         "video-recent-clips": cmd_video_recent_clips,
         "video-delete": cmd_video_delete,
+        # Renueva history
+        "renueva-add": cmd_renueva_add,
+        "renueva-list": cmd_renueva_list,
+        "renueva-rotation": cmd_renueva_rotation,
+        "renueva-delete": cmd_renueva_delete,
+        # Thumbnail history
+        "thumbnail-add": cmd_thumbnail_add,
+        "thumbnail-list": cmd_thumbnail_list,
+        "thumbnail-recent-bgs": cmd_thumbnail_recent_bgs,
+        "thumbnail-delete": cmd_thumbnail_delete,
         # Migration
         "migrate-scripts": cmd_migrate_scripts,
         "migrate-trials": cmd_migrate_trials,

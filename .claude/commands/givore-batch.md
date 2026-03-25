@@ -57,10 +57,15 @@ All bash commands MUST use `$GIVORE_TOOLS` or `$GIVORE_DB`. Do NOT use raw ffpro
 | Rename ElevenLabs audio | `$GIVORE_TOOLS rename-audio <project-dir> <slug>` |
 | Create project folder | `$GIVORE_TOOLS init-project <slug>` |
 | Create batch folders | `$GIVORE_TOOLS init-batch <slug>` |
+| Batch thumbnails (all 7) | `$GIVORE_TOOLS batch-thumbnails <project-dir>` |
 | Batch status | `$GIVORE_TOOLS batch-status <project-dir>` |
 | Generate assembly config | `$GIVORE_TOOLS generate-config --audio <mp3> --clips <ids> --project-folder <dir>` |
+| Validate all configs | `$GIVORE_TOOLS validate-all <project-dir> [--strict]` |
+| Assemble all variants | `$GIVORE_TOOLS assemble-all <project-dir>` |
+| Check all renders | `$GIVORE_TOOLS check-render-all <project-dir>` |
 | Render all variants | `$GIVORE_TOOLS render-all <project-dir> [draft\|final]` |
-| Copy finals | `$GIVORE_TOOLS copy-finals <project-dir>` |
+| Thumbnail history | `$GIVORE_TOOLS thumbnail-add --date X --slug X --bg "1.png"` |
+| Recent backgrounds | `$GIVORE_TOOLS thumbnail-recent-bgs [--last N]` |
 
 Use `generate-config` to auto-create assembly_config.json from audio + clip IDs (resolves paths/durations from DB, calculates positions, extends last clip if needed). Use `render-all` to render all v1-v7 in one command.
 
@@ -98,10 +103,9 @@ projects/[prefix][date]_[topic-slug]/
 │   ├── clip_map.txt
 │   ├── project.json
 │   ├── project.mlt
-│   └── draft.mp4
-├── v2/ ... v7/  (same file structure)
-└── finals/
-    └── vN_[slug]_final.mp4  (only approved variants)
+│   ├── draft.mp4
+│   └── thumbnail.png
+├── v2/ ... v7/  (same file structure, final renders stay in vN/ folders)
 ```
 
 ---
@@ -155,7 +159,7 @@ From DB rotation commands, get:
 - Last 3 problem angles → AVOID these (street-finds)
 - Last 3 rehook styles → AVOID these (street-finds)
 - Last 5 video clips used → AVOID these
-- Last 3 SFX sets → AVOID these
+- SFX: Use Basic Tier only (WHOOSH, DING, CHIME, POP, SWOOSH) — see SFX_CATALOG.md
 
 ### Step A.4: Pre-Plan Variant Matrix
 
@@ -167,14 +171,14 @@ Assign 7 DISTINCT values for each varying element. Select from available pools (
 - 7 different Problem Angles (from PROBLEM_VARIATIONS)
 - 7 different Rehook Styles (from REHOOK_VARIATIONS)
 - 7 different Visual Hook Clips (from clip DB: `$GIVORE_TOOLS clips list --visual-hooks`)
-- 7 different SFX sets (transition + reveal + positive, from SFX_CATALOG)
+- SFX: Use Basic Tier sounds from SFX_CATALOG.md. Same sounds CAN repeat across variants.
 
 **Trial variant elements:**
 - 7 different Hook approaches (from TRIAL_HOOKS)
 - 7 different CTA approaches (from TRIAL_CTAS)
 - 7 different tone/wording angles
 - 7 different Visual Hook Clips
-- 7 different SFX sets
+- SFX from Basic Tier (can repeat across variants)
 
 If fewer than 7 unique options exist for any element, cycle back to least-recently-used.
 
@@ -206,9 +210,7 @@ Location: [neighborhood(s)]
 | Rehook Style | | | | | | | |
 | Visual Hook Clip | | | | | | | |
 | Body Clip Order | | | | | | | |
-| SFX: Transition | | | | | | | |
-| SFX: Reveal | | | | | | | |
-| SFX: Positive | | | | | | | |
+| SFX (2-4 from Basic Tier) | | | | | | | |
 
 ## Used Elements (updated after each variant)
 Hook Types: []
@@ -216,9 +218,7 @@ CTA Types: []
 Problem Angles: []
 Rehook Styles: []
 Visual Hook Clips: []
-Transition SFX: []
-Reveal SFX: []
-Positive SFX: []
+SFX: [Basic Tier, 2-4 per variant, subtitle-timed]
 ```
 
 ---
@@ -294,7 +294,8 @@ output_directory: "[parent]/v1/"
 
 ### Step B.5: Generate v1 Metadata + Captions + Subtitles
 
-1. Generate `descriptions.txt` (5 platforms: FB → IG → LinkedIn → TikTok → YouTube)
+1. Generate `descriptions.txt` (THUMBNAIL title + 5 platforms: FB → IG → LinkedIn → TikTok → YouTube)
+   - THUMBNAIL section FIRST: 5-7 word uppercase hook title (power words: GRATIS, TIRADO, MIRA ESTO, INCREIBLE, EN LA CALLE, TESORO)
    - Follow rules from `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md` (already loaded)
    - For trial INDIRECT mode: no brand mentions in descriptions
 2. Generate `captions.txt` (2-3 words/line, plain text)
@@ -309,7 +310,7 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
 1. Parse script sections + get audio duration (`$GIVORE_TOOLS duration`) + parse subtitle timing
 2. Query clip catalog (`$GIVORE_TOOLS clips list`) and rotation history (`$GIVORE_TOOLS video-recent-clips --last 5`)
 3. **You are the video editor** — read clip descriptions and select clips that tell a visual story matching the script's narrative arc (see `/givore-video` Step 2.2 for principles)
-4. Place SFX at narrative beats — align to section transitions, reveals, and emotional peaks (see `/givore-video` Step 2.4)
+4. Place SFX using Basic Tier + subtitle timing (see `/givore-video` Step 2.4)
 5. Validate duration: `$GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],...` — clips total MUST be >= audio total
 6. Generate combined clip + SFX plan for approval
 
@@ -322,10 +323,12 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
 - [ ] All clip paths are absolute (start with `/media/kdabrow/Programy/givore/`)
 
 **SFX integrity:**
-- [ ] SFX volume between 0.04-0.08 (very subtle, not overpowering narration)
+- [ ] ONLY Basic Tier SFX used (WHOOSH, DING, CHIME, POP, SWOOSH)
+- [ ] ALL SFX volume = 0.03 (NEVER above 0.04)
+- [ ] 2-4 SFX total (not more)
+- [ ] Each SFX position matches a subtitle timestamp (not arbitrary)
 - [ ] Minimum 1.5s spacing between SFX
 - [ ] All SFX paths are absolute
-- [ ] 3 mandatory SFX present (transition, reveal, positive)
 
 **Technical specs (do NOT deviate):**
 - [ ] Template: `projects/template.kdenlive-cli.json` (1080x1920, 50fps, 9:16)
@@ -383,15 +386,15 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
       "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
       "name": "transition_whoosh",
       "position": 2.8,
-      "duration": 0.5,
-      "volume": 0.07
+      "duration": 0.3,
+      "volume": 0.03
     },
     {
-      "file": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Musical.MP3",
-      "name": "reveal_sound",
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "reveal_ding",
       "position": 4.5,
-      "duration": 1.0,
-      "volume": 0.06
+      "duration": 2.1,
+      "volume": 0.03
     }
   ],
   "audio": "/abs/path/narration.mp3",
@@ -401,7 +404,7 @@ Follow the visual storytelling guidelines from `/givore-video` Phase 2:
 ```
 
 - All file paths MUST be absolute
-- `volume`: 0.04-0.08 recommended (SFX source files are loud; keep very low to stay subtle under narration)
+- `volume`: 0.03 recommended (NEVER above 0.04 — SFX source files are loud)
 - `position`: seconds from timeline start
 - `duration`: how long to play (can be shorter than source file)
 
@@ -426,7 +429,7 @@ Present the full variant matrix showing what will change for v2-v7:
 | CTA Type | COMMUNITY | ENGAGEMENT | DOWNLOAD | SAVE-SHARE | FOLLOW | AWARENESS | SHARING |
 | Problem Angle | SYSTEM-WASTE | MISSED-CONN | URBAN-TREAS | TIME-SENS | NEIGHBOR-UNK | COULD-SHARE | SYSTEM-WASTE |
 | Visual Hook | [clip1] | [clip2] | [clip3] | [clip4] | [clip5] | [clip6] | [clip7] |
-| SFX Trans | [sfx1] | [sfx2] | [sfx3] | [sfx4] | [sfx5] | [sfx6] | [sfx7] |
+| SFX (Basic Tier) | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each |
 ...
 
 Cada variante tendrá: script único, audio único, metadatos únicos, video diferente.
@@ -482,7 +485,8 @@ Call ElevenLabs `text_to_speech` with the new script text.
 
 ### Step D.3: Metadata Generation (Unique per variant)
 
-Generate `descriptions.txt` for 5 platforms using the NEW script:
+Generate `descriptions.txt` for THUMBNAIL + 5 platforms using the NEW script:
+- THUMBNAIL section FIRST: 5-7 word uppercase hook title unique to this variant
 - Adapt hook/CTA references to match the variant's actual hook/CTA
 - Follow same platform rules (already internalized from Phase A)
 - Ensure at least 1 Tier 1 keyword per platform
@@ -503,7 +507,7 @@ Apply these changes from v1's clip plan:
 1. **Visual hook clips (first 1-2)**: SWAP to assigned clip from matrix
 2. **Body clips**: SHUFFLE order of 3-5 clips AND replace 1-2 with unused alternatives from catalog
 3. **Ending clip**: Keep an `[end]` clip as the very last clip
-4. **SFX**: Place at narrative beats using your judgment (see `/givore-video` Step 2.4). Use different SFX files than other variants in this batch.
+4. **SFX**: Place 2-4 Basic Tier SFX at narrative moments using subtitle timing (see `/givore-video` Step 2.4). Same sounds CAN repeat across variants.
 5. **Validate duration**: `$GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],...`
 
 Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips last only, clips >= audio, all paths absolute. No approval gate — matrix was already approved.
@@ -525,6 +529,18 @@ Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips las
    $GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/draft.mp4
    ```
 6. Generate `clip_map.txt` → save to `[parent]/vN/`
+
+### Step D.6b: Thumbnail Generation (AUTOMATIC — no approval gate)
+
+After all v1-v7 drafts are rendered, generate thumbnails for all variants:
+
+```bash
+$GIVORE_TOOLS batch-thumbnails [parent-dir]
+```
+
+This picks a background image from `thumbnail/` (rotating through available images) and overlays the thumbnail title from `descriptions.txt`. Output: `thumbnail.png` in each variant folder.
+
+**Prerequisites**: Each variant's `descriptions.txt` must have a THUMBNAIL section with the title text. Background images must exist in `thumbnail/` directory.
 
 ### Step D.7: Update BATCH_MANIFEST
 
@@ -558,15 +574,15 @@ Review the DURATION CHECK table. All variants should show "OK". Any showing "MIS
 ```
 📊 BATCH COMPLETO — 7 variantes generadas
 
-| # | Hook | CTA | Visual Hook | Draft |
-|---|------|-----|-------------|-------|
-| v1 | OUTRAGE: "¿En serio..." | COMMUNITY | red bus clip | v1/draft.mp4 |
-| v2 | COMMUNITY: "Vecinos..." | ENGAGEMENT | pov street 2 | v2/draft.mp4 |
-| v3 | URGENCY: "Hoy..." | DOWNLOAD | pov street 3 | v3/draft.mp4 |
-| v4 | QUESTION: "¿Sabéis...?" | SAVE-SHARE | bus passing | v4/draft.mp4 |
-| v5 | JOURNEY: "Pedaleando..." | FOLLOW | pov torre | v5/draft.mp4 |
-| v6 | BOLD: "Una lavadora..." | AWARENESS | steering cross | v6/draft.mp4 |
-| v7 | EMOTIONAL: "Cada hallazgo..." | SHARING | pov street 5 | v7/draft.mp4 |
+| # | Hook | CTA | Visual Hook | Draft | Thumb |
+|---|------|-----|-------------|-------|-------|
+| v1 | OUTRAGE: "¿En serio..." | COMMUNITY | red bus clip | v1/draft.mp4 | v1/thumbnail.png |
+| v2 | COMMUNITY: "Vecinos..." | ENGAGEMENT | pov street 2 | v2/draft.mp4 | v2/thumbnail.png |
+| v3 | URGENCY: "Hoy..." | DOWNLOAD | pov street 3 | v3/draft.mp4 | v3/thumbnail.png |
+| v4 | QUESTION: "¿Sabéis...?" | SAVE-SHARE | bus passing | v4/draft.mp4 | v4/thumbnail.png |
+| v5 | JOURNEY: "Pedaleando..." | FOLLOW | pov torre | v5/draft.mp4 | v5/thumbnail.png |
+| v6 | BOLD: "Una lavadora..." | AWARENESS | steering cross | v6/draft.mp4 | v6/thumbnail.png |
+| v7 | EMOTIONAL: "Cada hallazgo..." | SHARING | pov street 5 | v7/draft.mp4 | v7/thumbnail.png |
 
 Todos los borradores están en: [parent folder]
 ```
@@ -585,7 +601,7 @@ Todos los borradores están en: [parent folder]
 
 For each selected variant:
 1. Run: `$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json`
-2. Move/copy final to: `[parent]/finals/vN_[slug]_final.mp4`
+   (Final renders stay in their `vN/` folders — no copying needed)
 
 ### Step E.4: Update Global Histories (v1 ONLY)
 
@@ -597,6 +613,8 @@ For each selected variant:
 
 **Both modes**: Run `$GIVORE_TOOLS video-add` with v1's clip data.
 
+**Thumbnails**: Run `$GIVORE_TOOLS thumbnail-add --date X --slug X --bg "filename.png"` with v1's thumbnail background.
+
 ### Step E.5: Final Summary
 
 ```
@@ -606,15 +624,16 @@ For each selected variant:
 📊 Variantes: 7 generadas, [N] finalizadas
 
 Finals renderizados:
-├── finals/v1_[slug]_final.mp4
-├── finals/v3_[slug]_final.mp4
-└── finals/v5_[slug]_final.mp4
+├── v1/[slug]_final.mp4
+├── v3/[slug]_final.mp4
+└── v5/[slug]_final.mp4
 
 Manifest: BATCH_MANIFEST.md (detalle de todas las variantes)
 
 Historiales actualizados (DB):
 - script-add / trial-add (solo v1)
 - video-add (solo v1)
+- thumbnail-add (solo v1)
 ```
 
 ---

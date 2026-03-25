@@ -196,26 +196,31 @@ $GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],[id3],...
 
 **NEVER proceed to assembly with clips shorter than audio.**
 
-### Step 2.4: Place SFX
+### Step 2.4: Place SFX (Context-Aware, Subtitle-Timed)
 
-Read `Audio effects/SFX_GUIDELINES.md` for available SFX pools and volume guidelines.
+Use ONLY the Basic Tier SFX from `Audio effects/SFX_CATALOG.md`:
+- **WHOOSH** (Whoosh - Fast Short.MP3, 0.3s) — section transitions
+- **DING** (Ding - Single - Bright.MP3, 2.1s) — reveals, discoveries
+- **CHIME** (Correct - Synthetic Chime.MP3, 0.9s) — positive moments, solutions
+- **POP** (Pop 1.MP3, 0.2s) — CTA, app mentions
+- **SWOOSH** (Swoosh - Fast 1.MP3, 0.7s) — smoother transitions
 
-You decide where SFX go based on the narrative:
+**Placement process:**
+1. Read the SUBTITLE FILE (.srt). Each entry has exact start/end timestamps.
+2. Read the SCRIPT. Identify 2-4 key narrative moments:
+   - A section transition (e.g., HOOK to PROBLEM) -> WHOOSH
+   - A reveal or discovery moment -> DING
+   - A positive turn / solution -> CHIME
+   - A CTA mention -> POP
+3. For each moment, find the subtitle entry containing that word/phrase.
+   Use the subtitle START TIME as your SFX position (offset -0.1s to +0.1s).
+4. Set volume to **0.03** for ALL SFX. Never exceed 0.04.
 
-**Mandatory SFX (3):**
-1. **Transition SFX** — place at the first major section change (e.g., HOOK → PROBLEM). Time it to the clip cut.
-2. **Reveal SFX** — place when the script reveals something important (item shown, solution introduced). Time it to the narration word.
-3. **Positive SFX** — place at the emotional peak (solution works, community benefit). Time it to match the sentiment.
+**Budget:** 2-4 SFX total. Fewer is better. Same sound CAN repeat.
+**Spacing:** Minimum 1.5s between any two SFX.
 
-**Optional SFX (0-2):**
-- Impact/hit at RE-HOOK if the re-engagement is dramatic
-- Ambient/texture during calm sections if the video feels too "dry"
-
-**SFX timing principles:**
-- Align SFX to narration beats (word emphasis) or clip cuts, not arbitrary timestamps
-- Read the subtitle timing to find exact word positions for SFX triggers
-- Minimum 1.5s spacing between SFX — they should punctuate, not clutter
-- Volume: 0.04-0.08 (very subtle enhancement, not distraction)
+**Example:** If subtitle #5 says "Givore te conecta" at 22.4s (the solution moment):
+-> Place CHIME at position 22.3s (0.1s before the word), volume 0.03
 
 ### Step 2.5: Generate Clip + SFX Plan
 
@@ -251,10 +256,12 @@ Timestamp  | SFX File                         | Category   | Why here
 - [ ] All clip paths are absolute (start with `/media/kdabrow/Programy/givore/`)
 
 **SFX integrity:**
-- [ ] SFX volume between 0.04-0.08 (very subtle, not overpowering narration)
+- [ ] ONLY Basic Tier SFX used (WHOOSH, DING, CHIME, POP, SWOOSH)
+- [ ] ALL SFX volume = 0.03 (NEVER above 0.04)
+- [ ] 2-4 SFX total (not more)
+- [ ] Each SFX position matches a subtitle timestamp (not arbitrary)
 - [ ] Minimum 1.5s spacing between SFX
 - [ ] All SFX paths are absolute
-- [ ] 3 mandatory SFX present (transition, reveal, positive)
 
 **Technical specs (from bugs-fixed history — do NOT deviate):**
 - [ ] Template: `projects/template.kdenlive-cli.json` (1080x1920, 50fps, 9:16)
@@ -298,7 +305,7 @@ Write a JSON config file to `/tmp/givore_assembly_config.json`:
       "name": "whoosh",
       "position": 2.8,
       "duration": 0.3,
-      "volume": 0.06
+      "volume": 0.03
     }
   ],
   "audio": "/media/kdabrow/Programy/givore/projects/[folder]/[audio_file].mp3",
@@ -375,11 +382,10 @@ Timestamp    Section      Clip                                  Effects         
 Audio: narration_audio.mp3 (50.2s)
 Subtitles: 12 entries from subtitles.srt
 
-SFX (A2 track):
-  00:02.8  Whoosh - Fast Short.MP3           [HOOK→PROOF transition]   vol: 40%
-  00:04.5  Reveal - Musical.MP3              [Item reveal]             vol: 35%
-  00:18.0  Hit - Single.MP3                  [Re-hook impact]          vol: 40%
-  00:21.0  Correct - Synthetic Chime.MP3     [Solution start]          vol: 35%
+SFX (A2 track) — Basic Tier only, subtitle-timed:
+  00:02.8  WHOOSH (Whoosh - Fast Short.MP3)    [HOOK→PROBLEM transition, subtitle #2]  vol: 0.03
+  00:08.5  DING (Ding - Single - Bright.MP3)   [Item reveal, subtitle #5 "mira"]       vol: 0.03
+  00:21.0  CHIME (Correct - Synthetic Chime.MP3) [Solution start, subtitle #9]         vol: 0.03
 ```
 
 Save to: `projects/[folder]/clip_map.txt`
