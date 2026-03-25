@@ -1,0 +1,59 @@
+{
+  "frame_extraction": {
+    "fps_auto_threshold_minutes": 10,
+    "fps_short": 3,
+    "fps_long": 2,
+    "format": "jpg",
+    "quality": 2
+  },
+  "models": {
+    "yolo": "yolov8n.pt",
+    "clip_model": "ViT-L-14",
+    "clip_pretrained": "openai"
+  },
+  "scoring": {
+    "weights": {
+      "motion": 0.20,
+      "clip_interest": 0.35,
+      "diversity": 0.20,
+      "objects": 0.25
+    },
+    "motion_bell_center": 0.5,
+    "peak_prominence": 0.15,
+    "peak_min_height": 0.3
+  },
+  "text_queries": {
+    "landmark": "a beautiful landmark building in a European city",
+    "street_life": "people walking on a lively city street with shops",
+    "park": "cycling through a green park with trees",
+    "architecture": "interesting urban architecture and facades",
+    "street_art": "street art graffiti or mural on a wall",
+    "dynamic_cycling": "fast dynamic cycling through narrow city streets",
+    "plaza": "a wide open plaza or square with people",
+    "waterfront": "cycling along a river or waterfront promenade"
+  },
+  "object_scoring": {
+    "bonus": {
+      "person": 0.10,
+      "bicycle": 0.05,
+      "dog": 0.15,
+      "cat": 0.15,
+      "potted plant": 0.05,
+      "bench": 0.05,
+      "chair": 0.08,
+      "couch": 0.10,
+      "backpack": 0.03
+    },
+    "bonus_cap": 0.40,
+    "penalty_traffic_only": -0.10,
+    "penalty_empty": -0.20
+  },
+  "clip_extraction": {
+    "width": 1080,
+    "height": 1920,
+    "codec": "libx264",
+    "preset": "fast",
+    "crf": 18,
+    "no_audio": true
+  }
+}
