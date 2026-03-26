@@ -113,8 +113,11 @@ This will:
 1. Analyze video (using LRF proxy if available)
 2. Extract clips from the **original** video (not proxy)
 3. Scale to 1080x1920 (from 2K source)
-4. Save clips to `$CLIPS_DIR`
-5. Generate `$REVIEW_JSON` (bulk-add compatible)
+4. Caption each clip with Moondream2 VLM (auto-generates descriptions + renames files)
+5. Save clips to `$CLIPS_DIR`
+6. Generate `$REVIEW_JSON` (bulk-add compatible)
+
+Note: Captioning uses a separate venv (`~/.venv/moondream/`). Use `--no-caption` to skip.
 
 ---
 
@@ -191,6 +194,7 @@ Extraction complete:
 | `--min-gap N` | 3.0 | Minimum gap between clips in seconds |
 | `--max-clips N` | unlimited | Hard limit on number of clips |
 | `--no-proxy` | false | Skip LRF proxy, analyze original |
+| `--no-caption` | false | Skip Moondream2 VLM captioning |
 | `--batch-size N` | 8 | GPU inference batch size |
 
 ## Config Tuning

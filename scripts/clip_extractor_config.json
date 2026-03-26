@@ -55,5 +55,10 @@
     "preset": "fast",
     "crf": 18,
     "no_audio": true
+  },
+  "captioning": {
+    "model": "vikhyatk/moondream2",
+    "revision": "2025-01-09",
+    "caption_length": "short"
   }
 }

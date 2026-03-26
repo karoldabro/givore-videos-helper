@@ -474,6 +474,99 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
     }
 
 
+MOONDREAM_PYTHON = Path.home() / ".venv" / "moondream" / "bin" / "python3"
+
+CAPTION_SCRIPT = '''
+import torch, cv2, json, sys
+from transformers import AutoModelForCausalLM
+from PIL import Image
+
+config = json.loads(sys.argv[1])
+clips = json.loads(sys.argv[2])
+length = config.get("caption_length", "short")
+
+model = AutoModelForCausalLM.from_pretrained(
+    config.get("model", "vikhyatk/moondream2"),
+    revision=config.get("revision", "2025-01-09"),
+    trust_remote_code=True, torch_dtype=torch.float16
+).to("cuda")
+
+results = []
+for clip_path in clips:
+    cap = cv2.VideoCapture(clip_path)
+    total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    cap.set(cv2.CAP_PROP_POS_FRAMES, total // 2)
+    ret, frame = cap.read()
+    cap.release()
+    if not ret:
+        results.append("")
+        continue
+    image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+    caption = model.caption(image, length=length)["caption"]
+    results.append(caption)
+
+print(json.dumps(results))
+'''
+
+
+def caption_clips(extracted, config, device="cuda", verbose=False):
+    """Use Moondream2 (separate venv) to generate real descriptions of extracted clips."""
+    caption_config = config.get("captioning", {})
+
+    if not MOONDREAM_PYTHON.exists():
+        print("WARNING: Moondream venv not found, skipping captioning")
+        return extracted
+
+    clip_paths = [item["path"] for item in extracted]
+    caption_config_json = json.dumps(caption_config)
+    clips_json = json.dumps(clip_paths)
+
+    result = subprocess.run(
+        [str(MOONDREAM_PYTHON), "-c", CAPTION_SCRIPT, caption_config_json, clips_json],
+        capture_output=True, text=True, timeout=600
+    )
+
+    if result.returncode != 0:
+        print(f"WARNING: Captioning failed: {result.stderr[-200:]}")
+        return extracted
+
+    captions = json.loads(result.stdout.strip())
+
+    for i, (item, caption) in enumerate(zip(extracted, captions)):
+        if not caption:
+            continue
+
+        # Clean up caption for filename use
+        caption_clean = caption.lower().strip().rstrip(".")
+        # Truncate to ~80 chars for reasonable filename length
+        if len(caption_clean) > 80:
+            caption_clean = caption_clean[:80].rsplit(" ", 1)[0]
+        caption_clean = re.sub(r'[<>:"/\\|?*]', '', caption_clean)
+        caption_clean = re.sub(r'\s+', ' ', caption_clean).strip()
+
+        meta = item["metadata"]
+        location = meta["filename"].rsplit(" - ", 1)[-1].replace(".mp4", "")
+        meta["desc"] = caption_clean
+        new_filename = f"{caption_clean} - {location}.mp4"
+
+        # Rename the clip file
+        old_path = Path(item["path"])
+        new_path = old_path.parent / new_filename
+        suffix = 0
+        while new_path.exists() and new_path != old_path:
+            suffix += 1
+            new_path = old_path.parent / f"{caption_clean} ({suffix}) - {location}.mp4"
+        if new_path != old_path:
+            old_path.rename(new_path)
+            item["path"] = str(new_path)
+            meta["filename"] = new_path.name
+
+        if verbose:
+            print(f"  {i+1}. {meta['filename']}")
+
+    return extracted
+
+
 def extract_clips(video_path, candidates, metadata_list, output_dir, config):
     """Extract clip segments from video using ffmpeg."""
     output_dir = Path(output_dir)
@@ -569,6 +662,7 @@ def parse_args():
     parser.add_argument("--review-json", default=str(DEFAULT_REVIEW_JSON), help="Review JSON output path")
     parser.add_argument("--dry-run", action="store_true", help="Analyze only, don't extract clips")
     parser.add_argument("--keep-frames", action="store_true", help="Don't delete extracted frames")
+    parser.add_argument("--no-caption", action="store_true", help="Skip VLM captioning (use CLIP-based descriptions)")
     parser.add_argument("--no-proxy", action="store_true", help="Don't use LRF proxy even if available")
     parser.add_argument("--verbose", action="store_true", help="Show detailed progress")
     return parser.parse_args()
@@ -690,6 +784,13 @@ def main():
         print(f"[7/7] Extracting {len(candidates)} clips...", end=" ", flush=True)
         extracted = extract_clips(video_path, candidates, metadata_list, args.output_dir, config)
         print(f"[{time.time()-t6:.1f}s]")
+
+        # Stage 8: VLM captioning
+        if not args.no_caption:
+            t7 = time.time()
+            print(f"[8/8] Captioning {len(extracted)} clips with VLM...", end=" ", flush=True)
+            extracted = caption_clips(extracted, config, device=device, verbose=args.verbose)
+            print(f"[{time.time()-t7:.1f}s]")
 
         # Generate review JSON
         bulk = generate_review_json(extracted, args.review_json)
