@@ -475,39 +475,45 @@ Generate `captions.txt` (2-3 words/line from new script). Save to `[parent]/vN/`
 
 Run: `$GIVORE_TOOLS subs [parent]/vN/[slug].mp3 [parent]/vN/captions.txt`
 
-### Step D.5: Clip + SFX Selection (AI-Driven)
+### Step D.5-D.6: Clip Selection + Config + Assembly + Render (per variant)
 
-**You are the video editor.** Apply these changes from v1's clip plan:
+**For EACH variant (v2, v3, v4, v5, v6, v7), run these steps as INDIVIDUAL tool calls. Do NOT write custom bash scripts or loops.**
 
-1. **Visual hook clips (first 1-2)**: SWAP to assigned clip from `batch_plan.json`
-2. **Body clips**: SHUFFLE order of 3-5 clips AND replace 1-2 with unused alternatives from catalog
-3. **Ending clip**: Keep an `[end]` clip as the very last clip
-4. **SFX**: Place 2-4 Basic Tier SFX at narrative moments using subtitle timing (see `/givore-video` Step 2.4). Same sounds CAN repeat across variants.
-5. **Validate duration**: `$GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],...`
-6. **Generate config with SFX**:
-   ```bash
-   $GIVORE_TOOLS generate-config --audio [parent]/vN/[slug].mp3 --clips [id1],[id2],... --sfx "WHOOSH@X.X,DING@Y.Y" --project-folder [parent]/vN/
-   ```
+**Step D.5a — AI selects clips + SFX (creative decision):**
+1. SWAP visual hook clip to assigned clip from `batch_plan.json`
+2. SHUFFLE body clips, replace 1-2 with alternatives
+3. Keep `[end]` clip as last
+4. Place 2-4 Basic Tier SFX at narrative moments from subtitle timing
+5. Validate: `$GIVORE_TOOLS clips plan "[AUDIO]" [ids]`
 
-Respect `clip_budget` from `batch_plan.json` — check cross-variant reuse limits before selecting.
+**Step D.5b — Generate config (ONE tool call per variant):**
+```bash
+$GIVORE_TOOLS generate-config --audio [parent]/v2/[slug].mp3 --clips [ids] --sfx "WHOOSH@X,DING@Y" --project-folder [parent]/v2/
+```
+```bash
+$GIVORE_TOOLS generate-config --audio [parent]/v3/[slug].mp3 --clips [ids] --sfx "WHOOSH@X,CHIME@Y" --project-folder [parent]/v3/
+```
+(repeat for v4, v5, v6, v7 — each as a SEPARATE Bash tool call, all 6 in parallel)
 
-Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips last only, clips >= audio, all paths absolute.
+**Step D.6a — Validate all at once:**
+```bash
+$GIVORE_TOOLS validate-all [parent]
+```
 
-### Step D.6: Assembly + Final Render (direct finals for v2-v7)
+**Step D.6b — Assemble all at once:**
+```bash
+$GIVORE_TOOLS assemble-all [parent]
+```
 
-1. **MANDATORY**: Run pre-flight validation:
-   ```bash
-   $GIVORE_TOOLS validate [parent]/vN/assembly_config.json
-   ```
-   If validation fails, fix clips/paths before assembly.
-2. Run assembly: `$GIVORE_TOOLS assemble [parent]/vN/assembly_config.json`
-3. Render **final** (not draft): `$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json`
-   **Final render quality**: CRF 15, preset slow, maxrate 40Mbps, audio 192k
-4. **MANDATORY**: Run post-render validation:
-   ```bash
-   $GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/[slug]_final.mp4
-   ```
-5. Generate `clip_map.txt` in `[parent]/vN/`
+**Step D.6c — Render all as finals at once:**
+```bash
+$GIVORE_TOOLS render-all [parent] final
+```
+
+**Step D.6d — Check all renders at once:**
+```bash
+$GIVORE_TOOLS check-render-all [parent]
+```
 
 ### Step D.6b: Thumbnail Generation (AUTOMATIC — no approval gate)
 

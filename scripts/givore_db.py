@@ -682,11 +682,11 @@ def cmd_generate_config(args):
 
     total_clip_dur = position
 
-    # Extend last clip if needed to cover audio
-    if total_clip_dur < audio_dur and clips:
-        gap = audio_dur - total_clip_dur
+    # Extend last clip if needed to cover audio (+ 0.2s buffer for validation)
+    if total_clip_dur <= audio_dur and clips:
+        gap = audio_dur - total_clip_dur + 0.2
         clips[-1]["duration"] = round(clips[-1]["duration"] + gap, 3)
-        total_clip_dur = audio_dur
+        total_clip_dur = round(total_clip_dur + gap, 3)
         print(f"Extended last clip by {gap:.2f}s to cover audio")
 
     # Parse --sfx shorthand into SFX array
