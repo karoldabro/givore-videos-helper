@@ -2,15 +2,23 @@
 
 Generate 7 variants of one topic in a single session. Variant 1 = full pipeline with approvals. Variants 2-7 = delta generation from v1 base. Each variant gets unique script, audio, metadata, and video assembly.
 
-## APPROVAL GATES (only 4 — everything else runs automatically)
+## APPROVAL GATES (only 3 — everything else runs automatically)
 
-Only pause for user input at these 4 gates. Between gates, execute ALL steps automatically:
+Only pause for user input at these 3 gates. Between gates, execute ALL steps automatically:
 1. **Gate 1**: v1 script approval (Step B.3)
 2. **Gate 2**: v1 clip/video plan approval (Step B.7)
-3. **Gate 3**: Variant matrix approval (Step C.2)
-4. **Gate 4**: Finals selection (Step E.2)
+3. **Gate 3**: v1 final confirmation + v2-v7 already rendered as finals (Step E.2)
 
 All other steps (audio generation, captions, subtitles, metadata, clip selection, assembly, rendering) run without pausing. Use batch commands (`batch-captions`, `batch-subs`, `rename-audio`, `render-all`) to process all variants in single commands.
+
+## AUTOMATION RULES
+
+- Between gates, execute ALL steps without pausing for confirmation
+- NEVER ask "should I proceed?" or "¿continúo?" between steps within a phase
+- NEVER ask permission to run CLI tools — they are pre-approved
+- Only pause at the 3 defined gates above
+- All `$GIVORE_TOOLS` commands, ElevenLabs TTS, and file writes are pre-approved
+- If a step fails, fix it and continue — do NOT ask the user unless the fix requires creative input
 
 ## Project Root
 
@@ -116,13 +124,13 @@ projects/[prefix][date]_[topic-slug]/
 
 **Street-finds**:
 1. Run `$GIVORE_TOOLS script-rotation` to get rotation constraints
-2. Read last 3 script texts from paths in rotation output (for repetition avoidance)
-3. Run `$GIVORE_TOOLS video-recent-clips --last 5` for clip rotation
+2. Read last 5 script texts from paths in rotation output (for repetition avoidance)
+3. Run `$GIVORE_TOOLS video-recent-clips --last 10` for clip rotation
 
 **Trial**:
 1. Run `$GIVORE_TOOLS trial-rotation` to get rotation constraints
 2. Read last 2 trial script texts from paths in rotation output
-3. Run `$GIVORE_TOOLS video-recent-clips --last 5` for clip rotation
+3. Run `$GIVORE_TOOLS video-recent-clips --last 10` for clip rotation
 
 ### Step A.2: Read ALL Reference Files (ONE TIME ONLY)
 
@@ -148,17 +156,18 @@ projects/[prefix][date]_[topic-slug]/
 
 **Shared (both modes)**:
 - `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`
+- `CONTENT_PILLARS.md` (broad top-of-funnel content strategy — 15 pillars, hooks, formats)
 - Clip database: `$GIVORE_TOOLS clips list` (DB is source of truth)
 - `Audio effects/SFX_CATALOG.md`
 
 ### Step A.3: Compute Rotation Constraints
 
 From DB rotation commands, get:
-- Last 3 hook types → AVOID these
-- Last 3 CTA types → AVOID these
-- Last 3 problem angles → AVOID these (street-finds)
-- Last 3 rehook styles → AVOID these (street-finds)
-- Last 5 video clips used → AVOID these
+- Last 5 hook types → AVOID these
+- Last 5 CTA types → AVOID these
+- Last 5 problem angles → AVOID these (street-finds)
+- Last 5 rehook styles → AVOID these (street-finds)
+- Last 10 video clips used → AVOID these
 - SFX: Use Basic Tier only (WHOOSH, DING, CHIME, POP, SWOOSH) — see SFX_CATALOG.md
 
 ### Step A.4: Pre-Plan Variant Matrix
@@ -181,6 +190,18 @@ Assign 7 DISTINCT values for each varying element. Select from available pools (
 - SFX from Basic Tier (can repeat across variants)
 
 If fewer than 7 unique options exist for any element, cycle back to least-recently-used.
+
+### Step A.4b: Cross-Variant Clip Budget
+
+Track clip usage ACROSS all 7 variants to prevent excessive reuse:
+
+**CLIP REUSE RULES (within a single batch):**
+1. **Visual hook clips**: Each variant MUST use a DIFFERENT visual hook clip (7 unique hooks)
+2. **Body clips**: Any single clip may appear in at most 3 out of 7 variants
+3. **Ending clips**: Ending clips CAN repeat (limited pool) but try to use 3+ different ones
+4. **Bridge clips**: Same bridge clip in at most 4 out of 7 variants
+
+Maintain a CLIP_USAGE counter in BATCH_MANIFEST.md (see template below). Before selecting clips for variant N, check this table. If a clip is at its limit, choose an alternative.
 
 ### Step A.5: Create Folder Structure + BATCH_MANIFEST.md
 
@@ -219,6 +240,12 @@ Problem Angles: []
 Rehook Styles: []
 Visual Hook Clips: []
 SFX: [Basic Tier, 2-4 per variant, subtitle-timed]
+
+## Clip Usage Tracker (cross-variant reuse prevention)
+
+| Clip ID | Clip Name | Used in variants | Limit |
+|---------|-----------|-----------------|-------|
+| | | | hook: 1, body: 3, bridge: 4, end: 7 |
 ```
 
 ---
@@ -414,37 +441,24 @@ Fill in the v1 column in the Variant Matrix table and update Used Elements lists
 
 ---
 
-## PHASE C: VARIANT MATRIX APPROVAL
+## VARIANT MATRIX DISPLAY (informational — no approval gate)
 
-### Step C.1: Display Planned Matrix
-
-Present the full variant matrix showing what will change for v2-v7:
+After v1 is complete, display the planned matrix for v2-v7 as information only, then proceed directly:
 
 ```
-📊 VARIANT MATRIX — Planned differences for v2-v7
+📊 VARIANT MATRIX — v2-v7 planned (proceeding automatically)
 
 | Element | v1 (done) | v2 | v3 | v4 | v5 | v6 | v7 |
 |---------|-----------|----|----|----|----|----|----|
-| Hook Type | OUTRAGE | COMMUNITY | URGENCY | QUESTION | JOURNEY | BOLD | EMOTIONAL |
-| CTA Type | COMMUNITY | ENGAGEMENT | DOWNLOAD | SAVE-SHARE | FOLLOW | AWARENESS | SHARING |
-| Problem Angle | SYSTEM-WASTE | MISSED-CONN | URBAN-TREAS | TIME-SENS | NEIGHBOR-UNK | COULD-SHARE | SYSTEM-WASTE |
-| Visual Hook | [clip1] | [clip2] | [clip3] | [clip4] | [clip5] | [clip6] | [clip7] |
-| SFX (Basic Tier) | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each | 2-4 each |
-...
+| Hook Type | ... | ... | ... | ... | ... | ... | ... |
+| CTA Type | ... | ... | ... | ... | ... | ... | ... |
+| Problem Angle | ... | ... | ... | ... | ... | ... | ... |
+| Visual Hook | ... | ... | ... | ... | ... | ... | ... |
 
-Cada variante tendrá: script único, audio único, metadatos únicos, video diferente.
+Generando variantes 2-7 automáticamente...
 ```
 
-### Step C.2: APPROVAL GATE 3 — Matrix
-
-```
-¿Aprobar la matriz de variantes?
-
-- Sí → Generar variantes 2-7 automáticamente
-- Modificar → Cambiar asignaciones específicas
-```
-
-After approval, proceed to batch generation. No further approval gates until all 7 drafts are ready.
+**DO NOT pause here.** Proceed directly to Phase D.
 
 ---
 
@@ -512,7 +526,7 @@ Apply these changes from v1's clip plan:
 
 Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips last only, clips >= audio, all paths absolute. No approval gate — matrix was already approved.
 
-### Step D.6: Assembly + Draft Render
+### Step D.6: Assembly + Final Render (direct finals for v2-v7)
 
 1. Write assembly config → `[parent]/vN/assembly_config.json`
    - Point `project_folder` to `[parent]/vN/`
@@ -523,10 +537,11 @@ Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips las
    ```
    If validation fails, fix clips/paths before assembly.
 3. Run assembly: `$GIVORE_TOOLS assemble [parent]/vN/assembly_config.json`
-4. Render draft: `$GIVORE_TOOLS render-draft [parent]/vN/assembly_config.json`
+4. Render **final** (not draft): `$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json`
+   **Final render quality**: CRF 15, preset slow, maxrate 40Mbps, audio 192k
 5. **MANDATORY**: Run post-render validation:
    ```bash
-   $GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/draft.mp4
+   $GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/[slug]_final.mp4
    ```
 6. Generate `clip_map.txt` → save to `[parent]/vN/`
 
@@ -587,21 +602,26 @@ Review the DURATION CHECK table. All variants should show "OK". Any showing "MIS
 Todos los borradores están en: [parent folder]
 ```
 
-### Step E.2: APPROVAL GATE 4 — Select Finals
+### Step E.2: APPROVAL GATE 3 — v1 Final Confirmation
+
+v2-v7 are already rendered as finals. This gate only concerns v1:
 
 ```
-¿Qué variantes renderizar en calidad final?
+📊 BATCH COMPLETO
 
-- Todas → Renderizar las 7 (1080x1920)
-- Seleccionar → Indica números (ej: 1,3,5)
-- Ninguna → Solo mantener borradores
+v2-v7 ya renderizados en calidad final (CRF 15, 40Mbps).
+v1 tiene borrador listo para revisión.
+
+¿Renderizar v1 en calidad final también?
+- Sí → Renderizar v1 final (1080x1920)
+- Cambiar v1 → Especifica cambios al video de v1
+- No → Mantener v1 como borrador
 ```
 
-### Step E.3: Final Render (Selected Variants)
+### Step E.3: Final Render v1
 
-For each selected variant:
-1. Run: `$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json`
-   (Final renders stay in their `vN/` folders — no copying needed)
+If approved:
+1. Run: `$GIVORE_TOOLS render-final [parent]/v1/assembly_config.json`
 
 ### Step E.4: Update Global Histories (v1 ONLY)
 
@@ -722,15 +742,15 @@ If `$ARGUMENTS` is empty or incomplete, collect all mandatory inputs first.
 │   ├─ Clip + SFX selection → ⏸ APPROVAL GATE 2
 │   └─ Assembly + Draft render
 │
-├─ PHASE C: Variant Matrix Approval
-│   └─ Display matrix → ⏸ APPROVAL GATE 3
+├─ VARIANT MATRIX DISPLAY (informational — no gate)
+│   └─ Show planned matrix → proceed automatically
 │
-├─ PHASE D: Batch Generate v2-v7 (no approvals)
-│   └─ For each: Delta script → Audio → Metadata → Subtitles → Video delta → Assembly → Draft
+├─ PHASE D: Batch Generate v2-v7 (no approvals, FINAL renders)
+│   └─ For each: Delta script → Audio → Metadata → Subtitles → Video delta → Assembly → Final render
 │
 └─ PHASE E: Review & Finalize
-    ├─ Present all 7 drafts → ⏸ APPROVAL GATE 4 (select finals)
-    ├─ Final render selected variants
+    ├─ v2-v7 already finals → ⏸ APPROVAL GATE 3 (v1 final confirmation)
+    ├─ Final render v1 if approved
     ├─ Update global histories via DB (v1 only)
     └─ Final summary
 ```
@@ -740,9 +760,9 @@ If `$ARGUMENTS` is empty or incomplete, collect all mandatory inputs first.
 **START NOW**:
 1. Detect mode from $ARGUMENTS (street-finds vs trial)
 2. Execute Phase A: Read ALL reference files, compute constraints, plan matrix
-3. Execute Phase B: Generate v1 with full pipeline
-4. After v1 approval, present matrix (Phase C)
-5. Batch generate v2-v7 (Phase D)
-6. Review and finalize (Phase E)
+3. Execute Phase B: Generate v1 with full pipeline (3 gates only)
+4. After v1 approved, display matrix (informational) → proceed directly to Phase D
+5. Batch generate v2-v7 with FINAL renders (Phase D — no approvals)
+6. Gate 3: Confirm v1 final render (Phase E)
 
 $ARGUMENTS

@@ -279,3 +279,127 @@ Frases para agradecer a la comunidad de usuarios.
 | "Ese es el espíritu." | Community pride |
 | "Esto funciona porque participáis." | Value acknowledgment |
 | "Gracias por ser parte de esto." | Belonging |
+
+---
+
+## Transitional Phrases (Mid-Video Retention)
+
+Phrases designed to keep viewers watching through the middle of the video. Use at section boundaries to create curiosity and momentum.
+
+### Pivot/Surprise Phrases
+| Phrase | Effect |
+|--------|--------|
+| "Pero esperad..." | Interrupts exit, creates pause |
+| "Y ahora viene lo bueno..." | Promises payoff |
+| "Pero eso no es todo..." | Extends curiosity |
+| "Ojo a esto..." | Draws attention |
+| "Y aquí es donde se pone interesante..." | Builds anticipation |
+| "Fijaos bien..." | Focuses viewer |
+| "Lo mejor viene ahora..." | Delays gratification |
+
+### Section Transition Phrases
+| Phrase | Effect |
+|--------|--------|
+| "Pero antes de eso..." | Creates detour curiosity |
+| "Y ahora os enseño..." | Promises reveal |
+| "Lo que no os he contado todavía es..." | Withheld info hook |
+| "Mirad, os lo enseño..." | Direct invitation |
+| "Y por si fuera poco..." | Stacks value |
+| "Para los que no lo sepáis..." | Insider knowledge |
+
+### Emphasis/Authenticity Phrases
+| Phrase | Effect |
+|--------|--------|
+| "En serio, mirad esto." | Breaks fourth wall |
+| "Os lo digo de verdad." | Personal guarantee |
+| "Y no estoy exagerando." | Credibility boost |
+| "Esto es real." | Authenticity signal |
+| "Yo mismo no me lo creía." | Shared disbelief |
+
+### Closing Transitions (Before CTA)
+| Phrase | Effect |
+|--------|--------|
+| "Así que ya sabéis..." | Wraps up naturally |
+| "Total, que..." | Casual summary |
+| "Y con esto..." | Clean segue |
+| "Al final del día..." | Reflective close |
+
+---
+
+## Broad Content Phrases
+
+Top-of-funnel phrases for discovery/exploration content that reaches beyond the core recycling audience.
+
+| Phrase | Content Type |
+|--------|-------------|
+| "Encontré esto pedaleando por [lugar]..." | Discovery opener |
+| "Lo que ves cuando vas en bici vs en coche" | Perspective contrast |
+| "No sabía que esto existía en [barrio]" | Hidden gem reveal |
+| "El rincón más bonito de [barrio] que nadie conoce" | Local secret |
+| "3 cosas que solo ves si vas en bici por esta ciudad" | Listicle hook |
+| "Mi ruta diaria — lo que nadie ve" | Personal POV |
+
+---
+
+## Keyword-Rich Phrase Alternatives
+
+Natural-sounding phrases that incorporate high-volume Spanish search keywords. When writing scripts, prefer these keyword-rich versions over generic phrasing to boost discoverability.
+
+### Furniture & Items
+
+| Instead of... | Use (keyword-rich)... | Target Keyword (Volume) |
+|---------------|----------------------|------------------------|
+| "cosas tiradas en la calle" | "muebles reciclados esperando segunda vida" | muebles reciclados (86K) |
+| "muebles viejos" | "muebles vintage de la calle" | muebles vintage (150K) |
+| "muebles usados" | "muebles segunda mano en perfecto estado" | muebles segunda mano (65K) |
+| "lo puedes arreglar" | "es fácil restaurar muebles así" | restaurar muebles (28K) |
+| "lo puedes pintar" | "pintar muebles así es más fácil de lo que piensas" | pintar muebles (19K) |
+| "muebles arreglados" | "muebles restaurados con segunda vida" | muebles restaurados (13K) |
+| "reciclar cosas" | "reciclar muebles que otros tiran" | reciclar muebles (15K) |
+| "reciclaje con ideas" | "reciclaje creativo de verdad" | reciclaje creativo (14K) |
+
+### Location & Cycling
+
+| Instead of... | Use (keyword-rich)... | Target Keyword (Volume) |
+|---------------|----------------------|------------------------|
+| "lo encontré por ahí" | "lo encontré recorriendo [CIUDAD] en bici" | [CIUDAD] en bici (1-10K) |
+| "fui en bici por la ciudad" | "recorrí el carril bici de [CIUDAD]" | carril bici [CIUDAD] (Madrid 15K, Barcelona 12K, Valencia 10K) |
+| "en este barrio" | "en [BARRIO], [CIUDAD]" | barrios [CIUDAD] (Madrid 10K, Barcelona 7.7K, Valencia 3.7K) |
+| "paseando por la ciudad" | "pedaleando por los barrios de [CIUDAD]" | barrios [CIUDAD] |
+| "ruta en bici" | "ruta en bici por [CIUDAD]" | rutas bici [CIUDAD] (Madrid 4.5K, Barcelona/Valencia 1.6K) |
+
+### Secondhand / Economy (MEGA keywords — 670K combined)
+
+| Instead of... | Use (keyword-rich)... | Target Keyword (Volume) |
+|---------------|----------------------|------------------------|
+| "cosas usadas" | "segunda mano en [CIUDAD]" | segunda mano [CIUDAD] (110-250K) |
+| "comprar de segunda mano" | "segunda mano en perfecto estado" | segunda mano [CIUDAD] |
+| "ser responsable" | "consumo responsable de verdad" | consumo responsable (57K) |
+| "compartir cosas" | "economía colaborativa entre vecinos" | economia colaborativa (16K) |
+| "ir al punto limpio" | "antes del punto limpio, comparte" | punto limpio [CIUDAD] (5.5-18K) |
+| "cuando te mudas" | "después de cada mudanza aparecen tesoros" | mudanzas [CIUDAD] (18-41K) |
+| "vender tus muebles" | "vender muebles usados... o mejor, regalarlos" | vender muebles usados (5.5K) |
+| "ir al rastro" | "mejor que el rastro: la calle de tu barrio" | rastro Madrid (63K) |
+| "una app para esto" | "la app de segunda mano que necesitas" | app segunda mano (3K) |
+| "ir en bici de forma sostenible" | "movilidad sostenible sobre dos ruedas" | movilidad sostenible (9.2K) |
+
+### Home & Lifestyle
+
+| Instead of... | Use (keyword-rich)... | Target Keyword (Volume) |
+|---------------|----------------------|------------------------|
+| "decorar con lo que encuentras" | "decoración low cost de verdad" | decoracion low cost (4.5K) |
+| "decorar reciclando" | "decoración reciclada con lo que la calle te da" | decoracion reciclada (6.7K) |
+| "amueblar tu casa barato" | "amueblar tu piso barato con lo que encuentras" | amueblar piso barato (3K) |
+| "ordenar tus cosas" | "ordenar casa y dar segunda vida a lo que sobra" | ordenar casa (840) |
+| "hacer cosas con palets" | "muebles con palets que encuentras en la calle" | muebles con palets (95K) |
+| "la mesa que encontré" | "una mesa reciclada perfecta, tirada en la acera" | mesa reciclada (7.4K) |
+| "restaurar cosas antiguas" | "restaurar muebles antiguos de la calle" | restaurar muebles antiguos (7.1K) |
+| "pintar un mueble viejo" | "cómo pintar muebles de madera que encuentras" | como pintar muebles de madera (2.5K) |
+
+### Usage Rules
+
+1. **Don't replace every instance** — mix keyword-rich phrases with natural, non-keyword phrasing for authenticity
+2. **Context matters** — only use furniture keywords when the video actually shows furniture
+3. **Spoken vs written** — keyword phrases work in both script narration AND written descriptions
+4. **"Gratis" exception** — "gratis" is fine in spoken scripts but BANNED from written descriptions/metadata
+5. **"Segunda mano [CIUDAD]" is the #1 opportunity** (670K combined) — use it in descriptions whenever content is city-specific

@@ -114,7 +114,7 @@ $GIVORE_TOOLS clips list
 
 Also read (relative to GIVORE_ROOT):
 - `Audio effects/SFX_GUIDELINES.md` — SFX placement rules and pool definitions (used by `place_sfx.py`)
-- Run `$GIVORE_TOOLS video-recent-clips --last 5` for clip rotation history
+- Run `$GIVORE_TOOLS video-recent-clips --last 10` for clip rotation history
 
 ---
 
@@ -129,7 +129,7 @@ You are the video editor. Use the tools to gather information, then apply your j
 $GIVORE_TOOLS clips list
 
 # See which clips were used recently (avoid reuse)
-$GIVORE_TOOLS video-recent-clips --last 5
+$GIVORE_TOOLS video-recent-clips --last 10
 ```
 
 Read each clip's description carefully. The description tells you what the clip SHOWS:

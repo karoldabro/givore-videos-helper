@@ -560,3 +560,148 @@ Before outputting, verify:
 
 ## Language Note
 All outputs in **Spanish (Spain)** - peninsular expressions, "vosotros" form, avoid Latin American variations.
+
+---
+
+## SEO Keyword Tiers
+
+Volume-backed keywords from keyword research (Spain, March 2026). Integrate these naturally into descriptions across all platforms to boost discoverability.
+
+### Tier 0 — MEGA Keywords (670K+ combined — #1 keyword opportunity)
+
+The "segunda mano [CIUDAD]" pattern is the single highest-volume keyword opportunity. Use the city matching the video content.
+
+| Keyword | Monthly Volume | Use When |
+|---------|---------------|----------|
+| segunda mano Madrid | 250K | Any Madrid content or national framing |
+| segunda mano Barcelona | 170K | Any Barcelona content |
+| segunda mano Valencia | 140K | Any Valencia content |
+| segunda mano Sevilla | 110K | Any Sevilla content |
+| consumo responsable | 57K | Mission-driven, sustainability content |
+
+**Rule**: When content is city-specific, ALWAYS include "segunda mano [CIUDAD]" in the description body (not necessarily first sentence — Tier 1 keywords still own the opening).
+
+### Tier 1 — High Volume (use in FIRST sentence of every description)
+
+At least ONE of these must appear naturally in the opening sentence:
+
+| Keyword | Monthly Volume | Use When |
+|---------|---------------|----------|
+| muebles reciclados | 86K | Any furniture find content |
+| muebles segunda mano | 65K | Any used furniture content |
+| consumo responsable | 57K | Sustainability-angle content |
+| restaurar muebles | 28K | Restoration, before/after content |
+| reciclar muebles | 15K | Core recycling content |
+| reciclaje creativo | 14K | Upcycling, creative transformation content |
+
+### Tier 2 — Medium Volume (use 1-2 per description, rotate)
+
+| Keyword | Monthly Volume | Use When |
+|---------|---------------|----------|
+| muebles vintage | 150K | Vintage/retro style finds (high volume — always use when applicable) |
+| muebles con palets | 95K | Palet furniture, DIY content |
+| rastro Madrid | 63K | Madrid flea market / secondhand culture content |
+| economia colaborativa | 16K | App positioning, sharing economy angle |
+| muebles restaurados | 13K | After restoration, transformation reveals |
+| movilidad sostenible | 9.2K | Cycling + sustainability intersection |
+| decoracion reciclada | 6.7K | Home decor angle content |
+| vender muebles usados | 5.5K | Secondhand furniture market content |
+| decoracion low cost | 4.5K | Budget living, affordable decor content |
+| mesa reciclada | 7.4K | Table/furniture finds |
+| restaurar muebles antiguos | 7.1K | Antique restoration content |
+| app segunda mano | 3K | App discovery / Givore positioning content |
+| carril bici [CIUDAD] | 10-15K | Cycling-focused content (substitute video's city) |
+| [CIUDAD] en bici | 1-10K | Cycling discovery content |
+
+### Tier 3 — City-Specific (use matching the video's location)
+
+Use the city shown in the video. Rotate cities for national expansion.
+
+**"Segunda mano [CIUDAD]" — MEGA pattern (670K combined):**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| segunda mano Madrid | 250K |
+| segunda mano Barcelona | 170K |
+| segunda mano Valencia | 140K |
+| segunda mano Sevilla | 110K |
+
+**Secondhand furniture by city:**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| muebles segunda mano Madrid | 15K |
+| muebles segunda mano Barcelona | 10K |
+| muebles segunda mano Valencia | 7.7K |
+| muebles segunda mano Sevilla | 6.7K |
+| muebles segunda mano Zaragoza | 5.5K |
+| muebles segunda mano Malaga | 4.5K |
+| muebles segunda mano Granada | 3K |
+| muebles segunda mano Alicante | 2.5K |
+| muebles segunda mano Palma | 1.1K |
+
+**Mudanzas by city (moving = decluttering opportunity):**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| mudanzas Madrid | 41K |
+| mudanzas Barcelona | 34K |
+| mudanzas Valencia | 18K |
+
+**Punto limpio by city (waste disposal = recycling content):**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| punto limpio Madrid | 18K |
+| punto limpio Sevilla | 5.5K |
+
+**Cycling by city:**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| carril bici Madrid | 15K |
+| carril bici Barcelona | 12K |
+| carril bici Valencia | 10K |
+| en bici por Madrid | 10K |
+| carril bici Sevilla | 5.5K |
+| carril bici Zaragoza | 4.5K |
+| rutas bici Madrid | 4.5K |
+| carril bici Malaga | 3K |
+| rutas bici Barcelona | 1.6K |
+| rutas bici Valencia | 1.6K |
+| rutas bici Sevilla | 1.1K |
+
+**Neighborhoods by city:**
+| Keyword | Monthly Volume |
+|---------|---------------|
+| barrios Madrid | 10K |
+| barrios Barcelona | 7.7K |
+| barrios Valencia | 3.7K |
+| barrios Sevilla | 2.5K |
+
+### Tier 4 — Related Long-Tail (use opportunistically)
+
+- restaurar muebles de madera, restaurar muebles vintage, ideas para restaurar muebles viejos
+- como pintar muebles de madera (2.5K)
+- wallapop muebles [CIUDAD], muebles segunda mano particulares
+- reciclaje creativo ideas, reciclar cosas viejas, reciclar objetos caseros
+- gatos callejeros (3K), perros [CIUDAD] (2.5K) — for pet content
+
+### WEB/SEO ONLY (never on social — commercial penalty risk)
+
+These have real volume but are banned from social media descriptions. Use on website, app store, blog, SEO pages only.
+
+| Keyword | Monthly Volume | Platform |
+|---------|---------------|----------|
+| cosas gratis | 39K | Web/SEO only |
+| muebles gratis | 3K | Web/SEO only |
+| muebles gratis Madrid | 1.3K | Web/SEO only |
+| regalo muebles Madrid | 1.3K | Web/SEO only |
+| muebles gratis Barcelona | 540 | Web/SEO only |
+
+**Rule**: "gratis" is commercially deprioritized by all social platforms. Use "se regala", "compartido", "segunda vida" instead in social content.
+
+### Integration Rules
+
+1. **First sentence**: Must contain at least 1 Tier 1 keyword naturally
+2. **City content**: Include "segunda mano [CIUDAD]" (Tier 0) in description body when city-specific
+3. **Body**: Include 1-2 Tier 2 keywords where relevant
+4. **Local content**: Add 1 Tier 3 keyword matching the city shown in the video (not always Valencia)
+5. **Mudanzas/punto limpio angle**: When content relates to moving or waste disposal, reference these keywords naturally
+6. **Never force keywords** — if it reads awkwardly, rephrase or skip
+7. **Complement existing keyword strategy** — these Tiers work alongside the Unified Keyword Strategy above (segunda vida, consumo consciente, segunda mano)

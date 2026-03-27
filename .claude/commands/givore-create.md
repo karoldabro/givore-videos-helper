@@ -37,6 +37,12 @@ This command orchestrates the full Givore content creation process by calling ex
 
 ---
 
+### Creative Discovery (if needed)
+
+Before generating the script, if style inputs are incomplete, ask CREATIVE DISCOVERY questions (see /givore-script STEP -1) in one message.
+
+---
+
 ## PHASE 2: APPROVAL GATE
 
 After generating and saving the script, **STOP and ask the user**:

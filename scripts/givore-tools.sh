@@ -31,6 +31,8 @@ Quality checks:
   validate-all <project-dir> [--strict]    Validate all v1-v7 assembly configs
   check-render <config.json> <video.mp4>    Post-render validation (duration, aspect ratio)
   check-render-all <project-dir>           Post-render validation for all v1-v7
+  quality-check <script.txt> [opts]         Script quality validation (8 checks, PASS/WARN/FAIL)
+                                            Options: --last-scripts <paths...> --batch-manifest <path>
 
 Subtitles & captions:
   subs <audio.mp3> <captions.txt> [output.srt]  Generate SRT from audio + captions
@@ -657,6 +659,11 @@ case "${1:-help}" in
     check-render-all)
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh check-render-all <project-dir>" >&2; exit 1; }
         cmd_check_render_all "$2"
+        ;;
+    quality-check)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh quality-check <script.txt> [--last-scripts <paths...>] [--batch-manifest <path>]" >&2; exit 1; }
+        shift
+        python3 "/media/kdabrow/Programy/givore/scripts/quality_check.py" "$@"
         ;;
     thumbnail)
         [[ $# -lt 3 ]] && { echo "Usage: givore-tools.sh thumbnail <image> <title> [output.png]" >&2; exit 1; }

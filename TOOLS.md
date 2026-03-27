@@ -14,7 +14,7 @@ All reusable CLI tools for the givore content pipeline. These wrap recurring ope
 | `givore-tools.sh duration <file>` | Get audio/video duration in seconds |
 | `givore-tools.sh duration-all <project-dir>` | Duration of all .mp3 files across v1-v7 subdirs |
 | `givore-tools.sh video-info <file>` | Video dimensions (WxH) + duration |
-| `givore-tools.sh video-info-all <project-dir>` | Dimensions + duration for all drafts/finals in v1-v7 |
+| `givore-tools.sh video-info-all <project-dir>` | Dimensions + duration for all drafts in v1-v7 |
 
 **Use cases**:
 - After audio generation: check narration length before clip selection
@@ -38,11 +38,11 @@ givore-tools.sh video-info-all projects/2026-03-11_mesita/
 | Command | Description |
 |---------|-------------|
 | `givore-tools.sh init-project <slug>` | Create single project folder (`projects/<slug>/`) |
-| `givore-tools.sh init-batch <slug>` | Create batch folders (`projects/<slug>/v1-v7/` + `finals/`) |
+| `givore-tools.sh init-batch <slug>` | Create batch folders (`projects/<slug>/v1-v7/`) |
 
 **Use cases**:
 - `/givore-create` or `/givore-trial-create`: create the project folder before saving files
-- `/givore-batch`: create parent + v1-v7 + finals before batch generation
+- `/givore-batch`: create parent + v1-v7 before batch generation
 
 **Examples**:
 ```bash
@@ -61,6 +61,7 @@ givore-tools.sh init-batch 2026-03-13_mesita-cafe-mestalla
 | `givore-tools.sh render-draft <config.json>` | Assemble + render draft (540x960, 1000k) |
 | `givore-tools.sh render-final <config.json>` | Assemble + render final (1080x1920, 8000k) |
 | `givore-tools.sh render-all <project-dir> [draft\|final]` | Render all v1-v7 variants in one go |
+| `givore-tools.sh assemble-all <project-dir>` | Assemble all v1-v7 variants in one go |
 | `givore-tools.sh generate-config --audio <mp3> --clips <ids> --project-folder <dir>` | Auto-generate assembly_config.json from audio + clip IDs |
 | `givore-tools.sh place-sfx [args]` | Smart SFX placement from clip plan + subtitles |
 
@@ -69,7 +70,10 @@ givore-tools.sh init-batch 2026-03-13_mesita-cafe-mestalla
 | Command | Description |
 |---------|-------------|
 | `givore-tools.sh validate <config.json> [--strict]` | Pre-flight validation: checks files exist, paths are absolute, clips >= audio duration |
+| `givore-tools.sh validate-all <project-dir> [--strict]` | Validate all v1-v7 assembly configs in one go |
 | `givore-tools.sh check-render <config.json> <video.mp4>` | Post-render validation: checks duration matches, aspect ratio, file size |
+| `givore-tools.sh check-render-all <project-dir>` | Post-render validation for all v1-v7 (auto-detects video files) |
+| Quality check | `$GIVORE_TOOLS quality-check <script.txt> [--last-scripts <paths>] [--batch-manifest <path>]` |
 
 **Use cases**:
 - Before assembly: verify config is valid (files exist, clips cover audio)
@@ -134,21 +138,45 @@ givore-tools.sh place-sfx --clips /tmp/clip_plan.json --srt project/v1/video.srt
 
 **Use case**: After ElevenLabs audio generation, rename auto-generated filenames to pipeline-expected `[slug].mp3`.
 
+### Thumbnails
+
+| Command | Description |
+|---------|-------------|
+| `givore-tools.sh thumbnail <image> <title> [output.png]` | Generate thumbnail from background image + title text |
+| `givore-tools.sh thumbnail-from-video <video> <title> [output.png] [timestamp]` | Extract frame from video + generate thumbnail |
+| `givore-tools.sh batch-thumbnails <project-dir>` | Generate thumbnails for all v1-v7 (picks bg from `thumbnail/`, reads title from descriptions.txt) |
+
+**Use cases**:
+- After draft renders: `batch-thumbnails` auto-generates thumbnails for all variants using images from `thumbnail/` library
+- Custom background: `thumbnail` with a manually selected image
+- Frame extraction: `thumbnail-from-video` extracts a frame at a given timestamp
+
+**Examples**:
+```bash
+# Generate thumbnail from a custom image
+givore-tools.sh thumbnail /path/to/background.png "MUEBLES GRATIS EN VALENCIA"
+
+# Extract frame from draft and create thumbnail
+givore-tools.sh thumbnail-from-video projects/v1/draft.mp4 "TIRADO EN LA CALLE"
+
+# Generate thumbnails for all 7 batch variants (reads title from descriptions.txt)
+givore-tools.sh batch-thumbnails projects/2026-03-20_mesita/
+```
+
 ### Batch Operations
 
 | Command | Description |
 |---------|-------------|
-| `givore-tools.sh batch-status <project-dir>` | File checklist for all 7 variants |
-| `givore-tools.sh copy-finals <project-dir>` | Copy all vN/*_final.mp4 to finals/ folder |
+| `givore-tools.sh batch-status <project-dir>` | File checklist for all 7 variants (includes THUMB column) |
 
 **Use case**: Quick overview of which variants have script, audio, captions, subtitles, draft, and final renders.
 
 **Example output**:
 ```
-VAR  SCRIPT   AUDIO    CAPTS    SUBS     DRAFT    FINAL
----  ------   -----    -----    ----     -----    -----
-v1   YES      YES      YES      YES      YES      YES
-v2   YES      YES      YES      YES      YES      --
+VAR  SCRIPT   AUDIO    CAPTS    SUBS     DRAFT    THUMB    FINAL
+---  ------   -----    -----    ----     -----    -----    -----
+v1   YES      YES      YES      YES      YES      YES      YES
+v2   YES      YES      YES      YES      YES      YES      --
 ...
 ```
 
@@ -309,6 +337,17 @@ givore_db.py update 12 --section body,bridge,problem
 | `givore-tools.sh video-recent-clips [--last N]` | Unique clips used in last N videos (for exclusion) |
 | `givore-tools.sh video-delete <id>` | Delete video history entry |
 
+### Thumbnail History
+
+| Command | Description |
+|---------|-------------|
+| `givore-tools.sh thumbnail-add --date X --slug X --bg "1.png"` | Record which background image was used |
+| `givore-tools.sh thumbnail-list [--last N]` | List recent thumbnail history |
+| `givore-tools.sh thumbnail-recent-bgs [--last N]` | Backgrounds used in last N thumbnails (for exclusion) |
+| `givore-tools.sh thumbnail-delete <id>` | Delete thumbnail history entry |
+
+**Key command**: `thumbnail-recent-bgs` outputs backgrounds to avoid, used by `batch-thumbnails` to rotate through images.
+
 ### Migration (one-time)
 
 | Command | Description |
@@ -327,7 +366,7 @@ How these tools map to `/givore-video` and `/givore-batch` pipeline phases:
 | Pipeline Phase | Tool Command | Purpose |
 |---------------|--------------|---------|
 | Project setup (single) | `givore-tools.sh init-project <slug>` | Create project folder |
-| Project setup (batch) | `givore-tools.sh init-batch <slug>` | Create v1-v7 + finals folders |
+| Project setup (batch) | `givore-tools.sh init-batch <slug>` | Create v1-v7 folders |
 | B.4 / D.2: Audio generated | `givore-tools.sh duration <audio.mp3>` | Get audio length for clip planning |
 | B.4 / D.2: Audio rename | `givore-tools.sh rename-audio <dir> <slug>` | Rename ElevenLabs tts_*.mp3 files |
 | B.5 / D.3: Captions | `givore-tools.sh batch-captions <dir>` | Generate captions for all variants |
@@ -341,12 +380,12 @@ How these tools map to `/givore-video` and `/givore-batch` pipeline phases:
 | E.2: Review | `givore-tools.sh video-info-all <dir>` | Verify all drafts rendered |
 | E.3: Final render | `givore-tools.sh render-final <config>` | Full quality render (single variant) |
 | E.3: Final render (all) | `givore-tools.sh render-all <dir> final` | Render all v1-v7 at full quality |
-| E.3: Copy finals | `givore-tools.sh copy-finals <dir>` | Copy all finals to finals/ folder |
+| D.6b: Thumbnails | `givore-tools.sh batch-thumbnails <dir>` | Generate thumbnails for all variants |
 | B.8 / D.6: Config generation | `givore-tools.sh generate-config --audio <mp3> --clips <ids> --project-folder <dir>` | Auto-generate assembly_config.json |
 | Post-batch | `givore-tools.sh duration-all <dir>` | Compare all variant lengths |
 | Script rotation | `givore-tools.sh script-rotation` | Get rotation constraints before script gen |
 | Trial rotation | `givore-tools.sh trial-rotation` | Get rotation constraints before trial gen |
-| Clip exclusion | `givore-tools.sh video-recent-clips --last 5` | Get clips to avoid during selection |
+| Clip exclusion | `givore-tools.sh video-recent-clips --last 10` | Get clips to avoid during selection |
 | After script gen | `givore-tools.sh script-add --date ... --slug ...` | Record script metadata |
 | After trial gen | `givore-tools.sh trial-add --date ... --slug ...` | Record trial metadata |
 | After video gen | `givore-tools.sh video-add --date ... --slug ...` | Record video clips used |

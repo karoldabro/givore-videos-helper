@@ -4,6 +4,98 @@ Guidelines for maintaining positive, non-accusatory tone in viral scripts while 
 
 ---
 
+## Absolute Rules (NON-NEGOTIABLE)
+
+### 1. NEVER Encourage Taking Things From the Street
+
+Givore is a CONNECTION platform — people decide what to do. We observe, we connect, we don't instruct.
+
+**NEVER use**: "recógelo", "llévatelo a casa", "rescátalo", "coge esto", "no lo dejes ahí", "aprovéchalo"
+
+**USE instead**: "Alguien podría usarlo", "Esto sigue aquí", "Si alguien lo necesita, está en Givore", "Solo falta que alguien lo encuentre"
+
+### 2. GIVEAWAY-FIRST Framing
+
+The app's core value is helping people GIVE AWAY things they no longer need — BEFORE they end up on the street. Street finds are examples of waste that COULD HAVE BEEN AVOIDED if people were more connected.
+
+**Frame as**: "Esto no tendría que estar aquí. Si el dueño hubiera sabido que alguien lo quería..."
+
+**NEVER frame as**: "Mira qué tesoro me encontré" (treasure hunting), "Qué suerte he tenido" (lucky find)
+
+---
+
+## Anti-Marketing Voice Rules
+
+### The Voice
+
+You are a person on a bike in Valencia who genuinely cares about waste.
+You are NOT a content creator optimizing for engagement.
+You are NOT a brand ambassador.
+You are NOT a marketer writing copy.
+
+You are someone who sees perfectly good stuff on the street every day
+and thinks "qué pena, alguien podría usar esto" — and found a way to do something about it.
+
+### Marketing Language Red Flags
+
+If your script sounds like ANY of these, rewrite it:
+- An Instagram ad caption
+- A pitch deck for investors
+- A newsletter from a nonprofit
+- A TED talk about sustainability
+- A product page description
+
+### Authentic Voice Markers (MUST have 2+ per script)
+
+- Incomplete sentences: "Es que... mirad."
+- Self-interruptions: "Y lo mejor— bueno, ya lo veréis."
+- Genuine surprise reactions: "Madre mía, ¡pero si esto está nuevo!"
+- Casual asides: "Y eso que hoy no iba buscando nada, eh."
+- Street-level observations: "Había un señor mirándome raro mientras le hacía fotos"
+- Imperfect descriptions: "No sé qué madera es, pero pesa un montón"
+
+### Anti-Pattern Examples
+
+**BAD (Marketing):**
+```
+"Givore te conecta con tu comunidad local para dar una segunda vida
+a objetos que merecen ser reutilizados. Con nuestra plataforma,
+puedes compartir hallazgos en segundos."
+```
+
+**GOOD (Authentic):**
+```
+"Yo lo que hago es... mira. Abro Givore, le hago una foto rápida,
+pongo 'dos sillas de madera, Ruzafa'... y ya. En diez minutos
+alguien del barrio lo ha visto."
+```
+
+**BAD (Marketing):**
+```
+"Cada objeto rescatado es una victoria para el medio ambiente
+y una conexión nueva en nuestra comunidad."
+```
+
+**GOOD (Authentic):**
+```
+"Es que... mira. Estas sillas estaban aquí hace una hora.
+Ya las ha recogido alguien. Una hora. Así de fácil."
+```
+
+**BAD (Treasure hunting):**
+```
+"Hoy he encontrado un tesoro increíble en Benimaclet.
+Tres sillas de diseño esperándome en la acera."
+```
+
+**GOOD (Giveaway-first):**
+```
+"Tres sillas de madera en Benimaclet. Perfectas. Alguien se ha mudado
+y no sabía qué hacer con ellas. Si hubiera sabido que alguien las quería..."
+```
+
+---
+
 ## Core Principle: Viewer as Ally
 
 **The viewer is your ALLY in solving the waste problem, NOT part of the problem.**

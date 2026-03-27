@@ -48,12 +48,30 @@ Generate TWO separate files in the **same project folder** as the script:
 ### FILE 1: Descriptions
 Save to: `projects/[folder]/descriptions.txt`
 
-Contains all platform metadata in this order:
+Contains thumbnail title + all platform metadata in this order:
+0. **THUMBNAIL** - Short hook title for thumbnail overlay (5-7 words, ALL UPPERCASE)
 1. **FACEBOOK** - Community tone, 3-5 hashtags
 2. **INSTAGRAM** - Caption-first (125 char keyword hook), @givore.app, 3-5 hashtags
 3. **LINKEDIN** - Personal narrative, NO external links, 3 hashtags max
 4. **TIKTOK** - Casual tone, emoji, no commercial terms ("gratis"), 3-5 hashtags
 5. **YOUTUBE SHORTS** - Search-intent title (NO #Shorts in title, NO "GRATIS"), 3-5 hashtags
+
+**THUMBNAIL title rules**:
+- Max 5-7 words, ALL UPPERCASE
+- Remove emojis, hashtags, platform-specific text
+- Keep core curiosity/hook element from the script
+- Use power words: GRATIS, TIRADO, MIRA ESTO, INCREIBLE, EN LA CALLE, TESORO
+- Must be readable at small mobile thumbnail size (shorter = better)
+
+**THUMBNAIL section format** (placed FIRST in descriptions.txt):
+```
+═══════════════════════════════════════════════════════════
+                    THUMBNAIL
+═══════════════════════════════════════════════════════════
+
+MUEBLES GRATIS EN VALENCIA
+
+```
 
 ### FILE 2: Captions
 Save to: `projects/[folder]/captions.txt`
@@ -90,6 +108,7 @@ After reading the script, before generating metadata:
 ## Quality Checks
 
 Before outputting, verify:
+- [ ] THUMBNAIL section is FIRST in descriptions.txt with 5-7 word uppercase title
 - [ ] Platform order is correct (Facebook → Instagram → LinkedIn → TikTok → YouTube)
 - [ ] Each platform has unique title matching its tone
 - [ ] Hashtag counts: FB 3-5, IG 3-5, LinkedIn 3, TikTok 3-5, YouTube 3-5

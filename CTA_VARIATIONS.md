@@ -50,6 +50,28 @@ What's the PRIMARY goal of this video?
 | "El que encuentre algo mejor, que lo suba." | Competition |
 | "A ver quién encuentra algo en su barrio hoy." | Daily challenge |
 
+### Emoji-Comment CTAs (Low Friction, High Volume)
+| CTA | Best For |
+|-----|----------|
+| "Comenta con un emoji que describa tu reacción" | Universal engagement |
+| "Pon un 🏠 si alguna vez has tirado algo que luego te arrepentiste" | Relatable regret |
+| "🙋 si os pasa esto" | Quick identification |
+
+### Conditional Content CTAs (Creates Demand Signal)
+| CTA | Best For |
+|-----|----------|
+| "Comenta 'parte 2' y la publico mañana" | Series demand |
+| "Si este vídeo llega a 1000 likes, voy a [BARRIO] a buscar" | Like-driven milestone |
+| "Comenta tu barrio y voy a explorar qué se tira allí" | Location request |
+| "Si llegamos a 500 compartidos, hago la ruta nocturna" | Share-driven milestone |
+
+### Self-Reflection CTAs (Like-Driving)
+| CTA | Best For |
+|-----|----------|
+| "Toca dos veces si te ha hecho pensar" | Reflective like |
+| "Dale like si has pasado por delante de algo así hoy" | Daily awareness |
+| "Doble toque si esto te suena" | Relatable experience |
+
 ---
 
 ## 2. FOLLOW CTAs
@@ -126,6 +148,20 @@ What's the PRIMARY goal of this video?
 | "Si conocéis a alguien que odie el desperdicio... ya sabéis." | Value share |
 | "Compartidlo con vuestros vecinos." | Community share |
 | "Esto le va a flipar a alguien que conocéis." | Personal share |
+
+### WhatsApp-Specific CTAs (Hyper-Local)
+| CTA | Best For |
+|-----|----------|
+| "Manda esto a tu grupo de WhatsApp del barrio" | Neighborhood group |
+| "Envía esto al grupo de vecinos" | Community group |
+| "Comparte en tu grupo de mudanzas" | Moving/relocation group |
+
+### Targeted Share CTAs
+| CTA | Best For |
+|-----|----------|
+| "Comparte con alguien que odie tirar cosas buenas" | Anti-waste audience |
+| "Etiqueta a alguien que se muda pronto" | Moving audience |
+| "Envía esto a alguien que siempre dice 'eso lo tiro yo'" | Relatable personality |
 
 ---
 
@@ -271,11 +307,65 @@ Video 6: SAVE/SHARE CTA
 
 ---
 
+## 8. STORY-CONTINUATION CTAs
+
+**Use when:** Building anticipation for next video, serialized content, ongoing narratives
+
+**Goal:** Drive return views and follow for next episode
+
+### Continuation CTAs
+| CTA | Best For |
+|-----|----------|
+| "Mañana vuelvo. A ver qué hay." | Daily series, exploration |
+| "La historia de estas sillas no acaba aquí." | Item with follow-up potential |
+| "Os cuento qué pasó en el próximo video." | Cliffhanger ending |
+| "Esto es solo el primer capítulo." | Series opener |
+| "La semana que viene... mismo barrio. A ver si sigue ahí." | Location-based series |
+
+---
+
+## 9. QUESTION-FLIP CTAs
+
+**Use when:** Turning the lens back on the viewer, making them reflect on their own experience
+
+**Goal:** Create engagement through self-reflection and personal connection
+
+### Question-Flip CTAs
+| CTA | Best For |
+|-----|----------|
+| "Y en vuestro barrio... ¿qué hay?" | Location-based exploration |
+| "Seguro que habéis pasado por delante de algo así hoy." | Daily awareness |
+| "La pregunta es: ¿qué vais a hacer la próxima vez?" | Call to action through reflection |
+| "¿Cuántas veces habéis visto algo así... y habéis seguido de largo?" | Gentle awareness |
+| "Ahora que lo sabéis... ¿cambiaréis de ruta?" | Behavior change prompt |
+
+---
+
+## CTA Freshness Score
+
+Before selecting a CTA, calculate its freshness score. **Minimum score of 5 required to use a CTA.** If nothing scores 5+, CREATE a new CTA variation.
+
+| Criterion | Points |
+|-----------|--------|
+| CTA TYPE not used in last 5 scripts | +3 |
+| CTA TYPE not used in last 10 scripts | +5 |
+| Specific CTA TEXT never used before | +5 |
+| Different CATEGORY from last 2 scripts | +2 |
+| Trend-inspired (from STEP 0.3 research) | +3 |
+
+**How to apply:**
+1. Check rotation history for the candidate CTA type
+2. Sum all applicable points
+3. If score < 5, try a different CTA or create a new variation
+4. Log the selected CTA's freshness score in metadata
+
+---
+
 ## Input Field for Script Generation
 
 When requesting a script, specify:
 ```
-CTA Goal: download | comment | share | follow | community | awareness | sharing
+CTA Goal: download | comment | share | follow | community | awareness | sharing | continuation | question-flip
 ```
 
 If not specified, AI will select based on video type and recent CTA usage.
