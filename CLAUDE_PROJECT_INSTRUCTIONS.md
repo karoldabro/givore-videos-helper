@@ -133,56 +133,62 @@ These timing percentages are **guidance based on proven success**, not mandatory
 
 ---
 
-## Script Structure (MANDATORY SEQUENCE)
+## Script Structure
+
+**Select a structure from SCRIPT_STRUCTURES.md** (6 options: CLASSIC, COLD OPEN, LOOP, MICRO-NARRATIVE, PSP, COUNTDOWN). Never use the same structure as the last 2 scripts. Track via `script-add --structure-type`.
+
+**Select a persona from SCRIPT_PERSONAS.md** (5 voices: OBSERVADOR, ENERGETICO, VECINA, REPORTERO, POETA). Never use the same persona as the last 2 scripts. Track via `script-add --persona`. The persona defines vocabulary, sentence patterns, emotional palette, and ElevenLabs voice settings.
+
+### DEFAULT: CLASSIC Structure (one of 6 options)
 
 ```
-[HOOK: 0-3 seconds]
+[HOOK: ~0-3 seconds]
 - See HOOKS_LIBRARY.md for templates and decision tree
 - Maximum 15 words
 - Start immediately (no "Hola", no intro)
 
-[PROOF TEASE: 3-8 seconds]
-- Build anticipation without full reveal (unless proof-first hook)
-- "Quedaos hasta el final" / "Al final vais a flipar"
+[PROOF TEASE: ~3-8 seconds] (OPTIONAL — skip for COLD OPEN, MICRO, PSP)
+- See PROOF_TEASE_VARIATIONS.md for 8 styles
+- NEVER reuse the same proof tease wording across scripts
 
-[PROBLEM: 8-20 seconds]
+[PROBLEM: ~8-20 seconds]
 - See TONE_GUARDRAILS.md for positive framing
+- See PROBLEM_VARIATIONS.md for 6 problem angles
 - Focus on SITUATION, not PEOPLE blame
-- Use empathy ("Te da pena") not judgment ("Es absurdo")
 
-[IMPORTANCE: 20-25 seconds]
+[IMPORTANCE: ~20-25 seconds]
+- See IMPORTANCE_VARIATIONS.md for 7 importance angles
 - Show OPPORTUNITY, not GUILT
-- "Alguien lo aprovecharía" NOT "familias que necesitan"
-- Connect to viewer's values (sustainability, community)
 
-[RE-HOOK: 25-28 seconds]
-- Recapture attention with EMPOWERMENT
-- "Pero eso se puede cambiar" / "Y os voy a enseñar cómo"
+[RE-HOOK: ~25-28 seconds] (OPTIONAL — skip for COLD OPEN, MICRO, PSP, COUNTDOWN)
+- See REHOOK_VARIATIONS.md for 5 rehook styles
 - NEVER repeat opening hook
 
-[SOLUTION: 28-45 seconds]
-- Introduce Givore naturally (see PHRASE_VARIATIONS.md)
-- App demo if applicable (vary phrasing!)
-- "Por eso uso Givore" → Use variations from PHRASE_VARIATIONS.md
+[SOLUTION: ~28-45 seconds]
+- See SOLUTION_VARIATIONS.md for 8 solution approaches
+- See PHRASE_VARIATIONS.md for app demo + app intro variations
+- NEVER use the same solution approach as the last 2 scripts
 
-[PAYOFF: 45-60 seconds]
+[PAYOFF: ~45-60 seconds]
 - Deliver on hook promise
 - Reveal items if using mystery hook
-- Show results/impact
 
-[GRATITUDE: Optional - 5-10 seconds]
-- Thank community members who submitted posts
-- Can mention specific user logins or recent finds
-- Use when: highlighting community contributions, thanking active users
-- Placement: After payoff, before closing CTA
+[GRATITUDE: Optional]
 - See GRATITUDE_VARIATIONS.md for templates
-- Example: "Y oye, gracias a los que estáis subiendo cosas. @usuario_ejemplo encontró unas sillas brutales ayer. Esto funciona porque participáis."
+- Use every 3-4 videos, not every time
 
 [CLOSING + CTA: Last 5-10 seconds]
 - See CTA_VARIATIONS.md for options matching CTA Goal
-- Beautiful ending if scenic location
 - Maximum 2 sentences
 ```
+
+### TIMING GUIDELINES (not rules)
+
+Adapt timing to your story. Let the content decide pacing, not percentages. A MICRO-NARRATIVE is 20-35s total. A CLASSIC might be 45-60s. A LOOP might front-load differently. See SCRIPT_STRUCTURES.md for per-structure timing guidance.
+
+### ALTERNATIVE STRUCTURES
+
+For non-CLASSIC structures (COLD OPEN, LOOP, MICRO, PSP, COUNTDOWN), follow the section order defined in SCRIPT_STRUCTURES.md instead of the CLASSIC order above. Many sections are optional or combined in alternative structures.
 
 ---
 

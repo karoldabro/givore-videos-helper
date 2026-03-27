@@ -22,6 +22,7 @@ Usage:
     givore_db.py script-add --date X --slug X [--file X] [--hook-type X] ...
     givore_db.py script-list [--last N]
     givore_db.py script-rotation [--last N]        Compact rotation constraints
+    givore_db.py script-rotation-json [--last N]   JSON rotation constraints (machine-readable)
     givore_db.py script-delete <id>
 
     ## Trial history
@@ -106,6 +107,8 @@ CREATE TABLE IF NOT EXISTS script_history (
     visual_style TEXT,
     lighting TEXT,
     item_category TEXT,
+    structure_type TEXT,
+    persona TEXT,
     created_at TEXT DEFAULT (datetime('now'))
 );
 
@@ -741,7 +744,8 @@ def cmd_generate_config(args):
 # ============================================================
 
 SCRIPT_FIELDS = ["hook_type", "cta_type", "proof_tease", "problem_angle",
-                 "rehook_style", "visual_style", "lighting", "item_category"]
+                 "rehook_style", "visual_style", "lighting", "item_category",
+                 "structure_type", "persona"]
 
 
 def cmd_script_add(args):
@@ -751,11 +755,13 @@ def cmd_script_add(args):
     conn.execute(
         """INSERT INTO script_history
            (date, project_slug, file_path, hook_type, cta_type, proof_tease,
-            problem_angle, rehook_style, visual_style, lighting, item_category)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            problem_angle, rehook_style, visual_style, lighting, item_category,
+            structure_type, persona)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (args.date, args.slug, args.file, args.hook_type, args.cta_type,
          args.proof_tease, args.problem_angle, args.rehook_style,
-         args.visual_style, args.lighting, args.item_category)
+         args.visual_style, args.lighting, args.item_category,
+         args.structure_type, args.persona)
     )
     conn.commit()
     conn.close()
@@ -814,6 +820,62 @@ def cmd_script_rotation(args):
         else:
             advice = "avoid these"
         print(f"  {field:<16} {values_str:<50} -> {advice}")
+
+
+def cmd_script_rotation_json(args):
+    """Output script rotation constraints as machine-readable JSON."""
+    import json
+    ensure_schema()
+    conn = get_db()
+    limit = args.last or 5
+
+    # --- Script history fields ---
+    rows = conn.execute(
+        "SELECT * FROM script_history ORDER BY date DESC, id DESC LIMIT ?",
+        (limit,)
+    ).fetchall()
+
+    avoid = {}
+    if rows:
+        for field in SCRIPT_FIELDS:
+            values = [r[field] for r in rows if r[field]]
+            if field == "proof_tease":
+                # Keep raw values (not deduplicated) so consumer sees the pattern
+                avoid[field] = values
+            else:
+                avoid[field] = sorted(set(values))
+
+    # --- Recently used clips (same logic as video-recent-clips, last 10 videos) ---
+    clip_limit = 10
+    clip_rows = conn.execute(
+        """SELECT DISTINCT vc.clip_name
+           FROM video_clips_used vc
+           JOIN video_history vh ON vc.video_id = vh.id
+           WHERE vh.id IN (SELECT id FROM video_history ORDER BY date DESC, id DESC LIMIT ?)""",
+        (clip_limit,)
+    ).fetchall()
+
+    recent_clip_names = sorted(r["clip_name"] for r in clip_rows) if clip_rows else []
+
+    # Resolve clip names to DB IDs where possible
+    recent_clip_ids = []
+    if recent_clip_names:
+        placeholders = ",".join("?" for _ in recent_clip_names)
+        id_rows = conn.execute(
+            f"SELECT id FROM clips WHERE filename IN ({placeholders})",
+            recent_clip_names,
+        ).fetchall()
+        recent_clip_ids = sorted(r["id"] for r in id_rows)
+
+    conn.close()
+
+    result = {
+        "last_n": len(rows),
+        "avoid": avoid,
+        "recent_clips": recent_clip_ids,
+        "recent_clip_names": recent_clip_names,
+    }
+    print(json.dumps(result, ensure_ascii=False))
 
 
 def cmd_script_delete(args):
@@ -1466,12 +1528,17 @@ def main():
     p_sa.add_argument("--visual-style", default=None)
     p_sa.add_argument("--lighting", default=None)
     p_sa.add_argument("--item-category", default=None)
+    p_sa.add_argument("--structure-type", default=None)
+    p_sa.add_argument("--persona", default=None)
 
     p_sl = sub.add_parser("script-list", help="List recent script history")
     p_sl.add_argument("--last", type=int, default=10)
 
     p_sr = sub.add_parser("script-rotation", help="Show script rotation constraints")
     p_sr.add_argument("--last", type=int, default=3)
+
+    p_srj = sub.add_parser("script-rotation-json", help="Script rotation constraints as JSON")
+    p_srj.add_argument("--last", type=int, default=5)
 
     p_sd = sub.add_parser("script-delete", help="Delete script history entry")
     p_sd.add_argument("id", type=int)
@@ -1584,6 +1651,7 @@ def main():
         "script-add": cmd_script_add,
         "script-list": cmd_script_list,
         "script-rotation": cmd_script_rotation,
+        "script-rotation-json": cmd_script_rotation_json,
         "script-delete": cmd_script_delete,
         # Trial history
         "trial-add": cmd_trial_add,

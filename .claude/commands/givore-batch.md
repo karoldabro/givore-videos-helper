@@ -1,32 +1,20 @@
 # Givore Batch Variant Pipeline
 
-Generate 7 variants of one topic in a single session. Variant 1 = full pipeline with approvals. Variants 2-7 = delta generation from v1 base. Each variant gets unique script, audio, metadata, and video assembly.
+Generate 7 variants of one topic in a single session. Variant 1 = full pipeline with approvals. Variants 2-7 = delta generation from v1 base.
 
-## APPROVAL GATES (only 3 — everything else runs automatically)
+## APPROVAL GATES (only 3)
 
-Only pause for user input at these 3 gates. Between gates, execute ALL steps automatically:
 1. **Gate 1**: v1 script approval (Step B.3)
 2. **Gate 2**: v1 clip/video plan approval (Step B.7)
-3. **Gate 3**: v1 final confirmation + v2-v7 already rendered as finals (Step E.2)
-
-All other steps (audio generation, captions, subtitles, metadata, clip selection, assembly, rendering) run without pausing. Use batch commands (`batch-captions`, `batch-subs`, `rename-audio`, `render-all`) to process all variants in single commands.
+3. **Gate 3**: v1 final confirmation (Step E.2)
 
 ## AUTOMATION RULES
 
-- Between gates, execute ALL steps without pausing for confirmation
-- NEVER ask "should I proceed?" or "¿continúo?" between steps within a phase
+- Between gates, execute ALL steps without pausing
+- NEVER ask "should I proceed?" between steps
 - NEVER ask permission to run CLI tools — they are pre-approved
-- Only pause at the 3 defined gates above
 - All `$GIVORE_TOOLS` commands, ElevenLabs TTS, and file writes are pre-approved
-- If a step fails, fix it and continue — do NOT ask the user unless the fix requires creative input
-
-## Project Root
-
-**All file paths in this command are relative to the project root: `/media/kdabrow/Programy/givore/`**
-
-When using the Read tool or any file operation, always prepend this path. For example:
-- Rotation history → `$GIVORE_TOOLS script-rotation` / `trial-rotation` / `video-recent-clips` (DB queries)
-- Clip DB queries: `$GIVORE_TOOLS clips list` (see CLI Tools table below)
+- If a step fails, fix and continue — only ask the user if the fix requires creative input
 
 ## Constants
 
@@ -38,656 +26,310 @@ TEMPLATE        = /media/kdabrow/Programy/givore/projects/template.kdenlive-cli.
 ASS_TEMPLATE    = /media/kdabrow/Programy/givore/projects/template.kdenlive.ass
 ```
 
-Profile: 1080x1920 vertical, 30fps, 9:16 (TikTok/Reels)
+Profile: 1080x1920 vertical, 50fps, 9:16 (TikTok/Reels)
 
 ## CLI Tools (MANDATORY)
 
-All bash commands MUST use `$GIVORE_TOOLS` or `$GIVORE_DB`. Do NOT use raw ffprobe, python scripts, or inline bash loops.
+All bash commands MUST use `$GIVORE_TOOLS`. No raw ffprobe, python, or inline bash.
 
 | Task | Command |
 |------|---------|
-| Audio duration (single) | `$GIVORE_TOOLS duration <file.mp3>` |
-| Audio duration (all 7) | `$GIVORE_TOOLS duration-all <project-dir>` |
-| Video info (single) | `$GIVORE_TOOLS video-info <file.mp4>` |
-| Video info (all 7) | `$GIVORE_TOOLS video-info-all <project-dir>` |
-| Clip search | `$GIVORE_TOOLS clips search <section>` |
-| Clip filter | `$GIVORE_TOOLS clips list --section X --style Y --mood Z` |
+| **Generate variant matrix** | `$GIVORE_TOOLS batch-plan --mode <mode> --variant-count 7 --project-dir <dir>` |
+| **Validate plan** | `$GIVORE_TOOLS batch-validate-plan <batch_plan.json>` |
+| **Generate config with SFX** | `$GIVORE_TOOLS generate-config --audio <mp3> --clips <ids> --sfx "WHOOSH@2.8,DING@15.0" --project-folder <dir>` |
+| Audio duration | `$GIVORE_TOOLS duration <file.mp3>` |
+| Duration all 7 | `$GIVORE_TOOLS duration-all <project-dir>` |
+| Clip search | `$GIVORE_TOOLS clips list [--section X --style Y --mood Z --visual-hooks]` |
 | Duration validation | `$GIVORE_TOOLS clips plan <audio> <id1,id2,...>` |
-| Pre-flight validation | `$GIVORE_TOOLS validate <config.json> [--strict]` |
+| Pre-flight validation | `$GIVORE_TOOLS validate <config.json>` |
 | Post-render validation | `$GIVORE_TOOLS check-render <config.json> <video.mp4>` |
-| Assemble project | `$GIVORE_TOOLS assemble <config.json>` |
+| Assemble | `$GIVORE_TOOLS assemble <config.json>` |
 | Draft render | `$GIVORE_TOOLS render-draft <config.json>` |
 | Final render | `$GIVORE_TOOLS render-final <config.json>` |
-| Subtitles (single) | `$GIVORE_TOOLS subs <audio.mp3> <captions.txt>` |
-| Captions from script | `$GIVORE_TOOLS captions <script.txt> [output.txt]` |
-| Batch captions (all 7) | `$GIVORE_TOOLS batch-captions <project-dir>` |
-| Batch subtitles (all 7) | `$GIVORE_TOOLS batch-subs <project-dir>` |
-| Rename ElevenLabs audio | `$GIVORE_TOOLS rename-audio <project-dir> <slug>` |
-| Create project folder | `$GIVORE_TOOLS init-project <slug>` |
-| Create batch folders | `$GIVORE_TOOLS init-batch <slug>` |
-| Batch thumbnails (all 7) | `$GIVORE_TOOLS batch-thumbnails <project-dir>` |
+| Batch captions | `$GIVORE_TOOLS batch-captions <project-dir>` |
+| Batch subtitles | `$GIVORE_TOOLS batch-subs <project-dir>` |
+| Rename audio | `$GIVORE_TOOLS rename-audio <project-dir> <slug>` |
+| Batch thumbnails | `$GIVORE_TOOLS batch-thumbnails <project-dir>` |
 | Batch status | `$GIVORE_TOOLS batch-status <project-dir>` |
-| Generate assembly config | `$GIVORE_TOOLS generate-config --audio <mp3> --clips <ids> --project-folder <dir>` |
-| Validate all configs | `$GIVORE_TOOLS validate-all <project-dir> [--strict]` |
-| Assemble all variants | `$GIVORE_TOOLS assemble-all <project-dir>` |
+| Validate all | `$GIVORE_TOOLS validate-all <project-dir>` |
+| Assemble all | `$GIVORE_TOOLS assemble-all <project-dir>` |
+| Render all | `$GIVORE_TOOLS render-all <project-dir> [draft\|final]` |
 | Check all renders | `$GIVORE_TOOLS check-render-all <project-dir>` |
-| Render all variants | `$GIVORE_TOOLS render-all <project-dir> [draft\|final]` |
-| Thumbnail history | `$GIVORE_TOOLS thumbnail-add --date X --slug X --bg "1.png"` |
-| Recent backgrounds | `$GIVORE_TOOLS thumbnail-recent-bgs [--last N]` |
-
-Use `generate-config` to auto-create assembly_config.json from audio + clip IDs (resolves paths/durations from DB, calculates positions, extends last clip if needed). Use `render-all` to render all v1-v7 in one command.
+| Init batch folders | `$GIVORE_TOOLS init-batch <slug>` |
+| Script rotation | `$GIVORE_TOOLS script-rotation` |
+| Recent clips | `$GIVORE_TOOLS video-recent-clips --last 10` |
+| Script add (v1 only) | `$GIVORE_TOOLS script-add [args]` |
+| Video add (v1 only) | `$GIVORE_TOOLS video-add [args]` |
+| Thumbnail add (v1 only) | `$GIVORE_TOOLS thumbnail-add [args]` |
 
 ---
 
 ## MODE DETECTION
 
-Detect content mode from `$ARGUMENTS`:
+**Street-finds** (default): Topic mentions found items, cycling, street
+- Folder: `projects/[date]_[topic-slug]/`
 
-**Street-finds mode** (default): Topic mentions found items, cycling, street, location
-- Folder prefix: `projects/[date]_[topic-slug]/`
-- History: `$GIVORE_TOOLS script-rotation` (DB query)
-- Reference files: 9 script refs + metadata instructions
-
-**Trial mode**: Arguments contain trial keywords (audience names like RENOVATING, NEW-HOUSE, OLD-ITEMS, MOVING, CLUTTER, SEASONAL, or explicit "trial")
-- Folder prefix: `projects/trial-[date]_[topic-slug]/`
-- History: `$GIVORE_TOOLS trial-rotation` (DB query)
-- Reference files: 7 trial refs + metadata instructions
-
-Set `MODE = street-finds | trial` and use throughout.
+**Trial**: Arguments contain trial keywords (RENOVATING, NEW-HOUSE, etc.)
+- Folder: `projects/trial-[date]_[topic-slug]/`
 
 ---
 
-## FOLDER STRUCTURE
+## PHASE A: GENERATE PLAN (AUTOMATED)
 
-```
-projects/[prefix][date]_[topic-slug]/
-├── BATCH_MANIFEST.md
-├── v1/
-│   ├── [slug].txt
-│   ├── [slug].mp3
-│   ├── [slug].srt
-│   ├── captions.txt
-│   ├── descriptions.txt
-│   ├── clip_map.txt
-│   ├── project.json
-│   ├── project.mlt
-│   ├── draft.mp4
-│   └── thumbnail.png
-├── v2/ ... v7/  (same file structure, final renders stay in vN/ folders)
+### Step A.1: Create folders
+```bash
+$GIVORE_TOOLS init-batch [prefix][date]_[topic-slug]
 ```
 
----
-
-## PHASE A: BASE ANALYSIS (run once — DO NOT re-read these files later)
-
-### Step A.1: Read History & Recent Scripts
-
-**Street-finds**:
-1. Run `$GIVORE_TOOLS script-rotation` to get rotation constraints
-2. Read last 5 script texts from paths in rotation output (for repetition avoidance)
-3. Run `$GIVORE_TOOLS video-recent-clips --last 10` for clip rotation
-
-**Trial**:
-1. Run `$GIVORE_TOOLS trial-rotation` to get rotation constraints
-2. Read last 2 trial script texts from paths in rotation output
-3. Run `$GIVORE_TOOLS video-recent-clips --last 10` for clip rotation
-
-### Step A.2: Read ALL Reference Files (ONE TIME ONLY)
-
-**Street-finds** — read all 9:
-1. `CLAUDE_PROJECT_INSTRUCTIONS.md`
-2. `HOOKS_LIBRARY.md`
-3. `TONE_GUARDRAILS.md`
-4. `CTA_VARIATIONS.md`
-5. `PHRASE_VARIATIONS.md`
-6. `PROBLEM_VARIATIONS.md`
-7. `IMPORTANCE_VARIATIONS.md`
-8. `REHOOK_VARIATIONS.md`
-9. `GRATITUDE_VARIATIONS.md`
-
-**Trial** — read all 7:
-1. `trial/TRIAL_AUDIENCES.md`
-2. `trial/TRIAL_FORMATS.md`
-3. `trial/TRIAL_TONES.md`
-4. `trial/TRIAL_MARKETING.md`
-5. `trial/TRIAL_HOOKS.md`
-6. `trial/TRIAL_CTAS.md`
-7. `trial/TRIAL_QUALITY.md`
-
-**Shared (both modes)**:
-- `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`
-- `CONTENT_PILLARS.md` (broad top-of-funnel content strategy — 15 pillars, hooks, formats)
-- Clip database: `$GIVORE_TOOLS clips list` (DB is source of truth)
-- `Audio effects/SFX_CATALOG.md`
-
-### Step A.3: Compute Rotation Constraints
-
-From DB rotation commands, get:
-- Last 5 hook types → AVOID these
-- Last 5 CTA types → AVOID these
-- Last 5 problem angles → AVOID these (street-finds)
-- Last 5 rehook styles → AVOID these (street-finds)
-- Last 10 video clips used → AVOID these
-- SFX: Use Basic Tier only (WHOOSH, DING, CHIME, POP, SWOOSH) — see SFX_CATALOG.md
-
-### Step A.4: Pre-Plan Variant Matrix
-
-Assign 7 DISTINCT values for each varying element. Select from available pools (excluding rotation constraints):
-
-**Street-finds variant elements:**
-- 7 different Hook Types (from HOOKS_LIBRARY)
-- 7 different CTA Types (from CTA_VARIATIONS)
-- 7 different Problem Angles (from PROBLEM_VARIATIONS)
-- 7 different Rehook Styles (from REHOOK_VARIATIONS)
-- 7 different Visual Hook Clips (from clip DB: `$GIVORE_TOOLS clips list --visual-hooks`)
-- SFX: Use Basic Tier sounds from SFX_CATALOG.md. Same sounds CAN repeat across variants.
-
-**Trial variant elements:**
-- 7 different Hook approaches (from TRIAL_HOOKS)
-- 7 different CTA approaches (from TRIAL_CTAS)
-- 7 different tone/wording angles
-- 7 different Visual Hook Clips
-- SFX from Basic Tier (can repeat across variants)
-
-If fewer than 7 unique options exist for any element, cycle back to least-recently-used.
-
-### Step A.4b: Cross-Variant Clip Budget
-
-Track clip usage ACROSS all 7 variants to prevent excessive reuse:
-
-**CLIP REUSE RULES (within a single batch):**
-1. **Visual hook clips**: Each variant MUST use a DIFFERENT visual hook clip (7 unique hooks)
-2. **Body clips**: Any single clip may appear in at most 3 out of 7 variants
-3. **Ending clips**: Ending clips CAN repeat (limited pool) but try to use 3+ different ones
-4. **Bridge clips**: Same bridge clip in at most 4 out of 7 variants
-
-Maintain a CLIP_USAGE counter in BATCH_MANIFEST.md (see template below). Before selecting clips for variant N, check this table. If a clip is at its limit, choose an alternative.
-
-### Step A.5: Create Folder Structure + BATCH_MANIFEST.md
-
-1. Create all folders: `$GIVORE_TOOLS init-batch [prefix][date]_[topic-slug]`
-   (creates parent + v1-v7 + finals in one command)
-2. Write initial `BATCH_MANIFEST.md` (template below)
-
-### BATCH_MANIFEST.md Template
-
-```markdown
-# Batch: [topic-slug]
-Date: [date]
-Mode: [street-finds | trial]
-Topic: [full topic description]
-Items: [specific items + condition]
-Location: [neighborhood(s)]
-
-## Variant Matrix
-
-| Element | v1 | v2 | v3 | v4 | v5 | v6 | v7 |
-|---------|----|----|----|----|----|----|-----|
-| Hook Type | | | | | | | |
-| Hook Wording (first line) | | | | | | | |
-| CTA Type | | | | | | | |
-| CTA Wording (last line) | | | | | | | |
-| Problem Angle | | | | | | | |
-| Rehook Style | | | | | | | |
-| Visual Hook Clip | | | | | | | |
-| Body Clip Order | | | | | | | |
-| SFX (2-4 from Basic Tier) | | | | | | | |
-
-## Used Elements (updated after each variant)
-Hook Types: []
-CTA Types: []
-Problem Angles: []
-Rehook Styles: []
-Visual Hook Clips: []
-SFX: [Basic Tier, 2-4 per variant, subtitle-timed]
-
-## Clip Usage Tracker (cross-variant reuse prevention)
-
-| Clip ID | Clip Name | Used in variants | Limit |
-|---------|-----------|-----------------|-------|
-| | | | hook: 1, body: 3, bridge: 4, end: 7 |
+### Step A.2: Generate variant matrix
+```bash
+$GIVORE_TOOLS batch-plan --mode [detected] --variant-count 7 --project-dir [parent]
 ```
+Add `--exclude-hooks "X,Y"`, `--exclude-ctas "X,Y"`, `--location-filter "benimaclet"` if user specified.
+
+### Step A.3: Validate plan
+```bash
+$GIVORE_TOOLS batch-validate-plan [parent]/batch_plan.json
+```
+If FAIL, re-run batch-plan with `--seed [different]`. If WARN (cycling expected), proceed.
+
+### Step A.4: Read the plan
+Read `batch_plan.json`. Each variant has pre-computed assignments:
+- hook_type, cta_type, problem_angle, rehook_style, importance_angle
+- proof_tease_style, solution_approach, item_intro_style
+- structure, persona, persona_voice_settings
+- visual_hook_clip_id
+
+### Step A.5: Read creative rules
+Read `givore-batch-creative.md` ONCE. This has all writing rules, persona markers, and uniqueness constraints.
+
+Also read: `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`, `Audio effects/SFX_CATALOG.md`
 
 ---
 
 ## PHASE B: VARIANT 1 — FULL PIPELINE
 
-Generate variant 1 using the full logic from `/givore-create` (street-finds) or `/givore-trial-create` (trial). All reference files are already loaded from Phase A — DO NOT re-read them.
-
 ### Step B.1: Collect Inputs (if not in $ARGUMENTS)
 
-**Street-finds** — collect same inputs as `/givore-script`:
-- Mandatory: Topic, Items + condition, Video structure, Location (auto-correct Valenciano → Castellano)
-- Style: Hook style, Tone, CTA goal, Reveal timing
-- Optional: User gratitude, Visual style, Lighting, Item category
-
-**Trial** — collect same inputs as `/givore-trial`:
-- Mandatory: Audience, Tone
-- Style: Format, Marketing approach, Duration
+**Street-finds**: Topic, Items + condition, Location, Hook style, Tone, CTA goal, Reveal timing
+**Trial**: Audience, Tone, Format, Marketing approach
 
 ### Step B.2: Generate v1 Script
 
-Follow the FULL script generation logic from the respective command:
+Read v1's assignments from `batch_plan.json` (persona, structure, hook_type, etc.).
+Write the script in the assigned persona's voice following the assigned structure.
+Apply all rules from `givore-batch-creative.md`.
 
-**Street-finds**: Apply STEP 0.5 (location correction), STEP 0.8 (performance patterns), all quality checks from `/givore-script`. Generate the 8-section script.
-
-**Trial**: Apply compatibility check, all quality checks from `/givore-trial`. Generate the script in the chosen format.
+Run quality check: `python3 scripts/quality_check.py [parent]/v1/[slug].txt`
 
 Save to: `[parent]/v1/[slug].txt`
 
 ### Step B.3: APPROVAL GATE 1 — Script
 
-```
-📝 VARIANTE 1 — Script generado: v1/[slug].txt
+Display script. Ask: Aprobar / Editar / Cancelar.
 
-[Display complete script]
+### Step B.4: Generate Audio (ElevenLabs)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-¿Aprobar script base para el batch?
-
-- Sí → Continuar (este script será la base para variantes 2-7)
-- Editar → Hacer cambios antes de continuar
-- No → Cancelar batch
-```
-
-**CRITICAL**: Do NOT proceed without explicit approval. This script is the foundation for all 7 variants.
-
-### Step B.4: Generate v1 Audio (ElevenLabs)
-
-**Street-finds voice config:**
+Use persona_voice_settings from batch_plan.json:
 ```
 voice_id: "HIYif4jehvc9P9A8DYbX"
 model_id: "eleven_multilingual_v2"
 language: "es"
-stability: 0.35
-similarity_boost: 0.4
-style: 0.3
+stability: [from plan]
+similarity_boost: [from plan]
+style: [from plan]
 use_speaker_boost: true
-speed: 1.06
+speed: [from plan]
 output_format: "mp3_44100_128"
 output_directory: "[parent]/v1/"
 ```
 
-**Trial voice config** — use tone-specific settings:
+### Step B.5: Metadata + Captions + Subtitles
 
-| Tone | Speed | Stability | Style |
-|------|-------|-----------|-------|
-| HUMORISTIC | 1.10 | 0.30 | 0.35 |
-| EMPATHETIC | 1.02 | 0.40 | 0.35 |
-| PROVOCATIVE | 1.08 | 0.30 | 0.40 |
-| DRAMATIC | 0.98 | 0.35 | 0.45 |
-| RELATABLE | 1.06 | 0.35 | 0.30 |
-| SARCASTIC | 1.08 | 0.25 | 0.35 |
+1. Generate `descriptions.txt` (THUMBNAIL title first, then 5 platforms)
+   - THUMBNAIL format: plain `THUMBNAIL\nTITLE TEXT` (no separator bars around it)
+   - Follow `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`
+2. Generate `captions.txt` (2-3 words/line)
+3. Run: `$GIVORE_TOOLS subs [parent]/v1/[slug].mp3 [parent]/v1/captions.txt`
 
-### Step B.5: Generate v1 Metadata + Captions + Subtitles
+### Step B.6: Clip + SFX Selection (AI-DRIVEN)
 
-1. Generate `descriptions.txt` (THUMBNAIL title + 5 platforms: FB → IG → LinkedIn → TikTok → YouTube)
-   - THUMBNAIL section FIRST: 5-7 word uppercase hook title (power words: GRATIS, TIRADO, MIRA ESTO, INCREIBLE, EN LA CALLE, TESORO)
-   - Follow rules from `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md` (already loaded)
-   - For trial INDIRECT mode: no brand mentions in descriptions
-2. Generate `captions.txt` (2-3 words/line, plain text)
-3. Run subtitles: `$GIVORE_TOOLS subs [parent]/v1/[slug].mp3 [parent]/v1/captions.txt`
+**You are the video editor.** Read clip descriptions and select clips matching the narrative arc.
 
-Save all to `[parent]/v1/`
+1. Get audio duration: `$GIVORE_TOOLS duration [parent]/v1/[slug].mp3`
+2. Read SRT for subtitle timestamps
+3. Query clips: `$GIVORE_TOOLS clips list` + `$GIVORE_TOOLS video-recent-clips --last 10`
+4. **Select clips matching narrative energy:**
+   - HOOK: Dynamic clips (reveals, gestures) — use visual_hook_clip_id from plan
+   - PROBLEM: Urban reality (traffic, crossings, obstacles)
+   - IMPORTANCE: Contemplative (paths, landmarks)
+   - SOLUTION/PAYOFF: Calmer, scenic clips
+   - CTA/ENDING: `[end]` clip MUST be last, used once only
+5. **Place 2-4 SFX** using subtitle timestamps:
+   - Read script to identify narrative moments (transition, reveal, solution, CTA)
+   - Match to subtitle START TIME for precise positioning
+   - Basic Tier only: WHOOSH, DING, CHIME, POP, SWOOSH
+   - All volume = 0.03 (NEVER above 0.04)
+6. Validate: `$GIVORE_TOOLS clips plan "[AUDIO]" [id1],[id2],...`
 
-### Step B.6: v1 Clip + SFX Selection (AI-Driven)
+### QUALITY CHECKLIST
 
-Follow the visual storytelling guidelines from `/givore-video` Phase 2:
-
-1. Parse script sections + get audio duration (`$GIVORE_TOOLS duration`) + parse subtitle timing
-2. Query clip catalog (`$GIVORE_TOOLS clips list`) and rotation history (`$GIVORE_TOOLS video-recent-clips --last 5`)
-3. **You are the video editor** — read clip descriptions and select clips that tell a visual story matching the script's narrative arc (see `/givore-video` Step 2.2 for principles)
-4. Place SFX using Basic Tier + subtitle timing (see `/givore-video` Step 2.4)
-5. Validate duration: `$GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],...` — clips total MUST be >= audio total
-6. Generate combined clip + SFX plan for approval
-
-### QUALITY CHECKLIST (MANDATORY — verify before assembly)
-
-**Clip integrity:**
-- [ ] No duplicate clips — each file appears exactly once
-- [ ] Ending clip (`[end]`, `[hook | end]`, `[hook|ending]`) is LAST clip, used at most once
-- [ ] Clips total duration >= audio duration (confirmed via `$GIVORE_TOOLS clips plan`)
-- [ ] All clip paths are absolute (start with `/media/kdabrow/Programy/givore/`)
-
-**SFX integrity:**
-- [ ] ONLY Basic Tier SFX used (WHOOSH, DING, CHIME, POP, SWOOSH)
-- [ ] ALL SFX volume = 0.03 (NEVER above 0.04)
-- [ ] 2-4 SFX total (not more)
-- [ ] Each SFX position matches a subtitle timestamp (not arbitrary)
-- [ ] Minimum 1.5s spacing between SFX
-- [ ] All SFX paths are absolute
-
-**Technical specs (do NOT deviate):**
-- [ ] Template: `projects/template.kdenlive-cli.json` (1080x1920, 50fps, 9:16)
-- [ ] ASS template: `projects/template.kdenlive.ass`
-- [ ] Profile: vertical 9:16 (NOT 16:9 — causes miniaturized video)
-- [ ] FPS: 50 (NOT 25 or 30 — causes 2x duration render bug)
-
-**NEVER proceed to assembly with clips shorter than audio** — this causes frozen last frame.
+- [ ] No duplicate clips
+- [ ] Ending clip is LAST, used once
+- [ ] Clips total >= audio duration
+- [ ] ONLY Basic Tier SFX, volume 0.03
+- [ ] 2-4 SFX, each at a subtitle timestamp
+- [ ] Min 1.5s spacing between SFX
 
 ### Step B.7: APPROVAL GATE 2 — Clip Plan
 
+Display clip + SFX plan. Ask: Aprobar / Cambiar.
+
+### Step B.8: Assembly + Draft Render
+
+Generate config using the `--sfx` shorthand:
+```bash
+$GIVORE_TOOLS generate-config --audio [mp3] --clips [id1,id2,...] --sfx "WHOOSH@6.1,DING@37.5,POP@47.2" --project-folder [parent]/v1/
+$GIVORE_TOOLS validate [parent]/v1/assembly_config.json
+$GIVORE_TOOLS assemble [parent]/v1/assembly_config.json
+$GIVORE_TOOLS render-draft [parent]/v1/assembly_config.json
+$GIVORE_TOOLS check-render [parent]/v1/assembly_config.json [parent]/v1/draft.mp4
 ```
-🎬 VARIANTE 1 — Plan de clips y SFX:
-
-[Display clip plan table]
-[Display SFX plan table]
-
-¿Aprobar plan de video?
-- Sí → Ensamblar y renderizar borrador
-- Cambiar → Especifica cambios
-```
-
-### Step B.8: v1 Assembly + Draft Render
-
-1. Generate assembly config JSON → `[parent]/v1/assembly_config.json`
-   - **CRITICAL**: All paths MUST be absolute
-2. **MANDATORY**: Run pre-flight validation:
-   ```bash
-   $GIVORE_TOOLS validate [parent]/v1/assembly_config.json
-   ```
-   If validation fails, fix issues before proceeding. NEVER skip this step.
-3. Run assembly: `$GIVORE_TOOLS assemble [parent]/v1/assembly_config.json`
-4. Render draft: `$GIVORE_TOOLS render-draft [parent]/v1/assembly_config.json`
-5. **MANDATORY**: Run post-render validation:
-   ```bash
-   $GIVORE_TOOLS check-render [parent]/v1/assembly_config.json [parent]/v1/draft.mp4
-   ```
-   If `RENDER_DURATION_MISMATCH`, re-check clips and re-assemble.
-6. Generate `clip_map.txt` → save to `[parent]/v1/`
-
-### Assembly Config JSON Format
-
-**CRITICAL**: The `sfx` array MUST follow this exact format for SFX to be audible:
-
-```json
-{
-  "project_folder": "/absolute/path/to/vN/",
-  "template": "$TEMPLATE",
-  "clips": [
-    {"section": "HOOK", "file": "/abs/path/clip.mp4", "name": "hook_clip",
-     "position": 0.0, "duration": 3.0, "in_point": 0.0}
-  ],
-  "sfx": [
-    {
-      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
-      "name": "transition_whoosh",
-      "position": 2.8,
-      "duration": 0.3,
-      "volume": 0.03
-    },
-    {
-      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
-      "name": "reveal_ding",
-      "position": 4.5,
-      "duration": 2.1,
-      "volume": 0.03
-    }
-  ],
-  "audio": "/abs/path/narration.mp3",
-  "subtitles": "/abs/path/subtitles.srt",
-  "subtitle_template_ass": "$ASS_TEMPLATE"
-}
-```
-
-- All file paths MUST be absolute
-- `volume`: 0.03 recommended (NEVER above 0.04 — SFX source files are loud)
-- `position`: seconds from timeline start
-- `duration`: how long to play (can be shorter than source file)
-
-### Step B.9: Update BATCH_MANIFEST v1
-
-Fill in the v1 column in the Variant Matrix table and update Used Elements lists.
 
 ---
 
-## VARIANT MATRIX DISPLAY (informational — no approval gate)
+## PHASE D: BATCH GENERATE v2-v7 (NO APPROVALS, FINAL RENDERS)
 
-After v1 is complete, display the planned matrix for v2-v7 as information only, then proceed directly:
+For each variant N = 2..7:
 
+### Step D.1: Generate Script
+
+Read vN assignments from `batch_plan.json`. Write a COMPLETE NEW SCRIPT (not copy-paste from v1).
+
+**KEEP CONSTANT**: Items found (factual), location name
+**MUST CHANGE**: Hook (new type+wording), CTA (new type+wording), problem angle, rehook, importance, solution approach, item intro style, proof tease style. Write in assigned persona voice.
+
+**SENTENCE-LEVEL RULE**: No sentence from any previous variant may appear verbatim.
+**PHRASE-LEVEL RULE**: No 4+ word phrase in more than 2/7 variants.
+**GIVEAWAY PHRASE**: Each variant uses a DIFFERENT giveaway-first phrase (see `givore-batch-creative.md`).
+
+### Step D.2: Audio
+
+Use persona_voice_settings from batch_plan.json for this variant's persona.
+
+### Step D.3: Metadata
+
+Generate descriptions.txt unique to this variant's hook/CTA. THUMBNAIL title must be unique.
+THUMBNAIL format: plain `THUMBNAIL\nTITLE TEXT` (no separator bars).
+
+### Step D.4: Captions + Subtitles
+
+Use batch commands after all scripts are written:
+```bash
+$GIVORE_TOOLS batch-captions [parent]
+$GIVORE_TOOLS batch-subs [parent]
 ```
-📊 VARIANT MATRIX — v2-v7 planned (proceeding automatically)
 
-| Element | v1 (done) | v2 | v3 | v4 | v5 | v6 | v7 |
-|---------|-----------|----|----|----|----|----|----|
-| Hook Type | ... | ... | ... | ... | ... | ... | ... |
-| CTA Type | ... | ... | ... | ... | ... | ... | ... |
-| Problem Angle | ... | ... | ... | ... | ... | ... | ... |
-| Visual Hook | ... | ... | ... | ... | ... | ... | ... |
+### Step D.5: Clip + SFX Selection (AI-DRIVEN)
 
-Generando variantes 2-7 automáticamente...
-```
+Same AI-driven process as B.6:
+1. SWAP visual hook clip to vN's assigned clip from plan
+2. SHUFFLE body clips, replace 1-2 with alternatives
+3. Place 2-4 SFX at narrative moments using subtitle timing
+4. Validate: `$GIVORE_TOOLS clips plan "[AUDIO]" [ids]`
 
-**DO NOT pause here.** Proceed directly to Phase D.
-
----
-
-## PHASE D: BATCH GENERATE v2-v7 (DELTA GENERATION)
-
-For each variant N = 2, 3, 4, 5, 6, 7 — execute ALL steps below. DO NOT re-read any reference files. Work from v1 base + BATCH_MANIFEST assignments.
-
-### Step D.1: Delta Script Generation
-
-Start from v1 script text and apply these substitutions:
-
-1. **HOOK section**: Replace with new hook type + wording from matrix assignment
-   - Write 1-2 new opening sentences matching the assigned hook type
-   - Keep under 15 words, no "Hola"
-
-2. **CTA section**: Replace with new CTA type + wording from matrix assignment
-   - Write new closing matching the assigned CTA type
-
-3. **RE-HOOK section** (street-finds): Replace with new rehook style
-   - Write new re-engagement line
-
-4. **PROBLEM section** (street-finds): Reframe using assigned problem angle
-   - Same facts, different emotional framing
-
-5. **Body wording**: Tweak 2-3 sentences in IMPORTANCE/SOLUTION/PAYOFF
-   - Different word choices, varied sentence structure
-   - Ensure no repeated phrases across variants
-
-6. **Keep constant**: Core message, items, condition, location, section structure
-
-Save to: `[parent]/vN/[slug].txt`
-
-### Step D.2: Audio Generation
-
-Call ElevenLabs `text_to_speech` with the new script text.
-- Use same voice config as v1 (same mode-specific settings)
-- `output_directory: "[parent]/vN/"`
-
-### Step D.3: Metadata Generation (Unique per variant)
-
-Generate `descriptions.txt` for THUMBNAIL + 5 platforms using the NEW script:
-- THUMBNAIL section FIRST: 5-7 word uppercase hook title unique to this variant
-- Adapt hook/CTA references to match the variant's actual hook/CTA
-- Follow same platform rules (already internalized from Phase A)
-- Ensure at least 1 Tier 1 keyword per platform
-- NO re-reading `CLAUDE_PROJECT_METADATA_INSTRUCTIONS.md`
-
-Generate `captions.txt` (2-3 words/line from new script).
-
-Save to `[parent]/vN/`
-
-### Step D.4: Subtitles
-
-Run: `$GIVORE_TOOLS subs [parent]/vN/[slug].mp3 [parent]/vN/captions.txt`
-
-### Step D.5: Video Delta — Clip + SFX Selection
-
-Apply these changes from v1's clip plan:
-
-1. **Visual hook clips (first 1-2)**: SWAP to assigned clip from matrix
-2. **Body clips**: SHUFFLE order of 3-5 clips AND replace 1-2 with unused alternatives from catalog
-3. **Ending clip**: Keep an `[end]` clip as the very last clip
-4. **SFX**: Place 2-4 Basic Tier SFX at narrative moments using subtitle timing (see `/givore-video` Step 2.4). Same sounds CAN repeat across variants.
-5. **Validate duration**: `$GIVORE_TOOLS clips plan "[AUDIO_FILE]" [id1],[id2],...`
-
-Same QUALITY CHECKLIST from Step B.6 applies — no duplicates, ending clips last only, clips >= audio, all paths absolute. No approval gate — matrix was already approved.
-
-### Step D.6: Assembly + Final Render (direct finals for v2-v7)
-
-1. Write assembly config → `[parent]/vN/assembly_config.json`
-   - Point `project_folder` to `[parent]/vN/`
-   - All paths absolute
-2. **MANDATORY**: Run pre-flight validation:
-   ```bash
-   $GIVORE_TOOLS validate [parent]/vN/assembly_config.json
-   ```
-   If validation fails, fix clips/paths before assembly.
-3. Run assembly: `$GIVORE_TOOLS assemble [parent]/vN/assembly_config.json`
-4. Render **final** (not draft): `$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json`
-   **Final render quality**: CRF 15, preset slow, maxrate 40Mbps, audio 192k
-5. **MANDATORY**: Run post-render validation:
-   ```bash
-   $GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/[slug]_final.mp4
-   ```
-6. Generate `clip_map.txt` → save to `[parent]/vN/`
-
-### Step D.6b: Thumbnail Generation (AUTOMATIC — no approval gate)
-
-After all v1-v7 drafts are rendered, generate thumbnails for all variants:
+### Step D.6: Assembly + FINAL Render
 
 ```bash
-$GIVORE_TOOLS batch-thumbnails [parent-dir]
+$GIVORE_TOOLS generate-config --audio [mp3] --clips [ids] --sfx "WHOOSH@X,DING@Y" --project-folder [parent]/vN/
+$GIVORE_TOOLS validate [parent]/vN/assembly_config.json
+$GIVORE_TOOLS assemble [parent]/vN/assembly_config.json
+$GIVORE_TOOLS render-final [parent]/vN/assembly_config.json
+$GIVORE_TOOLS check-render [parent]/vN/assembly_config.json [parent]/vN/[slug]_final.mp4
 ```
 
-This picks a background image from `thumbnail/` (rotating through available images) and overlays the thumbnail title from `descriptions.txt`. Output: `thumbnail.png` in each variant folder.
+### Step D.7: Batch Quality Check
 
-**Prerequisites**: Each variant's `descriptions.txt` must have a THUMBNAIL section with the title text. Background images must exist in `thumbnail/` directory.
-
-### Step D.7: Update BATCH_MANIFEST
-
-Fill in vN column in Variant Matrix and update Used Elements lists.
-
-### Progress Updates
-
-After each variant, show brief status:
-
+After ALL v2-v7 scripts written:
+```bash
+python3 scripts/quality_check.py --batch-dir [parent]
 ```
-✅ v[N] generada: [hook type] hook, [cta type] CTA, [visual hook clip]
-   Script: vN/[slug].txt | Audio: vN/[slug].mp3 | Draft: vN/draft.mp4
+If FAIL: regenerate worst variant. If WARN: proceed.
+
+### Step D.8: Thumbnails
+```bash
+$GIVORE_TOOLS batch-thumbnails [parent]
 ```
 
 ---
 
 ## PHASE E: REVIEW & FINALIZE
 
-### Step E.0b: Cross-Variant Duration Verification
-
-Before presenting drafts, run batch status to verify all durations match:
-
+### Step E.1: Batch Status
 ```bash
-$GIVORE_TOOLS batch-status [parent-dir]
+$GIVORE_TOOLS batch-status [parent]
+$GIVORE_TOOLS check-render-all [parent]
 ```
 
-Review the DURATION CHECK table. All variants should show "OK". Any showing "MISMATCH" need investigation before final render.
+### Step E.2: APPROVAL GATE 3 — v1 Final
 
-### Step E.1: Present All 7 Drafts
-
+v2-v7 already rendered as finals. This gate is for v1 only:
 ```
-📊 BATCH COMPLETO — 7 variantes generadas
-
-| # | Hook | CTA | Visual Hook | Draft | Thumb |
-|---|------|-----|-------------|-------|-------|
-| v1 | OUTRAGE: "¿En serio..." | COMMUNITY | red bus clip | v1/draft.mp4 | v1/thumbnail.png |
-| v2 | COMMUNITY: "Vecinos..." | ENGAGEMENT | pov street 2 | v2/draft.mp4 | v2/thumbnail.png |
-| v3 | URGENCY: "Hoy..." | DOWNLOAD | pov street 3 | v3/draft.mp4 | v3/thumbnail.png |
-| v4 | QUESTION: "¿Sabéis...?" | SAVE-SHARE | bus passing | v4/draft.mp4 | v4/thumbnail.png |
-| v5 | JOURNEY: "Pedaleando..." | FOLLOW | pov torre | v5/draft.mp4 | v5/thumbnail.png |
-| v6 | BOLD: "Una lavadora..." | AWARENESS | steering cross | v6/draft.mp4 | v6/thumbnail.png |
-| v7 | EMOTIONAL: "Cada hallazgo..." | SHARING | pov street 5 | v7/draft.mp4 | v7/thumbnail.png |
-
-Todos los borradores están en: [parent folder]
-```
-
-### Step E.2: APPROVAL GATE 3 — v1 Final Confirmation
-
-v2-v7 are already rendered as finals. This gate only concerns v1:
-
-```
-📊 BATCH COMPLETO
-
-v2-v7 ya renderizados en calidad final (CRF 15, 40Mbps).
-v1 tiene borrador listo para revisión.
-
+v2-v7 ya renderizados en calidad final.
 ¿Renderizar v1 en calidad final también?
-- Sí → Renderizar v1 final (1080x1920)
-- Cambiar v1 → Especifica cambios al video de v1
-- No → Mantener v1 como borrador
+- Sí / Cambiar v1 / No (mantener borrador)
 ```
 
 ### Step E.3: Final Render v1
 
-If approved:
-1. Run: `$GIVORE_TOOLS render-final [parent]/v1/assembly_config.json`
-
-### Step E.4: Update Global Histories (v1 ONLY)
-
-**IMPORTANT**: Only v1 updates the global rotation histories. This prevents polluting the rotation system with 7 same-topic entries.
-
-**Street-finds**: Run `$GIVORE_TOOLS script-add` with v1's metadata.
-
-**Trial**: Run `$GIVORE_TOOLS trial-add` with v1's metadata.
-
-**Both modes**: Run `$GIVORE_TOOLS video-add` with v1's clip data.
-
-**Thumbnails**: Run `$GIVORE_TOOLS thumbnail-add --date X --slug X --bg "filename.png"` with v1's thumbnail background.
-
-### Step E.5: Final Summary
-
+```bash
+$GIVORE_TOOLS render-final [parent]/v1/assembly_config.json
 ```
-✅ BATCH GIVORE COMPLETADO
 
-📁 Carpeta: [parent folder]
-📊 Variantes: 7 generadas, [N] finalizadas
+### Step E.4: Update DB (v1 ONLY)
 
-Finals renderizados:
-├── v1/[slug]_final.mp4
-├── v3/[slug]_final.mp4
-└── v5/[slug]_final.mp4
-
-Manifest: BATCH_MANIFEST.md (detalle de todas las variantes)
-
-Historiales actualizados (DB):
-- script-add / trial-add (solo v1)
-- video-add (solo v1)
-- thumbnail-add (solo v1)
+```bash
+$GIVORE_TOOLS script-add --date X --slug X --hook-type X --cta-type X --proof-tease X --problem-angle X --rehook-style X --visual-style POV-CYCLING --lighting VARIED --item-category X --structure-type X --persona X
+$GIVORE_TOOLS video-add --date X --slug X --clips [ids]
+$GIVORE_TOOLS thumbnail-add --date X --slug X --bg "filename.png"
 ```
+
+### Step E.5: Summary
+
+Show folder, variants count, finals list, DB updates.
 
 ---
 
-## CLIP SELECTION GUIDELINES (Reference — from /givore-video Phase 2)
+## SFX REFERENCE (Basic Tier)
 
-Use the visual storytelling principles from `/givore-video` Phase 2. You are the video editor — read clip descriptions and match them to the script's narrative arc:
-- **HOOK**: Dynamic clips (reveals, gestures, unexpected motion)
-- **PROBLEM/IMPORTANCE**: Urban reality clips (traffic, crossings, obstacles)
-- **RE-HOOK**: Pattern interrupt (change visual energy)
+| Name | Shorthand | Duration | Use For |
+|------|-----------|----------|---------|
+| WHOOSH | `WHOOSH@pos` | 0.3s | Section transitions |
+| DING | `DING@pos` | 2.1s | Reveals, discoveries |
+| CHIME | `CHIME@pos` | 0.9s | Positive moments |
+| POP | `POP@pos` | 0.2s | CTA, app mentions |
+| SWOOSH | `SWOOSH@pos` | 0.7s | Smoother transitions |
+
+All at volume 0.03. Pass to generate-config as: `--sfx "WHOOSH@2.8,DING@15.0,POP@45.1"`
+
+---
+
+## CLIP SELECTION GUIDELINES
+
+**Narrative arc — match clips to story energy:**
+- **HOOK**: Dynamic clips (reveals, gestures, unexpected motion). `[hook]` clips ideal.
+- **PROBLEM**: Urban reality (traffic, crossings, obstacles, near-misses)
+- **IMPORTANCE**: Contemplative (paths, landmarks, shadows)
+- **RE-HOOK**: Pattern interrupt — change energy abruptly
 - **SOLUTION/PAYOFF**: Calmer, scenic clips (landmarks, open paths)
-- **CTA/ENDING**: Closure — `[end]` clip last, always
+- **CTA/ENDING**: `[end]` clip last, always
 
-Vary motion, match energy to narration, prefer clips with personality over generic filler.
-
-## AVAILABLE EFFECTS (Reference — from /givore-video)
-
-| Effect | Filter | Use For |
-|--------|--------|---------|
-| ken_burns_slow | affine | Static shots |
-| color_warm | colorbalance | Emotional sections |
-| color_cool | colorbalance | Problem/serious |
-| brightness_up | brightness | Dark clips |
-| vignette | vignette | Focus attention |
-| speed_up | timewarp 1.2 | Energize |
-| speed_down | timewarp 0.8 | Dramatic |
-
-## TRANSITIONS
-
-| Type | Duration | Use For |
-|------|----------|---------|
-| cut | 0s | Energetic changes |
-| dissolve | 0.5s | Smooth transitions |
-| wipe | 0.3s | Dynamic transitions |
+**Visual flow:**
+1. Vary motion — don't chain 5 straight-ahead POV clips
+2. Match energy to narration
+3. Prefer clips with personality over generic filler
+4. `[bridge]` clips at section transitions, not mid-section
+5. `[end]` clips MUST be last, used once
 
 ---
 
@@ -695,30 +337,13 @@ Vary motion, match energy to narration, prefer clips with personality over gener
 
 | Phase | Error | Action |
 |-------|-------|--------|
-| Phase A (Analysis) | Missing ref file | Warn, continue with available |
-| Phase B (v1 Script) | Generation fails | Stop, show error |
-| Phase B (v1 Approval) | User says No | Cancel entire batch |
-| Phase B (v1 Audio) | ElevenLabs fails | Continue, show fallback |
-| Phase B (v1 Video) | Assembly fails | Debug, retry once |
-| Phase D (vN Script) | Delta fails | Skip variant, continue |
-| Phase D (vN Audio) | ElevenLabs fails | Skip audio, continue |
-| Phase D (vN Assembly) | Assembly fails | Skip render, log in manifest |
-| Phase E (Final Render) | Render fails | Show error, try next |
-
-If ElevenLabs rate-limits during batch: pause 30 seconds between calls.
-
----
-
-## INPUT COLLECTION
-
-Same inputs as `/givore-create` (street-finds) or `/givore-trial-create` (trial).
-
-If `$ARGUMENTS` is empty or incomplete, collect all mandatory inputs first.
-
-### Optional Batch-Specific Inputs:
-- **variant_count**: Number of variants (default: 7, range: 2-7)
-- **exclude_hooks**: Hook types to exclude from matrix
-- **exclude_ctas**: CTA types to exclude from matrix
+| A (Plan) | batch-plan fails | Fix args, retry |
+| B (Script) | User says No | Cancel batch |
+| B (Audio) | ElevenLabs fails | Show fallback |
+| B (Assembly) | Validation fails | Fix clips, retry |
+| D (vN) | Script quality fails | Regenerate |
+| D (vN) | Assembly fails | Skip variant, log |
+| E (Final) | Render fails | Show error |
 
 ---
 
@@ -727,42 +352,23 @@ If `$ARGUMENTS` is empty or incomplete, collect all mandatory inputs first.
 ```
 /givore-batch [inputs]
 │
-├─ PHASE A: Base Analysis (ONE-TIME file reads)
-│   ├─ Query rotation DBs + read last scripts
-│   ├─ Read ALL reference files (9 or 7 depending on mode)
-│   ├─ Query clip DB + read SFX catalog
-│   ├─ Compute rotation constraints
-│   ├─ Pre-plan variant matrix (7 hooks, 7 CTAs, 7 clips, 7 SFX)
-│   └─ Create folder structure + BATCH_MANIFEST.md
+├─ PHASE A: Plan (AUTOMATED — 3 commands)
+│   ├─ init-batch → batch-plan → batch-validate-plan
+│   └─ Read batch_plan.json + givore-batch-creative.md
 │
-├─ PHASE B: Variant 1 (Full Pipeline)
-│   ├─ Collect inputs (if needed)
-│   ├─ Generate script → ⏸ APPROVAL GATE 1
-│   ├─ Audio (ElevenLabs) + Metadata + Captions + Subtitles
-│   ├─ Clip + SFX selection → ⏸ APPROVAL GATE 2
-│   └─ Assembly + Draft render
+├─ PHASE B: Variant 1
+│   ├─ Generate script (from plan assignments) → GATE 1
+│   ├─ Audio + Metadata + Captions + Subtitles (AUTOMATED)
+│   ├─ AI clip + SFX selection → GATE 2
+│   └─ generate-config --sfx → validate → assemble → render-draft
 │
-├─ VARIANT MATRIX DISPLAY (informational — no gate)
-│   └─ Show planned matrix → proceed automatically
+├─ PHASE D: v2-v7 (NO APPROVALS, FINAL renders)
+│   └─ For each: script → audio → metadata → captions → subs →
+│       AI clips+SFX → generate-config --sfx → validate → assemble → render-final
 │
-├─ PHASE D: Batch Generate v2-v7 (no approvals, FINAL renders)
-│   └─ For each: Delta script → Audio → Metadata → Subtitles → Video delta → Assembly → Final render
-│
-└─ PHASE E: Review & Finalize
-    ├─ v2-v7 already finals → ⏸ APPROVAL GATE 3 (v1 final confirmation)
-    ├─ Final render v1 if approved
-    ├─ Update global histories via DB (v1 only)
-    └─ Final summary
+└─ PHASE E: Finalize
+    ├─ batch-status + check-render-all → GATE 3
+    ├─ render-final v1
+    ├─ DB updates (v1 only)
+    └─ batch-thumbnails + summary
 ```
-
----
-
-**START NOW**:
-1. Detect mode from $ARGUMENTS (street-finds vs trial)
-2. Execute Phase A: Read ALL reference files, compute constraints, plan matrix
-3. Execute Phase B: Generate v1 with full pipeline (3 gates only)
-4. After v1 approved, display matrix (informational) → proceed directly to Phase D
-5. Batch generate v2-v7 with FINAL renders (Phase D — no approvals)
-6. Gate 3: Confirm v1 final render (Phase E)
-
-$ARGUMENTS

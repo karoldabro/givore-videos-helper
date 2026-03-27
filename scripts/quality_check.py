@@ -6,14 +6,18 @@ Compares against previous scripts for repetition and uniqueness.
 
 Usage:
     python3 quality_check.py <script.txt> [--last-scripts <paths...>] [--batch-manifest <path>]
+    python3 quality_check.py --batch-dir <project-dir>
+    python3 quality_check.py --validate-plan <batch_plan.json>
 
 Exit codes: 0=all PASS, 1=has WARNs, 2=has FAILs
 """
 import argparse
+import glob as glob_mod
 import json
 import re
 import sys
 import unicodedata
+from itertools import combinations
 from pathlib import Path
 from typing import List, Optional, Tuple
 
@@ -624,6 +628,215 @@ def find_line_number(script: str, phrase: str) -> Optional[int]:
     return None
 
 
+# ---------------------------------------------------------------------------
+# Batch diversity checking (cross-variant within a batch)
+# ---------------------------------------------------------------------------
+
+def discover_batch_scripts(batch_dir: str) -> dict:
+    """Find all v*/[slug].txt scripts in a batch directory. Returns {variant: text}."""
+    batch_path = Path(batch_dir)
+    scripts = {}
+    for v_dir in sorted(batch_path.iterdir()):
+        if not v_dir.is_dir() or not re.match(r'^v\d+$', v_dir.name):
+            continue
+        txt_files = list(v_dir.glob("*.txt"))
+        # Find the script (not captions.txt, not clip_map.txt, not descriptions.txt)
+        for tf in txt_files:
+            if tf.name in ('captions.txt', 'clip_map.txt', 'descriptions.txt'):
+                continue
+            text = read_file_safe(str(tf))
+            if text:
+                scripts[v_dir.name] = text
+                break
+    return scripts
+
+
+def extract_sentences(text: str, min_words: int = 5) -> List[str]:
+    """Extract content sentences from a script (min_words+ words, no headers)."""
+    sentences = []
+    for line in text.strip().split('\n'):
+        line = line.strip()
+        if not line:
+            continue
+        if re.match(r'^[\s]*(?:#{1,3}\s|HOOK|GANCHO|PROBLEMA|PROBLEM|SECTION|---)', line, re.IGNORECASE):
+            continue
+        words = extract_words(line)
+        if len(words) >= min_words:
+            sentences.append(normalize_text(line))
+    return sentences
+
+
+def check_batch_diversity(scripts: dict) -> tuple:
+    """Check diversity across all batch variants.
+
+    Returns (overall_status, report_lines, action_items).
+    """
+    variant_names = sorted(scripts.keys())
+    n = len(variant_names)
+    if n < 2:
+        return "PASS", ["Only 1 variant — no cross-variant comparison needed."], []
+
+    report = []
+    action_items = []
+    worst_status = "PASS"
+
+    # --- 1. Pairwise word overlap ---
+    overlaps = {}
+    worst_pair = ("", "", 0.0)
+    for va, vb in combinations(variant_names, 2):
+        ratio = word_overlap_ratio(scripts[va], scripts[vb])
+        overlaps[f"{va}-{vb}"] = ratio
+        if ratio > worst_pair[2]:
+            worst_pair = (va, vb, ratio)
+
+    avg_overlap = sum(overlaps.values()) / len(overlaps) if overlaps else 0
+    report.append("Pairwise word overlap:")
+    # Show in rows of 4
+    items = list(overlaps.items())
+    for i in range(0, len(items), 4):
+        chunk = items[i:i+4]
+        line = "  " + "  ".join(f"{k}: {v:.0%}" for k, v in chunk)
+        report.append(line)
+    report.append(f"  Worst pair: {worst_pair[0]}-{worst_pair[1]} ({worst_pair[2]:.0%})")
+    report.append(f"  Average overlap: {avg_overlap:.0%}")
+
+    if worst_pair[2] > 0.60:
+        worst_status = "FAIL"
+        action_items.append(f"Regenerate {worst_pair[1]} — {worst_pair[2]:.0%} overlap with {worst_pair[0]}")
+    elif worst_pair[2] > 0.40:
+        if worst_status != "FAIL":
+            worst_status = "WARN"
+        action_items.append(f"High overlap: {worst_pair[0]}-{worst_pair[1]} ({worst_pair[2]:.0%})")
+
+    # --- 2. Shared n-gram detection (4-grams in 3+ variants) ---
+    report.append("")
+    ngram_counts = {}  # {ngram: [variants]}
+    for vname, text in scripts.items():
+        for ng in set(extract_ngrams(text, 4)):  # unique per variant
+            ngram_counts.setdefault(ng, []).append(vname)
+
+    shared_ngrams = {ng: vs for ng, vs in ngram_counts.items() if len(vs) >= 3}
+    # Sort by frequency desc
+    shared_sorted = sorted(shared_ngrams.items(), key=lambda x: -len(x[1]))[:10]
+
+    if shared_sorted:
+        report.append(f"Shared phrases (4+ words in 3+ variants): {len(shared_ngrams)}")
+        for ng, vs in shared_sorted[:5]:
+            report.append(f'  "{ng}" ({",".join(vs)})')
+    else:
+        report.append("Shared phrases (4+ words in 3+ variants): 0")
+
+    if len(shared_ngrams) >= 5:
+        if worst_status != "FAIL":
+            worst_status = "FAIL" if len(shared_ngrams) >= 8 else "WARN"
+        action_items.append(f"{len(shared_ngrams)} phrases repeated in 3+ variants — rewrite with different vocabulary")
+    elif len(shared_ngrams) >= 3:
+        if worst_status == "PASS":
+            worst_status = "WARN"
+        action_items.append(f"{len(shared_ngrams)} shared phrases across variants")
+
+    # --- 3. Identical sentence detection ---
+    report.append("")
+    sentence_map = {}  # {normalized_sentence: [variants]}
+    for vname, text in scripts.items():
+        for sent in extract_sentences(text, min_words=5):
+            stripped = strip_accents(sent)
+            sentence_map.setdefault(stripped, []).append(vname)
+
+    identical = {s: vs for s, vs in sentence_map.items() if len(vs) >= 2}
+    identical_sorted = sorted(identical.items(), key=lambda x: -len(x[1]))[:5]
+
+    report.append(f"Identical sentences (5+ words, 2+ variants): {len(identical)}")
+    for sent, vs in identical_sorted[:3]:
+        display = sent[:60] + "..." if len(sent) > 60 else sent
+        report.append(f'  "{display}" ({",".join(vs)})')
+
+    if len(identical) >= 3:
+        if worst_status != "FAIL":
+            worst_status = "FAIL" if len(identical) >= 5 else "WARN"
+        action_items.append(f"{len(identical)} identical sentences across variants — rewrite each uniquely")
+
+    # --- 4. Overall batch diversity score ---
+    report.append("")
+    diversity = 1.0 - avg_overlap  # Simple: inverse of average overlap
+    diversity_pct = diversity * 100
+    report.append(f"Overall batch diversity: {diversity_pct:.0f}%")
+
+    if diversity_pct < 60:
+        worst_status = "FAIL"
+        action_items.append(f"Batch diversity {diversity_pct:.0f}% below 60% threshold")
+    elif diversity_pct < 70:
+        if worst_status == "PASS":
+            worst_status = "WARN"
+        action_items.append(f"Batch diversity {diversity_pct:.0f}% below 70% target")
+
+    return worst_status, report, action_items
+
+
+def run_batch_check(batch_dir: str) -> int:
+    """Run batch diversity check on all variant scripts in a directory."""
+    scripts = discover_batch_scripts(batch_dir)
+
+    if not scripts:
+        print(f"ERROR: No variant scripts found in {batch_dir}", file=sys.stderr)
+        return 2
+
+    print("BATCH DIVERSITY REPORT")
+    print("======================")
+    print(f"Variants analyzed: {len(scripts)} ({', '.join(sorted(scripts.keys()))})")
+    print()
+
+    status, report, action_items = check_batch_diversity(scripts)
+
+    for line in report:
+        print(line)
+
+    print()
+    print(f"Overall: {status}")
+
+    if action_items:
+        print("\nAction items:")
+        for item in action_items:
+            print(f"  - {item}")
+
+    # Also run individual checks on each variant (using others as last-scripts)
+    print("\n" + "=" * 50)
+    print("PER-VARIANT CHECKS")
+    print("=" * 50)
+
+    variant_names = sorted(scripts.keys())
+    per_variant_worst = "PASS"
+
+    for vname in variant_names:
+        # Find the actual script path
+        v_dir = Path(batch_dir) / vname
+        txt_files = [f for f in v_dir.glob("*.txt")
+                     if f.name not in ('captions.txt', 'clip_map.txt', 'descriptions.txt')]
+        if not txt_files:
+            continue
+
+        script_path = str(txt_files[0])
+        # Use other variants as "last scripts" for comparison
+        other_scripts = [str(Path(batch_dir) / ov / txt_files[0].name)
+                         for ov in variant_names if ov != vname]
+        other_scripts = [p for p in other_scripts if Path(p).is_file()]
+
+        print(f"\n--- {vname} ---")
+        exit_code = run_quality_check(script_path, other_scripts, None)
+
+        if exit_code == 2:
+            per_variant_worst = "FAIL"
+        elif exit_code == 1 and per_variant_worst != "FAIL":
+            per_variant_worst = "WARN"
+
+    # Final verdict
+    if status == "FAIL" or per_variant_worst == "FAIL":
+        return 2
+    elif status == "WARN" or per_variant_worst == "WARN":
+        return 1
+    return 0
+
+
 def run_quality_check(
     script_path: str,
     last_script_paths: List[str],
@@ -742,6 +955,226 @@ def run_quality_check(
 
 
 # ---------------------------------------------------------------------------
+# Plan validation
+# ---------------------------------------------------------------------------
+
+ALL_PERSONAS = {"OBSERVADOR", "ENERGETICO", "VECINA", "REPORTERO", "POETA"}
+
+PERSONA_STRUCTURE_AVOID = {
+    "OBSERVADOR": {"COUNTDOWN"},
+    "ENERGETICO": {"LOOP"},
+    "VECINA": {"MICRO"},
+    "REPORTERO": {"LOOP"},
+    "POETA": {"COUNTDOWN"},
+}
+
+# Structures where proof_tease should be SKIP/null and rehook should be null
+NO_PROOF_TEASE_STRUCTURES = {"COLD OPEN", "MICRO", "PSP", "COUNTDOWN"}
+NO_REHOOK_STRUCTURES = {"COLD OPEN", "MICRO", "PSP", "COUNTDOWN"}
+
+
+def validate_plan(plan_path: str) -> int:
+    """Validate a batch_plan.json for constraint compliance.
+
+    Returns exit code: 0=all PASS, 1=has WARNs, 2=has FAILs.
+    """
+    try:
+        with open(plan_path, encoding="utf-8") as f:
+            plan = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"ERROR: Could not read plan: {e}", file=sys.stderr)
+        return 2
+
+    variants = plan.get("variants", [])
+    constraints = plan.get("rotation_constraints", {})
+    n = len(variants)
+
+    if n == 0:
+        print("ERROR: No variants found in plan.", file=sys.stderr)
+        return 2
+
+    results = []  # (name, status, detail)
+    warn_count = 0
+    fail_count = 0
+
+    def record(name: str, status: str, detail: str):
+        nonlocal warn_count, fail_count
+        results.append((name, status, detail))
+        if status == "WARN":
+            warn_count += 1
+        elif status == "FAIL":
+            fail_count += 1
+
+    # --- 1. Hook uniqueness ---
+    hooks = [v.get("hook_type") for v in variants]
+    unique_hooks = len(set(hooks))
+    if unique_hooks == n:
+        record("Hook uniqueness", "PASS", f"{unique_hooks}/{n} unique")
+    else:
+        dupes = [h for h in set(hooks) if hooks.count(h) > 1]
+        # WARN if pool was too small (cycling expected), FAIL otherwise
+        avoid_count = len(constraints.get("avoid_hooks", []))
+        available = 16 - avoid_count  # 16 known hook types
+        severity = "WARN" if available < n else "FAIL"
+        record("Hook uniqueness", severity,
+               f"{unique_hooks}/{n} unique — duplicates: {', '.join(dupes)}"
+               + (f" (pool={available}, cycling expected)" if severity == "WARN" else ""))
+
+    # --- 2. CTA uniqueness ---
+    ctas = [v.get("cta_type") for v in variants]
+    unique_ctas = len(set(ctas))
+    if unique_ctas == n:
+        record("CTA uniqueness", "PASS", f"{unique_ctas}/{n} unique")
+    else:
+        dupes = [c for c in set(ctas) if ctas.count(c) > 1]
+        avoid_count = len(constraints.get("avoid_ctas", []))
+        available = 9 - avoid_count  # 9 known CTA categories
+        severity = "WARN" if available < n else "FAIL"
+        record("CTA uniqueness", severity,
+               f"{unique_ctas}/{n} unique — duplicates: {', '.join(dupes)}"
+               + (f" (pool={available}, cycling expected)" if severity == "WARN" else ""))
+
+    # --- 3. Visual hook clip uniqueness (NO exceptions) ---
+    clip_ids = [v.get("visual_hook_clip_id") for v in variants]
+    unique_clips = len(set(clip_ids))
+    if unique_clips == n:
+        record("Visual hook uniqueness", "PASS", f"{unique_clips}/{n} unique")
+    else:
+        dupes = [str(c) for c in set(clip_ids) if clip_ids.count(c) > 1]
+        record("Visual hook uniqueness", "FAIL",
+               f"{unique_clips}/{n} unique — duplicates: {', '.join(dupes)}")
+
+    # --- 4. Persona coverage ---
+    used_personas = {v.get("persona") for v in variants}
+    missing = ALL_PERSONAS - used_personas
+    if not missing:
+        record("Persona coverage", "PASS",
+               f"{len(ALL_PERSONAS)}/{len(ALL_PERSONAS)} personas used")
+    else:
+        record("Persona coverage", "FAIL",
+               f"{len(used_personas)}/{len(ALL_PERSONAS)} — missing: {', '.join(sorted(missing))}")
+
+    # --- 5. Persona+structure avoidance ---
+    avoid_violations = []
+    for v in variants:
+        persona = v.get("persona", "")
+        structure = v.get("structure", "")
+        avoid_set = PERSONA_STRUCTURE_AVOID.get(persona, set())
+        if structure in avoid_set:
+            avoid_violations.append(f"v{v.get('variant')}: {persona}+{structure}")
+    if not avoid_violations:
+        record("Persona+structure compat", "PASS", "no conflicts")
+    else:
+        record("Persona+structure compat", "FAIL",
+               f"{len(avoid_violations)} conflict(s): {'; '.join(avoid_violations)}")
+
+    # --- 6. Persona repeat structures ---
+    persona_structures = {}  # {persona: [(variant, structure), ...]}
+    for v in variants:
+        persona = v.get("persona", "")
+        structure = v.get("structure", "")
+        persona_structures.setdefault(persona, []).append(
+            (v.get("variant"), structure))
+    repeat_violations = []
+    for persona, entries in persona_structures.items():
+        if len(entries) < 2:
+            continue
+        structures = [s for _, s in entries]
+        if len(structures) != len(set(structures)):
+            duped = [s for s in set(structures) if structures.count(s) > 1]
+            vids = [str(vid) for vid, s in entries if s in duped]
+            repeat_violations.append(
+                f"{persona} repeats {', '.join(duped)} in v{', v'.join(vids)}")
+    if not repeat_violations:
+        record("Persona repeat structures", "PASS",
+               "all repeats have different structures")
+    else:
+        record("Persona repeat structures", "FAIL",
+               "; ".join(repeat_violations))
+
+    # --- 7. Proof tease + structure ---
+    proof_violations = []
+    for v in variants:
+        structure = v.get("structure", "")
+        proof = v.get("proof_tease_style")
+        if structure in NO_PROOF_TEASE_STRUCTURES:
+            if proof is not None and proof != "SKIP":
+                proof_violations.append(
+                    f"v{v.get('variant')}: {structure} has proof_tease={proof}")
+    if not proof_violations:
+        record("Proof tease + structure", "PASS",
+               "SKIPs aligned with structures")
+    else:
+        record("Proof tease + structure", "FAIL",
+               "; ".join(proof_violations))
+
+    # --- 8. Rehook + structure ---
+    rehook_violations = []
+    for v in variants:
+        structure = v.get("structure", "")
+        rehook = v.get("rehook_style")
+        if structure in NO_REHOOK_STRUCTURES:
+            if rehook is not None:
+                rehook_violations.append(
+                    f"v{v.get('variant')}: {structure} has rehook={rehook}")
+    if not rehook_violations:
+        record("Rehook + structure", "PASS",
+               "nulls aligned with structures")
+    else:
+        record("Rehook + structure", "FAIL",
+               "; ".join(rehook_violations))
+
+    # --- 9. Constraint compliance ---
+    constraint_map = {
+        "hook_type": "avoid_hooks",
+        "cta_type": "avoid_ctas",
+        "problem_angle": "avoid_problems",
+        "rehook_style": "avoid_rehooks",
+        "structure": "avoid_structures",
+        "persona": "avoid_personas",
+    }
+    constraint_violations = []
+    for v in variants:
+        vid = v.get("variant", "?")
+        for field, avoid_key in constraint_map.items():
+            avoid_list = constraints.get(avoid_key, [])
+            value = v.get(field)
+            if value and value in avoid_list:
+                constraint_violations.append(
+                    f"v{vid}: {field}={value} is in {avoid_key}")
+    if not constraint_violations:
+        record("Constraint compliance", "PASS", "no avoided values used")
+    else:
+        record("Constraint compliance", "FAIL",
+               f"{len(constraint_violations)} violation(s): "
+               + "; ".join(constraint_violations))
+
+    # --- Print report ---
+    plan_name = Path(plan_path).name
+    print(f"PLAN VALIDATION: {plan_name}")
+    print("=" * (18 + len(plan_name)))
+    for name, status, detail in results:
+        print(f"{name + ':':30s} {status} ({detail})")
+
+    print()
+    if fail_count > 0:
+        overall = "FAIL"
+    elif warn_count > 0:
+        overall = "WARN"
+    else:
+        overall = "PASS"
+
+    print(f"Overall: {overall} ({warn_count} warning{'s' if warn_count != 1 else ''}, "
+          f"{fail_count} failure{'s' if fail_count != 1 else ''})")
+
+    if fail_count > 0:
+        return 2
+    elif warn_count > 0:
+        return 1
+    return 0
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -759,11 +1192,21 @@ Examples:
   python3 quality_check.py script.txt
   python3 quality_check.py script.txt --last-scripts prev1.txt prev2.txt
   python3 quality_check.py script.txt --batch-manifest BATCH_MANIFEST.md
+  python3 quality_check.py --batch-dir projects/2026-03-27_topic/
+  python3 quality_check.py --validate-plan batch_plan.json
         """,
     )
     parser.add_argument(
         "script",
-        help="Path to the script text file to validate",
+        nargs="?",
+        default=None,
+        help="Path to the script text file to validate (not needed with --batch-dir)",
+    )
+    parser.add_argument(
+        "--batch-dir",
+        default=None,
+        metavar="PATH",
+        help="Path to batch project directory for cross-variant diversity check",
     )
     parser.add_argument(
         "--last-scripts",
@@ -778,8 +1221,36 @@ Examples:
         metavar="PATH",
         help="Path to BATCH_MANIFEST.md for clip diversity check",
     )
+    parser.add_argument(
+        "--validate-plan",
+        default=None,
+        metavar="PATH",
+        help="Path to batch_plan.json for pre-script constraint validation",
+    )
 
     args = parser.parse_args()
+
+    # Plan validation mode: validate batch_plan.json and exit
+    if args.validate_plan:
+        if not Path(args.validate_plan).is_file():
+            print(f"ERROR: Plan file not found: {args.validate_plan}", file=sys.stderr)
+            sys.exit(2)
+        exit_code = validate_plan(args.validate_plan)
+        sys.exit(exit_code)
+
+    # Batch-dir mode: cross-variant diversity check
+    if args.batch_dir:
+        if not Path(args.batch_dir).is_dir():
+            print(f"ERROR: Batch directory not found: {args.batch_dir}", file=sys.stderr)
+            sys.exit(2)
+        exit_code = run_batch_check(args.batch_dir)
+        sys.exit(exit_code)
+
+    # Single-script mode (original behavior)
+    if not args.script:
+        print("ERROR: Either <script> or --batch-dir is required.", file=sys.stderr)
+        parser.print_usage(sys.stderr)
+        sys.exit(2)
 
     # Validate script file exists
     if not Path(args.script).is_file():

@@ -18,7 +18,10 @@ Media queries:
   video-info-all <project-dir> Video info for all drafts in v1-v7
 
 Video pipeline:
-  generate-config [args]      Generate assembly_config.json from audio + clip IDs
+  generate-config [args]      Generate assembly_config.json from audio + clip IDs + SFX
+                              Usage: generate-config --audio <mp3> --clips <ids> --sfx "WHOOSH@2.8,DING@15.0" --project-folder <dir>
+  batch-plan [args]           Generate variant matrix (batch_plan.json) from rotation constraints
+  batch-validate-plan <json>  Validate a batch_plan.json for constraint compliance
   assemble <config.json>      Assemble project (JSON -> project.json + .mlt)
   render-draft <config.json>  Assemble + render draft (540x960)
   render-final <config.json>  Assemble + render final (1080x1920)
@@ -738,13 +741,21 @@ case "${1:-help}" in
         shift
         python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" "$@"
         ;;
-    script-add|script-list|script-rotation|script-delete|\
+    script-add|script-list|script-rotation|script-rotation-json|script-delete|\
     trial-add|trial-list|trial-rotation|trial-delete|\
     video-add|video-list|video-recent-clips|video-delete|\
     renueva-add|renueva-list|renueva-rotation|renueva-delete|\
     thumbnail-add|thumbnail-list|thumbnail-recent-bgs|thumbnail-delete|\
     migrate-scripts|migrate-trials|migrate-videos|migrate-all)
         python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" "$@"
+        ;;
+    batch-plan)
+        shift
+        python3 "/media/kdabrow/Programy/givore/scripts/batch_orchestrator.py" batch-plan "$@"
+        ;;
+    batch-validate-plan)
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh batch-validate-plan <batch_plan.json>" >&2; exit 1; }
+        python3 "/media/kdabrow/Programy/givore/scripts/quality_check.py" --validate-plan "$2"
         ;;
     help|--help|-h)
         usage

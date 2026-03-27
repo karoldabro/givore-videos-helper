@@ -159,11 +159,15 @@ If a script file is missing, skip it. Minimum 1 script must be read.
 2. Read `HOOKS_LIBRARY.md` for hook selection and rotation
 3. Read `TONE_GUARDRAILS.md` for positive framing rules
 4. Read `CTA_VARIATIONS.md` for call-to-action options
-5. Read `PHRASE_VARIATIONS.md` for avoiding repetitive language
+5. Read `PHRASE_VARIATIONS.md` for avoiding repetitive language (includes Item Introduction Styles in Section 9)
 6. Read `PROBLEM_VARIATIONS.md` for problem angle selection
-7. Read `IMPORTANCE_VARIATIONS.md` for importance angle selection
+7. Read `IMPORTANCE_VARIATIONS.md` for importance angle selection (7 angles)
 8. Read `REHOOK_VARIATIONS.md` for re-hook style selection
 9. Read `GRATITUDE_VARIATIONS.md` for community appreciation templates
+10. Read `SCRIPT_STRUCTURES.md` for script format selection (6 structures — NEVER use same as last 2 scripts)
+11. Read `SCRIPT_PERSONAS.md` for voice/persona selection (5 personas — NEVER use same as last 2 scripts)
+12. Read `PROOF_TEASE_VARIATIONS.md` for proof tease style selection (8 styles)
+13. Read `SOLUTION_VARIATIONS.md` for solution section approach (8 approaches)
 
 ## Input Collection
 
@@ -202,22 +206,25 @@ If `$ARGUMENTS` is empty or incomplete, ask the user for ALL required inputs:
 
 ## Script Generation Process
 
-1. **Load History**: Run `givore-tools.sh script-rotation` to get rotation constraints
+1. **Load History**: Run `givore-tools.sh script-rotation` to get rotation constraints (includes structure_type, persona)
 2. **Analyze Recent Scripts**: Read text of last 5 scripts, identify repetition patterns (STEP 0.7)
-3. **Select Hook**: Use HOOKS_LIBRARY.md decision tree, AVOID last 5 hook types
-4. **Decide Proof Tease**: Use decision tree below (OPTIONAL section)
-5. **Select Problem Angle**: Use PROBLEM_VARIATIONS.md, AVOID last 5 angles
-6. **Select Importance Angle**: Use IMPORTANCE_VARIATIONS.md, AVOID last 5 angles
-7. **Select Re-Hook Style**: Use REHOOK_VARIATIONS.md, AVOID last 5 styles
-8. **Check Tone**: Apply TONE_GUARDRAILS.md - viewer as ALLY, no accusatory language, giveaway-first messaging (reinforce sharing before discarding, never blame for leaving items)
-9. **Select CTA**: Match to CTA Goal using CTA_VARIATIONS.md, AVOID last 5 types
-10. **Vary Phrases**: Use PHRASE_VARIATIONS.md to avoid repetitive language
-11. **Consider Gratitude**: If user mention provided OR last 5 videos had no gratitude → include GRATITUDE section (see GRATITUDE_VARIATIONS.md)
-12. **Determine Visual Metadata**: Based on input or default recommendations:
+3. **Select Structure**: Use SCRIPT_STRUCTURES.md (6 options: CLASSIC, COLD OPEN, LOOP, MICRO, PSP, COUNTDOWN). AVOID last 2 structures.
+4. **Select Persona**: Use SCRIPT_PERSONAS.md (5 voices: OBSERVADOR, ENERGETICO, VECINA, REPORTERO, POETA). AVOID last 2 personas. Use persona's ElevenLabs voice settings for audio.
+5. **Select Hook**: Use HOOKS_LIBRARY.md decision tree, AVOID last 5 hook types
+6. **Select Proof Tease**: Use PROOF_TEASE_VARIATIONS.md (8 styles). SKIP if structure doesn't use it (COLD OPEN, MICRO, PSP).
+7. **Select Problem Angle**: Use PROBLEM_VARIATIONS.md, AVOID last 5 angles
+8. **Select Importance Angle**: Use IMPORTANCE_VARIATIONS.md (7 angles), AVOID last 5 angles
+9. **Select Re-Hook Style**: Use REHOOK_VARIATIONS.md, AVOID last 5 styles. SKIP if structure doesn't use it.
+10. **Select Solution Approach**: Use SOLUTION_VARIATIONS.md (8 approaches), AVOID last 3 approaches
+11. **Check Tone**: Apply TONE_GUARDRAILS.md - viewer as ALLY, no accusatory language, giveaway-first messaging
+12. **Select CTA**: Match to CTA Goal using CTA_VARIATIONS.md, AVOID last 5 types
+13. **Vary Phrases**: Use PHRASE_VARIATIONS.md (including Item Introduction Styles in Section 9) to avoid repetitive language
+14. **Consider Gratitude**: If user mention provided OR last 5 videos had no gratitude → include GRATITUDE section
+15. **Determine Visual Metadata**: Based on input or default recommendations:
     - **Visual Style**: Use provided style or default to POV-CYCLING (check variety in history)
     - **Lighting**: Use provided or recommend GOLDEN-HOUR (15:00-17:00)
     - **Item Category**: Classify items from input (ART has highest share potential)
-13. **Follow Structure**: HOOK → [PROOF TEASE] → PROBLEM → IMPORTANCE → RE-HOOK → SOLUTION → PAYOFF → [GRATITUDE] → CLOSING + CTA
+16. **Follow Selected Structure**: Use the section order from SCRIPT_STRUCTURES.md for the chosen structure. Write in the selected persona's voice.
 
 ---
 

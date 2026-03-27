@@ -27,7 +27,7 @@ This command orchestrates the full Givore content creation process by calling ex
    - STEP 0: Load rotation constraints via `givore-tools.sh script-rotation`
    - STEP 0.5: Validate & correct locations (Valenciano → Castellano)
    - STEP 0.7: Read and analyze last 3 script texts for repetition avoidance
-   - STEP 1: Read all 8 reference files
+   - STEP 1: Read all 13 reference files (including SCRIPT_STRUCTURES.md, SCRIPT_PERSONAS.md, PROOF_TEASE_VARIATIONS.md, SOLUTION_VARIATIONS.md)
    - Input collection (if $ARGUMENTS is incomplete)
    - Script generation with quality checks
    - Save to: `projects/[date]_[topic-slug]/[topic-slug].txt`

@@ -403,3 +403,62 @@ Natural-sounding phrases that incorporate high-volume Spanish search keywords. W
 3. **Spoken vs written** — keyword phrases work in both script narration AND written descriptions
 4. **"Gratis" exception** — "gratis" is fine in spoken scripts but BANNED from written descriptions/metadata
 5. **"Segunda mano [CIUDAD]" is the #1 opportunity** (670K combined) — use it in descriptions whenever content is city-specific
+
+---
+
+## 9. Item Introduction Styles
+
+8 ways to describe the SAME item. Use a different style per variant in a batch. Prevents "Un somier en perfecto estado" from appearing identically in all 7 scripts.
+
+### 1. FACTUAL
+Dry, direct. State what it is and its condition.
+- "Un sofá. Dos plazas. Buen estado."
+- "Una mesa redonda. Madera. Sin rasguños. Funcional."
+- "Juguetes. Varios. Todos funcionan."
+
+### 2. SENSORY
+Touch, feel, observe up close. First-person physical interaction.
+- "Lo toco... y está bien. Firme. Ni una pata floja."
+- "Paso la mano por la madera. Lisa. Sin grietas. Esto vale."
+- "Abro la bolsa. Juguetes. Los aprieto. Funcionan. Hacen ruido y todo."
+
+### 3. CONTRAST
+Outside vs inside. Expectation vs reality.
+- "Por fuera parece abandonado. Por dentro... perfecto."
+- "Desde la bici parece basura. De cerca... es otra historia."
+- "El contenedor al lado le da mala pinta. Pero esto está impecable."
+
+### 4. STORY
+Imagine the item's history. Who had it, why it's here.
+- "Alguien se sentó en este sofá cada noche. Y hoy lo ha dejado ir."
+- "Esta mesa ha visto desayunos, deberes, cenas. Y ahora está aquí."
+- "Estos juguetes fueron de alguien. Un niño creció. Los juguetes se quedaron."
+
+### 5. MINIMAL (telegram style)
+Ultra-short. Periods as rhythm. No adjectives.
+- "Sofá. Acera. Zaidía."
+- "Mesa. Redonda. Trinitat. Perfecta."
+- "Somier. Juguetes. Mesa. Todo ahí."
+
+### 6. QUESTION
+Let the viewer evaluate. Don't describe — ask.
+- "¿Qué veis aquí? Yo veo un salón nuevo para alguien."
+- "¿Esto os parece basura? Mirad bien."
+- "¿Quién deja algo así en la calle?"
+
+### 7. LISTING (inventory style)
+Clinical inventory. Check marks. Inspection report feel.
+- "Cojines intactos. Estructura firme. Tela limpia. Sin manchas."
+- "Superficie lisa. Patas estables. Tornillos en su sitio. Aprobado."
+- "Pieza uno: funciona. Pieza dos: funciona. Pieza tres: funciona. Todas."
+
+### 8. EMOTIONAL
+Lead with the feeling, not the item.
+- "Da penita verlo aquí, la verdad. Porque está perfecto."
+- "Es que... mirad esto. Increíble que esté aquí."
+- "Cada vez que veo algo así me pasa lo mismo. Pena. Y ganas de hacer algo."
+
+### Rotation Rules
+- Within a 7-variant batch: each variant MUST use a different item intro style
+- Across sessions: avoid the same style 2 scripts in a row
+- The style must match the persona (REPORTERO pairs with FACTUAL/LISTING, POETA with STORY/EMOTIONAL, etc.)
