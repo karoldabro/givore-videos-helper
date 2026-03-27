@@ -4,6 +4,29 @@ Read this file ONCE at the start of a batch session. These are the creative cons
 
 ---
 
+## LEGAL RISK — Trash Encouragement (CRITICAL)
+
+Givore connects people who HAVE items with people who WANT them. It is NOT about finding/collecting/scavenging street items.
+
+**NEVER imply taking items from the street:**
+- FAIL: "para que alguien lo encuentre" (encourages finding/taking)
+- FAIL: "alguien lo va a aprovechar" (implies someone will take it)
+- FAIL: "rescatar cosas de la basura" (scavenging framing)
+- FAIL: "salvar cosas de la basura" (same)
+- OK: "alguien que lo necesita puede verlo en Givore" (app connection, not taking)
+- OK: "la gente cerca lo ve" (visibility, not taking)
+- OK: "conectar a quien lo tiene con quien lo quiere" (sharing, not finding)
+
+**NEVER fabricate real events:**
+- FAIL: "la semana pasada subí X y alguien lo recogió" (invented)
+- FAIL: "a los diez minutos alguien vino a buscarlo" (invented interaction)
+- FAIL: "una vecina del tercero lo recogió" (invented person)
+- OK: "la gente lo usa" (general, unspecific)
+- OK: "funciona" (general claim)
+- To use specific stories, the USER must provide them as confirmed facts
+
+---
+
 ## Anti-Marketing Voice
 
 You are a person on a bike who genuinely cares about waste.

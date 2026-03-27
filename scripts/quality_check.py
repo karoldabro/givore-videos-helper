@@ -572,6 +572,45 @@ def check_trash_encouragement(script: str) -> Tuple[str, str, List[str]]:
         return "FAIL", detail, action_items
 
 
+def check_fabricated_facts(script: str) -> Tuple[str, str, List[str]]:
+    """Check 9: Detect fabricated real-world events the AI invented."""
+    text_lower = normalize_text(script)
+    text_no_accents = strip_accents(text_lower)
+
+    # Patterns that indicate a specific past event being claimed
+    FABRICATION_PATTERNS = [
+        # Specific time claims + result
+        (r"la semana pasada.*(?:subi|publique|lo puse)", "claims a specific past upload"),
+        (r"ayer.*(?:subi|publique|encontre.*subi)", "claims yesterday's upload"),
+        (r"hace.*(?:dias|semanas).*(?:subi|publique)", "claims a past upload with timeframe"),
+        # Specific pickup/result claims
+        (r"(?:media hora|diez minutos|una hora).*(?:alguien.*recogio|ya tenia dueno|vino a buscar)", "fabricates specific pickup time"),
+        (r"alguien.*(?:vino a buscar|se lo llevo|lo recogio).*(?:minutos|hora)", "fabricates someone picking up item"),
+        (r"(?:a los|en)\s+\w+\s+minutos.*(?:alguien|vecin)", "fabricates timed response"),
+        # Specific user/neighbor interactions
+        (r"una (?:chica|senora|vecina|vecino|chaval) del barrio.*(?:vino|recogio|buscar)", "fabricates specific person interaction"),
+        (r"@\w+.*(?:encontro|subio|publico)", "fabricates specific user action"),
+        # Specific result counts
+        (r"(?:treinta|veinte|diez|cinco)\s+minutos\s+(?:entre|desde).*(?:acera|calle).*(?:casa|hogar)", "fabricates specific result timeframe"),
+    ]
+
+    matches = []
+    for pattern, reason in FABRICATION_PATTERNS:
+        if re.search(pattern, text_no_accents):
+            # Find the matching text for reporting
+            m = re.search(pattern, text_no_accents)
+            if m:
+                matches.append(f'Fabricated fact: "{m.group(0)[:60]}..." — {reason}')
+
+    if not matches:
+        return "PASS", "no fabricated facts detected", []
+
+    action_items = matches + [
+        "Scripts can say the app works generally ('la gente cerca lo ve') but CANNOT claim specific past events unless confirmed by user"
+    ]
+    return "FAIL", f"{len(matches)} fabricated fact(s) detected", action_items
+
+
 def check_giveaway_framing(script: str) -> Tuple[str, str, List[str]]:
     """Check 8: Verify giveaway-first framing, flag treasure-hunting language."""
     text_lower = normalize_text(script)
@@ -919,6 +958,11 @@ def run_quality_check(
                 all_action_items.append(item)
         else:
             all_action_items.append(item)
+
+    # 9. Fabricated Facts
+    status, detail, items = check_fabricated_facts(script)
+    results.append(("Fabricated Facts", status, detail))
+    all_action_items.extend(items)
 
     # Print report
     warn_count = sum(1 for _, s, _ in results if s == "WARN")
