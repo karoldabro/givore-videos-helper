@@ -51,9 +51,9 @@
   "clip_extraction": {
     "width": 1080,
     "height": 1920,
-    "codec": "libx264",
-    "preset": "fast",
-    "crf": 18,
+    "codec": "libx265",
+    "preset": "slow",
+    "crf": 15,
     "no_audio": true
   },
   "captioning": {

@@ -597,6 +597,8 @@ def extract_clips(video_path, candidates, metadata_list, output_dir, config):
             "-t", str(cand["duration"]),
             "-vf", f"scale={width}:{height}:force_original_aspect_ratio=decrease,pad={width}:{height}:(ow-iw)/2:(oh-ih)/2",
             "-c:v", codec, "-preset", preset, "-crf", str(crf),
+            "-pix_fmt", "yuv420p10le",
+            "-tag:v", "hvc1",
             "-an", "-hide_banner", "-loglevel", "warning",
             "-y", str(out_path)
         ]
