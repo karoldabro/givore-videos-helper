@@ -141,14 +141,25 @@ projects/[prefix][date]_[topic-slug]/
 
 All reference files are loaded via batch_plan.json constraints. DO NOT read variation files manually.
 
-### Step B.1: Collect Inputs (if not in $ARGUMENTS)
+### Step B.1: Creative Discovery + Collect Inputs
 
-**Street-finds** — collect same inputs as `/givore-script`:
+**ALWAYS ask these questions** in ONE message (in Spanish), even if $ARGUMENTS has basic info. Skip only if the user already provided explicit answers:
+
+1. **Tone**: "Este tema, como lo sientes? Mas tipo 'madre mia que pasada' (emocion) o 'fijaos lo que pasa en nuestras calles' (reflexion) o 'esto lo cambiamos entre todos' (comunidad)?"
+2. **Givore level**: "Cuanto protagonismo para Givore? Mencion sutil / Demo rapida / Sin mencion directa"
+3. **Anything unique**: "Hay algo unico? Historia real confirmada, reaccion, algo gracioso, dato concreto?"
+4. **Items condition**: "Los items, en que estado real estan? (no exagerar — solo lo que confirmes)"
+
+Ask ALL four in ONE single message. Do NOT split across multiple messages.
+
+**Then collect any missing mandatory inputs:**
+
+**Street-finds**:
 - Mandatory: Topic, Items + condition, Video structure, Location (auto-correct Valenciano to Castellano)
 - Style: Hook style, Tone, CTA goal, Reveal timing
 - Optional: User gratitude, Visual style, Lighting, Item category
 
-**Trial** — collect same inputs as `/givore-trial`:
+**Trial**:
 - Mandatory: Audience, Tone
 - Style: Format, Marketing approach, Duration
 
