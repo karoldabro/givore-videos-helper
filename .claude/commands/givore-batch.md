@@ -250,6 +250,12 @@ output_directory: "[parent]/v1/"
 
 The persona-specific parameters (speed, stability, similarity_boost, style) come from `batch_plan.json`.
 
+**After audio generated, rename immediately:**
+```bash
+$GIVORE_TOOLS rename-audio [parent] [slug]
+```
+This renames the ElevenLabs `tts_*.mp3` output to `[slug].mp3` in all variant folders. Run it after EACH audio generation (v1 in Phase B, and after all v2-v7 in Phase D).
+
 **Trial voice config** — use tone-specific settings from batch_plan.json (overrides persona settings).
 
 ### Step B.5: Generate v1 Metadata + Captions + Subtitles
