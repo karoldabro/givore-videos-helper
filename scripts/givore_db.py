@@ -756,6 +756,7 @@ def cmd_generate_config(args):
             })
         print(f"SFX: {len(sfx_list)} Basic Tier effects added")
 
+    clip_volume = getattr(args, "clip_volume", 0.0) or 0.0
     config = {
         "project_folder": project_folder + "/",
         "template": os.path.abspath(template),
@@ -764,6 +765,7 @@ def cmd_generate_config(args):
         "audio": audio_file,
         "subtitles": os.path.abspath(srt_path) if srt_path else "",
         "subtitle_template_ass": os.path.abspath(ass_template),
+        "clip_volume": clip_volume,
     }
 
     out_path = os.path.join(project_folder, "assembly_config.json")
@@ -1553,6 +1555,8 @@ def main():
     p_gc.add_argument("--srt", default=None, help="SRT file path (auto-detected if omitted)")
     p_gc.add_argument("--sfx", default=None,
                       help='SFX shorthand: "WHOOSH@2.8,DING@15.2,CHIME@22.0,POP@45.1"')
+    p_gc.add_argument("--clip-volume", type=float, default=0.0,
+                      help="Video clip ambient audio volume (0.0=muted, 0.3=subtle, 0.8=prominent)")
 
     # --- Script history ---
     p_sa = sub.add_parser("script-add", help="Add script history entry")

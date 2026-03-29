@@ -19,7 +19,7 @@ Media queries:
 
 Video pipeline:
   generate-config [args]      Generate assembly_config.json from audio + clip IDs + SFX
-                              Usage: generate-config --audio <mp3> --clips <ids> --sfx "WHOOSH@2.8,DING@15.0" --project-folder <dir>
+                              Usage: generate-config --audio <mp3> --clips <ids> --sfx "WHOOSH@2.8,DING@15.0" --clip-volume 0.3 --project-folder <dir>
   batch-plan [args]           Generate variant matrix (batch_plan.json) from rotation constraints
   batch-validate-plan <json>  Validate a batch_plan.json for constraint compliance
   assemble <config.json>      Assemble project (JSON -> project.json + .mlt)

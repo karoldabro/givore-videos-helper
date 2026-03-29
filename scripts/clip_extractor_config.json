@@ -68,7 +68,7 @@
     "codec": "libx265",
     "preset": "slow",
     "crf": 15,
-    "no_audio": true
+    "no_audio": false
   },
   "captioning": {
     "model": "vikhyatk/moondream2",

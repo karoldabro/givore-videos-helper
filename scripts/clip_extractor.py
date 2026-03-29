@@ -659,9 +659,9 @@ def caption_clips(extracted, config, device="cuda", verbose=False):
 
         # Clean up caption for filename use
         caption_clean = caption.lower().strip().rstrip(".")
-        # Truncate to ~80 chars for reasonable filename length
-        if len(caption_clean) > 80:
-            caption_clean = caption_clean[:80].rsplit(" ", 1)[0]
+        # Truncate to ~150 chars (ext4 supports 255; prefix+suffix use ~50)
+        if len(caption_clean) > 150:
+            caption_clean = caption_clean[:150].rsplit(" ", 1)[0]
         caption_clean = re.sub(r'[<>:"/\\|?*]', '', caption_clean)
         caption_clean = re.sub(r'\s+', ' ', caption_clean).strip()
 
@@ -719,6 +719,7 @@ def extract_clips(video_path, candidates, metadata_list, output_dir, config):
             stem = filename.rsplit(".", 1)[0]
             out_path = output_dir / f"{stem} ({suffix}).mp4"
 
+        no_audio = ext_config.get("no_audio", False)
         cmd = [
             "ffmpeg", "-ss", str(cand["start_sec"]),
             "-i", str(video_path),
@@ -727,9 +728,13 @@ def extract_clips(video_path, candidates, metadata_list, output_dir, config):
             "-c:v", codec, "-preset", preset, "-crf", str(crf),
             "-pix_fmt", "yuv420p10le",
             "-tag:v", "hvc1",
-            "-an", "-hide_banner", "-loglevel", "warning",
-            "-y", str(out_path)
         ]
+        if no_audio:
+            cmd.append("-an")
+        else:
+            cmd.extend(["-c:a", "aac", "-b:a", "128k"])
+        cmd.extend(["-hide_banner", "-loglevel", "warning",
+                     "-y", str(out_path)])
         subprocess.run(cmd, check=True)
 
         meta["filename"] = out_path.name

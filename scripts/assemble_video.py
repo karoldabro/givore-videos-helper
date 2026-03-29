@@ -318,6 +318,15 @@ def assemble(config_path: str) -> dict:
             out_point=audio_dur,
         )
 
+    # Step 8b: Apply clip volume to video track (ambient audio from clips)
+    clip_volume = config.get("clip_volume", 0.0)
+    if clip_volume > 0:
+        v_track_clips = [t for t in proj["tracks"] if t["id"] == v_track["id"]][0]["clips"]
+        for clip_idx in range(len(v_track_clips)):
+            filt_mod.add_filter(proj, v_track["id"], clip_idx, "volume",
+                                params={"level": str(clip_volume)})
+        print(f"Clip volume: {clip_volume} applied to {len(v_track_clips)} video clips (ambient audio enabled)")
+
     # Step 9: Place SFX on A2 (if any)
     sfx_configs = config.get("sfx", [])
     if sfx_configs:
@@ -379,6 +388,10 @@ def assemble(config_path: str) -> dict:
 
     # Step 12: Generate MLT XML
     xml = build_mlt_xml(proj)
+    # If clip_volume > 0, remove hide="audio" from video tracks in tractor
+    # so ambient audio from clips is audible (the library hardcodes this)
+    if clip_volume > 0:
+        xml = xml.replace(' hide="audio"', '')
     with open(project_mlt, "w", encoding="utf-8") as f:
         f.write(xml)
 
@@ -536,8 +549,8 @@ if __name__ == "__main__":
         slug = os.path.basename(config["project_folder"])
         final_path = os.path.join(config["project_folder"], f"{slug}_final.mp4")
         render(mlt_path, final_path, width=1080, height=1920,
-               quality_args=["crf=18", "preset=slow", "vb=0",
-                             "maxrate=8000k", "bufsize=16000k"],
+               quality_args=["crf=15", "preset=slow", "vb=0",
+                             "maxrate=40000k", "bufsize=80000k"],
                audio_bitrate="192k", timeout=600)
     else:
         assemble(config_path)
