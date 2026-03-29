@@ -30,7 +30,11 @@
     "street_art": "street art graffiti or mural on a wall",
     "dynamic_cycling": "fast dynamic cycling through narrow city streets",
     "plaza": "a wide open plaza or square with people",
-    "waterfront": "cycling along a river or waterfront promenade"
+    "waterfront": "cycling along a river or waterfront promenade",
+    "item_closeup": "close-up of furniture or household item on a sidewalk near a gray container or dumpster",
+    "phone_photographing": "person holding a phone to photograph an object on the ground",
+    "sky_ending": "camera pointing up toward sky tree canopy or rooftops",
+    "establishing_wide": "wide establishing shot of a city street or intersection"
   },
   "object_scoring": {
     "bonus": {
@@ -40,9 +44,19 @@
       "cat": 0.15,
       "potted plant": 0.05,
       "bench": 0.05,
-      "chair": 0.08,
-      "couch": 0.10,
-      "backpack": 0.03
+      "chair": 0.12,
+      "couch": 0.15,
+      "backpack": 0.03,
+      "bed": 0.12,
+      "dining table": 0.12,
+      "tv": 0.10,
+      "refrigerator": 0.12,
+      "oven": 0.08,
+      "microwave": 0.06,
+      "sink": 0.06,
+      "toilet": 0.06,
+      "cell phone": 0.12,
+      "suitcase": 0.06
     },
     "bonus_cap": 0.40,
     "penalty_traffic_only": -0.10,
@@ -59,6 +73,21 @@
   "captioning": {
     "model": "vikhyatk/moondream2",
     "revision": "2025-01-09",
-    "caption_length": "short"
+    "caption_length": "short",
+    "query_prompt": "Describe this scene in 5-10 words. Focus on: the main subject (building, furniture, park, street), notable objects, and camera movement. Do NOT mention bicycle, cycling, handlebars, or POV.",
+    "use_query": true
+  },
+  "motion_descriptors": {
+    "dynamic_threshold": 0.6,
+    "sharp_variance_threshold": 0.15,
+    "sharp_motion_min": 0.3,
+    "calm_threshold": 0.25
+  },
+  "type_prefix": {
+    "item_clip_score_threshold": 0.28,
+    "end_position_threshold": 0.90,
+    "start_position_threshold": 0.08,
+    "hook_motion_threshold": 0.55,
+    "bridge_variance_threshold": 0.20
   }
 }

@@ -72,6 +72,10 @@ def load_pools() -> dict[str, Any]:
     sys.path.insert(0, str(SCRIPTS_DIR))
     import reference_pools as rp
 
+    # Content formats (batch-compatible only)
+    all_formats = rp.get_content_formats()
+    batch_formats = [f for f in all_formats if f.get("batch_compatible")]
+
     return {
         "hooks": [h["name"] for h in rp.get_hook_types()],
         "ctas": [c["name"] for c in rp.get_cta_types()],
@@ -85,6 +89,8 @@ def load_pools() -> dict[str, Any]:
         "persona_voices": {p["name"]: p["voice"] for p in rp.get_personas()},
         "item_intros": [i["name"] for i in rp.get_item_intro_styles()],
         "compatibility": rp.PERSONA_STRUCTURE_COMPATIBILITY,
+        "formats": [f["id"] for f in batch_formats],
+        "format_details": {f["id"]: f for f in batch_formats},
     }
 
 
@@ -243,6 +249,8 @@ def build_batch_plan(
     exclude_ctas: list[str],
     location_filters: list[str],
     seed: int | None = None,
+    mixed_formats: bool = True,
+    forced_format: str | None = None,
 ) -> dict[str, Any]:
     """Build the complete batch plan JSON structure."""
 
@@ -424,6 +432,108 @@ def build_batch_plan(
         if structure_selections[i] in REHOOK_SKIP_STRUCTURES:
             rehook_selections[i] = None
 
+    # --- Content formats ---
+    format_pool = pools["formats"]
+    format_details = pools["format_details"]
+    DEFAULT_FORMAT = "CLASSIC_STREET_FINDS"
+
+    format_selections: list[str] = [""] * variant_count
+
+    if not mixed_formats:
+        # All variants use the same format
+        v1_format = forced_format if forced_format else DEFAULT_FORMAT
+        format_selections = [v1_format] * variant_count
+    else:
+        # v1 always gets default (or forced)
+        v1_format = forced_format if forced_format else DEFAULT_FORMAT
+        format_selections[0] = v1_format
+
+        # v2-v7 get diversified formats from batch-compatible pool
+        # Remove v1's format to maximize diversity, but allow it back if pool is small
+        diversify_pool = [f for f in format_pool if f != v1_format]
+        if not diversify_pool:
+            diversify_pool = list(format_pool)
+
+        # Select with compatibility filtering
+        remaining = variant_count - 1
+        if remaining > 0:
+            candidates = select_values(diversify_pool, remaining, rng)
+            format_selections[1:] = candidates
+
+    # Enforce max-2 rule: no format repeated more than twice in a batch
+    format_counts: dict[str, int] = {}
+    for i, fmt in enumerate(format_selections):
+        format_counts[fmt] = format_counts.get(fmt, 0) + 1
+        if format_counts[fmt] > 2:
+            # Replace with a less-used format from the pool
+            used_twice = {f for f, c in format_counts.items() if c >= 2}
+            alternatives = [f for f in format_pool if f not in used_twice]
+            if alternatives:
+                replacement = rng.choice(alternatives)
+                format_selections[i] = replacement
+                format_counts[fmt] -= 1
+                format_counts[replacement] = format_counts.get(replacement, 0) + 1
+
+    # Validate format-persona compatibility
+    for i in range(variant_count):
+        fmt_id = format_selections[i]
+        fmt_info = format_details.get(fmt_id, {})
+        incompatible = fmt_info.get("incompatible_personas", [])
+        persona = persona_selections[i]
+
+        if incompatible and persona in incompatible:
+            # Try to swap persona with another variant that has no conflict
+            swapped = False
+            for j in range(variant_count):
+                if j == i:
+                    continue
+                other_persona = persona_selections[j]
+                other_fmt_info = format_details.get(format_selections[j], {})
+                other_incompatible = other_fmt_info.get("incompatible_personas", [])
+                # Can we swap without creating new conflicts?
+                if (other_persona not in incompatible
+                        and persona not in other_incompatible):
+                    persona_selections[i], persona_selections[j] = (
+                        persona_selections[j], persona_selections[i]
+                    )
+                    # Also swap voice settings
+                    swapped = True
+                    break
+            if not swapped:
+                print(
+                    f"WARNING: v{i+1} format {fmt_id} incompatible with persona "
+                    f"{persona}, no swap available",
+                    file=sys.stderr,
+                )
+
+    # Validate format-structure compatibility
+    for i in range(variant_count):
+        fmt_id = format_selections[i]
+        fmt_info = format_details.get(fmt_id, {})
+        compatible_structures = fmt_info.get("compatible_structures", [])
+        structure = structure_selections[i]
+
+        # Empty list or ["ALL"] means any structure is fine
+        if (compatible_structures
+                and compatible_structures != ["ALL"]
+                and structure not in compatible_structures):
+            # Try to swap structure to a compatible one
+            persona = persona_selections[i]
+            persona_avoid = compatibility.get(persona, {}).get("avoid", [])
+            valid = [
+                s for s in compatible_structures
+                if s in structure_pool and s not in persona_avoid
+            ]
+            if valid:
+                structure_selections[i] = rng.choice(valid)
+            else:
+                print(
+                    f"WARNING: v{i+1} format {fmt_id} prefers structures "
+                    f"{compatible_structures}, but none compatible with "
+                    f"persona {persona}",
+                    file=sys.stderr,
+                )
+
     # --- Step 5: Visual hook clips ---
     all_clips = load_clips_from_db()
     visual_hook_ids = select_visual_hook_clips(
@@ -438,6 +548,8 @@ def build_batch_plan(
     variants: list[dict[str, Any]] = []
     for i in range(variant_count):
         persona = persona_selections[i]
+        fmt_id = format_selections[i]
+        fmt_info = format_details.get(fmt_id, {})
         variant: dict[str, Any] = {
             "variant": i + 1,
             "hook_type": hook_selections[i],
@@ -452,6 +564,12 @@ def build_batch_plan(
             "persona": persona,
             "persona_voice_settings": persona_voices.get(persona),
             "visual_hook_clip_id": visual_hook_ids[i] if i < len(visual_hook_ids) else None,
+            "content_format": fmt_id,
+            "format_length_target": fmt_info.get("length", "45-60s"),
+            "format_narration_style": fmt_info.get("narration", "full"),
+            "format_script_sections": fmt_info.get("script_sections", []),
+            "format_clip_guidance": fmt_info.get("clip_guidance", ""),
+            "format_platform_priority": fmt_info.get("platform_priority", []),
         }
         variants.append(variant)
 
@@ -508,16 +626,17 @@ def print_summary(plan: dict[str, Any]) -> None:
     if rc["recent_clips"]:
         print(f"  Recent clips:     {len(rc['recent_clips'])} IDs excluded", file=sys.stderr)
 
-    print(f"\n  {'V':>2} | {'Hook':<22} | {'CTA':<14} | {'Structure':<11} | {'Persona':<12} | {'Proof Tease':<16} | {'Rehook':<18} | {'VH Clip':>7}", file=sys.stderr)
-    print(f"  {'--':>2} | {'-' * 22} | {'-' * 14} | {'-' * 11} | {'-' * 12} | {'-' * 16} | {'-' * 18} | {'-' * 7}", file=sys.stderr)
+    print(f"\n  {'V':>2} | {'Hook':<22} | {'CTA':<14} | {'Structure':<11} | {'Persona':<12} | {'Format':<24} | {'Proof Tease':<16} | {'VH Clip':>7}", file=sys.stderr)
+    print(f"  {'--':>2} | {'-' * 22} | {'-' * 14} | {'-' * 11} | {'-' * 12} | {'-' * 24} | {'-' * 16} | {'-' * 7}", file=sys.stderr)
 
     for v in variants:
-        rehook = v["rehook_style"] or "(skipped)"
+        rehook = v.get("rehook_style") or "(skipped)"
         vh = str(v["visual_hook_clip_id"]) if v["visual_hook_clip_id"] else "-"
+        fmt = v.get("content_format", "CLASSIC_STREET_FINDS")
         print(
             f"  {v['variant']:>2} | {v['hook_type']:<22} | {v['cta_type']:<14} | "
-            f"{v['structure']:<11} | {v['persona']:<12} | {v['proof_tease_style']:<16} | "
-            f"{rehook:<18} | {vh:>7}",
+            f"{v['structure']:<11} | {v['persona']:<12} | {fmt:<24} | "
+            f"{v['proof_tease_style']:<16} | {vh:>7}",
             file=sys.stderr,
         )
 
@@ -526,10 +645,13 @@ def print_summary(plan: dict[str, Any]) -> None:
     personas_list = [v["persona"] for v in variants]
     persona_set = set(personas_list)
     vh_clips = [v["visual_hook_clip_id"] for v in variants if v["visual_hook_clip_id"]]
+    formats_list = [v.get("content_format", "CLASSIC_STREET_FINDS") for v in variants]
+    formats_set = set(formats_list)
 
     print(f"\n  Uniqueness checks:", file=sys.stderr)
     print(f"    Hook types:     {len(hooks_set)}/{n} unique", file=sys.stderr)
     print(f"    Personas:       {len(persona_set)}/{n} unique ({len(persona_set)} distinct)", file=sys.stderr)
+    print(f"    Formats:        {len(formats_set)}/{n} unique", file=sys.stderr)
     print(f"    VH clips:       {len(set(vh_clips))}/{len(vh_clips)} unique", file=sys.stderr)
 
     # Check repeated persona structures
@@ -567,6 +689,12 @@ def main() -> None:
     plan_parser.add_argument("--exclude-ctas", default="", help="Comma-separated CTA types to exclude")
     plan_parser.add_argument("--location-filter", default="", help="Comma-separated location substrings for clip filtering")
     plan_parser.add_argument("--seed", type=int, default=None, help="Random seed (default: date-based)")
+    plan_parser.add_argument("--mixed-formats", action="store_true", default=True,
+                             help="Enable format diversity across variants (default: on)")
+    plan_parser.add_argument("--no-mixed-formats", action="store_false", dest="mixed_formats",
+                             help="Force all variants to use the same format")
+    plan_parser.add_argument("--format", default=None, metavar="FORMAT_ID",
+                             help="Force v1's content format (default: CLASSIC_STREET_FINDS)")
 
     args = parser.parse_args()
 
@@ -586,6 +714,8 @@ def main() -> None:
         exclude_ctas=exclude_ctas,
         location_filters=location_filters,
         seed=args.seed,
+        mixed_formats=args.mixed_formats,
+        forced_format=args.format,
     )
 
     # Write JSON to file

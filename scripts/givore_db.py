@@ -181,10 +181,33 @@ def get_db():
     return conn
 
 
+def _column_exists(conn, table, column):
+    """Check if a column exists in a table."""
+    rows = conn.execute(f"PRAGMA table_info({table})").fetchall()
+    return any(r["name"] == column for r in rows)
+
+
+def run_migrations(conn):
+    """Run idempotent ALTER TABLE migrations for new columns.
+
+    Safe to call multiple times — checks for column existence before adding.
+    """
+    migrations = [
+        ("clips", "type_prefix", "TEXT"),
+        ("clips", "motion_tag", "TEXT"),
+        ("script_history", "content_format", "TEXT"),
+    ]
+    for table, column, col_type in migrations:
+        if not _column_exists(conn, table, column):
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {col_type}")
+    conn.commit()
+
+
 def ensure_schema():
     """Create all tables if they don't exist (non-destructive)."""
     conn = get_db()
     conn.executescript(CLIP_SCHEMA + HISTORY_SCHEMA)
+    run_migrations(conn)
     conn.commit()
     conn.close()
 
@@ -222,12 +245,15 @@ def discover_files():
 
 
 
-def insert_clip(conn, path, filename, duration, style, mood, description, is_vh, sections):
+def insert_clip(conn, path, filename, duration, style, mood, description, is_vh, sections,
+                type_prefix=None, motion_tag=None):
     """Insert a clip and its sections into the DB."""
     cur = conn.execute(
-        "INSERT INTO clips (filename, path, duration_seconds, style, mood, description, is_visual_hook) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?)",
-        (filename, path, duration, style, mood, description, 1 if is_vh else 0)
+        "INSERT INTO clips (filename, path, duration_seconds, style, mood, description, "
+        "is_visual_hook, type_prefix, motion_tag) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (filename, path, duration, style, mood, description, 1 if is_vh else 0,
+         type_prefix, motion_tag)
     )
     clip_id = cur.lastrowid
     for sec in sections:
@@ -250,7 +276,7 @@ def cmd_list(args):
 
     query = """
         SELECT c.id, c.filename, c.duration_seconds, c.style, c.mood,
-               c.is_visual_hook, c.description,
+               c.is_visual_hook, c.description, c.type_prefix, c.motion_tag,
                GROUP_CONCAT(cs.section, ',') as sections
         FROM clips c
         LEFT JOIN clip_sections cs ON c.id = cs.clip_id
@@ -282,14 +308,16 @@ def cmd_list(args):
         print("No clips found matching filters.")
         return
 
-    print(f"{'ID':>4} | {'Dur':>6} | {'Sections':<20} | {'Style':<14} | {'Mood':<14} | {'Filename'}")
-    print(f"{'----':>4} | {'------':>6} | {'--------------------':<20} | {'--------------':<14} | {'--------------':<14} | {'--------'}")
+    print(f"{'ID':>4} | {'Dur':>6} | {'Sections':<20} | {'Style':<14} | {'Mood':<14} | {'Prefix':<8} | {'Motion':<8} | {'Filename'}")
+    print(f"{'----':>4} | {'------':>6} | {'--------------------':<20} | {'--------------':<14} | {'--------------':<14} | {'--------':<8} | {'--------':<8} | {'--------'}")
     for r in rows:
         sections = r["sections"] or "-"
         style = r["style"] or "-"
         mood = r["mood"] or "-"
+        type_prefix = r["type_prefix"] or "-"
+        motion_tag = r["motion_tag"] or "-"
         vh = " [VH]" if r["is_visual_hook"] else ""
-        print(f"{r['id']:>4} | {r['duration_seconds']:>5.2f}s | {sections:<20} | {style:<14} | {mood:<14} | {r['filename']}{vh}")
+        print(f"{r['id']:>4} | {r['duration_seconds']:>5.2f}s | {sections:<20} | {style:<14} | {mood:<14} | {type_prefix:<8} | {motion_tag:<8} | {r['filename']}{vh}")
 
     print(f"\n{len(rows)} clip(s)")
 
@@ -325,6 +353,8 @@ def cmd_info(args):
     print(f"Style:       {row['style'] or '-'}")
     print(f"Mood:        {row['mood'] or '-'}")
     print(f"Description: {row['description'] or '-'}")
+    print(f"Type Prefix: {row['type_prefix'] or '-'}")
+    print(f"Motion Tag:  {row['motion_tag'] or '-'}")
     print(f"Visual Hook: {'Yes' if row['is_visual_hook'] else 'No'}")
     print(f"Created:     {row['created_at']}")
 
@@ -531,11 +561,16 @@ def cmd_bulk_add(args):
         mood = entry.get("mood", "calm")
         desc = entry.get("desc", "")
         is_vh = entry.get("visual_hook", False)
+        type_prefix = entry.get("type_prefix", None)
+        motion_tag = entry.get("motion_tag", None)
 
-        clip_id = insert_clip(conn, filepath, filename, duration, style, mood, desc, is_vh, sections)
+        clip_id = insert_clip(conn, filepath, filename, duration, style, mood, desc, is_vh, sections,
+                              type_prefix=type_prefix, motion_tag=motion_tag)
         added += 1
         vh_tag = " [VH]" if is_vh else ""
-        print(f"  #{clip_id} {filename} ({duration:.2f}s) [{','.join(sections)}] {style}/{mood}{vh_tag}")
+        prefix_tag = f" prefix={type_prefix}" if type_prefix else ""
+        motion_tag_str = f" motion={motion_tag}" if motion_tag else ""
+        print(f"  #{clip_id} {filename} ({duration:.2f}s) [{','.join(sections)}] {style}/{mood}{vh_tag}{prefix_tag}{motion_tag_str}")
 
     conn.commit()
     conn.close()
@@ -745,23 +780,24 @@ def cmd_generate_config(args):
 
 SCRIPT_FIELDS = ["hook_type", "cta_type", "proof_tease", "problem_angle",
                  "rehook_style", "visual_style", "lighting", "item_category",
-                 "structure_type", "persona"]
+                 "structure_type", "persona", "content_format"]
 
 
 def cmd_script_add(args):
     """Add a script history entry."""
     ensure_schema()
     conn = get_db()
+    content_format = getattr(args, 'content_format', None)
     conn.execute(
         """INSERT INTO script_history
            (date, project_slug, file_path, hook_type, cta_type, proof_tease,
             problem_angle, rehook_style, visual_style, lighting, item_category,
-            structure_type, persona)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            structure_type, persona, content_format)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (args.date, args.slug, args.file, args.hook_type, args.cta_type,
          args.proof_tease, args.problem_angle, args.rehook_style,
          args.visual_style, args.lighting, args.item_category,
-         args.structure_type, args.persona)
+         args.structure_type, args.persona, content_format)
     )
     conn.commit()
     conn.close()
@@ -783,10 +819,10 @@ def cmd_script_list(args):
         print("No script history entries.")
         return
 
-    print(f"{'ID':>4} | {'Date':<12} | {'Slug':<30} | {'Hook':<16} | {'CTA':<12} | {'Proof':<6} | {'Problem':<20} | {'Rehook':<18} | {'Visual':<12} | {'Light':<12} | {'Item':<10}")
-    print("-" * 170)
+    print(f"{'ID':>4} | {'Date':<12} | {'Slug':<30} | {'Hook':<16} | {'CTA':<12} | {'Proof':<6} | {'Problem':<20} | {'Rehook':<18} | {'Visual':<12} | {'Light':<12} | {'Item':<10} | {'Format':<14}")
+    print("-" * 186)
     for r in rows:
-        print(f"{r['id']:>4} | {r['date']:<12} | {r['project_slug']:<30} | {r['hook_type'] or '-':<16} | {r['cta_type'] or '-':<12} | {r['proof_tease'] or '-':<6} | {r['problem_angle'] or '-':<20} | {r['rehook_style'] or '-':<18} | {r['visual_style'] or '-':<12} | {r['lighting'] or '-':<12} | {r['item_category'] or '-':<10}")
+        print(f"{r['id']:>4} | {r['date']:<12} | {r['project_slug']:<30} | {r['hook_type'] or '-':<16} | {r['cta_type'] or '-':<12} | {r['proof_tease'] or '-':<6} | {r['problem_angle'] or '-':<20} | {r['rehook_style'] or '-':<18} | {r['visual_style'] or '-':<12} | {r['lighting'] or '-':<12} | {r['item_category'] or '-':<10} | {r['content_format'] or '-':<14}")
 
     print(f"\n{len(rows)} entry(ies)")
 
@@ -1446,7 +1482,10 @@ def cmd_migrate_videos(args):
 
 
 def cmd_migrate_all(args):
-    """Run all migrations."""
+    """Run all migrations (MD imports + schema migrations)."""
+    # Run idempotent column migrations first
+    ensure_schema()
+    print("Schema migrations applied.")
     cmd_migrate_scripts(args)
     cmd_migrate_trials(args)
     cmd_migrate_videos(args)
@@ -1530,6 +1569,8 @@ def main():
     p_sa.add_argument("--item-category", default=None)
     p_sa.add_argument("--structure-type", default=None)
     p_sa.add_argument("--persona", default=None)
+    p_sa.add_argument("--content-format", default=None, dest="content_format",
+                      help="Content format ID used for this script")
 
     p_sl = sub.add_parser("script-list", help="List recent script history")
     p_sl.add_argument("--last", type=int, default=10)

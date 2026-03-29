@@ -705,6 +705,93 @@ def extract_sentences(text: str, min_words: int = 5) -> List[str]:
     return sentences
 
 
+def check_format_diversity(batch_dir: str) -> Tuple[str, str]:
+    """Check that batch variants use diverse content formats."""
+    plan_path = Path(batch_dir) / "batch_plan.json"
+    if not plan_path.exists():
+        return "SKIP", "No batch_plan.json found"
+
+    try:
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return "SKIP", "Could not parse batch_plan.json"
+
+    variants = plan.get("variants", [])
+
+    formats = [v.get("content_format", "CLASSIC_STREET_FINDS") for v in variants]
+    unique_formats = set(formats)
+
+    n_variants = len(formats)
+    n_unique = len(unique_formats)
+
+    if n_variants <= 1:
+        return "PASS", "Single variant"
+
+    if n_unique == 1:
+        return "FAIL", f"All {n_variants} variants use same format: {formats[0]}"
+    elif n_unique < 4 and n_variants >= 7:
+        return "WARN", f"Only {n_unique} unique formats across {n_variants} variants: {sorted(unique_formats)}"
+    else:
+        return "PASS", f"{n_unique} unique formats across {n_variants} variants"
+
+
+def check_format_length(script_text: str, format_id: str, format_details: dict) -> Tuple[str, str]:
+    """Check script word count against format's target length."""
+    if format_id not in format_details:
+        return "SKIP", "Unknown format"
+
+    fmt = format_details[format_id]
+    narration = fmt.get("narration", "full")
+
+    if narration == "zero":
+        # Zero-narration format should have no/minimal script
+        word_count = len(script_text.split())
+        if word_count > 20:
+            return "WARN", f"Zero-narration format has {word_count} words"
+        return "PASS", "Zero-narration format"
+
+    length_str = fmt.get("length", "45-60s")
+    # Parse "45-60s" -> (45, 60)
+    match = re.match(r"(\d+)-(\d+)s", length_str)
+    if not match:
+        return "SKIP", f"Can't parse length: {length_str}"
+
+    min_sec, max_sec = int(match.group(1)), int(match.group(2))
+    target_words = ((min_sec + max_sec) / 2) * (200 / 60)  # 200 WPM for Spanish
+    word_count = len(script_text.split())
+
+    tolerance = 0.25  # 25% tolerance
+    if word_count < target_words * (1 - tolerance):
+        return "WARN", f"Script too short for {format_id}: {word_count} words (target ~{int(target_words)})"
+    elif word_count > target_words * (1 + tolerance):
+        return "WARN", f"Script too long for {format_id}: {word_count} words (target ~{int(target_words)})"
+
+    return "PASS", f"{word_count} words (target ~{int(target_words)} for {length_str})"
+
+
+def _load_format_details_from_plan(batch_dir: str) -> dict:
+    """Load format_details from batch_plan.json if available."""
+    plan_path = Path(batch_dir) / "batch_plan.json"
+    if not plan_path.exists():
+        return {}
+    try:
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    # Reconstruct format_details from variant data
+    details = {}
+    for v in plan.get("variants", []):
+        fmt_id = v.get("content_format")
+        if fmt_id and fmt_id not in details:
+            details[fmt_id] = {
+                "id": fmt_id,
+                "length": v.get("format_length_target", "45-60s"),
+                "narration": v.get("format_narration_style", "full"),
+                "script_sections": v.get("format_script_sections", []),
+            }
+    return details
+
+
 def check_batch_diversity(scripts: dict) -> tuple:
     """Check diversity across all batch variants.
 
@@ -829,6 +916,48 @@ def run_batch_check(batch_dir: str) -> int:
 
     for line in report:
         print(line)
+
+    # --- Format diversity check ---
+    fmt_status, fmt_detail = check_format_diversity(batch_dir)
+    if fmt_status != "SKIP":
+        print(f"\nFormat diversity:       {fmt_status} ({fmt_detail})")
+        if fmt_status == "FAIL":
+            status = "FAIL"
+            action_items.append(f"Format diversity: {fmt_detail}")
+        elif fmt_status == "WARN" and status != "FAIL":
+            status = "WARN"
+            action_items.append(f"Format diversity: {fmt_detail}")
+
+    # --- Per-variant format length check ---
+    format_details = _load_format_details_from_plan(batch_dir)
+    if format_details:
+        plan_path = Path(batch_dir) / "batch_plan.json"
+        try:
+            plan_data = json.loads(plan_path.read_text(encoding="utf-8"))
+            plan_variants = plan_data.get("variants", [])
+        except (json.JSONDecodeError, OSError):
+            plan_variants = []
+
+        variant_names = sorted(scripts.keys())
+        length_issues = []
+        for vname in variant_names:
+            # Match variant name (e.g., "v1") to plan variant index
+            v_idx = int(vname.replace("v", "")) - 1
+            if v_idx < len(plan_variants):
+                fmt_id = plan_variants[v_idx].get("content_format", "CLASSIC_STREET_FINDS")
+                len_status, len_detail = check_format_length(scripts[vname], fmt_id, format_details)
+                if len_status == "WARN":
+                    length_issues.append(f"{vname}: {len_detail}")
+                elif len_status == "FAIL":
+                    length_issues.append(f"{vname}: {len_detail}")
+
+        if length_issues:
+            print(f"\nFormat length checks:")
+            for issue in length_issues:
+                print(f"  WARN: {issue}")
+            if status == "PASS":
+                status = "WARN"
+            action_items.extend(length_issues)
 
     print()
     print(f"Overall: {status}")
@@ -1192,6 +1321,35 @@ def validate_plan(plan_path: str) -> int:
         record("Constraint compliance", "FAIL",
                f"{len(constraint_violations)} violation(s): "
                + "; ".join(constraint_violations))
+
+    # --- 10. Content format diversity ---
+    formats = [v.get("content_format", "CLASSIC_STREET_FINDS") for v in variants]
+    unique_formats = set(formats)
+    format_counts = {}
+    for fmt in formats:
+        format_counts[fmt] = format_counts.get(fmt, 0) + 1
+    over_two = {f: c for f, c in format_counts.items() if c > 2}
+
+    if len(unique_formats) == 1 and n >= 3:
+        record("Format diversity", "WARN",
+               f"all {n} variants use {formats[0]} — consider --mixed-formats")
+    elif over_two:
+        over_list = [f"{f} ({c}x)" for f, c in over_two.items()]
+        record("Format diversity", "WARN",
+               f"format used >2 times: {', '.join(over_list)}")
+    else:
+        record("Format diversity", "PASS",
+               f"{len(unique_formats)} unique format(s) across {n} variants")
+
+    # --- 11. Format-persona compatibility ---
+    fmt_persona_violations = []
+    for v in variants:
+        fmt_id = v.get("content_format", "")
+        incompatible = v.get("format_script_sections")  # proxy check: if format data exists
+        # Check via format fields embedded in variant
+        # We don't have full format_details here, but can check if the plan
+        # stored incompatible info. For now, this is validated at plan generation time.
+        pass  # Validated during build_batch_plan()
 
     # --- Print report ---
     plan_name = Path(plan_path).name

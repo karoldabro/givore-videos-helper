@@ -389,6 +389,76 @@ def get_item_intro_styles(md_path: str | Path | None = None) -> list[dict[str, A
     return results
 
 
+def get_content_formats(md_path: str | Path | None = None) -> list[dict[str, Any]]:
+    """Parse CONTENT_FORMATS.md -> list of content format dicts with all fields."""
+    key = "formats"
+    if key in _cache:
+        return _cache[key]
+
+    path = Path(md_path) if md_path else GIVORE_ROOT / "CONTENT_FORMATS.md"
+    text = _read_md(path)
+
+    # Headers: ### FORMAT 1: EL_RANKING_CALLEJERO
+    pattern = r"^### FORMAT \d+:\s+(?P<name>\S+)\s*$"
+    sections = _split_sections(text, pattern)
+
+    # Field mapping: markdown label prefix -> dict key
+    _field_map: list[tuple[str, str]] = [
+        ("- **Name**:", "display_name"),
+        ("- **Length**:", "length"),
+        ("- **Narration**:", "narration"),
+        ("- **Batch compatible**:", "batch_compatible"),
+        ("- **Script sections**:", "script_sections"),
+        ("- **Compatible structures**:", "compatible_structures"),
+        ("- **Compatible personas**:", "compatible_personas"),
+        ("- **Incompatible personas**:", "incompatible_personas"),
+        ("- **Clip guidance**:", "clip_guidance"),
+        ("- **Content pillar**:", "content_pillar"),
+        ("- **Platform priority**:", "platform_priority"),
+        ("- **Viral potential**:", "viral_potential"),
+        ("- **Series**:", "series"),
+        ("- **Hook template**:", "hook_template"),
+        ("- **CTA approach**:", "cta_approach"),
+        ("- **Algorithm signal**:", "algorithm_signal"),
+    ]
+
+    results: list[dict[str, Any]] = []
+    for format_id, body in sections:
+        entry: dict[str, Any] = {"id": format_id}
+
+        for prefix, dict_key in _field_map:
+            value = _extract_field(body, prefix)
+            if value is None:
+                entry[dict_key] = None
+                continue
+
+            # Boolean fields
+            if dict_key in ("batch_compatible", "series"):
+                entry[dict_key] = value.lower() in ("yes", "true")
+            # List fields (comma-separated)
+            elif dict_key in (
+                "script_sections",
+                "compatible_structures",
+                "compatible_personas",
+                "incompatible_personas",
+                "content_pillar",
+                "platform_priority",
+            ):
+                if value.lower() in ("none", "all"):
+                    entry[dict_key] = value.upper()
+                else:
+                    entry[dict_key] = [
+                        v.strip() for v in value.split(",") if v.strip()
+                    ]
+            else:
+                entry[dict_key] = value
+
+        results.append(entry)
+
+    _cache[key] = results
+    return results
+
+
 # ---------------------------------------------------------------------------
 # Pool registry for CLI
 # ---------------------------------------------------------------------------
@@ -404,6 +474,7 @@ POOLS: dict[str, Any] = {
     "structures": get_structures,
     "personas": get_personas,
     "item_intros": get_item_intro_styles,
+    "formats": get_content_formats,
     "compatibility": lambda: PERSONA_STRUCTURE_COMPATIBILITY,
 }
 

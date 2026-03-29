@@ -124,8 +124,10 @@ projects/[prefix][date]_[topic-slug]/
 ## PHASE A: GENERATE PLAN (AUTOMATED)
 
 1. Create folders: `$GIVORE_TOOLS init-batch [prefix][date]_[topic-slug]`
-2. Run: `$GIVORE_TOOLS batch-plan --mode [detected] --variant-count 7 --project-dir [parent]`
-   Add `--exclude-hooks`, `--exclude-ctas`, `--location-filter` if user specified
+2. Run: `$GIVORE_TOOLS batch-plan --mode [detected] --variant-count 7 --project-dir [parent] --mixed-formats`
+   Add `--exclude-hooks`, `--exclude-ctas`, `--location-filter` if user specified.
+   Add `--format FORMAT_ID` to force v1's format (default: CLASSIC_STREET_FINDS).
+   Add `--no-mixed-formats` to force all variants to use the same format (backward compat).
 3. Run: `$GIVORE_TOOLS batch-validate-plan [parent]/batch_plan.json`
 4. Read `batch_plan.json` — this is your variant matrix. Each variant's assignments are pre-computed:
    - hook_type, cta_type, problem_angle, rehook_style, importance_angle
@@ -133,6 +135,9 @@ projects/[prefix][date]_[topic-slug]/
    - structure, persona, persona_voice_settings
    - visual_hook_clip_id
    - clip_budget (cross-variant reuse limits)
+   - **content_format** (e.g., EL_RANKING_CALLEJERO, CUANTO_CUESTA, LO_QUE_NADIE_VE)
+   - **format_length_target, format_narration_style, format_script_sections**
+   - **format_clip_guidance, format_platform_priority**
 5. Read the creative brief for v1's assigned persona and structure (see Phase B)
 
 ---
@@ -167,7 +172,17 @@ Ask ALL four in ONE single message. Do NOT split across multiple messages.
 
 Read your v1 assignments from `batch_plan.json`. Read `givore-batch-creative.md` for writing rules. Generate the script in the assigned persona's voice following the assigned structure.
 
-**Street-finds**: Apply STEP 0.5 (location correction), STEP 0.8 (performance patterns), all quality checks from `/givore-script`. Generate the 8-section script.
+**Format-Aware Script Generation:**
+- Read v1's `content_format` from batch_plan.json
+- If format ≠ CLASSIC_STREET_FINDS, use `format_script_sections` instead of the standard 8-section structure
+- Follow `format_clip_guidance` for clip selection later
+- Target `format_length_target` for word count (200 WPM for Spanish)
+- If `format_narration_style` = "zero" → SKIP script generation and TTS entirely (ambient/music only)
+- If `format_narration_style` = "minimal" → Generate short narration (20-40 words max, atmospheric)
+- If `format_narration_style` = "character" → Use the format's alternate voice/perspective (e.g., bike narrating in first person)
+- Read CONTENT_FORMATS.md for format-specific hook_template and cta_approach
+
+**Street-finds**: Apply STEP 0.5 (location correction), STEP 0.8 (performance patterns), all quality checks from `/givore-script`. Generate the 8-section script (or format-specific sections if content_format ≠ CLASSIC).
 
 **Trial**: Apply compatibility check, all quality checks from `/givore-trial`. Generate the script in the chosen format.
 
@@ -406,6 +421,9 @@ VARIANT MATRIX — v2-v7 planned (proceeding automatically)
 | CTA Type | ... | ... | ... | ... | ... | ... | ... |
 | Persona | ... | ... | ... | ... | ... | ... | ... |
 | Structure | ... | ... | ... | ... | ... | ... | ... |
+| Content Format | ... | ... | ... | ... | ... | ... | ... |
+| Platform Priority | ... | ... | ... | ... | ... | ... | ... |
+| Posting Day | Day 1 | Day 3 | Day 5 | Day 7 | Day 9 | Day 11 | Day 13 |
 
 Generando variantes 2-7 automaticamente...
 ```
@@ -422,10 +440,20 @@ For each variant N = 2, 3, 4, 5, 6, 7 — execute ALL steps below. DO NOT re-rea
 
 Read v[N] assignments from `batch_plan.json`. Write a COMPLETE NEW SCRIPT in the assigned persona's voice. Do NOT copy-paste from v1 and edit. Read `givore-batch-creative.md` for writing rules.
 
+**FORMAT-AWARE GENERATION (v2-v7):**
+- Read v[N]'s `content_format` from batch_plan.json
+- If format ≠ CLASSIC_STREET_FINDS: use `format_script_sections` instead of the 8-section structure
+- Target `format_length_target` for word count (200 WPM Spanish)
+- If `format_narration_style` = "zero" → SKIP script + TTS entirely (assemble with ambient audio/music only)
+- If `format_narration_style` = "minimal" → 20-40 words max, atmospheric tone
+- If `format_narration_style` = "character" → alternate voice/perspective per format description
+- Follow `format_clip_guidance` for clip selection in Step D.4
+- See CONTENT_FORMATS.md for format-specific hook templates and CTA approaches
+
 **KEEP CONSTANT (facts only):**
 - The item(s) found and their actual condition (factually accurate)
 - The location/neighborhood name
-- The 8-section order if using CLASSIC structure (or the assigned structure's order)
+- The section order per the assigned format's `format_script_sections` (NOT always 8-section)
 
 **MUST CHANGE (every variant uses its matrix assignments):**
 

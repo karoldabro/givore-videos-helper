@@ -63,15 +63,18 @@ def get_video_duration(video_path):
     return float(info["format"]["duration"])
 
 
-def extract_frames(video_path, fps, output_dir):
+def extract_frames(video_path, fps, output_dir, start_time=0, end_time=0):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     pattern = str(output_dir / "frame_%06d.jpg")
-    subprocess.run(
-        ["ffmpeg", "-i", str(video_path), "-vf", f"fps={fps}",
-         "-q:v", "2", "-hide_banner", "-loglevel", "warning", pattern],
-        check=True
-    )
+    cmd = ["ffmpeg"]
+    if start_time > 0:
+        cmd += ["-ss", str(start_time)]
+    if end_time > 0 and end_time > start_time:
+        cmd += ["-to", str(end_time)]
+    cmd += ["-i", str(video_path), "-vf", f"fps={fps}",
+            "-q:v", "2", "-hide_banner", "-loglevel", "warning", pattern]
+    subprocess.run(cmd, check=True)
     frames = sorted(output_dir.glob("frame_*.jpg"))
     return frames
 
@@ -352,7 +355,7 @@ def get_top_queries(clip_scores, peak_frame, n=2):
     return scored[:n]
 
 
-def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, fps, location, clip_index):
+def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, fps, location, clip_index, total_frames=0, config=None):
     """Map detection results to Givore style/mood/sections with rich descriptions."""
     peak = candidate["peak_frame"]
     start_frame = max(0, int(candidate["start_sec"] * fps))
@@ -372,6 +375,14 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
     # Average motion in clip range
     clip_motion = motion_scores[start_frame:end_frame + 1]
     avg_motion = float(clip_motion.mean()) if len(clip_motion) > 0 else 0.5
+
+    # --- Motion tag and type prefix ---
+    _config = config if config is not None else {}
+    motion_tag = compute_motion_tag(motion_scores, start_frame, end_frame, _config)
+    type_prefix = assign_type_prefix(
+        motion_scores, start_frame, end_frame,
+        total_frames, yolo_results, _config
+    )
 
     # --- Style mapping ---
     style = "cycling_pov"
@@ -397,12 +408,23 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
     elif n_people > 3 and avg_motion < 0.4:
         mood = "playful"
 
-    # --- Sections mapping ---
-    sections = ["body"]
-    if style == "landmark":
+    # --- Sections mapping (type_prefix overrides style-based defaults) ---
+    if type_prefix == "item":
+        sections = ["body", "item"]
+    elif type_prefix == "hook":
+        sections = ["hook"]
+    elif type_prefix == "end":
+        sections = ["end"]
+    elif type_prefix == "start":
+        sections = ["start"]
+    elif type_prefix == "bridge":
+        sections = ["bridge"]
+    elif style == "landmark":
         sections = ["body", "importance"]
     elif style == "item_shot":
         sections = ["body", "item"]
+    else:
+        sections = ["body"]
 
     # --- Rich description ---
     # Scene descriptor from CLIP
@@ -419,21 +441,23 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
     variants = scene_descs.get(dominant_query, ["on street"])
     scene = variants[clip_index % len(variants)]
 
-    # Motion descriptor
-    motion_desc = "cycling"
+    # Motion descriptor — omit "cycling" since ALL clips are cycling POV
+    motion_desc = ""
 
     # Object context (pick at most 1 to keep filenames short)
+    # Note: YOLO counts accumulate across all frames in clip (2-5s * 2fps = 4-10 frames)
+    # so thresholds must account for multi-frame accumulation
+    n_frames = max(end_frame - start_frame + 1, 1)
+    avg_people = n_people / n_frames
     obj_part = ""
-    if n_people > 5:
+    if avg_people > 4:
         obj_part = "crowded with people"
-    elif n_people > 2:
-        obj_part = "with pedestrians"
     elif all_labels.get("dog", 0) or all_labels.get("cat", 0):
         obj_part = "with animals"
-    elif all_labels.get("bicycle", 0) > 1:
+    elif all_labels.get("bicycle", 0) > n_frames:
         obj_part = "with cyclists"
-    elif n_people > 0:
-        obj_part = "with passerby"
+    elif avg_people > 1.5:
+        obj_part = "with pedestrians"
 
     # Secondary scene hint (from 2nd CLIP query)
     secondary_hints = {
@@ -447,7 +471,7 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
     }
 
     # Build description
-    desc = f"{motion_desc} {scene}"
+    desc = scene.strip()
     if obj_part:
         desc += " " + obj_part
     elif secondary_query and secondary_query != dominant_query:
@@ -455,9 +479,13 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
         if hint:
             desc += " " + hint
 
-    # Filename with unique index to avoid collisions
-    filename = f"{desc} - {location}.mp4"
+    # Build filename with prefix and motion tag
+    prefix_str = f"[{type_prefix}] " if type_prefix else ""
+    filename = f"{prefix_str}({motion_tag}) {desc} - {location}.mp4"
     filename = re.sub(r'[<>:"/\\|?*]', '', filename)
+
+    # visual_hook derived from type_prefix
+    is_visual_hook = type_prefix in ("hook",)
 
     return {
         "filename": filename,
@@ -465,13 +493,96 @@ def map_to_givore_metadata(candidate, yolo_results, clip_scores, motion_scores, 
         "style": style,
         "mood": mood,
         "desc": desc,
-        "visual_hook": False,
+        "visual_hook": is_visual_hook,
+        "motion_tag": motion_tag,
+        "type_prefix": type_prefix,
         "_dominant_query": dominant_query,
         "_secondary_query": secondary_query,
         "_score": candidate["score"],
         "_avg_motion": round(avg_motion, 3),
         "_objects": dict(sorted(all_labels.items(), key=lambda x: -x[1])[:5]),
     }
+
+
+def compute_motion_tag(motion_scores, start_frame, end_frame, config):
+    """Classify clip motion as dynamic/sharp/slow/calm from optical flow data."""
+    clip_motion = motion_scores[start_frame:end_frame + 1]
+    if len(clip_motion) == 0:
+        return "calm"
+
+    avg_motion = float(clip_motion.mean())
+    motion_var = float(clip_motion.var()) if len(clip_motion) > 1 else 0.0
+
+    thresholds = config.get("motion_descriptors", {})
+    dynamic_t = thresholds.get("dynamic_threshold", 0.6)
+    sharp_var_t = thresholds.get("sharp_variance_threshold", 0.15)
+    sharp_min_t = thresholds.get("sharp_motion_min", 0.3)
+    calm_t = thresholds.get("calm_threshold", 0.25)
+
+    if avg_motion > dynamic_t:
+        return "dynamic"
+    elif motion_var > sharp_var_t and avg_motion > sharp_min_t:
+        return "sharp"
+    elif avg_motion < calm_t:
+        return "calm"
+    else:
+        return "slow"
+
+
+def assign_type_prefix(motion_scores, start_frame, end_frame,
+                       total_frames, yolo_results, config):
+    """Auto-assign [hook], [item], [end], [start], [bridge] prefix based on signals."""
+    thresholds = config.get("type_prefix", {})
+
+    # Gather signals
+    clip_motion = motion_scores[start_frame:end_frame + 1]
+    avg_motion = float(clip_motion.mean()) if len(clip_motion) > 0 else 0.5
+    motion_var = float(clip_motion.var()) if len(clip_motion) > 1 else 0.0
+
+    # YOLO labels in clip range
+    furniture_classes = {"chair", "couch", "bed", "dining table", "tv",
+                         "refrigerator", "oven", "microwave", "sink", "toilet"}
+    all_labels = {}
+    for i in range(start_frame, min(end_frame + 1, len(yolo_results))):
+        for label, count in yolo_results[i]["counts"].items():
+            all_labels[label] = all_labels.get(label, 0) + count
+
+    has_furniture = bool(furniture_classes & set(all_labels.keys()))
+    has_phone = all_labels.get("cell phone", 0) > 0
+
+    end_pos_threshold = thresholds.get("end_position_threshold", 0.90)
+    start_pos_threshold = thresholds.get("start_position_threshold", 0.08)
+    hook_motion_threshold = thresholds.get("hook_motion_threshold", 0.55)
+    bridge_var_threshold = thresholds.get("bridge_variance_threshold", 0.20)
+
+    # Position in source video (0.0 to 1.0)
+    position = (start_frame + end_frame) / 2 / max(total_frames, 1)
+
+    # Priority-ordered decision tree
+    # 1. Item detection (furniture + phone, or furniture + stopped)
+    if has_furniture and has_phone:
+        return "item"
+    if has_furniture and avg_motion < 0.3:  # Stopped near furniture
+        return "item"
+
+    # 2. End clip (last portion + low motion)
+    if position > end_pos_threshold and avg_motion < 0.2:
+        return "end"
+
+    # 3. Start clip (first portion)
+    if position < start_pos_threshold:
+        return "start"
+
+    # 4. Bridge (high motion variance = direction change)
+    if motion_var > bridge_var_threshold and avg_motion > 0.3:
+        return "bridge"
+
+    # 5. Hook (high motion + dynamic)
+    if avg_motion > hook_motion_threshold and motion_var > 0.1:
+        return "hook"
+
+    # 6. Default: no prefix
+    return ""
 
 
 MOONDREAM_PYTHON = Path.home() / ".venv" / "moondream" / "bin" / "python3"
@@ -484,6 +595,8 @@ from PIL import Image
 config = json.loads(sys.argv[1])
 clips = json.loads(sys.argv[2])
 length = config.get("caption_length", "short")
+use_query = config.get("use_query", False)
+query_prompt = config.get("query_prompt", "")
 
 model = AutoModelForCausalLM.from_pretrained(
     config.get("model", "vikhyatk/moondream2"),
@@ -502,8 +615,16 @@ for clip_path in clips:
         results.append("")
         continue
     image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-    caption = model.caption(image, length=length)["caption"]
-    results.append(caption)
+    if use_query and query_prompt:
+        try:
+            answer = model.query(image, query_prompt)["answer"]
+            results.append(answer)
+        except (AttributeError, TypeError):
+            caption = model.caption(image, length=length)["caption"]
+            results.append(caption)
+    else:
+        caption = model.caption(image, length=length)["caption"]
+        results.append(caption)
 
 print(json.dumps(results))
 '''
@@ -546,8 +667,15 @@ def caption_clips(extracted, config, device="cuda", verbose=False):
 
         meta = item["metadata"]
         location = meta["filename"].rsplit(" - ", 1)[-1].replace(".mp4", "")
+
+        # Preserve type prefix and motion tag from metadata
+        existing_prefix = meta.get("type_prefix", "")
+        existing_motion = meta.get("motion_tag", "calm")
+        prefix_str = f"[{existing_prefix}] " if existing_prefix else ""
+        motion_str = f"({existing_motion}) "
+
         meta["desc"] = caption_clean
-        new_filename = f"{caption_clean} - {location}.mp4"
+        new_filename = f"{prefix_str}{motion_str}{caption_clean} - {location}.mp4"
 
         # Rename the clip file
         old_path = Path(item["path"])
@@ -555,7 +683,7 @@ def caption_clips(extracted, config, device="cuda", verbose=False):
         suffix = 0
         while new_path.exists() and new_path != old_path:
             suffix += 1
-            new_path = old_path.parent / f"{caption_clean} ({suffix}) - {location}.mp4"
+            new_path = old_path.parent / f"{prefix_str}{motion_str}{caption_clean} ({suffix}) - {location}.mp4"
         if new_path != old_path:
             old_path.rename(new_path)
             item["path"] = str(new_path)
@@ -622,6 +750,8 @@ def generate_review_json(extracted, output_path):
             "mood": meta["mood"],
             "desc": meta["desc"],
             "visual_hook": meta["visual_hook"],
+            "type_prefix": meta.get("type_prefix", ""),
+            "motion_tag": meta.get("motion_tag", "calm"),
         })
 
     with open(output_path, "w") as f:
@@ -666,6 +796,8 @@ def parse_args():
     parser.add_argument("--keep-frames", action="store_true", help="Don't delete extracted frames")
     parser.add_argument("--no-caption", action="store_true", help="Skip VLM captioning (use CLIP-based descriptions)")
     parser.add_argument("--no-proxy", action="store_true", help="Don't use LRF proxy even if available")
+    parser.add_argument("--start-time", type=float, default=0, help="Start analysis from this timestamp in seconds (skip earlier footage)")
+    parser.add_argument("--end-time", type=float, default=0, help="End analysis at this timestamp in seconds")
     parser.add_argument("--verbose", action="store_true", help="Show detailed progress")
     return parser.parse_args()
 
@@ -715,8 +847,14 @@ def main():
     # Stage 1: Frame extraction (from proxy if available)
     t0 = time.time()
     frames_dir = tempfile.mkdtemp(prefix="clip_extractor_")
+    start_time = args.start_time
+    end_time = args.end_time
+    if start_time > 0:
+        print(f"Start time: {start_time:.1f}s ({start_time/60:.1f} min)")
+    if end_time > 0:
+        print(f"End time: {end_time:.1f}s ({end_time/60:.1f} min)")
     print(f"\n[1/7] Extracting frames at {fps} FPS from {analysis_path.name}...", end=" ", flush=True)
-    frame_paths = extract_frames(analysis_path, fps, frames_dir)
+    frame_paths = extract_frames(analysis_path, fps, frames_dir, start_time=start_time, end_time=end_time)
     print(f"{len(frame_paths)} frames [{time.time()-t0:.1f}s]")
 
     if len(frame_paths) < 3:
@@ -756,6 +894,16 @@ def main():
     composite = compute_composite_scores(motion_scores, clip_scores, diversity_scores, object_interest, weights, fps)
     candidates = find_clip_candidates(composite, fps, args.min_duration, args.max_duration, args.top_percent, args.min_gap)
 
+    # Apply start-time offset to candidate timestamps
+    if start_time > 0:
+        for cand in candidates:
+            cand["start_sec"] = round(cand["start_sec"] + start_time, 2)
+            cand["end_sec"] = round(cand["end_sec"] + start_time, 2)
+
+    # Filter out candidates beyond end-time
+    if end_time > 0:
+        candidates = [c for c in candidates if c["end_sec"] <= end_time]
+
     if args.max_clips > 0:
         candidates = candidates[:args.max_clips]
 
@@ -768,9 +916,13 @@ def main():
         sys.exit(0)
 
     # Generate metadata for each candidate
+    total_frames = len(frame_paths)
     metadata_list = []
     for i, cand in enumerate(candidates):
-        meta = map_to_givore_metadata(cand, yolo_results, clip_scores, motion_scores, fps, args.location, i)
+        meta = map_to_givore_metadata(
+            cand, yolo_results, clip_scores, motion_scores, fps,
+            args.location, i, total_frames=total_frames, config=config
+        )
         metadata_list.append(meta)
 
     if args.dry_run:
