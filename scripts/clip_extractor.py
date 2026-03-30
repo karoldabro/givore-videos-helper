@@ -265,10 +265,8 @@ def compute_composite_scores(motion, clip_scores, diversity, object_interest, we
     if clip_max.max() > clip_max.min():
         clip_max = (clip_max - clip_max.min()) / (clip_max.max() - clip_max.min())
 
-    # Motion bell curve: prefer moderate motion
-    center = 0.5
-    motion_quality = 1.0 - np.abs(motion - center) * 2.0
-    motion_quality = np.clip(motion_quality, 0, 1)
+    # Motion: more motion = better score (stabilized camera, no jitter concern)
+    motion_quality = motion
 
     # Normalize diversity
     div = diversity[:n_frames] if len(diversity) >= n_frames else np.pad(diversity, (0, n_frames - len(diversity)))

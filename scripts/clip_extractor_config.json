@@ -13,12 +13,12 @@
   },
   "scoring": {
     "weights": {
-      "motion": 0.20,
-      "clip_interest": 0.35,
+      "motion": 0.25,
+      "clip_interest": 0.30,
       "diversity": 0.20,
       "objects": 0.25
     },
-    "motion_bell_center": 0.5,
+    "_comment_motion_bell_center": "deprecated — motion now uses linear ramp, not bell curve",
     "peak_prominence": 0.15,
     "peak_min_height": 0.3
   },
