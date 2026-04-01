@@ -1,0 +1,64 @@
+{
+  "topic": "silla de oficina en Cami Fondo",
+  "location": "Cami Fondo",
+  "content_format": "CUANTO_CUESTA",
+  "content_pillar": ["STREET_FINDS", "MINIMALISM"],
+  "variant": "v1",
+
+  "scene_descriptions": {
+    "clip_258": "Theatrical cycling gesture — energetic hook establishing POV and personality",
+    "clip_672": "Dynamic city street cycling with motion blur — building momentum toward discovery",
+    "clip_674": "Black office chair on sidewalk — THE item reveal, cycling POV approach",
+    "clip_673": "Slow-mo person near office chair with green trash can — suspenseful examination, someone almost took it",
+    "clip_675": "Tall building, green sign, parked truck, palm trees — neighborhood context, Cami Fondo streetscape",
+    "clip_676": "Modern building, delivery truck, pedestrian, cycling away — price reveal transition / reaction shot",
+    "clip_256": "Hand covers camera lens — dramatic cut ending",
+    "clip_800": "City street with palm tree and bike lane — final cycling away shot"
+  },
+
+  "seo_keywords": {
+    "primary": [
+      {"keyword": "silla de oficina gratis", "rationale": "Direct search intent for free office furniture"},
+      {"keyword": "muebles gratis Valencia", "rationale": "City-specific free furniture search"},
+      {"keyword": "segunda mano Valencia", "volume": 140000, "rationale": "Mega keyword, location match"},
+      {"keyword": "muebles baratos", "volume": 230000, "rationale": "High-volume hook/thumbnail keyword"},
+      {"keyword": "muebles reciclados", "volume": 86000, "rationale": "Core brand keyword"}
+    ],
+    "secondary": [
+      {"keyword": "muebles segunda mano", "volume": 65000, "rationale": "Description/metadata keyword"},
+      {"keyword": "consumo responsable", "volume": 57000, "rationale": "Broader pillar alignment"},
+      {"keyword": "reciclar muebles", "volume": 15000, "rationale": "Action-oriented search term"}
+    ]
+  },
+
+  "thematic_elements": [
+    "price shock — retail vs street find cost contrast",
+    "urban treasure hunting — cycling discovery narrative",
+    "good condition surprise — office chair that works perfectly",
+    "waste vs value — what people throw away still has worth",
+    "guessing game — audience engagement through price prediction",
+    "minimalism angle — why buy new when the street provides"
+  ],
+
+  "suggested_natural_phrases": [
+    "Sabeis cuanto cuesta esto nuevo?",
+    "Me lo he encontrado aqui tirado en Cami Fondo",
+    "Una silla de oficina en perfecto estado",
+    "Os lo juro, funciona todo — ruedas, respaldo, altura",
+    "En Amazon esto sale por...",
+    "La gente tira cosas que flipas",
+    "Adivina el precio en comentarios",
+    "Yo por la calle encuentro de todo",
+    "Mirad lo que me acabo de encontrar",
+    "Esto no tiene ni un rasguno"
+  ],
+
+  "format_specific": {
+    "hook_angle": "Price mystery — office chair worth XXX euros just sitting on the sidewalk",
+    "price_reveal_strategy": "Research retail price of comparable office chair (80-200 EUR range typical), reveal with text overlay",
+    "cta_approach": "ENGAGEMENT — ask viewers to guess the price before reveal",
+    "algorithm_signal": "Price shock + guessing game + short format = high comment velocity + replays"
+  },
+
+  "givore_mention_guideline": "STREET_FINDS pillar = core recycling content. Givore mention natural and expected. Can integrate organically: 'Lo subo a Givore por si alguien lo necesita' or similar. Not forced — fits the discovery narrative."
+}

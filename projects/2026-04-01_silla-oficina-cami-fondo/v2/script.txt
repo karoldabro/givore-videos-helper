@@ -1,0 +1,17 @@
+[HOOK: 0.0-1.7s]
+Lo que nadie os cuenta sobre las sillas de oficina de la calle.
+
+[WARNING_1: 1.7-10.7s]
+Localización: Camí Fondo. Silla de oficina. Estado aparente: bueno. Si alguien la hubiera compartido a tiempo, no estaría aquí. Pero antes de llevártela a casa... hay que comprobar unas cosas.
+
+[WARNING_2: 10.7-19.2s]
+Las ruedas. Si están bloqueadas, mal asunto. Y la tapicería... no sé vosotros, pero yo le paso un trapo antes de sentarme. Que llevar días en la calle se nota.
+
+[PIVOT: 19.2-30.7s]
+El caso es que esta pasa los filtros. Ruedas libres. Palanca funciona. Una limpieza y lista. Setenta euros en segunda mano, la misma silla. Dato.
+
+[CRITERIA: 30.7-40.2s]
+Checklist. Uno: sentaos y subid la palanca. Si no sube, descartad. Dos: girad las ruedas a mano. Tres: oled la tapicería. Suena ridículo. Funciona.
+
+[CLOSE: 40.2-45.2s]
+Si tenéis una así en casa que ya no queréis... antes de bajarla, subidla a Givore. Que la vea quien la busca.

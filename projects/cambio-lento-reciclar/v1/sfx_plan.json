@@ -1,0 +1,28 @@
+{
+  "variant": "v1",
+  "format": "TRES_COSAS",
+  "sfx_count": 3,
+  "sfx": [
+    {
+      "type": "SWOOSH",
+      "file": "Audio effects/Swoosh - Fast 1.MP3",
+      "timestamp": 8.2,
+      "volume": 0.04,
+      "reason": "Smooth transition into FACT_1 — marks 'La primera...' at the start of the three-facts structure, gentle enough for the reflective tone"
+    },
+    {
+      "type": "WHOOSH",
+      "file": "Audio effects/Whoosh - Fast Short.MP3",
+      "timestamp": 18.6,
+      "volume": 0.035,
+      "reason": "Sharper cut into FACT_2 — 'La segunda...' lands on the recycling bin section, slight contrast from the swoosh gives variety"
+    },
+    {
+      "type": "DING",
+      "file": "Audio effects/Ding - Single - Bright.MP3",
+      "timestamp": 30.9,
+      "volume": 0.04,
+      "reason": "Reveal moment for FACT_3 — 'Y la tercera...' introduces the KEY SHOT (artificial plant by bins), the ding signals discovery and emotional weight"
+    }
+  ]
+}

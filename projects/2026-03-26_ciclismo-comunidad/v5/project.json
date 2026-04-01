@@ -1,0 +1,467 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] drift on the right side while stoping - benimalcet.mp4",
+      "duration": 1.514,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2 - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane cayc on the horizon - penya roja.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the cjaxa forum - turia park.mp4",
+      "duration": 2.197,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/entering the bike lane, start cycling, puerta del mar - la xerea.mp4",
+      "duration": 2.602,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling though the small park or square - camins al grau.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc - turia park.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - jaime roig.mp4",
+      "duration": 2.154,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc 2 - turia park.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] stoping the bikecyle on the ramp in front of the palau de la musica - turia garden.mp4",
+      "duration": 2.24,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v5/ciclismo-comunidad.mp3",
+      "duration": 22.099592,
+      "type": "audio"
+    },
+    {
+      "id": "clip12",
+      "name": "pop_accent",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "duration": 0.156688,
+      "type": "audio"
+    },
+    {
+      "id": "clip13",
+      "name": "whoosh_transition",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip14",
+      "name": "chime_accent",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "duration": 0.91425,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.514,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 1.514,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 3.54,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.197,
+          "position": 5.566,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.602,
+          "position": 7.763,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 10.365,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 12.391,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 14.417,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.154,
+          "position": 16.443,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 18.597,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.24,
+          "position": 20.623,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 22.099592,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 5.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 0.3,
+          "position": 12.2,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 0.9,
+          "position": 19.9,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Cinco barrios.",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.92,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "Una bici.",
+          "position": 0.92,
+          "in": 0.0,
+          "out": 0.84,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Y gente incre\u00edble\npor el camino.",
+          "position": 1.76,
+          "in": 0.0,
+          "out": 1.72,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Despu\u00e9s del trabajo",
+          "position": 3.48,
+          "in": 0.0,
+          "out": 0.8400000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "me pongo\na pedalear.",
+          "position": 4.32,
+          "in": 0.0,
+          "out": 1.2399999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Sin destino,\nsin prisa.",
+          "position": 5.56,
+          "in": 0.0,
+          "out": 1.5200000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "Solo las calles\ny yo.",
+          "position": 7.08,
+          "in": 0.0,
+          "out": 1.0399999999999991,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Es mi manera\nde desconectar.",
+          "position": 8.12,
+          "in": 0.0,
+          "out": 1.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Y entre medias,",
+          "position": 9.92,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "pillo cosas\nque la gente deja",
+          "position": 10.92,
+          "in": 0.0,
+          "out": 1.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "y a\u00fan valen.",
+          "position": 12.44,
+          "in": 0.0,
+          "out": 1.040000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Las comparto",
+          "position": 13.48,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "y alguien les\nsaca partido.",
+          "position": 14.04,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "Y hay mucha gente\nhaciendo lo mismo.",
+          "position": 15.68,
+          "in": 0.0,
+          "out": 1.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "En bici,\na pie,",
+          "position": 17.16,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "como sea.",
+          "position": 18.24,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "\u00bfVosotros ten\u00e9is\nun plan post-curro",
+          "position": 19.24,
+          "in": 0.0,
+          "out": 1.4000000000000021,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "as\u00ed?",
+          "position": 20.64,
+          "in": 0.0,
+          "out": 0.5999999999999979,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Cont\u00e1dmelo.",
+          "position": 21.24,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-26T19:33:15.963507",
+    "software": "kdenlive-cli 1.0"
+  }
+}

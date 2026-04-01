@@ -1,0 +1,36 @@
+{
+  "variant": "v2",
+  "format": "EL_RANKING_CALLEJERO",
+  "audio_duration": 53.81,
+  "sfx_count": 4,
+  "sfx": [
+    {
+      "type": "POP",
+      "file": "Pop 1.MP3",
+      "timestamp": 6.12,
+      "volume": 0.04,
+      "reason": "First ranking item reveal — 'Numero cinco' kicks off the countdown"
+    },
+    {
+      "type": "POP",
+      "file": "Pop 1.MP3",
+      "timestamp": 21.24,
+      "volume": 0.04,
+      "reason": "Mid-ranking pivot — 'Numero tres' marks the turn toward the better finds"
+    },
+    {
+      "type": "DING",
+      "file": "Ding - Single - Bright.MP3",
+      "timestamp": 34.92,
+      "volume": 0.05,
+      "reason": "Winner reveal — 'Y numero uno' is the climactic moment, DING highlights the top find"
+    },
+    {
+      "type": "WHOOSH",
+      "file": "Whoosh - Fast Short.MP3",
+      "timestamp": 42.96,
+      "volume": 0.04,
+      "reason": "Recap transition — 'Cinco cosas' shifts from ranking to recap/CTA section"
+    }
+  ]
+}

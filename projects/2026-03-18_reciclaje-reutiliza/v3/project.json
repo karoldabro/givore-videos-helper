@@ -1,0 +1,449 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_no_hand",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] bike lane, showing no no no with my right hand - trinitat.mp4",
+      "duration": 1.45,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "qc_street2",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the stree 2 - quatre carreres.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "beni_cycling7",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling 7 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "beni_cycling8",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling 8 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "beni_cycling9",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling 9 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "beni_cycling10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling 10 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "beni_dog",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling, owner pulls the dog - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "mo_street2",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - mont oliver.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "mo_street3_plaza",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 plaza in fornt of - mont oliver.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "mo_turning_left",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turing left - mont oliver.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "mo_red_car",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/waiting on red, passing right next the the car - mont oliver.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "end_ayora_tree",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] camera moves from the sw to the tree branches above - ayora.mp4",
+      "duration": 1.45,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v3/reciclaje-reutiliza.mp3",
+      "duration": 22.099592,
+      "type": "audio"
+    },
+    {
+      "id": "clip13",
+      "name": "swish",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swish 2.mp3",
+      "duration": 0.6,
+      "type": "audio"
+    },
+    {
+      "id": "clip14",
+      "name": "alert",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Alert - Positive - Correct.MP3",
+      "duration": 0.783625,
+      "type": "audio"
+    },
+    {
+      "id": "clip15",
+      "name": "sparkle",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Sparkle.MP3",
+      "duration": 1.071,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.45,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 1.45,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 3.48,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 5.51,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 7.54,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 9.57,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 11.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 13.63,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 15.66,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 17.69,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 19.72,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 1.45,
+          "position": 21.75,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 22.099592,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 0.6,
+          "position": 1.3,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 0.8,
+          "position": 9.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 1.1,
+          "position": 14.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Esto estaba\nen la calle",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "hace diez minutos.\nPerfectamente bien.",
+          "position": 1.08,
+          "in": 0.0,
+          "out": 2.64,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Tu vecino\nde dos calles",
+          "position": 3.72,
+          "in": 0.0,
+          "out": 1.0399999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "mas alla\npuede que necesite",
+          "position": 4.76,
+          "in": 0.0,
+          "out": 1.5200000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "justo esto.\nY no lo sabe.",
+          "position": 6.28,
+          "in": 0.0,
+          "out": 1.7999999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Cosas utiles,\nesperando",
+          "position": 8.08,
+          "in": 0.0,
+          "out": 1.2799999999999994,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "a que alguien\nlas vea.",
+          "position": 9.36,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Pero eso\ntiene solucion.",
+          "position": 10.44,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Y es muy facil.",
+          "position": 11.52,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Reutilizar,\nrenovar,",
+          "position": 12.64,
+          "in": 0.0,
+          "out": 1.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "compartir\ncon quien lo necesita.",
+          "position": 14.24,
+          "in": 0.0,
+          "out": 1.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Darle otra vida\nen vez de tirarlo.",
+          "position": 16.12,
+          "in": 0.0,
+          "out": 2.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Solo falta\nla conexion.",
+          "position": 18.2,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "Guardad esto\npara cuando veais",
+          "position": 19.48,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "algo en la calle.",
+          "position": 21.12,
+          "in": 0.0,
+          "out": 0.9199999999999982,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-18T21:43:34.906305",
+    "software": "kdenlive-cli 1.0"
+  }
+}

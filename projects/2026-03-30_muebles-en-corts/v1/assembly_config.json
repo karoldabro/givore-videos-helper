@@ -1,0 +1,121 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street while pointing with too right hand finders to the left.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 0.981,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with buildings, cars, and a bike - russafa.mp4",
+      "name": "clip_01",
+      "position": 0.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with buildings, cars, and a pedestrian - patraix (1).mp4",
+      "name": "clip_02",
+      "position": 5.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a cyclist passes a red-tiled pedestrian crossing, with buildings and trees in the background - trinidad.mp4",
+      "name": "clip_03",
+      "position": 10.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a european city square with a church, people, and trees, viewed from a bicycle - ciudad-vieja.mp4",
+      "name": "clip_04",
+      "position": 15.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street scene with a tall building, palm trees, and pedestrians - trinidad.mp4",
+      "name": "clip_05",
+      "position": 20.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with buildings, trees, and parked bicycles, viewed from a bicycle's perspective - el-mercat.mp4",
+      "name": "clip_06",
+      "position": 25.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a street scene with discarded furniture, graffiti, and a lamppost - en-corts.mp4",
+      "name": "clip_07",
+      "position": 30.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "name": "clip_08",
+      "position": 35.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "name": "clip_09",
+      "position": 40.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) colorful buildings, parked cars, street, camera - morverde.mp4",
+      "name": "clip_10",
+      "position": 45.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 2.5,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 14.5,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 36.0,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v1/muebles-en-corts.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v1/muebles-en-corts.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

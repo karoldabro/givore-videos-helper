@@ -1,0 +1,108 @@
+{
+  "target_duration": 42,
+  "total_duration": 45.25,
+  "visual_narrative": "Dramatic thumbs-down warning gesture -> cycling through jaime-roig streets near find location -> item shot near trash revealing suspicious street furniture -> closer examination detail shot -> pivot to a real find with phone documentation -> fast cycling educational sequence on what to check -> calm ending with camera rising to sky",
+  "available_scenes": ["hook_warning_gesture", "cycling_approach_jaime_roig", "item_suspicious_reveal", "item_detail_examination", "pivot_good_find", "educational_cycling", "cycling_street_context", "ending_sky"],
+  "location_shown": "Camí Fondo area (jaime-roig clips for office chair context, sant-antoni for pivot find, trinitat for ending)",
+  "clips": [
+    {
+      "id": 160,
+      "filename": "[hook] cycling on the street, dowing my both thumbs down - quatre carreres.mp4",
+      "section": "HOOK",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 1.71,
+      "narrative_note": "Both thumbs down while cycling - perfect 'don't touch that!' warning energy for NO_TOQUEIS_ESO opening. Dramatic mood matches REPORTERO investigative tone"
+    },
+    {
+      "id": 677,
+      "filename": "(calm) city street, tall buildings, scooter, parked cars, sidewalk, trees, camera movement - jaime-roig.mp4",
+      "section": "HOOK",
+      "start_trim": 0.0,
+      "end_trim": 1.0,
+      "duration": 4.00,
+      "narrative_note": "Cycling through jaime-roig streets - establishes the neighborhood where the office chair was found. Camera movement builds anticipation"
+    },
+    {
+      "id": 679,
+      "filename": "[item] (calm) a person takes a photo of a green trash can, with a motorcycle parked nearby and a building in the background - jaime-roig.mp4",
+      "section": "WARNING_1",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "Item documentation shot near trash area - shows the street furniture context. Person examining items near containers sets up the 'should you take it?' question"
+    },
+    {
+      "id": 678,
+      "filename": "(calm) city street, white building, black lamppost, parked cars, bicycle, motion blur - jaime-roig.mp4",
+      "section": "WARNING_1",
+      "start_trim": 0.0,
+      "end_trim": 1.5,
+      "duration": 3.50,
+      "narrative_note": "Street context from the same jaime-roig area - visual continuity while narration explains what looks suspicious about the chair. Motion blur adds unease"
+    },
+    {
+      "id": 681,
+      "filename": "[item] (calm) a building under construction, a parked car, a bicycle, a street lamp, a person's hand - jaime-roig.mp4",
+      "section": "WARNING_2",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "Detail shot showing hand gesture near street items - construction context adds to 'things aren't always what they seem' narrative. Close-up perspective for examining damage points"
+    },
+    {
+      "id": 683,
+      "filename": "(fast) city street with trees, buildings, and a bike - jaime-roig.mp4",
+      "section": "WARNING_2",
+      "start_trim": 0.0,
+      "end_trim": 1.5,
+      "duration": 3.50,
+      "narrative_note": "Fast cycling shot adds urgency to the warning section - 'what could go wrong' narration over dynamic footage. Energetic pacing matches REPORTERO investigation"
+    },
+    {
+      "id": 640,
+      "filename": "[item] (calm) a person stands near a wooden cabinet, holding a phone with a camera, in a park-like setting - sant-antoni (1).mp4",
+      "section": "PIVOT",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 4.54,
+      "narrative_note": "PIVOT moment - person documenting a GOOD find with phone camera. Shifts from warning to 'but THIS one is actually worth taking'. Phone documentation = educated finder"
+    },
+    {
+      "id": 650,
+      "filename": "[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "section": "PIVOT",
+      "start_trim": 0.0,
+      "end_trim": 1.5,
+      "duration": 3.50,
+      "narrative_note": "Good condition street furniture in nice lighting - visual proof that some finds ARE worth taking. Sunlight and autumn leaves make it feel inviting vs the earlier suspicious shots"
+    },
+    {
+      "id": 682,
+      "filename": "[start] (calm) a city street with parked cars, a tall building, and a bicycle - jaime-roig.mp4",
+      "section": "CRITERIA",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "Cycling through the area while narration lists the 3 things to check on an office chair: wheels, gas cylinder, upholstery. Calm pacing allows educational content to land"
+    },
+    {
+      "id": 891,
+      "filename": "[item] (calm) a city street with parked cars, a blue recycling bin, and a bicycle rider's perspective - san-antonio.mp4",
+      "section": "CRITERIA",
+      "start_trim": 0.0,
+      "end_trim": 0.5,
+      "duration": 4.50,
+      "narrative_note": "Cycling past recycling containers - visual metaphor for knowing what's worth saving vs recycling. Supports educational criteria narration about office chair quality checks"
+    },
+    {
+      "id": 764,
+      "filename": "[end] (calm) a city street lined with buildings, palm trees, and parked cars - exposicion.mp4",
+      "section": "CLOSE",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "Calm ending with palm trees and city buildings - gives breathing room for closing narration and CTA. Peaceful ending contrasts with the earlier warning energy"
+    }
+  ]
+}

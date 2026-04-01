@@ -1,0 +1,46 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {"section": "HOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] bike lane, colon, my right hand look at this gesture - sant francesc.mp4", "name": "hook_gesture", "position": 0.0, "duration": 1.88, "in_point": 0.0},
+    {"section": "HOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the stree 1 - quatre carreres.mp4", "name": "cycling_qc1", "position": 1.88, "duration": 2.03, "in_point": 0.0},
+    {"section": "PROBLEM", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 11 - benimalcet.mp4", "name": "cycling_beni11", "position": 3.91, "duration": 2.05, "in_point": 0.0},
+    {"section": "PROBLEM", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 12 - benimalcet.mp4", "name": "cycling_beni12", "position": 5.96, "duration": 2.05, "in_point": 0.0},
+    {"section": "PROBLEM", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 13 - benimalcet.mp4", "name": "cycling_beni13", "position": 8.01, "duration": 2.67, "in_point": 0.0},
+    {"section": "REHOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/camamra on the fountain - benimalcet.mp4", "name": "fountain_beni", "position": 10.68, "duration": 1.79, "in_point": 0.0},
+    {"section": "PAYOFF", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turining right - quatre carreres.mp4", "name": "turning_right_qc", "position": 12.47, "duration": 2.22, "in_point": 0.0},
+    {"section": "PAYOFF", "file": "/media/kdabrow/Programy/givore/videos/clips/crossing the street right next to the pedestrian - mont oliver.mp4", "name": "crossing_mo", "position": 14.69, "duration": 2.03, "in_point": 0.0},
+    {"section": "PAYOFF", "file": "/media/kdabrow/Programy/givore/videos/clips/street 4, turing left - benimaclet.mp4", "name": "street4_beni", "position": 16.72, "duration": 2.03, "in_point": 0.0},
+    {"section": "PAYOFF", "file": "/media/kdabrow/Programy/givore/videos/clips/street 1 - benimaclet.mp4", "name": "street1_beni", "position": 18.75, "duration": 2.03, "in_point": 0.0},
+    {"section": "PAYOFF", "file": "/media/kdabrow/Programy/givore/videos/clips/street 2 - benimaclet.mp4", "name": "street2_beni", "position": 20.78, "duration": 2.03, "in_point": 0.0},
+    {"section": "CTA", "file": "/media/kdabrow/Programy/givore/videos/clips/street 3 - benimaclet.mp4", "name": "street3_beni", "position": 22.81, "duration": 2.03, "in_point": 0.0},
+    {"section": "CTA", "file": "/media/kdabrow/Programy/givore/videos/clips/street 8 - sant lorenq.mp4", "name": "street8_sl", "position": 24.84, "duration": 2.03, "in_point": 0.0},
+    {"section": "END", "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling on the street, camara from the bottom to the top (sky) - quatre carreres.mp4", "name": "end_sky", "position": 26.87, "duration": 1.64, "in_point": 0.0}
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "transition_swoosh",
+      "position": 3.8,
+      "duration": 0.7,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "positive_chime",
+      "position": 11.4,
+      "duration": 0.9,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Shimmer - Bright.MP3",
+      "name": "reveal_shimmer",
+      "position": 15.4,
+      "duration": 1.5,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v1/reciclaje-reutiliza.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v1/reciclaje-reutiliza.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

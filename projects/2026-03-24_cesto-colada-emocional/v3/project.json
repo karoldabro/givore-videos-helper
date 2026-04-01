@@ -1,0 +1,898 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] while cycling but doing gesture with my body like diving in then out of water - mestalla.mp4",
+      "duration": 1.578,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the opera - cayc.mp4",
+      "duration": 2.09,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street (dynamic) - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] found basket for cloths in a very good shape - exposicion.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, my right nad horizontal no - quatre carreres.mp4",
+      "duration": 1.621,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the steet 2 - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling below puente de flores - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling near puente de flores - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/enterning the rio - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "clip_11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycing donwards on the ramp to enter the cycle path - turia garden.mp4",
+      "duration": 2.24,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "clip_12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycing donwards on the ramp to enter the park - turia garden.mp4",
+      "duration": 2.24,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "clip_13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/passing by the running lane - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "clip_14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycing upwards leaving the park - turia garden.mp4",
+      "duration": 2.24,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "clip_15",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] looking left then comming back to the sw - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip16",
+      "name": "clip_16",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] on the ramp in front of the palau de la musica camara from the sw to the palau - turia garden.mp4",
+      "duration": 1.685,
+      "type": "video"
+    },
+    {
+      "id": "clip17",
+      "name": "clip_17",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/leting person to pass the bike lane - turia garden.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip18",
+      "name": "clip_18",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/on the ramp in front of the palau de la musica camara on the sw, starting to cycle - turia garden.mp4",
+      "duration": 2.133,
+      "type": "video"
+    },
+    {
+      "id": "clip19",
+      "name": "clip_19",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/sharp right-hand bend - turia garden.mp4",
+      "duration": 3.349,
+      "type": "video"
+    },
+    {
+      "id": "clip20",
+      "name": "clip_20",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/crossing the street on the bike lane - benimaclet.mp4",
+      "duration": 2.709,
+      "type": "video"
+    },
+    {
+      "id": "clip21",
+      "name": "clip_21",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/on the ramp in front of the palau de la musica camara on the sw, waiting on the red light - turia garden.mp4",
+      "duration": 1.834,
+      "type": "video"
+    },
+    {
+      "id": "clip22",
+      "name": "clip_22",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the steet 3 - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip23",
+      "name": "clip_23",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] stoping the bikecyle on the ramp in front of the palau de la musica - turia garden.mp4",
+      "duration": 2.24,
+      "type": "video"
+    },
+    {
+      "id": "clip24",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-24_cesto-colada-emocional/v3/cesto-colada-emocional.mp3",
+      "duration": 50.599184,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.578,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.09,
+          "position": 1.578,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 3.668,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 6.249,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 8.83,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 1.621,
+          "position": 10.856,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 12.477,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 15.058,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 17.639,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 19.665,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 21.691,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.24,
+          "position": 23.717,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.24,
+          "position": 25.957,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 28.197,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.24,
+          "position": 30.223,
+          "filters": []
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 32.463,
+          "filters": []
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 1.685,
+          "position": 34.489,
+          "filters": []
+        },
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 36.174,
+          "filters": []
+        },
+        {
+          "clip_id": "clip18",
+          "in": 0.0,
+          "out": 2.133,
+          "position": 38.2,
+          "filters": []
+        },
+        {
+          "clip_id": "clip19",
+          "in": 0.0,
+          "out": 3.349,
+          "position": 40.333,
+          "filters": []
+        },
+        {
+          "clip_id": "clip20",
+          "in": 0.0,
+          "out": 2.709,
+          "position": 43.682,
+          "filters": []
+        },
+        {
+          "clip_id": "clip21",
+          "in": 0.0,
+          "out": 1.834,
+          "position": 46.391,
+          "filters": []
+        },
+        {
+          "clip_id": "clip22",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 48.225,
+          "filters": []
+        },
+        {
+          "clip_id": "clip23",
+          "in": 0.0,
+          "out": 2.24,
+          "position": 50.806,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip24",
+          "in": 0.0,
+          "out": 50.599184,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Lo que para",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.48,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "unos es basura...",
+          "position": 0.48,
+          "in": 0.0,
+          "out": 1.16,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "para otros es",
+          "position": 1.64,
+          "in": 0.0,
+          "out": 0.6399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "justo lo que",
+          "position": 2.28,
+          "in": 0.0,
+          "out": 0.8000000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "necesitan. Este cesto",
+          "position": 3.08,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "de ropa estaba",
+          "position": 4.4,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "en la acera.",
+          "position": 4.92,
+          "in": 0.0,
+          "out": 0.8799999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Perfecto.",
+          "position": 5.8,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Sin un rasgu\u00f1o.",
+          "position": 6.44,
+          "in": 0.0,
+          "out": 1.1599999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Listo para seguir",
+          "position": 7.6,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "funcionando a\u00f1os.",
+          "position": 8.2,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Y sin embargo,",
+          "position": 9.04,
+          "in": 0.0,
+          "out": 0.8400000000000016,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "nadie se lo",
+          "position": 9.88,
+          "in": 0.0,
+          "out": 0.4399999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "llevaba.",
+          "position": 10.32,
+          "in": 0.0,
+          "out": 0.7999999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "Es que pasa",
+          "position": 11.12,
+          "in": 0.0,
+          "out": 1.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "algo raro.",
+          "position": 12.6,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Vivimos rodeados de",
+          "position": 13.12,
+          "in": 0.0,
+          "out": 0.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "vecinos y no",
+          "position": 14.0,
+          "in": 0.0,
+          "out": 0.7599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "sabemos lo que",
+          "position": 14.76,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "necesitan. A dos",
+          "position": 15.32,
+          "in": 0.0,
+          "out": 0.759999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "calles de aqu\u00ed",
+          "position": 16.08,
+          "in": 0.0,
+          "out": 1.0800000000000018,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "puede haber alguien",
+          "position": 17.16,
+          "in": 0.0,
+          "out": 0.9199999999999982,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "buscando justo esto.",
+          "position": 18.08,
+          "in": 0.0,
+          "out": 1.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "Y no tiene",
+          "position": 19.52,
+          "in": 0.0,
+          "out": 0.35999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "ni idea de",
+          "position": 19.88,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "que existe.",
+          "position": 20.32,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "Pues eso se",
+          "position": 20.96,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "puede arreglar.",
+          "position": 21.84,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "Porque hay personas",
+          "position": 22.48,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "que han decidido",
+          "position": 24.12,
+          "in": 0.0,
+          "out": 1.2399999999999984,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "no quedarse de",
+          "position": 25.36,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "brazos cruzados.",
+          "position": 26.04,
+          "in": 0.0,
+          "out": 1.0800000000000018,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "Gente que comparte",
+          "position": 27.12,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "lo que ya",
+          "position": 28.12,
+          "in": 0.0,
+          "out": 0.23999999999999844,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "no usa,",
+          "position": 28.36,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub35",
+          "text": "que rescata lo",
+          "position": 29.04,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub36",
+          "text": "que otros descartan,",
+          "position": 29.6,
+          "in": 0.0,
+          "out": 0.7999999999999972,
+          "filters": []
+        },
+        {
+          "clip_id": "sub37",
+          "text": "que mueve las",
+          "position": 30.4,
+          "in": 0.0,
+          "out": 1.0800000000000018,
+          "filters": []
+        },
+        {
+          "clip_id": "sub38",
+          "text": "cosas antes de",
+          "position": 31.48,
+          "in": 0.0,
+          "out": 0.639999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub39",
+          "text": "que acaben rotas",
+          "position": 32.12,
+          "in": 0.0,
+          "out": 0.9200000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub40",
+          "text": "o mojadas.",
+          "position": 33.04,
+          "in": 0.0,
+          "out": 0.8000000000000043,
+          "filters": []
+        },
+        {
+          "clip_id": "sub41",
+          "text": "Y no es",
+          "position": 33.84,
+          "in": 0.0,
+          "out": 0.4799999999999969,
+          "filters": []
+        },
+        {
+          "clip_id": "sub42",
+          "text": "una moda.",
+          "position": 34.32,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub43",
+          "text": "Es una forma",
+          "position": 35.0,
+          "in": 0.0,
+          "out": 0.759999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub44",
+          "text": "de vivir.",
+          "position": 35.76,
+          "in": 0.0,
+          "out": 0.1600000000000037,
+          "filters": []
+        },
+        {
+          "clip_id": "sub45",
+          "text": "Cada objeto que",
+          "position": 35.92,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub46",
+          "text": "se comparte es",
+          "position": 36.92,
+          "in": 0.0,
+          "out": 0.8799999999999955,
+          "filters": []
+        },
+        {
+          "clip_id": "sub47",
+          "text": "una conexi\u00f3n nueva.",
+          "position": 37.8,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub48",
+          "text": "Entre desconocidos.",
+          "position": 39.08,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub49",
+          "text": "Entre barrios.",
+          "position": 40.16,
+          "in": 0.0,
+          "out": 0.8400000000000034,
+          "filters": []
+        },
+        {
+          "clip_id": "sub50",
+          "text": "Entre personas que",
+          "position": 41.0,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub51",
+          "text": "creen que las",
+          "position": 41.72,
+          "in": 0.0,
+          "out": 0.8400000000000034,
+          "filters": []
+        },
+        {
+          "clip_id": "sub52",
+          "text": "cosas merecen m\u00e1s",
+          "position": 42.56,
+          "in": 0.0,
+          "out": 1.1999999999999957,
+          "filters": []
+        },
+        {
+          "clip_id": "sub53",
+          "text": "de una oportunidad.",
+          "position": 43.76,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub54",
+          "text": "Y eso...",
+          "position": 45.04,
+          "in": 0.0,
+          "out": 0.480000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub55",
+          "text": "cambia todo.",
+          "position": 45.52,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub56",
+          "text": "\u00bfOs gustar\u00eda saber",
+          "position": 46.84,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub57",
+          "text": "c\u00f3mo participar?",
+          "position": 47.52,
+          "in": 0.0,
+          "out": 1.1599999999999966,
+          "filters": []
+        },
+        {
+          "clip_id": "sub58",
+          "text": "Escrib\u00eddmelo abajo.",
+          "position": 48.68,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub59",
+          "text": "Os cuento.",
+          "position": 49.68,
+          "in": 0.0,
+          "out": 0.8800000000000026,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-24T09:46:30.822628",
+    "software": "kdenlive-cli 1.0"
+  }
+}

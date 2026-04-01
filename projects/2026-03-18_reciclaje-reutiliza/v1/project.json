@@ -1,0 +1,509 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_gesture",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] bike lane, colon, my right hand look at this gesture - sant francesc.mp4",
+      "duration": 1.877,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "cycling_qc1",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the stree 1 - quatre carreres.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "cycling_beni11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 11 - benimalcet.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "cycling_beni12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 12 - benimalcet.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "cycling_beni13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 13 - benimalcet.mp4",
+      "duration": 2.666,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "fountain_beni",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/camamra on the fountain - benimalcet.mp4",
+      "duration": 1.792,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "turning_right_qc",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turining right - quatre carreres.mp4",
+      "duration": 2.218,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "crossing_mo",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/crossing the street right next to the pedestrian - mont oliver.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "street4_beni",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 4, turing left - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "street1_beni",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 1 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "street2_beni",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 2 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "street3_beni",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 3 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "street8_sl",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 8 - sant lorenq.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "end_sky",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling on the street, camara from the bottom to the top (sky) - quatre carreres.mp4",
+      "duration": 1.642,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v1/reciclaje-reutiliza.mp3",
+      "duration": 27.768163,
+      "type": "audio"
+    },
+    {
+      "id": "clip15",
+      "name": "transition_swoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "duration": 0.679125,
+      "type": "audio"
+    },
+    {
+      "id": "clip16",
+      "name": "positive_chime",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "duration": 0.91425,
+      "type": "audio"
+    },
+    {
+      "id": "clip17",
+      "name": "reveal_shimmer",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Shimmer - Bright.MP3",
+      "duration": 2.324875,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.88,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 1.88,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.05,
+          "position": 3.91,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.05,
+          "position": 5.96,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.67,
+          "position": 8.01,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 1.79,
+          "position": 10.68,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.22,
+          "position": 12.47,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 14.69,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 16.72,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 18.75,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 20.78,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 22.81,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 24.84,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 1.64,
+          "position": 26.87,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 27.768163,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 0.7,
+          "position": 3.8,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 0.9,
+          "position": 11.4,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 15.4,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Pedaleando por\nla ciudad...",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.4,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "y otra vez\nlo mismo.",
+          "position": 1.4,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Cosas perfectas,\nahi tiradas.",
+          "position": 2.48,
+          "in": 0.0,
+          "out": 2.0000000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Es que cada dia\nse pierden muebles,",
+          "position": 4.48,
+          "in": 0.0,
+          "out": 1.88,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "objetos,\ncosas que funcionan...",
+          "position": 6.36,
+          "in": 0.0,
+          "out": 1.88,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "porque no hay\nmanera facil",
+          "position": 8.24,
+          "in": 0.0,
+          "out": 1.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "de conectar\na quien lo tiene",
+          "position": 9.48,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "con quien\nlo necesita.",
+          "position": 10.68,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Pero eso\npuede cambiar.",
+          "position": 11.6,
+          "in": 0.0,
+          "out": 1.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Y es mas simple\nde lo que pensais.",
+          "position": 13.48,
+          "in": 0.0,
+          "out": 2.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Antes de\ntirar algo...",
+          "position": 15.56,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "pensad.\nReutilizar,",
+          "position": 16.48,
+          "in": 0.0,
+          "out": 1.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "renovar,\ncompartir.",
+          "position": 18.44,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "Darle otra vida\nes mas facil",
+          "position": 19.64,
+          "in": 0.0,
+          "out": 1.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "que tirarlo.",
+          "position": 21.52,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "Y alguien cerca\nseguro que",
+          "position": 22.52,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "lo aprovecharia.",
+          "position": 23.64,
+          "in": 0.0,
+          "out": 1.1600000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "Pequenos gestos,\ngrandes cambios.",
+          "position": 24.8,
+          "in": 0.0,
+          "out": 1.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Seguidme\npara mas.",
+          "position": 26.68,
+          "in": 0.0,
+          "out": 1.0399999999999991,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-18T21:43:32.517147",
+    "software": "kdenlive-cli 1.0"
+  }
+}

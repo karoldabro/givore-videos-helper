@@ -1,0 +1,23 @@
+CLIP MAP — v1 mesa-negra-exposicion
+=====================================
+ #  | Time    | ID  | Clip
+ 1  | 0:00.0  | 13  | [hook] theatrical gesture
+ 2  | 0:00.9  | 266 | bike lane 1 - exposicion
+ 3  | 0:03.5  | 271 | street (dynamic) - exposicion
+ 4  | 0:06.1  | 269 | street 2 - exposicion
+ 5  | 0:08.7  | 306 | street turning right - gran via
+ 6  | 0:11.5  | 301 | bike lane - exposicion
+ 7  | 0:13.5  | 274 | street 1 - exposicion
+ 8  | 0:16.1  | 261 | BLACK TABLE - exposicion
+ 9  | 0:18.7  | 265 | bike lane blasco ibanez - jaime roig
+10  | 0:20.8  | 275 | street 1 - jaime roig
+11  | 0:22.9  | 263 | crossing bike lane - benimaclet
+12  | 0:25.7  | 280 | street 4 - jaime roig
+13  | 0:27.7  | 283 | showing direction gesture
+14  | 0:30.6  | 302 | street 1 - russafa
+15  | 0:32.6  | 296 | downward ramp - turia garden
+16  | 0:34.8  | 299 | below puente de flores - turia garden
+17  | 0:36.9  | 300 | near puente de flores - turia garden
+18  | 0:38.9  | 307 | entering the rio - turia garden
+19  | 0:40.9  | 312 | passing running lane - turia garden
+20  | 0:42.9  | 293 | [end] stopping at palau de la musica

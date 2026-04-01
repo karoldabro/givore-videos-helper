@@ -1,0 +1,216 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-27_test-new-pipeline/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] claping fast a few times while cycling - camins al grau.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.472,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - gran via.mp4",
+      "name": "clip_01",
+      "position": 1.472,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - mont oliver.mp4",
+      "name": "clip_02",
+      "position": 3.498,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground - trinitat.mp4",
+      "name": "clip_03",
+      "position": 5.524,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] focus on the item, toys 2 - albors.mp4",
+      "name": "clip_04",
+      "position": 7.55,
+      "duration": 1.813,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - gran via.mp4",
+      "name": "clip_05",
+      "position": 9.363,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - quatre carreres.mp4",
+      "name": "clip_06",
+      "position": 11.389,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 plaza in fornt of - mont oliver.mp4",
+      "name": "clip_07",
+      "position": 13.415,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, green light pedestrian is running from the zebra - mont oliver.mp4",
+      "name": "clip_08",
+      "position": 15.441,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turing left - mont oliver.mp4",
+      "name": "clip_09",
+      "position": 17.467,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the bike lane - trinitat.mp4",
+      "name": "clip_10",
+      "position": 19.493,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/from the street to the bike lane - gran via.mp4",
+      "name": "clip_11",
+      "position": 21.519,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/from the street to the bike lane 2 - gran via.mp4",
+      "name": "clip_12",
+      "position": 23.545,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/jardin real 8 - trinitat.mp4",
+      "name": "clip_13",
+      "position": 25.571,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/overtake a police car which turns right I go strait - gran via.mp4",
+      "name": "clip_14",
+      "position": 27.597,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/quish beteen cars which wait on red - gran via.mp4",
+      "name": "clip_15",
+      "position": 29.623,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/quish beteen cars which wait on red 1 - gran via.mp4",
+      "name": "clip_16",
+      "position": 31.649,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/stoping on red, a taxi on the street in fornt of me - gran via.mp4",
+      "name": "clip_17",
+      "position": 33.675,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/waiting on red, passing right next the the car - mont oliver.mp4",
+      "name": "clip_18",
+      "position": 35.701,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/waiting until people cross zebra, colon - sant francesc.mp4",
+      "name": "clip_19",
+      "position": 37.727,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] street , single clap with my both hands- benimalcet.mp4",
+      "name": "clip_20",
+      "position": 39.327,
+      "duration": 1.28,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] drift on the right side while stoping - benimalcet.mp4",
+      "name": "clip_21",
+      "position": 40.607,
+      "duration": 1.514,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook|ending} I cycle then put my hand on the les blocking the light entirely - albors.mp4",
+      "name": "clip_22",
+      "position": 42.121,
+      "duration": 1.194,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 18.0,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 22.0,
+      "duration": 0.9,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 35.7,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-27_test-new-pipeline/v1/test-new-pipeline.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-27_test-new-pipeline/v1/test-new-pipeline.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

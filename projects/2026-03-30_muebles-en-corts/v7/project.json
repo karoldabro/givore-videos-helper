@@ -1,0 +1,414 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook](item) touhing with my nad something that could have been a find - camins al grau.mp4",
+      "duration": 1.6,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, palm trees, buildings, bike, moving camera - oriols.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a park with a bike path, trees, and people - rio-turia.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end], camaera from the sq to the sky, jardin real - trinitat.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v7/muebles-en-corts.mp3",
+      "duration": 19.539592,
+      "type": "audio"
+    },
+    {
+      "id": "clip7",
+      "name": "whoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip8",
+      "name": "ding",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "duration": 2.142,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.6,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 1.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 6.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 11.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 16.6,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 21.6,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 19.539592,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 0.3,
+          "position": 2.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.1,
+          "position": 12.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Pregunta seria mientras",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.2,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "pedaleo.",
+          "position": 1.2,
+          "in": 0.0,
+          "out": 0.76,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Por qu\u00e9 dejamos",
+          "position": 1.96,
+          "in": 0.0,
+          "out": 0.6000000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "que las cosas",
+          "position": 2.56,
+          "in": 0.0,
+          "out": 0.6800000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "terminen en la",
+          "position": 3.24,
+          "in": 0.0,
+          "out": 0.43999999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "calle...",
+          "position": 3.68,
+          "in": 0.0,
+          "out": 0.6400000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "si podr\u00edamos darlas",
+          "position": 4.32,
+          "in": 0.0,
+          "out": 1.12,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "antes.",
+          "position": 5.44,
+          "in": 0.0,
+          "out": 0.39999999999999947,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "No tengo la",
+          "position": 5.84,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "respuesta, la verdad.",
+          "position": 6.4,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Pero cada vez",
+          "position": 7.48,
+          "in": 0.0,
+          "out": 0.47999999999999954,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "que paso junto",
+          "position": 7.96,
+          "in": 0.0,
+          "out": 0.7600000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "a muebles como",
+          "position": 8.72,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "estos...",
+          "position": 9.4,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "me lo pregunto.",
+          "position": 10.0,
+          "in": 0.0,
+          "out": 1.1199999999999992,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "Un estante.",
+          "position": 11.12,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Una silla.",
+          "position": 12.08,
+          "in": 0.0,
+          "out": 0.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "Ambos aprovechables.",
+          "position": 12.96,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Si alguien los",
+          "position": 14.04,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "hubiera compartido a",
+          "position": 14.64,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "tiempo, otro ya",
+          "position": 15.36,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "los tendr\u00eda en",
+          "position": 16.24,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "casa. Contadme...",
+          "position": 16.72,
+          "in": 0.0,
+          "out": 1.4000000000000021,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "qu\u00e9 pens\u00e1is vosotros.",
+          "position": 18.12,
+          "in": 0.0,
+          "out": 1.3599999999999994,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-31T09:25:02.882968",
+    "software": "kdenlive-cli 1.0"
+  }
+}

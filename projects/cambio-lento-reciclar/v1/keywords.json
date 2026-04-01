@@ -1,0 +1,57 @@
+{
+  "variant": "v1",
+  "topic": "the change is always slow, for me it took me a while to understand that recycling is important and we should do it",
+  "location": "Valencia, Spain (Ruta Corts, Marxalenes, San Antonio)",
+  "scene_descriptions": [
+    {"clip_id": 999, "clip_filename": "[hook] (sharp) Cyclist stops at a crosswalk as a person crosses, highlighti - ruta-corts.mp4", "scene": "Sharp stop at crosswalk, pedestrian crossing — energetic urban opener", "visual_elements": ["crosswalk", "pedestrian", "bike handlebars", "urban street"]},
+    {"clip_id": 1011, "clip_filename": "tree-lined street ride, Ruta Corts", "scene": "Calm cycling under tree canopy in residential area", "visual_elements": ["tree-lined street", "cycling POV", "residential"]},
+    {"clip_id": 1031, "clip_filename": "golden sunlight residential area, Ruta Corts", "scene": "Golden hour light washing over residential street", "visual_elements": ["golden sunlight", "residential buildings", "warm tones"]},
+    {"clip_id": 648, "clip_filename": "(calm) city street with trees, orange trees - marxalenes.mp4", "scene": "Orange trees lining a Marxalenes street — classic Valencia", "visual_elements": ["orange trees", "sidewalk", "people", "cars", "buildings"]},
+    {"clip_id": 1019, "clip_filename": "Mercadona pass-by, Ruta Corts", "scene": "Cycling past Mercadona supermarket — everyday city life", "visual_elements": ["Mercadona", "commercial street", "daily life"]},
+    {"clip_id": 891, "clip_filename": "[item] (calm) a city street with parked cars, a blue recycling bin - san-antonio.mp4", "scene": "Blue recycling bin visible on street — recycling infrastructure", "visual_elements": ["blue recycling bin", "parked cars", "street"]},
+    {"clip_id": 1012, "clip_filename": "LIBRE ad and street signage, Ruta Corts", "scene": "Street signage and advertising — urban texture", "visual_elements": ["LIBRE ad", "street signs", "urban landscape"]},
+    {"clip_id": 1035, "clip_filename": "Burger King landmark, Ruta Corts", "scene": "Passing recognizable Burger King — neighborhood landmark", "visual_elements": ["Burger King", "commercial area", "landmark"]},
+    {"clip_id": 1003, "clip_filename": "[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4", "scene": "KEY SHOT — artificial plant abandoned next to recycling bins and cardboard", "visual_elements": ["artificial plant", "recycling bins", "cardboard box", "discarded items"]},
+    {"clip_id": 1004, "clip_filename": "stationary observation discarded items, Ruta Corts", "scene": "Pausing to observe discarded items on the street", "visual_elements": ["discarded items", "stationary shot", "street"]},
+    {"clip_id": 1039, "clip_filename": "grand white building, Ruta Corts", "scene": "Impressive white building — Valencia architecture", "visual_elements": ["white building", "architecture", "grand facade"]},
+    {"clip_id": 1047, "clip_filename": "open plaza pause, Ruta Corts", "scene": "Cycling pause in open plaza — breathing room", "visual_elements": ["plaza", "open space", "urban square"]},
+    {"clip_id": 1045, "clip_filename": "(calm) The sun sets over the beach - ruta-corts.mp4", "scene": "Sunset over Valencia beach — reflective golden hour", "visual_elements": ["sunset", "beach", "evening stroll", "people"]},
+    {"clip_id": 1048, "clip_filename": "palm-tree-lined path, Ruta Corts", "scene": "Palm trees lining a coastal path — Mediterranean feel", "visual_elements": ["palm trees", "path", "Mediterranean"]},
+    {"clip_id": 1050, "clip_filename": "[end] cyclist stops near beach, Ruta Corts", "scene": "Cyclist stops near beach — contemplative ending", "visual_elements": ["beach", "cyclist stop", "ending shot"]}
+  ],
+  "seo_keywords": {
+    "primary": [
+      {"keyword": "reciclar muebles", "volume": 15000, "relevance": "core topic — recycling awareness journey"},
+      {"keyword": "segunda mano Valencia", "volume": 140000, "relevance": "location + reuse culture"},
+      {"keyword": "consumo responsable", "volume": 57000, "relevance": "personal growth toward sustainability"},
+      {"keyword": "reciclaje creativo", "volume": 14000, "relevance": "creative reuse mindset"}
+    ],
+    "secondary": [
+      {"keyword": "muebles reciclados", "volume": 86000, "relevance": "recycled items discovery"},
+      {"keyword": "movilidad sostenible", "volume": 9200, "relevance": "cycling POV + sustainability"},
+      {"keyword": "decoracion reciclada", "volume": 6700, "relevance": "items found on street as decor"},
+      {"keyword": "economia colaborativa", "volume": 16000, "relevance": "sharing/giving culture"}
+    ]
+  },
+  "thematic_elements": [
+    "personal journey toward recycling awareness",
+    "slow change and patience with oneself",
+    "Valencia neighborhood cycling discovery",
+    "recycling bins as part of daily street landscape",
+    "finding discarded items that still have life (artificial plant)",
+    "golden hour / sunset as metaphor for gradual change",
+    "everyday city life (Mercadona, plazas, landmarks)"
+  ],
+  "suggested_natural_phrases": [
+    "el cambio siempre es lento",
+    "me costó entenderlo",
+    "reciclar no es solo separar basura",
+    "cada vez que paso por aquí veo lo mismo",
+    "esto todavía sirve",
+    "antes me daba igual, ahora no puedo no verlo",
+    "Valencia tiene contenedores por todos lados",
+    "una planta artificial al lado del contenedor"
+  ],
+  "content_pillar": "BARRIO_GUIDES + HIDDEN_SPOTS",
+  "givore_mention_guideline": "20% casual — the topic is recycling awareness which connects naturally to Givore's mission. One brief, organic mention (e.g., 'apps like Givore help' or showing the app screen) fits the reflective tone. Do not force it."
+}

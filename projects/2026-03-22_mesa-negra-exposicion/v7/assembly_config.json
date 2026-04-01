@@ -1,0 +1,186 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-22_mesa-negra-exposicion/v7/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] intro camara from sky to the sw - camins al grau.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - jaime roig.mp4",
+      "name": "clip_01",
+      "position": 2.048,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 4 - jaime roig.mp4",
+      "name": "clip_02",
+      "position": 4.202,
+      "duration": 2.09,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - blasco ibanez - jaime roig.mp4",
+      "name": "clip_03",
+      "position": 6.292,
+      "duration": 2.09,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/crossing the street on the bike lane - benimaclet.mp4",
+      "name": "clip_04",
+      "position": 8.382,
+      "duration": 2.709,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - russafa.mp4",
+      "name": "clip_05",
+      "position": 11.091,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - exposicion.mp4",
+      "name": "clip_06",
+      "position": 13.117,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - exposicion.mp4",
+      "name": "clip_07",
+      "position": 15.698,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street (dynamic) - exposicion.mp4",
+      "name": "clip_08",
+      "position": 18.279,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] found balck table in a very good shape - exposicion.mp4",
+      "name": "clip_09",
+      "position": 20.86,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the steet 2 - exposicion.mp4",
+      "name": "clip_10",
+      "position": 23.441,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane - exposicion.mp4",
+      "name": "clip_11",
+      "position": 26.022,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turning right - gran via.mp4",
+      "name": "clip_12",
+      "position": 28.048,
+      "duration": 2.837,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, showing direction with my right hand.mp4",
+      "name": "clip_13",
+      "position": 30.885,
+      "duration": 2.837,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycing donwards on the ramp to enter the cycle path - turia garden.mp4",
+      "name": "clip_14",
+      "position": 33.722,
+      "duration": 2.24,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling below puente de flores - turia garden.mp4",
+      "name": "clip_15",
+      "position": 35.962,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near puente de flores - turia garden.mp4",
+      "name": "clip_16",
+      "position": 37.988,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/enterning the rio - turia garden.mp4",
+      "name": "clip_17",
+      "position": 40.014,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/passing by the running lane - turia garden.mp4",
+      "name": "clip_18",
+      "position": 42.04,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/leting person to pass the bike lane - turia garden.mp4",
+      "name": "clip_19",
+      "position": 44.066,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/sharp right-hand bend - turia garden.mp4",
+      "name": "clip_20",
+      "position": 46.092,
+      "duration": 3.349,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling on the street and covering lens with my hand - jaime roig.mp4",
+      "name": "clip_21",
+      "position": 49.441,
+      "duration": 1.344,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-22_mesa-negra-exposicion/v7/mesa-negra-exposicion.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-22_mesa-negra-exposicion/v7/mesa-negra-exposicion.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -1,0 +1,160 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/jardines-parques-valencia/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the bike lane,sudden camara move down and then up - turia park.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.898,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a park with a bike path, trees, and people - rio-turia.mp4",
+      "name": "clip_01",
+      "position": 1.898,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a park path lined with trees, people walking, and a bicycle's handlebars - rio-turia.mp4",
+      "name": "clip_02",
+      "position": 6.898,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a park with palm trees, a bench, and a person on a bike - jardin-real.mp4",
+      "name": "clip_03",
+      "position": 11.898,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) a stone staircase leads to a park with trees, a building, and a street - rio-turia.mp4",
+      "name": "clip_04",
+      "position": 16.898,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[bridge right to left] on the ramp in front of the palau de la musica camara from houses to the sw and park - turia garden.mp4",
+      "name": "clip_05",
+      "position": 21.898,
+      "duration": 1.685,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) a park with a tall building, palm trees, and a statue - benimaclet.mp4",
+      "name": "clip_06",
+      "position": 23.583,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a park with trees, a street, and a building - blasco-ibanez.mp4",
+      "name": "clip_07",
+      "position": 28.583,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "name": "clip_08",
+      "position": 33.583,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) A black office chair is discarded on the sidewalk next to a - ruta-corts.mp4",
+      "name": "clip_09",
+      "position": 38.583,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) park, bench, lamp post, bicycle, camera - blasco-ibanez.mp4",
+      "name": "clip_10",
+      "position": 42.583,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the cjaxa forum - turia park.mp4",
+      "name": "clip_11",
+      "position": 47.583,
+      "duration": 2.197,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the turia park - penya roja.mp4",
+      "name": "clip_12",
+      "position": 49.78,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycing donwards on the ramp to enter the cycle path - turia garden.mp4",
+      "name": "clip_13",
+      "position": 51.806,
+      "duration": 2.24,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a city street lined with buildings, palm trees, and parked cars - exposicion.mp4",
+      "name": "clip_14",
+      "position": 54.046,
+      "duration": 13.054,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 14.64,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 27.6,
+      "duration": 0.7,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 43.0,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 58.36,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/jardines-parques-valencia/v1/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/jardines-parques-valencia/v1/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

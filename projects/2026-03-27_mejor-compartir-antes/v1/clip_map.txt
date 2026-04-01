@@ -1,0 +1,41 @@
+CLIP MAP — v1 mejor-compartir-antes
+====================================
+
+| # | ID | Position | Duration | Section | Description |
+|---|-----|----------|----------|---------|-------------|
+| 1 | 13 | 0.00s | 0.98s | HOOK | theatrical gesture [VH] |
+| 2 | 97 | 0.98s | 2.67s | HOOK | start cycling bike lane - ayora |
+| 3 | 183 | 3.65s | 2.03s | PROOF | bike lane estacion nord - sant francesc |
+| 4 | 43 | 5.67s | 2.03s | PROOF | approaching green light - mestalla aragon |
+| 5 | 34 | 7.70s | 2.03s | PROBLEM | [item] approaching somier - albors |
+| 6 | 35 | 9.73s | 2.03s | PROBLEM | [item] taking photo somier - albors |
+| 7 | 39 | 11.76s | 1.81s | PROBLEM | [item] turning approaching item - albors |
+| 8 | 36 | 13.57s | 1.81s | PROBLEM | [item] toys - albors |
+| 9 | 164 | 15.38s | 2.03s | PROBLEM | [item] rounded table - trinitat |
+| 10 | 133 | 17.41s | 2.03s | PROBLEM | cycling avoiding pedestrians - turia park |
+| 11 | 82 | 19.44s | 2.03s | IMPORTANCE | cycling car parks on left |
+| 12 | 65 | 21.46s | 2.03s | IMPORTANCE | cycling street - mestalla aragon |
+| 13 | 190 | 23.49s | 2.03s | IMPORTANCE | bike lane car blocks - sant francesc |
+| 14 | 80 | 25.52s | 2.05s | IMPORTANCE | cycling between cars - ayora |
+| 15 | 62 | 27.57s | 2.03s | RE-HOOK | cycle lane people crossing - mestalla |
+| 16 | 186 | 29.60s | 2.18s | SOLUTION | bike lane overtaking - colon |
+| 17 | 38 | 31.78s | 2.50s | SOLUTION | [item] submit in app - albors |
+| 18 | 40 | 34.28s | 2.50s | SOLUTION | [item] phone submit - albors |
+| 19 | 91 | 36.78s | 2.03s | SOLUTION | entering main road |
+| 20 | 142 | 38.80s | 2.03s | SOLUTION | cycling street churreria - camins al grau |
+| 21 | 180 | 40.83s | 2.60s | PAYOFF | bike lane 6 - trinitat |
+| 22 | 181 | 43.43s | 2.60s | PAYOFF | bike lane 7 - trinitat |
+| 23 | 148 | 46.03s | 2.03s | PAYOFF | cycling turning right dramatic - ayora |
+| 24 | 184 | 48.06s | 1.88s | CTA | bike lane puerta del mar - la xerea |
+| 25 | 170 | 49.94s | 2.03s | CTA | av del reino entering bike lane - gran via |
+| 26 | 196 | 51.97s | 2.03s | CTA | cycling street 1 - gran via |
+| 27 | 195 | 54.00s | 2.03s | CTA | cycling street 2 - quatre carreres |
+| 28 | 5 | 56.03s | 1.96s | END | [hook|end] lifting camera to sky - ayora |
+
+SFX:
+| SFX | Position | Duration | Volume |
+|-----|----------|----------|--------|
+| WHOOSH | 2.5s | 0.3s | 0.03 |
+| DING | 12.3s | 2.1s | 0.03 |
+| POP | 34.3s | 0.2s | 0.03 |
+| CHIME | 44.5s | 0.9s | 0.03 |

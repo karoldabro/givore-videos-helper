@@ -1,0 +1,26 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v7/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {"section": "HOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] street , showing okey sign with my both hands- benimalcet.mp4", "name": "hook_ok_sign", "position": 0.0, "duration": 2.69, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/[start] start to cycle on the street - benimalcet.mp4", "name": "beni_start", "position": 2.69, "duration": 2.13, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, falla of the female warior - benimalcet.mp4", "name": "beni_falla_warrior", "position": 4.82, "duration": 2.67, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane - gran via.mp4", "name": "gv_reino", "position": 7.49, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane - el pla del ramei.mp4", "name": "pla_ramei", "position": 9.52, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 1 - trinitat.mp4", "name": "trinitat_lane1", "position": 11.55, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 3, turning right - trinitat.mp4", "name": "trinitat_lane3", "position": 13.58, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 4 - trinitat.mp4", "name": "trinitat_lane4", "position": 15.61, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 5 - trinitat.mp4", "name": "trinitat_lane5", "position": 17.64, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, puente de exposicion.mp4", "name": "puente_expo", "position": 19.67, "duration": 3.31, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/waiting on red, passing right next the the car - mont oliver.mp4", "name": "mo_red_car", "position": 22.98, "duration": 2.03, "in_point": 0.0},
+    {"section": "END", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4", "name": "end_ayora_sky", "position": 25.01, "duration": 1.96, "in_point": 0.0}
+  ],
+  "sfx": [
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3", "name": "swoosh", "position": 2.5, "duration": 0.7, "volume": 0.035},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Chime - Single.MP3", "name": "chime", "position": 11.0, "duration": 1.5, "volume": 0.03},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Shimmer - Bright.MP3", "name": "shimmer", "position": 16.0, "duration": 1.5, "volume": 0.03}
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v7/reciclaje-reutiliza.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v7/reciclaje-reutiliza.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

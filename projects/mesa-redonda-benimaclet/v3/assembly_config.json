@@ -1,0 +1,98 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v3/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[start] (slow) a city street scene with a large building, street lamp, and pedestrians - benimaclet.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turing left - benimaclet.mp4",
+      "name": "clip_01",
+      "position": 5.0,
+      "duration": 2.005,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) a park with a tree, a building, and a street - benimaclet.mp4",
+      "name": "clip_02",
+      "position": 7.005,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) city street, parked cars, trees, sidewalk, bike, moving camera - benimaclet (1).mp4",
+      "name": "clip_03",
+      "position": 12.005,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a modern building, a tree, a street, a person with a bike, a camera - trinidad.mp4",
+      "name": "clip_04",
+      "position": 17.005,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/letting people to pass by on the zebra - benimaclet.mp4",
+      "name": "clip_05",
+      "position": 22.005,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street with buildings, trees, and a pedestrian crossing - trinidad.mp4",
+      "name": "clip_06",
+      "position": 24.031,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, parked cars, buildings, sidewalk, bicycle - benimaclet.mp4",
+      "name": "clip_07",
+      "position": 29.031,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, parked cars, trees, sidewalk, bike rack, camera - benimaclet.mp4",
+      "name": "clip_08",
+      "position": 34.031,
+      "duration": 5.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 5.6,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 12.0,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v3/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v3/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

@@ -1,0 +1,969 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] (sharp) Cyclist stops at a crosswalk as a person crosses, highlighti - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Riding through a residential area, the golden sunlight illum - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street with trees, orange trees, sidewalk, bike, camera, people, cars, buildings - marxalenes.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a Mercadona supermarket, a common loc - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a city street with parked cars, a blue recycling bin, and a bicycle rider's perspective - san-antonio.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a Burger King, a recognizable food spot, - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "duration": 4.0,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist is stationary on the sidewalk, with a large card - ruta-corts.mp4",
+      "duration": 4.0,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides towards a large, white building with colum - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "clip_11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with buildings, trees, and a park, viewed from a bike's perspective - les-tendetes.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "clip_12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist pauses at a large, open plaza, with distant buil - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "clip_13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) The sun sets over the beach, creating a beautiful and serene - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "clip_14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Riding on a scenic path lined with tall palm trees, capturin - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "clip_15",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "duration": 4.0,
+      "type": "video"
+    },
+    {
+      "id": "clip16",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/cambio-lento-reciclar/v1/cambio-lento-reciclar.mp3",
+      "duration": 55.013878,
+      "type": "audio"
+    },
+    {
+      "id": "clip17",
+      "name": "swoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "duration": 0.679125,
+      "type": "audio"
+    },
+    {
+      "id": "clip18",
+      "name": "whoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip19",
+      "name": "ding",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "duration": 2.142,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 3.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 6.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 4.0,
+          "position": 8.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 12.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 14.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 19.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 22.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 4.0,
+          "position": 24.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 4.0,
+          "position": 28.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 32.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 35.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 40.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 43.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 46.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 7.214,
+          "position": 48.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 55.013878,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 0.679,
+          "position": 8.2,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.04
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip18",
+          "in": 0.0,
+          "out": 0.287,
+          "position": 18.6,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip19",
+          "in": 0.0,
+          "out": 2.142,
+          "position": 30.9,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.04
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "0-3s \u2014 crosswalk",
+          "position": 0.4,
+          "in": 0.0,
+          "out": 0.6,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "Una planta artificial.",
+          "position": 1.64,
+          "in": 0.0,
+          "out": 0.44000000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Al lado del",
+          "position": 2.08,
+          "in": 0.0,
+          "out": 0.08000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "contenedor. Eso me",
+          "position": 2.16,
+          "in": 0.0,
+          "out": 1.3599999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "hizo parar.",
+          "position": 3.52,
+          "in": 0.0,
+          "out": 0.48,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "tree-lined street,",
+          "position": 5.0,
+          "in": 0.0,
+          "out": 0.4400000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "Pero antes de",
+          "position": 5.48,
+          "in": 0.0,
+          "out": 0.03999999999999915,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "tres cosas que",
+          "position": 5.52,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "me cambiaron la",
+          "position": 6.32,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "forma de ver",
+          "position": 7.0,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Valencia en bici.",
+          "position": 7.48,
+          "in": 0.0,
+          "out": 0.7599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "orange trees Marxalenes,",
+          "position": 8.92,
+          "in": 0.0,
+          "out": 0.16000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "La",
+          "position": 9.08,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "primera...",
+          "position": 9.8,
+          "in": 0.0,
+          "out": 0.3999999999999986,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "que los barrios",
+          "position": 10.2,
+          "in": 0.0,
+          "out": 0.5200000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "huelen diferente.",
+          "position": 10.72,
+          "in": 0.0,
+          "out": 1.1199999999999992,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Marxalenes huele a",
+          "position": 11.84,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "naranjo por la",
+          "position": 13.16,
+          "in": 0.0,
+          "out": 0.40000000000000036,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "ma\u00f1ana. Pasas por",
+          "position": 13.56,
+          "in": 0.0,
+          "out": 1.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "el Mercadona sin",
+          "position": 14.8,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "darte cuenta de",
+          "position": 15.48,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "que est\u00e1s respirando",
+          "position": 16.04,
+          "in": 0.0,
+          "out": 0.7600000000000016,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "otra ciudad.",
+          "position": 16.8,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "blue recycling bin,",
+          "position": 18.2,
+          "in": 0.0,
+          "out": 0.03999999999999915,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "La",
+          "position": 18.24,
+          "in": 0.0,
+          "out": 0.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "segunda...",
+          "position": 18.56,
+          "in": 0.0,
+          "out": 0.0400000000000027,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "que el reciclaje",
+          "position": 18.6,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "est\u00e1 por todas",
+          "position": 19.6,
+          "in": 0.0,
+          "out": 0.5999999999999979,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "partes, pero no",
+          "position": 20.2,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "lo ves hasta",
+          "position": 21.0,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "que empiezas a",
+          "position": 21.44,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "mirar. Contenedores azules,",
+          "position": 21.92,
+          "in": 0.0,
+          "out": 2.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "carteles, se\u00f1ales...",
+          "position": 23.92,
+          "in": 0.0,
+          "out": 1.3599999999999994,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "todo convive con",
+          "position": 25.28,
+          "in": 0.0,
+          "out": 1.1600000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "el Burger King",
+          "position": 26.44,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub35",
+          "text": "de enfrente.",
+          "position": 27.12,
+          "in": 0.0,
+          "out": 0.5999999999999979,
+          "filters": []
+        },
+        {
+          "clip_id": "sub36",
+          "text": "Consumo responsable y",
+          "position": 27.72,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub37",
+          "text": "consumo r\u00e1pido,",
+          "position": 29.04,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub38",
+          "text": "en la misma",
+          "position": 29.64,
+          "in": 0.0,
+          "out": 0.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub39",
+          "text": "acera.",
+          "position": 29.84,
+          "in": 0.0,
+          "out": 0.03999999999999915,
+          "filters": []
+        },
+        {
+          "clip_id": "sub40",
+          "text": "24-32s \u2014 artificial",
+          "position": 29.88,
+          "in": 0.0,
+          "out": 0.7200000000000024,
+          "filters": []
+        },
+        {
+          "clip_id": "sub41",
+          "text": "plant by bins",
+          "position": 30.6,
+          "in": 0.0,
+          "out": 0.23999999999999844,
+          "filters": []
+        },
+        {
+          "clip_id": "sub42",
+          "text": "Y la tercera...",
+          "position": 30.92,
+          "in": 0.0,
+          "out": 1.1199999999999974,
+          "filters": []
+        },
+        {
+          "clip_id": "sub43",
+          "text": "esta planta.",
+          "position": 32.04,
+          "in": 0.0,
+          "out": 1.1600000000000037,
+          "filters": []
+        },
+        {
+          "clip_id": "sub44",
+          "text": "Artificial. Al lado",
+          "position": 33.2,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub45",
+          "text": "del contenedor.",
+          "position": 34.84,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub46",
+          "text": "Si se hubiera",
+          "position": 35.84,
+          "in": 0.0,
+          "out": 0.5999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub47",
+          "text": "compartido a tiempo,",
+          "position": 36.44,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub48",
+          "text": "estar\u00eda decorando el",
+          "position": 37.4,
+          "in": 0.0,
+          "out": 0.8400000000000034,
+          "filters": []
+        },
+        {
+          "clip_id": "sub49",
+          "text": "sal\u00f3n de otra",
+          "position": 38.24,
+          "in": 0.0,
+          "out": 0.5599999999999952,
+          "filters": []
+        },
+        {
+          "clip_id": "sub50",
+          "text": "persona.",
+          "position": 38.8,
+          "in": 0.0,
+          "out": 0.44000000000000483,
+          "filters": []
+        },
+        {
+          "clip_id": "sub51",
+          "text": "Pero aqu\u00ed est\u00e1...",
+          "position": 39.24,
+          "in": 0.0,
+          "out": 1.5599999999999952,
+          "filters": []
+        },
+        {
+          "clip_id": "sub52",
+          "text": "esperando.",
+          "position": 40.8,
+          "in": 0.0,
+          "out": 0.8800000000000026,
+          "filters": []
+        },
+        {
+          "clip_id": "sub53",
+          "text": "32-41s \u2014 grand",
+          "position": 41.68,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub54",
+          "text": "building, open plaza,",
+          "position": 42.24,
+          "in": 0.0,
+          "out": 0.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub55",
+          "text": "Me",
+          "position": 42.56,
+          "in": 0.0,
+          "out": 0.03999999999999915,
+          "filters": []
+        },
+        {
+          "clip_id": "sub56",
+          "text": "cost\u00f3 entenderlo.",
+          "position": 42.6,
+          "in": 0.0,
+          "out": 0.4799999999999969,
+          "filters": []
+        },
+        {
+          "clip_id": "sub57",
+          "text": "El cambio siempre",
+          "position": 43.08,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub58",
+          "text": "es lento.",
+          "position": 43.68,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub59",
+          "text": "Antes me daba",
+          "position": 44.24,
+          "in": 0.0,
+          "out": 1.1599999999999966,
+          "filters": []
+        },
+        {
+          "clip_id": "sub60",
+          "text": "igual, ahora no",
+          "position": 45.4,
+          "in": 0.0,
+          "out": 0.8000000000000043,
+          "filters": []
+        },
+        {
+          "clip_id": "sub61",
+          "text": "puedo no verlo.",
+          "position": 46.2,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub62",
+          "text": "Cada cosa que",
+          "position": 46.88,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub63",
+          "text": "veo en la",
+          "position": 47.84,
+          "in": 0.0,
+          "out": 0.3199999999999932,
+          "filters": []
+        },
+        {
+          "clip_id": "sub64",
+          "text": "acera es una",
+          "position": 48.16,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub65",
+          "text": "conexi\u00f3n que no",
+          "position": 48.72,
+          "in": 0.0,
+          "out": 0.4399999999999977,
+          "filters": []
+        },
+        {
+          "clip_id": "sub66",
+          "text": "palm trees,",
+          "position": 49.56,
+          "in": 0.0,
+          "out": 0.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub67",
+          "text": "cyclist stops near",
+          "position": 49.64,
+          "in": 0.0,
+          "out": 0.240000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub68",
+          "text": "Y vosotros...",
+          "position": 50.28,
+          "in": 0.0,
+          "out": 0.9200000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub69",
+          "text": "\u00bfcu\u00e1ntas veces hab\u00e9is",
+          "position": 51.2,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub70",
+          "text": "pasado por delante",
+          "position": 52.28,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub71",
+          "text": "de algo as\u00ed",
+          "position": 53.0,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub72",
+          "text": "sin pensarlo dos veces?",
+          "position": 53.56,
+          "in": 0.0,
+          "out": 1.3999999999999986,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-04-01T14:03:23.669035",
+    "software": "kdenlive-cli 1.0"
+  }
+}

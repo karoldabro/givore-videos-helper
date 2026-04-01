@@ -1,0 +1,81 @@
+{
+  "target_duration": 25,
+  "total_duration": 28.41,
+  "visual_narrative": "Energetic cycling hook with theatrical gesture -> dynamic street cycling toward item -> office chair reveal on sidewalk -> suspenseful person examining chair close-up -> dramatic chair detail for price shock -> calm ending cycling away",
+  "available_scenes": ["hook_gesture", "cycling_street", "office_chair_approach", "office_chair_detail", "person_examining_chair", "cycling_ending"],
+  "location_shown": "Camí Fondo (general Valencia street footage, office chair clips from jaime-roig area)",
+  "clips": [
+    {
+      "id": 258,
+      "filename": "[hook] cycling on the street and showing a street in a theatrical gesture - jaime roig.mp4",
+      "section": "HOOK",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 1.62,
+      "narrative_note": "Energetic theatrical gesture while cycling - grabs attention immediately, 'look at this!' vibe perfect for CUANTO_CUESTA price reveal format"
+    },
+    {
+      "id": 672,
+      "filename": "(dynamic) city street, tall buildings, parked cars, bicycle, camera, motion blur - jaime-roig.mp4",
+      "section": "HOOK",
+      "start_trim": 0.0,
+      "end_trim": 1.5,
+      "duration": 3.50,
+      "narrative_note": "Dynamic cycling through jaime-roig streets - builds momentum toward the find, motion blur adds energy matching ENERGETICO persona"
+    },
+    {
+      "id": 674,
+      "filename": "[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "section": "ITEM_REVEAL",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "THE money shot - black office chair clearly visible on the sidewalk, camera movement reveals the item from cycling POV. Perfect match for 'silla de oficina' topic"
+    },
+    {
+      "id": 673,
+      "filename": "(slow) person using tablet, black office chair, green trash can, sidewalk, bicycle, moving camera - jaime-roig.mp4",
+      "section": "PRICE_GUESS",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 5.00,
+      "narrative_note": "Slow-motion pass showing someone near the office chair - builds suspense for the price guess moment. Slow pacing creates dramatic tension before the price reveal"
+    },
+    {
+      "id": 675,
+      "filename": "(calm) a tall building with a green triangular sign, a parked truck, palm trees, and a parked bicycle - jaime-roig.mp4",
+      "section": "PRICE_SHOCK",
+      "start_trim": 0.0,
+      "end_trim": 0.5,
+      "duration": 4.50,
+      "narrative_note": "Street context shot from same area - text overlay with price goes here. The calm pacing contrasts with the shocking price reveal for maximum impact"
+    },
+    {
+      "id": 676,
+      "filename": "(calm) a tall, modern building, a green delivery truck, a pedestrian, a street, a bike, a camera, a parking lot, a tree, a sidewalk, a crosswalk - jaime-roig.mp4",
+      "section": "PRICE_SHOCK",
+      "start_trim": 0.0,
+      "end_trim": 1.5,
+      "duration": 3.50,
+      "narrative_note": "Continued cycling away from the find after price reveal - keeps visual flow while price text overlay remains on screen"
+    },
+    {
+      "id": 256,
+      "filename": "[end] cycling on the street and covering lens with my hand - jaime roig.mp4",
+      "section": "CLOSE",
+      "start_trim": 0.0,
+      "end_trim": 0.0,
+      "duration": 1.34,
+      "narrative_note": "Hand covers camera lens for a punchy ending - same jaime-roig location maintains visual consistency. Quick close keeps completion rate high"
+    },
+    {
+      "id": 800,
+      "filename": "[end] (calm) a city street with a building, palm tree, and bike lane - cabanal.mp4",
+      "section": "CLOSE",
+      "start_trim": 0.0,
+      "end_trim": 1.06,
+      "duration": 3.94,
+      "narrative_note": "Final cycling-away shot with palm trees - gives breathing room for CTA text overlay before video ends"
+    }
+  ]
+}

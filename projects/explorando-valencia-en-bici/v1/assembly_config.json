@@ -1,0 +1,192 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/explorando-valencia-en-bici/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the bike lane,sudden camara move down and then up - turia park.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.898,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[start] (moderate) The cyclist starts riding on a bike lane alongside a busy ro - ruta-corts.mp4",
+      "name": "clip_01",
+      "position": 1.898,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist crosses an intersection, following another cycli - ruta-corts.mp4",
+      "name": "clip_02",
+      "position": 3.898,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Cycling on a sun-drenched bike lane with cars parked along t - ruta-corts.mp4",
+      "name": "clip_03",
+      "position": 5.898,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "name": "clip_04",
+      "position": 7.898,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "name": "clip_05",
+      "position": 10.898,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "name": "clip_06",
+      "position": 14.898,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist is stationary, observing a discarded office chai - ruta-corts.mp4",
+      "name": "clip_07",
+      "position": 17.898,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "name": "clip_08",
+      "position": 19.898,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane - gran via.mp4",
+      "name": "clip_09",
+      "position": 24.898,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist - sant francesc.mp4",
+      "name": "clip_10",
+      "position": 26.924,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "name": "clip_11",
+      "position": 28.95,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) The cyclist stops at a busy intersection with pedestrians cr - ruta-corts.mp4",
+      "name": "clip_12",
+      "position": 33.95,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a 'FACTORY Colchon' store with colorf - ruta-corts.mp4",
+      "name": "clip_13",
+      "position": 36.95,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turining right - quatre carreres.mp4",
+      "name": "clip_14",
+      "position": 39.95,
+      "duration": 2.218,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/street 1 - benimaclet.mp4",
+      "name": "clip_15",
+      "position": 42.168,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a 'VALOR' advertisement and a yellow - ruta-corts.mp4",
+      "name": "clip_16",
+      "position": 44.194,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) A man on an electric scooter passes as the sun casts long sh - ruta-corts.mp4",
+      "name": "clip_17",
+      "position": 47.194,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "name": "clip_18",
+      "position": 49.194,
+      "duration": 4.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 4.48,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 15.12,
+      "duration": 0.7,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 22.44,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 33.16,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/explorando-valencia-en-bici/v1/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/explorando-valencia-en-bici/v1/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

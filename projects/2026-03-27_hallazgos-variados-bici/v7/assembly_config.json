@@ -1,0 +1,240 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-27_hallazgos-variados-bici/v7/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] drift on the right side while stoping - benimalcet.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.514,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2, colon - sant francesc.mp4",
+      "name": "clip_01",
+      "position": 1.514,
+      "duration": 2.005,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground 2 - trinitat.mp4",
+      "name": "clip_02",
+      "position": 3.519,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cyclingshowing a building then comming back to the sw- ayora.mp4",
+      "name": "clip_03",
+      "position": 5.545,
+      "duration": 1.984,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] focus on the item, toys 2 - albors.mp4",
+      "name": "clip_04",
+      "position": 7.529,
+      "duration": 1.813,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turnig right to enter the street - albors.mp4",
+      "name": "clip_05",
+      "position": 9.342,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near statuim mestalla, very close to the edge.mp4",
+      "name": "clip_06",
+      "position": 11.496,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling the street - mestalla  aragon.mp4",
+      "name": "clip_07",
+      "position": 13.544,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, letting go the car to pass first - penya roja.mp4",
+      "name": "clip_08",
+      "position": 15.57,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning left from the bike lane to the street - mestalla.mp4",
+      "name": "clip_09",
+      "position": 17.618,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning left on a bike lane - grau maritim.mp4",
+      "name": "clip_10",
+      "position": 19.644,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling while turing right into the direction of the cycle line - mestalla.mp4",
+      "name": "clip_11",
+      "position": 21.692,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/urning right into the street - sunglish reflecting - mestalla   aragon.mp4",
+      "name": "clip_12",
+      "position": 23.74,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street mestalla stadium visible.mp4",
+      "name": "clip_13",
+      "position": 25.766,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle lane - mestalla.mp4",
+      "name": "clip_14",
+      "position": 27.792,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the streetaproaching mestalla stadium.mp4",
+      "name": "clip_15",
+      "position": 29.818,
+      "duration": 1.557,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling, enterning a sidewalk near the mestalla stadium with a bump.mp4",
+      "name": "clip_16",
+      "position": 31.375,
+      "duration": 1.557,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/showing nonot a lady medium - ayora.mp4",
+      "name": "clip_17",
+      "position": 32.932,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling showing dragon nonos on the street - ayora.mp4",
+      "name": "clip_18",
+      "position": 34.958,
+      "duration": 1.088,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 4 - ayora.mp4",
+      "name": "clip_19",
+      "position": 36.046,
+      "duration": 1.088,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 5 - ayora.mp4",
+      "name": "clip_20",
+      "position": 37.134,
+      "duration": 1.088,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane - ayora.mp4",
+      "name": "clip_21",
+      "position": 38.222,
+      "duration": 1.301,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane - albors.mp4",
+      "name": "clip_22",
+      "position": 39.523,
+      "duration": 1.301,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[start], camaera from the sky to the sw, jardin real - trinitat.mp4",
+      "name": "clip_23",
+      "position": 40.824,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[bridge] from right to the sw while cycling - ayora.mp4",
+      "name": "clip_24",
+      "position": 42.85,
+      "duration": 1.92,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook|ending} I cycle then put my hand on the les blocking the light entirely - albors.mp4",
+      "name": "clip_25",
+      "position": 44.77,
+      "duration": 5.568,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "pov",
+      "position": 3.0,
+      "duration": 0.3,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "connect",
+      "position": 30.0,
+      "duration": 0.9,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "close",
+      "position": 44.0,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-27_hallazgos-variados-bici/v7/hallazgos-variados-bici.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-27_hallazgos-variados-bici/v7/hallazgos-variados-bici.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

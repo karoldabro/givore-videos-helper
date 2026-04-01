@@ -1,0 +1,914 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the bike lane,sudden camara move down and then up - turia park.mp4",
+      "duration": 1.898,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[start] (moderate) The cyclist starts riding on a bike lane alongside a busy ro - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist crosses an intersection, following another cycli - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Cycling on a sun-drenched bike lane with cars parked along t - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "duration": 4.0,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist is stationary, observing a discarded office chai - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane - gran via.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "clip_11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "clip_12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(slow) The cyclist stops at a busy intersection with pedestrians cr - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "clip_13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a 'FACTORY Colchon' store with colorf - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "clip_14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turining right - quatre carreres.mp4",
+      "duration": 2.218,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "clip_15",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 1 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip16",
+      "name": "clip_16",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a 'VALOR' advertisement and a yellow - ruta-corts.mp4",
+      "duration": 3.0,
+      "type": "video"
+    },
+    {
+      "id": "clip17",
+      "name": "clip_17",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(moderate) A man on an electric scooter passes as the sun casts long sh - ruta-corts.mp4",
+      "duration": 2.0,
+      "type": "video"
+    },
+    {
+      "id": "clip18",
+      "name": "clip_18",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "duration": 4.0,
+      "type": "video"
+    },
+    {
+      "id": "clip19",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/explorando-valencia-en-bici/v1/audio.mp3",
+      "duration": 48.013061,
+      "type": "audio"
+    },
+    {
+      "id": "clip20",
+      "name": "pop",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "duration": 0.156688,
+      "type": "audio"
+    },
+    {
+      "id": "clip21",
+      "name": "swoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "duration": 0.679125,
+      "type": "audio"
+    },
+    {
+      "id": "clip22",
+      "name": "pop.001",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "duration": 0.156688,
+      "type": "audio"
+    },
+    {
+      "id": "clip23",
+      "name": "chime",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "duration": 0.91425,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.898,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 1.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 3.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 5.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 7.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 4.0,
+          "position": 10.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 14.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 17.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 19.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 24.898,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 26.924,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 28.95,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 33.95,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 36.95,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.218,
+          "position": 39.95,
+          "filters": []
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 42.168,
+          "filters": []
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 3.0,
+          "position": 44.194,
+          "filters": []
+        },
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 47.194,
+          "filters": []
+        },
+        {
+          "clip_id": "clip18",
+          "in": 0.0,
+          "out": 4.0,
+          "position": 49.194,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip19",
+          "in": 0.0,
+          "out": 48.013061,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip20",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 4.48,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip21",
+          "in": 0.0,
+          "out": 0.7,
+          "position": 15.12,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip22",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 22.44,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip23",
+          "in": 0.0,
+          "out": 0.9,
+          "position": 33.16,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "[SECTION: HOOK] Ranking",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.44,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "de hallazgos.",
+          "position": 0.44,
+          "in": 0.0,
+          "out": 0.6400000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Tres cosas en",
+          "position": 1.08,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "una ruta por",
+          "position": 1.92,
+          "in": 0.0,
+          "out": 0.48,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "Valencia. Del peor",
+          "position": 2.4,
+          "in": 0.0,
+          "out": 0.8400000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "al mejor.",
+          "position": 3.24,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "A ver.",
+          "position": 4.24,
+          "in": 0.0,
+          "out": 0.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "[SECTION: ITEM_3] Tercer",
+          "position": 4.48,
+          "in": 0.0,
+          "out": 0.6399999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "puesto. Ruta de",
+          "position": 5.12,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "las Cortes.",
+          "position": 6.2,
+          "in": 0.0,
+          "out": 0.7199999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Una planta artificial",
+          "position": 6.92,
+          "in": 0.0,
+          "out": 1.04,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "al lado de",
+          "position": 7.96,
+          "in": 0.0,
+          "out": 0.3199999999999994,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "unos contenedores.",
+          "position": 8.28,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "Estado: es de",
+          "position": 9.24,
+          "in": 0.0,
+          "out": 1.1600000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "plastico, no se",
+          "position": 10.4,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "muere.",
+          "position": 11.4,
+          "in": 0.0,
+          "out": 0.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Pero tampoco aporta",
+          "position": 11.72,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "mucho. Veredicto...",
+          "position": 12.56,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "tercera posicion merecida.",
+          "position": 13.76,
+          "in": 0.0,
+          "out": 1.3599999999999994,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "[SECTION: ITEM_2] Segundo",
+          "position": 15.12,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "puesto. Jaime Roig.",
+          "position": 15.56,
+          "in": 0.0,
+          "out": 1.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "Silla de oficina",
+          "position": 16.8,
+          "in": 0.0,
+          "out": 0.759999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "negra. Ruedas bien,",
+          "position": 17.56,
+          "in": 0.0,
+          "out": 1.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "respaldo entero.",
+          "position": 19.04,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "Esto en segunda",
+          "position": 20.04,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "mano Valencia se",
+          "position": 20.68,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "mueve en horas.",
+          "position": 21.52,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "[SECTION: ITEM_1]",
+          "position": 22.08,
+          "in": 0.0,
+          "out": 0.360000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "Y primer puesto.",
+          "position": 22.44,
+          "in": 0.0,
+          "out": 0.7999999999999972,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "Sant Antoni.",
+          "position": 23.24,
+          "in": 0.0,
+          "out": 1.0400000000000027,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "Un arcon de",
+          "position": 24.28,
+          "in": 0.0,
+          "out": 0.3999999999999986,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "madera con hojas",
+          "position": 24.68,
+          "in": 0.0,
+          "out": 0.9200000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "de otonio encima.",
+          "position": 25.6,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "Lo toco y...",
+          "position": 26.68,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "solido.",
+          "position": 27.68,
+          "in": 0.0,
+          "out": 0.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub35",
+          "text": "Sin polilla.",
+          "position": 28.36,
+          "in": 0.0,
+          "out": 0.9200000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub36",
+          "text": "Esto ya es",
+          "position": 29.28,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub37",
+          "text": "categoria muebles vintage.",
+          "position": 29.84,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub38",
+          "text": "El mejor hallazgo",
+          "position": 31.16,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub39",
+          "text": "de la ruta,",
+          "position": 31.96,
+          "in": 0.0,
+          "out": 0.8399999999999963,
+          "filters": []
+        },
+        {
+          "clip_id": "sub40",
+          "text": "sin discusion.",
+          "position": 32.8,
+          "in": 0.0,
+          "out": 0.35999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub41",
+          "text": "[SECTION: RECAP] Tres",
+          "position": 33.16,
+          "in": 0.0,
+          "out": 1.0400000000000063,
+          "filters": []
+        },
+        {
+          "clip_id": "sub42",
+          "text": "objetos. Tres barrios.",
+          "position": 34.2,
+          "in": 0.0,
+          "out": 1.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub43",
+          "text": "Ninguno tendria que",
+          "position": 35.92,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub44",
+          "text": "acabar aqui.",
+          "position": 36.64,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        },
+        {
+          "clip_id": "sub45",
+          "text": "Solo faltaba conectar",
+          "position": 37.6,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub46",
+          "text": "a quien los",
+          "position": 38.6,
+          "in": 0.0,
+          "out": 0.35999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub47",
+          "text": "tiene con quien",
+          "position": 38.96,
+          "in": 0.0,
+          "out": 0.4399999999999977,
+          "filters": []
+        },
+        {
+          "clip_id": "sub48",
+          "text": "los quiere.",
+          "position": 39.4,
+          "in": 0.0,
+          "out": 0.35999999999999943,
+          "filters": []
+        },
+        {
+          "clip_id": "sub49",
+          "text": "[SECTION: CTA]",
+          "position": 39.76,
+          "in": 0.0,
+          "out": 0.28000000000000114,
+          "filters": []
+        },
+        {
+          "clip_id": "sub50",
+          "text": "Lo subo a",
+          "position": 40.04,
+          "in": 0.0,
+          "out": 0.480000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub51",
+          "text": "Givore. Foto,",
+          "position": 40.52,
+          "in": 0.0,
+          "out": 1.1199999999999974,
+          "filters": []
+        },
+        {
+          "clip_id": "sub52",
+          "text": "titulo, barrio.",
+          "position": 41.64,
+          "in": 0.0,
+          "out": 1.519999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub53",
+          "text": "Si habeis visto",
+          "position": 43.16,
+          "in": 0.0,
+          "out": 0.5600000000000023,
+          "filters": []
+        },
+        {
+          "clip_id": "sub54",
+          "text": "algo asi por",
+          "position": 43.72,
+          "in": 0.0,
+          "out": 0.4399999999999977,
+          "filters": []
+        },
+        {
+          "clip_id": "sub55",
+          "text": "vuestra zona,",
+          "position": 44.16,
+          "in": 0.0,
+          "out": 0.5200000000000031,
+          "filters": []
+        },
+        {
+          "clip_id": "sub56",
+          "text": "comentarios. Los muebles",
+          "position": 44.68,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub57",
+          "text": "reciclados desaparecen los primeros.",
+          "position": 46.32,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-04-01T15:09:31.444983",
+    "software": "kdenlive-cli 1.0"
+  }
+}

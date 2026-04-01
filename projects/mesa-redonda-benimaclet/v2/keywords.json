@@ -1,0 +1,52 @@
+{
+  "variant": "v2",
+  "topic": "Mesa redonda en Benimaclet/Trinidad",
+  "location": "Benimaclet / Trinidad",
+  "items": ["mesa redonda"],
+  "content_format": "EL_RANKING_CALLEJERO",
+  "content_pillar": "CYCLING_POV",
+  "scene_descriptions": {
+    "645": "Calle tranquila en Trinitat con árboles, coches aparcados y bicicleta — apertura cycling POV",
+    "860": "Pedaleo lento por calles de Benimaclet, árboles y motos — acercándose al hallazgo peor clasificado",
+    "786": "Silla solitaria en la acera de Poblados Marítimos — hallazgo #5, el menos impresionante",
+    "864": "Escena callejera de Benimaclet desde bicicleta en movimiento — transición entre hallazgos",
+    "1003": "Planta artificial abandonada junto a contenedores de reciclaje — hallazgo #4, curioso pero sin valor",
+    "865": "Calle de Benimaclet con edificios, coches y ciclista — transición hacia hallazgo intermedio",
+    "650": "Arcón de madera en la acera con hojas de otoño y luz solar — hallazgo #3, pieza con carácter",
+    "895": "Calle dinámica en Trinidad con palmeras, contenedor rojo y peatón — transición energética",
+    "653": "Sofá azul en la calle, alguien lo fotografía con el móvil — hallazgo #2, buen estado",
+    "872": "Pedaleo dinámico por Benimaclet con coches aparcados y árboles — clímax hacia el #1",
+    "261": "Mesa redonda negra en muy buen estado — hallazgo #1, la ganadora del ranking",
+    "870": "Calle tranquila de Benimaclet con coches y edificios — plano extendido sobre el mejor hallazgo",
+    "896": "Calle en Trinidad con grafiti y peatones — fondo visual para el resumen del ranking",
+    "256": "Ciclista tapa el objetivo con la mano — cierre punch del vídeo"
+  },
+  "seo_keywords": {
+    "primary": [
+      {"keyword": "mesa reciclada", "volume": 7400},
+      {"keyword": "muebles reciclados", "volume": 86000},
+      {"keyword": "segunda mano Valencia", "volume": 140000},
+      {"keyword": "muebles segunda mano", "volume": 65000}
+    ],
+    "secondary": [
+      {"keyword": "movilidad sostenible", "volume": 9200},
+      {"keyword": "carril bici Valencia", "volume": 10000},
+      {"keyword": "consumo responsable", "volume": 57000}
+    ]
+  },
+  "thematic_elements": [
+    "ranking callejero de hallazgos desde la bici",
+    "contraste entre objetos abandonados y su potencial",
+    "exploración urbana en bici por barrios de Valencia",
+    "conexión entre quien tiene y quien necesita",
+    "descubrimiento casual pedaleando"
+  ],
+  "suggested_natural_phrases": [
+    "muebles que encuentras pedaleando por Valencia",
+    "ranking de hallazgos callejeros en Benimaclet",
+    "mesa redonda en buen estado tirada en la acera",
+    "lo que aparece en las calles de Trinidad",
+    "segunda mano gratis en la calle"
+  ],
+  "givore_mention_guideline": "Direct — the bike IS the discovery tool. Givore connects who has items with who wants them. One mention max, natural integration."
+}

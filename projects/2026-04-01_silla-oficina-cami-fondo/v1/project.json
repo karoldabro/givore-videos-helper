@@ -1,0 +1,483 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street and showing a street in a theatrical gesture - jaime roig.mp4",
+      "duration": 1.621,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) city street, tall buildings, parked cars, bicycle, camera, motion blur - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(slow) person using tablet, black office chair, green trash can, sidewalk, bicycle, moving camera - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a tall building with a green triangular sign, a parked truck, palm trees, and a parked bicycle - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a tall, modern building, a green delivery truck, a pedestrian, a street, a bike, a camera, a parking lot, a tree, a sidewalk, a crosswalk - jaime-roig.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a city street with a building, palm tree, and bike lane - cabanal.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v1/audio.mp3",
+      "duration": 22.465306,
+      "type": "audio"
+    },
+    {
+      "id": "clip8",
+      "name": "swoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "duration": 0.679125,
+      "type": "audio"
+    },
+    {
+      "id": "clip9",
+      "name": "ding",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "duration": 2.142,
+      "type": "audio"
+    },
+    {
+      "id": "clip10",
+      "name": "pop",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "duration": 0.156688,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.621,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 3.5,
+          "position": 1.621,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 5.121,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 10.121,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 4.5,
+          "position": 15.121,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 3.5,
+          "position": 19.621,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 3.94,
+          "position": 23.121,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 22.465306,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 0.7,
+          "position": 0.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.1,
+          "position": 12.16,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 20.4,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Silla de oficina.",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "En la acera.",
+          "position": 1.08,
+          "in": 0.0,
+          "out": 0.76,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Cam\u00ed Fondo.",
+          "position": 1.84,
+          "in": 0.0,
+          "out": 1.0399999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "A ver.",
+          "position": 2.88,
+          "in": 0.0,
+          "out": 0.6400000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "Madre m\u00eda...",
+          "position": 3.52,
+          "in": 0.0,
+          "out": 1.0399999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "est\u00e1 muy bien.",
+          "position": 4.56,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "Ni un rasgu\u00f1o.",
+          "position": 5.56,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Ergon\u00f3mica.",
+          "position": 6.56,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Ruedas bien.",
+          "position": 7.36,
+          "in": 0.0,
+          "out": 0.839999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Todo.",
+          "position": 8.2,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "\u00bfSab\u00e9is cu\u00e1nto sale",
+          "position": 8.84,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "una silla\nde oficina",
+          "position": 9.56,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "as\u00ed nueva?",
+          "position": 10.44,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "En Amazon.",
+          "position": 11.24,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "Setenta euros.",
+          "position": 12.16,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "M\u00ednimo.",
+          "position": 13.16,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "Y aqu\u00ed est\u00e1.",
+          "position": 13.88,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "En la acera.",
+          "position": 14.6,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Setenta euros",
+          "position": 15.32,
+          "in": 0.0,
+          "out": 0.759999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "que alguien",
+          "position": 16.08,
+          "in": 0.0,
+          "out": 0.40000000000000213,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "podr\u00eda haberse\nahorrado.",
+          "position": 16.48,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "Si se hubiera",
+          "position": 17.68,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "compartido\na tiempo...",
+          "position": 18.28,
+          "in": 0.0,
+          "out": 0.7999999999999972,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "\u00bfCu\u00e1l es\nlo m\u00e1s caro",
+          "position": 19.08,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "que hab\u00e9is visto",
+          "position": 20.4,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "en la calle?",
+          "position": 21.0,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "Venga.",
+          "position": 21.44,
+          "in": 0.0,
+          "out": 0.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "Dec\u00eddmelo.",
+          "position": 21.76,
+          "in": 0.0,
+          "out": 0.639999999999997,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-04-01T00:36:54.405477",
+    "software": "kdenlive-cli 1.0"
+  }
+}

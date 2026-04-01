@@ -48,7 +48,7 @@ Audio:
 
 Project setup:
   init-project <slug>         Create project folder (projects/<slug>/)
-  init-batch <slug>           Create batch folders (v1-v7)
+  init-batch <slug> [N]       Create batch folders (v1-vN, default 7)
   init-renueva <slug>         Create renueva project folder (projects/renueva-<slug>/)
   init-renueva-batch <slug> <N>  Create N variant folders for renueva batch
 
@@ -69,7 +69,7 @@ Clip database:
 History database:
   script-add [args]           Add script history entry
   script-list [--last N]      List recent script history
-  script-rotation [--last N]  Show script rotation constraints
+  script-rotation [--last N] [--format X]  Show script rotation constraints (optionally filter by content format)
   script-delete <id>          Delete script history entry
   trial-add [args]            Add trial history entry
   trial-list [--last N]       List recent trial history
@@ -373,15 +373,16 @@ cmd_init_project() {
 
 cmd_init_batch() {
     local slug="$1"
+    local count="${2:-7}"
     local dir="$GIVORE_PROJECTS/$slug"
     if [[ ! -d "$dir" ]]; then
         mkdir -p "$dir"
         echo "Created: $dir"
     fi
-    for v in v1 v2 v3 v4 v5 v6 v7; do
-        mkdir -p "$dir/$v"
+    for i in $(seq 1 "$count"); do
+        mkdir -p "$dir/v$i"
     done
-    echo "Created: v1-v7 in $dir"
+    echo "Created: v1-v$count in $dir"
 }
 
 cmd_init_renueva() {
@@ -634,6 +635,10 @@ case "${1:-help}" in
         shift
         python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" generate-config "$@"
         ;;
+    query)
+        shift
+        python3 "/media/kdabrow/Programy/givore/scripts/givore_db.py" query "$@"
+        ;;
     assemble)
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh assemble <config.json>" >&2; exit 1; }
         cmd_assemble "$2"
@@ -705,8 +710,8 @@ case "${1:-help}" in
         cmd_init_project "$2"
         ;;
     init-batch)
-        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-batch <date_slug>" >&2; exit 1; }
-        cmd_init_batch "$2"
+        [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-batch <date_slug> [N]" >&2; exit 1; }
+        cmd_init_batch "$2" "${3:-7}"
         ;;
     init-renueva)
         [[ $# -lt 2 ]] && { echo "Usage: givore-tools.sh init-renueva <date_slug>" >&2; exit 1; }
@@ -736,6 +741,14 @@ case "${1:-help}" in
     extract-clips)
         shift
         "$HOME/.venv/clip_extractor/bin/python3" "/media/kdabrow/Programy/givore/scripts/clip_extractor.py" "$@"
+        ;;
+    gemini-extract)
+        shift
+        "$HOME/.venv/gemini_extractor/bin/python3" "/media/kdabrow/Programy/givore/scripts/gemini_extractor.py" "$@"
+        ;;
+    gemini-cut)
+        shift
+        "$HOME/.venv/gemini_extractor/bin/python3" "/media/kdabrow/Programy/givore/scripts/gemini_extractor.py" cut "$@"
         ;;
     clips)
         shift

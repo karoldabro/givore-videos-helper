@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="7.0.0" title="givore_template" producer="kdenlive-cli">
+  <profile description="custom" width="1080" height="1920" progressive="1" sample_aspect_num="17280" sample_aspect_den="17280" display_aspect_num="9" display_aspect_den="16" frame_rate_num="50" frame_rate_den="1" colorspace="709"/>
+  <producer id="clip0" in="0" out="75">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[hook] drift on the right side while stoping - benimalcet.mp4</property>
+    <property name="kdenlive:clipname">clip_00</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">76</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip1" in="0" out="132">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/start cycling going on the bike lane - ayora.mp4</property>
+    <property name="kdenlive:clipname">clip_01</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">133</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip2" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane estacion nord - sant francesc.mp4</property>
+    <property name="kdenlive:clipname">clip_02</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip3" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/aproaching the green light passing beteen a car and a sidewalk - mestalla  aragon.mp4</property>
+    <property name="kdenlive:clipname">clip_03</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip4" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] aproaching the parts of the somier on the street - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_04</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip5" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] bicycle and the phone visible, taking photo of the parts of somiere found on the street - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_05</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip6" in="0" out="90">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] turning left and aproaching an item on the street - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_06</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">91</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip7" in="0" out="90">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] focus on the item, toys - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_07</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">91</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip8" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground - trinitat.mp4</property>
+    <property name="kdenlive:clipname">clip_08</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip9" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane, going off to vaid colision with pedertrians - turia park.mp4</property>
+    <property name="kdenlive:clipname">clip_09</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip10" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling the car parks on the left and passing close to it.mp4</property>
+    <property name="kdenlive:clipname">clip_10</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip11" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle lane - mestalla.mp4</property>
+    <property name="kdenlive:clipname">clip_11</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip12" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros 2, car blocks the passage go around - sant francesc.mp4</property>
+    <property name="kdenlive:clipname">clip_12</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip13" in="0" out="101">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling passing between cars waiting on the red light 2 - ayora.mp4</property>
+    <property name="kdenlive:clipname">clip_13</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">102</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip14" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle lane people are crossing before me- mestalla.mp4</property>
+    <property name="kdenlive:clipname">clip_14</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip15" in="0" out="108">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist 1 - sant francesc.mp4</property>
+    <property name="kdenlive:clipname">clip_15</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">109</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip16" in="0" out="124">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] showing the sucessful submit of the idem in the app the item in the second plan, toys - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_16</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">125</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip17" in="0" out="124">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[item] using the phone to submit the found item, toys - albors.mp4</property>
+    <property name="kdenlive:clipname">clip_17</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">125</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip18" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/enterning the main road leting pass the car next to me on the right.mp4</property>
+    <property name="kdenlive:clipname">clip_18</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip19" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling on the street churreria in fornt of me low camara- camins al grau.mp4</property>
+    <property name="kdenlive:clipname">clip_19</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip20" in="0" out="129">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane 6 - trinitat.mp4</property>
+    <property name="kdenlive:clipname">clip_20</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">130</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip21" in="0" out="129">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane 7 - trinitat.mp4</property>
+    <property name="kdenlive:clipname">clip_21</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">130</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip22" in="0" out="100">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/cycling turning right to the street (dramatic), low camara - ayora.mp4</property>
+    <property name="kdenlive:clipname">clip_22</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">101</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip23" in="0" out="93">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/bike lane, aproaching puerta del mar - la xerea.mp4</property>
+    <property name="kdenlive:clipname">clip_23</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">94</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip24" in="0" out="97">
+    <property name="resource">/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4</property>
+    <property name="kdenlive:clipname">clip_24</property>
+    <property name="kdenlive:clip_type">0</property>
+    <property name="length">98</property>
+    <property name="aspect_ratio">1</property>
+    <property name="set.force_aspect_ratio">1.0</property>
+  </producer>
+  <producer id="clip25" in="0" out="2585">
+    <property name="resource">/media/kdabrow/Programy/givore/projects/2026-03-27_mejor-compartir-antes/v6/mejor-compartir-antes.mp3</property>
+    <property name="kdenlive:clipname">narration</property>
+    <property name="kdenlive:clip_type">1</property>
+    <property name="length">2586</property>
+  </producer>
+  <producer id="clip26" in="0" out="13">
+    <property name="resource">/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3</property>
+    <property name="kdenlive:clipname">transition_whoosh</property>
+    <property name="kdenlive:clip_type">1</property>
+    <property name="length">14</property>
+  </producer>
+  <producer id="clip27" in="0" out="106">
+    <property name="resource">/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3</property>
+    <property name="kdenlive:clipname">reveal_ding</property>
+    <property name="kdenlive:clip_type">1</property>
+    <property name="length">107</property>
+  </producer>
+  <producer id="clip28" in="0" out="7">
+    <property name="resource">/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3</property>
+    <property name="kdenlive:clipname">app_pop</property>
+    <property name="kdenlive:clip_type">1</property>
+    <property name="length">8</property>
+  </producer>
+  <producer id="clip29" in="0" out="45">
+    <property name="resource">/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3</property>
+    <property name="kdenlive:clipname">payoff_chime</property>
+    <property name="kdenlive:clip_type">1</property>
+    <property name="length">46</property>
+  </producer>
+  <producer id="sub0" in="0" out="37">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;POV: vas en&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">POV: vas en</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">38</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub1" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;bici por tu&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">bici por tu</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub2" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;ciudad y de&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">ciudad y de</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub3" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;repente ves esto.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">repente ves esto.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub4" in="0" out="45">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Un somier.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Un somier.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">46</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub5" in="0" out="53">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Juguetes.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Juguetes.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">54</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub6" in="0" out="35">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Una mesa.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Una mesa.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">36</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub7" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Todo en la&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Todo en la</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub8" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;acera.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">acera.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub9" in="0" out="17">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Esto no tendría&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Esto no tendría</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">18</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub10" in="0" out="53">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;que estar aquí.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">que estar aquí.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">54</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub11" in="0" out="45">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Quedaos hasta el&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Quedaos hasta el</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">46</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub12" in="0" out="37">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;final...&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">final...</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">38</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub13" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;porque hay algo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">porque hay algo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub14" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;que puede cambiar&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">que puede cambiar</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub15" in="0" out="39">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;cómo veis vuestra&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">cómo veis vuestra</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">40</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub16" in="0" out="53">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;ciudad. Tu vecino&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">ciudad. Tu vecino</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">54</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub17" in="0" out="29">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;de dos calles&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">de dos calles</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">30</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub18" in="0" out="33">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;más allá puede&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">más allá puede</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">34</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub19" in="0" out="55">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;que necesite justo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">que necesite justo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">56</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub20" in="0" out="45">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;esta mesa.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">esta mesa.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">46</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub21" in="0" out="13">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Y no lo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Y no lo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">14</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub22" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;sabe.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">sabe.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub23" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Hay gente en&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Hay gente en</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub24" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;este barrio que&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">este barrio que</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub25" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;lleva semanas buscando&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">lleva semanas buscando</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub26" in="0" out="41">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;algo así.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">algo así.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">42</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub27" in="0" out="37">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Y está ahí&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Y está ahí</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">38</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub28" in="0" out="41">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;mismo.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">mismo.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">42</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub29" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Si alguien hubiera&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Si alguien hubiera</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub30" in="0" out="43">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;subido estas cosas&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">subido estas cosas</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">44</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub31" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;a tiempo,&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">a tiempo,</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub32" in="0" out="35">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;estarían ya en&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">estarían ya en</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">36</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub33" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;casa de alguien.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">casa de alguien.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub34" in="0" out="17">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;En vez de&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">En vez de</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">18</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub35" in="0" out="29">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;mojándose en la&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">mojándose en la</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">30</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub36" in="0" out="39">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;acera.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">acera.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">40</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub37" in="0" out="27">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;¿Y sabéis qué&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">¿Y sabéis qué</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">28</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub38" in="0" out="25">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;hago yo cuando&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">hago yo cuando</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">26</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub39" in="0" out="49">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;encuentro algo así?&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">encuentro algo así?</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">50</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub40" in="0" out="47">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Abro Givore,&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Abro Givore,</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">48</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub41" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;foto rápida,&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">foto rápida,</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub42" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;pongo mesa redonda,&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">pongo mesa redonda,</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub43" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;buen estado...&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">buen estado...</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub44" in="0" out="45">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;y publico.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">y publico.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">46</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub45" in="0" out="33">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Ya está visible&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Ya está visible</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">34</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub46" in="0" out="21">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;para quien lo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">para quien lo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">22</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub47" in="0" out="43">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;necesite.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">necesite.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">44</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub48" in="0" out="33">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;En unos minutos&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">En unos minutos</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">34</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub49" in="0" out="29">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;alguien del barrio&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">alguien del barrio</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">30</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub50" in="0" out="25">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;puede verla.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">puede verla.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">26</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub51" in="0" out="51">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Pero lo importante&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Pero lo importante</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">52</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub52" in="0" out="31">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;no es solo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">no es solo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">32</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub53" in="0" out="15">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;lo que yo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">lo que yo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">16</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub54" in="0" out="29">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;encuentro.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">encuentro.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">30</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub55" in="0" out="15">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Es lo que&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Es lo que</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">16</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub56" in="0" out="59">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;todos podríamos compartir&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">todos podríamos compartir</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">60</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub57" in="0" out="41">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;antes de dejarlo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">antes de dejarlo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">42</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub58" in="0" out="29">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;en la calle.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">en la calle.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">30</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub59" in="0" out="39">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Si subiéramos lo&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Si subiéramos lo</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">40</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub60" in="0" out="49">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;que nos sobra...&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">que nos sobra...</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">50</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub61" in="0" out="79">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;nada acabaría así.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">nada acabaría así.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">80</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub62" in="0" out="33">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;Antes de tirar,&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">Antes de tirar,</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">34</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub63" in="0" out="45">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;pensad si alguien&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">pensad si alguien</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">46</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub64" in="0" out="33">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;más lo puede&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">más lo puede</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">34</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub65" in="0" out="61">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;aprovechar. Nos vemos&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">aprovechar. Nos vemos</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">62</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <producer id="sub66" in="0" out="53">
+    <property name="mlt_service">kdenlivetitle</property>
+    <property name="xmldata">
+      &lt;kdenlivetitle width=&quot;1080&quot; height=&quot;1920&quot;&gt;&lt;item type=&quot;QGraphicsTextItem&quot; z-index=&quot;0&quot;&gt;&lt;position x=&quot;5&quot; y=&quot;1340&quot;&gt;&lt;transform&gt;1,0,0,0,1,0,0,0,1&lt;/transform&gt;&lt;/position&gt;&lt;content font=&quot;Arial&quot; font-pixel-size=&quot;65&quot; font-weight=&quot;700&quot; font-color=&quot;255,255,255,255&quot; font-outline=&quot;14&quot; font-outline-color=&quot;39,93,43,255&quot; alignment=&quot;4&quot; box-width=&quot;1070&quot;&gt;en el próximo paseo.&lt;/content&gt;&lt;/item&gt;&lt;startviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;endviewport rect=&quot;0,0,1080,1920&quot;/&gt;&lt;background color=&quot;0,0,0,0&quot;/&gt;&lt;/kdenlivetitle&gt;
+    </property>
+    <property name="kdenlive:clipname">en el próximo paseo.</property>
+    <property name="kdenlive:clip_type">4</property>
+    <property name="length">54</property>
+    <property name="force_reload">0</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="kdenlive:track_name">V1</property>
+    <entry producer="clip0" in="0" out="75">
+    </entry>
+    <entry producer="clip1" in="0" out="132">
+    </entry>
+    <entry producer="clip2" in="0" out="100">
+    </entry>
+    <entry producer="clip3" in="0" out="100">
+    </entry>
+    <entry producer="clip4" in="0" out="100">
+    </entry>
+    <entry producer="clip5" in="0" out="100">
+    </entry>
+    <entry producer="clip6" in="0" out="90">
+    </entry>
+    <entry producer="clip7" in="0" out="90">
+    </entry>
+    <entry producer="clip8" in="0" out="100">
+    </entry>
+    <entry producer="clip9" in="0" out="100">
+    </entry>
+    <entry producer="clip10" in="0" out="100">
+    </entry>
+    <entry producer="clip11" in="0" out="100">
+    </entry>
+    <entry producer="clip12" in="0" out="100">
+    </entry>
+    <entry producer="clip13" in="0" out="101">
+    </entry>
+    <entry producer="clip14" in="0" out="100">
+    </entry>
+    <entry producer="clip15" in="0" out="108">
+    </entry>
+    <entry producer="clip16" in="0" out="124">
+    </entry>
+    <entry producer="clip17" in="0" out="124">
+    </entry>
+    <entry producer="clip18" in="0" out="100">
+    </entry>
+    <entry producer="clip19" in="0" out="100">
+    </entry>
+    <entry producer="clip20" in="0" out="129">
+    </entry>
+    <entry producer="clip21" in="0" out="129">
+    </entry>
+    <entry producer="clip22" in="0" out="100">
+    </entry>
+    <entry producer="clip23" in="0" out="93">
+    </entry>
+    <entry producer="clip24" in="0" out="97">
+    </entry>
+  </playlist>
+  <playlist id="playlist1">
+    <property name="kdenlive:track_name">A1-Narration</property>
+    <entry producer="clip25" in="0" out="2585">
+    </entry>
+  </playlist>
+  <playlist id="playlist2">
+    <property name="kdenlive:track_name">A2-SFX</property>
+    <blank length="125"/>
+    <entry producer="clip26" in="0" out="14">
+      <filter mlt_service="volume">
+        <property name="kdenlive:filter_name">volume</property>
+        <property name="level">0.03</property>
+      </filter>
+    </entry>
+    <blank length="475"/>
+    <entry producer="clip27" in="0" out="104">
+      <filter mlt_service="volume">
+        <property name="kdenlive:filter_name">volume</property>
+        <property name="level">0.03</property>
+      </filter>
+    </entry>
+    <blank length="995"/>
+    <entry producer="clip28" in="0" out="9">
+      <filter mlt_service="volume">
+        <property name="kdenlive:filter_name">volume</property>
+        <property name="level">0.03</property>
+      </filter>
+    </entry>
+    <blank length="500"/>
+    <entry producer="clip29" in="0" out="44">
+      <filter mlt_service="volume">
+        <property name="kdenlive:filter_name">volume</property>
+        <property name="level">0.03</property>
+      </filter>
+    </entry>
+  </playlist>
+  <playlist id="playlist3">
+    <property name="kdenlive:track_name">Subtitles</property>
+    <entry producer="sub0" in="0" out="37">
+    </entry>
+    <entry producer="sub1" in="0" out="27">
+    </entry>
+    <entry producer="sub2" in="0" out="27">
+    </entry>
+    <entry producer="sub3" in="0" out="51">
+    </entry>
+    <entry producer="sub4" in="0" out="45">
+    </entry>
+    <entry producer="sub5" in="0" out="53">
+    </entry>
+    <entry producer="sub6" in="0" out="35">
+    </entry>
+    <entry producer="sub7" in="0" out="31">
+    </entry>
+    <entry producer="sub8" in="0" out="31">
+    </entry>
+    <entry producer="sub9" in="0" out="17">
+    </entry>
+    <entry producer="sub10" in="0" out="53">
+    </entry>
+    <entry producer="sub11" in="0" out="45">
+    </entry>
+    <entry producer="sub12" in="0" out="37">
+    </entry>
+    <entry producer="sub13" in="0" out="31">
+    </entry>
+    <entry producer="sub14" in="0" out="31">
+    </entry>
+    <entry producer="sub15" in="0" out="39">
+    </entry>
+    <entry producer="sub16" in="0" out="53">
+    </entry>
+    <entry producer="sub17" in="0" out="29">
+    </entry>
+    <entry producer="sub18" in="0" out="33">
+    </entry>
+    <entry producer="sub19" in="0" out="55">
+    </entry>
+    <entry producer="sub20" in="0" out="45">
+    </entry>
+    <entry producer="sub21" in="0" out="13">
+    </entry>
+    <entry producer="sub22" in="0" out="27">
+    </entry>
+    <entry producer="sub23" in="0" out="27">
+    </entry>
+    <entry producer="sub24" in="0" out="31">
+    </entry>
+    <entry producer="sub25" in="0" out="51">
+    </entry>
+    <entry producer="sub26" in="0" out="41">
+    </entry>
+    <entry producer="sub27" in="0" out="37">
+    </entry>
+    <entry producer="sub28" in="0" out="41">
+    </entry>
+    <entry producer="sub29" in="0" out="31">
+    </entry>
+    <entry producer="sub30" in="0" out="43">
+    </entry>
+    <entry producer="sub31" in="0" out="27">
+    </entry>
+    <entry producer="sub32" in="0" out="35">
+    </entry>
+    <entry producer="sub33" in="0" out="51">
+    </entry>
+    <entry producer="sub34" in="0" out="17">
+    </entry>
+    <entry producer="sub35" in="0" out="29">
+    </entry>
+    <entry producer="sub36" in="0" out="39">
+    </entry>
+    <entry producer="sub37" in="0" out="27">
+    </entry>
+    <entry producer="sub38" in="0" out="25">
+    </entry>
+    <entry producer="sub39" in="0" out="49">
+    </entry>
+    <entry producer="sub40" in="0" out="47">
+    </entry>
+    <entry producer="sub41" in="0" out="31">
+    </entry>
+    <entry producer="sub42" in="0" out="51">
+    </entry>
+    <entry producer="sub43" in="0" out="51">
+    </entry>
+    <entry producer="sub44" in="0" out="45">
+    </entry>
+    <entry producer="sub45" in="0" out="33">
+    </entry>
+    <entry producer="sub46" in="0" out="21">
+    </entry>
+    <entry producer="sub47" in="0" out="43">
+    </entry>
+    <entry producer="sub48" in="0" out="33">
+    </entry>
+    <entry producer="sub49" in="0" out="29">
+    </entry>
+    <entry producer="sub50" in="0" out="25">
+    </entry>
+    <entry producer="sub51" in="0" out="51">
+    </entry>
+    <entry producer="sub52" in="0" out="31">
+    </entry>
+    <entry producer="sub53" in="0" out="15">
+    </entry>
+    <entry producer="sub54" in="0" out="29">
+    </entry>
+    <entry producer="sub55" in="0" out="15">
+    </entry>
+    <entry producer="sub56" in="0" out="59">
+    </entry>
+    <entry producer="sub57" in="0" out="41">
+    </entry>
+    <entry producer="sub58" in="0" out="29">
+    </entry>
+    <entry producer="sub59" in="0" out="39">
+    </entry>
+    <entry producer="sub60" in="0" out="49">
+    </entry>
+    <entry producer="sub61" in="0" out="79">
+    </entry>
+    <entry producer="sub62" in="0" out="33">
+    </entry>
+    <entry producer="sub63" in="0" out="45">
+    </entry>
+    <entry producer="sub64" in="0" out="33">
+    </entry>
+    <entry producer="sub65" in="0" out="61">
+    </entry>
+    <entry producer="sub66" in="0" out="53">
+    </entry>
+  </playlist>
+  <tractor id="maintractor">
+    <track producer="playlist0" hide="audio"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2"/>
+    <track producer="playlist3"/>
+    <transition mlt_service="mix" in="0" out="2620" a_track="0" b_track="1" always_active="1">
+      <property name="combine">1</property>
+    </transition>
+    <transition mlt_service="mix" in="0" out="2620" a_track="0" b_track="2" always_active="1">
+      <property name="combine">1</property>
+    </transition>
+    <transition mlt_service="mix" in="0" out="2620" a_track="0" b_track="3" always_active="1">
+      <property name="combine">1</property>
+    </transition>
+    <transition mlt_service="frei0r.cairoblend" in="0" out="2620" a_track="0" b_track="3" always_active="1"></transition>
+  </tractor>
+</mlt>

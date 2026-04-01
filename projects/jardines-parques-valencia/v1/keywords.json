@@ -1,0 +1,60 @@
+{
+  "scene_descriptions": [
+    "Dramatic camera swoop on Turia bike lane — instant motion hook",
+    "Wide view of Rio Turia park with bike path, trees, and people strolling",
+    "Immersive cycling POV through tree-lined Turia path, handlebars visible",
+    "Jardin Real with palm trees, bench, and cyclist — hidden garden feel",
+    "Stone staircase entrance to a Turia park zone — architectural transition",
+    "Palau de la Musica ramp panorama sweeping from houses down to the park",
+    "Park with tall building, palm trees, and statue — Benimaclet greenery",
+    "Calm park scene with trees and street — quiet neighborhood breathing room",
+    "Black office chair found on sidewalk while cycling — street-find surprise moment",
+    "Close-up of discarded office chair next to trash bin — the item reveal",
+    "Park bench with lamp post — calm cycling CTA setting",
+    "Palm-tree-lined street ride-away — cinematic closing shot"
+  ],
+  "seo_keywords": {
+    "primary": [
+      "jardines Valencia",
+      "parques Valencia",
+      "Turia Valencia",
+      "carril bici Valencia",
+      "en bici por Valencia"
+    ],
+    "secondary": [
+      "segunda mano Valencia",
+      "movilidad sostenible",
+      "barrios Valencia",
+      "Valencia turismo",
+      "ciclismo urbano",
+      "rutas bici Valencia",
+      "silla oficina gratis",
+      "Jardin Real Valencia",
+      "Parc Central Valencia",
+      "Rio Turia bici"
+    ]
+  },
+  "thematic_elements": [
+    "green urban corridor — Valencia's Turia riverbed converted into parkland",
+    "cycling as discovery tool — seeing the city from handlebars",
+    "garden variety — from manicured Jardin Real to wild Turia stretches",
+    "street-find surprise — functional office chair abandoned on the sidewalk",
+    "palm trees as visual motif — recurring across parks and streets",
+    "community spaces — benches, paths, people walking, shared greenery",
+    "60-second time pressure — rapid tour through multiple parks"
+  ],
+  "suggested_natural_phrases": [
+    "pedaleando entre jardines",
+    "lo que esconden los parques de Valencia",
+    "cruzando el Turia en bici",
+    "esto estaba tirado en la acera",
+    "una silla de oficina perfecta",
+    "el jardín que nadie conoce",
+    "verde por todos lados",
+    "de parque en parque en 60 segundos",
+    "palmeras, bancos y bici",
+    "ruta verde por Valencia"
+  ],
+  "content_pillar": ["CYCLING_POV", "BARRIO_GUIDES"],
+  "givore_mention_guideline": "This is broad Tier 1/Tier 2 content (cycling POV + barrio guide). The street-find chair provides one natural Givore mention opportunity — keep it casual, e.g. 'por cierto, tengo una app para esto' or weave into the CTA. Rest of the video should be pure park discovery with no app push. Target: 70-80% pure engagement, 20-30% casual mention via the item moment."
+}

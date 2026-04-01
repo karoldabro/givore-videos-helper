@@ -1,0 +1,664 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] intro camara from sky to the sw - camins al grau.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the closed street because of fallas- ayora.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/showing a ninot on the street while cycling aldin like small - albors.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/aproaching closed street for the falla, mother and child watch small firecrackers - albors.mp4",
+      "duration": 2.154,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/showing ninos of a chef - quatre carreres.mp4",
+      "duration": 2.133,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/showing people who work on a small ninot - mestalla   aragon.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street, showing wizzard nonot  (falla)- benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street showing falla micer masco - exposicion.mp4",
+      "duration": 2.581,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street, falla of the big clown - benimalcet.mp4",
+      "duration": 1.92,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "clip_09",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, falla of the female warior - benimalcet.mp4",
+      "duration": 2.666,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "clip_10",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane, showing ninot of clown - gran via.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "clip_11",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - jaime roig.mp4",
+      "duration": 2.154,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "clip_12",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane  - ayora.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip13",
+      "name": "clip_13",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 3 - ayora.mp4",
+      "duration": 2.048,
+      "type": "video"
+    },
+    {
+      "id": "clip14",
+      "name": "clip_14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 2 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip15",
+      "name": "clip_15",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip16",
+      "name": "clip_16",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook|ending} I cycle then put my hand on the les blocking the light entirely - albors.mp4",
+      "duration": 1.194,
+      "type": "video"
+    },
+    {
+      "id": "clip17",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-21_reciclaje-fallas/v5/reciclaje-fallas.mp3",
+      "duration": 33.515102,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 2.048,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 4.074,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.154,
+          "position": 6.1,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.133,
+          "position": 8.254,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 10.387,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 12.413,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.581,
+          "position": 14.439,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 1.92,
+          "position": 17.02,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.666,
+          "position": 18.94,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 21.606,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 2.154,
+          "position": 23.632,
+          "filters": []
+        },
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 25.786,
+          "filters": []
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 2.048,
+          "position": 27.834,
+          "filters": []
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 29.882,
+          "filters": []
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 31.908,
+          "filters": []
+        },
+        {
+          "clip_id": "clip16",
+          "in": 0.0,
+          "out": 1.194,
+          "position": 33.934,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip17",
+          "in": 0.0,
+          "out": 33.515102,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Es que...",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.72,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "mirad.",
+          "position": 0.72,
+          "in": 0.0,
+          "out": 0.6400000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Mirad esto.",
+          "position": 1.36,
+          "in": 0.0,
+          "out": 0.76,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "En plenas Fallas.",
+          "position": 2.12,
+          "in": 0.0,
+          "out": 0.96,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "En la calle.",
+          "position": 3.08,
+          "in": 0.0,
+          "out": 0.52,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Petardos,",
+          "position": 3.6,
+          "in": 0.0,
+          "out": 0.8400000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "ninots,",
+          "position": 4.44,
+          "in": 0.0,
+          "out": 0.4399999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "fiesta por",
+          "position": 4.88,
+          "in": 0.0,
+          "out": 0.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "todas partes...",
+          "position": 5.2,
+          "in": 0.0,
+          "out": 1.12,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "y entre medio,",
+          "position": 6.32,
+          "in": 0.0,
+          "out": 1.4799999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "cosas incre\u00edbles",
+          "position": 7.8,
+          "in": 0.0,
+          "out": 0.9200000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "abandonadas",
+          "position": 8.72,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "en la acera.",
+          "position": 9.28,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "En Fallas",
+          "position": 10.2,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "la gente limpia,",
+          "position": 10.68,
+          "in": 0.0,
+          "out": 0.8399999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "renueva,",
+          "position": 11.52,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "cambia muebles...",
+          "position": 12.08,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "y esto no va",
+          "position": 13.28,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "a durar aqu\u00ed mucho.",
+          "position": 14.0,
+          "in": 0.0,
+          "out": 1.0399999999999991,
+          "filters": []
+        },
+        {
+          "clip_id": "sub19",
+          "text": "Ma\u00f1ana puede",
+          "position": 15.04,
+          "in": 0.0,
+          "out": 0.5200000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub20",
+          "text": "que ya no est\u00e9.",
+          "position": 15.56,
+          "in": 0.0,
+          "out": 0.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub21",
+          "text": "Y aqu\u00ed es donde",
+          "position": 16.44,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub22",
+          "text": "entramos todos.",
+          "position": 17.16,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub23",
+          "text": "Lo veo,",
+          "position": 18.44,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub24",
+          "text": "lo subo a Givore,",
+          "position": 18.92,
+          "in": 0.0,
+          "out": 1.0799999999999983,
+          "filters": []
+        },
+        {
+          "clip_id": "sub25",
+          "text": "y en nada",
+          "position": 20.0,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub26",
+          "text": "alguien cercano",
+          "position": 20.64,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub27",
+          "text": "lo encuentra.",
+          "position": 21.44,
+          "in": 0.0,
+          "out": 0.7199999999999989,
+          "filters": []
+        },
+        {
+          "clip_id": "sub28",
+          "text": "Mientras la ciudad",
+          "position": 22.16,
+          "in": 0.0,
+          "out": 0.7600000000000016,
+          "filters": []
+        },
+        {
+          "clip_id": "sub29",
+          "text": "celebra,",
+          "position": 22.92,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub30",
+          "text": "vecinos conectando",
+          "position": 23.48,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub31",
+          "text": "sin conocerse.",
+          "position": 24.36,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub32",
+          "text": "Segunda vida",
+          "position": 25.48,
+          "in": 0.0,
+          "out": 0.5999999999999979,
+          "filters": []
+        },
+        {
+          "clip_id": "sub33",
+          "text": "para todo.",
+          "position": 26.08,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub34",
+          "text": "Las calles",
+          "position": 26.56,
+          "in": 0.0,
+          "out": 0.4400000000000013,
+          "filters": []
+        },
+        {
+          "clip_id": "sub35",
+          "text": "durante Fallas",
+          "position": 27.0,
+          "in": 0.0,
+          "out": 1.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub36",
+          "text": "son una mina.",
+          "position": 28.0,
+          "in": 0.0,
+          "out": 0.9200000000000017,
+          "filters": []
+        },
+        {
+          "clip_id": "sub37",
+          "text": "Fijaos bien",
+          "position": 28.92,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub38",
+          "text": "esta semana.",
+          "position": 29.8,
+          "in": 0.0,
+          "out": 0.5599999999999987,
+          "filters": []
+        },
+        {
+          "clip_id": "sub39",
+          "text": "\u00bfQu\u00e9 hab\u00e9is encontrado",
+          "position": 30.36,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub40",
+          "text": "vosotros?",
+          "position": 31.24,
+          "in": 0.0,
+          "out": 0.6000000000000014,
+          "filters": []
+        },
+        {
+          "clip_id": "sub41",
+          "text": "Cont\u00e1dmelo abajo,",
+          "position": 31.84,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub42",
+          "text": "quiero verlo.",
+          "position": 32.64,
+          "in": 0.0,
+          "out": 0.8399999999999963,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-21T22:09:24.382403",
+    "software": "kdenlive-cli 1.0"
+  }
+}

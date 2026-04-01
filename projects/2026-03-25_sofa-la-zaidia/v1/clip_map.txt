@@ -1,0 +1,29 @@
+CLIP MAP — v1 sofa-la-zaidia
+Audio: 50.16s | Clips: 50.78s | 25 clips | No SFX
+
+# | Section     | ID  | Dur   | Description
+1 | HOOK        | 6   | 1.60s | [hook] asphalt to sw
+2 | HOOK/BODY   | 49  | 2.03s | cycling street
+3 | PROOF TEASE | 42  | 2.03s | approaching between cars
+4 | ITEM REVEAL | 314 | 3.97s | sofa la zaidia
+5 | PROBLEM     | 45  | 2.05s | almost hit wall
+6 | PROBLEM     | 77  | 1.56s | unbalanced
+7 | PROBLEM     | 79  | 2.05s | between cars red light
+8 | PROBLEM     | 64  | 2.00s | street cycling
+9 | IMPORTANCE  | 66  | 2.03s | street cycling
+10| RE-HOOK     | 58  | 1.81s | dynamic curve lean
+11| SOLUTION    | 84  | 2.26s | turning right
+12| SOLUTION    | 87  | 2.30s | turning left
+13| SOLUTION    | 70  | 2.03s | street cycling
+14| SOLUTION    | 71  | 1.88s | street cycling
+15| SOLUTION    | 56  | 2.03s | bike lane
+16| SOLUTION    | 73  | 1.88s | street cycling
+17| PAYOFF      | 76  | 2.03s | choosing direction
+18| PAYOFF      | 54  | 2.03s | bike lane
+19| PAYOFF      | 67  | 1.96s | street cycling
+20| PAYOFF      | 72  | 1.88s | street cycling
+21| CTA         | 59  | 2.03s | bike lane
+22| CTA         | 101 | 2.03s | turning left
+23| CTA         | 144 | 2.03s | low camera
+24| CTA         | 57  | 1.88s | bike lane park
+25| END         | 3   | 1.45s | [end] sw to tree

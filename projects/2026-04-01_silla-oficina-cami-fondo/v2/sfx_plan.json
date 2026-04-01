@@ -1,0 +1,23 @@
+[
+  {
+    "type": "SWOOSH",
+    "file": "Audio effects/Swoosh - Fast 1.MP3",
+    "timestamp": 3.08,
+    "volume": 0.04,
+    "reason": "Warning-tone transition after contrarian hook into location reveal — matches NO_TOQUEIS_ESO swoosh-for-warnings guideline"
+  },
+  {
+    "type": "DING",
+    "file": "Audio effects/Ding - Single - Bright.MP3",
+    "timestamp": 22.52,
+    "volume": 0.04,
+    "reason": "Pivot moment: 'pasa los filtros' — verdict that the chair is actually good, the format's key DING-for-pivot beat"
+  },
+  {
+    "type": "POP",
+    "file": "Audio effects/Pop 1.MP3",
+    "timestamp": 31.36,
+    "volume": 0.04,
+    "reason": "Punchy accent on 'Dato' — marks the value reveal (70 euros) and transitions into the educational checklist section"
+  }
+]

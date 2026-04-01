@@ -1,0 +1,17 @@
+[SECTION: HOOK]
+Ranking de hallazgos. Tres cosas en una ruta por Valencia. Del peor al mejor. A ver.
+
+[SECTION: ITEM_3]
+Tercer puesto. Ruta de las Cortes. Una planta artificial al lado de unos contenedores. Estado: es de plastico, no se muere. Pero tampoco aporta mucho. Veredicto... tercera posicion merecida.
+
+[SECTION: ITEM_2]
+Segundo puesto. Jaime Roig. Silla de oficina negra. Ruedas bien, respaldo entero. Esto en segunda mano Valencia se mueve en horas.
+
+[SECTION: ITEM_1]
+Y primer puesto. Sant Antoni. Un arcon de madera con hojas de otonio encima. Lo toco y... solido. Sin polilla. Esto ya es categoria muebles vintage. El mejor hallazgo de la ruta, sin discusion.
+
+[SECTION: RECAP]
+Tres objetos. Tres barrios. Ninguno tendria que acabar aqui. Solo faltaba conectar a quien los tiene con quien los quiere.
+
+[SECTION: CTA]
+Lo subo a Givore. Foto, titulo, barrio. Si habeis visto algo asi por vuestra zona, comentarios. Los muebles reciclados desaparecen los primeros.

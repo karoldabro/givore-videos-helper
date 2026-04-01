@@ -1,0 +1,152 @@
+{
+  "variant": "v2",
+  "format": "EL_RANKING_CALLEJERO",
+  "clips": [
+    {
+      "id": 645,
+      "filename": "[hook] (calm) city street lined with trees, parked cars, and a bike - trinitat.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 2.5,
+      "duration": 2.5,
+      "narrative_note": "Trinitat street scene opens the ranking — establishes cycling POV in the neighborhood"
+    },
+    {
+      "id": 860,
+      "filename": "(slow) city street, trees, bike, motorcycle, camera - benimaclet.mp4",
+      "section": "item_5",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Cycling through Benimaclet — approaching the worst-ranked find"
+    },
+    {
+      "id": 786,
+      "filename": "[item] (calm) city street, cars, buildings, sidewalk, una silla, camera movement - poblados-maritimos.mp4",
+      "section": "item_5",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Item #5 (worst): a lone chair on the sidewalk — least impressive find"
+    },
+    {
+      "id": 864,
+      "filename": "(slow) a street scene with buildings, cars, and a bicycle, viewed from a moving bike - benimaclet.mp4",
+      "section": "item_4",
+      "start_trim": 0.0,
+      "end_trim": 3.5,
+      "duration": 3.5,
+      "narrative_note": "Cycling transition through Benimaclet streets before next item"
+    },
+    {
+      "id": 1003,
+      "filename": "[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "section": "item_4",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Item #4: artificial plant by recycling bins — quirky but low value"
+    },
+    {
+      "id": 865,
+      "filename": "(slow) a city street with buildings, cars, and a person on a bike - benimaclet.mp4",
+      "section": "item_3",
+      "start_trim": 0.0,
+      "end_trim": 3.5,
+      "duration": 3.5,
+      "narrative_note": "Benimaclet street cycling — building momentum toward mid-ranking"
+    },
+    {
+      "id": 650,
+      "filename": "[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "section": "item_3",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Item #3: wooden chest on the sidewalk — solid mid-tier find with character"
+    },
+    {
+      "id": 895,
+      "filename": "(dynamic) a city street lined with palm trees, a red dumpster, a parked bicycle, and a pedestrian - trinidad.mp4",
+      "section": "item_2",
+      "start_trim": 0.0,
+      "end_trim": 3.5,
+      "duration": 3.5,
+      "narrative_note": "Dynamic Trinidad street — energy picks up approaching the top finds"
+    },
+    {
+      "id": 653,
+      "filename": "[item] (slow) a person holds a phone, taking a picture of a building, a blue sofa, and a tree - morverde.mp4",
+      "section": "item_2",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Item #2: blue sofa spotted and photographed — strong runner-up find"
+    },
+    {
+      "id": 872,
+      "filename": "(dynamic) city street with parked cars, trees, buildings, and a moving bike - benimaclet.mp4",
+      "section": "item_1",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Dynamic Benimaclet cycling — building to the climactic #1 reveal"
+    },
+    {
+      "id": 261,
+      "filename": "[item] found balck table in a very good shape - exposicion.mp4",
+      "section": "item_1",
+      "start_trim": 0.0,
+      "end_trim": 2.581,
+      "duration": 2.581,
+      "narrative_note": "Item #1 (best): the mesa redonda — table in excellent condition, top find"
+    },
+    {
+      "id": 870,
+      "filename": "(calm) city street, parked cars, building, sidewalk, camera movement - benimaclet (1).mp4",
+      "section": "item_1",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Extended Benimaclet footage — lingering on the best find reveal"
+    },
+    {
+      "id": 896,
+      "filename": "(calm) a city street with a building, graffiti, and pedestrians - trinidad.mp4",
+      "section": "recap",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Trinidad street scene — visual backdrop for ranking recap"
+    },
+    {
+      "id": 256,
+      "filename": "[end] cycling on the street and covering lens with my hand - jaime roig.mp4",
+      "section": "cta",
+      "start_trim": 0.0,
+      "end_trim": 1.344,
+      "duration": 1.344,
+      "narrative_note": "Lens cover gesture — punchy closing after CTA"
+    }
+  ],
+  "total_duration": 59.925,
+  "target_duration": 59,
+  "visual_narrative": "Opens with a calm Trinitat street hook. Each ranked item is preceded by Benimaclet/Trinidad cycling footage that builds energy — from slow establishing shots (#5, #4) through dynamic movement (#2, #1). Items escalate from a lonely chair (#5) through quirky plant (#4), vintage chest (#3), blue sofa (#2) to the winning mesa redonda (#1) with extended footage. Recap over Trinidad graffiti street, closing with a dramatic lens-cover gesture.",
+  "available_scenes": [
+    "trinitat street hook",
+    "benimaclet slow cycling",
+    "chair on sidewalk",
+    "benimaclet street buildings",
+    "artificial plant by bins",
+    "benimaclet cycling POV",
+    "wooden chest autumn leaves",
+    "trinidad palm trees dynamic",
+    "blue sofa phone photo",
+    "benimaclet dynamic cycling",
+    "mesa redonda table reveal",
+    "benimaclet calm street",
+    "trinidad graffiti street",
+    "lens cover end gesture"
+  ],
+  "location_shown": "Benimaclet / Trinidad"
+}

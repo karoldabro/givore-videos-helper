@@ -1,0 +1,26 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v5/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {"section": "HOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, my right nad horizontal no - quatre carreres.mp4", "name": "hook_hand_no", "position": 0.0, "duration": 1.62, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2 - sant francesc.mp4", "name": "sf_lane2", "position": 1.62, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2, colon - sant francesc.mp4", "name": "sf_colon", "position": 3.65, "duration": 2.00, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane estacion nord - sant francesc.mp4", "name": "sf_estacion", "position": 5.65, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, aproaching puerta del mar - la xerea.mp4", "name": "xerea_puerta", "position": 7.68, "duration": 1.88, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist 1 - sant francesc.mp4", "name": "sf_overtaking", "position": 9.56, "duration": 2.18, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, cossing gran via - gran via.mp4", "name": "gv_crossing", "position": 11.74, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros 2 - sant francesc.mp4", "name": "sf_plaza2", "position": 13.77, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros, horse police on the right - sant francesc.mp4", "name": "sf_horse_police", "position": 15.80, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros - sant francesc.mp4", "name": "sf_plaza", "position": 17.83, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros 2, car blocks the passage go around - sant francesc.mp4", "name": "sf_car_blocks", "position": 19.86, "duration": 2.03, "in_point": 0.0},
+    {"section": "END", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4", "name": "end_ayora_sky", "position": 21.89, "duration": 1.96, "in_point": 0.0}
+  ],
+  "sfx": [
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh.MP3", "name": "swoosh", "position": 1.5, "duration": 1.0, "volume": 0.035},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Celebratory Jingle 1.MP3", "name": "jingle", "position": 10.5, "duration": 1.5, "volume": 0.03},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Musical.MP3", "name": "reveal", "position": 15.0, "duration": 1.5, "volume": 0.03}
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v5/reciclaje-reutiliza.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v5/reciclaje-reutiliza.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -1,0 +1,171 @@
+{
+  "variant": "v1",
+  "format": "TRES_COSAS",
+  "clips": [
+    {
+      "id": 999,
+      "filename": "[hook] (sharp) Cyclist stops at a crosswalk as a person crosses, highlighti - ruta-corts.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Sharp stop at crosswalk — immediate attention grab, urban energy, sets cycling-through-city tone"
+    },
+    {
+      "id": 1011,
+      "filename": "(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "section": "fact_1",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Tree-lined street ride — calm, reflective backdrop for 'change is slow' narration"
+    },
+    {
+      "id": 1031,
+      "filename": "(moderate) Riding through a residential area, the golden sunlight illum - ruta-corts.mp4",
+      "section": "fact_1",
+      "start_trim": 0.0,
+      "end_trim": 2.0,
+      "duration": 2.0,
+      "narrative_note": "Golden sunlight residential area — warm, nostalgic feel supporting personal reflection"
+    },
+    {
+      "id": 648,
+      "filename": "(calm) city street with trees, orange trees, sidewalk, bike, camera, people, cars, buildings - marxalenes.mp4",
+      "section": "fact_1",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Orange trees and city life in Marxalenes — neighborhood diversity, daily rhythm"
+    },
+    {
+      "id": 1019,
+      "filename": "(moderate) The cyclist rides past a Mercadona supermarket, a common loc - ruta-corts.mp4",
+      "section": "bridge_1",
+      "start_trim": 0.0,
+      "end_trim": 2.0,
+      "duration": 2.0,
+      "narrative_note": "Mercadona pass-by — recognizable everyday landmark, transitions from reflection to action"
+    },
+    {
+      "id": 891,
+      "filename": "[item] (calm) a city street with parked cars, a blue recycling bin, and a bicycle rider's perspective - san-antonio.mp4",
+      "section": "fact_2",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Blue recycling bin visible from bike — perfect visual for 'recycling is important' fact"
+    },
+    {
+      "id": 1012,
+      "filename": "(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "section": "fact_2",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Street signage and urban scenery — visual variety while recycling narration continues"
+    },
+    {
+      "id": 1035,
+      "filename": "(moderate) The cyclist passes a Burger King, a recognizable food spot, - ruta-corts.mp4",
+      "section": "bridge_2",
+      "start_trim": 0.0,
+      "end_trim": 2.0,
+      "duration": 2.0,
+      "narrative_note": "Fast-food landmark — bridges into the third fact about consumption and waste"
+    },
+    {
+      "id": 1003,
+      "filename": "[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "section": "fact_3",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "THE KEY SHOT: artificial plant discarded next to recycling bins — the mind-blowing third fact visual"
+    },
+    {
+      "id": 1004,
+      "filename": "(calm) The cyclist is stationary on the sidewalk, with a large card - ruta-corts.mp4",
+      "section": "fact_3",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Stationary moment observing the discard — lets the viewer absorb the third fact"
+    },
+    {
+      "id": 1039,
+      "filename": "(moderate) The cyclist rides towards a large, white building with colum - ruta-corts.mp4",
+      "section": "fact_3",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Riding towards grand building — visual escalation, city grandeur while wrapping up third fact"
+    },
+    {
+      "id": 627,
+      "filename": "(calm) a city street lined with buildings, trees, and a park, viewed from a bike's perspective - les-tendetes.mp4",
+      "section": "reflection",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Calm street with trees and park — reflective transition, Les Tendetes neighborhood adds location variety"
+    },
+    {
+      "id": 1047,
+      "filename": "(calm) The cyclist pauses at a large, open plaza, with distant buil - ruta-corts.mp4",
+      "section": "vote_cta",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Open plaza pause — breathing room for vote CTA, invites engagement"
+    },
+    {
+      "id": 1045,
+      "filename": "(calm) The sun sets over the beach, creating a beautiful and serene - ruta-corts.mp4",
+      "section": "vote_cta",
+      "start_trim": 0.0,
+      "end_trim": 3.0,
+      "duration": 3.0,
+      "narrative_note": "Sunset over beach — emotional warmth, perfect backdrop for 'vote 1, 2 or 3'"
+    },
+    {
+      "id": 1048,
+      "filename": "(moderate) Riding on a scenic path lined with tall palm trees, capturin - ruta-corts.mp4",
+      "section": "series_hook",
+      "start_trim": 0.0,
+      "end_trim": 2.0,
+      "duration": 2.0,
+      "narrative_note": "Palm-tree-lined path — beautiful lead-in to series hook teaser"
+    },
+    {
+      "id": 1050,
+      "filename": "[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "section": "series_hook",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Cyclist stops on palm-tree path near beach — peaceful ending, leaves viewer wanting more"
+    }
+  ],
+  "total_duration": 58.0,
+  "target_duration": 50,
+  "visual_narrative": "The video opens with a sharp urban stop (crosswalk encounter) then flows through tree-lined streets and golden-lit residential areas for the first reflective fact about change being slow. After a Mercadona pass-by transition, the second fact shows recycling infrastructure (blue bin visible from the bike) and street signage. A Burger King landmark bridges into the climactic third fact: the artificial plant discarded next to recycling bins — a perfect visual metaphor for waste and second chances. The CTA plays over an open plaza pause and a stunning beach sunset. The series hook rides out on a scenic palm-tree-lined path before stopping peacefully near the beach.",
+  "available_scenes": [
+    "Sharp crosswalk stop (urban energy, attention grab)",
+    "Tree-lined street cycling (calm, reflective)",
+    "Golden sunlight residential area (warm, nostalgic)",
+    "Orange trees and city life in Marxalenes (neighborhood diversity)",
+    "Mercadona supermarket pass-by (everyday landmark)",
+    "Blue recycling bin on city street in San Antonio (recycling visual)",
+    "LIBRE advertisement and street signage (urban texture)",
+    "Burger King landmark (consumption/fast food)",
+    "Artificial plant discarded next to two recycling bins (KEY ITEM)",
+    "Stationary observation of discarded items with cardboard (reflection moment)",
+    "Grand white building with columns (city grandeur)",
+    "Open plaza with distant buildings (breathing room)",
+    "Sunset over beach (emotional warmth)",
+    "Scenic palm-tree-lined path (beauty)",
+    "Cyclist stops on bike path near beach (peaceful ending)"
+  ],
+  "location_shown": "Ruta Corts (primary), Marxalenes, San Antonio — multiple Valencia neighborhoods"
+}

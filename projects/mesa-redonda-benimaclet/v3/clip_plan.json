@@ -1,0 +1,91 @@
+{
+  "variant": "v3",
+  "format": "LO_QUE_NADIE_VE",
+  "clips": [
+    {
+      "id": 863,
+      "filename": "[start] (slow) a city street scene with a large building, street lamp, and pedestrians - benimaclet.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Cold open — slow pan through Benimaclet street with large building and pedestrians. Pure visual, no narration yet."
+    },
+    {
+      "id": 284,
+      "filename": "cycling on the street, turing left - benimaclet.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 2.005,
+      "duration": 2.005,
+      "narrative_note": "Gentle turn into a side street — building anticipation, cycling deeper into the barrio."
+    },
+    {
+      "id": 861,
+      "filename": "(slow) a park with a tree, a building, and a street - benimaclet.mp4",
+      "section": "reveal_1",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "First reveal — park scene with tree and building. Contemplative atmosphere, first words of narration begin here."
+    },
+    {
+      "id": 867,
+      "filename": "(slow) city street, parked cars, trees, sidewalk, bike, moving camera - benimaclet (1).mp4",
+      "section": "reveal_1",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Continuation of Benimaclet atmosphere — trees lining the street, slow camera movement."
+    },
+    {
+      "id": 897,
+      "filename": "(calm) a modern building, a tree, a street, a person with a bike, a camera - trinidad.mp4",
+      "section": "reveal_2",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Second reveal — transition to Trinidad. Modern building with tree, person with bike. Urban discovery moment."
+    },
+    {
+      "id": 287,
+      "filename": "letting people to pass by on the zebra - benimaclet.mp4",
+      "section": "reveal_2",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Brief pause at zebra crossing — respectful, unhurried pace matching the contemplative mood."
+    },
+    {
+      "id": 898,
+      "filename": "(calm) a city street with buildings, trees, and a pedestrian crossing - trinidad.mp4",
+      "section": "reveal_3",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Third reveal — the mesa redonda discovery. Trinidad street with trees and crossing. The found table moment."
+    },
+    {
+      "id": 871,
+      "filename": "(calm) city street, parked cars, buildings, sidewalk, bicycle - benimaclet.mp4",
+      "section": "reveal_3",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Lingering on the scene — the mesa redonda sits on the sidewalk. Slow, observational."
+    },
+    {
+      "id": 873,
+      "filename": "(calm) city street, parked cars, trees, sidewalk, bike rack, camera - benimaclet.mp4",
+      "section": "reflection",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Reflection — cycling away. Final words about what people walk past without seeing. Ambient audio prominent."
+    }
+  ],
+  "total_duration_s": 39.031,
+  "estimated_audio_s": 17.5,
+  "sections_used": ["hook", "reveal_1", "reveal_2", "reveal_3", "reflection"],
+  "notes": "LO_QUE_NADIE_VE contemplative structure — 3 reveals across Benimaclet and Trinidad. All calm/slow mood clips. Ambient audio prominent throughout. Minimal narration with long silences between phrases."
+}

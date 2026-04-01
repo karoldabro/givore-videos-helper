@@ -1,0 +1,210 @@
+{
+  "variant": "v1",
+  "content_format": "EL_RANKING_CALLEJERO",
+  "persona": "REPORTERO",
+  "structure": "COUNTDOWN",
+  "target_duration": 50,
+  "total_duration": 53.21,
+  "visual_narrative": "Energetic cycling POV ranking of 3 street finds from worst to best. Opens with dramatic camera hook, then cycling through Valencia streets (Ruta Corts route). Countdown: 3rd place artificial plant, 2nd place office chair, 1st place wooden chest. Bridges between items use varied cycling clips from different barrios. Recap while cycling, CTA over street scenes, calm ending on bike path with palm trees.",
+  "available_scenes": [
+    "dramatic camera hook (turia park)",
+    "cycling start on bike lane (ruta-corts)",
+    "intersection crossing (ruta-corts)",
+    "sun-drenched bike lane (ruta-corts)",
+    "street scenes with ads (ruta-corts)",
+    "artificial plant by recycling bins (ruta-corts)",
+    "tree-lined street (ruta-corts)",
+    "observing discarded chair (ruta-corts)",
+    "black office chair on sidewalk (jaime-roig)",
+    "bike lane gran via",
+    "overtaking cyclist on colon (sant francesc)",
+    "wooden chest with autumn leaves (sant-antoni)",
+    "busy intersection (ruta-corts)",
+    "cycling past store (ruta-corts)",
+    "turning right (quatre carreres)",
+    "street cycling (benimaclet)",
+    "cycling past advertisement (ruta-corts)",
+    "scooter passing (ruta-corts)",
+    "stopping on bike path with palms (ruta-corts)"
+  ],
+  "location_shown": ["Ruta Corts", "Sant Antoni", "Jaime Roig", "Turia Park", "Gran Via", "Sant Francesc", "Quatre Carreres", "Benimaclet"],
+  "ranking_order": "worst_to_best",
+  "ranking": [
+    {"position": 3, "item": "artificial plant", "location": "Ruta Corts", "clip_id": 1003},
+    {"position": 2, "item": "black office chair", "location": "Jaime Roig", "clip_id": 674},
+    {"position": 1, "item": "wooden chest", "location": "Sant Antoni", "clip_id": 650}
+  ],
+  "clips": [
+    {
+      "id": 106,
+      "filename": "[hook] cycling on the bike lane,sudden camara move down and then up - turia park.mp4",
+      "section": "HOOK",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 1.90,
+      "narrative_note": "Dramatic camera move for ranking intro hook. Text overlay: ranking title."
+    },
+    {
+      "id": 997,
+      "filename": "[start] (moderate) The cyclist starts riding on a bike lane alongside a busy ro - ruta-corts.mp4",
+      "section": "HOOK",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.00,
+      "narrative_note": "Start cycling — sets scene for the route. Narrator introduces today's ranking."
+    },
+    {
+      "id": 1001,
+      "filename": "(moderate) The cyclist crosses an intersection, following another cycli - ruta-corts.mp4",
+      "section": "HOOK",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.00,
+      "narrative_note": "Crossing intersection — continue hook narration, build anticipation for the countdown."
+    },
+    {
+      "id": 1013,
+      "filename": "(moderate) Cycling on a sun-drenched bike lane with cars parked along t - ruta-corts.mp4",
+      "section": "HOOK",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.00,
+      "narrative_note": "Sun-drenched bike lane — visual variety before first item reveal."
+    },
+    {
+      "id": 1012,
+      "filename": "(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "section": "ITEM_3",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 3.00,
+      "narrative_note": "Bridge to 3rd place. Narrator announces: 'En tercer lugar...'"
+    },
+    {
+      "id": 1003,
+      "filename": "[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "section": "ITEM_3",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 4.00,
+      "narrative_note": "3RD PLACE: Artificial plant by recycling bins. Narrator describes and judges the find."
+    },
+    {
+      "id": 1011,
+      "filename": "(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "section": "ITEM_2",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 3.00,
+      "narrative_note": "Bridge to 2nd place. Tree-lined street transition. Narrator builds anticipation."
+    },
+    {
+      "id": 1021,
+      "filename": "(calm) The cyclist is stationary, observing a discarded office chai - ruta-corts.mp4",
+      "section": "ITEM_2",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.00,
+      "narrative_note": "Approaching the chair — cyclist spots it. 'En segundo lugar...'"
+    },
+    {
+      "id": 674,
+      "filename": "[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "section": "ITEM_2",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 5.00,
+      "narrative_note": "2ND PLACE: Black office chair on the sidewalk. Narrator evaluates condition and usefulness."
+    },
+    {
+      "id": 168,
+      "filename": "av del reino valencia, bike lane - gran via.mp4",
+      "section": "ITEM_1",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.03,
+      "narrative_note": "Bridge to 1st place. Gran Via bike lane — narrator builds suspense for the winner."
+    },
+    {
+      "id": 185,
+      "filename": "bike lane, colon, overtaking other cyclist - sant francesc.mp4",
+      "section": "ITEM_1",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.03,
+      "narrative_note": "Overtaking cyclist — energetic transition. 'Y el numero uno de hoy...'"
+    },
+    {
+      "id": 650,
+      "filename": "[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "section": "ITEM_1",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 5.00,
+      "narrative_note": "1ST PLACE: Wooden chest with autumn leaves and sunlight. Best find — narrator explains why it wins."
+    },
+    {
+      "id": 1017,
+      "filename": "(slow) The cyclist stops at a busy intersection with pedestrians cr - ruta-corts.mp4",
+      "section": "RECAP",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 3.00,
+      "narrative_note": "Transition to recap. Busy intersection — narrator summarizes the 3 finds."
+    },
+    {
+      "id": 1002,
+      "filename": "(moderate) The cyclist rides past a 'FACTORY Colchon' store with colorf - ruta-corts.mp4",
+      "section": "RECAP",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 3.00,
+      "narrative_note": "Recap continues — cycling past storefronts. Quick summary of rankings."
+    },
+    {
+      "id": 204,
+      "filename": "cycling on the street, turining right - quatre carreres.mp4",
+      "section": "RECAP",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.22,
+      "narrative_note": "Turning right — visual transition from recap to CTA."
+    },
+    {
+      "id": 222,
+      "filename": "street 1 - benimaclet.mp4",
+      "section": "CTA",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.03,
+      "narrative_note": "CTA opening — narrator asks audience to comment with their ranking."
+    },
+    {
+      "id": 1018,
+      "filename": "(moderate) The cyclist rides past a 'VALOR' advertisement and a yellow - ruta-corts.mp4",
+      "section": "CTA",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 3.00,
+      "narrative_note": "CTA continues — engagement prompt, follow for more rankings."
+    },
+    {
+      "id": 1014,
+      "filename": "(moderate) A man on an electric scooter passes as the sun casts long sh - ruta-corts.mp4",
+      "section": "CTA",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 2.00,
+      "narrative_note": "CTA closing visual — scooter passing, golden hour feel."
+    },
+    {
+      "id": 1050,
+      "filename": "[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "section": "END",
+      "start_trim": 0,
+      "end_trim": 0,
+      "duration": 4.00,
+      "narrative_note": "End clip — cyclist stops on palm-lined bike path. Final frame, follow/like overlay."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "variant": "v1",
+  "format": "60_SEGUNDOS_EN",
+  "audio_duration": 66.9,
+  "sfx_count": 4,
+  "sfx": [
+    {
+      "type": "WHOOSH",
+      "file": "Audio effects/Whoosh - Fast Short.MP3",
+      "timestamp": 14.640,
+      "volume": 0.04,
+      "reason": "Transition into Jardin Real section — 'Y entonces llegas al Jardín Real' marks a new location reveal"
+    },
+    {
+      "type": "SWOOSH",
+      "file": "Audio effects/Swoosh - Fast 1.MP3",
+      "timestamp": 27.600,
+      "volume": 0.04,
+      "reason": "Section shift at 'De parque en parque en bici' — smooth transition from Palau de la Musica into the reflection segment"
+    },
+    {
+      "type": "DING",
+      "file": "Audio effects/Ding - Single - Bright.MP3",
+      "timestamp": 43.000,
+      "volume": 0.05,
+      "reason": "Street find reveal — 'una silla de oficina' is the discovery moment, the narrative payoff"
+    },
+    {
+      "type": "POP",
+      "file": "Audio effects/Pop 1.MP3",
+      "timestamp": 58.360,
+      "volume": 0.04,
+      "reason": "App mention CTA — 'subirla a Givore' is the Givore action moment"
+    }
+  ]
+}

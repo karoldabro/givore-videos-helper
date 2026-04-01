@@ -1,0 +1,27 @@
+CLIP MAP — v1 reciclaje-fallas
+================================
+ #  | Time    | ID  | Description
+----|---------|-----|------------------------------------------
+ 1  | 0:00    | 163 | [hook] firecracker on the street
+ 2  | 0:02    |  41 | approaching falla, mother+child firecrackers
+ 3  | 0:04    |  60 | cycling on closed street (fallas)
+ 4  | 0:06    |  94 | showing ninot while cycling (small)
+ 5  | 0:08    |  96 | people working on small ninot
+ 6  | 0:10    | 169 | bike lane, ninot of clown
+ 7  | 0:12    | 220 | showing ninos of a chef
+ 8  | 0:14    | 239 | falla of the female warrior
+ 9  | 0:17    | 252 | falla of big clown
+10  | 0:19    | 253 | wizard ninot (falla)
+11  | 0:21    | 281 | cycling showing falla micer mascó
+12  | 0:23    |  74 | cycling on the street - Exposición
+13  | 0:25    |  51 | cycling on the bike lane - ayora
+14  | 0:27    |  55 | cycling on the bike lane 3 - ayora
+15  | 0:29    | 264 | cycling on bike lane 1 - benimaclet
+16  | 0:31    | 267 | cycling on bike lane 2 - benimaclet
+17  | 0:33    | 272 | cycling on the street - benimaclet
+18  | 0:35    | 103 | [end] camera from sw to the sky
+
+SFX:
+  Whoosh Fast Short @ 1.9s (vol 0.035)
+  Reveal Musical @ 8.0s (vol 0.03)
+  Celebratory Jingle 1 @ 22.0s (vol 0.03)

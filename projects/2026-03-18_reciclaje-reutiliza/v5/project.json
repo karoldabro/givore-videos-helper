@@ -1,0 +1,441 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_hand_no",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, my right nad horizontal no - quatre carreres.mp4",
+      "duration": 1.621,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "sf_lane2",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2 - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "sf_colon",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2, colon - sant francesc.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "sf_estacion",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane estacion nord - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "xerea_puerta",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, aproaching puerta del mar - la xerea.mp4",
+      "duration": 1.877,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "sf_overtaking",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist 1 - sant francesc.mp4",
+      "duration": 2.176,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "gv_crossing",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, cossing gran via - gran via.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "sf_plaza2",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros 2 - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "sf_horse_police",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros, horse police on the right - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "sf_plaza",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "sf_car_blocks",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/bike lane, plaza de torros 2, car blocks the passage go around - sant francesc.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "end_ayora_sky",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4",
+      "duration": 1.962,
+      "type": "video"
+    },
+    {
+      "id": "clip12",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v5/reciclaje-reutiliza.mp3",
+      "duration": 22.804898,
+      "type": "audio"
+    },
+    {
+      "id": "clip13",
+      "name": "swoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Swoosh.MP3",
+      "duration": 1.332188,
+      "type": "audio"
+    },
+    {
+      "id": "clip14",
+      "name": "jingle",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Celebratory Jingle 1.MP3",
+      "duration": 2.638313,
+      "type": "audio"
+    },
+    {
+      "id": "clip15",
+      "name": "reveal",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Musical.MP3",
+      "duration": 2.586063,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.62,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 1.62,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.0,
+          "position": 3.65,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 5.65,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 1.88,
+          "position": 7.68,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.18,
+          "position": 9.56,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 11.74,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 13.77,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 15.8,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 17.83,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 19.86,
+          "filters": []
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 1.96,
+          "position": 21.89,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 22.804898,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 1.0,
+          "position": 1.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 10.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip15",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 15.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Esto es para todos\nlos que odiais",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.64,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "el desperdicio.\nQuedaos.",
+          "position": 1.64,
+          "in": 0.0,
+          "out": 1.76,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Esto no va\na durar aqui.",
+          "position": 3.4,
+          "in": 0.0,
+          "out": 1.4,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Ma\u00f1ana puede\nque ya no este.",
+          "position": 4.8,
+          "in": 0.0,
+          "out": 1.3600000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "Cosas que funcionan,\ncon fecha",
+          "position": 6.16,
+          "in": 0.0,
+          "out": 1.4799999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "de caducidad\nen la acera.",
+          "position": 7.64,
+          "in": 0.0,
+          "out": 1.4799999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "Pero hay una forma\nde arreglarlo.",
+          "position": 9.12,
+          "in": 0.0,
+          "out": 2.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Y es mas simple\nde lo que pensais.",
+          "position": 11.24,
+          "in": 0.0,
+          "out": 1.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Compartir\nantes de tirar.",
+          "position": 13.12,
+          "in": 0.0,
+          "out": 1.8800000000000008,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Renovar antes\nde desechar.",
+          "position": 15.0,
+          "in": 0.0,
+          "out": 1.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "Reutilizar lo que\ntodavia vale.",
+          "position": 16.64,
+          "in": 0.0,
+          "out": 1.879999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Solo falta\nque lo hagamos.",
+          "position": 18.52,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Seguidme si os gusta\ndar segunda vida",
+          "position": 19.84,
+          "in": 0.0,
+          "out": 2.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "a las cosas.",
+          "position": 21.84,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-18T21:43:37.377831",
+    "software": "kdenlive-cli 1.0"
+  }
+}

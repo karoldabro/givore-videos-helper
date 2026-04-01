@@ -1,0 +1,35 @@
+{
+  "variant": "v1",
+  "format": "CUANTO_CUESTA",
+  "audio_duration": 23.48,
+  "sfx": [
+    {
+      "type": "WHOOSH",
+      "file": "Audio effects/Whoosh - Fast Short.MP3",
+      "timestamp": 3.60,
+      "volume": 0.04,
+      "reason": "Section transition from HOOK to ITEM_REVEAL — mesa redonda first appears"
+    },
+    {
+      "type": "DING",
+      "file": "Audio effects/Ding - Single - Bright.MP3",
+      "timestamp": 11.12,
+      "volume": 0.04,
+      "reason": "Price reveal moment — 'Ciento veinte euros' drops"
+    },
+    {
+      "type": "POP",
+      "file": "Audio effects/Pop 1.MP3",
+      "timestamp": 13.80,
+      "volume": 0.05,
+      "reason": "Contrast punch on 'Gratis' — the free vs 120 euro payoff"
+    },
+    {
+      "type": "SWOOSH",
+      "file": "Audio effects/Swoosh - Fast 1.MP3",
+      "timestamp": 20.92,
+      "volume": 0.04,
+      "reason": "Transition into CLOSE section — energy shift to CTA"
+    }
+  ]
+}

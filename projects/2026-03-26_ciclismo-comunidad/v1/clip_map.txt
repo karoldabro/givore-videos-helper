@@ -1,0 +1,20 @@
+CLIP MAP - v1 ciclismo-comunidad
+=================================
+ #  | ID  | Time    | Duration | Description
+ 1  | 105 | 0.00s   | 2.62s    | [hook] gesture near cayc - turia park
+ 2  | 206 | 2.62s   | 2.60s    | entering bike lane - puerta del mar
+ 3  | 130 | 5.23s   | 2.03s    | bike lane cayc horizon - penya roja
+ 4  | 114 | 7.25s   | 2.20s    | caixa forum - turia park
+ 5  | 276 | 9.45s   | 2.03s    | street - benimaclet
+ 6  | 147 | 11.48s  | 2.03s    | small park - camins al grau
+ 7  | 174 | 13.50s  | 2.00s    | bike lane - sant francesc
+ 8  | 275 | 15.53s  | 2.15s    | street - jaume roig
+ 9  | 116 | 17.68s  | 2.03s    | near cayc - turia park
+10  | 150 | 19.71s  | 2.03s    | entering turia park - penya roja
+11  | 288 | 21.73s  | 2.88s    | letting car pass - benimaclet
+12  |   4 | 24.61s  | 2.03s    | [end] camera to sky - mestalla
+
+SFX:
+ WHOOSH  @ 6.04s  (vol 0.03)
+ SWOOSH  @ 13.64s (vol 0.03)
+ POP     @ 23.56s (vol 0.03)

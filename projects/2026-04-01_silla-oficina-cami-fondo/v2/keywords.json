@@ -1,0 +1,150 @@
+{
+  "topic": "silla de oficina en Camí Fondo",
+  "location": "Camí Fondo",
+  "content_format": "NO_TOQUEIS_ESO",
+  "content_pillar": ["MINIMALISM", "STREET_FINDS"],
+  "variant": "v2",
+  "angle": "contrarian — should you take street furniture?",
+  "items": ["silla de oficina en muy buen estado"],
+
+  "primary_keywords": [
+    {
+      "keyword": "muebles segunda mano",
+      "monthly_volume": 65000,
+      "use_for": ["description", "metadata"]
+    },
+    {
+      "keyword": "segunda mano Valencia",
+      "monthly_volume": 140000,
+      "use_for": ["description", "web"]
+    },
+    {
+      "keyword": "muebles reciclados",
+      "monthly_volume": 86000,
+      "use_for": ["hook", "description"]
+    },
+    {
+      "keyword": "reciclar muebles",
+      "monthly_volume": 15000,
+      "use_for": ["hook", "description"]
+    }
+  ],
+
+  "secondary_keywords": [
+    {
+      "keyword": "muebles baratos",
+      "monthly_volume": 230000,
+      "use_for": ["thumbnail", "hook"]
+    },
+    {
+      "keyword": "consumo responsable",
+      "monthly_volume": 57000,
+      "use_for": ["description", "broad content"]
+    },
+    {
+      "keyword": "muebles vintage",
+      "monthly_volume": 150000,
+      "use_for": ["description"]
+    }
+  ],
+
+  "long_tail_keywords": [
+    "silla de oficina gratis",
+    "muebles en la calle Valencia",
+    "recoger muebles de la calle",
+    "silla oficina segunda mano Valencia",
+    "muebles abandonados Valencia"
+  ],
+
+  "hashtags": {
+    "primary": [
+      "#segundamano",
+      "#mueblesreciclados",
+      "#reciclajemuebles",
+      "#Valencia",
+      "#consumoresponsable"
+    ],
+    "secondary": [
+      "#minimalismo",
+      "#caminofondo",
+      "#streetfinds",
+      "#sillaoficina",
+      "#notoqueis"
+    ],
+    "trending": [
+      "#declutter",
+      "#menosmás",
+      "#reciclaje",
+      "#hallazgoscallejeros",
+      "#vidaenbici"
+    ]
+  },
+
+  "hook_keywords": {
+    "contrarian_trigger": ["no lo cojáis", "no toquéis", "cuidado", "aviso"],
+    "curiosity_gap": ["os explico", "por qué", "la verdad"],
+    "item_specific": ["silla de oficina", "mueble en la calle", "encontré esto"]
+  },
+
+  "script_keywords": {
+    "warning_section": ["humedad", "estructura", "estado", "daño", "cuidado"],
+    "pivot_section": ["pero espera", "sin embargo", "fijaos en esto", "esta sí"],
+    "criteria_section": ["inspeccionar", "comprobar", "criterio", "buen estado", "merece la pena"],
+    "close_section": ["dar segunda vida", "no tirar", "regalar", "Givore"]
+  },
+
+  "metadata_suggestions": {
+    "title_keywords": ["silla oficina", "Camí Fondo", "no toquéis", "Valencia"],
+    "description_opening": "Veis esa silla de oficina en Camí Fondo? No todo lo que brilla en la calle merece ir a tu casa.",
+    "seo_cluster": "second-hand-by-city"
+  },
+
+  "clip_keyword_mapping": [
+    {
+      "clip_id": 160,
+      "role": "hook",
+      "keywords": ["no toquéis", "aviso", "cuidado"]
+    },
+    {
+      "clip_id": 679,
+      "role": "warning_evidence",
+      "keywords": ["examinar", "basura", "contenedor"],
+      "description": "person photographing near trash area"
+    },
+    {
+      "clip_id": 681,
+      "role": "investigation",
+      "keywords": ["inspeccionar", "calle", "gesto"],
+      "description": "hand gesture near construction/street items"
+    },
+    {
+      "clip_id": 640,
+      "role": "pivot_good_find",
+      "keywords": ["hallazgo", "documentar", "buen estado"],
+      "description": "person documenting a good find with phone"
+    },
+    {
+      "clip_id": 650,
+      "role": "criteria_example",
+      "keywords": ["mueble", "madera", "estado", "sol"],
+      "description": "wooden chest in sunlight — good condition example"
+    },
+    {
+      "clip_id": 764,
+      "role": "close",
+      "keywords": ["calma", "ciudad", "cierre"],
+      "description": "palm trees, calm city ending"
+    }
+  ],
+
+  "content_pillar_alignment": {
+    "MINIMALISM": {
+      "connection": "DIRECT — contrarian angle teaches when NOT to take, reinforcing intentional consumption",
+      "target_keywords": ["consumo responsable", "minimalismo", "declutter"]
+    },
+    "STREET_FINDS": {
+      "connection": "CORE — street furniture evaluation is the format's foundation",
+      "target_keywords": ["muebles segunda mano", "reciclar muebles", "hallazgos callejeros"]
+    }
+  }
+}

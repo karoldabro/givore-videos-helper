@@ -1,0 +1,21 @@
+{
+  "variant": "v3",
+  "audio_duration_s": 15.05,
+  "sfx": [
+    {
+      "name": "WHOOSH",
+      "file": "Audio effects/Whoosh - Fast Short.MP3",
+      "time": 5.60,
+      "volume": 0.04,
+      "reason": "Transition whoosh right before the mesa redonda reveal — marks the shift from atmosphere to discovery."
+    },
+    {
+      "name": "CHIME",
+      "file": "Audio effects/Correct - Synthetic Chime.MP3",
+      "time": 12.00,
+      "volume": 0.03,
+      "reason": "Soft chime at the reflective turn — 'A veces lo mejor está donde menos lo esperas.' Positive resolution."
+    }
+  ],
+  "notes": "2 SFX for minimal narration. Light touch — WHOOSH for the reveal transition, CHIME for the reflective close. 6.4s spacing between effects."
+}

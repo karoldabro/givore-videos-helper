@@ -1,0 +1,161 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/cambio-lento-reciclar/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "hook",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] (sharp) Cyclist stops at a crosswalk as a person crosses, highlighti - ruta-corts.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_1",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides along a tree-lined street with parked cars - ruta-corts.mp4",
+      "name": "clip_01",
+      "position": 3.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_1",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Riding through a residential area, the golden sunlight illum - ruta-corts.mp4",
+      "name": "clip_02",
+      "position": 6.0,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_1",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street with trees, orange trees, sidewalk, bike, camera, people, cars, buildings - marxalenes.mp4",
+      "name": "clip_03",
+      "position": 8.0,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "bridge_1",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides past a Mercadona supermarket, a common loc - ruta-corts.mp4",
+      "name": "clip_04",
+      "position": 12.0,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_2",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a city street with parked cars, a blue recycling bin, and a bicycle rider's perspective - san-antonio.mp4",
+      "name": "clip_05",
+      "position": 14.0,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_2",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a 'LIBRE' advertisement and other street - ruta-corts.mp4",
+      "name": "clip_06",
+      "position": 19.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "bridge_2",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist passes a Burger King, a recognizable food spot, - ruta-corts.mp4",
+      "name": "clip_07",
+      "position": 22.0,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_3",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "name": "clip_08",
+      "position": 24.0,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_3",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist is stationary on the sidewalk, with a large card - ruta-corts.mp4",
+      "name": "clip_09",
+      "position": 28.0,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "fact_3",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) The cyclist rides towards a large, white building with colum - ruta-corts.mp4",
+      "name": "clip_10",
+      "position": 32.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "reflection",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with buildings, trees, and a park, viewed from a bike's perspective - les-tendetes.mp4",
+      "name": "clip_11",
+      "position": 35.0,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "vote_cta",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) The cyclist pauses at a large, open plaza, with distant buil - ruta-corts.mp4",
+      "name": "clip_12",
+      "position": 40.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "vote_cta",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) The sun sets over the beach, creating a beautiful and serene - ruta-corts.mp4",
+      "name": "clip_13",
+      "position": 43.0,
+      "duration": 3.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "series_hook",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(moderate) Riding on a scenic path lined with tall palm trees, capturin - ruta-corts.mp4",
+      "name": "clip_14",
+      "position": 46.0,
+      "duration": 2.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "series_hook",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) Cyclist stops on a bike path, with palm trees lining the roa - ruta-corts.mp4",
+      "name": "clip_15",
+      "position": 48.0,
+      "duration": 7.214,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 8.2,
+      "duration": 0.679,
+      "volume": 0.04
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 18.6,
+      "duration": 0.287,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 30.9,
+      "duration": 2.142,
+      "volume": 0.04
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/cambio-lento-reciclar/v1/cambio-lento-reciclar.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/cambio-lento-reciclar/v1/cambio-lento-reciclar.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

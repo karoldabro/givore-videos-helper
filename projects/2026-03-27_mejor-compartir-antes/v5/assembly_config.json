@@ -1,0 +1,239 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-27_mejor-compartir-antes/v5/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] while cycling but doing gesture with my body like diving in then out of water - mestalla.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.578,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turnig right to enter the street - albors.mp4",
+      "name": "clip_01",
+      "position": 1.578,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane estacion nord - sant francesc.mp4",
+      "name": "clip_02",
+      "position": 3.732,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/aproaching the green light passing beteen a car and a sidewalk - mestalla  aragon.mp4",
+      "name": "clip_03",
+      "position": 5.758,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] aproaching the parts of the somier on the street - albors.mp4",
+      "name": "clip_04",
+      "position": 7.784,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] bicycle and the phone visible, taking photo of the parts of somiere found on the street - albors.mp4",
+      "name": "clip_05",
+      "position": 9.81,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] turning left and aproaching an item on the street - albors.mp4",
+      "name": "clip_06",
+      "position": 11.836,
+      "duration": 1.813,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] focus on the item, toys - albors.mp4",
+      "name": "clip_07",
+      "position": 13.649,
+      "duration": 1.813,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground - trinitat.mp4",
+      "name": "clip_08",
+      "position": 15.462,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane, going off to vaid colision with pedertrians - turia park.mp4",
+      "name": "clip_09",
+      "position": 17.488,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling the street - mestalla  aragon.mp4",
+      "name": "clip_10",
+      "position": 19.514,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling passing between cars waiting on the red light 2 - ayora.mp4",
+      "name": "clip_11",
+      "position": 21.54,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the cycle lane people are crossing before me- mestalla.mp4",
+      "name": "clip_12",
+      "position": 23.588,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, colon, overtaking other cyclist 1 - sant francesc.mp4",
+      "name": "clip_13",
+      "position": 25.614,
+      "duration": 2.176,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] showing the sucessful submit of the idem in the app the item in the second plan, toys - albors.mp4",
+      "name": "clip_14",
+      "position": 27.79,
+      "duration": 2.496,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] using the phone to submit the found item, toys - albors.mp4",
+      "name": "clip_15",
+      "position": 30.286,
+      "duration": 2.496,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/enterning the main road leting pass the car next to me on the right.mp4",
+      "name": "clip_16",
+      "position": 32.782,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street churreria in fornt of me low camara- camins al grau.mp4",
+      "name": "clip_17",
+      "position": 34.808,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 6 - trinitat.mp4",
+      "name": "clip_18",
+      "position": 36.834,
+      "duration": 2.602,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 7 - trinitat.mp4",
+      "name": "clip_19",
+      "position": 39.436,
+      "duration": 2.602,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane, aproaching puerta del mar - la xerea.mp4",
+      "name": "clip_20",
+      "position": 42.038,
+      "duration": 1.877,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, entering bike lane - gran via.mp4",
+      "name": "clip_21",
+      "position": 43.915,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - gran via.mp4",
+      "name": "clip_22",
+      "position": 45.941,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the stree 2 - quatre carreres.mp4",
+      "name": "clip_23",
+      "position": 47.967,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook | end] lifting the camara view from the street to the sky - ayora.mp4",
+      "name": "clip_24",
+      "position": 49.993,
+      "duration": 1.962,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "transition_whoosh",
+      "position": 2.5,
+      "duration": 0.3,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "reveal_ding",
+      "position": 12.3,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "app_pop",
+      "position": 34.3,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "payoff_chime",
+      "position": 44.5,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-27_mejor-compartir-antes/v5/mejor-compartir-antes.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-27_mejor-compartir-antes/v5/mejor-compartir-antes.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -1,0 +1,27 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v4/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {"section": "HOOK", "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, claping with my both hands - quatre carreres.mp4", "name": "hook_clapping", "position": 0.0, "duration": 1.60, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - gran via.mp4", "name": "gv_street1", "position": 1.60, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - gran via.mp4", "name": "gv_street2", "position": 3.63, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - gran via.mp4", "name": "gv_street3", "position": 5.66, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/from the street to the bike lane 2 - gran via.mp4", "name": "gv_to_lane2", "position": 7.69, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/overtake a police car which turns right I go strait - gran via.mp4", "name": "gv_overtake_police", "position": 9.72, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/quish beteen cars which wait on red - gran via.mp4", "name": "gv_squish1", "position": 11.75, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/quish beteen cars which wait on red 1 - gran via.mp4", "name": "gv_squish2", "position": 13.78, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, entering bike lane - gran via.mp4", "name": "gv_entering_lane", "position": 15.81, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/stoping on red, a taxi on the street in fornt of me - gran via.mp4", "name": "gv_taxi_red", "position": 17.84, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane, showing ninot of clown - gran via.mp4", "name": "gv_ninot_clown", "position": 19.87, "duration": 2.03, "in_point": 0.0},
+    {"section": "BODY", "file": "/media/kdabrow/Programy/givore/videos/clips/from the street to the bike lane - gran via.mp4", "name": "gv_to_lane", "position": 21.90, "duration": 2.03, "in_point": 0.0},
+    {"section": "END", "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling near to statuim mestalla camara goes up from the sw to show the top of the stadium.mp4", "name": "end_mestalla", "position": 23.93, "duration": 2.03, "in_point": 0.0}
+  ],
+  "sfx": [
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Short - Fast.MP3", "name": "whoosh", "position": 1.5, "duration": 0.2, "volume": 0.035},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Jingle - Upbeat.MP3", "name": "jingle", "position": 11.0, "duration": 1.5, "volume": 0.03},
+    {"file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3", "name": "ding", "position": 15.5, "duration": 1.5, "volume": 0.03}
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v4/reciclaje-reutiliza.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v4/reciclaje-reutiliza.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

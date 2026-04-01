@@ -1,0 +1,162 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-21_reciclaje-fallas/v3/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, claping with my both hands - quatre carreres.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.6,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/showing a ninot on the street while cycling aldin like small - albors.mp4",
+      "name": "clip_01",
+      "position": 1.6,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/aproaching closed street for the falla, mother and child watch small firecrackers - albors.mp4",
+      "name": "clip_02",
+      "position": 3.626,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/showing people who work on a small ninot - mestalla   aragon.mp4",
+      "name": "clip_03",
+      "position": 5.78,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/showing ninos of a chef - quatre carreres.mp4",
+      "name": "clip_04",
+      "position": 7.806,
+      "duration": 2.133,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the closed street because of fallas- ayora.mp4",
+      "name": "clip_05",
+      "position": 9.939,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/street, showing wizzard nonot  (falla)- benimalcet.mp4",
+      "name": "clip_06",
+      "position": 11.965,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, falla of the female warior - benimalcet.mp4",
+      "name": "clip_07",
+      "position": 13.991,
+      "duration": 2.666,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, bike lane, showing ninot of clown - gran via.mp4",
+      "name": "clip_08",
+      "position": 16.657,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street showing falla micer masco - exposicion.mp4",
+      "name": "clip_09",
+      "position": 18.683,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/street, falla of the big clown - benimalcet.mp4",
+      "name": "clip_10",
+      "position": 21.264,
+      "duration": 1.92,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street Exposicion.mp4",
+      "name": "clip_11",
+      "position": 23.184,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the steet 3 - exposicion.mp4",
+      "name": "clip_12",
+      "position": 25.21,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 3 - ayora.mp4",
+      "name": "clip_13",
+      "position": 27.791,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane  - ayora.mp4",
+      "name": "clip_14",
+      "position": 29.839,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - benimaclet.mp4",
+      "name": "clip_15",
+      "position": 31.887,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 2 - benimaclet.mp4",
+      "name": "clip_16",
+      "position": 33.913,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street - benimaclet.mp4",
+      "name": "clip_17",
+      "position": 35.939,
+      "duration": 2.005,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] camara from sw to the sky - camins al grau.mp4",
+      "name": "clip_18",
+      "position": 37.944,
+      "duration": 1.429,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-21_reciclaje-fallas/v3/reciclaje-fallas.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-21_reciclaje-fallas/v3/reciclaje-fallas.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -1,0 +1,51 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v4/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] with my right hand showing ok sign - ayora.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 0.981,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a street scene with discarded furniture, graffiti, and a lamppost - en-corts.mp4",
+      "name": "clip_01",
+      "position": 0.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "name": "clip_02",
+      "position": 5.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "name": "clip_03",
+      "position": 10.981,
+      "duration": 5.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 3.0,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v4/muebles-en-corts.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v4/muebles-en-corts.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

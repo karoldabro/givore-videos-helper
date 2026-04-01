@@ -1,0 +1,162 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-25_sofa-la-zaidia/v4/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] showing is someone there sign with my right hand - mestalla.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.28,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on a street - ayora.mp4",
+      "name": "clip_01",
+      "position": 1.28,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] - sofa in a good shape found on the street - la zaidia.mp4",
+      "name": "clip_02",
+      "position": 3.306,
+      "duration": 3.968,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in a direction of the wall almost hit it.mp4",
+      "name": "clip_03",
+      "position": 7.274,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, going a bit unbalanced, almost hit a parked car.mp4",
+      "name": "clip_04",
+      "position": 9.322,
+      "duration": 1.557,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - ayora.mp4",
+      "name": "clip_05",
+      "position": 10.879,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane, leaning to the right on the curve - dynamic clip - ayora.mp4",
+      "name": "clip_06",
+      "position": 12.905,
+      "duration": 1.813,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling turning right on the bike lane- ayora.mp4",
+      "name": "clip_07",
+      "position": 14.718,
+      "duration": 2.261,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling while turing left to the bike lane- ayora.mp4",
+      "name": "clip_08",
+      "position": 16.979,
+      "duration": 2.304,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 6 - ayora.mp4",
+      "name": "clip_09",
+      "position": 19.283,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 4 - ayora.mp4",
+      "name": "clip_10",
+      "position": 21.309,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 9 - ayora.mp4",
+      "name": "clip_11",
+      "position": 23.335,
+      "duration": 1.877,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, choosing a direction - mestalla aragon.mp4",
+      "name": "clip_12",
+      "position": 25.212,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 2 - ayora.mp4",
+      "name": "clip_13",
+      "position": 27.238,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/turning left on the street while grabing a sw with my right hand - ayora.mp4",
+      "name": "clip_14",
+      "position": 29.264,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, low camara - ayora.mp4",
+      "name": "clip_15",
+      "position": 31.29,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - ayora.mp4",
+      "name": "clip_16",
+      "position": 33.316,
+      "duration": 1.962,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 8 - ayora.mp4",
+      "name": "clip_17",
+      "position": 35.278,
+      "duration": 1.877,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] camera moves from the sw to the tree branches above - ayora.mp4",
+      "name": "clip_18",
+      "position": 37.155,
+      "duration": 1.45,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-25_sofa-la-zaidia/v4/sofa-la-zaidia.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-25_sofa-la-zaidia/v4/sofa-la-zaidia.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -104,6 +104,22 @@ TRASH_ENCOURAGEMENT = [
     "pillalo",
 ]
 
+# Check: Item condition exaggeration (street finds are never perfect)
+PERFECTION_PHRASES = [
+    "perfecta",
+    "perfecto",
+    "perfectamente",
+    "como nueva",
+    "como nuevo",
+    "impecable",
+    "inmaculado",
+    "inmaculada",
+    "está nueva",
+    "está nuevo",
+    "esta nueva",
+    "esta nuevo",
+]
+
 # Check 8: Treasure-hunting language
 TREASURE_HUNTING = [
     "tesoro",
@@ -652,6 +668,31 @@ def check_giveaway_framing(script: str) -> Tuple[str, str, List[str]]:
     return "PASS", f"{giveaway_count} giveaway phrase{'s' if giveaway_count != 1 else ''} found", []
 
 
+def check_item_condition(script: str) -> Tuple[str, str, List[str]]:
+    """Check 10: Street finds are never perfect — flag exaggerated condition claims."""
+    text_lower = normalize_text(script)
+    text_no_accents = strip_accents(text_lower)
+
+    found = []
+    for phrase in PERFECTION_PHRASES:
+        phrase_lower = phrase.lower()
+        phrase_no_accents = strip_accents(phrase_lower)
+        if phrase_lower in text_lower or phrase_no_accents in text_no_accents:
+            found.append(phrase)
+
+    action_items = []
+    if not found:
+        return "PASS", "no perfection claims", action_items
+    else:
+        detail = f"{len(found)} exaggeration{'s' if len(found) != 1 else ''}: " + ", ".join(f'"{f}"' for f in found)
+        for f in found:
+            action_items.append(
+                f'Replace "{f}" — street finds are never perfect. '
+                'Use: "en buen estado", "bastante bien", "se ve bien", "tiene potencial"'
+            )
+        return "FAIL", detail, action_items
+
+
 # ---------------------------------------------------------------------------
 # Report
 # ---------------------------------------------------------------------------
@@ -757,7 +798,7 @@ def check_format_length(script_text: str, format_id: str, format_details: dict) 
         return "SKIP", f"Can't parse length: {length_str}"
 
     min_sec, max_sec = int(match.group(1)), int(match.group(2))
-    target_words = ((min_sec + max_sec) / 2) * (200 / 60)  # 200 WPM for Spanish
+    target_words = ((min_sec + max_sec) / 2) * (175 / 60)  # 175 WPM for Spanish TTS (ElevenLabs Pablo)
     word_count = len(script_text.split())
 
     tolerance = 0.25  # 25% tolerance
@@ -1091,6 +1132,11 @@ def run_quality_check(
     # 9. Fabricated Facts
     status, detail, items = check_fabricated_facts(script)
     results.append(("Fabricated Facts", status, detail))
+    all_action_items.extend(items)
+
+    # 10. Item Condition Exaggeration
+    status, detail, items = check_item_condition(script)
+    results.append(("Item Condition", status, detail))
     all_action_items.extend(items)
 
     # Print report

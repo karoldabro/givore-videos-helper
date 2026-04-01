@@ -1,0 +1,400 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[start] (slow) a city street scene with a large building, street lamp, and pedestrians - benimaclet.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turing left - benimaclet.mp4",
+      "duration": 2.005,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(slow) a park with a tree, a building, and a street - benimaclet.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(slow) city street, parked cars, trees, sidewalk, bike, moving camera - benimaclet (1).mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "clip_04",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a modern building, a tree, a street, a person with a bike, a camera - trinidad.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "clip_05",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/letting people to pass by on the zebra - benimaclet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "clip_06",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street with buildings, trees, and a pedestrian crossing - trinidad.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "clip_07",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, parked cars, buildings, sidewalk, bicycle - benimaclet.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "clip_08",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, parked cars, trees, sidewalk, bike rack, camera - benimaclet.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v3/audio.mp3",
+      "duration": 15.046531,
+      "type": "audio"
+    },
+    {
+      "id": "clip10",
+      "name": "whoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip11",
+      "name": "chime",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "duration": 0.91425,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.005,
+          "position": 5.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 7.005,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 12.005,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 17.005,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.026,
+          "position": 22.005,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 24.031,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 29.031,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 34.031,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 15.046531,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 0.3,
+          "position": 5.6,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 0.9,
+          "position": 12.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "POV: giras la",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 0.68,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "esquina y encuentras",
+          "position": 0.68,
+          "in": 0.0,
+          "out": 1.4,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "esto. Benimaclet huele",
+          "position": 2.08,
+          "in": 0.0,
+          "out": 1.2399999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "a otro ritmo...",
+          "position": 3.32,
+          "in": 0.0,
+          "out": 0.8400000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "a cosas que",
+          "position": 4.16,
+          "in": 0.0,
+          "out": 0.39999999999999947,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "llevan ah\u00ed m\u00e1s",
+          "position": 4.56,
+          "in": 0.0,
+          "out": 0.6400000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "tiempo.",
+          "position": 5.2,
+          "in": 0.0,
+          "out": 0.5599999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Una mesa redonda.",
+          "position": 5.76,
+          "in": 0.0,
+          "out": 1.4400000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "En la acera.",
+          "position": 7.2,
+          "in": 0.0,
+          "out": 0.919999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Como si alguien",
+          "position": 8.12,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "la hubiera dejado...",
+          "position": 8.84,
+          "in": 0.0,
+          "out": 1.08,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Si alguien la",
+          "position": 9.92,
+          "in": 0.0,
+          "out": 0.5600000000000005,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "hubiera dado a",
+          "position": 10.48,
+          "in": 0.0,
+          "out": 0.4800000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "tiempo, no estar\u00eda",
+          "position": 10.96,
+          "in": 0.0,
+          "out": 1.0399999999999991,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "aqu\u00ed. A veces",
+          "position": 12.0,
+          "in": 0.0,
+          "out": 1.2400000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "lo mejor est\u00e1",
+          "position": 13.24,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "donde menos lo esperas.",
+          "position": 13.84,
+          "in": 0.0,
+          "out": 1.1600000000000001,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-04-01T22:56:06.026810",
+    "software": "kdenlive-cli 1.0"
+  }
+}

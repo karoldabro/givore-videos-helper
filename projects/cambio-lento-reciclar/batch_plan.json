@@ -1,0 +1,83 @@
+{
+  "topic": "the change is always slow, for me it took me a while to understand that recycling is important and we should do it",
+  "location": "various locations (Valencia, Spain — multiple neighborhoods)",
+  "items": ["artificial plant"],
+  "variant_count": 5,
+  "variants": [
+    {
+      "variant": "v1",
+      "content_format": "TRES_COSAS",
+      "format_file": "formats/TRES_COSAS.md",
+      "persona": "OBSERVADOR",
+      "persona_file": "personas/OBSERVADOR.md",
+      "structure": "COLD_OPEN",
+      "structure_file": "structures/COLD_OPEN.md",
+      "hook_category": "TRANSFORMATION",
+      "cta_category": "SELF_REFLECTION",
+      "narration": "full",
+      "target_duration_s": 50,
+      "target_words": 165,
+      "rationale": "Safe v1 pick. TRES_COSAS (batch-compatible, MEDIUM-HIGH viral) lets the creator share 3 things that changed their mind about recycling — perfect for this personal reflection topic. OBSERVADOR's calm, reflective tone matches the introspective message. COLD OPEN structure starts with the plant on the street for immediate visual hook, then unfolds the personal journey. Avoids all recently used hooks/CTAs/personas/structures."
+    },
+    {
+      "variant": "v2",
+      "content_format": "LO_QUE_NADIE_VE",
+      "format_file": "formats/LO_QUE_NADIE_VE.md",
+      "persona": "REPORTERO",
+      "persona_file": "personas/REPORTERO.md",
+      "structure": "MICRO",
+      "structure_file": "structures/MICRO.md",
+      "hook_category": "INVISIBLE",
+      "cta_category": "CONDITIONAL_CONTENT",
+      "narration": "minimal",
+      "target_duration_s": 35,
+      "target_words": 50,
+      "rationale": "Minimal narration variant for mix. LO_QUE_NADIE_VE (HIGH viral, batch-compatible) focuses on what people walk past without noticing — the discarded artificial plant nobody sees. REPORTERO's measured, factual delivery works for a short observational piece. MICRO structure keeps it punchy at 30-40s. Minimal narration lets the visuals carry the emotional weight of ignored items on the street."
+    },
+    {
+      "variant": "v3",
+      "content_format": "POV_ERES_MI_BICI",
+      "format_file": "formats/POV_ERES_MI_BICI.md",
+      "persona": "ENERGETICO",
+      "persona_file": "personas/ENERGETICO.md",
+      "structure": "PSP",
+      "structure_file": "structures/PSP.md",
+      "hook_category": "POV",
+      "cta_category": "GAMIFIED",
+      "narration": "character",
+      "target_duration_s": 30,
+      "target_words": 100,
+      "rationale": "Character narration variant for narration mix. POV_ERES_MI_BICI (HIGH viral, batch-compatible) tells the story from the bike's perspective — the bike has seen the creator slowly change their habits over time. ENERGETICO's punchy delivery suits the bike's personality. PSP structure works: Problem (people ignore discarded stuff) → Solution (the creator finally gets it) → Proof (picking up the plant). Short and shareable."
+    },
+    {
+      "variant": "v4",
+      "content_format": "CUANTO_CUESTA",
+      "format_file": "formats/CUANTO_CUESTA.md",
+      "persona": "REPORTERO",
+      "persona_file": "personas/REPORTERO.md",
+      "structure": "COUNTDOWN",
+      "structure_file": "structures/COUNTDOWN.md",
+      "hook_category": "VALUE_PROPOSITION",
+      "cta_category": "WHATSAPP",
+      "narration": "full",
+      "target_duration_s": 25,
+      "target_words": 85,
+      "rationale": "VERY HIGH viral potential pick. CUANTO_CUESTA (batch-compatible) flips the topic to: how much would this artificial plant cost new? The price reveal hooks viewers while the reflection on slow change adds depth. REPORTERO's factual tone suits the price-comparison angle. COUNTDOWN structure builds anticipation toward the price reveal. Short format maximizes replay value."
+    },
+    {
+      "variant": "v5",
+      "content_format": "SONIDOS_DE_LA_CALLE",
+      "format_file": "formats/SONIDOS_DE_LA_CALLE.md",
+      "persona": "OBSERVADOR",
+      "persona_file": "personas/OBSERVADOR.md",
+      "structure": "COLD_OPEN",
+      "structure_file": "structures/COLD_OPEN.md",
+      "hook_category": "SENSORY",
+      "cta_category": "EMOJI_COMMENT",
+      "narration": "zero",
+      "target_duration_s": 30,
+      "target_words": 0,
+      "rationale": "Zero narration variant for maximum narration diversity. SONIDOS_DE_LA_CALLE (MEDIUM-HIGH viral, batch-compatible) captures the ambient sounds of cycling through Valencia — wind, traffic, birds — while the text overlay carries the reflection about slow change. The artificial plant discovery is shown without words, letting viewers feel the moment. OBSERVADOR's sensory focus guides the text overlay tone. Unique format that stands apart from all other variants."
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "hook_thumbs_down",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, dowing my both thumbs down - quatre carreres.mp4",
+      "duration": 1.706,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "qc_street3",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - quatre carreres.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "beni_street14",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 14 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "beni_street1",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 1 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "beni_street2",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 2 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip5",
+      "name": "beni_street3",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 3 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip6",
+      "name": "beni_street4",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 4 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip7",
+      "name": "beni_turning_right",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, turing right - benimalcet.mp4",
+      "duration": 2.666,
+      "type": "video"
+    },
+    {
+      "id": "clip8",
+      "name": "beni_street5",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street 5 - benimalcet.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip9",
+      "name": "beni_cycling6",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/street just cycling 6 - benimalcet.mp4",
+      "duration": 2.41,
+      "type": "video"
+    },
+    {
+      "id": "clip10",
+      "name": "end_trinitat",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end], camaera from the sq to the sky, jardin real - trinitat.mp4",
+      "duration": 2.026,
+      "type": "video"
+    },
+    {
+      "id": "clip11",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-18_reciclaje-reutiliza/v2/reciclaje-reutiliza.mp3",
+      "duration": 22.151837,
+      "type": "audio"
+    },
+    {
+      "id": "clip12",
+      "name": "transition",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip13",
+      "name": "chime",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Chime - Single.MP3",
+      "duration": 2.638313,
+      "type": "audio"
+    },
+    {
+      "id": "clip14",
+      "name": "reveal",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Reveal - Surprise.MP3",
+      "duration": 1.071,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.71,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 1.71,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 3.74,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 5.77,
+          "filters": []
+        },
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 7.8,
+          "filters": []
+        },
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 9.83,
+          "filters": []
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 11.86,
+          "filters": []
+        },
+        {
+          "clip_id": "clip7",
+          "in": 0.0,
+          "out": 2.67,
+          "position": 13.89,
+          "filters": []
+        },
+        {
+          "clip_id": "clip8",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 16.56,
+          "filters": []
+        },
+        {
+          "clip_id": "clip9",
+          "in": 0.0,
+          "out": 2.41,
+          "position": 18.59,
+          "filters": []
+        },
+        {
+          "clip_id": "clip10",
+          "in": 0.0,
+          "out": 2.03,
+          "position": 21.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip11",
+          "in": 0.0,
+          "out": 22.151837,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip12",
+          "in": 0.0,
+          "out": 0.3,
+          "position": 1.6,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip13",
+          "in": 0.0,
+          "out": 1.5,
+          "position": 9.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip14",
+          "in": 0.0,
+          "out": 1.1,
+          "position": 13.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Es que...\nmirad.",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.44,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "Mirad esto.",
+          "position": 1.44,
+          "in": 0.0,
+          "out": 0.9199999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "Cosas perfectas,\nesperando en la calle.",
+          "position": 2.36,
+          "in": 0.0,
+          "out": 2.28,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Ma\u00f1ana ya\nno estaran.",
+          "position": 4.64,
+          "in": 0.0,
+          "out": 1.2800000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "O en un contenedor,\no rotas.",
+          "position": 5.92,
+          "in": 0.0,
+          "out": 2.0,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "Objetos que funcionan...\ncon las horas contadas.",
+          "position": 7.92,
+          "in": 0.0,
+          "out": 2.84,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "Mirad lo que\nse puede hacer.",
+          "position": 10.76,
+          "in": 0.0,
+          "out": 1.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "Reutilizar,\nrenovar,",
+          "position": 12.28,
+          "in": 0.0,
+          "out": 1.4000000000000004,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "darle otra\noportunidad.",
+          "position": 13.68,
+          "in": 0.0,
+          "out": 1.2800000000000011,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "Antes de tirar,\npensad",
+          "position": 14.96,
+          "in": 0.0,
+          "out": 1.6799999999999997,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "si alguien mas\nlo quiere.",
+          "position": 16.64,
+          "in": 0.0,
+          "out": 1.1999999999999993,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Porque seguro\nque si.",
+          "position": 17.84,
+          "in": 0.0,
+          "out": 1.120000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Hay maneras\nmuy faciles",
+          "position": 18.96,
+          "in": 0.0,
+          "out": 0.9199999999999982,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "de compartir\nlo que ya no usais.",
+          "position": 19.88,
+          "in": 0.0,
+          "out": 1.3200000000000003,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "Buscadlas.",
+          "position": 21.2,
+          "in": 0.0,
+          "out": 0.879999999999999,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-18T21:43:33.726279",
+    "software": "kdenlive-cli 1.0"
+  }
+}

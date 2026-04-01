@@ -58,6 +58,7 @@ Usage:
 
 import argparse
 import glob
+import json
 import os
 import sqlite3
 import subprocess
@@ -196,6 +197,9 @@ def run_migrations(conn):
         ("clips", "type_prefix", "TEXT"),
         ("clips", "motion_tag", "TEXT"),
         ("script_history", "content_format", "TEXT"),
+        ("script_history", "variant", "TEXT"),
+        ("script_history", "importance_angle", "TEXT"),
+        ("script_history", "solution_approach", "TEXT"),
     ]
     for table, column, col_type in migrations:
         if not _column_exists(conn, table, column):
@@ -295,17 +299,55 @@ def cmd_list(args):
         params.append(args.mood)
     if args.visual_hooks:
         conditions.append("c.is_visual_hook = 1")
+    if getattr(args, "type_prefix", None):
+        conditions.append("c.type_prefix = ?")
+        params.append(args.type_prefix)
+    if getattr(args, "location", None):
+        conditions.append("LOWER(c.filename) LIKE ?")
+        params.append(f"%{args.location.lower()}%")
+    if getattr(args, "ids", None):
+        id_list = [int(x.strip()) for x in args.ids.split(",")]
+        placeholders = ",".join("?" * len(id_list))
+        conditions.append(f"c.id IN ({placeholders})")
+        params.extend(id_list)
+    if getattr(args, "exclude_ids", None):
+        ex_list = [int(x.strip()) for x in args.exclude_ids.split(",")]
+        placeholders = ",".join("?" * len(ex_list))
+        conditions.append(f"c.id NOT IN ({placeholders})")
+        params.extend(ex_list)
 
     if conditions:
         query += " WHERE " + " AND ".join(conditions)
 
     query += " GROUP BY c.id ORDER BY c.id"
 
+    if getattr(args, "limit", None):
+        query += " LIMIT ?"
+        params.append(args.limit)
+
     rows = conn.execute(query, params).fetchall()
     conn.close()
 
     if not rows:
         print("No clips found matching filters.")
+        return
+
+    if getattr(args, "json", False):
+        result = []
+        for r in rows:
+            result.append({
+                "id": r["id"],
+                "filename": r["filename"],
+                "duration": r["duration_seconds"],
+                "sections": (r["sections"] or "").split(",") if r["sections"] else [],
+                "style": r["style"] or None,
+                "mood": r["mood"] or None,
+                "description": r["description"] or None,
+                "type_prefix": r["type_prefix"] or None,
+                "motion_tag": r["motion_tag"] or None,
+                "visual_hook": bool(r["is_visual_hook"]),
+            })
+        print(json.dumps(result))
         return
 
     print(f"{'ID':>4} | {'Dur':>6} | {'Sections':<20} | {'Style':<14} | {'Mood':<14} | {'Prefix':<8} | {'Motion':<8} | {'Filename'}")
@@ -327,6 +369,12 @@ def cmd_search(args):
     args.style = None
     args.mood = None
     args.visual_hooks = False
+    args.json = False
+    args.limit = None
+    args.ids = None
+    args.exclude_ids = None
+    args.type_prefix = None
+    args.location = None
     cmd_list(args)
 
 
@@ -344,6 +392,22 @@ def cmd_info(args):
         (args.id,)
     ).fetchall()
     conn.close()
+
+    if getattr(args, "json", False):
+        print(json.dumps({
+            "id": row["id"],
+            "filename": row["filename"],
+            "path": row["path"],
+            "duration": row["duration_seconds"],
+            "sections": [s["section"] for s in sections],
+            "style": row["style"] or None,
+            "mood": row["mood"] or None,
+            "description": row["description"] or None,
+            "type_prefix": row["type_prefix"] or None,
+            "motion_tag": row["motion_tag"] or None,
+            "visual_hook": bool(row["is_visual_hook"]),
+        }))
+        return
 
     print(f"ID:          {row['id']}")
     print(f"Filename:    {row['filename']}")
@@ -782,7 +846,8 @@ def cmd_generate_config(args):
 
 SCRIPT_FIELDS = ["hook_type", "cta_type", "proof_tease", "problem_angle",
                  "rehook_style", "visual_style", "lighting", "item_category",
-                 "structure_type", "persona", "content_format"]
+                 "structure_type", "persona", "content_format",
+                 "importance_angle", "solution_approach"]
 
 
 def cmd_script_add(args):
@@ -790,16 +855,21 @@ def cmd_script_add(args):
     ensure_schema()
     conn = get_db()
     content_format = getattr(args, 'content_format', None)
+    variant = getattr(args, 'variant', None)
+    importance_angle = getattr(args, 'importance_angle', None)
+    solution_approach = getattr(args, 'solution_approach', None)
     conn.execute(
         """INSERT INTO script_history
            (date, project_slug, file_path, hook_type, cta_type, proof_tease,
             problem_angle, rehook_style, visual_style, lighting, item_category,
-            structure_type, persona, content_format)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            structure_type, persona, content_format, variant,
+            importance_angle, solution_approach)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (args.date, args.slug, args.file, args.hook_type, args.cta_type,
          args.proof_tease, args.problem_angle, args.rehook_style,
          args.visual_style, args.lighting, args.item_category,
-         args.structure_type, args.persona, content_format)
+         args.structure_type, args.persona, content_format, variant,
+         importance_angle, solution_approach)
     )
     conn.commit()
     conn.close()
@@ -834,17 +904,26 @@ def cmd_script_rotation(args):
     ensure_schema()
     conn = get_db()
     limit = args.last or 3
-    rows = conn.execute(
-        "SELECT * FROM script_history ORDER BY date DESC, id DESC LIMIT ?",
-        (limit,)
-    ).fetchall()
+    fmt_filter = getattr(args, 'format', None)
+    if fmt_filter:
+        rows = conn.execute(
+            "SELECT * FROM script_history WHERE content_format = ? ORDER BY date DESC, id DESC LIMIT ?",
+            (fmt_filter, limit)
+        ).fetchall()
+    else:
+        rows = conn.execute(
+            "SELECT * FROM script_history ORDER BY date DESC, id DESC LIMIT ?",
+            (limit,)
+        ).fetchall()
     conn.close()
 
     if not rows:
-        print("No script history — no rotation constraints.")
+        label = f" for format {fmt_filter}" if fmt_filter else ""
+        print(f"No script history{label} — no rotation constraints.")
         return
 
-    print(f"SCRIPT ROTATION CONSTRAINTS (last {len(rows)}):")
+    label = f" [format={fmt_filter}]" if fmt_filter else ""
+    print(f"SCRIPT ROTATION CONSTRAINTS (last {len(rows)}){label}:")
     for field in SCRIPT_FIELDS:
         values = [r[field] or "-" for r in rows]
         values_str = ", ".join(values)
@@ -857,7 +936,7 @@ def cmd_script_rotation(args):
                 advice = "any OK"
         else:
             advice = "avoid these"
-        print(f"  {field:<16} {values_str:<50} -> {advice}")
+        print(f"  {field:<18} {values_str:<50} -> {advice}")
 
 
 def cmd_script_rotation_json(args):
@@ -866,12 +945,19 @@ def cmd_script_rotation_json(args):
     ensure_schema()
     conn = get_db()
     limit = args.last or 5
+    fmt_filter = getattr(args, 'format', None)
 
     # --- Script history fields ---
-    rows = conn.execute(
-        "SELECT * FROM script_history ORDER BY date DESC, id DESC LIMIT ?",
-        (limit,)
-    ).fetchall()
+    if fmt_filter:
+        rows = conn.execute(
+            "SELECT * FROM script_history WHERE content_format = ? ORDER BY date DESC, id DESC LIMIT ?",
+            (fmt_filter, limit)
+        ).fetchall()
+    else:
+        rows = conn.execute(
+            "SELECT * FROM script_history ORDER BY date DESC, id DESC LIMIT ?",
+            (limit,)
+        ).fetchall()
 
     avoid = {}
     if rows:
@@ -1117,6 +1203,10 @@ def cmd_video_recent_clips(args):
 
     # Unique clip names for exclusion list
     unique_clips = sorted(set(r["clip_name"] for r in rows))
+
+    if getattr(args, "json", False):
+        print(json.dumps(unique_clips))
+        return
 
     print(f"CLIPS USED IN LAST {limit} VIDEOS (exclude from selection):")
     print(f"  {', '.join(unique_clips)}")
@@ -1494,6 +1584,33 @@ def cmd_migrate_all(args):
     print("\nAll migrations complete.")
 
 
+def cmd_query(args):
+    """Execute a read-only SQL SELECT query against the clips database."""
+    import json as _json
+
+    query = args.query
+    if not query.strip().upper().startswith('SELECT'):
+        print("ERROR: Only SELECT queries are allowed", file=sys.stderr)
+        sys.exit(1)
+    conn = get_db()
+    try:
+        rows = conn.execute(query).fetchall()
+        if args.json:
+            print(_json.dumps([dict(r) for r in rows], ensure_ascii=False, indent=2))
+        else:
+            if rows:
+                print('\t'.join(rows[0].keys()))
+                for r in rows:
+                    print('\t'.join(str(v) for v in r))
+            else:
+                print("(no results)")
+    except Exception as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        sys.exit(1)
+    finally:
+        conn.close()
+
+
 # ============================================================
 # Main CLI
 # ============================================================
@@ -1508,12 +1625,19 @@ def main():
     p_list.add_argument("--style", help="Filter by style (cycling_pov, etc.)")
     p_list.add_argument("--mood", help="Filter by mood (energetic, calm, etc.)")
     p_list.add_argument("--visual-hooks", action="store_true", help="Show only visual hooks")
+    p_list.add_argument("--json", action="store_true", help="Output as JSON array")
+    p_list.add_argument("--limit", type=int, default=None, help="Max rows to return")
+    p_list.add_argument("--ids", default=None, help="Comma-separated clip IDs (batch info)")
+    p_list.add_argument("--exclude-ids", default=None, help="Comma-separated clip IDs to exclude")
+    p_list.add_argument("--type-prefix", default=None, help="Filter by type_prefix (hook, item, bridge, end)")
+    p_list.add_argument("--location", default=None, help="Filter by location in filename")
 
     p_search = sub.add_parser("search", help="Search by section (shortcut)")
     p_search.add_argument("section", help="Section to search for")
 
     p_info = sub.add_parser("info", help="Show full details for one clip")
     p_info.add_argument("id", type=int, help="Clip ID")
+    p_info.add_argument("--json", action="store_true", help="Output as JSON object")
 
     p_add = sub.add_parser("add", help="Add a new clip")
     p_add.add_argument("file", help="Path to .mp4 file")
@@ -1575,15 +1699,23 @@ def main():
     p_sa.add_argument("--persona", default=None)
     p_sa.add_argument("--content-format", default=None, dest="content_format",
                       help="Content format ID used for this script")
+    p_sa.add_argument("--variant", default=None,
+                      help="Variant identifier (e.g., v1, v2)")
+    p_sa.add_argument("--importance-angle", default=None, dest="importance_angle")
+    p_sa.add_argument("--solution-approach", default=None, dest="solution_approach")
 
     p_sl = sub.add_parser("script-list", help="List recent script history")
     p_sl.add_argument("--last", type=int, default=10)
 
     p_sr = sub.add_parser("script-rotation", help="Show script rotation constraints")
     p_sr.add_argument("--last", type=int, default=3)
+    p_sr.add_argument("--format", default=None,
+                      help="Filter by content format (e.g., CUANTO_CUESTA)")
 
     p_srj = sub.add_parser("script-rotation-json", help="Script rotation constraints as JSON")
     p_srj.add_argument("--last", type=int, default=5)
+    p_srj.add_argument("--format", default=None,
+                      help="Filter by content format (e.g., CUANTO_CUESTA)")
 
     p_sd = sub.add_parser("script-delete", help="Delete script history entry")
     p_sd.add_argument("id", type=int)
@@ -1625,6 +1757,7 @@ def main():
 
     p_vr = sub.add_parser("video-recent-clips", help="Clips used in last N videos")
     p_vr.add_argument("--last", type=int, default=5)
+    p_vr.add_argument("--json", action="store_true", help="Output as JSON array of clip names")
 
     p_vd = sub.add_parser("video-delete", help="Delete video history entry")
     p_vd.add_argument("id", type=int)
@@ -1671,6 +1804,11 @@ def main():
     sub.add_parser("migrate-trials", help="Import TRIAL_HISTORY.md")
     sub.add_parser("migrate-videos", help="Import VIDEO_HISTORY.md")
     sub.add_parser("migrate-all", help="Import all history files")
+
+    # --- Query ---
+    p_query = sub.add_parser("query", help="Run read-only SQL SELECT query")
+    p_query.add_argument("query", help="SQL SELECT statement")
+    p_query.add_argument("--json", action="store_true", help="Output as JSON")
 
     args = parser.parse_args()
 
@@ -1723,6 +1861,8 @@ def main():
         "migrate-trials": cmd_migrate_trials,
         "migrate-videos": cmd_migrate_videos,
         "migrate-all": cmd_migrate_all,
+        # Query
+        "query": cmd_query,
     }
 
     if args.command in commands:

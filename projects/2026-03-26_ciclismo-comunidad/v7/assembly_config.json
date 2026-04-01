@@ -1,0 +1,120 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v7/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook]cycling on the street, showing okey sign with my right hand - ayora.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.792,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/av del reino valencia, entering bike lane - gran via.mp4",
+      "name": "clip_01",
+      "position": 1.792,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling though the small park or square - camins al grau.mp4",
+      "name": "clip_02",
+      "position": 3.818,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - benimaclet.mp4",
+      "name": "clip_03",
+      "position": 5.844,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane cayc on the horizon - penya roja.mp4",
+      "name": "clip_04",
+      "position": 7.87,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2 - sant francesc.mp4",
+      "name": "clip_05",
+      "position": 9.896,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the cjaxa forum - turia park.mp4",
+      "name": "clip_06",
+      "position": 11.922,
+      "duration": 2.197,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - jaime roig.mp4",
+      "name": "clip_07",
+      "position": 14.119,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc - turia park.mp4",
+      "name": "clip_08",
+      "position": 16.273,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the turia park - penya roja.mp4",
+      "name": "clip_09",
+      "position": 18.299,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling on the street and covering lens with my hand - jaime roig.mp4",
+      "name": "clip_10",
+      "position": 20.325,
+      "duration": 1.344,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh_accent",
+      "position": 5.2,
+      "duration": 0.3,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime_accent",
+      "position": 11.4,
+      "duration": 0.9,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh_accent",
+      "position": 18.7,
+      "duration": 0.7,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v7/ciclismo-comunidad.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v7/ciclismo-comunidad.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

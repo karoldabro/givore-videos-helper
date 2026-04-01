@@ -347,30 +347,30 @@ Trending format → POV or COMMAND hooks
 
 ---
 
-### 15. POV HOOKS
+### 15. IMMERSIVE / PRIMERA PERSONA HOOKS
 **Use when:** Creating immersive first-person content, especially cycling POV footage
 
 **Formulas:**
 | Template | Variables | Example |
 |----------|-----------|---------|
-| `POV: vas en bici por Valencia y de repente ves esto.` | None | Direct use |
-| `POV: tu vecino tira un mueble perfecto al contenedor.` | None | Direct use |
-| `POV: descubres que tu basura es el tesoro de otro.` | None | Direct use |
-| `POV: te mudas a Valencia y descubres lo que tira la gente.` | None | Direct use |
-| `POV: cruzas el barrio del Carmen en bici un domingo por la mañana.` | None | Direct use |
+| `Vas en bici por [CIUDAD] y de repente ves esto.` | City | "Vas en bici por Valencia y de repente ves esto." |
+| `Tu vecino tira un mueble y tú lo ves desde la bici.` | None | Direct use |
+| `Descubres que tu basura es el tesoro de otro.` | None | Direct use |
+| `Te mudas a [CIUDAD] y descubres lo que tira la gente.` | City | "Te mudas a Valencia y descubres lo que tira la gente." |
+| `Cruzas [BARRIO] en bici un domingo por la mañana.` | Neighborhood | "Cruzas el Carmen en bici un domingo por la mañana." |
 
-**Best for:** Cycling POV footage, immersive street-level content, relatable everyday scenarios, trending format videos
+**Best for:** Cycling POV footage, immersive street-level content, relatable everyday scenarios
 
 **Key principles:**
-- POV format is consistently trending on TikTok/Reels (2025-2026) and signals native platform content
-- The "POV:" prefix is immediately recognizable and sets viewer expectations for immersive content
-- Works perfectly with Givore's cycling POV footage - the format and content align naturally
-- Can combine with any reveal type since the POV frame is about perspective, not content structure
+- Immersive hooks put the viewer in the scene directly without any prefix
+- Start the sentence as if the viewer is already there — no labels or tags
+- Works perfectly with Givore's cycling footage — the format and content align naturally
+- Can combine with any reveal type since the immersive frame is about perspective, not content structure
 
 **Anti-patterns:**
-- Don't use "POV:" if the video isn't actually shot from first person perspective
-- Avoid overly long POV descriptions - keep the scenario to one short sentence
-- Don't mix POV with other hook styles in the same hook (e.g., "POV: ¿sabéis qué...?" - pick one)
+- NEVER use "POV:" prefix — it sounds awkward when spoken in Spanish TTS
+- Avoid overly long descriptions — keep the scenario to one short sentence
+- Don't mix with other hook styles in the same hook
 
 ---
 

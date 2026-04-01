@@ -1,0 +1,53 @@
+{
+  "topic": "Jardines y parques de Valencia — cycling through them, showing gardens and parks to people",
+  "location": "Turia, Jardín Real, Parc Central",
+  "items": ["silla (chair — to be selected from clip DB)"],
+  "variant_count": 3,
+  "variants": [
+    {
+      "variant": "v1",
+      "content_format": "60_SEGUNDOS_EN",
+      "format_file": "formats/60_SEGUNDOS_EN.md",
+      "persona": "OBSERVADOR",
+      "persona_file": "personas/OBSERVADOR.md",
+      "structure": "COLD_OPEN",
+      "structure_file": "structures/COLD_OPEN.md",
+      "hook_category": "VISUAL",
+      "cta_category": "CURIOSITY",
+      "narration": "full",
+      "target_duration_s": 60,
+      "target_words": 200,
+      "rationale": "Safe v1 with a proven exploration format. 60 Segundos En is designed for location showcases — perfect for cycling through 3 parks. OBSERVADOR's calm reflective tone matches scenic garden footage. COLD OPEN structure front-loads a striking visual of Turia or Jardín Real to hook immediately. Avoids all recently used personas (POETA, VECINA), structures (LOOP, CLASSIC), and hooks."
+    },
+    {
+      "variant": "v2",
+      "content_format": "LO_QUE_NADIE_VE",
+      "format_file": "formats/LO_QUE_NADIE_VE.md",
+      "persona": "REPORTERO",
+      "persona_file": "personas/REPORTERO.md",
+      "structure": "PSP",
+      "structure_file": "structures/PSP.md",
+      "hook_category": "REVEAL",
+      "cta_category": "CHALLENGE",
+      "narration": "minimal",
+      "target_duration_s": 35,
+      "target_words": 50,
+      "rationale": "Minimal narration variant for mix diversity. 'Lo Que Nadie Ve' thrives on hidden details — lesser-known corners of Valencia's parks that cyclists pass without noticing. REPORTERO delivers factual observations sparingly over ambient garden sounds. PSP structure lets the visuals build a problem (people miss these spaces) before the reveal. Medium duration contrasts with v1's longer format."
+    },
+    {
+      "variant": "v3",
+      "content_format": "CUANTO_CUESTA",
+      "format_file": "formats/CUANTO_CUESTA.md",
+      "persona": "ENERGETICO",
+      "persona_file": "personas/ENERGETICO.md",
+      "structure": "MICRO",
+      "structure_file": "structures/MICRO.md",
+      "hook_category": "SHOCK",
+      "cta_category": "APP_DIRECT",
+      "narration": "full",
+      "target_duration_s": 25,
+      "target_words": 80,
+      "rationale": "Short viral play with VERY HIGH potential. The abandoned chair found in/near a park gets a price reveal — 'Cuanto Cuesta' format is the channel's strongest viral signal. ENERGETICO's fast punchy delivery keeps the sub-30s runtime tight. MICRO structure's 4 sections prevent over-explanation. This is the most shareable variant: quick, surprising, and algorithm-friendly."
+    }
+  ]
+}

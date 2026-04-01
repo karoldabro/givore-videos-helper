@@ -1,0 +1,120 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v3/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling while claping with my both hands sunny day - grau maritim.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.472,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the bike lane, start cycling, puerta del mar - la xerea.mp4",
+      "name": "clip_01",
+      "position": 1.472,
+      "duration": 2.602,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the cjaxa forum - turia park.mp4",
+      "name": "clip_02",
+      "position": 4.074,
+      "duration": 2.197,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling off the bike lane to the ramp out of rio, dynamic shoot - turia park.mp4",
+      "name": "clip_03",
+      "position": 6.271,
+      "duration": 2.09,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - benimaclet.mp4",
+      "name": "clip_04",
+      "position": 8.361,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling though the small park or square - camins al grau.mp4",
+      "name": "clip_05",
+      "position": 10.387,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 2 - sant francesc.mp4",
+      "name": "clip_06",
+      "position": 12.413,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - jaime roig.mp4",
+      "name": "clip_07",
+      "position": 14.439,
+      "duration": 2.154,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the turia park - penya roja.mp4",
+      "name": "clip_08",
+      "position": 16.593,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/letting the car to pass by then entering the street - benimaclet.mp4",
+      "name": "clip_09",
+      "position": 18.619,
+      "duration": 2.88,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling near to statuim mestalla camara goes up from the sw to show the top of the stadium.mp4",
+      "name": "clip_10",
+      "position": 21.499,
+      "duration": 2.026,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh_accent",
+      "position": 5.6,
+      "duration": 0.7,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime_accent",
+      "position": 12.3,
+      "duration": 0.9,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop_accent",
+      "position": 20.1,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v3/ciclismo-comunidad.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-26_ciclismo-comunidad/v3/ciclismo-comunidad.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

@@ -1,0 +1,35 @@
+{
+  "variant": "v1",
+  "audio_duration": 48.01,
+  "sfx_count": 4,
+  "sfx": [
+    {
+      "type": "POP",
+      "file": "Pop 1.MP3",
+      "timestamp": 4.48,
+      "volume": 0.04,
+      "reason": "3rd place reveal — 'Tercer puesto' starts here, POP punctuates the first item announcement in the countdown"
+    },
+    {
+      "type": "SWOOSH",
+      "file": "Swoosh - Fast 1.MP3",
+      "timestamp": 15.12,
+      "volume": 0.04,
+      "reason": "Transition to 2nd place — 'Segundo puesto' section begins, SWOOSH marks the step up in the ranking"
+    },
+    {
+      "type": "POP",
+      "file": "Pop 1.MP3",
+      "timestamp": 22.44,
+      "volume": 0.05,
+      "reason": "1st place reveal — 'Y primer puesto' moment, slightly louder POP to emphasize the winner announcement"
+    },
+    {
+      "type": "CHIME",
+      "file": "Correct - Synthetic Chime.MP3",
+      "timestamp": 33.16,
+      "volume": 0.04,
+      "reason": "Recap positive conclusion — 'Tres objetos. Tres barrios.' summary moment, CHIME adds a satisfying wrap-up feel"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] bike lane, showing ok with my right hand - trinitat.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 0.938,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 3 - benimaclet.mp4",
+      "name": "clip_01",
+      "position": 0.938,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - benimaclet.mp4",
+      "name": "clip_02",
+      "position": 2.964,
+      "duration": 2.005,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground - trinitat.mp4",
+      "name": "clip_03",
+      "position": 4.969,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] rounded table on the ground 2 - trinitat.mp4",
+      "name": "clip_04",
+      "position": 6.995,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street, passing by the man on a cross walk - benimaclet.mp4",
+      "name": "clip_05",
+      "position": 9.021,
+      "duration": 2.005,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/bike lane 8, kiralan and freeza - trinitat.mp4",
+      "name": "clip_06",
+      "position": 11.026,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a red-roofed building, a street sign, a pedestrian, a bicycle, a street lamp, a crosswalk, a parked car, a tree, a church, a street lamp, a street - trinitat.mp4",
+      "name": "clip_07",
+      "position": 13.052,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street with buildings, dumpsters, and a parked bike - benimaclet.mp4",
+      "name": "clip_08",
+      "position": 18.052,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the cycle line - benimaclet.mp4",
+      "name": "clip_09",
+      "position": 23.052,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - benimaclet.mp4",
+      "name": "clip_10",
+      "position": 25.078,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the bike lane - trinitat.mp4",
+      "name": "clip_11",
+      "position": 27.104,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/jardin real 8 - trinitat.mp4",
+      "name": "clip_12",
+      "position": 29.13,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[start], camaera from the sky to the sw, jardin real - trinitat.mp4",
+      "name": "clip_13",
+      "position": 31.156,
+      "duration": 2.026,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 3.6,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 11.12,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 13.8,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 20.92,
+      "duration": 0.7,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v1/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v1/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

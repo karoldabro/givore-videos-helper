@@ -1,0 +1,346 @@
+{
+  "version": "1.0",
+  "name": "givore_template",
+  "profile": {
+    "name": "custom",
+    "width": 1080,
+    "height": 1920,
+    "fps_num": 50,
+    "fps_den": 1,
+    "progressive": true,
+    "dar_num": 9,
+    "dar_den": 16
+  },
+  "bin": [
+    {
+      "id": "clip0",
+      "name": "clip_00",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[hook] with my left thumb showing down sign - ayora.mp4",
+      "duration": 1.13,
+      "type": "video"
+    },
+    {
+      "id": "clip1",
+      "name": "clip_01",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip2",
+      "name": "clip_02",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip3",
+      "name": "clip_03",
+      "source": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a city street with palm trees, a bike lane, and pedestrians - cabanal.mp4",
+      "duration": 5.0,
+      "type": "video"
+    },
+    {
+      "id": "clip4",
+      "name": "narration",
+      "source": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v2/muebles-en-corts.mp3",
+      "duration": 16.718367,
+      "type": "audio"
+    },
+    {
+      "id": "clip5",
+      "name": "whoosh",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "duration": 0.287313,
+      "type": "audio"
+    },
+    {
+      "id": "clip6",
+      "name": "pop",
+      "source": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "duration": 0.156688,
+      "type": "audio"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 0,
+      "name": "V1",
+      "type": "video",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip0",
+          "in": 0.0,
+          "out": 1.13,
+          "position": 0.0,
+          "filters": []
+        },
+        {
+          "clip_id": "clip1",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 1.13,
+          "filters": []
+        },
+        {
+          "clip_id": "clip2",
+          "in": 0.0,
+          "out": 5.0,
+          "position": 6.13,
+          "filters": []
+        },
+        {
+          "clip_id": "clip3",
+          "in": 0.0,
+          "out": 5.788,
+          "position": 11.13,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "A1-Narration",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip4",
+          "in": 0.0,
+          "out": 16.718367,
+          "position": 0.0,
+          "filters": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A2-SFX",
+      "type": "audio",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "clip5",
+          "in": 0.0,
+          "out": 0.3,
+          "position": 1.5,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.035
+              },
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "clip_id": "clip6",
+          "in": 0.0,
+          "out": 0.2,
+          "position": 7.0,
+          "filters": [
+            {
+              "name": "volume",
+              "mlt_service": "volume",
+              "params": {
+                "level": 0.03
+              },
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Subtitles",
+      "type": "subtitle",
+      "mute": false,
+      "hide": false,
+      "locked": false,
+      "clips": [
+        {
+          "clip_id": "sub0",
+          "text": "Oye, fijaos lo",
+          "position": 0.0,
+          "in": 0.0,
+          "out": 1.72,
+          "filters": []
+        },
+        {
+          "clip_id": "sub1",
+          "text": "que me acabo",
+          "position": 1.72,
+          "in": 0.0,
+          "out": 0.5200000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub2",
+          "text": "de encontrar pedaleando.",
+          "position": 2.24,
+          "in": 0.0,
+          "out": 1.4,
+          "filters": []
+        },
+        {
+          "clip_id": "sub3",
+          "text": "Iba por",
+          "position": 3.64,
+          "in": 0.0,
+          "out": 0.43999999999999995,
+          "filters": []
+        },
+        {
+          "clip_id": "sub4",
+          "text": "En Corts,",
+          "position": 4.08,
+          "in": 0.0,
+          "out": 0.47999999999999954,
+          "filters": []
+        },
+        {
+          "clip_id": "sub5",
+          "text": "tranquilamente, y de",
+          "position": 4.56,
+          "in": 0.0,
+          "out": 1.2000000000000002,
+          "filters": []
+        },
+        {
+          "clip_id": "sub6",
+          "text": "repente...",
+          "position": 5.76,
+          "in": 0.0,
+          "out": 0.7999999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub7",
+          "text": "esto.",
+          "position": 6.56,
+          "in": 0.0,
+          "out": 0.7200000000000006,
+          "filters": []
+        },
+        {
+          "clip_id": "sub8",
+          "text": "Un estante rojizo",
+          "position": 7.28,
+          "in": 0.0,
+          "out": 0.8799999999999999,
+          "filters": []
+        },
+        {
+          "clip_id": "sub9",
+          "text": "y una silla",
+          "position": 8.16,
+          "in": 0.0,
+          "out": 0.40000000000000036,
+          "filters": []
+        },
+        {
+          "clip_id": "sub10",
+          "text": "maciza. Ah\u00ed tirados.",
+          "position": 8.56,
+          "in": 0.0,
+          "out": 1.7599999999999998,
+          "filters": []
+        },
+        {
+          "clip_id": "sub11",
+          "text": "Totalmente aprovechables.",
+          "position": 10.32,
+          "in": 0.0,
+          "out": 1.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub12",
+          "text": "Es que...",
+          "position": 11.84,
+          "in": 0.0,
+          "out": 0.8000000000000007,
+          "filters": []
+        },
+        {
+          "clip_id": "sub13",
+          "text": "no s\u00e9,",
+          "position": 12.64,
+          "in": 0.0,
+          "out": 0.27999999999999936,
+          "filters": []
+        },
+        {
+          "clip_id": "sub14",
+          "text": "si alguien los",
+          "position": 12.92,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub15",
+          "text": "hubiera dado a",
+          "position": 13.52,
+          "in": 0.0,
+          "out": 0.5199999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub16",
+          "text": "tiempo, ya estar\u00edan",
+          "position": 14.04,
+          "in": 0.0,
+          "out": 1.040000000000001,
+          "filters": []
+        },
+        {
+          "clip_id": "sub17",
+          "text": "en otra casa.",
+          "position": 15.08,
+          "in": 0.0,
+          "out": 0.5999999999999996,
+          "filters": []
+        },
+        {
+          "clip_id": "sub18",
+          "text": "Pues eso.",
+          "position": 15.68,
+          "in": 0.0,
+          "out": 0.9600000000000009,
+          "filters": []
+        }
+      ],
+      "style": {
+        "font": "Arial",
+        "size": 65,
+        "color": "#ffffff",
+        "bold": true,
+        "italic": false,
+        "outline_color": "#275d2b",
+        "outline_width": 14,
+        "alignment": "center",
+        "vertical_position": "bottom",
+        "margin_v": 580,
+        "spacing": 4.0
+      }
+    }
+  ],
+  "transitions": [],
+  "guides": [],
+  "metadata": {
+    "created": "2026-03-11T10:09:08.452184",
+    "modified": "2026-03-31T09:24:58.722433",
+    "software": "kdenlive-cli 1.0"
+  }
+}

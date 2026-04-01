@@ -1,0 +1,122 @@
+{
+  "variant": "v1",
+  "topic": "Mesa redonda en Benimaclet/Trinidad",
+  "location": "Benimaclet / Trinidad",
+  "scene_descriptions": [
+    {
+      "clip_id": 157,
+      "clip_filename": "[hook] bike lane, showing ok with my right hand - trinitat.mp4",
+      "scene": "Cyclist flashes OK hand gesture while riding on a Trinitat bike lane",
+      "visual_elements": ["hand gesture", "bike lane", "movement", "urban road"]
+    },
+    {
+      "clip_id": 268,
+      "clip_filename": "cycling on the bike lane 3 - benimaclet.mp4",
+      "scene": "Smooth ride along Benimaclet's bike lane, residential buildings on both sides",
+      "visual_elements": ["bike lane", "Benimaclet streets", "residential area"]
+    },
+    {
+      "clip_id": 273,
+      "clip_filename": "cycling on the street 1 - benimaclet.mp4",
+      "scene": "Cycling through Benimaclet side streets approaching the find location",
+      "visual_elements": ["narrow street", "neighborhood feel", "approaching destination"]
+    },
+    {
+      "clip_id": 164,
+      "clip_filename": "[item] rounded table on the ground - trinitat.mp4",
+      "scene": "A rounded table sits abandoned on the ground in Trinitat — first reveal angle",
+      "visual_elements": ["mesa redonda", "ground level", "discarded furniture", "street find"]
+    },
+    {
+      "clip_id": 165,
+      "clip_filename": "[item] rounded table on the ground 2 - trinitat.mp4",
+      "scene": "Closer detail shot of the same mesa redonda, showing surface and condition",
+      "visual_elements": ["mesa redonda close-up", "table surface", "furniture detail"]
+    },
+    {
+      "clip_id": 282,
+      "clip_filename": "cycling on the street, passing by the man on a cross walk - benimaclet.mp4",
+      "scene": "Cycling past a pedestrian on a crosswalk in Benimaclet — real street life",
+      "visual_elements": ["crosswalk", "pedestrian", "street life", "movement"]
+    },
+    {
+      "clip_id": 182,
+      "clip_filename": "bike lane 8, kiralan and freeza - trinitat.mp4",
+      "scene": "Fast-paced ride along Trinitat bike lane past local shops Kiralan and Freeza",
+      "visual_elements": ["bike lane", "local shops", "energetic pace", "urban commerce"]
+    },
+    {
+      "clip_id": 642,
+      "clip_filename": "(calm) a red-roofed building, a street sign, a pedestrian, a bicycle, a street lamp, a crosswalk, a parked car, a tree, a church, a street lamp, a street - trinitat.mp4",
+      "scene": "Cinematic wide shot of Trinitat street with red-roofed building, church, and street life",
+      "visual_elements": ["red roof", "church", "street lamps", "crosswalk", "parked car", "tree"]
+    },
+    {
+      "clip_id": 866,
+      "clip_filename": "(calm) a city street with buildings, dumpsters, and a parked bike - benimaclet.mp4",
+      "scene": "Benimaclet street scene with dumpsters and a parked bike — everyday urban reality",
+      "visual_elements": ["dumpsters", "parked bike", "buildings", "city street"]
+    },
+    {
+      "clip_id": 286,
+      "clip_filename": "entering the cycle line - benimaclet.mp4",
+      "scene": "Merging onto the Benimaclet cycle lane from the street",
+      "visual_elements": ["cycle lane entry", "transition", "bike infrastructure"]
+    },
+    {
+      "clip_id": 278,
+      "clip_filename": "cycling on the street 3 - benimaclet.mp4",
+      "scene": "Continued cycling through Benimaclet streets after the find",
+      "visual_elements": ["street cycling", "Benimaclet", "calm pace"]
+    },
+    {
+      "clip_id": 205,
+      "clip_filename": "entering the bike lane - trinitat.mp4",
+      "scene": "Entering the Trinitat bike lane — winding down the ride",
+      "visual_elements": ["bike lane entry", "Trinitat", "calm transition"]
+    },
+    {
+      "clip_id": 216,
+      "clip_filename": "jardin real 8 - trinitat.mp4",
+      "scene": "Cycling through Jardín Real park area — green and peaceful scenery",
+      "visual_elements": ["park", "Jardín Real", "greenery", "peaceful"]
+    },
+    {
+      "clip_id": 167,
+      "clip_filename": "[start], camaera from the sky to the sw, jardin real - trinitat.mp4",
+      "scene": "Camera tilts from sky down to the handlebars at Jardín Real — cinematic closing",
+      "visual_elements": ["sky", "camera tilt", "handlebars", "Jardín Real", "cinematic"]
+    }
+  ],
+  "seo_keywords": {
+    "primary": [
+      {"keyword": "muebles baratos", "volume": 230000, "relevance": "Direct — round table found for free, ultimate bargain furniture"},
+      {"keyword": "segunda mano Valencia", "volume": 140000, "relevance": "Location match — free find in Valencia neighborhoods"},
+      {"keyword": "muebles reciclados", "volume": 86000, "relevance": "Core topic — rescuing discarded furniture from the street"},
+      {"keyword": "mesa reciclada", "volume": 7400, "relevance": "Exact item match — recycled round table"},
+      {"keyword": "movilidad sostenible", "volume": 9200, "relevance": "Content pillar — cycling POV discovery method"}
+    ],
+    "secondary": [
+      {"keyword": "muebles segunda mano", "volume": 65000, "relevance": "Broad furniture reuse category"},
+      {"keyword": "reciclar muebles", "volume": 15000, "relevance": "Action-oriented — what the video promotes"},
+      {"keyword": "carril bici Valencia", "volume": 10000, "relevance": "Cycling infrastructure shown throughout"}
+    ]
+  },
+  "thematic_elements": [
+    "Street discovery — the thrill of spotting something useful abandoned on the sidewalk",
+    "Price shock — contrasting the mesa redonda's retail value with its free street price",
+    "Cycling as exploration tool — the bike lets you see what cars miss",
+    "Benimaclet and Trinitat neighborhood character — residential, lived-in, real",
+    "Everyday sustainability — rescuing furniture that still has life in it"
+  ],
+  "suggested_natural_phrases": [
+    "Iba pedaleando por Benimaclet y mira lo que me encontré",
+    "Una mesa redonda tirada en la calle — ¿cuánto crees que cuesta nueva?",
+    "Esto en tienda te sale mínimo...",
+    "La bici te lleva a encontrar cosas que ni imaginas",
+    "Gratis. En la calle. Perfectamente utilizable.",
+    "¿Quién tira una mesa así?"
+  ],
+  "content_pillar": "CYCLING_POV",
+  "givore_mention_guideline": "20% casual — mention once briefly if natural, e.g., 'con Givore alguien se la habría llevado antes'"
+}

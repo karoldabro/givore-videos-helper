@@ -67,14 +67,14 @@
 - Max 2 sentences
 ```
 
-## Word Count Guidelines (200 WPM)
+## Word Count Guidelines (175 WPM — ElevenLabs Pablo TTS)
 | Duration | Words (Spanish) |
 |----------|-----------------|
-| 30 sec | 90-110 |
-| 45 sec | 140-160 |
-| 60 sec | 185-210 |
-| 90 sec | 280-310 |
-| 120 sec | 380-410 |
+| 30 sec | 80-95 |
+| 45 sec | 120-140 |
+| 60 sec | 160-185 |
+| 90 sec | 245-275 |
+| 120 sec | 330-365 |
 
 ## Output
 - Text optimized for ElevenLabs text-to-speech

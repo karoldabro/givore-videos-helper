@@ -1,0 +1,14 @@
+[HOOK: 0.0-5.1s]
+Silla de oficina. En la acera. Camí Fondo. A ver.
+
+[ITEM_REVEAL: 5.1-10.1s]
+Madre mía... está muy bien. Ni un rasguño. Ergonómica. Ruedas bien. Todo.
+
+[PRICE_GUESS: 10.1-19.6s]
+¿Sabéis cuánto sale una silla de oficina así nueva? En Amazon. Setenta euros. Mínimo. Y aquí está. En la acera.
+
+[PRICE_SHOCK: 19.6-23.1s]
+Setenta euros que alguien podría haberse ahorrado. Si se hubiera compartido a tiempo...
+
+[CLOSE: 23.1-28.4s]
+¿Cuál es lo más caro que habéis visto en la calle? Venga. Decídmelo.

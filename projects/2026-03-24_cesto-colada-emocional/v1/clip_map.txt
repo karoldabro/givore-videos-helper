@@ -1,0 +1,38 @@
+V1 CLIP MAP — cesto-colada-emocional
+==================================
+Audio: 57.03s | Clips: 57.89s | SFX: 5
+
+CLIPS:
+  0.00s - 1.60s  [15]  [hook] clapping in front of camera
+  1.60s - 3.69s  [115] cycling in front of the opera - cayc
+  3.69s - 6.27s  [271] cycling dynamic - exposicion
+  6.27s - 8.85s  [266] bike lane 1 - exposicion
+  8.85s - 10.88s [262] ★ ITEM: basket for cloths - exposicion
+ 10.88s - 12.58s [160] [hook] thumbs down - quatre carreres
+ 12.58s - 15.17s [274] street 1 - exposicion
+ 15.17s - 17.75s [269] street 2 - exposicion
+ 17.75s - 19.77s [299] below puente de flores - turia garden
+ 19.77s - 21.80s [300] near puente de flores - turia garden
+ 21.80s - 24.51s [263] crossing street bike lane - benimaclet
+ 24.51s - 27.20s [229] [hook] ok sign both hands - benimaclet
+ 27.20s - 29.22s [307] entering the rio - turia garden
+ 29.22s - 31.46s [296] downwards ramp to cycle path - turia garden
+ 31.46s - 33.70s [297] downwards entering park - turia garden
+ 33.70s - 35.73s [312] passing running lane - turia garden
+ 35.73s - 37.97s [298] cycling upwards leaving park - turia garden
+ 37.97s - 39.99s [294] [hook] looking left then back to sw - turia garden
+ 39.99s - 41.68s [295] ramp palau de la musica sw to palau - turia garden
+ 41.68s - 43.70s [308] letting person pass - turia garden
+ 43.70s - 45.84s [309] ramp palau starting to cycle - turia garden
+ 45.84s - 49.19s [313] sharp right-hand bend - turia garden
+ 49.19s - 51.23s [109] [hook] intro sky to sw - camins al grau
+ 51.23s - 53.07s [310] ramp palau waiting on red - turia garden
+ 53.07s - 55.65s [270] street 3 - exposicion
+ 55.65s - 57.89s [293] ★ END: stopping at palau de la musica - turia garden
+
+SFX:
+  8.50s  Suspense (tension, vol=0.03)
+ 18.00s  Braam 1 (tension, vol=0.025)
+ 24.50s  Impact Hit (impact, vol=0.035)
+ 29.50s  Shimmer - Bright (reveal, vol=0.03)
+ 42.00s  Chime - Single (positive, vol=0.03)

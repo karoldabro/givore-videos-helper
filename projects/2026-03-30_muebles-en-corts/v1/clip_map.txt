@@ -1,0 +1,16 @@
+CLIP MAP — v1 muebles-en-corts
+================================
+Section     | Clip ID | Zone         | Description
+HOOK        | 11      | -            | [hook] pointing right hand fingers to left
+PROBLEM     | 822     | Russafa      | City street, buildings, cars, bike
+PROBLEM     | 692     | Patraix      | City street, buildings, pedestrian
+REHOOK      | 669     | Trinidad     | Cyclist, pedestrian crossing
+IMPORTANCE  | 707     | Ciudad Vieja | City square, church, people, trees
+IMPORTANCE  | 671     | Trinidad     | Tall building, palm trees, pedestrians
+SOLUTION    | 697     | El Mercat    | Street, buildings, trees, bikes
+ITEM_INTRO  | 834     | En Corts     | Discarded furniture, graffiti, lamppost
+ITEM_INTRO  | 832     | En Corts     | Red shelf, wooden cart, blue car
+ITEM_INTRO  | 833     | En Corts     | Wooden chair, person photographing
+CTA/END     | 659     | Morverde     | [end] Colorful buildings, parked cars
+
+SFX: WHOOSH@2.5s, DING@14.5s, CHIME@36.0s (all vol 0.03)

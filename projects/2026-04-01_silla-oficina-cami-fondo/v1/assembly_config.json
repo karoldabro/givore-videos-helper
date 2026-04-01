@@ -1,0 +1,89 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v1/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street and showing a street in a theatrical gesture - jaime roig.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.621,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) city street, tall buildings, parked cars, bicycle, camera, motion blur - jaime-roig.mp4",
+      "name": "clip_01",
+      "position": 1.621,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "name": "clip_02",
+      "position": 5.121,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) person using tablet, black office chair, green trash can, sidewalk, bicycle, moving camera - jaime-roig.mp4",
+      "name": "clip_03",
+      "position": 10.121,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a tall building with a green triangular sign, a parked truck, palm trees, and a parked bicycle - jaime-roig.mp4",
+      "name": "clip_04",
+      "position": 15.121,
+      "duration": 4.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a tall, modern building, a green delivery truck, a pedestrian, a street, a bike, a camera, a parking lot, a tree, a sidewalk, a crosswalk - jaime-roig.mp4",
+      "name": "clip_05",
+      "position": 19.621,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a city street with a building, palm tree, and bike lane - cabanal.mp4",
+      "name": "clip_06",
+      "position": 23.121,
+      "duration": 3.94,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 0.5,
+      "duration": 0.7,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 12.16,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 20.4,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v1/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v1/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

@@ -1,3 +1,24 @@
+## Video Creator Pipeline (NEW)
+
+Agent-based video generation system. Replaces monolithic `/givore-batch` with atomic agents.
+
+- **Command**: `/video-creator` — orchestrates 9 specialized agents
+- **Flow**: Format Planner → Clip Assembler → Keyword Extractor → Script Writer → Script Validator → Audio Generator → Metadata Generator → SFX Planner → Video Assembler
+- **Key difference from old pipeline**: Clips are selected BEFORE script writing (script is written TO the footage)
+- **Approval**: One gate per variant (after clips + script), not just v1
+- **Variants**: User chooses X (flexible, not hardcoded to 7)
+- **DB tracking**: ALL variants update history with `--content-format` and `--variant` flags
+- **Format rotation**: `script-rotation --format CUANTO_CUESTA` filters by specific format
+
+### Reference file structure
+- **`formats/`** — 20 individual format files + `_INDEX.md` (split from CONTENT_FORMATS.md)
+- **`structures/`** — 6 structure files + `_INDEX.md` (split from SCRIPT_STRUCTURES.md)
+- **`personas/`** — 5 persona files + `_INDEX.md` (split from SCRIPT_PERSONAS.md)
+- **`.claude/commands/agents/`** — 9 agent prompt files (format-planner, clip-assembler, keyword-extractor, script-writer, script-validator, audio-generator, metadata-generator, sfx-planner, video-assembler)
+
+### Legacy pipeline
+- `/givore-batch` — old monolithic pipeline, kept during transition
+
 ## CLI Tools
 
 See [TOOLS.md](TOOLS.md) for all available CLI helpers (`givore-tools.sh`, `givore_db.py`) with usage examples and pipeline integration guide.

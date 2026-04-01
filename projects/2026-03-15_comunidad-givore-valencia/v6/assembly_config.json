@@ -1,0 +1,274 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-15_comunidad-givore-valencia/v6/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling while claping with my both hands - ayora.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.642,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane, dynamic shoot - turia park.mp4",
+      "name": "clip_01",
+      "position": 1.642,
+      "duration": 1.898,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling in front of the cjaxa forum - turia park.mp4",
+      "name": "clip_02",
+      "position": 3.54,
+      "duration": 2.197,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street - camins al grau.mp4",
+      "name": "clip_03",
+      "position": 5.737,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cossing the street on the bike lane - quatre carreres.mp4",
+      "name": "clip_04",
+      "position": 7.785,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - quatre carreres.mp4",
+      "name": "clip_05",
+      "position": 9.811,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/waiting on the bike lange until people pass on a crossing - penya roja.mp4",
+      "name": "clip_06",
+      "position": 11.837,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 5, low camara - ayora.mp4",
+      "name": "clip_07",
+      "position": 13.863,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 6 - penya roja.mp4",
+      "name": "clip_08",
+      "position": 15.889,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane 1 - camins al grau.mp4",
+      "name": "clip_09",
+      "position": 17.915,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane right next to the bus stop corte ingles - penya roja.mp4",
+      "name": "clip_10",
+      "position": 19.941,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - camins al grau.mp4",
+      "name": "clip_11",
+      "position": 21.989,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 1 - penya roja.mp4",
+      "name": "clip_12",
+      "position": 24.015,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - camins al grau.mp4",
+      "name": "clip_13",
+      "position": 26.041,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 2 - penya roja.mp4",
+      "name": "clip_14",
+      "position": 28.067,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 4 - camins al grau.mp4",
+      "name": "clip_15",
+      "position": 30.115,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 3 - penya roja.mp4",
+      "name": "clip_16",
+      "position": 32.141,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the street 4 - penya roja.mp4",
+      "name": "clip_17",
+      "position": 34.189,
+      "duration": 2.048,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling off the bike lane to the ramp out of rio, dynamic shoot - turia park.mp4",
+      "name": "clip_18",
+      "position": 36.237,
+      "duration": 2.09,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc - turia park.mp4",
+      "name": "clip_19",
+      "position": 38.327,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc 2 - turia park.mp4",
+      "name": "clip_20",
+      "position": 40.353,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc 4 - turia park.mp4",
+      "name": "clip_21",
+      "position": 42.379,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc 3 - turia park.mp4",
+      "name": "clip_22",
+      "position": 44.405,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/dynamic cycling on the bike lane - camins al grau.mp4",
+      "name": "clip_23",
+      "position": 46.431,
+      "duration": 2.517,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling though the small park or square - camins al grau.mp4",
+      "name": "clip_24",
+      "position": 48.948,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling right next to the entrance of the corte ingles - penya roja.mp4",
+      "name": "clip_25",
+      "position": 50.974,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc, looking at buildings - turia park.mp4",
+      "name": "clip_26",
+      "position": 53.0,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc 5 - turia park.mp4",
+      "name": "clip_27",
+      "position": 55.026,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling on the bike lane cayc on the horizon - penya roja.mp4",
+      "name": "clip_28",
+      "position": 57.052,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/entering the turia park - penya roja.mp4",
+      "name": "clip_29",
+      "position": 59.078,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc, revealing opera - turia park.mp4",
+      "name": "clip_30",
+      "position": 61.104,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/cycling near cayc,sign valencia is visible near buildings - turia park.mp4",
+      "name": "clip_31",
+      "position": 63.13,
+      "duration": 2.026,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] camara from sw to the sky - camins al grau.mp4",
+      "name": "clip_32",
+      "position": 65.156,
+      "duration": 1.429,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-15_comunidad-givore-valencia/v6/comunidad-givore-valencia.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-15_comunidad-givore-valencia/v6/comunidad-givore-valencia.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass"
+}

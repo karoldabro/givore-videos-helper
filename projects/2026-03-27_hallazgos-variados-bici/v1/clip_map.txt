@@ -1,0 +1,42 @@
+CLIP MAP — v1 hallazgos-variados-bici
+======================================
+
+| # | Clip ID | Section | Narration Match |
+|---|---------|---------|-----------------|
+| 1 | 17 [VH] | HOOK | "Oye, hoy me he encontrado..." |
+| 2 | 176 | HOOK | "...tres calles distintas" |
+| 3 | 165 | MESA | "Primero una mesa redonda" |
+| 4 | 90 | MESA | "Me bajo, la toco... lisa" |
+| 5 | 37 | JUGUETES | "una bolsa con juguetes" |
+| 6 | 98 | TRANSITION | "hacen ruido y todo" |
+| 7 | 46 | SOMIER | "un somier entero" |
+| 8 | 83 | SOMIER | "apoyado en la pared" |
+| 9 | 143 | PROBLEM | "tiene las horas contadas" |
+| 10 | 145 | PROBLEM | "esta noche pasa la recogida" |
+| 11 | 99 | PROBLEM | "al vertedero" |
+| 12 | 100 | IMPORTANCE | "a lo mejor en el edificio" |
+| 13 | 88 | IMPORTANCE | "necesita una mesa" |
+| 14 | 102 | IMPORTANCE | "juguetes para sus crios" |
+| 15 | 75 | IMPORTANCE | "no se van a enterar" |
+| 16 | 61 | SOLUTION | "le hago foto a la mesa" |
+| 17 | 78 | SOLUTION | "la subo a Givore" |
+| 18 | 89 | SOLUTION | "con dos palabras y ya" |
+| 19 | 95 | SOLUTION | "Alguien del barrio" |
+| 20 | 81 | SOLUTION | "la va a ver" |
+| 21 | 68 | SOLUTION | "No se quien" |
+| 22 | 69 | SOLUTION | "Da igual" |
+| 23 | 53 | PAYOFF | "Lo importante es que esta ahi" |
+| 24 | 52 | PAYOFF | "para quien la quiera" |
+| 25 | 155 | PAYOFF | "Esto no tendria que estar aqui" |
+| 26 | 167 | PAYOFF | "Si se hubiera compartido" |
+| 27 | 2 | CTA | "habria ido directo" |
+| 28 | 1 | CTA | "a alguien" |
+| 29 | 162 | CTA | "Sigo pedaleando" |
+| 30 | 156 | CTA | "A ver que" |
+| 31 | 166 | CTA | "me encuentro" |
+| 32 | 33 [END] | END | "manana" |
+
+SFX:
+- WHOOSH at 6.1s (first item reveal)
+- DING at 37.5s (solution moment)
+- POP at 47.2s (giveaway reflection)

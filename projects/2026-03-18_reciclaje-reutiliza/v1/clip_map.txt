@@ -1,0 +1,24 @@
+V1 CLIP MAP — reciclaje-reutiliza
+==================================
+Audio: 27.77s | Clips: 28.47s | SFX: 3
+
+CLIPS:
+  0.00s - 1.88s  [154] [hook] look at this gesture - sant francesc
+  1.88s - 3.91s  [194] cycling street 1 - quatre carreres
+  3.91s - 5.96s  [235] cycling street 11 - benimaclet
+  5.96s - 8.01s  [236] cycling street 12 - benimaclet
+  8.01s - 10.68s [237] cycling street 13 - benimaclet
+ 10.68s - 12.47s [234] fountain - benimaclet
+ 12.47s - 14.69s [204] turning right - quatre carreres
+ 14.69s - 16.72s [193] crossing street - mont oliver
+ 16.72s - 18.75s [225] street 4, turning left - benimaclet
+ 18.75s - 20.78s [222] street 1 - benimaclet
+ 20.78s - 22.81s [223] street 2 - benimaclet
+ 22.81s - 24.84s [224] street 3 - benimaclet
+ 24.84s - 26.87s [226] street 8 - sant llorenq
+ 26.87s - 28.51s [152] [end] camera to sky - quatre carreres
+
+SFX:
+  3.80s  Swoosh - Fast 1 (transition, vol=0.035)
+ 11.40s  Correct - Synthetic Chime (positive, vol=0.03)
+ 15.40s  Shimmer - Bright (reveal, vol=0.03)

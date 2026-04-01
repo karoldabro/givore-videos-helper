@@ -1,0 +1,105 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v5/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] drift on the right side while stoping - benimalcet.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.514,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street scene with buildings, trees, lamppost, and pedestrian crossing - arrancapins.mp4",
+      "name": "clip_01",
+      "position": 1.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street with buildings, tables, chairs, and people - arrancapins.mp4",
+      "name": "clip_02",
+      "position": 6.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) city street with parked cars, trees, buildings, and a moving bike - benimaclet.mp4",
+      "name": "clip_03",
+      "position": 11.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a street scene with discarded furniture, graffiti, and a lamppost - en-corts.mp4",
+      "name": "clip_04",
+      "position": 16.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "name": "clip_05",
+      "position": 21.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "name": "clip_06",
+      "position": 26.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street lined with palm trees, buildings, and a bike lane - morverde.mp4",
+      "name": "clip_07",
+      "position": 31.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a beachfront promenade with palm trees, lampposts, and a sandy beach - malvarrosa.mp4",
+      "name": "clip_08",
+      "position": 36.514,
+      "duration": 5.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 2.0,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 12.0,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 25.0,
+      "duration": 0.2,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v5/muebles-en-corts.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v5/muebles-en-corts.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

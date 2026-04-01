@@ -1,0 +1,113 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v3/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street showing is there (to the right) with my left hand - ayora.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 0.96,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) old city street, brick building, lamppost, parked cars, pedestrian, bicycle, camera - russafa.mp4",
+      "name": "clip_01",
+      "position": 0.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) a city street with buildings, cars, and a person on a bike - benimaclet.mp4",
+      "name": "clip_02",
+      "position": 5.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street with buildings, trees, cars, and a bike - patraix.mp4",
+      "name": "clip_03",
+      "position": 10.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a narrow street lined with buildings, graffiti, trash cans, and a bicycle's handlebars - san-francisco.mp4",
+      "name": "clip_04",
+      "position": 15.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a cyclist passes a red-tiled pedestrian crossing, with buildings and trees in the background - trinidad.mp4",
+      "name": "clip_05",
+      "position": 20.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a street scene with discarded furniture, graffiti, and a lamppost - en-corts.mp4",
+      "name": "clip_06",
+      "position": 25.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a blue car, wooden cart, red shelf, and cardboard box are the main objects. the camera is moving from left to right - en-corts.mp4",
+      "name": "clip_07",
+      "position": 30.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a bicycle, wooden chair, trash can, and person taking a picture - en-corts.mp4",
+      "name": "clip_08",
+      "position": 35.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a beachfront promenade with palm trees, cyclists, and a sign - malvarrosa.mp4",
+      "name": "clip_09",
+      "position": 40.96,
+      "duration": 5.0,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 5.0,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 18.0,
+      "duration": 0.3,
+      "volume": 0.035
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Correct - Synthetic Chime.MP3",
+      "name": "chime",
+      "position": 32.0,
+      "duration": 0.9,
+      "volume": 0.03
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v3/muebles-en-corts.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-03-30_muebles-en-corts/v3/muebles-en-corts.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

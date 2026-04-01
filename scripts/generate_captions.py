@@ -18,8 +18,13 @@ BREAK_BEFORE_WORDS = {'Y', 'Pero', 'Porque', 'Pues', 'Con', 'Sin',
                       'Vero,', 'Personas', 'Mirad.', 'Compartidlo.'}
 MAX_WORDS = 3
 
-
 def generate_captions(text: str) -> str:
+    # Strip [SECTION: X] markers (new pipeline format)
+    text = re.sub(r'\[SECTION:\s*[A-Z_0-9]+\]', '', text)
+    # Strip stage directions in parentheses (e.g., "(2-3s pure visual — ...)")
+    text = re.sub(r'\([^)]*\)', '', text)
+    # Safety net: strip lines that are just section labels (e.g., "HOOK:", "FACT_1:")
+    text = re.sub(r'(?m)^\s*[A-Z][A-Z_0-9]*\s*:\s*$', '', text)
     text = text.strip()
     # Collapse all whitespace/newlines into single spaces
     text = re.sub(r'\s+', ' ', text)

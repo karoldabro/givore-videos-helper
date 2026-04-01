@@ -1,0 +1,152 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v2/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] (calm) city street lined with trees, parked cars, and a bike - trinitat.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 2.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) city street, trees, bike, motorcycle, camera - benimaclet.mp4",
+      "name": "clip_01",
+      "position": 2.5,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) city street, cars, buildings, sidewalk, una silla, camera movement - poblados-maritimos.mp4",
+      "name": "clip_02",
+      "position": 6.5,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) a street scene with buildings, cars, and a bicycle, viewed from a moving bike - benimaclet.mp4",
+      "name": "clip_03",
+      "position": 11.5,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) An artificial plant is discarded next to two recycling bins - ruta-corts.mp4",
+      "name": "clip_04",
+      "position": 15.0,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(slow) a city street with buildings, cars, and a person on a bike - benimaclet.mp4",
+      "name": "clip_05",
+      "position": 19.0,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "name": "clip_06",
+      "position": 22.5,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) a city street lined with palm trees, a red dumpster, a parked bicycle, and a pedestrian - trinidad.mp4",
+      "name": "clip_07",
+      "position": 27.5,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (slow) a person holds a phone, taking a picture of a building, a blue sofa, and a tree - morverde.mp4",
+      "name": "clip_08",
+      "position": 31.0,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(dynamic) city street with parked cars, trees, buildings, and a moving bike - benimaclet.mp4",
+      "name": "clip_09",
+      "position": 36.0,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] found balck table in a very good shape - exposicion.mp4",
+      "name": "clip_10",
+      "position": 40.0,
+      "duration": 2.581,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, parked cars, building, sidewalk, camera movement - benimaclet (1).mp4",
+      "name": "clip_11",
+      "position": 42.581,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) a city street with a building, graffiti, and pedestrians - trinidad.mp4",
+      "name": "clip_12",
+      "position": 47.581,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] cycling on the street and covering lens with my hand - jaime roig.mp4",
+      "name": "clip_13",
+      "position": 52.581,
+      "duration": 1.544,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 6.12,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 21.24,
+      "duration": 0.2,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 34.92,
+      "duration": 2.1,
+      "volume": 0.03
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Whoosh - Fast Short.MP3",
+      "name": "whoosh",
+      "position": 42.96,
+      "duration": 0.3,
+      "volume": 0.035
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v2/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/mesa-redonda-benimaclet/v2/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

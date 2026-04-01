@@ -1,0 +1,152 @@
+{
+  "variant": "v1",
+  "format": "CUANTO_CUESTA",
+  "clips": [
+    {
+      "id": 157,
+      "filename": "[hook] bike lane, showing ok with my right hand - trinitat.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 0.938,
+      "duration": 0.938,
+      "narrative_note": "Quick ok gesture while cycling — energetic opening in Trinitat"
+    },
+    {
+      "id": 268,
+      "filename": "cycling on the bike lane 3 - benimaclet.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Cycling through Benimaclet bike lane — establishes location"
+    },
+    {
+      "id": 273,
+      "filename": "cycling on the street 1 - benimaclet.mp4",
+      "section": "item_reveal",
+      "start_trim": 0.0,
+      "end_trim": 2.005,
+      "duration": 2.005,
+      "narrative_note": "Approaching the find — cycling through Benimaclet streets"
+    },
+    {
+      "id": 164,
+      "filename": "[item] rounded table on the ground - trinitat.mp4",
+      "section": "item_reveal",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "First reveal of the mesa redonda on the ground"
+    },
+    {
+      "id": 165,
+      "filename": "[item] rounded table on the ground 2 - trinitat.mp4",
+      "section": "item_reveal",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Second angle of the mesa redonda — closer detail shot"
+    },
+    {
+      "id": 282,
+      "filename": "cycling on the street, passing by the man on a cross walk - benimaclet.mp4",
+      "section": "price_guess",
+      "start_trim": 0.0,
+      "end_trim": 2.005,
+      "duration": 2.005,
+      "narrative_note": "Cycling past pedestrian — visual breathing room for price guessing moment"
+    },
+    {
+      "id": 182,
+      "filename": "bike lane 8, kiralan and freeza - trinitat.mp4",
+      "section": "price_guess",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Trinitat bike lane — suspense building before price reveal"
+    },
+    {
+      "id": 642,
+      "filename": "(calm) a red-roofed building, a street sign, a pedestrian, a bicycle, a street lamp, a crosswalk, a parked car, a tree, a church, a street lamp, a street - trinitat.mp4",
+      "section": "price_guess",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Cinematic Trinitat street scene — dramatic pause before price drop"
+    },
+    {
+      "id": 866,
+      "filename": "(calm) a city street with buildings, dumpsters, and a parked bike - benimaclet.mp4",
+      "section": "price_shock",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Benimaclet street with dumpsters — price shock reveal backdrop"
+    },
+    {
+      "id": 286,
+      "filename": "entering the cycle line - benimaclet.mp4",
+      "section": "price_shock",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Entering Benimaclet bike lane — reaction moment after price reveal"
+    },
+    {
+      "id": 278,
+      "filename": "cycling on the street 3 - benimaclet.mp4",
+      "section": "price_shock",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Continued cycling — lingering on the price shock"
+    },
+    {
+      "id": 205,
+      "filename": "entering the bike lane - trinitat.mp4",
+      "section": "close",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Entering Trinitat bike lane — winding down"
+    },
+    {
+      "id": 216,
+      "filename": "jardin real 8 - trinitat.mp4",
+      "section": "close",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Jardin Real scenery — peaceful closing visual"
+    },
+    {
+      "id": 167,
+      "filename": "[start], camaera from the sky to the sw, jardin real - trinitat.mp4",
+      "section": "close",
+      "start_trim": 0.0,
+      "end_trim": 2.026,
+      "duration": 2.026,
+      "narrative_note": "Camera descending from sky — cinematic end"
+    }
+  ],
+  "total_duration": 33.188,
+  "target_duration": 28,
+  "visual_narrative": "Energetic ok gesture opens into cycling through Benimaclet streets. The mesa redonda is revealed on the ground in Trinitat with two angles. Suspense builds through cycling and a cinematic Trinitat street scene before the price shock. The close winds down through Jardin Real with a descending camera shot.",
+  "available_scenes": [
+    "hook gesture on bike",
+    "cycling benimaclet bike lane",
+    "cycling benimaclet streets",
+    "mesa redonda on ground angle 1",
+    "mesa redonda on ground angle 2",
+    "cycling past pedestrian",
+    "trinitat bike lane",
+    "trinitat street scene cinematic",
+    "benimaclet street with dumpsters",
+    "entering benimaclet bike lane",
+    "cycling benimaclet street",
+    "entering trinitat bike lane",
+    "jardin real scenery",
+    "camera sky descent jardin real"
+  ],
+  "location_shown": "Benimaclet / Trinidad"
+}

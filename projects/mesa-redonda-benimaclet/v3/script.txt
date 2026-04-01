@@ -1,0 +1,19 @@
+[SECTION: HOOK]
+(2-3s pure visual — slow cycling through Benimaclet street, no narration)
+POV: giras la esquina y encuentras esto.
+
+[SECTION: REVEAL_1]
+(silence — park, tree, building)
+Benimaclet huele a otro ritmo... a cosas que llevan ahí más tiempo.
+
+[SECTION: REVEAL_2]
+(silence — Trinidad, modern building, person with bike)
+Una mesa redonda. En la acera. Como si alguien la hubiera dejado...
+
+[SECTION: REVEAL_3]
+(long silence — the mesa, the street around it)
+Si alguien la hubiera dado a tiempo, no estaría aquí.
+
+[SECTION: REFLECTION]
+(cycling away — ambient audio prominent)
+A veces lo mejor está donde menos lo esperas.

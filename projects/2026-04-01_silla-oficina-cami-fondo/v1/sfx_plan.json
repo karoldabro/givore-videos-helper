@@ -1,0 +1,23 @@
+[
+  {
+    "type": "SWOOSH",
+    "file": "Audio effects/Swoosh - Fast 1.MP3",
+    "timestamp": 0.5,
+    "volume": 0.04,
+    "reason": "Hook energy burst as 'Silla de oficina' lands — sets the fast-paced CUANTO_CUESTA tone"
+  },
+  {
+    "type": "DING",
+    "file": "Audio effects/Ding - Single - Bright.MP3",
+    "timestamp": 12.16,
+    "volume": 0.03,
+    "reason": "Price reveal moment — 'Setenta euros' — the signature CUANTO_CUESTA ding for maximum impact"
+  },
+  {
+    "type": "POP",
+    "file": "Audio effects/Pop 1.MP3",
+    "timestamp": 20.40,
+    "volume": 0.04,
+    "reason": "CTA accent on engagement question '¿Cuál es lo más caro que habéis visto en la calle?' — prompts interaction"
+  }
+]

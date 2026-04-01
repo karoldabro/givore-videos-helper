@@ -1,0 +1,42 @@
+CLIP MAP — v1/reciclaje-feedback-app
+Audio: 58.04s | Clips: 58.33s | Surplus: +0.29s
+
+ #  | Time    | ID  | Section    | Clip
+----|---------|-----|------------|------
+ 1  |  0.00s  | 158 | HOOK       | [hook] cycling, camera sky→sw - quatre carreres
+ 2  |  1.83s  | 168 | HOOK       | av del reino valencia, bike lane - gran via
+ 3  |  3.86s  |  50 | HOOK       | cycling sunny day - grau maritim
+ 4  |  5.86s  |  93 | BODY       | overtaking bike lane - grau maritim
+ 5  |  7.91s  |  47 | BODY       | cycling bike lane - grau maritim
+ 6  |  9.96s  |  48 | BODY       | cycling bike lane 2 - grau maritim
+ 7  | 12.07s  |  92 | PROBLEM    | letting people pass crosswalk - albors
+ 8  | 14.10s  |  44 | PROBLEM    | person crosses street - ayora
+ 9  | 16.13s  |  63 | PROBLEM    | cycling street - albors
+10  | 18.16s  |  85 | REHOOK     | hand on head cycling
+11  | 19.67s  |  86 | REHOOK     | hand on steering wheel
+12  | 21.18s  | 171 | SOLUTION   | bike lane - el pla del ramei
+13  | 23.21s  | 173 | SOLUTION   | bike lane colon - sant francesc
+14  | 25.21s  | 185 | SOLUTION   | overtaking colon - sant francesc
+15  | 27.24s  | 188 | FEEDBACK   | bike lane plaza torros - sant francesc
+16  | 29.27s  | 192 | FEEDBACK   | bike lane puente exposicion
+17  | 32.58s  | 209 | FEEDBACK   | jardin real 1 - trinitat
+18  | 34.61s  | 210 | FEEDBACK   | jardin real 2 - trinitat
+19  | 36.64s  | 211 | QUESTIONS  | jardin real 3 - trinitat
+20  | 38.67s  | 212 | QUESTIONS  | jardin real 4 - trinitat
+21  | 40.70s  | 213 | COMMITMENT | jardin real 5 - trinitat
+22  | 42.73s  | 214 | COMMITMENT | jardin real 6 - trinitat
+23  | 44.76s  | 215 | COMMITMENT | jardin real 7 - trinitat
+24  | 46.79s  | 172 | IMPORTANCE | bike lane 1 - trinitat
+25  | 48.82s  | 175 | IMPORTANCE | bike lane 2 - trinitat
+26  | 50.27s  | 177 | IMPORTANCE | bike lane 3 turning - trinitat
+27  | 52.30s  | 178 | IMPORTANCE | bike lane 4 - trinitat
+28  | 54.33s  | 179 | COMMUNITY  | bike lane 5 - trinitat
+29  | 56.36s  | 153 | END        | camera sw→sky - trinitat
+
+SFX:
+ 1 |  5.70s | Swoosh Fast 1     | vol 0.06 | transition
+ 2 | 12.00s | Mystery           | vol 0.05 | tension
+ 3 | 18.00s | Hit Single        | vol 0.06 | impact
+ 4 | 21.00s | Correct Chime     | vol 0.05 | positive
+ 5 | 27.00s | Ding Bright       | vol 0.05 | reveal
+ 6 | 54.00s | Notification      | vol 0.06 | cta

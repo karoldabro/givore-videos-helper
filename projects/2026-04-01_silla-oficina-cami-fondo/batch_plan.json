@@ -1,0 +1,54 @@
+{
+  "topic": "silla de oficina en Camí Fondo",
+  "location": "Camí Fondo",
+  "items": ["silla de oficina en muy buen estado"],
+  "total_variants": 3,
+  "created": "2026-04-01",
+  "variants": [
+    {
+      "variant": 1,
+      "content_format": "CUANTO_CUESTA",
+      "format_file": "formats/CUANTO_CUESTA.md",
+      "persona": "ENERGETICO",
+      "persona_file": "personas/ENERGETICO.md",
+      "structure": "MICRO",
+      "structure_file": "structures/MICRO.md",
+      "hook_category": "VALUE_PROPOSITION",
+      "cta_category": "GAMIFIED",
+      "narration": "full",
+      "target_duration_s": 25,
+      "target_words": 83,
+      "rationale": "Safe v1 with VERY HIGH viral potential. Office chair is perfect for price-reveal format — viewers love guessing furniture prices. ENERGETICO's punchy delivery matches short format energy. MICRO structure keeps it tight for max completion rate. VALUE_PROPOSITION hook (not used in last 10) highlights the find's worth. GAMIFIED CTA drives comment velocity with price guessing."
+    },
+    {
+      "variant": 2,
+      "content_format": "NO_TOQUEIS_ESO",
+      "format_file": "formats/NO_TOQUEIS_ESO.md",
+      "persona": "REPORTERO",
+      "persona_file": "personas/REPORTERO.md",
+      "structure": "PSP",
+      "structure_file": "structures/PSP.md",
+      "hook_category": "FORBIDDEN_KNOWLEDGE",
+      "cta_category": "CONDITIONAL_CONTENT",
+      "narration": "full",
+      "target_duration_s": 42,
+      "target_words": 140,
+      "rationale": "Contrarian angle — 'should you actually take a street office chair?' REPORTERO's factual tone adds credibility to the educational pivot (what to check before taking furniture). PSP structure builds problem-solution-proof arc. FORBIDDEN_KNOWLEDGE hook creates pattern interrupt. Medium length for depth without losing attention."
+    },
+    {
+      "variant": 3,
+      "content_format": "LO_QUE_NADIE_VE",
+      "format_file": "formats/LO_QUE_NADIE_VE.md",
+      "persona": "OBSERVADOR",
+      "persona_file": "personas/OBSERVADOR.md",
+      "structure": "COLD_OPEN",
+      "structure_file": "structures/COLD_OPEN.md",
+      "hook_category": "POV",
+      "cta_category": "SELF-REFLECTION",
+      "narration": "minimal",
+      "target_duration_s": 35,
+      "target_words": 50,
+      "rationale": "Completely different pacing — minimal narration, contemplative cycling discovery of the chair as one of 3 hidden reveals in Camí Fondo. OBSERVADOR's sensory, reflective voice suits the quiet aesthetic. COLD OPEN drops viewer straight into the scene. POV hook and SELF-REFLECTION CTA create intimate viewer connection. Ambient audio-forward differentiates from the talky v1/v2."
+    }
+  ]
+}

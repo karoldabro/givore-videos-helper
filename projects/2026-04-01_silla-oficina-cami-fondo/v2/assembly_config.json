@@ -1,0 +1,121 @@
+{
+  "project_folder": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v2/",
+  "template": "/media/kdabrow/Programy/givore/projects/template.kdenlive-cli.json",
+  "clips": [
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[hook] cycling on the street, dowing my both thumbs down - quatre carreres.mp4",
+      "name": "clip_00",
+      "position": 0.0,
+      "duration": 1.71,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, tall buildings, scooter, parked cars, sidewalk, trees, camera movement - jaime-roig.mp4",
+      "name": "clip_01",
+      "position": 1.71,
+      "duration": 4.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a person takes a photo of a green trash can, with a motorcycle parked nearby and a building in the background - jaime-roig.mp4",
+      "name": "clip_02",
+      "position": 5.71,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(calm) city street, white building, black lamppost, parked cars, bicycle, motion blur - jaime-roig.mp4",
+      "name": "clip_03",
+      "position": 10.71,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a building under construction, a parked car, a bicycle, a street lamp, a person's hand - jaime-roig.mp4",
+      "name": "clip_04",
+      "position": 14.21,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/(fast) city street with trees, buildings, and a bike - jaime-roig.mp4",
+      "name": "clip_05",
+      "position": 19.21,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a person stands near a wooden cabinet, holding a phone with a camera, in a park-like setting - sant-antoni (1).mp4",
+      "name": "clip_06",
+      "position": 22.71,
+      "duration": 4.54,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) wooden chest, legs, shoes, sidewalk, autumn leaves, sunlight - sant-antoni.mp4",
+      "name": "clip_07",
+      "position": 27.25,
+      "duration": 3.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[start] (calm) a city street with parked cars, a tall building, and a bicycle - jaime-roig.mp4",
+      "name": "clip_08",
+      "position": 30.75,
+      "duration": 5.0,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[item] (calm) a city street with parked cars, a blue recycling bin, and a bicycle rider's perspective - san-antonio.mp4",
+      "name": "clip_09",
+      "position": 35.75,
+      "duration": 4.5,
+      "in_point": 0.0
+    },
+    {
+      "section": "BODY",
+      "file": "/media/kdabrow/Programy/givore/videos/clips/[end] (calm) a city street lined with buildings, palm trees, and parked cars - exposicion.mp4",
+      "name": "clip_10",
+      "position": 40.25,
+      "duration": 7.31,
+      "in_point": 0.0
+    }
+  ],
+  "sfx": [
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Swoosh - Fast 1.MP3",
+      "name": "swoosh",
+      "position": 3.08,
+      "duration": 0.7,
+      "volume": 0.04
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Ding - Single - Bright.MP3",
+      "name": "ding",
+      "position": 22.52,
+      "duration": 2.1,
+      "volume": 0.04
+    },
+    {
+      "file": "/media/kdabrow/Programy/givore/Audio effects/Pop 1.MP3",
+      "name": "pop",
+      "position": 31.36,
+      "duration": 0.2,
+      "volume": 0.04
+    }
+  ],
+  "audio": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v2/audio.mp3",
+  "subtitles": "/media/kdabrow/Programy/givore/projects/2026-04-01_silla-oficina-cami-fondo/v2/audio.srt",
+  "subtitle_template_ass": "/media/kdabrow/Programy/givore/projects/template.kdenlive.ass",
+  "clip_volume": 0.0
+}

@@ -1,0 +1,51 @@
+{
+  "variant": "v1",
+  "content_format": "EL_RANKING_CALLEJERO",
+  "pillars": ["CYCLING_POV", "HIDDEN_SPOTS"],
+  "primary_keywords": [
+    {"keyword": "muebles reciclados", "volume": 86000, "use": "hook, description"},
+    {"keyword": "segunda mano Valencia", "volume": 140000, "use": "description, metadata"},
+    {"keyword": "muebles segunda mano", "volume": 65000, "use": "description"},
+    {"keyword": "movilidad sostenible", "volume": 9200, "use": "description, hashtag"},
+    {"keyword": "reciclar muebles", "volume": 15000, "use": "hook, description"}
+  ],
+  "secondary_keywords": [
+    {"keyword": "muebles vintage", "volume": 150000, "use": "wooden chest description"},
+    {"keyword": "reciclaje creativo", "volume": 14000, "use": "hashtag, description"},
+    {"keyword": "Valencia turismo", "volume": 22000, "use": "city discovery angle"}
+  ],
+  "hashtags": [
+    "#ciclismourbano", "#enbici", "#bikelife", "#valencia",
+    "#lugaressecretos", "#rinconesdevalencia", "#urbanexploration",
+    "#mueblesreciclados", "#segundamano", "#reciclaje"
+  ],
+  "natural_phrases_es": [
+    "Ranking de los hallazgos mas locos pedaleando por Valencia",
+    "Lo que me encuentro tirado por la calle mientras voy en bici",
+    "Del peor al mejor — tres cosas abandonadas en la calle",
+    "Pedaleando por Sant Antoni, Jaime Roig y Ruta Corts",
+    "No te vas a creer lo que alguien ha dejado en la acera"
+  ],
+  "scene_descriptions": [
+    "Dramatic camera hook cycling through Turia Park",
+    "Sun-drenched bike lane along Ruta Corts route",
+    "Artificial plant abandoned by recycling bins (3rd place)",
+    "Black office chair on the sidewalk in Jaime Roig (2nd place)",
+    "Wooden chest with autumn leaves and sunlight in Sant Antoni (1st place)",
+    "Overtaking cyclist on Colon street, Gran Via bike lane",
+    "Palm-lined bike path ending — golden hour feel"
+  ],
+  "thematic_elements": [
+    "countdown/ranking format (worst to best)",
+    "cycling POV through multiple Valencia barrios",
+    "street finds as urban treasure hunt",
+    "discovery and reuse mindset",
+    "engagement bait — audience votes on ranking"
+  ],
+  "locations": ["Sant Antoni", "Jaime Roig", "Ruta Corts", "Turia Park", "Gran Via", "Sant Francesc", "Quatre Carreres", "Benimaclet"],
+  "items_ranked": [
+    {"position": 3, "item": "artificial plant", "location": "Ruta Corts"},
+    {"position": 2, "item": "black office chair", "location": "Jaime Roig"},
+    {"position": 1, "item": "wooden chest", "location": "Sant Antoni"}
+  ]
+}

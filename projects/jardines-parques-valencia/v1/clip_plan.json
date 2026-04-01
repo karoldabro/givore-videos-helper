@@ -1,0 +1,159 @@
+{
+  "variant": "v1",
+  "format": "60_SEGUNDOS_EN",
+  "clips": [
+    {
+      "id": 106,
+      "filename": "[hook] cycling on the bike lane,sudden camara move down and then up - turia park.mp4",
+      "section": "hook",
+      "start_trim": 0.0,
+      "end_trim": 1.9,
+      "duration": 1.9,
+      "narrative_note": "Dramatic camera movement on Turia bike lane — instant energy, sets park context"
+    },
+    {
+      "id": 903,
+      "filename": "(calm) a park with a bike path, trees, and people - rio-turia.mp4",
+      "section": "first_sight",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Wide Turia park view with bike path and trees — establishing the green corridor"
+    },
+    {
+      "id": 904,
+      "filename": "(calm) a park path lined with trees, people walking, and a bicycle's handlebars - rio-turia.mp4",
+      "section": "first_sight",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Tree-lined path with handlebars visible — immersive cycling POV through Turia"
+    },
+    {
+      "id": 906,
+      "filename": "(calm) a park with palm trees, a bench, and a person on a bike - jardin-real.mp4",
+      "section": "hidden_gem",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Jardin Real with palm trees and bench — reveals a lesser-known garden space"
+    },
+    {
+      "id": 905,
+      "filename": "(dynamic) a stone staircase leads to a park with trees, a building, and a street - rio-turia.mp4",
+      "section": "food_spot",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Dynamic shot showing park architecture with staircase — visual variety, energy shift"
+    },
+    {
+      "id": 291,
+      "filename": "[bridge right to left] on the ramp in front of the palau de la musica camara from houses to the sw and park - turia garden.mp4",
+      "section": "bridge",
+      "start_trim": 0.0,
+      "end_trim": 1.7,
+      "duration": 1.7,
+      "narrative_note": "Pan from Palau de la Musica to park — smooth transition into surprise section"
+    },
+    {
+      "id": 862,
+      "filename": "(dynamic) a park with a tall building, palm trees, and a statue - benimaclet.mp4",
+      "section": "surprise_fact",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Park with statue and palm trees — visual anchor for a surprising Valencia fact"
+    },
+    {
+      "id": 684,
+      "filename": "(calm) a park with trees, a street, and a building - blasco-ibanez.mp4",
+      "section": "surprise_fact",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Calm park cycling scene — extends surprise section with green atmosphere"
+    },
+    {
+      "id": 674,
+      "filename": "[item] (calm) black office chair, sidewalk, bike, camera movement - jaime-roig.mp4",
+      "section": "street_find",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Chair spotted from bike — the street find reveal, cycling approach"
+    },
+    {
+      "id": 1020,
+      "filename": "[item] (calm) A black office chair is discarded on the sidewalk next to a - ruta-corts.mp4",
+      "section": "street_find",
+      "start_trim": 0.0,
+      "end_trim": 4.0,
+      "duration": 4.0,
+      "narrative_note": "Close-up of discarded office chair — proof shot, item detail"
+    },
+    {
+      "id": 685,
+      "filename": "(calm) park, bench, lamp post, bicycle, camera - blasco-ibanez.mp4",
+      "section": "cta",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Peaceful park with bench — calm backdrop for community call-to-action"
+    },
+    {
+      "id": 114,
+      "filename": "cycling in front of the cjaxa forum - turia park.mp4",
+      "section": "cta_ext",
+      "start_trim": 0.0,
+      "end_trim": 2.2,
+      "duration": 2.2,
+      "narrative_note": "Cycling past CaixaForum in Turia — extra coverage for CTA/END audio"
+    },
+    {
+      "id": 150,
+      "filename": "entering the turia park - penya roja.mp4",
+      "section": "cta_ext",
+      "start_trim": 0.0,
+      "end_trim": 2.0,
+      "duration": 2.0,
+      "narrative_note": "Entering Turia park — continuation of cycling journey"
+    },
+    {
+      "id": 296,
+      "filename": "cycing donwards on the ramp to enter the cycle path - turia garden.mp4",
+      "section": "cta_ext",
+      "start_trim": 0.0,
+      "end_trim": 2.2,
+      "duration": 2.2,
+      "narrative_note": "Cycling down ramp into Turia garden path — final approach before ending"
+    },
+    {
+      "id": 764,
+      "filename": "[end] (calm) a city street lined with buildings, palm trees, and parked cars - exposicion.mp4",
+      "section": "end",
+      "start_trim": 0.0,
+      "end_trim": 5.0,
+      "duration": 5.0,
+      "narrative_note": "Palm tree-lined street — peaceful ride-away ending"
+    }
+  ],
+  "total_duration": 69.0,
+  "target_duration": 60,
+  "visual_narrative": "Opens with a dramatic camera move on the Turia bike lane, then flows through the green corridor of Rio Turia showing tree-lined paths and people. Transitions to the hidden Jardin Real with its palm trees, passes the Palau de la Musica ramp, discovers parks with statues and greenery. A chair find on the sidewalk adds the street-find surprise. Closes with a calm park bench CTA scene and a palm-tree-lined ride-away.",
+  "available_scenes": [
+    "Turia bike lane with dramatic camera move",
+    "Wide Turia park view with bike path and trees",
+    "Tree-lined park path with bicycle handlebars (immersive POV)",
+    "Jardin Real palm trees and bench",
+    "Stone staircase entrance to a Turia park area",
+    "Palau de la Musica ramp panorama (houses to park)",
+    "Park with tall building, palm trees, and statue",
+    "Calm park with trees and street",
+    "Black office chair found on sidewalk (cycling approach)",
+    "Discarded office chair close-up next to trash bin",
+    "Park bench with lamp post (calm cycling)",
+    "Palm tree-lined street (ride-away)"
+  ],
+  "location_shown": "Turia, Jardin Real, Blasco Ibanez, Benimaclet, Exposicion"
+}

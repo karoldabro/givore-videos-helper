@@ -86,14 +86,14 @@ Before generating, MUST have ALL of the following:
 - Neighborhood exploration: 60-90 seconds
 - Story/transformation: 90-120 seconds
 
-**Word Count Guidelines (200 WPM):**
+**Word Count Guidelines (175 WPM — ElevenLabs Pablo TTS):**
 | Duration | Word Count (Spanish) |
 |----------|---------------------|
-| 30 seconds | 90-110 words |
-| 45 seconds | 140-160 words |
-| 60 seconds | 185-210 words |
-| 90 seconds | 280-310 words |
-| 120 seconds | 380-410 words |
+| 30 seconds | 80-95 words |
+| 45 seconds | 120-140 words |
+| 60 seconds | 160-185 words |
+| 90 seconds | 245-275 words |
+| 120 seconds | 330-365 words |
 
 ---
 
